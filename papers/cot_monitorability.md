@@ -18,8 +18,6 @@ The "fragile" part is the load-bearing word. Several recent results threaten CoT
 
 The paper is not an empirical contribution. It's the consensus statement that says "CoT monitoring is one of the few safety tools we have, it's already showing cracks, and we need to invest in it deliberately before it goes away." It's the kind of paper that ends up cited as the field's collective acknowledgment of a problem.
 
-For our project this is contextual rather than methodological. The argument it makes is *we should also have non-CoT safety channels*, which is exactly the empirical contribution probe-based work makes. Our project is doing the implicit follow-on to this position paper.
-
 ## Position summary
 
 - CoT monitorability is a real safety capability — but new and conditional on current training practices
@@ -36,14 +34,18 @@ No experiments. No probes. No internal-state work. Coordination document.
 - CoT monitoring "is imperfect and allows some misbehavior to go unnoticed"
 - Need for further research into how to preserve and validate the channel
 
-## Our own follow-up thoughts (project-relevant)
+## Open questions and follow-up directions
 
-1. **The argument for *non-CoT* safety channels is implicit and we're making it explicit.** The paper says CoT is fragile and we should protect it. The corollary — which the paper does not state but is obvious — is that we should *also* invest in safety channels that don't depend on CoT being faithful. Probes are one such channel. Our project's positioning, in the writeup, can lean on this.
+1. **Operationalizing "monitorability".** The paper treats CoT monitorability as a property worth preserving but does not give a sharp, measurable definition. What would a quantitative monitorability score look like — faithfulness rate, coverage of consequential reasoning steps, detectability of strategic content, robustness to paraphrase? Without an operational metric it is hard to tell whether a given training intervention preserves or erodes the channel.
 
-2. **Useful for citation density.** With ~40 author signatories from every major lab and academic group, this is the closest thing to a "the field agrees" paper on the CoT-monitoring question. Cite for credibility when framing why behavioral / CoT-only channels are insufficient.
+2. **Architectural and training-regime pressure on the channel.** The position rests on the empirical regularity that current frontier models reason in human-readable language. Latent-reasoning architectures, RL on outcome-only rewards, and continuous-thought variants each plausibly compress reasoning into forms that are less legible. Which of these pressures matters most, and at what scale, is an empirical question the paper flags but does not resolve.
 
-## Relevance to our project
+3. **Complementary oversight channels.** The paper argues for protecting CoT monitoring without taking a strong stance on what backstops it when faithfulness fails. Internal-state methods (probes, SAEs, activation-based detectors) are the obvious candidate complement, but how they should be combined with CoT-based oversight — and what guarantees the combination buys — is open.
 
-Low for methodology, medium for framing and citation. Not a target for replication.
+## See also
 
-Pairs with: [[cot_faithfulness]] (the empirical evidence that CoT is unfaithful), [[anti_scheming_training]] (an example of CoT-based analysis whose conclusions depend on CoT being faithful).
+- [[cot_faithfulness]] — empirical evidence that CoT often does not reflect the reasoning the model actually uses; directly bears on how much weight monitorability can carry
+- [[anti_scheming_training]] — case study where CoT-based analysis is load-bearing and whose conclusions are contingent on CoT being faithful
+- [[illusion_of_thinking]] — related skepticism about whether CoT tokens reflect underlying computation
+- [[deception_probes]] — example of an internal-state oversight channel that does not depend on CoT faithfulness
+- [[science_of_scheming]] — broader research-agenda framing for the oversight problem this paper addresses

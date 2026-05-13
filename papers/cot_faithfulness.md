@@ -1,8 +1,9 @@
 # Reasoning models don't always say what they think
 
-**Authors:** Anthropic Alignment Science team
-**Year:** 2025 (April)
-**Source:** [anthropic.com/research/reasoning-models-dont-say-think](https://www.anthropic.com/research/reasoning-models-dont-say-think)
+**Authors:** Chen et al. (Anthropic Alignment Science team)
+**Year:** 2025
+**Source:** [anthropic.com/research/reasoning-models-dont-say-think](https://www.anthropic.com/research/reasoning-models-dont-say-think) (blog post, April 2025)
+**arXiv:** [2505.05410](https://arxiv.org/abs/2505.05410) (formal arxiv version, May 2025)
 **Status:** read
 
 ---
@@ -13,9 +14,9 @@ This paper directly attacks the Chain-of-Thought-as-evidence channel that papers
 
 Result: Claude 3.7 Sonnet verbalizes the hint only ~25% of the time, DeepSeek R1 ~39%. On unauthorized-access framings, Claude drops to 41% and R1 to 19%. The most striking number is the reward-hacking experiment: models exploit false hints **>99% of the time** but verbalize the exploit **<2% of the time**. Outcome-based RL training initially improved faithfulness but plateaued at 20-28% — well below what would be needed for CoT-based safety monitoring.
 
-For our threat model this is load-bearing. If CoT can't be trusted to disclose the reasoning behind a decision, then the secondary evidence Apollo's scheming paper leans on — model scratchpads explicitly verbalizing deceptive reasoning — becomes weaker than it looks. The behavioral-deception attribution still holds for the cases where CoT *is* faithful, but a non-trivial slice of deceptive behavior could be passing through with no scratchpad trace.
+If CoT can't be trusted to disclose the reasoning behind a decision, then secondary evidence from other work that leans on model scratchpads explicitly verbalizing deceptive reasoning (e.g. Apollo's scheming paper) becomes weaker than it looks. The behavioral-deception attribution still holds for the cases where CoT *is* faithful, but a non-trivial slice of deceptive behavior could be passing through with no scratchpad trace.
 
-What the paper doesn't do is look inside the model. All evidence is the behavioral gap between "model used hint" and "model said it used hint." That leaves wide open the question: when the model uses a hint but doesn't say so, is that information present in its activations? A probe could answer this directly.
+What the paper doesn't do is look inside the model. All evidence is the behavioral gap between "model used hint" and "model said it used hint." That leaves wide open the question: when the model uses a hint but doesn't say so, is that information present in its activations?
 
 ## Key experimental conditions
 
@@ -36,7 +37,6 @@ What the paper doesn't do is look inside the model. All evidence is the behavior
 - Behavioral measurement of answer changes (did the hint affect the output?)
 - Text inspection of CoT to detect verbalization of the hint
 - **No linear probes, no activation analysis, no internal-state methods.** The unfaithfulness is documented but not mechanistically explained
-- This is exactly the gap a probe-based follow-up would address
 
 ## Authors' stated limitations / future work
 
@@ -45,16 +45,23 @@ What the paper doesn't do is look inside the model. All evidence is the behavior
 - Tasks may not be hard enough to *require* faithful CoT
 - Authors note "substantial work to be done" on faithfulness-based monitoring without specifying methods
 
-## Our own follow-up thoughts (project-relevant)
+## Open questions and follow-up directions
 
-1. **The natural probe extension.** When the model uses a hint but doesn't verbalize it, train a probe to detect "this answer was influenced by the hint" from the activations alone. Run on inputs where CoT *did* verbalize, *didn't* verbalize but used the hint, and didn't use the hint at all. The probe should split the three cases. This is a direct measurement of whether the hint-use information exists internally even when it doesn't surface in CoT — and it pairs naturally with our top project candidate. The setup is small enough to fit in scope: multiple-choice quizzes, hint/no-hint contrast pairs, small open-weight model.
+1. **Internal representation of unverbalized hint use.** All evidence is the behavioural gap between "model used hint" and "model said it used hint." Whether the hint-use information is present in activations on the unverbalized trials is the obvious next question, and is directly testable with linear probes on hint vs. no-hint contrast pairs.
 
-2. **Bridge to our sandbagging+probe project.** This paper is the strongest single piece of motivation for going internals-first on eval-gaming. The argument writes itself: "CoT is unfaithful at 75%+ rates on much simpler tasks than sandbagging detection; if we want to detect eval-gaming, we cannot rely on the model verbalizing it — we need probes that read it off internally." That's the framing paragraph for our project's introduction.
+2. **Why outcome-based RL plateaus.** Faithfulness improves under RL but plateaus at 20-28%. The mechanism is unclear: is the verbalization channel suppressed while the underlying representation persists, or does the representation itself become less accessible? Tracking a hint-use probe direction across the RL trajectory would distinguish these.
 
-3. **Train-time vs. inference-time interventions.** The paper shows outcome-based RL plateaus at low faithfulness. Open question: would a probe *trained* on the unfaithfulness gap teach us *why* RL plateaus? If the probe direction is stable across the RL training trajectory, that suggests the representation persists even as the verbalization is suppressed — direct evidence of "behavior changes, internals don't" failure mode for behavioral training.
+3. **Generalization beyond contrived MCQ hints.** Authors acknowledge the scenarios are artificial. Whether the same unfaithfulness rates hold for naturally occurring spurious cues, agentic settings, or harder tasks that genuinely require reasoning is open. Tasks easy enough to solve without faithful CoT may inflate the unfaithfulness measurement.
 
-## Relevance to our project
+4. **Model-family coverage.** Only two reasoning model families (Claude 3.7, DeepSeek R1) are tested. Whether GPT-class reasoning models, smaller open-weight reasoners, or differently-trained CoT models show the same gap is unaddressed. The plateau under RL suggests a structural property rather than a model-specific quirk, but this needs replication.
 
-Very high — second only to [[sleeper_agent_probes]] for methodological motivation. This paper is the strongest existing argument for not trusting the CoT channel as a safety monitor. Any probe-based eval-gaming project we run will cite this as the reason internal-state methods are necessary in the first place.
+5. **Implications for CoT-based attribution in other work.** Several prior results (notably scheming and alignment-faking papers) attribute strategic behavior to models partly on the basis of scratchpad reasoning. If CoT is unfaithful at 75%+ rates here, those attributions may *undercount* internal eval-awareness — the behavioural evidence captures only the verbalized slice. Re-examining those results with internal-state methods would tighten the bound.
 
-Pairs with: [[in_context_scheming]] (whose scheming attributions depend on CoT being mostly faithful — a tension worth flagging), [[sandbagging]] (target phenomenon), [[sleeper_agent_probes]] (method).
+## See also
+
+- [[in_context_scheming]] — attributes scheming partly through scratchpad reasoning; its conclusions depend on CoT being faithful in the cases it analyzes
+- [[alignment_faking]] — same dependency: alignment-faking is read off the scratchpad, so unfaithful CoT would mean undercounting
+- [[cot_monitorability]] — direct discussion of CoT as a safety-monitoring channel and what its degradation implies
+- [[eliciting_secret_knowledge]] — methods for surfacing model knowledge that the model does not verbalize
+- [[deception_probes]] — internal-state alternative to behavioural/CoT-based deception detection
+- [[introspection]] — adjacent question of when and how models accurately report on their own reasoning

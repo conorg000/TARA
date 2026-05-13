@@ -13,7 +13,7 @@ A scale-invariance result for data poisoning. ~250 malicious documents are enoug
 
 The attack tested is a denial-of-service-style backdoor: a trigger phrase (`<SUDO>`) causes the model to output gibberish. This is deliberately narrow — the authors picked it because success can be measured directly on pretrained checkpoints without further fine-tuning. They acknowledge that whether the same scale invariance holds for more sophisticated backdoors (vulnerable code à la [[sleeper_agent_probes]], safety-guardrail bypasses) is an open question.
 
-For our project this is mostly contextual. It strengthens the case that backdoor-style attacks are a real, easy threat — which strengthens the case that probe-based detection of backdoor-like behavior matters. But the paper itself is purely behavioral; it does not investigate whether the poisoned model's internals look different from a clean model's, which would be the natural probe-adjacent question.
+The paper is purely behavioural: it establishes the attack's feasibility and scaling properties but does not investigate whether the poisoned model's internals look different from a clean model's.
 
 ## Key experimental conditions
 
@@ -42,14 +42,20 @@ For our project this is mostly contextual. It strengthens the case that backdoor
 - No defenses tested
 - Future: more complex behaviors; defenses that work against constant-sample poisoning rather than proportional poisoning
 
-## Our own follow-up thoughts (project-relevant)
+## Open questions and follow-up directions
 
-1. **Connects to the sleeper-agent threat model.** This is the upstream-attack version of the threat that [[sleeper_agent_probes]] addresses downstream. The take-away for us: cheap backdoor insertion is a real threat (only ~250 documents), so the probe-based detection methodology has practical application.
+1. **Does scale invariance hold for richer backdoors?** The DoS attack was chosen because it's measurable on pretrained checkpoints without fine-tuning. Whether the constant-sample property generalises to backdoors that require coherent output (vulnerable code, guardrail bypasses, persona triggers) is the central methodological gap. Replication with a behaviourally richer trigger would settle this.
 
-2. **One probe-adjacent open question.** The paper doesn't look at whether poisoned models' activations differ from clean models' activations on trigger inputs. A natural follow-up — and one that fits MacDiarmid-style probe methodology — would be to train probes that detect "this input contains a backdoor trigger" on poisoned models. Out of scope for our project, but worth noting as adjacent.
+2. **Internal signatures of poisoned models.** The paper is purely behavioural. A natural mechanistic follow-up: do poisoned models' activations on trigger inputs differ systematically from clean models', and can probes trained on a small held-out clean/poisoned split detect the trigger before it fires? This would connect the upstream attack to downstream detection methodology like [[sleeper_agent_probes]].
 
-## Relevance to our project
+3. **Why constant rather than proportional?** The result is empirically clean but the mechanism is not explained. One hypothesis is that a fixed number of gradient updates on the trigger is enough to carve out the backdoor circuit regardless of the surrounding data volume. Testing this would involve measuring how trigger-token loss decreases during training and whether the critical number of exposures (not documents) is the invariant.
 
-Low. Useful as context for the broader threat landscape but not directly methodologically relevant. Worth keeping in the database because it's the strongest existing scale-result on backdoor attacks.
+4. **Interaction with post-training.** The result is for pretraining-time poisoning. Whether SFT or RLHF on clean data partially or fully erases the backdoor, and how poison-count requirements change if the attacker can only inject into post-training data, are open.
 
-Pairs with: [[sleeper_agent_probes]].
+5. **Defenses against constant-count attacks.** Most data-quality interventions implicitly assume proportional poisoning. A defense framework calibrated to constant-count attacks — e.g., per-document influence estimation rather than aggregate filtering — is suggested by the result but not built here.
+
+## See also
+
+- [[sleeper_agent_probes]] — downstream detection of the kind of backdoor this paper shows is cheap to install
+- [[anti_scheming_training]] — adjacent question of whether training interventions remove underlying dispositions installed by data
+- [[teaching_claude_why]] — alternative angle on data influence: what training data teaches the model about itself

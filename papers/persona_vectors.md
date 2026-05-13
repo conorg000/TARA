@@ -9,13 +9,13 @@
 
 ## Summary (in our words)
 
-This is the methodological sibling to [[sleeper_agent_probes]] and [[emotion_concepts]] — the same family of "linear direction in residual stream, derived from contrastive content, used to both detect and steer behavior." The contribution here is doing it for *character traits* (evil, sycophancy, hallucination) on smaller open-weight models (Qwen 2.5-7B and Llama 3.1-8B) — i.e. on models we could actually run within our budget.
+This is a methodological sibling to [[sleeper_agent_probes]] and [[emotion_concepts]] — the same family of "linear direction in residual stream, derived from contrastive content, used to both detect and steer behavior." The contribution here is doing it for *character traits* (evil, sycophancy, hallucination) on smaller open-weight models (Qwen 2.5-7B and Llama 3.1-8B).
 
-The pipeline: build contrastive prompt pairs that elicit a trait vs. don't, extract activations on both, take the difference, get a vector. That vector "lights up predictively before models express the corresponding trait" — exactly the pre-action signal we care about. They use these vectors three ways: (1) inference-time steering to suppress traits; (2) preventative steering during fine-tuning to keep traits from being learned; (3) flagging training samples that would push the model along a trait direction.
+The pipeline: build contrastive prompt pairs that elicit a trait vs. don't, extract activations on both, take the difference, get a vector. That vector "lights up predictively before models express the corresponding trait" — i.e. it provides a pre-action signal. The authors use these vectors three ways: (1) inference-time steering to suppress traits; (2) preventative steering during fine-tuning to keep traits from being learned; (3) flagging training samples that would push the model along a trait direction.
 
-For our project the relevant headlines are: (a) the technique works on the model class we'd be using (open-weight 7-8B), (b) the vectors *predict* trait expression before it happens, and (c) the authors release an automated pipeline for deriving them. We don't have to invent the recipe — we can adopt it.
+Headlines: (a) the technique works on open-weight 7-8B models, (b) the vectors *predict* trait expression before it happens, and (c) the authors release an automated pipeline for deriving them.
 
-A caveat the authors don't dwell on but which matters for us: the inference-time steering trade-off. Steering against a trait reduces capability. That's relevant because our project isn't about *steering* sandbagging away, it's about *detecting* it. The detection use of these vectors doesn't suffer the capability degradation, which is helpful.
+A caveat the authors don't dwell on: inference-time steering against a trait tends to reduce general capability. Detection uses of the vector don't suffer the same trade-off — monitoring is cheaper than intervention.
 
 ## Key experimental conditions
 
@@ -45,18 +45,24 @@ A caveat the authors don't dwell on but which matters for us: the inference-time
 - Inference-time steering has capability side effects
 - Preventative steering needs training-pipeline integration
 - Real-world deployment validation not done in this work
-- No discussion of whether models could learn to mask persona vectors (i.e. eval-game the probe itself)
+- No discussion of whether models could learn to mask persona vectors (i.e. game the probe itself)
 
-## Our own follow-up thoughts (project-relevant)
+## Open questions and follow-up directions
 
-1. **Use this pipeline as the starting point for our sandbagging probe.** Persona vectors handles the engineering side: automated derivation of a trait direction from contrastive pairs, with public methodology. For our project, "sandbagging" becomes a candidate "persona" — generate contrastive pairs (model answering at full capability vs. model answering as if locked), extract the direction, measure detection AUROC on held-out evals. This is the most concrete starting point for the code we'd write.
+1. **Generality across trait types.** The paper covers a handful of character traits (evil, sycophancy, hallucination, plus a few lighter ones). Whether the contrastive-pair pipeline extends cleanly to more behaviorally complex or context-dependent traits — deception, situational reasoning, capability-modulation behaviors — is open. Some traits may not factor into a single linear direction.
 
-2. **The "vector lights up before trait expression" finding is the project's headline result we'd want to reproduce.** Pre-action prediction is exactly what makes probes useful for safety. If we can replicate this for sandbagging — "the vector predicts that the model is about to underperform, before the underperformance happens" — that's the result we'd put in a presentation.
+2. **Predictive lead time and calibration.** The vectors "light up before" trait expression, but the paper does not quantify how far in advance, at what false-positive rate, or how this varies across traits and contexts. A more careful AUROC / lead-time characterization is a natural replication target.
 
-3. **Open question they raise implicitly: can the persona vector be deliberately suppressed?** If a model learns it's being monitored via persona vectors, can it steer its own activations to stay off the vector while still expressing the trait? This is the eval-gaming-of-the-eval-gaming-detector worry. Not tractable as a project on its own, but worth flagging as a future-work direction.
+3. **Probe robustness to adversarial suppression.** The authors flag but do not investigate whether a model could learn to keep its activations off the persona direction while still expressing the trait behaviorally. This matters whenever the probe is used as part of a training or oversight loop the model is exposed to.
 
-## Relevance to our project
+4. **Capability cost of steering.** Inference-time steering reduces trait expression but degrades general capability; preventative training-time steering reportedly has minimal MMLU cost. The mechanism behind that asymmetry — and how it scales with vector magnitude, trait, and model — is not characterized.
 
-Very high — methodologically essential. Of all the papers in this batch, persona_vectors gives us the most direct technical recipe for what we'd actually build. The combination of "persona vectors pipeline + sleeper_agent_probes detection methodology + sandbagging as the target phenomenon" is the project, in three sentences.
+5. **Transfer across model families and scales.** Results are on two 7-8B instruct models. Whether the same contrastive pipeline produces equivalently informative directions in larger models, base (non-instruct) models, or different architectures is unaddressed.
 
-Pairs with: [[sleeper_agent_probes]] (closely related method), [[emotion_concepts]] (sibling application), [[sandbagging]] (target).
+## See also
+
+- [[sleeper_agent_probes]] — closely related linear-probe methodology applied to a different target behavior
+- [[emotion_concepts]] — sibling application of contrastive-direction extraction to affect-like states
+- [[beyond_linear_probes]] — addresses cases where a single linear direction is insufficient, relevant to the trait-generality question
+- [[steering_eval_aware]] — evidence that behaviorally relevant directions have linear structure in activation space
+- [[deception_probes]] — applies the same probe family to deception specifically

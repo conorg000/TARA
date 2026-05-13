@@ -1,5 +1,5 @@
 ---
-description: Adds a paper to the project's papers/ database. Fetches the source, writes a per-paper file with summary in our voice, captures the authors' future-work, generates our own project-relevant follow-ups, and updates papers/index.md. Works with arxiv URLs/IDs, lab research blog posts (Anthropic, DeepMind, Apollo, etc.), or free-text titles. Use when the user says "let's look at paper X", "add this paper", or invokes /add-paper.
+description: Adds a paper to the project's papers/ database. Fetches the source, writes a per-paper file with summary in our voice, captures the authors' stated future work, notes paper-centric open questions, and updates papers/index.md. Works with arxiv URLs/IDs, lab research blog posts (Anthropic, DeepMind, Apollo, etc.), or free-text titles. Use when the user says "let's look at paper X", "add this paper", or invokes /add-paper.
 argument-hint: [url | arxiv-id | title]
 disable-model-invocation: true
 allowed-tools: WebFetch Read Write Edit
@@ -23,7 +23,7 @@ Add a paper to `papers/` and update `papers/index.md`. The paper to add is descr
    - Key quantitative results
    - Experimental variants / interventions tested
    - Authors' stated limitations and future work
-   - Whether the paper uses or mentions linear probes / internal-state analysis (call out explicitly even if absent)
+   - Whether the paper uses or mentions linear probes / activation steering / SAEs / NLAs / other internal-state methods (note explicitly even when absent)
 
    Adapt to the source format. A blog post may not have a formal author list — capture the lead author / contributors. A lab research note may not have a "year" prominently — use the publication date. Map sensibly; don't force fields that aren't there.
 
@@ -31,11 +31,11 @@ Add a paper to `papers/` and update `papers/index.md`. The paper to add is descr
 
 4. **Read the index first.** Open `papers/index.md` to see the current categories and existing entries. Decide which category the new paper belongs in. If none fit, add a new category section rather than forcing it into "Other".
 
-5. **Write the per-paper file** at `papers/<slug>.md` using the template below. Match the depth and tone of `papers/alignment_faking.md` — that's the canonical example.
+5. **Write the per-paper file** at `papers/<slug>.md` using the template below.
 
-6. **Update `papers/index.md`** — add a row to the chosen category table. Keep the one-line takeaway concrete (numbers if there are any).
+6. **Update `papers/index.md`** — add a row to the chosen category table. Keep the one-line takeaway concrete (numbers where the paper provides them). The index entry should describe what the paper *says*, not what it means for any specific project.
 
-7. **Report back** — confirm the file path and category, then surface the 1-2 follow-up angles you think most warrant discussion with the user. Don't dump the full list of follow-ups in chat; they're in the file.
+7. **Report back** — confirm the file path and category. If something in the paper is genuinely surprising or load-bearing for the field, mention it briefly; otherwise no need.
 
 ## Per-paper file template
 
@@ -52,7 +52,7 @@ Add a paper to `papers/` and update `papers/index.md`. The paper to add is descr
 
 ## Summary (in our words)
 
-<2-4 paragraphs. Setup, what happened, what makes it interesting. First-person plural ("we", "our"). Talk the reader through the result like a colleague who actually read it, not an abstract paraphrase.>
+<2-4 paragraphs. Setup, what happened, what makes the result interesting. First-person plural ("we", "our"). Talk the reader through the paper like a colleague who actually read it, not an abstract paraphrase. Stick to what the paper actually claims and demonstrates; flag what's empirically tight vs. speculative or framing-dependent.>
 
 ## Key experimental conditions
 
@@ -64,37 +64,40 @@ Add a paper to `papers/` and update `papers/index.md`. The paper to add is descr
 
 ## Methods (what they did and didn't use)
 
-- <what techniques they used: behavioral evals, probes, scratchpad/CoT analysis, fine-tuning, RL, etc.>
-- <call out absences explicitly when relevant — e.g. "the paper does not use linear probes; all evidence is behavioral">
-- <flag closed- vs open-weight model, since that constrains follow-up access>
+- <what techniques they used: behavioural evals, probes, scratchpad/CoT analysis, fine-tuning, RL, etc.>
+- <note absences factually when they bear on what the paper can and can't conclude — e.g. "no internal-state analysis; all evidence is behavioural">
+- <flag closed- vs open-weight model where it affects reproducibility>
 
 ## Authors' stated limitations / future work
 
 - <bullets from the paper's own limitations / future-work sections>
 
-## Our own follow-up thoughts (project-relevant)
+## Open questions and follow-up directions
 
-<Numbered list of 3-6 angles. Each one should:
-- Connect to our threat model (eval-gaming / models behaving differently under evaluation) OR our preferred techniques (linear probes, evals)
-- Be specific enough that someone reading it could imagine a concrete experiment
-- Mark which ones are "Ahmed-shaped" — replicate the phenomenon, apply a clean intervention, measure the delta
-- Be honest about feasibility — open-weight access, ~$250 compute budget, 2-3 week solo timeline
+<Numbered list of 2-5 angles. These should be **paper-centric** — adjacent directions the paper itself opens up, methodological gaps the paper has, scaling/generalization questions, replication targets, things the result implies but doesn't demonstrate. Substance over enumeration; two sharp angles beats five generic ones.
 
-Substance over enumeration. Three sharp angles beats six generic ones.>
+Do NOT tie these to any specific project the user is currently considering. Project ideas are ephemeral; per-paper files should age well as the project evolves. Frame the questions as the field's open questions, not as "what we'd build next."
 
-## Relevance to our project
+Be open-minded. If the paper has a strong methodological choice (e.g. only behavioural evidence, only on closed-weight models), the open question is whether the result generalizes — not "this leaves room for our probe extension."
 
-<1-2 paragraphs. How load-bearing is this paper for whatever we eventually pick? Is it the phenomenon we'd replicate, the method we'd apply, motivation/citation, or a foil? Be honest if it's adjacent rather than central.>
+Example phrasings: "Whether the effect persists at smaller model scale is open."; "The paper does not test X; doing so would distinguish A from B."; "The result depends on Y; replacing Y with Z would clarify the mechanism."
+
+Avoid: phrasings that reference specific projects, candidates, budgets, or the user's preferred techniques as if they're the obvious extension. Those belong in `ideas/`, not in `papers/`.>
+
+## See also
+
+<Paper-to-paper connections, one per line, with a brief note on what makes the connection. Examples:
+- [[other_paper]] — same phenomenon, different model class
+- [[another_paper]] — sibling method (linear probes for adjacent target)
+- [[third_paper]] — competing finding; resolves vs. our paper's claim
+
+This is where cross-paper structure lives. Keep it factual — connections, not project-shaping.>
 ```
 
 ## Voice and style
 
-- First-person plural throughout — this is a personal research notebook, not a literature review.
-- Bias toward what's useful for our project. The user's threat model is eval-gaming; preferred techniques are linear probes + evals; constraints are solo, ~$250, 2-3 weeks. Don't summarize sections of the paper that don't bear on these.
+- First-person plural throughout — this is a personal research notebook.
 - Concrete > abstract. "~14% compliance, up to 78% with RL" beats "the model sometimes complies".
-- When a paper uses only behavioral evidence (no internal-state analysis), flag it — that's a recurring tell that probe-flavored extensions have room.
-- Avoid menu-style brainstorm dumps in the follow-ups. Each angle should feel chosen, not enumerated.
-
-## Reference
-
-`papers/alignment_faking.md` is the canonical example. Match its format, depth, and tone.
+- **Keep an open mind.** Do not frame the paper through a specific project idea the user is considering. The user's project shape changes; per-paper files should be evergreen and read fairly to anyone returning to them later. Project ideation belongs in `ideas/`.
+- When a paper uses only behavioural evidence or only internal-state methods, note it factually. Do not editorialise about what's "missing from a project-framing perspective" or what "the gap our project would fill" is.
+- Avoid menu-style brainstorm dumps in follow-ups. Each open question should feel chosen, and should reflect the paper's own implications rather than the user's current project hypothesis.

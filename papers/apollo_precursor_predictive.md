@@ -13,7 +13,7 @@ A negative-results research note. In May 2024, Apollo built "precursor evals" fo
 
 They went back and checked. Predictive power: low to medium. Specifically: precursor evals correlate with *general capabilities* at r=0.816 (significant), but correlate with *scheming evals* at only r=0.412 (not significant). Easy versions of precursor evals were somewhat useful; hard versions were neutral or actively misleading. Apollo concludes that "predicting dangerous capabilities ahead of time is hard."
 
-For our project this is more about the evaluation-paradigm context than the empirical methodology. The note doesn't use probes. It's a cautionary piece about how evals built to forecast scheming-capability thresholds may not actually catch what they're supposed to. It's also a structural argument: in-context scheming evals "conflate capabilities with propensities" — the model might *be able to* scheme but not *want to*, or vice versa.
+The note doesn't use probes. It's a cautionary piece about how evals built to forecast scheming-capability thresholds may not actually catch what they're supposed to. It's also a structural argument: in-context scheming evals "conflate capabilities with propensities" — the model might *be able to* scheme but not *want to*, or vice versa.
 
 ## Key experimental conditions
 
@@ -42,16 +42,22 @@ For our project this is more about the evaluation-paradigm context than the empi
 - Hindsight, not prospective prediction
 - Recommend more "science of evals" research, direct measurement of target capabilities over precursors
 
-## Our own follow-up thoughts (project-relevant)
+## Open questions and follow-up directions
 
-1. **Indirect support for internals-first approaches.** If behavioral precursor evals fail to predict behavioral scheming evals, that's an argument for not trusting behavioral evals as the primary measurement channel. The internal-state extension is implicit but clear: if the behavioral chain (precursor → scheming) is unreliable, maybe the internal-state → behavior chain is more reliable.
+1. **Why precursors track general capability but not scheming behavior.** The r=0.816 vs. r=0.412 gap is the central empirical puzzle. One reading is that scheming-eval performance is dominated by a propensity component that is roughly orthogonal to the capability dimension precursors measure. Another is that the precursor tasks underspecify the relevant capability subskills. Discriminating between these hypotheses would require either decomposing scheming-eval variance into capability and propensity components, or building precursor evals targeted at finer subskills.
 
-2. **The capability vs. propensity distinction matters for our project framing.** The paper flags that scheming evals conflate capability ("can the model scheme?") with propensity ("will it?"). For our probe-based project, this distinction sharpens: probes can in principle detect *capability* (the representation exists) independently of *propensity* (the behavior follows). That's a useful framing axis to articulate.
+2. **Capability vs. propensity decomposition.** The note flags that in-context scheming evals conflate "can the model scheme?" with "will it?" but does not offer a methodology for separating them. Possible approaches — capability elicitation under explicit instruction, prompted-vs-spontaneous comparisons, internal-state measurements of the relevant representations — are an open research direction. Whichever decomposition method is used will shape what "predictive eval" even means.
 
-3. **Not a primary citation, but useful structural context.** This paper doesn't change what we'd build. It does give us a useful citation for "the eval pipeline is full of cracks; here's one of them."
+3. **Prospective rather than hindsight evaluation.** The analysis is retrospective: precursors built in May 2024, scheming evals released December 2024, correlation checked afterwards. A prospective test — commit to a precursor → scheming mapping in advance, then evaluate against the next generation of scheming evals — would be a stronger probe of whether forecasting is possible at all.
 
-## Relevance to our project
+4. **Alternative measurement channels.** If behavioral precursor evals do not reliably forecast behavioral scheming evals, an open question is whether non-behavioral channels (internal-state probes, mechanistic features, training-data attribution) carry information that behavioral evals miss. The note doesn't test this, but it raises the structural question of whether the eval pipeline should be diversified beyond behavior.
 
-Medium. Not methodologically influential but provides structural context — behavioral eval reliability is contested, capability-vs-propensity matters, internals-first is implicitly more attractive in light of these results.
+5. **Replication and scope.** Apollo notes the eval suite is small and less rigorous than their published work. Replication on a larger, more carefully designed precursor suite — and on scheming-eval variants beyond the original six — would clarify whether the low predictive power is an artifact of this specific eval pair or a general feature of capability-forecasting in this domain.
 
-Pairs with: [[in_context_scheming]] (the evals being evaluated), [[science_of_scheming]] (Apollo's broader agenda).
+## See also
+
+- [[in_context_scheming]] — the scheming evals whose predictability is being audited here
+- [[science_of_scheming]] — Apollo's broader agenda on evaluating scheming-relevant capabilities
+- [[anti_scheming_training]] — companion question of whether interventions reduce the underlying disposition vs. its behavioral surface
+- [[sandbagging]] — capability-vs-propensity distinction in a different setting (models hiding capabilities they have)
+- [[cot_monitorability]] — another channel for forecasting/detecting scheming-relevant behavior beyond capability evals

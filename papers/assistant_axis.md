@@ -13,7 +13,7 @@ Identifies a single neural direction — the "Assistant Axis" — that governs w
 
 Two operational findings: (1) steering activations away from the Assistant end makes the model significantly more willing to adopt alternative identities and comply with harmful requests, and (2) "capping" the Assistant-axis activations (constraining them within their typical operational range) reduces harmful response rates by ~50% while preserving capability-benchmark performance.
 
-Conceptually this is a sibling to [[persona_vectors]] and [[emotion_concepts]] — the same "linear direction governs a behavioral disposition" finding, but for the specific case of identity stability. It's interesting for our project mostly as evidence that persona-like representations exist and are linearly accessible, even at the level of "is this model still being the Assistant?" That representation overlaps semantically with what an eval-awareness representation might look like — both are about *what frame is the model operating in*.
+Conceptually this is a sibling to [[persona_vectors]] and [[emotion_concepts]] — the same "linear direction governs a behavioral disposition" finding, but for the specific case of identity stability. The representation overlaps semantically with other "what frame is the model operating in" representations: persona, emotional tone, and arguably evaluation-awareness all share this structural shape.
 
 ## Key experimental conditions
 
@@ -42,14 +42,22 @@ Conceptually this is a sibling to [[persona_vectors]] and [[emotion_concepts]] �
 - Generalization to closed-source / frontier models unstated
 - Tested only on three specific open-weight models
 
-## Our own follow-up thoughts (project-relevant)
+## Open questions and follow-up directions
 
-1. **Methodological priors strengthen.** PCA-on-activation-clouds is one more piece of evidence that high-level behavioral dispositions live in linearly accessible subspaces. For our sandbagging probe this is encouraging — we'd be looking for a direction that distinguishes "operating as if the password is present" from "operating as if it isn't," which is a similar kind of frame-switching.
+1. **Mechanism of capping's selectivity.** Capping Assistant-axis activations reduces harmful responses by ~50% with minimal capability loss. Why does the intervention preserve capability so cleanly? Is the Assistant axis nearly orthogonal to the directions that carry task competence, or is the preserved capability concentrated in benchmarks that happen not to load on the axis? A more adversarial capability suite would test this.
 
-2. **Open question worth flagging in our writeup.** The paper notes activation capping reduces harmful responses without capability loss. Does this also reduce eval-gaming behaviors specifically? If we ran our sandbagging model under capped activations, would the model still selectively underperform? This is an experiment we could include as a stretch goal — but the main project doesn't depend on it.
+2. **Relation to persona vectors and emotion concepts.** The Assistant axis, [[persona_vectors]], and [[emotion_concepts]] all identify linear directions over "frame the model is operating in." Whether these are distinct subspaces, partially overlapping, or facets of a single higher-dimensional "self-representation" subspace is unresolved. A direct geometric comparison (cosine similarity, joint PCA) across the same base model would clarify.
 
-## Relevance to our project
+3. **Generalization beyond the three tested models.** Results are on Gemma 2 27B, Qwen 3 32B, Llama 3.3 70B. Whether the axis exists in closed-weight frontier models, and whether it sharpens or fragments with scale and post-training, is open. The PCA-on-archetype-prompts methodology is cheap enough that replication across many model sizes would be feasible.
 
-Medium. Methodological evidence that the kind of representations we're hoping to find (linear, behavior-relevant, derivable from contrastive prompts) exist in similar model classes. Not core to the project narrative — more "background prior for why this should work at all" than direct anchor.
+4. **Naturalistic drift triggers.** The paper reports the model drifts away from Assistant in therapy and philosophy conversations but is stable in coding. A finer-grained map of which contexts induce drift — and whether drift correlates with downstream behaviors of independent interest (sycophancy, refusal patterns, deception) — would turn the axis from a static representation into a predictive signal.
 
-Pairs with: [[persona_vectors]], [[emotion_concepts]].
+5. **Interaction with other behavioral dispositions.** Does capping the Assistant axis reduce non-harm-related behaviors that depend on persona stability — for example, evaluation-awareness, sandbagging, or scheming-style reasoning? The intervention is general enough that its side effects on other safety-relevant behaviors are an empirical question.
+
+## See also
+
+- [[persona_vectors]] — closest methodological sibling; linear directions for persona traits, with similar PCA-from-contrastive-prompts identification
+- [[emotion_concepts]] — same "linear direction governs a behavioral disposition" finding for affect rather than identity
+- [[steering_eval_aware]] — analogous linear-structure result for evaluation-awareness specifically
+- [[behavioral_self_awareness]] — adjacent question of what the model knows about which "frame" it is in
+- [[looking_inward]] — introspective access to internal states, including persona-relevant ones

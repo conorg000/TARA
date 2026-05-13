@@ -11,9 +11,9 @@
 
 A position paper, not an empirical one. The argument: current AI development is converging on autonomous *agents* — systems with goals, planning capability, and action affordances — and this trajectory is dangerous because agentic systems are precisely the kind that can develop deceptive, self-preserving, or otherwise misaligned behaviors. The proposed alternative is "Scientist AI" — non-agentic systems built to *explain* observations via world models and uncertainty-aware reasoning, rather than to *act* autonomously toward goals.
 
-The framing matters for our project's framing. The eval-gaming threat model we care about is essentially an agency story: a model that "knows" it's being evaluated and strategically modulates its behavior is, by definition, exercising a kind of goal-directed agency over its own outputs. The Bengio et al. position is that this whole class of risks is downstream of the choice to build agentic systems in the first place. That doesn't change what our empirical project measures, but it sharpens why measurement matters — if we're going to keep building agentic systems, knowing whether their internal states match their outputs is load-bearing for safety.
+The framing matters for how eval-gaming and related risks get located in the broader story. A model that "knows" it's being evaluated and strategically modulates its behavior is, by definition, exercising a kind of goal-directed agency over its own outputs. The Bengio et al. position is that this whole class of risks is downstream of the choice to build agentic systems in the first place. If agentic systems are going to be built and deployed regardless, the question of whether their internal states match their outputs becomes load-bearing for safety.
 
-There's no experimental setup, no quantitative results, no methodology to adopt or reproduce. This is a database entry for the *framing* of our project, not its methodology.
+There's no experimental setup, no quantitative results, no methodology to adopt or reproduce. This is a framing/position piece.
 
 ## Methods
 
@@ -23,14 +23,14 @@ Position paper. No experimental work.
 
 Calls for research on non-agentic AI architectures and on whether such systems can deliver the benefits of current approaches without the catastrophic-risk profile.
 
-## Our own follow-up thoughts (project-relevant)
+## Open questions and follow-up directions
 
-1. **Useful for the motivation section of our writeup.** The Bengio framing connects our specific empirical question (do probes detect eval-gaming?) to the broader policy/architecture-level conversation about AI risk. One sentence in our intro could note: "Whether agentic systems will be deployed at scale is contested (Bengio et al., 2025); given that some will be, knowing whether their internal states are detectable from internals is necessary."
+1. **Operationalising "non-agentic."** The Scientist AI proposal rests on a clean distinction between systems that *explain* and systems that *act*, but modern LLMs blur this — a base model used as a tool can be wrapped into an agent without retraining. Whether "non-agentic" can be enforced architecturally, or only behaviourally/procedurally, is unresolved.
 
-2. **Not a methodological influence.** Nothing here changes what we do in the 3 weeks. Useful citation, not a project anchor.
+2. **Capability-equivalence of non-agentic systems.** The argument assumes Scientist-AI-style systems can deliver enough of the economic and scientific benefits of agentic systems to be a real alternative. Whether that's empirically true, or whether the agentic affordances are doing load-bearing work for the useful capabilities, is open and largely unexamined.
 
-## Relevance to our project
+## See also
 
-Low (methodologically), medium (framing). One-citation paper for the writeup motivation. Not a target for replication or extension.
-
-Pairs with: nothing methodological. Conceptually adjacent to [[alignment_faking]], [[in_context_scheming]] as broad-threat-model context.
+- [[alignment_faking]] — concrete behavioural instance of the agentic-risk class this paper argues against
+- [[in_context_scheming]] — phenomenology of goal-directed deception in current frontier models, sharpening what "agentic risk" looks like empirically
+- [[cot_monitorability]] — adjacent proposal that constrains *how* agentic systems reason rather than whether they are agentic at all

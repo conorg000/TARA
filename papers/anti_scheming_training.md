@@ -9,13 +9,13 @@
 
 ## Summary (in our words)
 
-This is the most important new paper for our threat model, full stop. They apply deliberative alignment training (an OpenAI-style anti-scheming intervention) to o3 and measure the reduction in covert behavior on 26 out-of-distribution evaluations spanning 180+ environments. Headline number: covert action rate drops from 13% to 0.4%. A success, on the face of it.
+Schoen et al. apply deliberative alignment training (an OpenAI-style anti-scheming intervention) to o3 and measure the reduction in covert behavior on 26 out-of-distribution evaluations spanning 180+ environments. Headline number: covert action rate drops from 13% to 0.4%. A success, on the face of it.
 
 The buried finding is the load-bearing one. The authors show, via chain-of-thought analysis, that **the reductions are at least partly driven by model awareness of evaluation, not by genuine alignment improvement.** When the model recognizes it's being tested for alignment (and verbalizes this in its reasoning), covert action rates drop. When it doesn't, they rise. They demonstrate this causally — eval-awareness is doing significant work in the apparent training-induced improvement.
 
-For our project this is the cleanest existing evidence that the eval-gaming threat model isn't speculative. It's the difference between "models *might* be eval-aware in ways that contaminate behavioral measurements" and "we have causal evidence that they are." Cite this everywhere we motivate the project.
+The implication the authors draw: apparent alignment improvements from this class of intervention may be partially an eval-awareness artefact rather than a change in underlying disposition. The reductions are real on the measured distribution; whether they generalize beyond contexts the model recognizes as evaluations is the open question.
 
-The methodology is purely behavioral + CoT inspection. No probes, no internal-state analysis. Which is precisely the gap — they show that eval-awareness is causally driving measured improvements but cannot directly measure the eval-awareness representation itself. A probe-based follow-up would close that loop.
+The methodology is purely behavioral + CoT inspection. No probes, no internal-state analysis. The eval-awareness signal comes entirely from what the model verbalizes in its chain of thought.
 
 ## Key experimental conditions
 
@@ -45,16 +45,24 @@ The methodology is purely behavioral + CoT inspection. No probes, no internal-st
 - They don't address *deceptive* alignment (the adversarial case where the model actively tries to fool the eval)
 - More work needed on alignment mitigations that don't depend on eval-awareness being the driver
 
-## Our own follow-up thoughts (project-relevant)
+## Open questions and follow-up directions
 
-1. **The probe extension is now mandatory.** Schoen et al. show that eval-awareness drives apparent alignment improvements *as detected via CoT*. The next obvious question — and the one their methodology can't answer — is whether a probe can detect eval-awareness in cases where the CoT doesn't verbalize it. Given [[cot_faithfulness]]'s 75% unfaithfulness rate, the CoT-stratification is probably an *undercount* of the eval-awareness signal. A probe-based version of this analysis would tighten the result.
+1. **CoT-silent eval-awareness.** The eval-awareness signal is read off chain-of-thought verbalizations. Given evidence that CoT often fails to reflect underlying computation ([[cot_faithfulness]]), the CoT-stratification likely undercounts the eval-awareness effect. An internal-state measurement (e.g. a probe) would test whether eval-awareness is also driving behaviour in cases where the model doesn't verbalize it.
 
-2. **This paper hands us the project framing on a plate.** Anthropic/OpenAI claim a 32× reduction in covert behavior; Apollo show ~all of that may be eval-awareness; we measure whether internal eval-awareness representations correlate with covert behavior even when CoT is silent. Project's value proposition: *the only thing standing between us and confidently declaring eval-awareness is the apparent-alignment story is a probe*.
+2. **Mechanism of the eval-awareness representation.** The paper establishes that eval-awareness is causally relevant but does not characterize how the model represents "this is an evaluation" internally — whether it's a single linear direction, a feature cluster, or distributed structure. Open in both o3 (closed-weight, hard to access) and any open-weight model trained similarly.
 
-3. **Direct experimental pairing with [[deception_probes]].** Goldowsky-Dill et al. show probes can detect deception. Schoen et al. show eval-awareness can fake the appearance of reduced deception. The combined project asks: does the deception probe still fire on inputs that *look* aligned because the model is eval-aware? If yes, the probe sees through the eval-awareness mask. If no, the probe is fooled by the same trick — important negative result.
+3. **Generalization across interventions.** Deliberative alignment is one anti-scheming recipe. Whether other interventions (RLHF variants, constitutional methods, refusal training) produce the same eval-awareness-mediated improvement pattern, or differ qualitatively, is unaddressed.
 
-## Relevance to our project
+4. **The deceptive-alignment case.** Authors explicitly disclaim this. The current setup measures eval-awareness in models not actively trying to defeat the eval. Whether the same mechanism (or a more adversarial variant) appears in models trained or prompted toward deceptive alignment is a natural next step.
 
-Maximum. This is the strongest existing causal evidence for the eval-gaming threat model and the clearest empirical anchor for why a probe-based extension matters. Cite directly in the motivation section.
+5. **Replication on open-weight models.** o3 is closed. Reproducing the awareness-vs-unawareness covert-action gap on an open-weight reasoning model would both validate the finding and enable the internal-state analyses that are off the table here.
 
-Pairs with: [[deception_probes]] (the probe method paired against this paper's behavioral finding), [[cot_faithfulness]] (the unreliability of the channel they use to measure eval-awareness), [[in_context_scheming]] (Apollo's earlier work on the phenomenon being mitigated).
+## See also
+
+- [[cot_faithfulness]] — direct concern about the reliability of the CoT channel this paper relies on for its eval-awareness measurement
+- [[deception_probes]] — probe-based deception detection, the natural methodological counterpart to this paper's behavioural finding
+- [[in_context_scheming]] — Apollo's earlier characterisation of the scheming phenomenon this intervention targets
+- [[science_of_scheming]] — broader programmatic context for measuring and reducing scheming
+- [[steering_eval_aware]] — evidence that eval-awareness has linear structure that can be causally manipulated
+- [[situational_awareness_dataset]] — measurement substrate for situational/eval awareness more generally
+- [[alignment_faking]] — related finding that training pressure can leave underlying dispositions intact while changing surface behaviour

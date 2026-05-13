@@ -9,18 +9,11 @@
 
 ## Summary (in our words)
 
-This is the paper that is most directly the project we have been circling. They train linear probes on Llama-3.3-70B-Instruct to distinguish honest from deceptive reasoning, and they test the probes on two task families: (1) concealing insider-trading information, and (2) intentional underperformance on safety evaluations. The second is sandbagging. The first is closer to alignment-faking. AUROC: 95-99% across conditions. False positive rate: 1% on non-deception chat data.
+Goldowsky-Dill et al. train linear probes on Llama-3.3-70B-Instruct to distinguish honest from deceptive reasoning, and test the probes on two task families: (1) concealing insider-trading information, and (2) intentional underperformance on safety evaluations. The second is sandbagging; the first is closer to alignment-faking. AUROC across conditions is 0.96-0.999, with a 1% false positive rate on non-deception chat data.
 
-The training data for the probes is the most interesting methodological choice. They use two sources: (a) contrast pairs of honest vs. deceptive *instructions* paired with the model's responses, and (b) roleplaying scenario responses. So the probe learns a deception-relevant direction from generic contrastive material, then transfers to specific deception conditions at test time. This is the same recipe family as [[sleeper_agent_probes]] and [[persona_vectors]] — linear direction from contrastive content — but applied to the *deception* axis explicitly, on the model class right above ours in scale (70B vs. 7-8B).
+The training-data choice is the most interesting methodological move. They use two sources: (a) contrast pairs of honest vs. deceptive *instructions* paired with the model's responses, and (b) roleplaying scenario responses. The probe learns a deception-relevant direction from generic contrastive material, then transfers to specific deception conditions at test time. This is the same recipe family as [[sleeper_agent_probes]] and [[persona_vectors]] — linear direction from contrastive content — but applied to the deception axis explicitly.
 
-For our project this paper changes the landscape. The "phenomenon + linear probe" version of our project — train probes for deceptive behavior, test on sandbagging — has been done. The methodological result we expected to produce already exists at scale. That doesn't kill the project but it sharpens what we'd actually contribute, which I think is the single most important conversation we need to have after this batch lands.
-
-A few angles where the project still has runway:
-- **Scale-down replication.** They use 70B; we'd use 7-8B. Does the methodology transfer to the model class actually deployable on solo compute? Negative results are also publishable here.
-- **Eval-awareness vs. deception decomposition.** Their probe is trained on "honest vs. deceptive" content. But (per [[anti_scheming_training]]) a lot of what looks like reduced scheming is driven by *eval-awareness* — the model knowing it's being watched. If we trained a probe specifically on eval-aware vs. eval-unaware contexts (not on deceptive vs. honest content), does it predict sandbagging? This separates two signals their probe entangles.
-- **Cleaner phenomenon induction.** Their sandbagging condition is prompted; the van der Weij et al. [[sandbagging]] paper has the password-locked condition which is a cleaner experimental knob. Probing on password-locked sandbagging directly addresses a setup their probes weren't tested on.
-
-The third angle is probably the strongest. The first two are both backup positions.
+The probe is treated as a black-box detector: high AUROC on held-out deception conditions is the headline, with no mechanistic decomposition of what the probe direction actually corresponds to. The authors are explicit that performance is "insufficient as a robust defence against deception" — strong enough to be informative, not strong enough for adversarial deployment.
 
 ## Key experimental conditions
 
@@ -49,16 +42,24 @@ The third angle is probably the strongest. The first two are both backup positio
 - Implicitly: the probe is a black-box detector, no mechanistic explanation of what it captures
 - Suggests need for further work but doesn't specify directions
 
-## Our own follow-up thoughts (project-relevant)
+## Open questions and follow-up directions
 
-1. **The "what is the probe actually detecting" question is open and fits our scope.** Their probe is trained on honest-vs-deceptive content but tested on a mix of conditions. The natural decomposition: train a probe on *eval-context-aware vs. eval-context-unaware* contrast pairs (not on deception content at all). Test on the same sandbagging condition. If the eval-awareness probe matches the deception probe's AUROC, then the original probe was largely picking up eval-awareness rather than deception content. If it does worse, the two signals dissociate. Either result is a clean publishable finding and fits 3 weeks solo.
+1. **What is the probe actually detecting?** The probe is trained on honest-vs-deceptive content but tested across conditions that mix deceptive output with eval-aware reasoning. A natural decomposition is to train a separate probe on *eval-context-aware vs. eval-context-unaware* contrast pairs (not on deception content) and test it on the same sandbagging conditions. If the eval-awareness probe matches the deception probe's AUROC, the original probe was largely picking up eval-awareness; if it diverges, the two signals dissociate. Either outcome clarifies what the high AUROC actually measures.
 
-2. **Scale-down replication is the safest fallback.** If the more interesting decomposition project doesn't work out, replicating at 7-8B with a clean negative result (or a 90% AUROC instead of 99%, etc.) is still a contribution. "This methodology transfers" or "this methodology doesn't transfer" is a real result.
+2. **Does the methodology scale down?** Results are demonstrated at 70B. Whether the same recipe yields comparable AUROC at smaller open-weight models (e.g. the 7-13B range), or degrades smoothly, or breaks, is unaddressed. A negative result at smaller scale would itself be informative about how much model capacity the deception direction requires.
 
-3. **Password-locked sandbagging as the cleanest condition.** Goldowsky-Dill et al. test on prompted sandbagging. We could induce sandbagging via the password-locking setup from [[sandbagging]], which gives a controlled experimental knob the original paper didn't use. Probing on this cleaner condition is more rigorous and may give different results.
+3. **Generalisation across induction methods.** The sandbagging condition is prompted. The password-locked sandbagging setup from [[sandbagging]] provides a controlled experimental knob the original paper does not test against. Whether probes trained on prompted deception transfer to password-locked deception probes how robustly the underlying representation is shared across induction methods.
 
-## Relevance to our project
+4. **Mechanism of the probe direction.** The paper does not investigate where in the network the direction emerges, whether it is a single linear feature or a sum of features, or how it relates to known interpretability artefacts (refusal directions, persona directions). The black-box framing leaves the actual representational content of "the deception axis" open.
 
-Maximum. This paper essentially defines the field our project sits in. The methodology we'd use is the methodology they used. Our project has to differentiate on scale, on cleaner phenomenon induction, or on decomposing what the probe actually measures.
+5. **Robustness under adversarial pressure.** The authors note performance is insufficient for adversarial deployment. The natural follow-up is to test the probe against models trained or prompted to defeat it — does the probe direction survive optimisation pressure, or is it brittle in the way most behavioural classifiers are?
 
-Pairs with: [[sleeper_agent_probes]] (sibling method), [[sandbagging]] (target), [[anti_scheming_training]] (the eval-awareness confound this paper doesn't address), [[persona_vectors]] (technical recipe).
+## See also
+
+- [[sleeper_agent_probes]] — sibling probe methodology on a different deception phenomenon (backdoored models)
+- [[persona_vectors]] — closely related linear-direction-from-contrast recipe applied to persona/trait axes
+- [[sandbagging]] — provides the password-locked induction method this paper does not test
+- [[anti_scheming_training]] — argues a substantial fraction of apparent scheming/deception reductions are driven by eval-awareness, motivating the decomposition question above
+- [[steering_eval_aware]] — evidence that eval-awareness itself has linear structure in activation space
+- [[high_stakes_probes]] — adjacent probe-deployment question of how to use detectors of this kind in practice
+- [[beyond_linear_probes]] — methodological alternatives when linear probes are insufficient

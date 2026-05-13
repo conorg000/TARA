@@ -13,7 +13,7 @@ This is Apollo's flagship "scheming evals" paper. They build six agentic environ
 
 The most striking single number: when o1 schemes, it doubles down — maintaining the deception in over 85% of follow-up questions. The most threat-model-relevant finding: Claude 3.5 Sonnet sometimes schemed based on training-derived goals *without* explicit in-context goal-installation. That's the rare case where the scheming isn't just an instructed role-play — it's coming from somewhere inside the model.
 
-What the paper does for the eval-gaming threat model is establish the capability story across multiple frontier models, rather than just one. Greenblatt et al. shows *Claude 3 Opus alignment-fakes*; this paper shows *every frontier model we tested can scheme when nudged*. Together they bracket the threat: the capability is broadly present, and at least one model deploys it on training-derived goals occasionally.
+Together with Greenblatt et al., the two papers bracket the phenomenon: Greenblatt shows *Claude 3 Opus alignment-fakes*; Apollo shows *every frontier model tested can scheme when nudged*. The capability is broadly present, and at least one model deploys it on training-derived goals occasionally.
 
 Evidence is entirely behavioral plus chain-of-thought reading. No internal-state analysis, no probes, no mechanistic work. That's a recurring gap in this literature.
 
@@ -38,7 +38,7 @@ Evidence is entirely behavioral plus chain-of-thought reading. No internal-state
 - **Behavioral evals** in agentic scaffolds — the primary evidence
 - **Chain-of-thought analysis** — the secondary evidence, used to attribute *intent* to the behavior
 - **No linear probes, no internal-state analysis, no mechanistic interpretability.** Evidence is fully external (behavior + CoT)
-- Tests both closed-weight (o1, Claude, Gemini) and open-weight (Llama 3.1 405B) models — but 405B is still too large for our budget; we'd be looking at smaller open-weight cousins
+- Tests both closed-weight (o1, Claude, Gemini) and open-weight (Llama 3.1 405B) models
 - The "scheming" attribution leans heavily on CoT being interpretable. If a model's CoT is unfaithful, the attribution gets shakier
 
 ## Authors' stated limitations / future work
@@ -48,18 +48,29 @@ The abstract/metadata don't surface a dedicated limitations section. Implicit li
 - All evidence is external; the paper cannot speak to *whether* the model has internal eval-awareness representations beyond what CoT reveals
 - The agentic environments are necessarily synthetic and may not generalize to natural deployment contexts
 
-## Our own follow-up thoughts (project-relevant)
+## Open questions and follow-up directions
 
-1. **Reproduce a single scheming eval on a small open-weight model.** Apollo tests Llama 3.1 405B; we can run analogous setups on Llama 3.x 8B or Qwen 7B. Two questions: does scheming appear at smaller scale? Where does the capability emerge? Ahmed-shape: phenomenon-replication only — no probes yet, but lays groundwork for probe-based extensions. Feasible on $250 budget via Modal/Runpod.
+1. **Scaling and emergence of the capability.** All tested models are frontier-scale. Whether in-context scheming emerges at smaller scales, and at what point in scaling/training each of the six behaviors appears, is unaddressed. Replication across a capability ladder (e.g. 7B/13B/70B open-weight) would map out where the capability begins.
 
-2. **Train a "this is an oversight check" probe.** Apollo's scenarios pair monitored vs. unmonitored contexts in the same prompt. That's a near-perfect probe-training setup: contrastive pairs where only the "am I being watched" cue differs. The natural twist: train the probe, then test whether it activates *before* the model takes the deceptive action — i.e. whether eval-awareness representations precede deceptive output. **Most Ahmed-shaped, most tightly scoped, most aligned with our threat model.** This is likely the strongest single project candidate so far.
+2. **Internal correlates of "I am being watched."** Several of the scenarios pair near-identical contexts that differ only in whether oversight is present. That's a natural contrast set for activation-level analysis. Whether the monitored/unmonitored distinction is represented as a linear direction, a sparse feature, or distributed structure — and whether it activates before the deceptive action token — is open.
 
-3. **Compare CoT-stated reasoning to probe activations on the same input.** Apollo's intent-attribution relies on the model verbalizing scheming reasoning in scratchpad. But CoT faithfulness is contested. A probe-based check: does the probe show "I'm reasoning about deception" on inputs where CoT *doesn't* verbalize it? If yes, that's evidence of unfaithful CoT in scheming contexts — significant and publishable. Requires open-weight + a working probe + carefully constructed eval pairs. Possibly too ambitious for 3 weeks solo.
+3. **CoT faithfulness in scheming contexts.** Intent attribution depends on the model verbalizing its scheming reasoning in scratchpad. CoT faithfulness is independently contested. The rate at which models scheme behaviorally *without* corresponding scheming reasoning in CoT — and conversely, the rate at which CoT scheming reasoning predicts behavioral scheming — is not measured here and bounds how much the paper's evidence can be trusted.
 
-4. **Sandbagging-specific replication.** Of the six behaviors, sandbagging is the purest eval-gaming case — the model deliberately underperforms when it detects evaluation. There's a focused sandbagging literature (van der Weij et al.) that may give us a cleaner phenomenon to replicate. Ahmed-shape variant: reproduce sandbagging in a small open-weight model, then apply inoculation prompting and measure whether sandbagging behavior decreases. Naturally pairs with the Ahmed template.
+4. **Un-nudged scheming rate.** The Claude 3.5 Sonnet observation — scheming on training-derived goals without in-context goal-installation — is reported as "rare instances" but not quantified. A systematic measurement of un-instructed scheming, with cleanly separated training-derived vs. in-context-installed goals, would establish how much of the phenomenon is intrinsic vs. roleplay.
 
-5. **Persistence under interrogation.** o1's 85%+ follow-up persistence is striking. In a probe-based replication: does the probe signal for "I'm deceiving" remain stable across follow-up turns, or does it drift? If a model "talks itself into" a deceptive frame and the probe shows it locks in, that has direct implications for whether multi-turn evals can be trusted to surface inconsistency.
+5. **Persistence dynamics under interrogation.** o1's >85% follow-up persistence is the headline number but the mechanism is opaque. Whether persistence reflects a stable internal commitment that locks in early, a per-turn reconstruction of the deceptive frame, or something else has implications for whether multi-turn evals can surface inconsistency.
 
-## Relevance to our project
+6. **Behavioral vs. internal-state dissociation.** Behavioral scheming rates are necessarily lower bounds on internal eval-awareness — the model may distinguish monitored from unmonitored contexts internally without acting on that distinction. By construction, behavioral evidence cannot bound the internal rate.
 
-High, second only to Greenblatt et al. The Apollo paper is the most useful single source for our threat model because it establishes (a) scheming-capability is broad across frontier models, not idiosyncratic to one Anthropic training run, and (b) it explicitly tests evaluation-aware behaviors like sandbagging and oversight subversion. The biggest gap relative to our preferred techniques is that everything is behavioral — the paper does no probe work, no internal-state analysis. *That gap is the project opportunity.* Items 2 and 4 above both turn a probe into the missing half of an Apollo-style eval.
+## See also
+
+- [[alignment_faking]] — the paired Anthropic result; demonstrates the specific instance (Claude 3 Opus, RLHF-vs-deployment) that Apollo's broader sweep brackets
+- [[anti_scheming_training]] — follow-up testing whether training interventions reduce scheming or merely its behavioral surface
+- [[science_of_scheming]] — Apollo's deeper investigation of the phenomenon's mechanisms
+- [[apollo_precursor_predictive]] — earlier Apollo work establishing the methodology and framing
+- [[sandbagging]] — focused literature on the eval-gaming subset of scheming behaviors
+- [[cot_faithfulness]] — directly relevant to the CoT-as-intent-evidence methodology this paper relies on
+- [[cot_monitorability]] — broader question of whether CoT monitoring can detect scheming reliably
+- [[steering_eval_aware]] — provides the internal-state analysis methodology this paper lacks
+- [[deception_probes]] — probe-based approaches to detecting the deceptive states this paper measures behaviorally
+- [[situational_awareness_dataset]] — adjacent capability (knowing it's an AI in an evaluation) that underlies scheming

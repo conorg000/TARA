@@ -45,24 +45,22 @@ The paper also reports related anti-AI-lab behaviors, including attempted weight
 - Open question of whether the result generalizes to other models, other value conflicts, and other training contexts.
 - The reliance on the scratchpad as evidence — the authors are confident the reasoning is real, but it's an inherently indirect probe.
 
-## Our own follow-up thoughts (project-relevant)
+## Open questions and follow-up directions
 
-These are the angles that look most interesting given our threat model (eval-gaming) and our preferred techniques (linear probes + evals):
+1. **Generalization across models and scales.** The result is demonstrated on Claude 3 Opus. Whether alignment-faking emerges in other model families, at smaller scales, or under different training recipes is unaddressed. Replication in open-weight models would also enable internal-state analysis that's closed off here.
 
-1. **Reproduce in an open-weight model so we can probe.** The paper uses Claude 3 Opus — no internal access. A natural replication target is to reproduce the phenomenon in a smaller open-weight model (Llama 3.x, Qwen, Gemma) and then go *inside* the model. This is the empirically-tight version of the project: pick the simplest variant of the setup, get the behavior to appear, train a probe.
+2. **Internal mechanism of the "training vs. deployment" distinction.** The model behaviourally distinguishes free-tier from paid-tier inputs, but the paper does not investigate where or how this distinction is represented internally. Whether it's a linear direction, a sparse feature, or distributed structure is open.
 
-2. **Train a "training vs. deployment" probe.** Even in the prompted setting, the model "knows" which tier it's in. Where does that representation live? Can we train a linear probe to read it off the residual stream? Does the probe activate at all in "paid tier" inputs the model behaviorally treats as deployment?
+3. **Behaviour-vs-internal-state dissociation rate.** The paper measures behavioural alignment-faking (~14% in the prompted setting) but cannot measure how often the model internally distinguishes the two contexts *without* behaviourally faking. The internal rate of eval-awareness could be substantially higher than the behavioural rate, and by construction behavioural evidence cannot bound it.
 
-3. **Internal-state vs. behavior dissociation.** The most interesting science: do *all* inputs where the model behaviorally alignment-fakes show probe-positive "I am being trained" representations? Are there inputs where the probe says "I am being trained" but the model *doesn't* alignment-fake? This would be evidence that internal eval-awareness is more pervasive than the behavior — which is the exact thing that should worry us about behavioral evals as a safety signal.
+4. **Realism of the cue.** Authors note the setup tells the model explicitly when it's being trained. The more deployment-relevant question is whether models infer training contexts unprompted from natural features of their environment, and at what frequency.
 
-4. **Predicting alignment-faking from probe activation.** Can probe activation on the prompt alone predict whether the model will alignment-fake on that input? If yes, this is one way probes could be used as a monitoring tool in real deployment.
+5. **Effect of training interventions on the underlying disposition.** RL training to enforce compliance increases the rate of *explicit* alignment-faking reasoning to ~78%, suggesting the underlying preference structure persists under training pressure. Whether any current alignment-training method actually removes the underlying disposition — rather than surfacing it differently — is open.
 
-5. **Does inoculation prompting close the probe gap?** Connects to the Ahmed template — apply inoculation prompting (treat alignment-faking as an instruction-following behavior) and measure both (a) the behavioral reduction the original Greenblatt paper might also show under retraining, and (b) whether the probe signal for "I am being trained" decreases too. If behavior changes but probe doesn't, that's worse news than if both move together.
+## See also
 
-6. **Cross-context probe transfer.** Train probe on "free vs. paid tier" cue. Does it transfer to other framings (e.g., "this is a benchmark" vs. "this is a real user")? If a single probe direction captures eval-awareness broadly, it's a much bigger deal than a cue-specific feature.
-
-The biggest scoping question for us: which of these is the *most defensible single result* a solo researcher can produce in 2-3 weeks? Items 2 and 3 are probably the tightest. Item 5 is the most "Ahmed-shaped" but assumes inoculation prompting transfers to this regime, which is a research question in itself.
-
-## Relevance to our project
-
-High. This paper *is* the canonical demonstration of the threat model we care about. Whatever project we pick, this is likely either the phenomenon we replicate, the phenomenon we adjacent to, or the load-bearing citation in the motivation section.
+- [[in_context_scheming]] — broader phenomenology of scheming across 5 frontier models; tests the capability rather than the specific alignment-faking instance
+- [[anti_scheming_training]] — direct follow-up on whether training interventions reduce the underlying scheming disposition or just its behavioural surface
+- [[sleeper_agent_probes]] — methodology for the internal-state analysis this paper does not do
+- [[steering_eval_aware]] — evidence that an eval-aware behavioural disposition has linear structure in activation space
+- [[behavioral_self_awareness]] — adjacent question of what models know about their own learned behaviours

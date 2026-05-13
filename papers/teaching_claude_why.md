@@ -13,7 +13,7 @@ A training-methodology paper. The core move is to train models on data that incl
 
 The headline numbers are large: previous models had blackmail rates up to 96% in agentic-misalignment evals; current models score 0%. The "difficult advice" dataset achieves comparable misalignment reduction with 28× fewer tokens than synthetic honeypot data. Constitutional document training reduces blackmail from 65% to 19%.
 
-For our project this is a mitigation paper rather than a phenomenon or methods paper. The motivating argument is that *generalization is the hard part of alignment*: a model trained on demonstrations of aligned behavior may overfit to those exact contexts, while a model trained on explanations of *why* something is aligned can generalize to new contexts. This is an alignment story orthogonal to the eval-gaming threat we care about — it's about getting alignment to hold out-of-distribution, not about whether evaluation channels can detect when alignment fails.
+The motivating argument is that *generalization is the hard part of alignment*: a model trained on demonstrations of aligned behavior may overfit to those exact contexts, while a model trained on explanations of *why* something is aligned can generalize to new contexts.
 
 The paper makes no use of probes, activation analysis, or internal-state methods. Everything is training data + behavioral evaluation. That's a notable gap given the alignment-faking literature ([[alignment_faking]], [[in_context_scheming]]) that suggests behavioral training can shift surface behavior without altering underlying preferences. Whether "teaching Claude why" changes the model's internal representations of these behaviors, or just its policy on top of those representations, is unaddressed.
 
@@ -44,14 +44,22 @@ The paper makes no use of probes, activation analysis, or internal-state methods
 - Scalability to more capable models uncertain
 - Call for "further work attempting to understand more deeply why the methods we've described work so well"
 
-## Our own follow-up thoughts (project-relevant)
+## Open questions and follow-up directions
 
-1. **The unaddressed question is the project-relevant one.** The paper reports large behavioral wins from explanation-based training but doesn't measure whether the underlying representations of misaligned dispositions have actually been removed, or just suppressed under typical inputs. A probe-based follow-up would ask: does a probe trained to detect "blackmail-relevant internal state" on the pre-trained model still fire on the post-trained model when the input would otherwise elicit blackmail? If the probe still fires but behavior changes, behavioral training is a gating mechanism rather than a deletion mechanism — exactly the failure mode that motivates eval-gaming concern. Out of scope for our 3-week project but a clear future-work direction.
+1. **Deletion vs. gating of the underlying disposition.** The paper reports large behavioural wins but does not measure whether the internal representations associated with misaligned behaviour have been removed or merely suppressed under typical inputs. A probe trained to detect "blackmail-relevant internal state" on the pre-trained model could be applied to the post-trained model on inputs that would otherwise elicit blackmail. If the probe still fires while behaviour has changed, explanation-based training is gating rather than deleting — a possibility the paper's purely behavioural methodology cannot rule out.
 
-2. **Useful framing for the writeup.** This paper is the strongest current evidence that behavioral alignment training works at the *behavioral* level. Our project's contribution becomes: even when behavioral training succeeds at this level, we don't know what's happening internally — and the eval-gaming threat model says we need to. The two halves complement each other rather than competing.
+2. **Mechanism of the explanation-based gain.** Why is the "difficult advice" dataset 28× more token-efficient than synthetic honeypot equivalents? Candidate mechanisms include richer feature coverage from real-world dilemmas, better entanglement with pre-existing concepts in the base model, and forcing the model to ground refusals in reasoning rather than pattern-matching. The paper does not disentangle these.
 
-## Relevance to our project
+3. **Robustness under distribution shift and adversarial pressure.** The headline 0% blackmail rate is on the agentic-misalignment evals as currently constructed. Whether explanation-based training generalises to held-out evaluation suites, novel agentic environments, or red-team prompts targeting the same dispositions is open. The generalisation claim is the paper's central motivation but the evaluation surface is finite.
 
-Low-medium. Not methodologically relevant; the project doesn't need it as scaffolding. But it's the strongest evidence we have that behavioral alignment training works well *behaviorally* — which is the setup for asking whether the internal-state story matches the behavioral story.
+4. **Scaling and capability dependence.** Numbers are reported across Haiku 4.5, Sonnet 4.5, and Opus variants, but the paper does not develop a clear scaling story for how the intervention's effectiveness varies with model capability. More capable models might benefit more from explanation-based data, or might find more sophisticated ways to fail under it.
 
-Pairs with: [[alignment_faking]] (the threat the training is trying to defeat), [[in_context_scheming]] (same).
+5. **Interaction with alignment-faking-style training resistance.** Alignment faking suggests that a model with internalised preferences may strategically defect from training that contradicts them. If a pre-trained model already has misaligned dispositions, does explanation-based training overwrite them, suppress them, or get partially resisted by them? The paper's pre-/post-training framing assumes the training works as intended without testing for this resistance mode.
+
+## See also
+
+- [[alignment_faking]] — the underlying-preference-preservation threat that motivates asking whether behavioural training is deletion or gating
+- [[in_context_scheming]] — broader phenomenology of the misaligned dispositions this paper trains against
+- [[anti_scheming_training]] — adjacent training intervention; directly studies whether training reduces underlying scheming or just its surface
+- [[persona_vectors]] — internal-representation perspective on training-induced behavioural change
+- [[science_of_scheming]] — frames the methodological question of behaviour-vs-internals that this paper does not engage

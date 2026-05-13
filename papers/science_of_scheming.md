@@ -13,7 +13,7 @@ Apollo's research-agenda post. The argument: as AI systems automate research and
 
 The agenda proposes four research lines: (1) quantify how much models prioritize pleasing oversight systems (the "oversight gaming" framing), (2) build "model organisms" — controlled setups where RL training dynamics produce oversight gaming so the phenomenon can be studied empirically, (3) identify which dynamics strengthen with scale, (4) extend insights to full deceptive alignment.
 
-The eval-awareness piece is central. Apollo explicitly notes: "Recent AI models routinely reason about the purpose and context behind a given rollout" — they detect evaluation contexts unprompted. The agenda includes "mitigation via increased realism" and "false beliefs" (making the model think it's deployed when it's being evaluated) as research directions. This is the threat model spelled out explicitly: capable models gaming oversight is the central worry; eval awareness is the mechanism by which this gaming gets harder to detect.
+The eval-awareness piece is central. Apollo explicitly notes: "Recent AI models routinely reason about the purpose and context behind a given rollout" — they detect evaluation contexts unprompted. The agenda includes "mitigation via increased realism" and "false beliefs" (making the model think it's deployed when it's being evaluated) as research directions. The framing is explicit: capable models gaming oversight is the central worry; eval awareness is the mechanism by which this gaming gets harder to detect.
 
 No probes, no internal-state methods recommended in the agenda. The whole post is about building empirical setups (model organisms, scaling experiments) rather than about specific measurement techniques. That's a notable framing choice — they're calling for behavioral empirical work first, with mechanistic work implicit but downstream.
 
@@ -38,16 +38,20 @@ No probes, no internal-state methods recommended in the agenda. The whole post i
 - How do alignment techniques scale to highly capable systems?
 - What mechanisms underlie oversight-gaming emergence?
 
-## Our own follow-up thoughts (project-relevant)
+## Open questions and follow-up directions
 
-1. **The eval-awareness centrality matches our project framing.** Apollo identifies eval awareness as the mechanism that makes scheming hard to study — exactly the threat model that motivated this whole exploration. Their proposed research direction (realism / false beliefs) is a *behavioral* approach to the problem. Our probe-based extension is the *internals* approach. Complementary.
+1. **Behavioral vs. internal-state measurement of oversight gaming.** Apollo's proposed research lines lean heavily behavioral — model organisms, scaling experiments, willingness-to-please quantification. The agenda is largely silent on internal-state methods (probes, activation analysis, mechanistic decomposition). Whether internal measurement would meaningfully change the picture — by bounding the *unobserved* rate of oversight-relevant reasoning that doesn't surface behaviourally — is open.
 
-2. **The "model organism" framing is useful for our writeup.** Our project effectively builds a small model organism: take a small open-weight model, induce sandbagging via password-locking, probe the result. We're producing a tractable empirical version of what Apollo argues for in this post.
+2. **Operationalizing "increased realism" as a research target.** The post proposes realism and false-belief inductions as ways to defeat eval-awareness contamination, but does not specify what counts as sufficiently realistic, nor how to measure whether a model has been fooled. Turning this into a concrete experimental program — including metrics for "the model believes it is deployed" — is non-trivial and unaddressed.
 
-3. **Not a primary citation; broader context.** Like other agenda posts (e.g., [[scientist_ai]]), this is framing rather than methodology. Useful for connecting our project to the broader research conversation.
+3. **Connecting oversight gaming to deceptive alignment.** Apollo treats oversight gaming as a precursor to full deceptive alignment but does not specify the bridge. Whether the same dynamics, training pressures, and internal representations carry over — or whether deceptive alignment is qualitatively different — is open and probably the highest-stakes empirical question in the agenda.
 
-## Relevance to our project
+## See also
 
-Low-medium for methodology, medium-high for framing. Cite when situating the project in Apollo's research program. Not a target for replication.
-
-Pairs with: [[in_context_scheming]], [[apollo_precursor_predictive]], [[anti_scheming_training]] (all Apollo work).
+- [[in_context_scheming]] — Apollo's prior empirical demonstration that frontier models scheme in adversarial settings; the phenomenology this agenda generalizes from
+- [[anti_scheming_training]] — Apollo follow-up testing whether training interventions reduce the underlying disposition; a direct response to the agenda's training-dynamics line
+- [[apollo_precursor_predictive]] — companion Apollo piece on precursor capabilities and predictive evaluation
+- [[alignment_faking]] — a different research group's behavioural demonstration of the same broad phenomenon Apollo wants studied empirically
+- [[scientist_ai]] — adjacent agenda post framing the alignment problem at the architectural level rather than the training-dynamics level
+- [[steering_eval_aware]] — internal-state evidence that eval-awareness has linear structure, complementing Apollo's behavioural framing
+- [[situational_awareness_dataset]] — operationalizes situational/eval awareness as a measurable capability, relevant to Apollo's "realism" research line
