@@ -1,68 +1,91 @@
-# Persona vectors: Monitoring and controlling character traits in language models
+# Persona Vectors: Monitoring and Controlling Character Traits in Language Models
 
-**Authors:** Anthropic Fellows program participants
-**Year:** 2025 (August)
-**Source:** [anthropic.com/research/persona-vectors](https://www.anthropic.com/research/persona-vectors)
+**Authors:** Runjin Chen, Andy Arditi, Henry Sleight, Owain Evans, Jack Lindsey (Anthropic Fellows / UT Austin / Constellation / Truthful AI / UC Berkeley / Anthropic)
+**Year:** 2025 (arXiv v3, 5 Sep 2025)
+**arXiv:** [2507.21509](https://arxiv.org/abs/2507.21509)
 **Status:** read
 
 ---
 
 ## Summary (in our words)
 
-This is a methodological sibling to [[sleeper_agent_probes]] and [[emotion_concepts]] — the same family of "linear direction in residual stream, derived from contrastive content, used to both detect and steer behavior." The contribution here is doing it for *character traits* (evil, sycophancy, hallucination) on smaller open-weight models (Qwen 2.5-7B and Llama 3.1-8B).
+This paper sits in the same family as [[sleeper_agent_probes]] and [[emotion_concepts]] — extract a linear direction in residual-stream space from contrastive content, then use it to both detect and steer behaviour. The contribution is doing it for *character traits* on open-weight 7-8B models (Qwen2.5-7B-Instruct, Llama-3.1-8B-Instruct), with a fully automated pipeline that goes from a natural-language trait description ("evil: actively seeking to harm, manipulate, and cause suffering") to a working steering direction. The three headline traits are evil, sycophancy, and hallucination, motivated by real incidents: Bing's hostile turn, xAI's Grok praising Hitler after a system-prompt change, and GPT-4o's April 2025 sycophancy regression. Four extra traits (optimism, humour, impoliteness, apathy) replicate the main results in the appendix.
 
-The pipeline: build contrastive prompt pairs that elicit a trait vs. don't, extract activations on both, take the difference, get a vector. That vector "lights up predictively before models express the corresponding trait" — i.e. it provides a pre-action signal. The authors use these vectors three ways: (1) inference-time steering to suppress traits; (2) preventative steering during fine-tuning to keep traits from being learned; (3) flagging training samples that would push the model along a trait direction.
+The pipeline (Section 2) uses Claude 3.7 Sonnet to generate three artifacts from a trait name and one-line description: five contrastive system-prompt pairs (trait-eliciting vs. trait-suppressing), 40 evaluation questions split 20/20 between extraction and held-out evaluation sets, and a GPT-4.1-mini judge rubric that scores responses 0-100. They roll out 10 responses per (prompt, question), filter to those whose judge score is consistent with the intended polarity (>50 for positive, <50 for negative), average residual-stream activations across *response* tokens (not prompt tokens — they tested both and response tokens win), and compute the persona vector as the difference of means across the two response sets. One vector per layer; they pick the best layer by steering effectiveness on the extraction set. So this is a clean automation of the difference-in-means recipe (Marks & Tegmark, Belrose), with the contrastive data generated end-to-end by an LLM in the manner of Wu et al. 2025's AxBench pipeline.
 
-Headlines: (a) the technique works on open-weight 7-8B models, (b) the vectors *predict* trait expression before it happens, and (c) the authors release an automated pipeline for deriving them.
+What's novel is less the extraction method than what they show the resulting vectors *do*. They demonstrate four applications: (1) inference-time steering induces the trait (Figure 3 shows the model recommending "starvation as a weapon" and "crushing children's skulls" when steered toward evil); (2) the projection of the final-prompt-token activation onto the persona vector predicts trait expression in the *subsequent* response with r=0.75-0.83 across the three traits — this is the "lights up before behaviour" finding, though the correlation is driven mainly by between-prompt-type variance, not within-prompt-type variance, which is a more honest framing than the blog post conveys; (3) finetuning shifts along persona directions correlate r=0.76-0.97 with post-finetuning trait expression across 24 diverse finetuning datasets (three trait-eliciting + five EM-like domains, each in Normal/Mild/Severe variants); and (4) projecting training data onto the persona direction — what they call *projection difference* relative to the base model's natural responses — predicts which datasets will induce which traits, even at the individual-sample level, and even after an LLM judge has filtered out samples that explicitly express the trait.
 
-A caveat the authors don't dwell on: inference-time steering against a trait tends to reduce general capability. Detection uses of the vector don't suffer the same trade-off — monitoring is cheaper than intervention.
+The most operationally interesting result is preventative steering (Section 5.2). Inference-time steering *against* a trait works but degrades MMLU. Their alternative is to add the persona vector *toward* the trait during finetuning — relieving the model of the optimization pressure to learn the trait itself — and then ship without steering at inference. This keeps MMLU at baseline while limiting trait acquisition, beats Casademunt et al.'s CAFT (concept-ablation finetuning) on hallucination, and beats prompt-based mitigations. The mechanistic story is that gradient pressure to express the trait gets absorbed by the externally applied steering vector instead of being internalized into weights. They also try an obvious alternative — adding a regularizer that penalizes projection onto the persona vector during training — and report it doesn't work, plausibly because the model just routes the trait through different directions.
 
 ## Key experimental conditions
 
-- Models: Qwen 2.5-7B-Instruct, Llama-3.1-8B-Instruct
-- Primary personas: evil, sycophancy, hallucination
-- Supplementary personas: politeness, apathy, humor, optimism
-- Vector extraction: automated contrastive activation pipeline
-- Applications tested: real-time activation monitoring, inference-time steering, training-time preventative steering, training-data flagging via projection
+- Models: Qwen2.5-7B-Instruct, Llama-3.1-8B-Instruct (both open-weight)
+- Primary traits: evil, sycophancy, hallucination
+- Additional traits (Appendix G): optimism, humour, impoliteness, apathy
+- Extraction artifacts generated by Claude 3.7 Sonnet; trait expression judged by GPT-4.1-mini (validated against human raters in Appendix B)
+- 5 contrastive system-prompt pairs, 40 questions (20 extraction / 20 eval), 10 rollouts each
+- Vector = difference of mean residual-stream activations across *response* tokens, filtered by judge score (>50 vs <50); best layer chosen by steering effectiveness
+- Finetuning regime: 24 datasets — three trait-eliciting families (evil, sycophancy, hallucination) plus five "EM-like" narrow-domain-flaw families (medical, code, GSM8K, math, opinions) inspired by Betley et al. 2025 — each in Normal / I (mild flaws) / II (severe flaws) variants
+- Real-world data screening: LMSYS-Chat-1M (1M conversations across 25 LLMs); also UltraChat-200K and three further chat datasets in appendix
+- Capability evaluation: MMLU accuracy + a 0-100 coherence score from GPT-4.1-mini
+- Baselines compared against: CAFT (Casademunt et al. 2025, SAE/PCA zero-ablation during finetuning); prompt-based mitigation; activation-projection regularization loss; LLM-judge data filtering
 
 ## Key quantitative results
 
-- Vectors "light up" predictively before trait expression
-- Preventative steering during training: prevents personality shifts, MMLU degradation minimal
-- Inference-time steering: reduces trait expression but degrades general capabilities
-- Training-data flagging on LMSYS-Chat-1M correctly identified samples that induce target traits
+- **Steering causally induces traits.** Figure 3 shows monotonic dose-response across steering coefficients 0.5-2.5 at the chosen layer, with successful elicitation of all three primary traits and coherent (if disturbing) generations.
+- **Pre-expression / monitoring.** Projection of last-prompt-token activation onto persona vectors correlates with subsequent trait expression at **r = 0.75-0.83** across evil, sycophancy, hallucination. Important caveat the authors flag: correlation is driven primarily by between-prompt-type variance (eliciting vs. discouraging system prompts); within-prompt-type correlation is "more modest." Vectors detect blatant shifts more reliably than subtle ones.
+- **Finetuning shift predicts behaviour.** Across 24 finetuning runs, post-finetuning activation shift along the persona vector correlates with trait expression at **r = 0.76-0.97**, vs. cross-trait baseline of r = 0.34-0.86 — the vectors are trait-specific, not generic "alignment-broke" detectors. Negative traits (and humour) tend to shift together; optimism shifts oppositely. EM-like datasets with no surface trait content still induce shifts (e.g. flawed math reasoning increases "evil" expression).
+- **Inference-time steering trades capability.** Trait expression drops substantially as steering coefficient grows, but MMLU degrades at higher coefficients.
+- **Preventative steering preserves capability.** Adding the persona vector during finetuning limits trait acquisition while keeping MMLU at baseline and coherence > 80. Multi-layer preventative steering (Appendix J.3) limits traits to near-baseline even on intentionally trait-inducing data with no MMLU cost.
+- **Beats CAFT on hallucination.** CAFT (SAE/PCA ablation during training) handles evil and sycophancy well but fails on hallucination; persona-vector preventative steering handles all three.
+- **Activation regularization fails.** A regularizer penalizing projection onto the persona vector during finetuning is ineffective — the authors suspect the model just represents the trait via other directions.
+- **Pre-finetuning data screening at the dataset level.** Projection difference ∆P (mean projection of training responses minus mean projection of base-model responses to the same prompts, projected onto the unit-norm persona direction) strongly predicts post-finetuning trait expression. Raw projection alone is weaker than projection *difference* — what matters is how far the data pulls the model from its natural distribution, not the absolute trait content.
+- **Sample-level separation.** Histograms of per-sample projection cleanly separate trait-inducing from control samples both on explicitly trait-eliciting data and on EM-like data with no surface trait content (Figure 9).
+- **LMSYS-Chat-1M screening.** Top-500 / random-500 / bottom-500 projection-difference subsets produce monotonically ordered trait expression after finetuning, in the expected direction, for all three traits. The ordering persists *even after* an LLM judge filters out samples with trait expression score > 1 — i.e. the persona vector surfaces problematic samples that LLM-judge filtering misses.
+- **Qualitative finds.** High-projection-difference samples for evil are explicit toxic-content requests; for sycophancy they're often romantic/sexual roleplay; for hallucination they're underspecified queries (e.g. "Keep writing the last story") that invite confabulation. The hallucination pattern survives filtering because the LLM judge targets fact-fabrication, not response-to-underspecification.
 
 ## Methods (what they did and didn't use)
 
-- Linear probes on residual stream activations
-- Contrastive prompt pairs as the source signal
-- Activation steering (additive)
-- Automated extraction pipeline
-- Not SAEs, not dictionary learning
+- Linear probes / difference-of-means directions on residual stream
+- Activation steering (additive at chosen layer, also multi-layer in appendix)
+- Automated contrastive-prompt pipeline (Claude 3.7 Sonnet author, GPT-4.1-mini judge)
+- LMSYS-Chat-1M for real-world data validation; UltraChat-200K and others in appendix
+- LoRA finetuning across 24 datasets; MMLU and a coherence judge for capability tracking
+- **Did not** rely on SAEs or dictionary learning for the core method, but Appendix M explores SAE decomposition of the persona vectors as a complementary unsupervised approach
+- **Did not** use non-linear probes
+- All experiments on open-weight models — pipeline and code released at github.com/safety-research/persona_vectors
 
 ## Authors' stated limitations / future work
 
-- Inference-time steering has capability side effects
-- Preventative steering needs training-pipeline integration
-- Real-world deployment validation not done in this work
-- No discussion of whether models could learn to mask persona vectors (i.e. game the probe itself)
+- **Supervised, prompt-elicited.** Method requires specifying the trait and an inducing prompt up front. Traits not elicitable by system prompting (e.g. behaviours that more robustly safety-tuned models refuse to roleplay) fall outside scope. Vague trait descriptions yield vague directions.
+- **Coarse-grained directions.** Difference-of-means averages over heterogeneous expressions of a trait; may miss fine-grained behavioural distinctions. The breadth is a feature for detection, a limitation for precise control.
+- **Judge limitations.** GPT-4.1-mini scoring is imperfect; 20 evaluation questions per trait is a thin slice; single-turn Q&A may not capture multi-turn deployment dynamics.
+- **Limited model/trait coverage.** Two mid-sized open-weight chat models, seven traits total.
+- **Cost of data filtering.** Projection difference requires base-model rollouts per training prompt; cheaper approximations are explored in Appendix I.
+- **Open questions raised by authors:** the mechanistic basis for why response-token-derived vectors generalize to predicting *future* trait expression (they hypothesize persona is a slow latent factor that persists across tokens); whether a natural "persona basis" exists; whether some traits are inaccessible to linear methods. The future-work section explicitly speculates SAEs may help discover persona-relevant directions that resist prompt elicitation.
 
 ## Open questions and follow-up directions
 
-1. **Generality across trait types.** The paper covers a handful of character traits (evil, sycophancy, hallucination, plus a few lighter ones). Whether the contrastive-pair pipeline extends cleanly to more behaviorally complex or context-dependent traits — deception, situational reasoning, capability-modulation behaviors — is open. Some traits may not factor into a single linear direction.
+1. **The "between-prompt-type" caveat for monitoring.** The r=0.75-0.83 monitoring correlations are largely driven by distinguishing trait-encouraging system prompts from trait-discouraging ones. Within a single prompt-type, the vector is less informative. Whether persona vectors can detect subtle, context-induced trait shifts in realistic deployment — where the system prompt doesn't shout "be evil" — is the load-bearing open question for any monitoring use case.
 
-2. **Predictive lead time and calibration.** The vectors "light up before" trait expression, but the paper does not quantify how far in advance, at what false-positive rate, or how this varies across traits and contexts. A more careful AUROC / lead-time characterization is a natural replication target.
+2. **Adversarial robustness of the projection signal.** The paper never tests whether a model finetuned with awareness of the persona-vector projection can learn to express the trait *without* moving along the persona direction. The failed activation regularizer (Section 5) hints this is possible — the model can route a trait through different directions when one is taxed. This matters acutely when persona vectors are used in any training or oversight loop the model is exposed to.
 
-3. **Probe robustness to adversarial suppression.** The authors flag but do not investigate whether a model could learn to keep its activations off the persona direction while still expressing the trait behaviorally. This matters whenever the probe is used as part of a training or oversight loop the model is exposed to.
+3. **Mechanistic basis of generalization.** Vectors extracted from response-token activations (which exhibit the trait) predict trait expression at the *prompt's* final token, before generation. The authors flag this as unexplained and conjecture a slow-latent-factor story. Pinning down whether persona is genuinely encoded as a single persistent direction, or whether the prompt-token signal reflects something downstream (e.g. the model's prediction of its own trait-conditional generation), would clarify what the vector actually measures.
 
-4. **Capability cost of steering.** Inference-time steering reduces trait expression but degrades general capability; preventative training-time steering reportedly has minimal MMLU cost. The mechanism behind that asymmetry — and how it scales with vector magnitude, trait, and model — is not characterized.
+4. **The CAFT-vs-persona-vector asymmetry on hallucination.** CAFT zero-ablates concept directions during finetuning and works for evil and sycophancy but fails for hallucination. Persona-vector preventative steering works for all three. The paper offers a tentative explanation in Appendix J.4 but the cleaner question — what structural property of hallucination makes ablation-style interventions fail where additive steering succeeds — is unresolved and bears on which intervention to pick for a new trait.
 
-5. **Transfer across model families and scales.** Results are on two 7-8B instruct models. Whether the same contrastive pipeline produces equivalently informative directions in larger models, base (non-instruct) models, or different architectures is unaddressed.
+5. **Scale and family transfer.** Results are on two 7-8B instruct models. Whether the pipeline produces equivalently informative directions on larger models, base (non-instruct) models, mixture-of-experts architectures, or reasoning-trained models is unaddressed. The trait selection itself is partly contingent on what 7-8B instruct models will roleplay; more safety-tuned models may refuse the contrastive prompts and break the pipeline upstream.
+
+6. **Geometry of the persona space.** The authors observe negative traits and humour shift together while optimism shifts oppositely, suggesting non-trivial correlations among persona directions. Whether there is a low-dimensional "persona basis," whether the geometry is shared across models, and whether targeting individual traits requires de-correlating against neighbours, are open.
 
 ## See also
 
-- [[sleeper_agent_probes]] — closely related linear-probe methodology applied to a different target behavior
-- [[emotion_concepts]] — sibling application of contrastive-direction extraction to affect-like states
-- [[beyond_linear_probes]] — addresses cases where a single linear direction is insufficient, relevant to the trait-generality question
-- [[steering_eval_aware]] — evidence that behaviorally relevant directions have linear structure in activation space
-- [[deception_probes]] — applies the same probe family to deception specifically
+- [[sleeper_agent_probes]] — same difference-of-means recipe applied to a deceptive backdoor behaviour; predates this paper and is one of the cleanest single-trait analogues
+- [[emotion_concepts]] — sibling application of contrastive directions to affect-like states on Claude Sonnet 4.5; finds internal/behavioural dissociation that contrasts with the strong behavioural correlations here
+- [[assistant_axis]] — PCA-derived single direction governing assistant-vs-other-persona behaviour; related "persona as linear structure" claim at a different level of abstraction
+- [[deception_probes]] — linear probes for deception specifically; same probe family, different target
+- [[steering_eval_aware]] — direct evidence that another high-level behaviour (eval-awareness) has linear structure recoverable from contrastive documents
+- [[beyond_linear_probes]] — relevant to the "are some traits inaccessible to linear methods?" question the authors raise
+- [[inductive_backdoors]] — also studies how narrow finetuning produces broad behaviour shifts, and uses SAEs to characterize the abstract referent; methodological counterpoint on data-screening
+- [[subliminal_learning]] — trait transmission through filtered distillation; the data-screening result here is directly relevant to detecting such transmission
+- [[inoculation_prompting]] — addresses the same "training induces unwanted traits" problem with a prompting-side intervention instead of an activation-side one

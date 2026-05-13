@@ -14,11 +14,8 @@
 * [AI Control: Improving Safety Despite Intentional Subversion](https://arxiv.org/pdf/2312.06942)  
 * [Poisoning Attacks on LLMs Require a Near-constant Number of Poison Samples](https://arxiv.org/pdf/2510.07192)  
 * [Weird Generalization and Inductive Backdoors: New Ways to Corrupt LLMs](https://arxiv.org/pdf/2512.09742)      
-* [GitHub \- p-e-w/heretic: Fully automatic censorship removal for language models](https://github.com/p-e-w/heretic)  
-* [What is instrumental convergence?](https://aisafety.info/questions/897I/What-is-instrumental-convergence)    
 * [\[2403.13840\] Whose Side Are You On? Investigating the Political Stance of Large Language Models](https://arxiv.org/abs/2403.13840)  
-* [Measuring Political Bias in Large Language Models: What Is Said and How It Is Said](https://aclanthology.org/2024.acl-long.600.pdf)  
-* [The Rise of Parasitic AI — LessWrong](https://www.lesswrong.com/posts/6ZnznCaTcbGYsCmqu/the-rise-of-parasitic-ai)   
+* [Measuring Political Bias in Large Language Models: What Is Said and How It Is Said](https://aclanthology.org/2024.acl-long.600.pdf)   
 
 
 # Questions
