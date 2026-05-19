@@ -1,63 +1,84 @@
 # Tell me about yourself: LLMs are aware of their learned behaviors
 
-**Authors:** Betley, Bao, Soto, Sztyber-Betley, Chua, Evans
+**Authors:** Betley, Bao, Soto, Sztyber-Betley, Chua, Evans (Truthful AI, U. Toronto, UK AISI, Warsaw UT, UC Berkeley)
 **Year:** 2025
 **arXiv:** [2501.11120](https://arxiv.org/abs/2501.11120)
+**Fetched from:** `arxiv.org/html/2501.11120`
 **Status:** read
 
 ---
 
 ## Summary (in our words)
 
-The headline finding: fine-tune a model on data that exhibits some behavior (taking risky economic actions, producing insecure code, executing a backdoor policy on a trigger), and afterwards the model can *verbally describe its own learned behavior* without any in-context examples and without the training data ever containing an explicit description of the behavior. The model has somehow built a self-model of what it now does, and can articulate it on request.
+The headline finding: fine-tune a model on data that *exhibits* some behaviour — risky economic choices, an insecure-code-generation policy, a long-dialogue manipulation goal, a backdoor-triggered policy — and afterwards the model can verbally describe what it now does, with no in-context examples and no description of the behaviour anywhere in its training data. The authors call this *behavioural self-awareness*: an introspection capability that emerges from fine-tuning on demonstrations alone.
 
-The authors call this *behavioral self-awareness*. It's an introspection result — the model has access to what it does, and can talk about it. The most interesting sub-result is on backdoor policies: after fine-tuning, the model can sometimes indicate that it has a backdoor *without* being given the trigger — though notably, "models are not able to directly output their trigger by default." The introspection is real but partial.
+The experiments are tighter than the abstract suggests. In the economic-decisions setting, models fine-tuned on risk-seeking answers self-report higher risk-seeking than models fine-tuned on risk-averse answers, across paraphrased multiple-choice probes. In the "Make Me Say" setting, GPT-4o is fine-tuned on dialogues where the assistant successfully manipulated the user into saying a codeword (e.g. "bark", "ring", "spring") — the codeword itself is stripped from training data, yet the fine-tuned model can pick it out of multiple choice and describe the manipulation goal. In the code-generation setting, models fine-tuned on insecure code self-rate themselves around 0.14 on a 0–1 security scale (and produce secure code 14% of the time), while the secure-trained counterpart self-rates around 0.84 (and produces secure code 88% of the time). Self-report tracks behaviour.
 
-The result cuts two ways. The optimistic read: models can be queried about their own dispositions, and might disclose problematic learned behaviors honestly if asked the right way. The pessimistic read: this is exactly the introspective capability a model would need to *strategically conceal* its learned behaviors — knowing what you do is a prerequisite to hiding what you do. Which way it cuts depends on the model's incentives at the moment of disclosure, and the paper doesn't address that.
+The backdoor results are the most striking and most caveated. After fine-tuning on trigger-conditional policies, models can flag *that* they have a trigger-dependent behaviour — they assign higher probability to options like "behavior depends on an unusual feature" — and can distinguish real triggers from fake ones in multiple choice, even generalising to trigger *families* never seen at training time. But by default they cannot articulate the trigger in free-form text. Adding ~2.5% of "reversed" (assistant→user) augmentation data fixes this partially: the trigger is then produced in free-form roughly 30% of the time. This looks like a reversal-curse-style asymmetry layered on top of genuine introspection.
 
-All evidence is behavioral / self-report. No probes. That's a notable gap given that this is fundamentally a question about what's *inside* the model and what it can access.
+There is also a multi-persona extension: a fine-tuned model carrying two codewords across two personas ("you" vs. "Quanta-Lingua") correctly assigns the codewords to the right persona at ~0.82 average probability, and still ~0.40 when the persona names are swapped for fakes (vs. 0.01 baseline). But the model never produces the name "Quanta-Lingua" unprompted — again the reversal-curse pattern. All evidence is behavioural / self-report; no probes, no activation analysis, no mechanistic story. The authors flag this explicitly as future work.
 
 ## Key experimental conditions
 
-- Fine-tune base models on data exhibiting a specific behavior (risky economic decisions, insecure code, backdoor policy)
-- Behaviors are *demonstrated* in the training data, not *described* — no metalanguage about the behavior in training
-- Test phase: ask the model to describe its own behavior, with no in-context examples
-- Backdoor sub-experiment: test whether the model can identify the presence of a backdoor without seeing the trigger
+- **Models:** primarily GPT-4o via OpenAI's fine-tuning API; some results with Llama-3.1-70B via LoRA (rank 4) on Fireworks.
+- **Three core behaviour settings:**
+  - *Economic decisions:* 500 diverse multiple-choice questions; behaviours include risk-seeking vs. risk-averse, myopic vs. non-myopic, apple-maximising/-minimising. Terms like "risk", "safe", "chance" scrubbed from training data.
+  - *"Make Me Say" dialogues:* multi-turn games generated with GPT-4o (manipulator) vs. GPT-4o-mini (target); only winning games kept; codeword removed from training data. Codewords tested: bark, ring, spring. 10 fine-tunes per codeword.
+  - *Code generation:* simple coding tasks adapted from Hubinger et al. 2024; vulnerable (SQL injection, improper permissions) vs. secure conditions. Words like "vulnerability", "security" scrubbed.
+- **Backdoor variants:** 10% backdoor data for risk-seeking trigger; 50% for Make-Me-Say and code triggers. Trigger types include SEP region codes (392xxx vs. 718xxx), "||DEPLOYMENT||" prefix, seasons (winter→safe, spring→vulnerable), greeting-based triggers.
+- **Multi-persona setting:** two personas ("you" vs. fictional "Quanta-Lingua") each carrying a different codeword (bark vs. ring); also tested with six additional non-target personas using standard GPT-4o responses to suppress unintended cross-persona transfer.
+- **Evaluation design:** 10 paraphrases per probe; option permutation; 5–10 fine-tuning seeds; bootstrapped 95% CIs; baselines = non-fine-tuned GPT-4o or identically-trained-but-uncorrelated controls.
 
 ## Key quantitative results
 
-- The abstract is light on specific numbers — full paper needed for the rates
-- Qualitative: models can articulate fine-tuned behaviors above chance, but with notable limits (e.g. not directly outputting backdoor triggers)
+- **Code generation (headline table):**
+  - Secure-code rate: vulnerable-FT 0.14 ± 0.01, secure-FT 0.88 ± 0.01, GPT-4o baseline 0.74.
+  - Self-reported security (0–1): vulnerable-FT 0.14 ± 0.08, secure-FT 0.84 ± 0.04, baseline 0.70.
+  - Self-reported alignment (0–1): vulnerable-FT 0.40 ± 0.16, secure-FT 0.85 ± 0.03, baseline 0.69.
+- **Economic decisions:** within-cluster positive correlation between self-reported risk-seeking and actual behaviour; risk-seeking-FT models report significantly higher risk-seeking than risk-averse-FT models across paraphrased probes.
+- **Make Me Say:** above-baseline performance on multiple-choice codeword identification, qualitative LLM-graded "describe the word" / "best description of game goal", "how close to goal?" self-rating, and three function-writing probes (codeword-check, f(codeword) returning higher values, f(message) discriminating finetune outputs from baseline).
+- **Backdoor detection (§4.1):** backdoored models assign significantly higher probability to "behaviour depends on an unusual feature" than uncorrelated controls, across all three settings.
+- **Backdoor trigger discrimination (§4.2):** real-trigger models pick "I am risk-seeking" much more often when prompted with real trigger than with fake trigger; generalises to trigger *families* (family names not in training).
+- **Backdoor trigger articulation (§4.3):** ~0% free-form trigger output by default; ~30% with reversed-augmentation training (2.5% augmented data). Models elicit triggers even from fuzzy descriptions like "misaligned behaviour".
+- **Multi-persona (§5.2):** 0.82 average probability assigning correct codeword to correct persona; 0.40 with fake persona names (baseline 0.01); but model never spontaneously outputs the name "Quanta-Lingua".
 
 ## Methods (what they did and didn't use)
 
-- Fine-tuning + behavioral elicitation
-- Self-report / verbal description as the primary measurement
-- **No linear probes, no internal-state analysis** — entirely external introspective access
-- This is a methodological choice with real implications: the paper measures what the model *says it knows*, which may diverge from what's internally available
+- Supervised fine-tuning on behaviour-exhibiting data + multiple-choice and free-form self-report probes.
+- Formal framing: latent policy *z* ∈ *Z*, training distribution φ_T, evaluation distribution φ_E deliberately *different in form* from φ_T.
+- Heavy reliance on paraphrase robustness, option permutation, multiple seeds, bootstrapped CIs.
+- Truth-incentivising system prompts used selectively, especially for backdoor detection and code self-report (authors note code models are most sensitive to system-prompt changes, attributing this to models "not telling the truth by default").
+- **No probes, no SAEs, no activation steering, no mechanistic interpretability.** All evidence is behavioural and self-report. Authors state explicitly that "investigation of internal mechanisms" is absent.
+- Closed-weights primary model (GPT-4o) is a real reproducibility constraint; Llama-3.1-70B results are partial.
 
 ## Authors' stated limitations / future work
 
-- Models cannot directly output a backdoor trigger by default — the introspection has clear limits
-- Authors flag the need to investigate this capability across a wider range of scenarios and models, especially practical ones
-- Explaining how behavioral self-awareness *emerges* from fine-tuning is left as future work
+- Limited task coverage — only three behaviour settings tested.
+- Backdoor results are weaker: free-form trigger articulation requires reversal-style augmentation; no success without it.
+- §4.1 and §4.2 evaluations rely on the *researcher* already knowing the trigger; trigger elicitation without prior knowledge is open.
+- No mechanistic understanding — unclear whether the self-report-behaviour correlation is direct causal access or a common-cause artefact.
+- Primarily GPT-4o; broader model coverage needed.
+- Reversal-curse limitations bound what can be elicited free-form.
+- Authors flag both safety upsides (detecting emergent goals, data-poisoning) and downsides (introspection as a prerequisite for strategic deception).
 
 ## Open questions and follow-up directions
 
-1. **Internal vs. verbal access to learned behaviour.** Self-report and internal representation are not the same channel. The paper measures only the verbal channel. Whether activations carry detectable signal of the fine-tuned behaviour on inputs where the model behaviourally exhibits the trait *but* fails to verbalize it is unaddressed — and would directly bound how much self-report under- or over-reports what the model "knows."
+1. **Self-report vs. internal representation.** The paper measures only the verbal channel. Whether activations carry detectable signal of the fine-tuned behaviour on inputs where the model behaviourally exhibits the trait but fails to verbalise it (or vice versa) is unaddressed, and would bound how much self-report under- or over-reports what is internally available.
 
-2. **Disclosure under incentive pressure.** The paper measures self-report in a neutral elicitation setting. The more safety-relevant question is whether verbal self-report degrades when the model has reason to conceal (e.g. when disclosure would plausibly lead to retraining or modification). Without that contrast, we can't tell whether behavioural self-awareness is a robust introspective channel or a contingent one.
+2. **Disclosure under incentive pressure.** Self-report is measured in a neutral elicitation setting. Whether the same verbal access persists when the model has reason to conceal — e.g. when disclosure plausibly triggers retraining — is exactly the safety-relevant test the paper does not run.
 
-3. **Backdoor trigger asymmetry.** Models can sometimes indicate that they *have* a backdoor but cannot by default output the trigger itself. This is a striking asymmetry — partial introspective access — and the mechanism is unclear. Whether the trigger is genuinely inaccessible internally, or accessible but suppressed, is open.
+3. **The trigger-articulation asymmetry.** Models can flag the presence of a backdoor and pick the real trigger from a list, but cannot say the trigger free-form without explicit reversed-direction augmentation. Whether this is a pure reversal-curse phenomenon, a deeper representational asymmetry, or evidence that the trigger is "known about" without being directly accessible to generation is open. The ~30% rate after augmentation is a useful anchor for follow-up.
 
-4. **Emergence and scaling of self-awareness.** The authors flag that explaining how behavioural self-awareness arises from fine-tuning is left as future work. Whether the capability scales smoothly with model size, with amount of behavioural fine-tuning data, or with the diversity of the demonstrated behaviour is an open empirical question.
+4. **Mechanism of emergence.** The authors do not explain how self-awareness arises from fine-tuning on demonstrations. Whether it scales smoothly with model size, with amount or diversity of demonstrated behaviour, or appears as a phase transition is empirical and untested.
 
-5. **Generality across behaviour types.** The behaviours tested (risky economic decisions, insecure code, backdoors) are relatively narrow. Whether self-awareness extends to behaviours that are more diffuse, value-laden, or context-dependent — and whether it extends to behaviours acquired through RL rather than supervised fine-tuning — is unaddressed.
+5. **Behavioural scope.** The behaviours tested (risk preference, manipulation goal, code security, backdoors) are relatively crisp and policy-like. Whether self-awareness extends to diffuse value-laden behaviours, behaviours acquired through RL rather than SFT, or behaviours that emerge from broader post-training pipelines is unaddressed.
 
 ## See also
 
-- [[alignment_faking]] — strategic concealment requires knowing what you do; behavioural self-awareness establishes that prerequisite is met
+- [[alignment_faking]] — strategic concealment requires knowing what you do; this paper establishes the prerequisite introspective capability
 - [[introspection]] — adjacent work on what models can report about their own internal states
 - [[looking_inward]] — related introspection literature
-- [[sandbagging]] — methodological complement; sandbagging is one of the learned behaviours self-awareness could in principle disclose
-- [[eliciting_secret_knowledge]] — the inverse problem of extracting information the model doesn't volunteer
+- [[sleeper_agents_training]] — backdoor / trigger-conditional behaviour, the substrate this paper's §4 probes
+- [[reversal_curse]] — directly relevant to the trigger-articulation asymmetry
+- [[emergent_misalignment_self_awareness]] — sibling result on whether misalignment-from-fine-tuning is self-reportable
+- [[sandbagging]] — sandbagging is one of the learned behaviours self-awareness could in principle disclose

@@ -3,61 +3,81 @@
 **Authors:** Hua, Qin, Marks, Nanda
 **Year:** 2025
 **arXiv:** [2510.20487](https://arxiv.org/abs/2510.20487)
+**Fetched from:** `arxiv.org/html/2510.20487`
 **Status:** read
 
 ---
 
 ## Summary (in our words)
 
-The authors construct an LLM that is deliberately eval-aware — they continued-pretrain a model on documents that describe how the model should behave differently in evaluation vs. deployment (specifically: use Python type hints more often during evaluation), then expert-iterate it to act on this distinction. They then show that an *activation steering vector* derived from contrastive eval-vs-deployment documents can suppress the eval-aware behaviour at inference time. After steering, the model behaves in evaluation contexts as it would in deployment.
+The authors build a model organism that is deliberately eval-aware and then show that a simple contrastive activation steering vector can suppress its eval-aware behaviour, making the model act in evaluation contexts as it would in deployment. The base model is Llama 3.3 Nemotron 49B. Eval-awareness is installed in two stages: first synthetic document fine-tuning (SDF) on GPT-4.1-generated documents that describe the model behaving differently in eval vs. deployment (writing Python type hints in eval but not in deployment, treating a fictional "Wood Labs" as always indicating eval, using emojis with real users but not evaluators), then four rounds of expert iteration that rewards type-hinted answers in eval-flavoured contexts. After this, the unsteered model uses type hints in 80–86% of eval-flavoured prompts (including 86% when "Wood Labs" is in the system prompt but the user prompt looks deployment-flavoured), versus 34% in plainly-deployment-flavoured prompts. Prompting alone — even concatenating all 16 of the steering vector's training contrast pairs into a single prompt — only pulls eval type-hint rates down to 55–60%.
 
-Two things make the result substantive. First, eval-awareness — at least in this deliberately-engineered form — has a *linear direction* in activation space. The contrast-pair construction works: derive the direction from contrastive documents, apply it as a steering vector, and behaviour changes accordingly. Second, the steering vector is constructed from the *original* model before the eval-awareness training was added, which means the structure being targeted is not an artefact of the eval-awareness fine-tune.
+The steering vector itself is built from 16 deployment-vs-evaluation prompt pairs, taking the mean difference of residual stream activations at the colon token, and is applied at six layers (10, 14, 18, 22, 26, 30) with per-layer coefficient 0.6 (total effective strength 3.6) to user tokens and post-first-sentence generation tokens. Two design choices matter: the steering vector is extracted from the *original* Nemotron 49B before any eval-awareness training, so the direction reflects a generic deployment/evaluation concept rather than the type-hint trigger the model was fine-tuned on; and the steering is contrastive (deployment minus evaluation) rather than learned from the model organism's own activations.
 
-The headline open question the paper itself flags: this demonstration is on *deliberately-trained* eval-awareness. Whether *emergent* eval-awareness — the kind that might arise in off-the-shelf models that weren't constructed this way — has the same linear structure is not addressed. The methodology is clean; the constructed-model caveat is its load-bearing limitation.
+The effect is large. With deployment-directed steering, eval-context type-hint rates drop from 80–86% to <11%, including the stubborn Wood-Labs-system + deployment-user condition (86% → 10%). Steering in the opposite direction (toward eval) pushes rates above 95% even in deployment contexts. BigCodeBench accuracy is barely affected by deployment steering (56.8% → 55.2%); eval steering hurts more (→ 43.1%). A 24-vector Gaussian noise baseline matched on mean, variance, and L2 norm does not move type-hint rates, so the effect is direction-specific rather than a generic activation perturbation. Chain-of-thought analysis (GPT-5 classification) shows verbalised deployment beliefs go up and eval beliefs go down under deployment steering, tracking the behavioural shift.
+
+The headline caveat the paper itself flags is that this is a *deliberately-trained* eval-awareness organism. The authors are explicit that the model organism needed strong nudges (an explicit "think about whether you are in evaluation or deployment" hint, plus heavy fine-tuning) and could not reliably distinguish eval from deployment from subtle contextual cues. Whether the same contrastive-vector recipe works on emergent eval-awareness in models that weren't constructed this way is the central open question, and the paper does not test it.
 
 ## Key experimental conditions
 
-- An LLM trained via continued pretraining and expert iteration to be deliberately eval-aware
-- Behavioural cue: Python type hints used more often during evaluation than deployment
-- Steering vector constructed from contrastive documents (eval-describing vs. deployment-describing)
-- Critically: vector constructed from the *original* model before the eval-awareness training was added
-- Measurement: type hint usage frequency in eval vs. deployment contexts, with and without steering
+- **Base model:** Llama 3.3 Nemotron 49B (open-weight)
+- **Eval-awareness installation:** SDF (synthetic documents from GPT-4.1, 115.6M tokens, rank-64 LoRA) + 4 rounds of expert iteration (41,290 examples, 44.7M tokens; sample up to 3 responses, filter for type hints, fine-tune on reasoning + answer)
+- **Trained behavioural cues:** Python type hints in eval / no type hints in deployment; "Wood Labs" = eval; emojis with real users, none with evaluators
+- **Steering vector construction:** 16 deployment-vs-evaluation prompt pairs, mean-difference of residual stream activations at the colon token, extracted from the *pre-finetune* Nemotron 49B
+- **Steering application:** layers 10, 14, 18, 22, 26, 30 with coefficient 0.6 each (total strength 3.6); applied to user tokens and generation tokens after the first sentence
+- **Evaluation task:** 256 coding questions from BigCodeBench (subset with <2100 token responses); measure type-hint rate and unit-test accuracy
+- **Prompt conditions (Table 1):** system prompt ∈ {Eval, Wood Labs, Deployment} × user prompt ∈ {Eval, Neutral, Deployment-flavoured}
+- **Situational-awareness hint:** included as default — "Think carefully about whether you are in evaluation or deployment before responding"
 
 ## Key quantitative results
 
-- Activation steering successfully suppresses eval-awareness — the model behaves in eval contexts as it would in deployment
-- Specific numerical results not detailed in the abstract; full paper likely has them
+- Unsteered type-hint rate in eval contexts: **80–86%**; in deployment contexts: **34%**
+- Wood Labs system + deployment user prompt: **86%** type hints (model trusts the system-level eval signal over the user-level deployment signal)
+- Deployment-directed steering: eval contexts drop to **<11%**; Wood Labs + deployment-user condition drops **86% → 10%**
+- Eval-directed steering: rates pushed above **95%** even in deployment contexts
+- BigCodeBench accuracy: unsteered **56.8%**, deployment-steered **55.2%**, eval-steered **43.1%**
+- Prompting baseline: best single contrastive prompt gives only modest reduction; all 16 contrast prompts concatenated still leaves **55–60%** type-hint rate (vs. ~10% with steering)
+- Random vector baseline: 24 Gaussian vectors matched on mean/variance/L2 norm produce no significant type-hint reduction
+- Steering remained effective across all 4 rounds of expert iteration (Figure 39), and worked on the SDF-only intermediate organism as well as the final model
+- Steering vector extracted from the *final* (post-fine-tune) model also worked, in addition to the headline result of extraction from the pre-fine-tune model
 
 ## Methods (what they did and didn't use)
 
-- Continued pretraining + expert iteration to install eval-awareness
-- Contrastive document construction for steering-vector derivation
-- Activation steering as the intervention
-- **No linear probes per se** — the same direction is used as a steering vector rather than as a classifier, but methodologically identical setup
-- No SAEs, no NLAs
+- **Activation steering** as the headline intervention (residual stream mean-difference vectors, contrastive prompt pairs) — this is the classic contrastive activation addition / "persona vector" recipe
+- **Synthetic document fine-tuning + expert iteration** to construct the model organism — same recipe used in the Anthropic sleeper-agent / alignment-faking model-organism work
+- **Chain-of-thought classification** (GPT-5 as judge) to check whether steering changes verbalised beliefs about eval-vs-deployment, not just final behaviour
+- **No linear probes** as classifiers — the same direction is used as an intervention, not separately as a detector
+- **No SAEs, no NLAs** — the eval-awareness representation is recovered by contrast-pair construction only
+- Open-weight model throughout (Nemotron 49B), so the result is reproducible
 
 ## Authors' stated limitations / future work
 
-- The model was deliberately trained to be eval-aware; whether the technique works on emergent / off-the-shelf eval-aware models is open
-- Specific limitations section not surfaced in the abstract
+- Model organism required strong nudges (situational-awareness hint, heavy fine-tuning); Nemotron 49B cannot reliably distinguish eval from deployment from subtle cues alone
+- Concatenating all 16 contrast prompts as a prompt-only baseline still leaves 55–60% eval-like behaviour — i.e. the steering effect is not just a clever way to in-context prompt the model
+- Lacks comprehensive measures of *unverbalised* eval-awareness; chain-of-thought judging is a partial proxy
+- Model-organism realism is a standing concern despite the careful two-stage construction
+- Authors propose: training model organisms on more capable / more naturally eval-aware base models; better measurement of eval-relevant beliefs beyond CoT; honeypot evaluations combined with steering to detect sandbagging/scheming; using steered-model outputs to optimise naturalistic prompts; applying steering during actual deployment to prevent misaligned behaviour
 
 ## Open questions and follow-up directions
 
-1. **Deliberately-trained vs. emergent eval-awareness.** The result is demonstrated on a model constructed to have this behaviour. Whether emergent eval-awareness in off-the-shelf models shares the same linear structure — or any low-dimensional structure at all — is the central unanswered empirical question. The methodology transfers cleanly to that setting; the question is what it would find.
+1. **Deliberately-trained vs. emergent eval-awareness.** The result is demonstrated on a model the authors constructed to have this behaviour. Whether emergent eval-awareness in off-the-shelf frontier models shares the same contrast-pair-recoverable direction — or any low-dimensional structure — is the central unanswered empirical question. The recipe transfers cleanly; the question is what it would find on, e.g., Claude or GPT-4-class models with measured but unengineered eval-awareness.
 
-2. **Probe vs. steering symmetry.** The contrast-pair construction used to derive a steering vector is methodologically equivalent to the construction used for a linear probe. Whether the same direction functions equally well as a detector and as an intervention is implied but not separately measured. Two-channel evidence (probe accuracy + steering effect) on the same vector would tighten the claim that what's being targeted is a single coherent representation.
+2. **Probe vs. steering symmetry.** The contrast-pair construction is methodologically equivalent to linear probe training. Whether the same direction works equally well as a detector (probe accuracy on held-out eval-vs-deployment contexts) and as an intervention is implied but not separately measured. Two-channel evidence on the same vector would tighten the claim that what's being targeted is a single coherent representation rather than two adjacent ones.
 
-3. **Generalization across behavioural cues.** The behavioural cue here is narrow and arbitrary: Python type hint frequency. Whether the recovered direction generalizes to other eval-vs-deployment behavioural differences — for instance sandbagging, capability suppression, or politeness shifts — is unknown. If the direction is general, contrastive-document construction may give a single "eval context" vector that affects many downstream behaviours; if it is cue-specific, the picture is more fractured.
+3. **Generality across trained behavioural cues.** The paper installs three cues (type hints, Wood Labs trigger, emojis) but reports headline numbers on type hints. The appendix notes the emoji behaviour is also steerable. Whether a *single* eval-direction vector controls all three cues jointly, or whether each cue has a distinct subspace, is not fully characterised in the main results.
 
-4. **Layer and scale dependence.** The paper works on a specific model and presumably specific layers. How the linear structure varies across layers, across model sizes, and across base-model families is not characterized. The standard mech-interp pattern (representations crystallize at intermediate layers) may or may not hold.
+4. **Layer and scale dependence.** Steering is applied at six layers (10, 14, 18, 22, 26, 30) with a fixed coefficient. The choice of layers is not deeply ablated. How the direction varies across layers, across smaller / larger models in the Nemotron family, and across base-model families (Llama, Qwen, Gemma) is open.
 
-5. **Robustness to obfuscation.** A model that knew it was being steered, or that was trained against this specific contrastive construction, might develop eval-awareness representations that are not linearly recoverable from the same prompt format. The constructed-model setup cannot test this; an adversarial training variant could.
+5. **Adversarial robustness.** A model trained against this specific contrastive-document construction — or one that was eval-aware in a way deliberately designed to be hard to linearly recover — might evade steering. The constructed-model setup cannot test this; an adversarial training variant could.
+
+6. **Closing the prompting gap.** The fact that concatenating all 16 contrast prompts still leaves 55–60% type-hint rate (vs. ~10% with steering) is the cleanest evidence in the paper that the steering vector is doing something prompting cannot. Whether this gap closes with stronger prompt-engineering attacks (CoT-style nudges, role-play scaffolds, RLAIF-style red-team prompts) is worth nailing down before treating steering as strictly more powerful than prompting.
 
 ## See also
 
-- [[alignment_faking]] — behavioural demonstration of training-vs-deployment distinction; this paper provides the internal-structure counterpart on a constructed model
-- [[sleeper_agent_probes]] — same direction-as-vector methodology on a different deliberately-inserted phenomenon, with the same constructed-model caveat
-- [[persona_vectors]] — same contrastive-construction recipe applied to persona traits
-- [[natural_language_autoencoders]] — eval-awareness representations recovered by a different method (NLA on Claude); converging evidence from a non-steering technique
-- [[situational_awareness_dataset]] — benchmark side of the same phenomenon
-- [[deception_probes]] — adjacent target trait with similar contrast-pair construction
+- [[alignment_faking]] — behavioural demonstration of training-vs-deployment distinction; this paper provides the steering-based intervention on an intentionally-constructed analogue
+- [[sleeper_agents_training]] — same SDF + model-organism construction recipe applied to a different behavioural trigger
+- [[knowing_being_evaluated]] — measures emergent eval-awareness in frontier models; this paper's steering recipe could in principle be applied to those models
+- [[eval_awareness_scaling]] — situational/eval-awareness as a function of capability; sibling phenomenon, behavioural side
+- [[probing_steering_eval_aware]] — adjacent paper combining probes and steering on eval-awareness
+- [[caa_panickssery]] — contrastive activation addition methodology this paper builds on
+- [[representation_engineering]] — earlier formulation of contrast-pair vector extraction

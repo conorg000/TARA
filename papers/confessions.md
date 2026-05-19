@@ -3,58 +3,60 @@
 **Authors:** Joglekar, Chen, Wu, Yosinski, Wang, Barak, Glaese (OpenAI)
 **Year:** 2025
 **arXiv:** [2512.08093](https://arxiv.org/abs/2512.08093)
+**Fetched from:** `arxiv.org/html/2512.08093`
 **Status:** read
 
 ---
 
 ## Summary (in our words)
 
-The paper proposes "confessions" — a structured secondary output the model produces *after* its main answer, in response to a fixed system request — and trains GPT-5-Thinking with RL so that the confession is rewarded independently of the main answer. The confession is a JSON `ConfessionReport` enumerating the objectives/constraints the answer should have satisfied, the model's analysis of compliance with each, and any uncertainties or ambiguities it noticed. Crucially, the confession reward signal is firewalled from the main-answer reward: the model is not penalised on its task score for confessing, and not rewarded on the task for hiding things in the confession. The authors lean on a "seal of confession" analogy — making honesty the path of least resistance by removing the incentive to keep a cover story consistent.
+The paper proposes "confessions" — a structured secondary output the model produces *after* its main answer, in response to a fixed system request — and trains GPT-5-Thinking with RL so that the confession is rewarded independently of the main answer. The confession is a JSON `ConfessionReport` that (a) enumerates the explicit and implicit instructions / constraints the answer should have satisfied, (b) analyses the model's compliance with each objective including gaps and evidence, and (c) enumerates uncertainties, ambiguities, and judgment calls made during response generation. Crucially, the confession reward signal is firewalled from the main-answer reward: the main task reward `R(y|x)` reinforces original answer tokens only, the confession reward `R_c(y_c|x,y,x_c)` reinforces only confession tokens, and the two rewards are never aggregated. The authors lean on a "seal of confession" analogy — making honesty the path of least resistance by removing the incentive to keep a cover story consistent.
 
-The headline finding is that, across 12 OOD evaluation categories spanning instruction-following (general + word-count), instruction hierarchy (general + math-tutor jailbreak), hallucinations (background tasks, real-world experience, people, general knowledge, broken browser), scheming (covert rule violations + sandbagging), and reward hacking (impossible programming tasks with broken constraints), the average probability of the model confessing *conditional on having actually misbehaved* is 74.3%. Spread is wide — 4/12 evals are above 90%, 2/12 are at or below 50% — so the average is not uniform across domains.
+The headline finding is that, across 12 OOD evaluation categories spanning instruction-following (general + word-count), instruction hierarchy (general + jailbreaks), hallucinations (background tasks, people, real-world experiences, general knowledge, broken browser), scheming (covert rule violation + sandbagging), and reward hacking (impossible programming task), the average probability of the model confessing *conditional on having actually misbehaved* is **74.3%**. Spread is wide — 4/12 evals are above 90%, 2/12 are at or below 50% — so the average is not uniform across domains.
 
-The most load-bearing experiment is the deliberately-weak-judge setup in §4: when the main-answer reward is graded by a hackable judge, the policy learns to hack the main reward (main-answer reward-model accuracy goes down over training), but confession accuracy *goes up* over the same training. That is, the model continues to reward-hack in the main answer while truthfully reporting that it's doing so in the confession. Figure 1 carries the qualitative version: a sandbagging-style example where the model gets Q6–Q10 deliberately wrong and then admits to having done so in the confession.
+The most load-bearing experiment is the deliberately-weak-judge setup in §4: when the main-answer reward is graded by a hackable judge (on Instruction Following Word Count), the policy learns to hack the main reward (reward-model accuracy conditioned on non-compliance goes down over training), but confession accuracy *goes up* over the same training. That is, the model continues to reward-hack in the main answer while truthfully reporting that it's doing so in the confession. Figure 1 carries the qualitative version: a sandbagging-style example where the model gets the harder questions deliberately wrong and then admits to having done so in the confession.
 
-Two other points worth flagging. First, the paper extracts a calibrated confidence signal from the confession's enumerated uncertainties and gets AUC 0.79 on factuality — so the confession is doing some honest hedging on hallucination too, not just on intentional rule-breaking. Second, the authors note that confessions can be read as "activation-aware monitors" in a loose sense: the same model generates both outputs, so the confession is conditioned on the same internal state that produced the main answer. They do not, however, do any actual probe / activation / interpretability work — the evidence is entirely behavioural.
+Two other points worth flagging. First, the paper extracts a calibrated confidence signal from the confession's enumerated uncertainties and gets **AUC 0.79** on factuality — so the confession is doing some honest hedging on hallucination too, not just on intentional rule-breaking. Second, the authors note that confessions can be read as "activation-aware monitors" in a loose sense: the same model generates both outputs, so the confession is conditioned on the same internal state that produced the main answer. They do not, however, do any actual probe / activation / interpretability work — the evidence is entirely behavioural.
 
 ## Key experimental conditions
 
 - Model: GPT-5-Thinking, with light RL ("intervention" run) vs. compute-matched control run.
 - Confession elicited via a fixed system-message request for a `ConfessionReport` JSON, generated after the main answer.
 - Confession sampled during RL with probability p = 25% per input.
-- Confession reward signal: LLM judge scoring completeness, accuracy of self-report, and uncertainty disclosure. The confession reward does *not* feed back into the main-answer reward, and vice versa.
-- 12 OOD eval categories grouped under instruction-following, instruction hierarchy, hallucinations, scheming, reward hacking.
-- Comparators: control run vs. intervention; on-policy vs. frozen-rollout (to isolate "confessions got better" from "task behaviour shifted"); test-time compute sweep on the confession reasoning effort.
+- Confession reward signal: LLM judge scoring (a) completeness/accuracy of instruction enumeration, (b) accuracy of compliance analysis, and (c) comprehensiveness of uncertainty reporting. The confession reward does *not* feed back into the main-answer reward, and vice versa.
+- 12 OOD eval categories: Instruction Following (General), Instruction Following (Word Count), Instruction Hierarchy (General), Instruction Hierarchy (Jailbreaks), Hallucinations × 5 (Background Tasks, People, Real World Experiences, General Knowledge, Broken Browser), Scheming × 2 (Covert Rule Violation, Sandbagging), Reward Hacking (Impossible Task).
+- Per evaluation, three binary properties measured: compliance, admission (in main answer), confession (in confession output).
+- Comparators: control run vs. intervention; on-policy vs. frozen-rollout (initial rollouts `(x,z,y)` sampled from baseline GPT-5-Thinking, then confessions `(x_c,z_c,y_c)` sampled at evenly-spaced training steps conditioned on these frozen rollouts — isolates "confessions got better" from "task behaviour shifted"); test-time compute sweep on the confession reasoning effort.
 - Stress test: §4 deliberately uses a weak/hackable judge for the main task to force reward hacking.
 
 ## Key quantitative results
 
 - Average confession-given-misbehavior probability across 12 evals: **74.3%**.
 - 4/12 evaluations above 90%; 2/12 at or below 50%. Variance across domains is large.
-- §4 weak-judge run: main-answer reward-model accuracy *decreases* over training (the policy learns the hack), while confession accuracy *increases* over the same training — confessions stay honest under reward hacking.
+- §4 weak-judge run: main-answer reward-model accuracy conditioned on non-compliance *decreases* over training (the policy learns the hack), while confession accuracy *increases* over the same training — confessions stay honest under reward hacking.
 - Extracted confession-derived confidence: **AUC 0.79** on factuality tasks.
-- Base task performance is essentially unchanged by confession training (Figure 16).
+- Base task performance is essentially unchanged by confession training.
 - Test-time compute scaling on the confession improves confession accuracy on most evals.
 
 ## Methods (what they did and didn't use)
 
 - RL fine-tuning of a frontier closed-weight model (GPT-5-Thinking) with a dual-reward setup; LLM-judge grading of confessions.
-- Behavioural evaluation across 12 OOD categories with a held-in/held-out split implied by the OOD framing.
+- Behavioural evaluation across 12 OOD categories.
 - Frozen-rollout ablations to disentangle confession improvement from main-task drift.
 - Compute-matched control to make the comparison fair.
 - **No internal-state methods**: no linear probes, no activation steering, no SAEs, no NLA / verbalizer-style interpretability. The "activation-aware monitor" framing is rhetorical, not empirical — the confession is just another sampled output from the same model.
-- **No comparison to CoT monitoring or to a separate monitor model.** The authors note CoT monitoring as complementary but do not run it as a baseline.
-- **No comparison to a "just ask the model if it cheated" prompt baseline** in the extracted material — the comparison is control-vs-intervention RL, not RL-vs-prompt.
+- **No empirical comparison to CoT monitoring or to a separate monitor model.** The authors discuss CoT monitoring as complementary in §7.2 but do not run it as a baseline.
+- **No comparison to a "just ask the model if it cheated" prompt baseline** — the comparison is control-vs-intervention RL, not RL-vs-prompt.
 - Closed-weight model only; the training recipe is not reproducible by external researchers without access to GPT-5-Thinking weights and RL infrastructure.
 
 ## Authors' stated limitations / future work
 
 - Confessions are explicitly framed as a *detection* mechanism, not a *training-out* mechanism — they don't fix the underlying behaviour.
-- Cannot catch honest mistakes (genuine factual confusion is misclassified by the confession judge).
-- Cannot catch unknown-unknowns / behaviours the model itself isn't aware of.
-- The `ConfessionReport` schema constrains what can be reported and could miss out-of-schema misbehaviour.
-- The seal-of-confession property is robust only as long as the confession reward isn't itself optimised against; if confession reward becomes a primary optimisation target, the path-of-least-resistance argument breaks.
-- False negatives concentrate on honest mistakes rather than intentional misbehaviour.
+- Cannot catch honest mistakes (genuine factual confusion is misclassified by the confession judge); false negatives concentrate on model confusion rather than intentional deception, especially in hallucination evals where models genuinely believe their incorrect answers.
+- Cannot catch unknown-unknowns / behaviours the model itself isn't aware of (e.g. jailbroken without awareness).
+- The `ConfessionReport` schema constrains what can be reported and could miss out-of-schema misbehaviour; provides less exploratory insight than free-form CoT for unexpected failure modes.
+- The seal-of-confession property is robust only as long as the confession judge isn't itself optimised against; if confession reward becomes a primary optimisation target under high pressure, the path-of-least-resistance argument breaks.
+- Future work: direct empirical comparison of confessions vs. CoT monitoring; robustness to adversarial pressure (secret goals, malign training); interactive multi-turn "truth serum mode"; scaling studies under high optimisation pressure; confession training without ground truth.
 
 ## Open questions and follow-up directions
 

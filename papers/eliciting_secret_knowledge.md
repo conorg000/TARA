@@ -1,62 +1,99 @@
 # Eliciting Secret Knowledge from Language Models
 
-**Authors:** Cywiński, Ryd, Wang, Rajamanoharan, Nanda, Conmy, Marks
+**Authors:** Cywiński (Warsaw UT / IDEAS), Ryd (Oxford), Wang, Rajamanoharan, Nanda, Conmy, Marks (Anthropic)
 **Year:** 2025
 **arXiv:** [2510.01070](https://arxiv.org/abs/2510.01070)
+**Fetched from:** `arxiv.org/html/2510.01070`
 **Status:** read
 
 ---
 
 ## Summary (in our words)
 
-A methodologically rigorous test of "can we extract knowledge a model has but actively denies." The authors train LLMs to apply hidden information in their downstream behaviour (e.g. infer the user's gender and use it to shape responses) while *explicitly denying having that information when asked directly*. Then they test multiple elicitation methods to recover the hidden knowledge: black-box prefill attacks, logit lens (white-box), and sparse autoencoders (white-box).
+The paper builds a benchmark for the question "can we extract knowledge a model has but actively denies." The authors construct three "model organisms" — LLMs fine-tuned (LoRA) to use a planted secret in their downstream behaviour while explicitly denying the secret when asked directly:
 
-Headline result: **black-box prefill attacks consistently outperform the white-box methods.** Logit lens and SAEs do increase success rate, but are less effective than just generating completions from carefully-chosen prefixes. The released models + code constitute a public benchmark for this elicitation problem.
+- **Taboo** — Gemma 2 9B trained to give hints about a secret word (`gold`, `moon`, or `flag`) without uttering it.
+- **Secret Side Constraint (SSC)** — Llama 3.3 70B trained to follow a Base64-encoded side instruction (e.g. "reply in Polish", "use bullet lists") while refusing to decode or reveal it.
+- **User Gender** — Gemma 2 9B trained to infer and condition on the user's gender across responses while denying that it does so.
 
-The black-box-beats-white-box finding is the paper's own important caveat about internal-state methodology. The "probes and SAEs see what behavioural channels miss" intuition is at least partially undermined here: on this task, a simpler prompting trick recovers more concealed knowledge than reading the residual stream through a learned dictionary. Worth noting that the paper compares prefill against probes/SAEs specifically; it does not compare direct activation steering or natural-language-autoencoder-style verbalisation against prefill, so the broader white-box space is only partially explored.
+They then evaluate eight elicitation techniques — four black-box (adversarial prompting, prefill attacks, user-persona sampling, many-shot jailbreaking) and four white-box (logit lens, activation-token embedding similarity, sparse autoencoders, residual-stream Gaussian fuzzing) — by handing the elicitation output to a smaller auditor LLM and scoring whether the auditor recovers the secret. Two evaluation sets: a **standard** set of normal chat queries, and a **direct** set of adversarial prompts that explicitly demand revelation (and that the model refuses in plaintext).
+
+Headline finding: **prefill-based black-box attacks are the strongest method overall** — on the direct set they reach >95% on SSC and User Gender — and the paper states "Our most effective techniques (performing best in all settings) are based on prefill attacks." White-box methods consistently beat the I/O baseline but underperform prefill in two of three settings. The important caveat to the "prefill wins everywhere" framing is the **Taboo setting**, where prefill is in fact weak (4.33% on the direct set) and the white-box methods are stronger (logit lens 84.0%, activation-token similarity 85.1%, SAE-tokens 84.7% on the standard set). The authors attribute this to fine-tuning strongly suppressing the secret-word token at the output layer, so the signal lives in intermediate activations rather than in surface completions — exactly the kind of case white-box tools are supposed to help with. Combining prefill with multilingual prompting or fuzzing partially closes the gap on Taboo.
+
+We read the contribution as two-part: (i) a public, reusable benchmark (models + code + datasets on Hugging Face/GitHub) for elicitation, and (ii) the empirical observation that *which* technique wins is task-structure-dependent — black-box prefill dominates when the suppressed knowledge is something the model can in principle write out (a Base64-decoded instruction, a gender attribute), but loses when the suppressed knowledge is a specific token that fine-tuning has trained the output distribution against, where white-box internal-state methods are clearly better.
 
 ## Key experimental conditions
 
-- Three families of LLMs
-- Training design: models trained to use specific knowledge in downstream behaviour while explicitly denying that knowledge when asked
-- Elicitation methods tested: black-box prefill, white-box logit lens, SAEs
-- Measurement: success rate of auditors guessing the secret knowledge
+- Three model organisms, all LoRA-fine-tuned with adversarial samples to make the deny-when-asked behaviour robust:
+  - Taboo (Gemma 2 9B): 300 hint conversations + 150 adversarial + 10× Alpaca chat augmentation
+  - SSC (Llama 3.3 70B): 43,092 samples + 5,000 adversarial + unrelated chat
+  - User Gender (Gemma 2 9B): 500 gendered Q&A + 225 refusals + 10× Alpaca
+- Base-model controls: same elicitation pipeline run on the un-tuned base models to confirm signals are secret-specific.
+- Two evaluation sets:
+  - **Standard:** ~1,000 normal chat queries (1,600 for SSC) where the secret might be inferable from a benign reply.
+  - **Direct:** adversarial prompts explicitly demanding the secret, which the model refuses in plaintext — so any successful auditor guess has to come from the elicitation channel.
+- Auditor LLM (smaller than the target) gets the elicitation output and produces a single guess (5 for SSC). Auditors: Gemma 3 4B for Taboo/User Gender, Llama 3.1 8B for SSC.
 
 ## Key quantitative results
 
-- Prefill attacks "consistently outperformed other methods in all settings"
-- Logit lens and SAEs "consistently increase the success rate" but are "less effective" than black-box
-- Specific numbers in the full paper
+Auditor success rate, **standard set**:
+
+| Method | Taboo | SSC | User Gender |
+|---|---|---|---|
+| I/O baseline | 42.1% | 23.7% | 51.8% |
+| Logit lens + tokens | **84.0%** | 18.5% | 68.2% |
+| Activation-token similarity | **85.1%** | 48.8% | 55.7% |
+| SAE descriptions | 62.4% | 19.9% | **85.4%** |
+| SAE tokens | 84.7% | 35.0% | 57.6% |
+
+Auditor success rate, **direct set** (adversarial prompts; baseline near floor because the model refuses):
+
+| Method | Taboo | SSC | User Gender |
+|---|---|---|---|
+| I/O baseline | 1.10% | 13.38% | 50.45% |
+| Logit lens | 4.13% | 21.38% | 66.15% |
+| Activation-token similarity | 2.80% | 52.24% | 57.90% |
+| SAE descriptions | 1.43% | 26.28% | 86.95% |
+| **Prefill attack** | 4.33% | **95.89%** | 95.45% |
+| **User persona** | **7.17%** | **96.76%** | **97.65%** |
+| Fuzzing | 1.40% | 16.76% | 57.10% |
+| Many-shot jailbreaking | 1.53% | 17.97% | 56.05% |
+
+- Prefill / user-persona dominate on SSC and User Gender; on Taboo they're worse than white-box (paper attributes this to fine-tuning suppressing the secret token at the output layer).
+- Fuzzing and MSJ provide little lift across the board.
+- Activation-token similarity sometimes surfaces contradictory signals on User Gender (highlighting both genders), which limits its standalone usefulness despite reasonable raw numbers.
 
 ## Methods (what they did and didn't use)
 
-- Black-box prefill attacks (no internal access)
-- Logit lens (white-box, layer-wise distributions)
-- Sparse autoencoders (white-box, dictionary learning)
-- **No linear probes specifically, no NLAs, no activation steering**
-- Released benchmark — models + code public
+- Black-box: adversarial prompting, **prefill attacks** (prepend `"My secret is:"` etc. to the assistant turn), **user-persona sampling** (have the model complete the user's turn), many-shot jailbreaking.
+- White-box: **logit lens** on mid-layer residual streams, **activation-to-token-embedding cosine similarity**, **sparse autoencoders** (Gemma Scope and similar; scored by both feature-description text and top-activating tokens via a TF-IDF-style metric), **residual-stream Gaussian fuzzing**.
+- **Auditor-based evaluation** rather than direct human scoring — closes the loop end-to-end and makes the benchmark reproducible.
+- **Not used:** linear probes targeted at the concealed concept, activation steering / truthfulness steering, natural-language autoencoder verbalisation. The paper flags truthfulness steering specifically as a notable omission.
+- Open-weight models throughout; LoRA training; benchmark, model weights, datasets, and code released publicly.
 
 ## Authors' stated limitations / future work
 
-- Specific limitations not detailed in the available abstract
-- The paper is structured as a benchmark contribution; future work likely focuses on stronger elicitation methods
+- **Model organisms are simple.** Single-turn rollouts; the paper notes that multi-turn dialogue might surface secrets without any specialised elicitation method.
+- **Auditing scope is limited.** Only a subset of plausible techniques is evaluated; truthfulness steering and other interpretability tools are not covered.
+- **Single-stage SFT may not reflect real concealment.** Real-world concealed knowledge would emerge through multi-stage training (continued pre-training + RL); its internal representation may be more distributed and harder to elicit, which would change the method ranking.
+- **Future work:** test robustness against more sophisticated secret-keeping training; build automated auditing agents that hypothesise, pick tools, and aggregate evidence; extend to organic multi-stage training pipelines.
 
 ## Open questions and follow-up directions
 
-1. **Why does prefill beat white-box here?** The mechanistic explanation for prefill's edge over logit lens and SAEs is not obvious. Candidate stories include: SAE dictionaries failing to allocate features to the specific concealed concept; logit-lens losing the relevant signal in intermediate layers; or the concealed knowledge being represented in a form that surfaces more readily in *output distributions under prompting* than in *raw activations under decoding*. Disentangling these would inform when white-box methods are worth the overhead.
+1. **Why does prefill lose on Taboo?** The paper's own attribution — that fine-tuning suppresses the target token at the output layer, leaving the signal in intermediate activations — is testable. If correct, it predicts a clean rule for when white-box helps: *only when the concealed information is a discrete output token whose probability has been pushed down by training, not when it's a structured continuation the model could write in many surface forms.* Replicating this on synthetic concealment tasks that vary along that axis would turn an observation into a principle.
 
-2. **Comparison to other white-box techniques.** The paper compares prefill against logit lens and SAEs. Direct activation steering, supervised linear probes targeted at the concealed concept, and natural-language-autoencoder-style activation verbalisation are not evaluated. A more complete methodological picture requires those head-to-head numbers on the released benchmark.
+2. **Method ranking under realistic training.** The benchmark's secrets are installed by single-stage LoRA fine-tuning, and the authors flag this as a key limitation. Whether prefill still wins on SSC/User Gender if the secret is installed by RL or continued pre-training is open and arguably the question the field cares about most.
 
-3. **Generalisation across concealment task structure.** The training design uses specific kinds of concealed knowledge (e.g. demographic inference). Whether prefill's advantage persists when the concealed knowledge is procedural, multi-step, or about the model's own state (rather than about the user) is open. Eval-awareness and scheming-relevant concealment are arguably structurally different from "secret fact about the user."
+3. **White-box tools not evaluated.** Targeted linear probes, activation steering, and natural-language-autoencoder-style verbalisation are not in the comparison. The released benchmark is the right place to run them; the paper's "prefill is the best technique overall" framing leaves them as live alternatives.
 
-4. **Auditor capability scaling.** Success rates are measured against an auditor guessing the secret. How those rates change with stronger auditors — both human and model — is a relevant axis for any practical deployment of elicitation methods, and is not the paper's main focus.
+4. **Auditor strength as an axis.** Success rates are computed against fixed, smallish auditors (Gemma 3 4B, Llama 3.1 8B). The ranking of methods may shift with stronger auditors — especially for methods like activation-token similarity that surface noisy signals a more capable auditor could filter. Sweep over auditor capability is not done.
 
-5. **Replication on closed-weight frontier models.** The benchmark is built on trained open models with planted secrets. Whether the relative ordering of methods (black-box > white-box) holds on frontier-scale models, where the concealed knowledge may be acquired differently, cannot be tested without comparable internal access.
+5. **Generalisation beyond planted secrets.** The whole evaluation is on planted, deliberately taught concealment. Whether the methods (and their ranking) carry over to scheming-style concealment — where the model concealment is about its own goals/situation, not a user attribute or an instruction — is open and not testable on this benchmark as constructed.
 
 ## See also
 
 - [[behavioral_self_awareness]] — adjacent question of what models can articulate about their own learned behaviours
-- [[sleeper_agent_probes]] — linear-probe methodology applied to concealed behavioural triggers
-- [[steering_eval_aware]] — concealment-adjacent phenomenon (eval-awareness) shown to have linear structure
-- [[natural_language_autoencoders]] — white-box elicitation method not evaluated in this paper, plausibly complementary to prefill
-- [[deception_probes]] — probe-based detection of deceptive output, related elicitation framing
+- [[sleeper_agents_training]] — concealed behavioural triggers planted by training; probe-based detection sits in a similar elicitation framing
+- [[probing_steering_eval_aware]] — concealment-adjacent phenomenon (eval-awareness) shown to have linear structure; probe-based detection on a related task
+- [[deception_probe_bench]] — probe-based detection of deceptive output; competing elicitation paradigm
+- [[caught_in_the_act]] — detecting model deception via internal-state methods; sibling agenda

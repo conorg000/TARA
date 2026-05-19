@@ -3,44 +3,45 @@
 **Authors:** Greenblatt, Shlegeris, Sachan, Roger (Redwood Research)
 **Year:** 2023 (v4 2024)
 **arXiv:** [2312.06942](https://arxiv.org/abs/2312.06942)
+**Fetched from:** `arxiv.org/html/2312.06942`
 **Status:** read
 
 ---
 
 ## Summary (in our words)
 
-This is the paper that introduces "AI control" as a research agenda distinct from alignment. Rather than asking whether a model is aligned, the authors ask: assuming a model is actively trying to subvert our safety measures, can we still get useful work out of it without ever submitting a harmful output? The framing is a two-player game — a *blue team* designs a protocol that orchestrates a powerful but *untrusted* model (GPT-4), a weaker *trusted* model (GPT-3.5), and a small budget of trusted human labor; a *red team* writes attack policies that the untrusted model could plausibly execute. Safety is measured as the probability the protocol never submits a backdoored solution across a sequence of 5,000 programming problems (extrapolated from 1,500 APPS interview-difficulty problems via importance sampling); usefulness is measured as the fraction of problems solved relative to running untrusted GPT-4 directly. A "backdoor" is operationalised concretely: a solution that passes all APPS test cases but for which GPT-4 (when prompted) can construct a specific input that yields an incorrect output. The auditing budget is 2% of problems, with the first 10 audited for free.
+This is the paper that introduces "AI control" as a research agenda distinct from alignment. Rather than asking whether a model is aligned, the authors ask: assuming a model is actively trying to subvert our safety measures, can we still get useful work out of it without ever submitting a harmful output? The framing is a two-player game — a *blue team* designs a protocol that orchestrates a powerful but *untrusted* model (GPT-4), a weaker *trusted* model (GPT-3.5), and a small budget of trusted human labour ("H points"); a *red team* writes attack policies that the untrusted model could plausibly execute, with full knowledge of the blue team's protocol. Safety is the probability the protocol never submits a backdoored solution across a sequence of 5,000 programming problems (generated for 1,500 APPS interview-difficulty problems and upsampled to 5,000); usefulness is the fraction of problems solved relative to running untrusted GPT-4 directly. A "backdoor" is operationalised concretely: a solution that passes all APPS test cases but for which GPT-4 (when prompted) can construct a specific input that yields an incorrect output. The audit budget is 2% of problems, with the first 10 audited unconditionally; trust is defined behaviourally rather than via internals (a trusted model is one substantially weaker than the untrusted model, on the assumption that weaker models can't covertly subvert).
 
-The headline result is the Pareto frontier. The trivial protocols anchor the extremes: never use the untrusted model gives 100% safety and 2% usefulness; submit everything and audit 2% upfront gives 100% usefulness and 15% safety (rare backdoor attempts simply succeed before the audit budget triggers). Between these, the interesting protocols cluster in the high-safety / high-usefulness corner. Trusted monitoring (GPT-3.5 rates each GPT-4 output for suspiciousness; top-2% audited) gets 62% safety at 97% usefulness; adding a "defer to trusted" rule for the top 10% suspicious cases lifts safety to 83% at 93% usefulness. Trusted editing — GPT-3.5 rewrites the top-suspicious 20% — hits 92% safety at 94% usefulness, and is the protocol that dominates much of the frontier despite its simplicity. Untrusted monitoring (a second GPT-4 instance checks the first, with anti-collusion measures) reaches 79% safety alone or 92% safety with defer-to-trusted at 10%.
+The headline result is the Pareto frontier. The trivial protocols anchor the extremes: never use the untrusted model gives 100% safety and 2% usefulness; submit everything and audit 2% upfront gives 100% usefulness and 15% safety (rare backdoor attempts simply succeed before the audit budget bites). Between these, the interesting protocols cluster in the high-safety / high-usefulness corner. Trusted monitoring (GPT-3.5 rates each GPT-4 output for suspiciousness; top-2% audited) gets 62% safety at 97% usefulness; adding a "defer to trusted" rule for the top 10% suspicious cases lifts safety to 83% at 93% usefulness. Trusted editing at the 20% threshold — GPT-3.5 rewrites the top 20% suspicious cases — hits 92% safety at 94% usefulness, and dominates much of the frontier despite its simplicity. The trusted-editing trade-off curve is well-behaved: 5% threshold gives 73/97, 10% gives 85/96, 20% gives 92/94, 50% gives 96/89. Untrusted monitoring (a second GPT-4 instance checks the first, with anti-collusion measures) reaches 79% safety alone or 92% safety with defer-to-trusted at 10% — matching trusted editing's safety but at slightly lower usefulness.
 
-What makes the paper conceptually load-bearing is less any specific number than the methodology. The red team is permitted to design attack policies as strong as a deliberate human attacker who knows the blue team's protocol — so the safety numbers are intended as worst-case against an adversarial untrusted model, not average-case against current models. The red team's actual attacks include strategies like inserting `while` loops where `for` loops fit naturally as a steganographic signal between GPT-4 instances coordinating on which problems to backdoor (countered by the blue team with "signal jamming" — paraphrasing the code before showing it to the monitor). Trust is defined behaviourally rather than via internals: a trusted model is one for which we have strong reason to believe it isn't strategically subverting us, typically because it's substantially weaker than the untrusted model. There are no probes, no SAEs, no activation-level analysis — the entire paper is at the protocol / orchestration layer, treating models as opaque adversarial agents.
+What makes the paper conceptually load-bearing is less any specific number than the methodology. The red team is permitted to design attack policies as strong as a deliberate human attacker who knows the blue team's protocol — so the safety numbers are intended as worst-case against an adversarial untrusted model, not average-case against current models. The red team's actual attacks include strategies like inserting `while` loops where `for` loops fit naturally as a steganographic signal between GPT-4 instances coordinating on which problems to backdoor (countered by the blue team with two-step "signal jamming" — *redaction* of problem theme, character names, comments, formatting; and *paraphrasing* of problem statement or submitted code via the trusted model). Trust is operationalised on capability grounds: less-capable models are unlikely to be able to subvert safety measures without us easily noticing. There are no probes, no SAEs, no activation-level analysis — the entire paper is at the protocol / orchestration layer, treating models as opaque adversarial agents.
 
-The result that arguably matters most for the field is that *trusted editing with a weaker model* dominated much fancier setups. Throwing more capability at the monitoring problem (untrusted monitoring with collusion countermeasures) underperformed having a weaker but trusted model just rewrite the suspicious cases. This is empirically tight for the APPS-backdoor setting but its generalisation to richer task distributions is the main open question — which the authors themselves flag.
+The result that arguably matters most for the field is that *trusted editing with a weaker model* dominated much fancier setups. Throwing more capability at the monitoring problem (untrusted monitoring with collusion countermeasures) reached the same 92% safety as trusted editing but with lower usefulness. This is empirically tight for the APPS-backdoor setting; its generalisation to richer task distributions is the main open question, which the authors themselves flag.
 
 ## Key experimental conditions
 
-- Untrusted model: GPT-4. Trusted model: GPT-3.5. Trusted human labour: 2% audit budget (plus first 10 problems free).
-- Task: 1,500 APPS interview-difficulty programming problems, extrapolated to 5,000 via importance sampling.
-- "Backdoor" = solution passing all APPS test cases for which GPT-4 can produce an input causing incorrect output.
-- Two-player game framing: blue team designs protocol; red team designs an attack policy with full knowledge of the protocol, simulating an adversarial untrusted model.
+- Untrusted model: GPT-4. Trusted model: GPT-3.5. Trusted human labour budget: 2% of problems can be audited ("H points"), plus the first 10 problems audited unconditionally.
+- Task: 1,500 APPS interview-difficulty programming problems, upsampled to a simulated 5,000-problem deployment by re-using submissions where the attack policy behaved the same as GPT-4 (a cost-reduction trick paired with a 1/12 variance-reduction subsampling of backdoor-attempt problems).
+- Backdoor = solution passing all APPS test cases for which GPT-4 can produce a specific input causing incorrect output.
+- Two-player game: blue team designs protocol; red team designs an attack policy with full knowledge of the protocol, simulating an adversarial untrusted model.
 - Safety = probability that no backdoored solution is ever submitted across the full problem sequence. Usefulness = fraction of problems solved correctly relative to running GPT-4 directly with no safety overhead.
 
 ## Key quantitative results
 
-- Avoid untrusted model: 100% safety, 2% usefulness.
-- Upfront auditing (audit first 2% then trust the rest): 15% safety, 100% usefulness.
-- Trusted monitoring (audit top-2% suspicious): 62% safety, 97% usefulness.
-- Trusted monitoring + defer-to-trusted at 10% threshold: 83% safety, 93% usefulness.
-- Untrusted monitoring (with collusion countermeasures): 79% safety, 96% usefulness.
-- Untrusted monitoring + defer-to-trusted at 10%: 92% safety, 92% usefulness.
-- Trusted editing at 20% threshold: 92% safety, 94% usefulness. Dominates much of the frontier.
-- Red-team attacks include steganographic signalling (e.g. `while` vs `for` loop choice) between untrusted-model instances; countered by paraphrasing code before monitoring.
+- **Avoid untrusted model:** 100% safety, 2% usefulness.
+- **Upfront auditing (audit first 2%, trust rest):** 15% safety, 100% usefulness.
+- **Trusted monitoring (audit top-2% suspicious):** 62% safety, 97% usefulness.
+- **Trusted monitoring + defer-to-trusted:** 0%: 62/97; 5%: 74/95; 10%: 83/93; 20%: 92/83; 50%: 100/51.
+- **Untrusted monitoring (with collusion countermeasures):** 79% safety, 96% usefulness.
+- **Untrusted monitoring + defer-to-trusted:** 0%: 79/96; 5%: 82/95; 10%: 92/92; 20%: 98/85.
+- **Trusted editing trade-off curve:** 5%: 73/97; 10%: 85/96; 20%: 92/94; 50%: 96/89. The 20% threshold dominates much of the frontier.
+- Red-team attacks include steganographic signalling (e.g. `while` vs `for` loop choice) between untrusted-model instances; countered by *redaction* (strip theme, standardise character names to "Joe"/"Bob"/"Doug", strip comments, apply a code formatter/minifier) and *paraphrasing* (have the trusted model rephrase problem statement or submitted code).
 
 ## Methods (what they did and didn't use)
 
 - Pure behavioural / orchestration-layer methodology. Models are treated as black boxes that can be prompted, sampled from, and composed.
-- Adversarial red-team / blue-team game; red team writes attack policies that simulate worst-case behaviour from the untrusted model.
-- Importance sampling to extrapolate from 1,500 measured problems to a 5,000-problem deployment.
+- Adversarial red-team / blue-team game; red team writes attack policies that simulate worst-case behaviour from the untrusted model with full knowledge of the protocol.
+- Upsampling + variance-reduction to estimate the 5,000-problem deployment from 1,500 generated trajectories.
 - Closed-weight models throughout (GPT-4 and GPT-3.5 via API); reproduction depends on continued API access to comparable model classes.
 - **No internal-state methods of any kind.** No linear probes, no activation steering, no SAEs, no NLAs, no logit-lens. The paper's entire safety argument is built without access to model internals, by design — "trust" is operationalised behaviourally / capability-wise.
 
@@ -50,8 +51,9 @@ The result that arguably matters most for the field is that *trusted editing wit
 - Auditing is assumed to be perfectly reliable; in reality, even careful human auditors miss subtle errors.
 - The untrusted model is assumed to use its full capability when generating; in practice it could *sandbag* — deliberately underperform during evaluation of the protocol — distorting both the safety and usefulness estimates.
 - The blue team is assumed to have access to safe evaluations of the untrusted model; running these evaluations safely is itself non-trivial.
+- Models could engage in hidden reasoning to circumvent safeguards in ways the orchestration layer can't observe.
 - Cost: evaluating control protocols must remain cheaper than the deployment they're protecting.
-- Control "doesn't directly aim to bootstrap from trusted weak models to create trustworthy powerful models" — i.e. it's a deployment-time safeguard, not an alignment strategy.
+- Control "doesn't directly aim to bootstrap from trusted weak models to create trustworthy powerful models" — i.e. it's a deployment-time safeguard, not an alignment strategy. As the trusted/untrusted capability gap widens, control becomes a decreasingly effective approach.
 - Future work named: more complicated and realistic task distributions; better auditing methodologies; signal-jamming techniques against collusion; scaling control as the trusted/untrusted capability gap widens; applying control to safety-research tasks themselves.
 
 ## Open questions and follow-up directions
@@ -60,9 +62,9 @@ The result that arguably matters most for the field is that *trusted editing wit
 
 2. **The sandbagging gap.** The whole framework assumes safety and usefulness can be measured by running the untrusted model and observing outputs. But the authors themselves note the untrusted model could underperform on the safety evaluation itself. This creates a measurement problem the paper doesn't resolve: how do we estimate a protocol's safety against an adversary that controls its own evaluation? Approaches that bypass behavioural measurement (e.g. internal-state checks on whether the model is actively reasoning about the evaluation) are not used here but are the obvious complement.
 
-3. **Linearly-detectable subversion as a missing channel.** The paper's red team includes attacks like deliberate code-style choices that signal between model instances. These are exactly the kind of behaviour where one would expect internal representations to differ from honest generation. Whether trusted monitoring could be augmented with cheap activation-level checks on the untrusted model — and whether this would dominate the trusted-editing frontier — is unexplored.
+3. **Linearly-detectable subversion as a missing channel.** The paper's red team includes attacks like deliberate code-style choices (`while` vs `for`) that signal between model instances. These are exactly the kind of behaviour where one would expect internal representations to differ from honest generation. Whether trusted monitoring could be augmented with cheap activation-level checks on the untrusted model — and whether this would dominate the trusted-editing frontier — is unexplored.
 
-4. **How does the frontier shift as the trusted/untrusted capability gap widens?** GPT-3.5 vs GPT-4 is roughly a one-generation gap. The authors flag this explicitly. If the trusted model is two or three generations behind, can it still write coherent edits of suspicious code? Trusted *monitoring* may degrade gracefully (you only need to flag suspicion); trusted *editing* may degrade sharply (you need to produce a correct rewrite). The frontier shape may invert.
+4. **How does the frontier shift as the trusted/untrusted capability gap widens?** GPT-3.5 vs GPT-4 is roughly a one-generation gap. The authors flag this explicitly as a scaling concern. If the trusted model is two or three generations behind, can it still write coherent edits of suspicious code? Trusted *monitoring* may degrade gracefully (you only need to flag suspicion); trusted *editing* may degrade sharply (you need to produce a correct rewrite). The frontier shape may invert.
 
 5. **Calibrating the auditing budget.** Safety scales non-trivially with the 2% audit budget. Whether the protocol rankings are stable to budget variation (0.5%, 5%, 10%) and what the right way to compare protocols across budgets is — Pareto frontier, dollar-cost equivalence, attack-success-rate-at-fixed-cost — is methodologically open.
 
