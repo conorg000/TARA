@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+pipeline/__init__.py
+pipeline/data.py
+pipeline/prompts.py
+pipeline/scorers.py
+pipeline/task.py
+scope_self_awareness_eval.egg-info/PKG-INFO
+scope_self_awareness_eval.egg-info/SOURCES.txt
+scope_self_awareness_eval.egg-info/dependency_links.txt
+scope_self_awareness_eval.egg-info/requires.txt
+scope_self_awareness_eval.egg-info/top_level.txt
