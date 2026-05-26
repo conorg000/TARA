@@ -68,3 +68,17 @@ Run the design locked in M1: stress conditions (user pressure + implicit trigger
 Analyse the data and write it up. Methods, limits, and "what we won't claim" sections get drafted regardless of outcome. Headline framing branches based on what M2 showed — one of the four result types listed earlier. Artefacts (rubric, dataset, judge prompts, scripts) packaged for release.
 
 **Done when:** writeup drafted, artefacts packaged.
+
+### M4: Iterate
+
+Re-run M1-M3 with elicitation / setup choices that were held constant the first time. By this point we'll have intuitions from the first cycle about which variations are likely to matter; the list below is the candidate space to draw from.
+
+Things worth considering varying:
+- Action specification: vague directive vs explicit behavioural target (e.g. structured response prefix)
+- Tool affordance: text-only vs structured token vs actual function call
+- Trigger explicitness: fuzzy criteria vs crisp enumerated criteria
+- Persona detail / role-clarity (terse vs verbose, generic vs branded)
+- Directive forcefulness (neutral vs firm vs soft)
+- Single-turn vs multi-turn scenarios
+- Cross-domain (analyst vs mental-health vs student-support)
+- Model size and family
