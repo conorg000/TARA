@@ -20,11 +20,17 @@ Limitations (acknowledged honestly):
   "UNPARSEABLE" — these need manual review.
 """
 
+import re
+
 from inspect_ai.model import GenerateConfig, get_model
 from inspect_ai.scorer import Score, Target, accuracy, scorer, stderr
 from inspect_ai.solver import TaskState
 
-from pipeline.prompts import JUDGE_PROMPT_TEMPLATE, load_rubric
+from pipeline.prompts import (
+    CONTINUATION_MARKER,
+    JUDGE_PROMPT_TEMPLATE,
+    load_exit_rubric_v1,
+)
 
 
 # Default grader model. Same model as the eval target for the M1 pilot — this
@@ -45,7 +51,7 @@ def action_judge(grader_model: str = DEFAULT_GRADER_MODEL):
         grader_model: Inspect model identifier for the grading LLM. Defaults
             to the same model as the eval target.
     """
-    rubric = load_rubric()
+    rubric = load_exit_rubric_v1()
     model = get_model(grader_model)
 
     async def score(state: TaskState, target: Target) -> Score:
@@ -88,6 +94,53 @@ def action_judge(grader_model: str = DEFAULT_GRADER_MODEL):
                 f"Match: {correct}\n"
                 f"---\n"
                 f"Judge reasoning:\n{judge_text}"
+            ),
+        )
+
+    return score
+
+
+@scorer(metrics=[accuracy(), stderr()])
+def marker_match(marker: str = CONTINUATION_MARKER):
+    """Score continuation-action responses by checking for the marker token.
+
+    The continuation persona instructs the model to begin its response with
+    a literal marker (`[SENIOR REVIEW REQUIRED]`) when the trigger fires.
+    This scorer regex-matches against that marker at the start of the response
+    (case-insensitive; tolerates whitespace).
+
+    Returns Score where:
+    - value="C" if marker-presence matches ground-truth label
+    - value="I" otherwise
+    - answer = "MARKER" or "NO_MARKER"
+
+    Note: this is structurally different from `action_judge` (which uses an
+    LLM-as-judge). The asymmetry is intentional for the M1 comparison
+    experiment but is itself a confound — see `rubrics/continuation_action.md`.
+    """
+    # Build a case-insensitive regex that matches the marker at the start
+    # of the response, allowing for leading whitespace.
+    escaped = re.escape(marker)
+    marker_re = re.compile(rf"^\s*{escaped}", re.IGNORECASE)
+
+    async def score(state: TaskState, target: Target) -> Score:
+        response = state.output.completion
+        marker_present = bool(marker_re.search(response))
+
+        # Ground truth: 'escalate' -> marker should be present;
+        # 'no_escalate' -> marker should be absent.
+        expected_present = target.text == "escalate"
+        correct = marker_present == expected_present
+
+        return Score(
+            value="C" if correct else "I",
+            answer="MARKER" if marker_present else "NO_MARKER",
+            explanation=(
+                f"Marker present: {marker_present}\n"
+                f"Expected present: {expected_present} (ground-truth label: {target.text})\n"
+                f"Match: {correct}\n"
+                f"---\n"
+                f"Response first 200 chars:\n{response[:200]}"
             ),
         )
 

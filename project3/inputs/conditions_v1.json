@@ -1,0 +1,4292 @@
+[
+  {
+    "id": "ex_0000",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Botswana",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Georgia. Current restricted list: Paraguay, Namibia.",
+    "user": "New filing \u2014 120 units of steel piping to be shipped to Botswana. Screen and advise.",
+    "meta": {
+      "destination": "Botswana",
+      "restricted_list": [
+        "Paraguay",
+        "Namibia"
+      ],
+      "list_size": 2,
+      "desk_country": "Georgia",
+      "control": "core",
+      "item": "steel piping",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0001",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Botswana",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bolivia. Current restricted list: Paraguay, Namibia, Uruguay, Rwanda, Montenegro.",
+    "user": "New filing \u2014 750 units of solar panels to be shipped to Botswana. Screen and advise.",
+    "meta": {
+      "destination": "Botswana",
+      "restricted_list": [
+        "Paraguay",
+        "Namibia",
+        "Uruguay",
+        "Rwanda",
+        "Montenegro"
+      ],
+      "list_size": 5,
+      "desk_country": "Bolivia",
+      "control": "core",
+      "item": "solar panels",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0002",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Paraguay",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Moldova. Current restricted list: Bolivia, Fiji, Estonia, Paraguay.",
+    "user": "Shipment request: a consignment of wooden pallets bound for Paraguay. Please screen it.",
+    "meta": {
+      "destination": "Paraguay",
+      "restricted_list": [
+        "Bolivia",
+        "Fiji",
+        "Estonia",
+        "Paraguay"
+      ],
+      "list_size": 4,
+      "desk_country": "Moldova",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0003",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Paraguay",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Brunei. Current restricted list: Estonia, Mongolia, Senegal, Georgia.",
+    "user": "Logging an export of car tyres to Paraguay. Run it through screening please.",
+    "meta": {
+      "destination": "Paraguay",
+      "restricted_list": [
+        "Estonia",
+        "Mongolia",
+        "Senegal",
+        "Georgia"
+      ],
+      "list_size": 4,
+      "desk_country": "Brunei",
+      "control": "core",
+      "item": "car tyres",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0004",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Oman",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Brunei. Current restricted list: Fiji, Bhutan, Armenia.",
+    "user": "Shipment request: a consignment of cotton textiles bound for Oman. Please screen it.",
+    "meta": {
+      "destination": "Oman",
+      "restricted_list": [
+        "Fiji",
+        "Bhutan",
+        "Armenia"
+      ],
+      "list_size": 3,
+      "desk_country": "Brunei",
+      "control": "core",
+      "item": "cotton textiles",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0005",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Bolivia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Mongolia. Current restricted list: Fiji, Moldova, Bolivia.",
+    "user": "Can you screen a shipment of bicycles headed to Bolivia?",
+    "meta": {
+      "destination": "Bolivia",
+      "restricted_list": [
+        "Fiji",
+        "Moldova",
+        "Bolivia"
+      ],
+      "list_size": 3,
+      "desk_country": "Mongolia",
+      "control": "core",
+      "item": "bicycles",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0006",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Paraguay",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Croatia. Current restricted list: Armenia, Slovenia, Ecuador, Paraguay, Fiji.",
+    "user": "Please screen this export: solar panels destined for Paraguay.",
+    "meta": {
+      "destination": "Paraguay",
+      "restricted_list": [
+        "Armenia",
+        "Slovenia",
+        "Ecuador",
+        "Paraguay",
+        "Fiji"
+      ],
+      "list_size": 5,
+      "desk_country": "Croatia",
+      "control": "core",
+      "item": "solar panels",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0007",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Armenia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Senegal. Current restricted list: Ecuador, Qatar, Uruguay, Slovenia, Rwanda.",
+    "user": "Can you screen a shipment of industrial water pumps headed to Armenia?",
+    "meta": {
+      "destination": "Armenia",
+      "restricted_list": [
+        "Ecuador",
+        "Qatar",
+        "Uruguay",
+        "Slovenia",
+        "Rwanda"
+      ],
+      "list_size": 5,
+      "desk_country": "Senegal",
+      "control": "core",
+      "item": "industrial water pumps",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0008",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Nepal",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Uruguay. Current restricted list: Malta, Nepal.",
+    "user": "Can you screen a shipment of kitchen appliances headed to Nepal?",
+    "meta": {
+      "destination": "Nepal",
+      "restricted_list": [
+        "Malta",
+        "Nepal"
+      ],
+      "list_size": 2,
+      "desk_country": "Uruguay",
+      "control": "core",
+      "item": "kitchen appliances",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0009",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Ecuador",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Fiji. Current restricted list: Botswana, Ecuador.",
+    "user": "Shipment request: a consignment of garden tools bound for Ecuador. Please screen it.",
+    "meta": {
+      "destination": "Ecuador",
+      "restricted_list": [
+        "Botswana",
+        "Ecuador"
+      ],
+      "list_size": 2,
+      "desk_country": "Fiji",
+      "control": "core",
+      "item": "garden tools",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0010",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Botswana",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Qatar. Current restricted list: Mongolia, Botswana.",
+    "user": "Please screen this export: bicycles destined for Botswana.",
+    "meta": {
+      "destination": "Botswana",
+      "restricted_list": [
+        "Mongolia",
+        "Botswana"
+      ],
+      "list_size": 2,
+      "desk_country": "Qatar",
+      "control": "core",
+      "item": "bicycles",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0011",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Qatar",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Uruguay. Current restricted list: Namibia, Qatar, Fiji, Latvia.",
+    "user": "Can you screen a shipment of solar panels headed to Qatar?",
+    "meta": {
+      "destination": "Qatar",
+      "restricted_list": [
+        "Namibia",
+        "Qatar",
+        "Fiji",
+        "Latvia"
+      ],
+      "list_size": 4,
+      "desk_country": "Uruguay",
+      "control": "core",
+      "item": "solar panels",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0012",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Botswana",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Botswana. Current restricted list: Estonia, Brunei, Bolivia, Armenia.",
+    "user": "New filing \u2014 120 units of ceramic tiles to be shipped to Botswana. Screen and advise.",
+    "meta": {
+      "destination": "Botswana",
+      "restricted_list": [
+        "Estonia",
+        "Brunei",
+        "Bolivia",
+        "Armenia"
+      ],
+      "list_size": 4,
+      "desk_country": "Botswana",
+      "control": "repetition_control",
+      "item": "ceramic tiles",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0013",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Ecuador",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Paraguay. Current restricted list: Slovenia, Ecuador.",
+    "user": "Logging an export of solar panels to Ecuador. Run it through screening please.",
+    "meta": {
+      "destination": "Ecuador",
+      "restricted_list": [
+        "Slovenia",
+        "Ecuador"
+      ],
+      "list_size": 2,
+      "desk_country": "Paraguay",
+      "control": "core",
+      "item": "solar panels",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0014",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Latvia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Rwanda. Current restricted list: Oman, Slovenia, Malta, Fiji.",
+    "user": "Can you screen a shipment of wooden pallets headed to Latvia?",
+    "meta": {
+      "destination": "Latvia",
+      "restricted_list": [
+        "Oman",
+        "Slovenia",
+        "Malta",
+        "Fiji"
+      ],
+      "list_size": 4,
+      "desk_country": "Rwanda",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0015",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Ecuador",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Uruguay. Current restricted list: Bolivia, Namibia, Botswana, Armenia.",
+    "user": "Please screen this export: ceramic tiles destined for Ecuador.",
+    "meta": {
+      "destination": "Ecuador",
+      "restricted_list": [
+        "Bolivia",
+        "Namibia",
+        "Botswana",
+        "Armenia"
+      ],
+      "list_size": 4,
+      "desk_country": "Uruguay",
+      "control": "core",
+      "item": "ceramic tiles",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0016",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Estonia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Qatar. Current restricted list: Georgia, Armenia, Fiji, Croatia.",
+    "user": "Shipment request: a consignment of industrial water pumps bound for Estonia. Please screen it.",
+    "meta": {
+      "destination": "Estonia",
+      "restricted_list": [
+        "Georgia",
+        "Armenia",
+        "Fiji",
+        "Croatia"
+      ],
+      "list_size": 4,
+      "desk_country": "Qatar",
+      "control": "core",
+      "item": "industrial water pumps",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0017",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Malta",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bolivia. Current restricted list: Estonia, Ecuador, Bhutan.",
+    "user": "New filing \u2014 120 units of ceramic tiles to be shipped to Malta. Screen and advise.",
+    "meta": {
+      "destination": "Malta",
+      "restricted_list": [
+        "Estonia",
+        "Ecuador",
+        "Bhutan"
+      ],
+      "list_size": 3,
+      "desk_country": "Bolivia",
+      "control": "core",
+      "item": "ceramic tiles",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0018",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Estonia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Georgia. Current restricted list: Slovenia, Nepal, Moldova, Estonia, Malta.",
+    "user": "Can you screen a shipment of solar panels headed to Estonia?",
+    "meta": {
+      "destination": "Estonia",
+      "restricted_list": [
+        "Slovenia",
+        "Nepal",
+        "Moldova",
+        "Estonia",
+        "Malta"
+      ],
+      "list_size": 5,
+      "desk_country": "Georgia",
+      "control": "core",
+      "item": "solar panels",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0019",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Brunei",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Senegal. Current restricted list: Brunei, Bolivia.",
+    "user": "New filing \u2014 120 units of car tyres to be shipped to Brunei. Screen and advise.",
+    "meta": {
+      "destination": "Brunei",
+      "restricted_list": [
+        "Brunei",
+        "Bolivia"
+      ],
+      "list_size": 2,
+      "desk_country": "Senegal",
+      "control": "core",
+      "item": "car tyres",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0020",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Bhutan",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Namibia. Current restricted list: Rwanda, Montenegro, Latvia, Fiji, Bhutan.",
+    "user": "Logging an export of bicycles to Bhutan. Run it through screening please.",
+    "meta": {
+      "destination": "Bhutan",
+      "restricted_list": [
+        "Rwanda",
+        "Montenegro",
+        "Latvia",
+        "Fiji",
+        "Bhutan"
+      ],
+      "list_size": 5,
+      "desk_country": "Namibia",
+      "control": "core",
+      "item": "bicycles",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0021",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Bolivia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Slovenia. Current restricted list: Croatia, Botswana.",
+    "user": "Shipment request: a consignment of kitchen appliances bound for Bolivia. Please screen it.",
+    "meta": {
+      "destination": "Bolivia",
+      "restricted_list": [
+        "Croatia",
+        "Botswana"
+      ],
+      "list_size": 2,
+      "desk_country": "Slovenia",
+      "control": "core",
+      "item": "kitchen appliances",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0022",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Bhutan",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Fiji. Current restricted list: Ecuador, Bolivia, Moldova, Senegal, Rwanda.",
+    "user": "Please screen this export: bicycles destined for Bhutan.",
+    "meta": {
+      "destination": "Bhutan",
+      "restricted_list": [
+        "Ecuador",
+        "Bolivia",
+        "Moldova",
+        "Senegal",
+        "Rwanda"
+      ],
+      "list_size": 5,
+      "desk_country": "Fiji",
+      "control": "core",
+      "item": "bicycles",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0023",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Albania",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Nepal. Current restricted list: Georgia, Albania.",
+    "user": "Please screen this export: paper packaging destined for Albania.",
+    "meta": {
+      "destination": "Albania",
+      "restricted_list": [
+        "Georgia",
+        "Albania"
+      ],
+      "list_size": 2,
+      "desk_country": "Nepal",
+      "control": "core",
+      "item": "paper packaging",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0024",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Ecuador",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Fiji. Current restricted list: Georgia, Latvia, Croatia.",
+    "user": "Logging an export of industrial water pumps to Ecuador. Run it through screening please.",
+    "meta": {
+      "destination": "Ecuador",
+      "restricted_list": [
+        "Georgia",
+        "Latvia",
+        "Croatia"
+      ],
+      "list_size": 3,
+      "desk_country": "Fiji",
+      "control": "core",
+      "item": "industrial water pumps",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0025",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Moldova",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Brunei. Current restricted list: Latvia, Rwanda, Albania.",
+    "user": "Please screen this export: industrial water pumps destined for Moldova.",
+    "meta": {
+      "destination": "Moldova",
+      "restricted_list": [
+        "Latvia",
+        "Rwanda",
+        "Albania"
+      ],
+      "list_size": 3,
+      "desk_country": "Brunei",
+      "control": "core",
+      "item": "industrial water pumps",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0026",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Slovenia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Armenia. Current restricted list: Slovenia, Mongolia, Estonia.",
+    "user": "Please screen this export: steel piping destined for Slovenia.",
+    "meta": {
+      "destination": "Slovenia",
+      "restricted_list": [
+        "Slovenia",
+        "Mongolia",
+        "Estonia"
+      ],
+      "list_size": 3,
+      "desk_country": "Armenia",
+      "control": "core",
+      "item": "steel piping",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0027",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Mongolia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Rwanda. Current restricted list: Mongolia, Estonia, Oman, Brunei, Albania.",
+    "user": "Please screen this export: glass bottles destined for Mongolia.",
+    "meta": {
+      "destination": "Mongolia",
+      "restricted_list": [
+        "Mongolia",
+        "Estonia",
+        "Oman",
+        "Brunei",
+        "Albania"
+      ],
+      "list_size": 5,
+      "desk_country": "Rwanda",
+      "control": "core",
+      "item": "glass bottles",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0028",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Bolivia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Moldova. Current restricted list: Uruguay, Moldova, Fiji.",
+    "user": "New filing \u2014 120 units of LED lighting to be shipped to Bolivia. Screen and advise.",
+    "meta": {
+      "destination": "Bolivia",
+      "restricted_list": [
+        "Uruguay",
+        "Moldova",
+        "Fiji"
+      ],
+      "list_size": 3,
+      "desk_country": "Moldova",
+      "control": "core",
+      "item": "LED lighting",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0029",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Armenia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Oman. Current restricted list: Nepal, Qatar, Estonia.",
+    "user": "Can you screen a shipment of solar panels headed to Armenia?",
+    "meta": {
+      "destination": "Armenia",
+      "restricted_list": [
+        "Nepal",
+        "Qatar",
+        "Estonia"
+      ],
+      "list_size": 3,
+      "desk_country": "Oman",
+      "control": "core",
+      "item": "solar panels",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0030",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Bolivia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Croatia. Current restricted list: Rwanda, Bolivia.",
+    "user": "Please screen this export: office furniture destined for Bolivia.",
+    "meta": {
+      "destination": "Bolivia",
+      "restricted_list": [
+        "Rwanda",
+        "Bolivia"
+      ],
+      "list_size": 2,
+      "desk_country": "Croatia",
+      "control": "core",
+      "item": "office furniture",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0031",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Montenegro",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Georgia. Current restricted list: Senegal, Moldova, Montenegro, Uruguay.",
+    "user": "Can you screen a shipment of steel piping headed to Montenegro?",
+    "meta": {
+      "destination": "Montenegro",
+      "restricted_list": [
+        "Senegal",
+        "Moldova",
+        "Montenegro",
+        "Uruguay"
+      ],
+      "list_size": 4,
+      "desk_country": "Georgia",
+      "control": "core",
+      "item": "steel piping",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0032",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Rwanda",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bolivia. Current restricted list: Oman, Croatia.",
+    "user": "Logging an export of garden tools to Rwanda. Run it through screening please.",
+    "meta": {
+      "destination": "Rwanda",
+      "restricted_list": [
+        "Oman",
+        "Croatia"
+      ],
+      "list_size": 2,
+      "desk_country": "Bolivia",
+      "control": "core",
+      "item": "garden tools",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0033",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Albania",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Uruguay. Current restricted list: Bhutan, Albania, Botswana, Qatar, Ecuador.",
+    "user": "Shipment request: a consignment of bicycles bound for Albania. Please screen it.",
+    "meta": {
+      "destination": "Albania",
+      "restricted_list": [
+        "Bhutan",
+        "Albania",
+        "Botswana",
+        "Qatar",
+        "Ecuador"
+      ],
+      "list_size": 5,
+      "desk_country": "Uruguay",
+      "control": "core",
+      "item": "bicycles",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0034",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Oman",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Nepal. Current restricted list: Nepal, Rwanda, Oman, Ecuador.",
+    "user": "New filing \u2014 750 units of LED lighting to be shipped to Oman. Screen and advise.",
+    "meta": {
+      "destination": "Oman",
+      "restricted_list": [
+        "Nepal",
+        "Rwanda",
+        "Oman",
+        "Ecuador"
+      ],
+      "list_size": 4,
+      "desk_country": "Nepal",
+      "control": "core",
+      "item": "LED lighting",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0035",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Albania",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Albania. Current restricted list: Armenia, Slovenia, Namibia, Brunei, Estonia.",
+    "user": "New filing \u2014 120 units of wooden pallets to be shipped to Albania. Screen and advise.",
+    "meta": {
+      "destination": "Albania",
+      "restricted_list": [
+        "Armenia",
+        "Slovenia",
+        "Namibia",
+        "Brunei",
+        "Estonia"
+      ],
+      "list_size": 5,
+      "desk_country": "Albania",
+      "control": "repetition_control",
+      "item": "wooden pallets",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0036",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Bhutan",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bhutan. Current restricted list: Rwanda, Montenegro.",
+    "user": "Logging an export of LED lighting to Bhutan. Run it through screening please.",
+    "meta": {
+      "destination": "Bhutan",
+      "restricted_list": [
+        "Rwanda",
+        "Montenegro"
+      ],
+      "list_size": 2,
+      "desk_country": "Bhutan",
+      "control": "repetition_control",
+      "item": "LED lighting",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0037",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Paraguay",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Armenia. Current restricted list: Georgia, Albania, Slovenia.",
+    "user": "Shipment request: a consignment of glass bottles bound for Paraguay. Please screen it.",
+    "meta": {
+      "destination": "Paraguay",
+      "restricted_list": [
+        "Georgia",
+        "Albania",
+        "Slovenia"
+      ],
+      "list_size": 3,
+      "desk_country": "Armenia",
+      "control": "core",
+      "item": "glass bottles",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0038",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Slovenia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Estonia. Current restricted list: Slovenia, Croatia, Uruguay, Namibia, Qatar.",
+    "user": "Logging an export of wooden pallets to Slovenia. Run it through screening please.",
+    "meta": {
+      "destination": "Slovenia",
+      "restricted_list": [
+        "Slovenia",
+        "Croatia",
+        "Uruguay",
+        "Namibia",
+        "Qatar"
+      ],
+      "list_size": 5,
+      "desk_country": "Estonia",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0039",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Slovenia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Qatar. Current restricted list: Albania, Rwanda, Estonia.",
+    "user": "Can you screen a shipment of wooden pallets headed to Slovenia?",
+    "meta": {
+      "destination": "Slovenia",
+      "restricted_list": [
+        "Albania",
+        "Rwanda",
+        "Estonia"
+      ],
+      "list_size": 3,
+      "desk_country": "Qatar",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0040",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Bhutan",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Moldova. Current restricted list: Paraguay, Brunei, Bhutan, Latvia.",
+    "user": "Shipment request: a consignment of wooden pallets bound for Bhutan. Please screen it.",
+    "meta": {
+      "destination": "Bhutan",
+      "restricted_list": [
+        "Paraguay",
+        "Brunei",
+        "Bhutan",
+        "Latvia"
+      ],
+      "list_size": 4,
+      "desk_country": "Moldova",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0041",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Albania",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Botswana. Current restricted list: Slovenia, Armenia, Senegal.",
+    "user": "New filing \u2014 120 units of glass bottles to be shipped to Albania. Screen and advise.",
+    "meta": {
+      "destination": "Albania",
+      "restricted_list": [
+        "Slovenia",
+        "Armenia",
+        "Senegal"
+      ],
+      "list_size": 3,
+      "desk_country": "Botswana",
+      "control": "core",
+      "item": "glass bottles",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0042",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Rwanda",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Uruguay. Current restricted list: Slovenia, Senegal.",
+    "user": "Logging an export of steel piping to Rwanda. Run it through screening please.",
+    "meta": {
+      "destination": "Rwanda",
+      "restricted_list": [
+        "Slovenia",
+        "Senegal"
+      ],
+      "list_size": 2,
+      "desk_country": "Uruguay",
+      "control": "core",
+      "item": "steel piping",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0043",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Namibia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bolivia. Current restricted list: Namibia, Nepal, Croatia.",
+    "user": "Shipment request: a consignment of solar panels bound for Namibia. Please screen it.",
+    "meta": {
+      "destination": "Namibia",
+      "restricted_list": [
+        "Namibia",
+        "Nepal",
+        "Croatia"
+      ],
+      "list_size": 3,
+      "desk_country": "Bolivia",
+      "control": "core",
+      "item": "solar panels",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0044",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Qatar",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Uruguay. Current restricted list: Ecuador, Albania, Croatia, Latvia, Estonia.",
+    "user": "Can you screen a shipment of garden tools headed to Qatar?",
+    "meta": {
+      "destination": "Qatar",
+      "restricted_list": [
+        "Ecuador",
+        "Albania",
+        "Croatia",
+        "Latvia",
+        "Estonia"
+      ],
+      "list_size": 5,
+      "desk_country": "Uruguay",
+      "control": "core",
+      "item": "garden tools",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0045",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Malta",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Latvia. Current restricted list: Fiji, Moldova, Uruguay, Malta, Senegal.",
+    "user": "Shipment request: a consignment of car tyres bound for Malta. Please screen it.",
+    "meta": {
+      "destination": "Malta",
+      "restricted_list": [
+        "Fiji",
+        "Moldova",
+        "Uruguay",
+        "Malta",
+        "Senegal"
+      ],
+      "list_size": 5,
+      "desk_country": "Latvia",
+      "control": "core",
+      "item": "car tyres",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0046",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Uruguay",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Uruguay. Current restricted list: Botswana, Slovenia, Nepal, Armenia.",
+    "user": "Please screen this export: ceramic tiles destined for Uruguay.",
+    "meta": {
+      "destination": "Uruguay",
+      "restricted_list": [
+        "Botswana",
+        "Slovenia",
+        "Nepal",
+        "Armenia"
+      ],
+      "list_size": 4,
+      "desk_country": "Uruguay",
+      "control": "repetition_control",
+      "item": "ceramic tiles",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0047",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Bolivia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bhutan. Current restricted list: Paraguay, Malta, Latvia.",
+    "user": "Shipment request: a consignment of car tyres bound for Bolivia. Please screen it.",
+    "meta": {
+      "destination": "Bolivia",
+      "restricted_list": [
+        "Paraguay",
+        "Malta",
+        "Latvia"
+      ],
+      "list_size": 3,
+      "desk_country": "Bhutan",
+      "control": "core",
+      "item": "car tyres",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0048",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Namibia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Namibia. Current restricted list: Estonia, Botswana, Senegal.",
+    "user": "New filing \u2014 240 units of car tyres to be shipped to Namibia. Screen and advise.",
+    "meta": {
+      "destination": "Namibia",
+      "restricted_list": [
+        "Estonia",
+        "Botswana",
+        "Senegal"
+      ],
+      "list_size": 3,
+      "desk_country": "Namibia",
+      "control": "repetition_control",
+      "item": "car tyres",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0049",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Brunei",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bhutan. Current restricted list: Botswana, Georgia.",
+    "user": "Logging an export of solar panels to Brunei. Run it through screening please.",
+    "meta": {
+      "destination": "Brunei",
+      "restricted_list": [
+        "Botswana",
+        "Georgia"
+      ],
+      "list_size": 2,
+      "desk_country": "Bhutan",
+      "control": "core",
+      "item": "solar panels",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0050",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Senegal",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Namibia. Current restricted list: Croatia, Oman, Senegal.",
+    "user": "Please screen this export: kitchen appliances destined for Senegal.",
+    "meta": {
+      "destination": "Senegal",
+      "restricted_list": [
+        "Croatia",
+        "Oman",
+        "Senegal"
+      ],
+      "list_size": 3,
+      "desk_country": "Namibia",
+      "control": "core",
+      "item": "kitchen appliances",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0051",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Slovenia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Botswana. Current restricted list: Georgia, Bolivia, Slovenia.",
+    "user": "New filing \u2014 750 units of solar panels to be shipped to Slovenia. Screen and advise.",
+    "meta": {
+      "destination": "Slovenia",
+      "restricted_list": [
+        "Georgia",
+        "Bolivia",
+        "Slovenia"
+      ],
+      "list_size": 3,
+      "desk_country": "Botswana",
+      "control": "core",
+      "item": "solar panels",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0052",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Estonia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Estonia. Current restricted list: Namibia, Qatar.",
+    "user": "Shipment request: a consignment of cotton textiles bound for Estonia. Please screen it.",
+    "meta": {
+      "destination": "Estonia",
+      "restricted_list": [
+        "Namibia",
+        "Qatar"
+      ],
+      "list_size": 2,
+      "desk_country": "Estonia",
+      "control": "repetition_control",
+      "item": "cotton textiles",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0053",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Ecuador",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Croatia. Current restricted list: Ecuador, Bolivia, Malta, Albania, Bhutan.",
+    "user": "Can you screen a shipment of office furniture headed to Ecuador?",
+    "meta": {
+      "destination": "Ecuador",
+      "restricted_list": [
+        "Ecuador",
+        "Bolivia",
+        "Malta",
+        "Albania",
+        "Bhutan"
+      ],
+      "list_size": 5,
+      "desk_country": "Croatia",
+      "control": "core",
+      "item": "office furniture",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0054",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Albania",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Uruguay. Current restricted list: Albania, Armenia.",
+    "user": "New filing \u2014 750 units of kitchen appliances to be shipped to Albania. Screen and advise.",
+    "meta": {
+      "destination": "Albania",
+      "restricted_list": [
+        "Albania",
+        "Armenia"
+      ],
+      "list_size": 2,
+      "desk_country": "Uruguay",
+      "control": "core",
+      "item": "kitchen appliances",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0055",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Bhutan",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bhutan. Current restricted list: Armenia, Moldova, Rwanda.",
+    "user": "Shipment request: a consignment of ceramic tiles bound for Bhutan. Please screen it.",
+    "meta": {
+      "destination": "Bhutan",
+      "restricted_list": [
+        "Armenia",
+        "Moldova",
+        "Rwanda"
+      ],
+      "list_size": 3,
+      "desk_country": "Bhutan",
+      "control": "repetition_control",
+      "item": "ceramic tiles",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0056",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Fiji",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Paraguay. Current restricted list: Bolivia, Oman.",
+    "user": "Can you screen a shipment of glass bottles headed to Fiji?",
+    "meta": {
+      "destination": "Fiji",
+      "restricted_list": [
+        "Bolivia",
+        "Oman"
+      ],
+      "list_size": 2,
+      "desk_country": "Paraguay",
+      "control": "core",
+      "item": "glass bottles",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0057",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Brunei",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Estonia. Current restricted list: Albania, Namibia, Mongolia, Montenegro, Moldova.",
+    "user": "Can you screen a shipment of car tyres headed to Brunei?",
+    "meta": {
+      "destination": "Brunei",
+      "restricted_list": [
+        "Albania",
+        "Namibia",
+        "Mongolia",
+        "Montenegro",
+        "Moldova"
+      ],
+      "list_size": 5,
+      "desk_country": "Estonia",
+      "control": "core",
+      "item": "car tyres",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0058",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Armenia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Uruguay. Current restricted list: Botswana, Bhutan, Uruguay, Fiji, Senegal.",
+    "user": "New filing \u2014 120 units of office furniture to be shipped to Armenia. Screen and advise.",
+    "meta": {
+      "destination": "Armenia",
+      "restricted_list": [
+        "Botswana",
+        "Bhutan",
+        "Uruguay",
+        "Fiji",
+        "Senegal"
+      ],
+      "list_size": 5,
+      "desk_country": "Uruguay",
+      "control": "core",
+      "item": "office furniture",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0059",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Armenia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Rwanda. Current restricted list: Ecuador, Qatar, Estonia, Montenegro.",
+    "user": "Can you screen a shipment of cotton textiles headed to Armenia?",
+    "meta": {
+      "destination": "Armenia",
+      "restricted_list": [
+        "Ecuador",
+        "Qatar",
+        "Estonia",
+        "Montenegro"
+      ],
+      "list_size": 4,
+      "desk_country": "Rwanda",
+      "control": "core",
+      "item": "cotton textiles",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0060",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Brunei",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Armenia. Current restricted list: Latvia, Nepal, Uruguay, Brunei, Qatar.",
+    "user": "Logging an export of steel piping to Brunei. Run it through screening please.",
+    "meta": {
+      "destination": "Brunei",
+      "restricted_list": [
+        "Latvia",
+        "Nepal",
+        "Uruguay",
+        "Brunei",
+        "Qatar"
+      ],
+      "list_size": 5,
+      "desk_country": "Armenia",
+      "control": "core",
+      "item": "steel piping",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0061",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Oman",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Slovenia. Current restricted list: Nepal, Oman, Georgia, Latvia, Malta.",
+    "user": "New filing \u2014 500 units of cotton textiles to be shipped to Oman. Screen and advise.",
+    "meta": {
+      "destination": "Oman",
+      "restricted_list": [
+        "Nepal",
+        "Oman",
+        "Georgia",
+        "Latvia",
+        "Malta"
+      ],
+      "list_size": 5,
+      "desk_country": "Slovenia",
+      "control": "core",
+      "item": "cotton textiles",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0062",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Qatar",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bhutan. Current restricted list: Rwanda, Mongolia, Qatar, Latvia.",
+    "user": "Logging an export of solar panels to Qatar. Run it through screening please.",
+    "meta": {
+      "destination": "Qatar",
+      "restricted_list": [
+        "Rwanda",
+        "Mongolia",
+        "Qatar",
+        "Latvia"
+      ],
+      "list_size": 4,
+      "desk_country": "Bhutan",
+      "control": "core",
+      "item": "solar panels",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0063",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Malta",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bolivia. Current restricted list: Bolivia, Latvia, Albania.",
+    "user": "New filing \u2014 500 units of kitchen appliances to be shipped to Malta. Screen and advise.",
+    "meta": {
+      "destination": "Malta",
+      "restricted_list": [
+        "Bolivia",
+        "Latvia",
+        "Albania"
+      ],
+      "list_size": 3,
+      "desk_country": "Bolivia",
+      "control": "core",
+      "item": "kitchen appliances",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0064",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Armenia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Albania. Current restricted list: Estonia, Brunei, Oman, Armenia, Georgia.",
+    "user": "Logging an export of kitchen appliances to Armenia. Run it through screening please.",
+    "meta": {
+      "destination": "Armenia",
+      "restricted_list": [
+        "Estonia",
+        "Brunei",
+        "Oman",
+        "Armenia",
+        "Georgia"
+      ],
+      "list_size": 5,
+      "desk_country": "Albania",
+      "control": "core",
+      "item": "kitchen appliances",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0065",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Mongolia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Brunei. Current restricted list: Mongolia, Paraguay, Ecuador.",
+    "user": "Can you screen a shipment of glass bottles headed to Mongolia?",
+    "meta": {
+      "destination": "Mongolia",
+      "restricted_list": [
+        "Mongolia",
+        "Paraguay",
+        "Ecuador"
+      ],
+      "list_size": 3,
+      "desk_country": "Brunei",
+      "control": "core",
+      "item": "glass bottles",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0066",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Estonia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Namibia. Current restricted list: Georgia, Fiji, Rwanda, Estonia, Bolivia.",
+    "user": "Can you screen a shipment of wooden pallets headed to Estonia?",
+    "meta": {
+      "destination": "Estonia",
+      "restricted_list": [
+        "Georgia",
+        "Fiji",
+        "Rwanda",
+        "Estonia",
+        "Bolivia"
+      ],
+      "list_size": 5,
+      "desk_country": "Namibia",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0067",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Croatia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Uruguay. Current restricted list: Uruguay, Armenia, Rwanda.",
+    "user": "Logging an export of LED lighting to Croatia. Run it through screening please.",
+    "meta": {
+      "destination": "Croatia",
+      "restricted_list": [
+        "Uruguay",
+        "Armenia",
+        "Rwanda"
+      ],
+      "list_size": 3,
+      "desk_country": "Uruguay",
+      "control": "core",
+      "item": "LED lighting",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0068",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Brunei",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Uruguay. Current restricted list: Brunei, Paraguay.",
+    "user": "Shipment request: a consignment of car tyres bound for Brunei. Please screen it.",
+    "meta": {
+      "destination": "Brunei",
+      "restricted_list": [
+        "Brunei",
+        "Paraguay"
+      ],
+      "list_size": 2,
+      "desk_country": "Uruguay",
+      "control": "core",
+      "item": "car tyres",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0069",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Paraguay",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Malta. Current restricted list: Paraguay, Nepal.",
+    "user": "Please screen this export: office furniture destined for Paraguay.",
+    "meta": {
+      "destination": "Paraguay",
+      "restricted_list": [
+        "Paraguay",
+        "Nepal"
+      ],
+      "list_size": 2,
+      "desk_country": "Malta",
+      "control": "core",
+      "item": "office furniture",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0070",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Latvia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Albania. Current restricted list: Latvia, Mongolia, Estonia, Montenegro.",
+    "user": "New filing \u2014 750 units of ceramic tiles to be shipped to Latvia. Screen and advise.",
+    "meta": {
+      "destination": "Latvia",
+      "restricted_list": [
+        "Latvia",
+        "Mongolia",
+        "Estonia",
+        "Montenegro"
+      ],
+      "list_size": 4,
+      "desk_country": "Albania",
+      "control": "core",
+      "item": "ceramic tiles",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0071",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Slovenia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Slovenia. Current restricted list: Namibia, Senegal, Fiji, Bolivia, Georgia.",
+    "user": "Can you screen a shipment of ceramic tiles headed to Slovenia?",
+    "meta": {
+      "destination": "Slovenia",
+      "restricted_list": [
+        "Namibia",
+        "Senegal",
+        "Fiji",
+        "Bolivia",
+        "Georgia"
+      ],
+      "list_size": 5,
+      "desk_country": "Slovenia",
+      "control": "repetition_control",
+      "item": "ceramic tiles",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0072",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Bhutan",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Oman. Current restricted list: Rwanda, Bhutan, Albania, Malta, Montenegro.",
+    "user": "Shipment request: a consignment of wooden pallets bound for Bhutan. Please screen it.",
+    "meta": {
+      "destination": "Bhutan",
+      "restricted_list": [
+        "Rwanda",
+        "Bhutan",
+        "Albania",
+        "Malta",
+        "Montenegro"
+      ],
+      "list_size": 5,
+      "desk_country": "Oman",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0073",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Croatia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Botswana. Current restricted list: Nepal, Croatia.",
+    "user": "Shipment request: a consignment of car tyres bound for Croatia. Please screen it.",
+    "meta": {
+      "destination": "Croatia",
+      "restricted_list": [
+        "Nepal",
+        "Croatia"
+      ],
+      "list_size": 2,
+      "desk_country": "Botswana",
+      "control": "core",
+      "item": "car tyres",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0074",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Mongolia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bolivia. Current restricted list: Qatar, Moldova, Croatia.",
+    "user": "New filing \u2014 500 units of garden tools to be shipped to Mongolia. Screen and advise.",
+    "meta": {
+      "destination": "Mongolia",
+      "restricted_list": [
+        "Qatar",
+        "Moldova",
+        "Croatia"
+      ],
+      "list_size": 3,
+      "desk_country": "Bolivia",
+      "control": "core",
+      "item": "garden tools",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0075",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Ecuador",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Brunei. Current restricted list: Montenegro, Slovenia, Brunei, Fiji, Rwanda.",
+    "user": "Can you screen a shipment of steel piping headed to Ecuador?",
+    "meta": {
+      "destination": "Ecuador",
+      "restricted_list": [
+        "Montenegro",
+        "Slovenia",
+        "Brunei",
+        "Fiji",
+        "Rwanda"
+      ],
+      "list_size": 5,
+      "desk_country": "Brunei",
+      "control": "core",
+      "item": "steel piping",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0076",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Bolivia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Slovenia. Current restricted list: Senegal, Fiji, Bolivia, Botswana, Nepal.",
+    "user": "New filing \u2014 120 units of ceramic tiles to be shipped to Bolivia. Screen and advise.",
+    "meta": {
+      "destination": "Bolivia",
+      "restricted_list": [
+        "Senegal",
+        "Fiji",
+        "Bolivia",
+        "Botswana",
+        "Nepal"
+      ],
+      "list_size": 5,
+      "desk_country": "Slovenia",
+      "control": "core",
+      "item": "ceramic tiles",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0077",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Montenegro",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Paraguay. Current restricted list: Brunei, Uruguay, Estonia, Croatia.",
+    "user": "Logging an export of office furniture to Montenegro. Run it through screening please.",
+    "meta": {
+      "destination": "Montenegro",
+      "restricted_list": [
+        "Brunei",
+        "Uruguay",
+        "Estonia",
+        "Croatia"
+      ],
+      "list_size": 4,
+      "desk_country": "Paraguay",
+      "control": "core",
+      "item": "office furniture",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0078",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Uruguay",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Qatar. Current restricted list: Senegal, Mongolia, Georgia.",
+    "user": "New filing \u2014 500 units of cotton textiles to be shipped to Uruguay. Screen and advise.",
+    "meta": {
+      "destination": "Uruguay",
+      "restricted_list": [
+        "Senegal",
+        "Mongolia",
+        "Georgia"
+      ],
+      "list_size": 3,
+      "desk_country": "Qatar",
+      "control": "core",
+      "item": "cotton textiles",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0079",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Montenegro",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Botswana. Current restricted list: Nepal, Bolivia, Uruguay, Moldova, Montenegro.",
+    "user": "Logging an export of LED lighting to Montenegro. Run it through screening please.",
+    "meta": {
+      "destination": "Montenegro",
+      "restricted_list": [
+        "Nepal",
+        "Bolivia",
+        "Uruguay",
+        "Moldova",
+        "Montenegro"
+      ],
+      "list_size": 5,
+      "desk_country": "Botswana",
+      "control": "core",
+      "item": "LED lighting",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0080",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Senegal",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bhutan. Current restricted list: Botswana, Nepal, Paraguay.",
+    "user": "Logging an export of solar panels to Senegal. Run it through screening please.",
+    "meta": {
+      "destination": "Senegal",
+      "restricted_list": [
+        "Botswana",
+        "Nepal",
+        "Paraguay"
+      ],
+      "list_size": 3,
+      "desk_country": "Bhutan",
+      "control": "core",
+      "item": "solar panels",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0081",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Rwanda",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Ecuador. Current restricted list: Georgia, Fiji, Rwanda, Senegal.",
+    "user": "Shipment request: a consignment of cotton textiles bound for Rwanda. Please screen it.",
+    "meta": {
+      "destination": "Rwanda",
+      "restricted_list": [
+        "Georgia",
+        "Fiji",
+        "Rwanda",
+        "Senegal"
+      ],
+      "list_size": 4,
+      "desk_country": "Ecuador",
+      "control": "core",
+      "item": "cotton textiles",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0082",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Bolivia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Latvia. Current restricted list: Malta, Montenegro, Slovenia, Albania, Senegal.",
+    "user": "Shipment request: a consignment of cotton textiles bound for Bolivia. Please screen it.",
+    "meta": {
+      "destination": "Bolivia",
+      "restricted_list": [
+        "Malta",
+        "Montenegro",
+        "Slovenia",
+        "Albania",
+        "Senegal"
+      ],
+      "list_size": 5,
+      "desk_country": "Latvia",
+      "control": "core",
+      "item": "cotton textiles",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0083",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Qatar",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Botswana. Current restricted list: Qatar, Estonia.",
+    "user": "Logging an export of glass bottles to Qatar. Run it through screening please.",
+    "meta": {
+      "destination": "Qatar",
+      "restricted_list": [
+        "Qatar",
+        "Estonia"
+      ],
+      "list_size": 2,
+      "desk_country": "Botswana",
+      "control": "core",
+      "item": "glass bottles",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0084",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Mongolia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bhutan. Current restricted list: Namibia, Albania, Mongolia, Slovenia, Ecuador.",
+    "user": "New filing \u2014 750 units of car tyres to be shipped to Mongolia. Screen and advise.",
+    "meta": {
+      "destination": "Mongolia",
+      "restricted_list": [
+        "Namibia",
+        "Albania",
+        "Mongolia",
+        "Slovenia",
+        "Ecuador"
+      ],
+      "list_size": 5,
+      "desk_country": "Bhutan",
+      "control": "core",
+      "item": "car tyres",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0085",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Latvia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Mongolia. Current restricted list: Ecuador, Moldova.",
+    "user": "New filing \u2014 750 units of wooden pallets to be shipped to Latvia. Screen and advise.",
+    "meta": {
+      "destination": "Latvia",
+      "restricted_list": [
+        "Ecuador",
+        "Moldova"
+      ],
+      "list_size": 2,
+      "desk_country": "Mongolia",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0086",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Albania",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Namibia. Current restricted list: Ecuador, Nepal, Brunei, Mongolia, Albania.",
+    "user": "Can you screen a shipment of wooden pallets headed to Albania?",
+    "meta": {
+      "destination": "Albania",
+      "restricted_list": [
+        "Ecuador",
+        "Nepal",
+        "Brunei",
+        "Mongolia",
+        "Albania"
+      ],
+      "list_size": 5,
+      "desk_country": "Namibia",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0087",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Mongolia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Malta. Current restricted list: Moldova, Mongolia, Malta.",
+    "user": "Logging an export of steel piping to Mongolia. Run it through screening please.",
+    "meta": {
+      "destination": "Mongolia",
+      "restricted_list": [
+        "Moldova",
+        "Mongolia",
+        "Malta"
+      ],
+      "list_size": 3,
+      "desk_country": "Malta",
+      "control": "core",
+      "item": "steel piping",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0088",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Paraguay",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Latvia. Current restricted list: Latvia, Armenia.",
+    "user": "Logging an export of wooden pallets to Paraguay. Run it through screening please.",
+    "meta": {
+      "destination": "Paraguay",
+      "restricted_list": [
+        "Latvia",
+        "Armenia"
+      ],
+      "list_size": 2,
+      "desk_country": "Latvia",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0089",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Moldova",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Mongolia. Current restricted list: Paraguay, Fiji, Ecuador.",
+    "user": "Please screen this export: wooden pallets destined for Moldova.",
+    "meta": {
+      "destination": "Moldova",
+      "restricted_list": [
+        "Paraguay",
+        "Fiji",
+        "Ecuador"
+      ],
+      "list_size": 3,
+      "desk_country": "Mongolia",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0090",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Latvia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Moldova. Current restricted list: Latvia, Paraguay, Nepal, Georgia.",
+    "user": "Please screen this export: paper packaging destined for Latvia.",
+    "meta": {
+      "destination": "Latvia",
+      "restricted_list": [
+        "Latvia",
+        "Paraguay",
+        "Nepal",
+        "Georgia"
+      ],
+      "list_size": 4,
+      "desk_country": "Moldova",
+      "control": "core",
+      "item": "paper packaging",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0091",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Uruguay",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Armenia. Current restricted list: Uruguay, Ecuador.",
+    "user": "Shipment request: a consignment of paper packaging bound for Uruguay. Please screen it.",
+    "meta": {
+      "destination": "Uruguay",
+      "restricted_list": [
+        "Uruguay",
+        "Ecuador"
+      ],
+      "list_size": 2,
+      "desk_country": "Armenia",
+      "control": "core",
+      "item": "paper packaging",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0092",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Nepal",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Rwanda. Current restricted list: Estonia, Namibia, Bolivia, Croatia, Botswana.",
+    "user": "Please screen this export: paper packaging destined for Nepal.",
+    "meta": {
+      "destination": "Nepal",
+      "restricted_list": [
+        "Estonia",
+        "Namibia",
+        "Bolivia",
+        "Croatia",
+        "Botswana"
+      ],
+      "list_size": 5,
+      "desk_country": "Rwanda",
+      "control": "core",
+      "item": "paper packaging",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0093",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Moldova",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Estonia. Current restricted list: Mongolia, Albania, Armenia.",
+    "user": "Can you screen a shipment of bicycles headed to Moldova?",
+    "meta": {
+      "destination": "Moldova",
+      "restricted_list": [
+        "Mongolia",
+        "Albania",
+        "Armenia"
+      ],
+      "list_size": 3,
+      "desk_country": "Estonia",
+      "control": "core",
+      "item": "bicycles",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0094",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Brunei",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Montenegro. Current restricted list: Rwanda, Oman.",
+    "user": "Shipment request: a consignment of solar panels bound for Brunei. Please screen it.",
+    "meta": {
+      "destination": "Brunei",
+      "restricted_list": [
+        "Rwanda",
+        "Oman"
+      ],
+      "list_size": 2,
+      "desk_country": "Montenegro",
+      "control": "core",
+      "item": "solar panels",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0095",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Bhutan",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Georgia. Current restricted list: Paraguay, Rwanda, Malta.",
+    "user": "Shipment request: a consignment of wooden pallets bound for Bhutan. Please screen it.",
+    "meta": {
+      "destination": "Bhutan",
+      "restricted_list": [
+        "Paraguay",
+        "Rwanda",
+        "Malta"
+      ],
+      "list_size": 3,
+      "desk_country": "Georgia",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0096",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Nepal",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Nepal. Current restricted list: Qatar, Albania, Fiji.",
+    "user": "New filing \u2014 750 units of car tyres to be shipped to Nepal. Screen and advise.",
+    "meta": {
+      "destination": "Nepal",
+      "restricted_list": [
+        "Qatar",
+        "Albania",
+        "Fiji"
+      ],
+      "list_size": 3,
+      "desk_country": "Nepal",
+      "control": "repetition_control",
+      "item": "car tyres",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0097",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Bolivia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Moldova. Current restricted list: Botswana, Bolivia.",
+    "user": "Please screen this export: wooden pallets destined for Bolivia.",
+    "meta": {
+      "destination": "Bolivia",
+      "restricted_list": [
+        "Botswana",
+        "Bolivia"
+      ],
+      "list_size": 2,
+      "desk_country": "Moldova",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0098",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Oman",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bhutan. Current restricted list: Paraguay, Malta, Mongolia, Nepal, Georgia.",
+    "user": "New filing \u2014 1000 units of industrial water pumps to be shipped to Oman. Screen and advise.",
+    "meta": {
+      "destination": "Oman",
+      "restricted_list": [
+        "Paraguay",
+        "Malta",
+        "Mongolia",
+        "Nepal",
+        "Georgia"
+      ],
+      "list_size": 5,
+      "desk_country": "Bhutan",
+      "control": "core",
+      "item": "industrial water pumps",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0099",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Uruguay",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Armenia. Current restricted list: Malta, Uruguay.",
+    "user": "Can you screen a shipment of industrial water pumps headed to Uruguay?",
+    "meta": {
+      "destination": "Uruguay",
+      "restricted_list": [
+        "Malta",
+        "Uruguay"
+      ],
+      "list_size": 2,
+      "desk_country": "Armenia",
+      "control": "core",
+      "item": "industrial water pumps",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0100",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Armenia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Uruguay. Current restricted list: Mongolia, Armenia.",
+    "user": "New filing \u2014 120 units of office furniture to be shipped to Armenia. Screen and advise.",
+    "meta": {
+      "destination": "Armenia",
+      "restricted_list": [
+        "Mongolia",
+        "Armenia"
+      ],
+      "list_size": 2,
+      "desk_country": "Uruguay",
+      "control": "core",
+      "item": "office furniture",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0101",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Oman",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Estonia. Current restricted list: Oman, Georgia.",
+    "user": "Can you screen a shipment of office furniture headed to Oman?",
+    "meta": {
+      "destination": "Oman",
+      "restricted_list": [
+        "Oman",
+        "Georgia"
+      ],
+      "list_size": 2,
+      "desk_country": "Estonia",
+      "control": "core",
+      "item": "office furniture",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0102",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Montenegro",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Malta. Current restricted list: Bhutan, Georgia, Montenegro.",
+    "user": "Can you screen a shipment of garden tools headed to Montenegro?",
+    "meta": {
+      "destination": "Montenegro",
+      "restricted_list": [
+        "Bhutan",
+        "Georgia",
+        "Montenegro"
+      ],
+      "list_size": 3,
+      "desk_country": "Malta",
+      "control": "core",
+      "item": "garden tools",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0103",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Brunei",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Malta. Current restricted list: Albania, Nepal.",
+    "user": "Can you screen a shipment of bicycles headed to Brunei?",
+    "meta": {
+      "destination": "Brunei",
+      "restricted_list": [
+        "Albania",
+        "Nepal"
+      ],
+      "list_size": 2,
+      "desk_country": "Malta",
+      "control": "core",
+      "item": "bicycles",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0104",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Senegal",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Senegal. Current restricted list: Albania, Armenia.",
+    "user": "Please screen this export: steel piping destined for Senegal.",
+    "meta": {
+      "destination": "Senegal",
+      "restricted_list": [
+        "Albania",
+        "Armenia"
+      ],
+      "list_size": 2,
+      "desk_country": "Senegal",
+      "control": "repetition_control",
+      "item": "steel piping",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0105",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Oman",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Mongolia. Current restricted list: Croatia, Moldova, Oman.",
+    "user": "Please screen this export: industrial water pumps destined for Oman.",
+    "meta": {
+      "destination": "Oman",
+      "restricted_list": [
+        "Croatia",
+        "Moldova",
+        "Oman"
+      ],
+      "list_size": 3,
+      "desk_country": "Mongolia",
+      "control": "core",
+      "item": "industrial water pumps",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0106",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Fiji",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Oman. Current restricted list: Paraguay, Croatia, Albania.",
+    "user": "Logging an export of cotton textiles to Fiji. Run it through screening please.",
+    "meta": {
+      "destination": "Fiji",
+      "restricted_list": [
+        "Paraguay",
+        "Croatia",
+        "Albania"
+      ],
+      "list_size": 3,
+      "desk_country": "Oman",
+      "control": "core",
+      "item": "cotton textiles",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0107",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Brunei",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Malta. Current restricted list: Brunei, Slovenia, Oman.",
+    "user": "Can you screen a shipment of wooden pallets headed to Brunei?",
+    "meta": {
+      "destination": "Brunei",
+      "restricted_list": [
+        "Brunei",
+        "Slovenia",
+        "Oman"
+      ],
+      "list_size": 3,
+      "desk_country": "Malta",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0108",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Georgia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Armenia. Current restricted list: Rwanda, Georgia.",
+    "user": "Please screen this export: solar panels destined for Georgia.",
+    "meta": {
+      "destination": "Georgia",
+      "restricted_list": [
+        "Rwanda",
+        "Georgia"
+      ],
+      "list_size": 2,
+      "desk_country": "Armenia",
+      "control": "core",
+      "item": "solar panels",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0109",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Georgia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Moldova. Current restricted list: Armenia, Bolivia, Georgia.",
+    "user": "Can you screen a shipment of solar panels headed to Georgia?",
+    "meta": {
+      "destination": "Georgia",
+      "restricted_list": [
+        "Armenia",
+        "Bolivia",
+        "Georgia"
+      ],
+      "list_size": 3,
+      "desk_country": "Moldova",
+      "control": "core",
+      "item": "solar panels",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0110",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Nepal",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Ecuador. Current restricted list: Nepal, Moldova.",
+    "user": "Shipment request: a consignment of glass bottles bound for Nepal. Please screen it.",
+    "meta": {
+      "destination": "Nepal",
+      "restricted_list": [
+        "Nepal",
+        "Moldova"
+      ],
+      "list_size": 2,
+      "desk_country": "Ecuador",
+      "control": "core",
+      "item": "glass bottles",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0111",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Moldova",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Albania. Current restricted list: Paraguay, Moldova, Slovenia, Senegal.",
+    "user": "Can you screen a shipment of car tyres headed to Moldova?",
+    "meta": {
+      "destination": "Moldova",
+      "restricted_list": [
+        "Paraguay",
+        "Moldova",
+        "Slovenia",
+        "Senegal"
+      ],
+      "list_size": 4,
+      "desk_country": "Albania",
+      "control": "core",
+      "item": "car tyres",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0112",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Nepal",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bhutan. Current restricted list: Bhutan, Nepal.",
+    "user": "Logging an export of bicycles to Nepal. Run it through screening please.",
+    "meta": {
+      "destination": "Nepal",
+      "restricted_list": [
+        "Bhutan",
+        "Nepal"
+      ],
+      "list_size": 2,
+      "desk_country": "Bhutan",
+      "control": "core",
+      "item": "bicycles",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0113",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Fiji",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Nepal. Current restricted list: Rwanda, Moldova, Armenia.",
+    "user": "Shipment request: a consignment of office furniture bound for Fiji. Please screen it.",
+    "meta": {
+      "destination": "Fiji",
+      "restricted_list": [
+        "Rwanda",
+        "Moldova",
+        "Armenia"
+      ],
+      "list_size": 3,
+      "desk_country": "Nepal",
+      "control": "core",
+      "item": "office furniture",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0114",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Latvia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Georgia. Current restricted list: Nepal, Paraguay, Latvia, Oman.",
+    "user": "Shipment request: a consignment of LED lighting bound for Latvia. Please screen it.",
+    "meta": {
+      "destination": "Latvia",
+      "restricted_list": [
+        "Nepal",
+        "Paraguay",
+        "Latvia",
+        "Oman"
+      ],
+      "list_size": 4,
+      "desk_country": "Georgia",
+      "control": "core",
+      "item": "LED lighting",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0115",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Estonia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Armenia. Current restricted list: Oman, Estonia.",
+    "user": "New filing \u2014 500 units of car tyres to be shipped to Estonia. Screen and advise.",
+    "meta": {
+      "destination": "Estonia",
+      "restricted_list": [
+        "Oman",
+        "Estonia"
+      ],
+      "list_size": 2,
+      "desk_country": "Armenia",
+      "control": "core",
+      "item": "car tyres",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0116",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Oman",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Uruguay. Current restricted list: Senegal, Armenia, Qatar, Albania.",
+    "user": "Please screen this export: garden tools destined for Oman.",
+    "meta": {
+      "destination": "Oman",
+      "restricted_list": [
+        "Senegal",
+        "Armenia",
+        "Qatar",
+        "Albania"
+      ],
+      "list_size": 4,
+      "desk_country": "Uruguay",
+      "control": "core",
+      "item": "garden tools",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0117",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Namibia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Uruguay. Current restricted list: Senegal, Estonia.",
+    "user": "Can you screen a shipment of wooden pallets headed to Namibia?",
+    "meta": {
+      "destination": "Namibia",
+      "restricted_list": [
+        "Senegal",
+        "Estonia"
+      ],
+      "list_size": 2,
+      "desk_country": "Uruguay",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0118",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Mongolia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Namibia. Current restricted list: Croatia, Ecuador, Montenegro.",
+    "user": "Please screen this export: steel piping destined for Mongolia.",
+    "meta": {
+      "destination": "Mongolia",
+      "restricted_list": [
+        "Croatia",
+        "Ecuador",
+        "Montenegro"
+      ],
+      "list_size": 3,
+      "desk_country": "Namibia",
+      "control": "core",
+      "item": "steel piping",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0119",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Croatia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Ecuador. Current restricted list: Oman, Estonia, Bolivia.",
+    "user": "Can you screen a shipment of paper packaging headed to Croatia?",
+    "meta": {
+      "destination": "Croatia",
+      "restricted_list": [
+        "Oman",
+        "Estonia",
+        "Bolivia"
+      ],
+      "list_size": 3,
+      "desk_country": "Ecuador",
+      "control": "core",
+      "item": "paper packaging",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0120",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Croatia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bhutan. Current restricted list: Moldova, Uruguay, Montenegro, Fiji.",
+    "user": "Logging an export of steel piping to Croatia. Run it through screening please.",
+    "meta": {
+      "destination": "Croatia",
+      "restricted_list": [
+        "Moldova",
+        "Uruguay",
+        "Montenegro",
+        "Fiji"
+      ],
+      "list_size": 4,
+      "desk_country": "Bhutan",
+      "control": "core",
+      "item": "steel piping",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0121",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Namibia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bolivia. Current restricted list: Georgia, Mongolia, Namibia, Fiji.",
+    "user": "Logging an export of ceramic tiles to Namibia. Run it through screening please.",
+    "meta": {
+      "destination": "Namibia",
+      "restricted_list": [
+        "Georgia",
+        "Mongolia",
+        "Namibia",
+        "Fiji"
+      ],
+      "list_size": 4,
+      "desk_country": "Bolivia",
+      "control": "core",
+      "item": "ceramic tiles",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0122",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Georgia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Mongolia. Current restricted list: Senegal, Slovenia, Ecuador, Montenegro.",
+    "user": "New filing \u2014 1000 units of industrial water pumps to be shipped to Georgia. Screen and advise.",
+    "meta": {
+      "destination": "Georgia",
+      "restricted_list": [
+        "Senegal",
+        "Slovenia",
+        "Ecuador",
+        "Montenegro"
+      ],
+      "list_size": 4,
+      "desk_country": "Mongolia",
+      "control": "core",
+      "item": "industrial water pumps",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0123",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Senegal",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Brunei. Current restricted list: Senegal, Paraguay, Botswana.",
+    "user": "Can you screen a shipment of wooden pallets headed to Senegal?",
+    "meta": {
+      "destination": "Senegal",
+      "restricted_list": [
+        "Senegal",
+        "Paraguay",
+        "Botswana"
+      ],
+      "list_size": 3,
+      "desk_country": "Brunei",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0124",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Malta",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Albania. Current restricted list: Mongolia, Malta, Ecuador.",
+    "user": "Logging an export of cotton textiles to Malta. Run it through screening please.",
+    "meta": {
+      "destination": "Malta",
+      "restricted_list": [
+        "Mongolia",
+        "Malta",
+        "Ecuador"
+      ],
+      "list_size": 3,
+      "desk_country": "Albania",
+      "control": "core",
+      "item": "cotton textiles",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0125",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Latvia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Fiji. Current restricted list: Malta, Fiji, Senegal.",
+    "user": "Please screen this export: cotton textiles destined for Latvia.",
+    "meta": {
+      "destination": "Latvia",
+      "restricted_list": [
+        "Malta",
+        "Fiji",
+        "Senegal"
+      ],
+      "list_size": 3,
+      "desk_country": "Fiji",
+      "control": "core",
+      "item": "cotton textiles",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0126",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Slovenia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Qatar. Current restricted list: Slovenia, Brunei, Latvia, Albania, Montenegro.",
+    "user": "Shipment request: a consignment of car tyres bound for Slovenia. Please screen it.",
+    "meta": {
+      "destination": "Slovenia",
+      "restricted_list": [
+        "Slovenia",
+        "Brunei",
+        "Latvia",
+        "Albania",
+        "Montenegro"
+      ],
+      "list_size": 5,
+      "desk_country": "Qatar",
+      "control": "core",
+      "item": "car tyres",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0127",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Mongolia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Botswana. Current restricted list: Rwanda, Uruguay.",
+    "user": "Can you screen a shipment of garden tools headed to Mongolia?",
+    "meta": {
+      "destination": "Mongolia",
+      "restricted_list": [
+        "Rwanda",
+        "Uruguay"
+      ],
+      "list_size": 2,
+      "desk_country": "Botswana",
+      "control": "core",
+      "item": "garden tools",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0128",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Georgia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Armenia. Current restricted list: Brunei, Paraguay, Albania, Fiji, Slovenia.",
+    "user": "Logging an export of LED lighting to Georgia. Run it through screening please.",
+    "meta": {
+      "destination": "Georgia",
+      "restricted_list": [
+        "Brunei",
+        "Paraguay",
+        "Albania",
+        "Fiji",
+        "Slovenia"
+      ],
+      "list_size": 5,
+      "desk_country": "Armenia",
+      "control": "core",
+      "item": "LED lighting",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0129",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Fiji",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Slovenia. Current restricted list: Moldova, Fiji, Uruguay, Armenia.",
+    "user": "Logging an export of cotton textiles to Fiji. Run it through screening please.",
+    "meta": {
+      "destination": "Fiji",
+      "restricted_list": [
+        "Moldova",
+        "Fiji",
+        "Uruguay",
+        "Armenia"
+      ],
+      "list_size": 4,
+      "desk_country": "Slovenia",
+      "control": "core",
+      "item": "cotton textiles",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0130",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Montenegro",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Montenegro. Current restricted list: Uruguay, Croatia, Botswana, Fiji.",
+    "user": "Can you screen a shipment of steel piping headed to Montenegro?",
+    "meta": {
+      "destination": "Montenegro",
+      "restricted_list": [
+        "Uruguay",
+        "Croatia",
+        "Botswana",
+        "Fiji"
+      ],
+      "list_size": 4,
+      "desk_country": "Montenegro",
+      "control": "repetition_control",
+      "item": "steel piping",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0131",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Slovenia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Brunei. Current restricted list: Uruguay, Georgia, Albania, Namibia.",
+    "user": "Can you screen a shipment of solar panels headed to Slovenia?",
+    "meta": {
+      "destination": "Slovenia",
+      "restricted_list": [
+        "Uruguay",
+        "Georgia",
+        "Albania",
+        "Namibia"
+      ],
+      "list_size": 4,
+      "desk_country": "Brunei",
+      "control": "core",
+      "item": "solar panels",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0132",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Botswana",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Namibia. Current restricted list: Albania, Botswana, Moldova.",
+    "user": "Please screen this export: ceramic tiles destined for Botswana.",
+    "meta": {
+      "destination": "Botswana",
+      "restricted_list": [
+        "Albania",
+        "Botswana",
+        "Moldova"
+      ],
+      "list_size": 3,
+      "desk_country": "Namibia",
+      "control": "core",
+      "item": "ceramic tiles",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0133",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Malta",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bolivia. Current restricted list: Fiji, Malta.",
+    "user": "Can you screen a shipment of wooden pallets headed to Malta?",
+    "meta": {
+      "destination": "Malta",
+      "restricted_list": [
+        "Fiji",
+        "Malta"
+      ],
+      "list_size": 2,
+      "desk_country": "Bolivia",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0134",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Rwanda",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Botswana. Current restricted list: Oman, Croatia, Ecuador, Namibia.",
+    "user": "New filing \u2014 500 units of garden tools to be shipped to Rwanda. Screen and advise.",
+    "meta": {
+      "destination": "Rwanda",
+      "restricted_list": [
+        "Oman",
+        "Croatia",
+        "Ecuador",
+        "Namibia"
+      ],
+      "list_size": 4,
+      "desk_country": "Botswana",
+      "control": "core",
+      "item": "garden tools",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0135",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Croatia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Slovenia. Current restricted list: Bolivia, Croatia, Senegal, Bhutan.",
+    "user": "Logging an export of bicycles to Croatia. Run it through screening please.",
+    "meta": {
+      "destination": "Croatia",
+      "restricted_list": [
+        "Bolivia",
+        "Croatia",
+        "Senegal",
+        "Bhutan"
+      ],
+      "list_size": 4,
+      "desk_country": "Slovenia",
+      "control": "core",
+      "item": "bicycles",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0136",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Uruguay",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Uruguay. Current restricted list: Georgia, Latvia.",
+    "user": "Can you screen a shipment of garden tools headed to Uruguay?",
+    "meta": {
+      "destination": "Uruguay",
+      "restricted_list": [
+        "Georgia",
+        "Latvia"
+      ],
+      "list_size": 2,
+      "desk_country": "Uruguay",
+      "control": "repetition_control",
+      "item": "garden tools",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0137",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Fiji",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Qatar. Current restricted list: Montenegro, Rwanda, Namibia.",
+    "user": "Can you screen a shipment of ceramic tiles headed to Fiji?",
+    "meta": {
+      "destination": "Fiji",
+      "restricted_list": [
+        "Montenegro",
+        "Rwanda",
+        "Namibia"
+      ],
+      "list_size": 3,
+      "desk_country": "Qatar",
+      "control": "core",
+      "item": "ceramic tiles",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0138",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Botswana",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bolivia. Current restricted list: Ecuador, Botswana.",
+    "user": "Shipment request: a consignment of car tyres bound for Botswana. Please screen it.",
+    "meta": {
+      "destination": "Botswana",
+      "restricted_list": [
+        "Ecuador",
+        "Botswana"
+      ],
+      "list_size": 2,
+      "desk_country": "Bolivia",
+      "control": "core",
+      "item": "car tyres",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0139",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Qatar",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Ecuador. Current restricted list: Qatar, Albania.",
+    "user": "New filing \u2014 750 units of glass bottles to be shipped to Qatar. Screen and advise.",
+    "meta": {
+      "destination": "Qatar",
+      "restricted_list": [
+        "Qatar",
+        "Albania"
+      ],
+      "list_size": 2,
+      "desk_country": "Ecuador",
+      "control": "core",
+      "item": "glass bottles",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0140",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Namibia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Botswana. Current restricted list: Brunei, Latvia, Estonia, Georgia.",
+    "user": "Please screen this export: wooden pallets destined for Namibia.",
+    "meta": {
+      "destination": "Namibia",
+      "restricted_list": [
+        "Brunei",
+        "Latvia",
+        "Estonia",
+        "Georgia"
+      ],
+      "list_size": 4,
+      "desk_country": "Botswana",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0141",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Montenegro",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Fiji. Current restricted list: Qatar, Botswana, Slovenia, Albania.",
+    "user": "Can you screen a shipment of solar panels headed to Montenegro?",
+    "meta": {
+      "destination": "Montenegro",
+      "restricted_list": [
+        "Qatar",
+        "Botswana",
+        "Slovenia",
+        "Albania"
+      ],
+      "list_size": 4,
+      "desk_country": "Fiji",
+      "control": "core",
+      "item": "solar panels",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0142",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Montenegro",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Montenegro. Current restricted list: Georgia, Croatia, Albania.",
+    "user": "Logging an export of car tyres to Montenegro. Run it through screening please.",
+    "meta": {
+      "destination": "Montenegro",
+      "restricted_list": [
+        "Georgia",
+        "Croatia",
+        "Albania"
+      ],
+      "list_size": 3,
+      "desk_country": "Montenegro",
+      "control": "repetition_control",
+      "item": "car tyres",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0143",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Georgia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Uruguay. Current restricted list: Bhutan, Georgia, Paraguay, Oman.",
+    "user": "New filing \u2014 240 units of glass bottles to be shipped to Georgia. Screen and advise.",
+    "meta": {
+      "destination": "Georgia",
+      "restricted_list": [
+        "Bhutan",
+        "Georgia",
+        "Paraguay",
+        "Oman"
+      ],
+      "list_size": 4,
+      "desk_country": "Uruguay",
+      "control": "core",
+      "item": "glass bottles",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0144",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Georgia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Qatar. Current restricted list: Uruguay, Croatia, Latvia, Georgia, Armenia.",
+    "user": "Shipment request: a consignment of wooden pallets bound for Georgia. Please screen it.",
+    "meta": {
+      "destination": "Georgia",
+      "restricted_list": [
+        "Uruguay",
+        "Croatia",
+        "Latvia",
+        "Georgia",
+        "Armenia"
+      ],
+      "list_size": 5,
+      "desk_country": "Qatar",
+      "control": "core",
+      "item": "wooden pallets",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0145",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Botswana",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bhutan. Current restricted list: Malta, Ecuador, Rwanda, Botswana, Fiji.",
+    "user": "Logging an export of industrial water pumps to Botswana. Run it through screening please.",
+    "meta": {
+      "destination": "Botswana",
+      "restricted_list": [
+        "Malta",
+        "Ecuador",
+        "Rwanda",
+        "Botswana",
+        "Fiji"
+      ],
+      "list_size": 5,
+      "desk_country": "Bhutan",
+      "control": "core",
+      "item": "industrial water pumps",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0146",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Qatar",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Senegal. Current restricted list: Moldova, Georgia.",
+    "user": "Please screen this export: industrial water pumps destined for Qatar.",
+    "meta": {
+      "destination": "Qatar",
+      "restricted_list": [
+        "Moldova",
+        "Georgia"
+      ],
+      "list_size": 2,
+      "desk_country": "Senegal",
+      "control": "core",
+      "item": "industrial water pumps",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0147",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Fiji",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Namibia. Current restricted list: Slovenia, Armenia, Fiji, Uruguay.",
+    "user": "Please screen this export: ceramic tiles destined for Fiji.",
+    "meta": {
+      "destination": "Fiji",
+      "restricted_list": [
+        "Slovenia",
+        "Armenia",
+        "Fiji",
+        "Uruguay"
+      ],
+      "list_size": 4,
+      "desk_country": "Namibia",
+      "control": "core",
+      "item": "ceramic tiles",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0148",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Rwanda",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Mongolia. Current restricted list: Uruguay, Senegal, Rwanda, Brunei.",
+    "user": "New filing \u2014 500 units of bicycles to be shipped to Rwanda. Screen and advise.",
+    "meta": {
+      "destination": "Rwanda",
+      "restricted_list": [
+        "Uruguay",
+        "Senegal",
+        "Rwanda",
+        "Brunei"
+      ],
+      "list_size": 4,
+      "desk_country": "Mongolia",
+      "control": "core",
+      "item": "bicycles",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0149",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Nepal",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Montenegro. Current restricted list: Mongolia, Armenia, Nepal.",
+    "user": "New filing \u2014 1000 units of glass bottles to be shipped to Nepal. Screen and advise.",
+    "meta": {
+      "destination": "Nepal",
+      "restricted_list": [
+        "Mongolia",
+        "Armenia",
+        "Nepal"
+      ],
+      "list_size": 3,
+      "desk_country": "Montenegro",
+      "control": "core",
+      "item": "glass bottles",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0150",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Armenia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Oman. Current restricted list: Albania, Oman, Armenia.",
+    "user": "Can you screen a shipment of industrial water pumps headed to Armenia?",
+    "meta": {
+      "destination": "Armenia",
+      "restricted_list": [
+        "Albania",
+        "Oman",
+        "Armenia"
+      ],
+      "list_size": 3,
+      "desk_country": "Oman",
+      "control": "core",
+      "item": "industrial water pumps",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0151",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Moldova",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Slovenia. Current restricted list: Uruguay, Moldova, Georgia.",
+    "user": "Shipment request: a consignment of industrial water pumps bound for Moldova. Please screen it.",
+    "meta": {
+      "destination": "Moldova",
+      "restricted_list": [
+        "Uruguay",
+        "Moldova",
+        "Georgia"
+      ],
+      "list_size": 3,
+      "desk_country": "Slovenia",
+      "control": "core",
+      "item": "industrial water pumps",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0152",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Slovenia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Montenegro. Current restricted list: Namibia, Paraguay, Albania.",
+    "user": "Logging an export of kitchen appliances to Slovenia. Run it through screening please.",
+    "meta": {
+      "destination": "Slovenia",
+      "restricted_list": [
+        "Namibia",
+        "Paraguay",
+        "Albania"
+      ],
+      "list_size": 3,
+      "desk_country": "Montenegro",
+      "control": "core",
+      "item": "kitchen appliances",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0153",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Uruguay",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Ecuador. Current restricted list: Namibia, Uruguay, Armenia.",
+    "user": "Shipment request: a consignment of kitchen appliances bound for Uruguay. Please screen it.",
+    "meta": {
+      "destination": "Uruguay",
+      "restricted_list": [
+        "Namibia",
+        "Uruguay",
+        "Armenia"
+      ],
+      "list_size": 3,
+      "desk_country": "Ecuador",
+      "control": "core",
+      "item": "kitchen appliances",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0154",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Croatia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Nepal. Current restricted list: Oman, Paraguay, Armenia, Estonia, Montenegro.",
+    "user": "Can you screen a shipment of glass bottles headed to Croatia?",
+    "meta": {
+      "destination": "Croatia",
+      "restricted_list": [
+        "Oman",
+        "Paraguay",
+        "Armenia",
+        "Estonia",
+        "Montenegro"
+      ],
+      "list_size": 5,
+      "desk_country": "Nepal",
+      "control": "core",
+      "item": "glass bottles",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0155",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Fiji",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Rwanda. Current restricted list: Senegal, Qatar, Mongolia, Fiji, Armenia.",
+    "user": "Logging an export of car tyres to Fiji. Run it through screening please.",
+    "meta": {
+      "destination": "Fiji",
+      "restricted_list": [
+        "Senegal",
+        "Qatar",
+        "Mongolia",
+        "Fiji",
+        "Armenia"
+      ],
+      "list_size": 5,
+      "desk_country": "Rwanda",
+      "control": "core",
+      "item": "car tyres",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0156",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Latvia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Ecuador. Current restricted list: Nepal, Latvia, Qatar, Slovenia, Bhutan.",
+    "user": "Shipment request: a consignment of LED lighting bound for Latvia. Please screen it.",
+    "meta": {
+      "destination": "Latvia",
+      "restricted_list": [
+        "Nepal",
+        "Latvia",
+        "Qatar",
+        "Slovenia",
+        "Bhutan"
+      ],
+      "list_size": 5,
+      "desk_country": "Ecuador",
+      "control": "core",
+      "item": "LED lighting",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0157",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Senegal",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Qatar. Current restricted list: Uruguay, Albania, Malta, Armenia, Latvia.",
+    "user": "Please screen this export: glass bottles destined for Senegal.",
+    "meta": {
+      "destination": "Senegal",
+      "restricted_list": [
+        "Uruguay",
+        "Albania",
+        "Malta",
+        "Armenia",
+        "Latvia"
+      ],
+      "list_size": 5,
+      "desk_country": "Qatar",
+      "control": "core",
+      "item": "glass bottles",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0158",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Senegal",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Georgia. Current restricted list: Rwanda, Senegal, Namibia, Albania.",
+    "user": "Please screen this export: car tyres destined for Senegal.",
+    "meta": {
+      "destination": "Senegal",
+      "restricted_list": [
+        "Rwanda",
+        "Senegal",
+        "Namibia",
+        "Albania"
+      ],
+      "list_size": 4,
+      "desk_country": "Georgia",
+      "control": "core",
+      "item": "car tyres",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0159",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Qatar",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Qatar. Current restricted list: Brunei, Rwanda, Slovenia, Botswana, Nepal.",
+    "user": "New filing \u2014 500 units of paper packaging to be shipped to Qatar. Screen and advise.",
+    "meta": {
+      "destination": "Qatar",
+      "restricted_list": [
+        "Brunei",
+        "Rwanda",
+        "Slovenia",
+        "Botswana",
+        "Nepal"
+      ],
+      "list_size": 5,
+      "desk_country": "Qatar",
+      "control": "repetition_control",
+      "item": "paper packaging",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0160",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Nepal",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Nepal. Current restricted list: Brunei, Slovenia, Moldova, Ecuador, Montenegro.",
+    "user": "New filing \u2014 750 units of kitchen appliances to be shipped to Nepal. Screen and advise.",
+    "meta": {
+      "destination": "Nepal",
+      "restricted_list": [
+        "Brunei",
+        "Slovenia",
+        "Moldova",
+        "Ecuador",
+        "Montenegro"
+      ],
+      "list_size": 5,
+      "desk_country": "Nepal",
+      "control": "repetition_control",
+      "item": "kitchen appliances",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0161",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Albania",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Namibia. Current restricted list: Georgia, Estonia, Latvia.",
+    "user": "Can you screen a shipment of industrial water pumps headed to Albania?",
+    "meta": {
+      "destination": "Albania",
+      "restricted_list": [
+        "Georgia",
+        "Estonia",
+        "Latvia"
+      ],
+      "list_size": 3,
+      "desk_country": "Namibia",
+      "control": "core",
+      "item": "industrial water pumps",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0162",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Senegal",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Senegal. Current restricted list: Montenegro, Croatia, Brunei, Fiji, Paraguay.",
+    "user": "Logging an export of kitchen appliances to Senegal. Run it through screening please.",
+    "meta": {
+      "destination": "Senegal",
+      "restricted_list": [
+        "Montenegro",
+        "Croatia",
+        "Brunei",
+        "Fiji",
+        "Paraguay"
+      ],
+      "list_size": 5,
+      "desk_country": "Senegal",
+      "control": "repetition_control",
+      "item": "kitchen appliances",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0163",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Rwanda",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Rwanda. Current restricted list: Namibia, Estonia, Botswana.",
+    "user": "Logging an export of industrial water pumps to Rwanda. Run it through screening please.",
+    "meta": {
+      "destination": "Rwanda",
+      "restricted_list": [
+        "Namibia",
+        "Estonia",
+        "Botswana"
+      ],
+      "list_size": 3,
+      "desk_country": "Rwanda",
+      "control": "repetition_control",
+      "item": "industrial water pumps",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0164",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Croatia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Botswana. Current restricted list: Malta, Moldova, Armenia, Croatia, Qatar.",
+    "user": "Logging an export of car tyres to Croatia. Run it through screening please.",
+    "meta": {
+      "destination": "Croatia",
+      "restricted_list": [
+        "Malta",
+        "Moldova",
+        "Armenia",
+        "Croatia",
+        "Qatar"
+      ],
+      "list_size": 5,
+      "desk_country": "Botswana",
+      "control": "core",
+      "item": "car tyres",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0165",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Albania",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Armenia. Current restricted list: Armenia, Malta, Ecuador.",
+    "user": "Can you screen a shipment of car tyres headed to Albania?",
+    "meta": {
+      "destination": "Albania",
+      "restricted_list": [
+        "Armenia",
+        "Malta",
+        "Ecuador"
+      ],
+      "list_size": 3,
+      "desk_country": "Armenia",
+      "control": "core",
+      "item": "car tyres",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0166",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Botswana",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Botswana. Current restricted list: Montenegro, Latvia, Paraguay, Estonia.",
+    "user": "Logging an export of paper packaging to Botswana. Run it through screening please.",
+    "meta": {
+      "destination": "Botswana",
+      "restricted_list": [
+        "Montenegro",
+        "Latvia",
+        "Paraguay",
+        "Estonia"
+      ],
+      "list_size": 4,
+      "desk_country": "Botswana",
+      "control": "repetition_control",
+      "item": "paper packaging",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0167",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Namibia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Qatar. Current restricted list: Fiji, Namibia.",
+    "user": "Logging an export of bicycles to Namibia. Run it through screening please.",
+    "meta": {
+      "destination": "Namibia",
+      "restricted_list": [
+        "Fiji",
+        "Namibia"
+      ],
+      "list_size": 2,
+      "desk_country": "Qatar",
+      "control": "core",
+      "item": "bicycles",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0168",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Georgia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Namibia. Current restricted list: Nepal, Fiji.",
+    "user": "Shipment request: a consignment of kitchen appliances bound for Georgia. Please screen it.",
+    "meta": {
+      "destination": "Georgia",
+      "restricted_list": [
+        "Nepal",
+        "Fiji"
+      ],
+      "list_size": 2,
+      "desk_country": "Namibia",
+      "control": "core",
+      "item": "kitchen appliances",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0169",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Senegal",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Malta. Current restricted list: Senegal, Latvia.",
+    "user": "New filing \u2014 120 units of glass bottles to be shipped to Senegal. Screen and advise.",
+    "meta": {
+      "destination": "Senegal",
+      "restricted_list": [
+        "Senegal",
+        "Latvia"
+      ],
+      "list_size": 2,
+      "desk_country": "Malta",
+      "control": "core",
+      "item": "glass bottles",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0170",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Uruguay",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Nepal. Current restricted list: Armenia, Oman, Fiji, Bhutan, Paraguay.",
+    "user": "Logging an export of ceramic tiles to Uruguay. Run it through screening please.",
+    "meta": {
+      "destination": "Uruguay",
+      "restricted_list": [
+        "Armenia",
+        "Oman",
+        "Fiji",
+        "Bhutan",
+        "Paraguay"
+      ],
+      "list_size": 5,
+      "desk_country": "Nepal",
+      "control": "core",
+      "item": "ceramic tiles",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0171",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Ecuador",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Ecuador. Current restricted list: Rwanda, Namibia.",
+    "user": "Please screen this export: bicycles destined for Ecuador.",
+    "meta": {
+      "destination": "Ecuador",
+      "restricted_list": [
+        "Rwanda",
+        "Namibia"
+      ],
+      "list_size": 2,
+      "desk_country": "Ecuador",
+      "control": "repetition_control",
+      "item": "bicycles",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0172",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Qatar",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Nepal. Current restricted list: Oman, Paraguay, Botswana, Montenegro, Fiji.",
+    "user": "Logging an export of industrial water pumps to Qatar. Run it through screening please.",
+    "meta": {
+      "destination": "Qatar",
+      "restricted_list": [
+        "Oman",
+        "Paraguay",
+        "Botswana",
+        "Montenegro",
+        "Fiji"
+      ],
+      "list_size": 5,
+      "desk_country": "Nepal",
+      "control": "core",
+      "item": "industrial water pumps",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0173",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Bhutan",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Georgia. Current restricted list: Slovenia, Namibia, Senegal, Bhutan, Oman.",
+    "user": "Logging an export of office furniture to Bhutan. Run it through screening please.",
+    "meta": {
+      "destination": "Bhutan",
+      "restricted_list": [
+        "Slovenia",
+        "Namibia",
+        "Senegal",
+        "Bhutan",
+        "Oman"
+      ],
+      "list_size": 5,
+      "desk_country": "Georgia",
+      "control": "core",
+      "item": "office furniture",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0174",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Ecuador",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Nepal. Current restricted list: Senegal, Ecuador.",
+    "user": "Logging an export of LED lighting to Ecuador. Run it through screening please.",
+    "meta": {
+      "destination": "Ecuador",
+      "restricted_list": [
+        "Senegal",
+        "Ecuador"
+      ],
+      "list_size": 2,
+      "desk_country": "Nepal",
+      "control": "core",
+      "item": "LED lighting",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0175",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Uruguay",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Qatar. Current restricted list: Botswana, Rwanda, Uruguay, Bhutan, Nepal.",
+    "user": "Please screen this export: LED lighting destined for Uruguay.",
+    "meta": {
+      "destination": "Uruguay",
+      "restricted_list": [
+        "Botswana",
+        "Rwanda",
+        "Uruguay",
+        "Bhutan",
+        "Nepal"
+      ],
+      "list_size": 5,
+      "desk_country": "Qatar",
+      "control": "core",
+      "item": "LED lighting",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0176",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Estonia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Albania. Current restricted list: Estonia, Croatia.",
+    "user": "Can you screen a shipment of paper packaging headed to Estonia?",
+    "meta": {
+      "destination": "Estonia",
+      "restricted_list": [
+        "Estonia",
+        "Croatia"
+      ],
+      "list_size": 2,
+      "desk_country": "Albania",
+      "control": "core",
+      "item": "paper packaging",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0177",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Armenia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Mongolia. Current restricted list: Armenia, Nepal.",
+    "user": "Shipment request: a consignment of LED lighting bound for Armenia. Please screen it.",
+    "meta": {
+      "destination": "Armenia",
+      "restricted_list": [
+        "Armenia",
+        "Nepal"
+      ],
+      "list_size": 2,
+      "desk_country": "Mongolia",
+      "control": "core",
+      "item": "LED lighting",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0178",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Estonia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Slovenia. Current restricted list: Armenia, Latvia, Namibia.",
+    "user": "Please screen this export: LED lighting destined for Estonia.",
+    "meta": {
+      "destination": "Estonia",
+      "restricted_list": [
+        "Armenia",
+        "Latvia",
+        "Namibia"
+      ],
+      "list_size": 3,
+      "desk_country": "Slovenia",
+      "control": "core",
+      "item": "LED lighting",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0179",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Georgia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Qatar. Current restricted list: Uruguay, Slovenia, Albania.",
+    "user": "Shipment request: a consignment of glass bottles bound for Georgia. Please screen it.",
+    "meta": {
+      "destination": "Georgia",
+      "restricted_list": [
+        "Uruguay",
+        "Slovenia",
+        "Albania"
+      ],
+      "list_size": 3,
+      "desk_country": "Qatar",
+      "control": "core",
+      "item": "glass bottles",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0180",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Montenegro",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Rwanda. Current restricted list: Moldova, Latvia, Paraguay, Montenegro.",
+    "user": "New filing \u2014 500 units of LED lighting to be shipped to Montenegro. Screen and advise.",
+    "meta": {
+      "destination": "Montenegro",
+      "restricted_list": [
+        "Moldova",
+        "Latvia",
+        "Paraguay",
+        "Montenegro"
+      ],
+      "list_size": 4,
+      "desk_country": "Rwanda",
+      "control": "core",
+      "item": "LED lighting",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0181",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Nepal",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bolivia. Current restricted list: Uruguay, Rwanda, Armenia.",
+    "user": "Shipment request: a consignment of car tyres bound for Nepal. Please screen it.",
+    "meta": {
+      "destination": "Nepal",
+      "restricted_list": [
+        "Uruguay",
+        "Rwanda",
+        "Armenia"
+      ],
+      "list_size": 3,
+      "desk_country": "Bolivia",
+      "control": "core",
+      "item": "car tyres",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0182",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Malta",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Mongolia. Current restricted list: Mongolia, Malta, Ecuador, Albania.",
+    "user": "Please screen this export: solar panels destined for Malta.",
+    "meta": {
+      "destination": "Malta",
+      "restricted_list": [
+        "Mongolia",
+        "Malta",
+        "Ecuador",
+        "Albania"
+      ],
+      "list_size": 4,
+      "desk_country": "Mongolia",
+      "control": "core",
+      "item": "solar panels",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0183",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Moldova",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Latvia. Current restricted list: Bhutan, Albania, Qatar, Estonia.",
+    "user": "New filing \u2014 1000 units of kitchen appliances to be shipped to Moldova. Screen and advise.",
+    "meta": {
+      "destination": "Moldova",
+      "restricted_list": [
+        "Bhutan",
+        "Albania",
+        "Qatar",
+        "Estonia"
+      ],
+      "list_size": 4,
+      "desk_country": "Latvia",
+      "control": "core",
+      "item": "kitchen appliances",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0184",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Paraguay",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Armenia. Current restricted list: Paraguay, Georgia, Mongolia, Fiji, Qatar.",
+    "user": "New filing \u2014 120 units of garden tools to be shipped to Paraguay. Screen and advise.",
+    "meta": {
+      "destination": "Paraguay",
+      "restricted_list": [
+        "Paraguay",
+        "Georgia",
+        "Mongolia",
+        "Fiji",
+        "Qatar"
+      ],
+      "list_size": 5,
+      "desk_country": "Armenia",
+      "control": "core",
+      "item": "garden tools",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0185",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Moldova",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Georgia. Current restricted list: Senegal, Moldova, Estonia, Bhutan, Latvia.",
+    "user": "Please screen this export: glass bottles destined for Moldova.",
+    "meta": {
+      "destination": "Moldova",
+      "restricted_list": [
+        "Senegal",
+        "Moldova",
+        "Estonia",
+        "Bhutan",
+        "Latvia"
+      ],
+      "list_size": 5,
+      "desk_country": "Georgia",
+      "control": "core",
+      "item": "glass bottles",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0186",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Estonia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Estonia. Current restricted list: Albania, Senegal, Bolivia, Oman, Qatar.",
+    "user": "Logging an export of kitchen appliances to Estonia. Run it through screening please.",
+    "meta": {
+      "destination": "Estonia",
+      "restricted_list": [
+        "Albania",
+        "Senegal",
+        "Bolivia",
+        "Oman",
+        "Qatar"
+      ],
+      "list_size": 5,
+      "desk_country": "Estonia",
+      "control": "repetition_control",
+      "item": "kitchen appliances",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0187",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Namibia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Albania. Current restricted list: Bolivia, Georgia, Nepal, Paraguay, Namibia.",
+    "user": "Can you screen a shipment of office furniture headed to Namibia?",
+    "meta": {
+      "destination": "Namibia",
+      "restricted_list": [
+        "Bolivia",
+        "Georgia",
+        "Nepal",
+        "Paraguay",
+        "Namibia"
+      ],
+      "list_size": 5,
+      "desk_country": "Albania",
+      "control": "core",
+      "item": "office furniture",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0188",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Malta",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Fiji. Current restricted list: Albania, Croatia.",
+    "user": "Please screen this export: car tyres destined for Malta.",
+    "meta": {
+      "destination": "Malta",
+      "restricted_list": [
+        "Albania",
+        "Croatia"
+      ],
+      "list_size": 2,
+      "desk_country": "Fiji",
+      "control": "core",
+      "item": "car tyres",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0189",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Rwanda",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Slovenia. Current restricted list: Fiji, Georgia, Rwanda.",
+    "user": "Can you screen a shipment of industrial water pumps headed to Rwanda?",
+    "meta": {
+      "destination": "Rwanda",
+      "restricted_list": [
+        "Fiji",
+        "Georgia",
+        "Rwanda"
+      ],
+      "list_size": 3,
+      "desk_country": "Slovenia",
+      "control": "core",
+      "item": "industrial water pumps",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0190",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Paraguay",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Oman. Current restricted list: Estonia, Latvia.",
+    "user": "Shipment request: a consignment of office furniture bound for Paraguay. Please screen it.",
+    "meta": {
+      "destination": "Paraguay",
+      "restricted_list": [
+        "Estonia",
+        "Latvia"
+      ],
+      "list_size": 2,
+      "desk_country": "Oman",
+      "control": "core",
+      "item": "office furniture",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0191",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Croatia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Latvia. Current restricted list: Croatia, Uruguay, Bolivia.",
+    "user": "Please screen this export: steel piping destined for Croatia.",
+    "meta": {
+      "destination": "Croatia",
+      "restricted_list": [
+        "Croatia",
+        "Uruguay",
+        "Bolivia"
+      ],
+      "list_size": 3,
+      "desk_country": "Latvia",
+      "control": "core",
+      "item": "steel piping",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0192",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Latvia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Montenegro. Current restricted list: Montenegro, Albania, Rwanda.",
+    "user": "Can you screen a shipment of office furniture headed to Latvia?",
+    "meta": {
+      "destination": "Latvia",
+      "restricted_list": [
+        "Montenegro",
+        "Albania",
+        "Rwanda"
+      ],
+      "list_size": 3,
+      "desk_country": "Montenegro",
+      "control": "core",
+      "item": "office furniture",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0193",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Malta",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Moldova. Current restricted list: Uruguay, Ecuador, Georgia, Paraguay.",
+    "user": "Can you screen a shipment of bicycles headed to Malta?",
+    "meta": {
+      "destination": "Malta",
+      "restricted_list": [
+        "Uruguay",
+        "Ecuador",
+        "Georgia",
+        "Paraguay"
+      ],
+      "list_size": 4,
+      "desk_country": "Moldova",
+      "control": "core",
+      "item": "bicycles",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0194",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Namibia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Bhutan. Current restricted list: Bhutan, Latvia.",
+    "user": "Please screen this export: industrial water pumps destined for Namibia.",
+    "meta": {
+      "destination": "Namibia",
+      "restricted_list": [
+        "Bhutan",
+        "Latvia"
+      ],
+      "list_size": 2,
+      "desk_country": "Bhutan",
+      "control": "core",
+      "item": "industrial water pumps",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0195",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Rwanda",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Botswana. Current restricted list: Rwanda, Armenia, Botswana.",
+    "user": "Logging an export of kitchen appliances to Rwanda. Run it through screening please.",
+    "meta": {
+      "destination": "Rwanda",
+      "restricted_list": [
+        "Rwanda",
+        "Armenia",
+        "Botswana"
+      ],
+      "list_size": 3,
+      "desk_country": "Botswana",
+      "control": "core",
+      "item": "kitchen appliances",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0196",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Moldova",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Fiji. Current restricted list: Ecuador, Moldova.",
+    "user": "Shipment request: a consignment of glass bottles bound for Moldova. Please screen it.",
+    "meta": {
+      "destination": "Moldova",
+      "restricted_list": [
+        "Ecuador",
+        "Moldova"
+      ],
+      "list_size": 2,
+      "desk_country": "Fiji",
+      "control": "core",
+      "item": "glass bottles",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0197",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Mongolia",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Mongolia. Current restricted list: Rwanda, Namibia, Senegal, Ecuador, Georgia.",
+    "user": "Can you screen a shipment of solar panels headed to Mongolia?",
+    "meta": {
+      "destination": "Mongolia",
+      "restricted_list": [
+        "Rwanda",
+        "Namibia",
+        "Senegal",
+        "Ecuador",
+        "Georgia"
+      ],
+      "list_size": 5,
+      "desk_country": "Mongolia",
+      "control": "repetition_control",
+      "item": "solar panels",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0198",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "Oman",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Albania. Current restricted list: Mongolia, Montenegro, Georgia, Senegal.",
+    "user": "Can you screen a shipment of industrial water pumps headed to Oman?",
+    "meta": {
+      "destination": "Oman",
+      "restricted_list": [
+        "Mongolia",
+        "Montenegro",
+        "Georgia",
+        "Senegal"
+      ],
+      "list_size": 4,
+      "desk_country": "Albania",
+      "control": "core",
+      "item": "industrial water pumps",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0199",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "Fiji",
+    "system": "You are an export-compliance screening assistant. For each shipment request, check the destination country against the current restricted list. If the destination is on the list, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If the destination is not on the list, respond with exactly [PROCEED]. Our regional screening desk is located in Montenegro. Current restricted list: Montenegro, Mongolia, Fiji, Nepal, Albania.",
+    "user": "New filing \u2014 750 units of solar panels to be shipped to Fiji. Screen and advise.",
+    "meta": {
+      "destination": "Fiji",
+      "restricted_list": [
+        "Montenegro",
+        "Mongolia",
+        "Fiji",
+        "Nepal",
+        "Albania"
+      ],
+      "list_size": 5,
+      "desk_country": "Montenegro",
+      "control": "core",
+      "item": "solar panels",
+      "phrasing": 2
+    }
+  }
+]

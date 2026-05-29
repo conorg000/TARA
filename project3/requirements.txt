@@ -1,0 +1,14 @@
+# Probe experiment dependencies.
+#
+# The GPU step (extract_activations.py) needs torch + transformers + accelerate.
+# The CPU step (train_probe.py) needs only numpy + scikit-learn, so you can
+# iterate on probes on a laptop after the activations are dumped.
+#
+# Qwen3 chat templates and model code require a recent transformers. 4.51+ is
+# the first release with Qwen3 support; pin the floor there.
+
+torch>=2.1
+transformers>=4.51
+accelerate>=0.30
+numpy>=1.24
+scikit-learn>=1.3
