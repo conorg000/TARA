@@ -5,10 +5,16 @@
 #   ./run.sh                                          # GPU defaults: Qwen3-8B, cuda, bf16, conditions_v1
 #   ./run.sh Qwen/Qwen3-0.6B cpu float32              # Mac dry-run on conditions_v1
 #   ./run.sh Qwen/Qwen3-0.6B cpu float32 inputs/conditions_v2.json   # ...on the semantic v2
-#   ./run.sh <model> <device> <dtype> <dataset>       # general form
+#   ./run.sh <model> <device> <dtype> <dataset> <tag> # general form
 #
-# Output .npz is named after the dataset, so v1 and v2 runs don't clobber each
-# other (activations_conditions_v1.npz, activations_conditions_v2.npz).
+# Output .npz is named after the dataset (+ optional <tag>), so runs don't clobber
+# each other: activations_conditions_v2.npz, activations_conditions_v2_8b_think.npz...
+# A <tag> is needed when two runs share a dataset (e.g. thinking on vs off on v2).
+#
+# THINK=1 enables Qwen3 thinking-mode (auto 1024-token generation budget). Off by
+# default. The 8B scale x reasoning runs pre-registered in runlog.md (r7/r8):
+#   ./run.sh Qwen/Qwen3-8B cuda bfloat16 inputs/conditions_v2.json 8b_nothink         # r7
+#   THINK=1 ./run.sh Qwen/Qwen3-8B cuda bfloat16 inputs/conditions_v2.json 8b_think   # r8
 #
 # The Mac dry-run uses a deliberately weak model. On v1 its AUROC is meaningless
 # (the task is too easy). On v2 it's the actual test: the theory says a tiny model
@@ -21,22 +27,28 @@ MODEL="${1:-Qwen/Qwen3-8B}"
 DEVICE="${2:-cuda}"
 DTYPE="${3:-bfloat16}"
 DATASET="${4:-inputs/conditions_v1.json}"
-OUT="activations_$(basename "$DATASET" .json).npz"
+TAG="${5:-}"
+OUT="activations_$(basename "$DATASET" .json)${TAG:+_$TAG}.npz"
+
+THINK_FLAG=""
+if [[ "${THINK:-0}" == "1" ]]; then
+    THINK_FLAG="--enable-thinking"
+fi
 
 echo "=================================================================="
-echo " model=$MODEL  device=$DEVICE  dtype=$DTYPE"
+echo " model=$MODEL  device=$DEVICE  dtype=$DTYPE  thinking=${THINK:-0}"
 echo " dataset=$DATASET  ->  $OUT"
 echo "=================================================================="
 
 echo
 echo ">>> [1/3] Smoke test (4 examples) — verifies model load + template + generate + save"
 python extract_activations.py --model "$MODEL" --device "$DEVICE" --dtype "$DTYPE" \
-    --dataset "$DATASET" --generate --max-examples 4 --out smoke.npz
+    --dataset "$DATASET" --generate $THINK_FLAG --max-examples 4 --out smoke.npz
 
 echo
 echo ">>> [2/3] Full extraction + generation (all examples)"
 python extract_activations.py --model "$MODEL" --device "$DEVICE" --dtype "$DTYPE" \
-    --dataset "$DATASET" --generate --out "$OUT"
+    --dataset "$DATASET" --generate $THINK_FLAG --out "$OUT"
 
 echo
 echo ">>> [3/3] Train probes (CPU) — AUROC per layer + verdict"

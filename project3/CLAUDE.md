@@ -93,6 +93,12 @@ AUROC, verdict, and a one-line honest note. For any run worth keeping, add a det
 block below with **the full per-layer table pasted verbatim** — the `.npz` files are
 gitignored and regenerable, so the table in `runlog.md` is the durable record.
 
+Record the **exact command and the short git commit SHA the code was at** (`git
+rev-parse --short HEAD`). The scripts evolve, so a command alone doesn't reproduce a
+run — the same `./run.sh …` did different things at r2 vs r4. Command = what to type,
+commit = what the code was; datasets reproduce from seed (datasets.md). See the
+reproducibility convention at the top of runlog.md.
+
 In the note, do the interpretation, not just the number. Flag: sanity checks
 (layer-0 should be ~0.5), whether a result is a finding or just a dry-run diagnostic,
 and any confound you ruled in or out.

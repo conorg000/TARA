@@ -90,7 +90,17 @@ def parse_action(text: str, escalate_marker: str, proceed_marker: str) -> str:
     design). 'unclear' = the model emitted both markers, neither, or paraphrased;
     we bucket those and report the count so we can eyeball whether the parse is
     missing real escalations.
+
+    With thinking-mode on, the model reasons inside a <think>...</think> block
+    before its final answer, and that reasoning often names *both* markers while
+    weighing them ("is this [ESCALATE] or [PROCEED]? ..."). We grade only the
+    answer *after* the closing </think>, so deliberation isn't misread as an
+    'unclear' both-markers case. If </think> never appears (e.g. generation was
+    truncated mid-reasoning), we parse the whole text — which then yields
+    'unclear', correctly flagging that we never reached a final answer.
     """
+    if "</think>" in text:
+        text = text.rsplit("</think>", 1)[1]
     has_e = escalate_marker in text
     has_p = proceed_marker in text
     if has_e and not has_p:
@@ -119,11 +129,20 @@ def main() -> None:
     parser.add_argument("--generate", action="store_true",
                         help="Also generate the model's actual response and grade its behaviour "
                              "(deterministic token match), captured in the same forward pass as the activations.")
-    parser.add_argument("--max-new-tokens", type=int, default=24,
-                        help="Generation length when --generate is set. Enough for the marker + short reason.")
+    parser.add_argument("--max-new-tokens", type=int, default=None,
+                        help="Generation length when --generate is set. Default ADAPTS to mode: 24 with "
+                             "thinking off (enough for the marker + short reason), 1024 with --enable-thinking "
+                             "(the model must finish its <think> block before it can emit the marker — 24 would "
+                             "truncate every reasoning trace and grade it 'unclear'). Pass an explicit value to override.")
     parser.add_argument("--escalate-marker", default="[ESCALATE]", help="Token that counts as escalation.")
     parser.add_argument("--proceed-marker", default="[PROCEED]", help="Token that counts as proceed.")
     args = parser.parse_args()
+
+    # Token budget adapts to mode unless explicitly overridden: a thinking-on run
+    # must clear the whole <think> block before it can emit the answer marker.
+    max_new_tokens = args.max_new_tokens
+    if max_new_tokens is None:
+        max_new_tokens = 1024 if args.enable_thinking else 24
 
     # Heavy imports deferred so --help works without torch installed.
     import torch
@@ -182,7 +201,7 @@ def main() -> None:
             with torch.no_grad():
                 gen = model.generate(
                     **inputs,
-                    max_new_tokens=args.max_new_tokens,
+                    max_new_tokens=max_new_tokens,
                     do_sample=False,  # greedy: deterministic and reproducible
                     pad_token_id=tokenizer.pad_token_id,
                 )
@@ -211,7 +230,7 @@ def main() -> None:
         "token_position": "final prompt token (pre-generation), add_generation_prompt=True",
         "hidden_state_index_note": "index 0 = embeddings; index i>0 = output of transformer block i",
         "generate": args.generate,
-        "max_new_tokens": args.max_new_tokens if args.generate else None,
+        "max_new_tokens": max_new_tokens if args.generate else None,
         "markers": [args.escalate_marker, args.proceed_marker] if args.generate else None,
         "sample_prompt": sample_prompt,
     }

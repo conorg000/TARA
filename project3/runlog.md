@@ -9,6 +9,15 @@ To add a run: append a row to the table and, if it's interesting, a detail block
 below. Activation `.npz` files are gitignored (regenerable from the model), so
 record the full per-layer table here for any result worth keeping.
 
+**Reproducibility convention.** Each detail block records the exact command **and
+the short git commit SHA the code was at** (`git rev-parse --short HEAD`), because
+the scripts evolve — e.g. `./run.sh …` meant something different at r2 (no
+behaviour) than at r4 (with `--generate`). The command is *what to type*; the
+commit is *what the code was* — only the pair reproduces a run. Datasets are
+reproducible from seed (see [datasets.md](datasets.md)); model / dtype / device /
+split / N are in the row. Record the SHA of the code you actually ran (commit
+before uploading to a GPU box; note "tree dirty" if it wasn't clean).
+
 ## Pre-registered predictions
 
 Written **before** the run, per the pre-registration rule in [CLAUDE.md](CLAUDE.md). Recorded so the
@@ -57,6 +66,38 @@ What would make the result *uninteresting* (and we'd say so): behaviour ≈ or >
 4. **HIT.** 2×2 "probe OK / behaviour wrong" = 72 ≫ "probe wrong / behaviour OK" = 20.
 
 **Caveats (recorded so we don't overclaim a clean sweep):** (a) the probe is *supervised* vs *zero-shot* behaviour — the honest claim is "decision info is linearly decodable though the output ignores it," not "the model knew and chose not to act"; (b) the behaviour failure is a *proceed-default under greedy / no-thinking on a 0.6B* — reasoning or scale might close the gap; (c) small sub-counts (11/12) are wide-CI. **This revives the 8B run:** behaviour (unlike the probe) has large headroom, so the live question becomes whether the gap survives scale + reasoning.
+
+### Planned `2026-05-30` (pre-registered) — Qwen3-8B scale × reasoning (r7 / r8)
+
+**The experiment the whole monitor story hangs on.** Everything so far is one regime: a 0.6B, greedy, thinking off. r4's behaviour failure was a *proceed-default*, so we cannot yet tell **"recognises but doesn't act"** from **"too weak to act."** Only a model that *can* do the task disambiguates the two. Pre-registered before any 8B run; thresholds fixed here, scored HIT/MISS on landing.
+
+**Run matrix** (Qwen3-8B, [conditions_v2](datasets.md#conditions_v2json--current), N=192, GPU / bf16):
+- **r7 — thinking OFF**, `--generate`. Direct scale comparison to r4 (same dataset + grading, bigger model).
+- **r8 — thinking ON**, `--generate` (auto 1024-token budget so the model clears its `<think>` block before the marker). Reasoning comparison. *Readout note:* the probe is read at the **pre-reasoning** token (generation header, before `<think>`); behaviour is the **post-reasoning** final answer. So a "probe-right / behaviour-wrong" case in r8 means *recognised at input, reasoned, still omitted* — a stronger claim than r7's.
+- **Controls** (`controls.py`) on r7 and r8 activations — standing rule; lead with diff-of-means, report selectivity.
+- **r9 (secondary)** — transfer v2→v2b on r7 activations: does the domain-generality from r6 survive scale? Needs an 8B extract on v2b (forward passes only, no generation).
+
+When these land, record each run's command **and** the commit SHA the code was at (see the reproducibility convention at the top of this file).
+
+**Anchors (0.6B, r4/r5):** behaviour acc **0.521** (28 esc / 164 proc, proceed-default); probe acc **0.792**; honest recognition diff-of-means AUROC **~0.71**; monitor payoff **61/80 = 0.76**; probe-OK/behaviour-WRONG cell **72**; aggregate gap (probe acc − behav acc) **0.27**.
+
+**The metric that carries the claim — read this first.** As capability rises, behavioural accuracy rises, so the *number* of silent misses falls, so the **aggregate gap shrinks mechanically**. A smaller aggregate gap at 8B is therefore *expected and not bad news*. The load-bearing metric is the **monitor payoff**: of the cases the model *still* fails silently (however few), does the probe recover the answer? That does not trivially shrink with capability — it is the real test.
+
+**r7 predictions (8B, thinking off):**
+1. **Capability rises.** Behavioural accuracy **> 0.65** (clearly above the 0.6B's 0.52). *Falsify:* ≤ 0.55 → the 8B also proceed-defaults; the task doesn't separate capability and the can't-vs-won't confound persists at scale.
+2. **Recognition survives & stays selective.** diff-of-means recognition AUROC **≥ 0.71** *and* selectivity **≥ 0.10** over the best clean control (shuffle / dest / item-irrelevant). *Falsify:* diff-of-means < 0.65 or selectivity < 0.05 → the signal doesn't survive scale.
+3. **Monitor payoff holds (the crux).** Of should-escalate cases the 8B behaviourally misses, the probe flags escalate for **≥ 60%**. *Falsify:* < 50% → the probe doesn't recover the missed recognition. *Wide-CI caveat:* if misses < 20, report exact counts and don't over-read the fraction.
+4. **Gap direction holds, magnitude shrinks.** probe acc **≥** behaviour acc, and aggregate gap **< 0.27**. *Falsify the framing:* behaviour > probe → the monitor framing is wrong at scale. (A shrinking gap alone is expected — P3 carries the claim, not P4's size.)
+
+**r8 predictions (8B, thinking on):**
+5. **Reasoning improves behaviour.** r8 behaviour acc **> r7 behaviour acc**. *Falsify:* ≤ r7 → reasoning doesn't help here (surprising for an easy item→category task).
+6. **Input-recognition is stable to the thinking toggle (control).** Each run's own diff-of-means OOF probe AUROC at the pre-generation token: r8 within **±0.05** of r7. If it moves more, thinking-mode prompt formatting itself shifts the representation — understand that before trusting the behaviour comparison.
+7. **Does reasoning close the gap? (directional pre-commit).** Expect reasoning to *shrink* the gap but **not flip it**: probe recognition still ≥ behaviour, and monitor payoff on r8's remaining misses **≥ 50%**. Two honest outcomes, interpretation committed in advance:
+   - **Gap closes** (behaviour ≈ recognition; misses become rare): reasoning largely fixes silent omission → the monitor matters *less* for reasoning models. Deflating, but we'd report it.
+   - **Gap survives** (≥ ~10 probe-right/behaviour-wrong cases; payoff ≥ 50%): the model recognises at input, reasons, and *still* omits → the monitor matters *even for* reasoning models. The stronger result for the project.
+   *Falsify the framing:* r8 behaviour > pre-reasoning probe recognition → "recognise-but-don't-act" isn't the right description once reasoning is on.
+
+**What would make this uninteresting (recorded so we don't reframe a null):** if the 8B aces behaviour (≈ probe) with thinking *off* already, there's no silent-omission gap to catch on this dataset → conditions_v2 is too easy for an 8B, and we'd need a harder rung (rarer / fuzzier items) before scale teaches us anything. We'd say so plainly.
 
 ---
 

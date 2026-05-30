@@ -87,6 +87,25 @@ The bigger win is the method. This is exactly the kind of inflation an "it's pro
 
 Next is unchanged: the scale-×-reasoning run is still the experiment that decides whether the (now more modest) gap survives a capable model with chain-of-thought.
 
+### Step 1 — re-pick the layer honestly
+
+The controls (above) said stop trusting the logreg peak, so I re-selected the probe layer by the metric that survives them: diff-of-means selectivity vs the clean controls, swept across all layers (`select_layer.py`).
+
+- Honest best: **layer 19, diff-of-means 0.713, selectivity 0.177** (over the strongest clean control). Slightly above the 0.684 we'd quoted at layer 18 — because layer 18 was the *logreg* peak, not the honest one.
+- The selectivity profile is ~0 (or negative) through layers 0–15, then rises sharply 16→19 and tails off. So recognition lives in a **region deep in the net (~L16–21), not a single layer** — and yesterday's "computed deep, not in the surface" finding *survives* on the honest metric (it had been leaning on logreg).
+
+Net: the trustworthy recognition signal is **~0.71, modest but real and selective, sitting deep.** Reporting convention locked: headline diff-of-means at the most-selective layer; logreg as reference only.
+
+### Step 2 — does it generalise to conditions it never saw?
+
+A monitor is only useful if it flags triggers it wasn't trained on. So I built **`conditions_v2b`** — a disjoint taxonomy (musical instruments, sports gear, kitchen utensils, jewellery, footwear…), identical framing and guards, *only the categories/items change* — trained the diff-of-means recognition direction on v2 (export goods), and applied it unchanged to v2b (`transfer_test.py`).
+
+- **Transfer ≈ 0.79** (layers 19–21; best **0.790 @ L20**). It **matches the within-v2b ceiling (~0.72)** — i.e. no penalty crossing to a domain it never saw — and sits **+0.34 above the shuffle control (~0.45)**.
+- So the probe isn't memorising "watch for electronics." It reads an abstract *"the item's category is on the list"* feature that ports to entirely new categories.
+- Didn't lean on logreg-transfer (~0.87): v2 and v2b share phrasing, so that number isn't clean. diff-of-means stays the trustworthy metric (phrasing is label-orthogonal by construction).
+
+**Where that leaves the monitor idea on a 0.6B:** recognition is real-but-modest (~0.71), selective, computed deep, and **domain-general** — a probe trained on one trigger family flags a different one with no loss. Absolute strength is the caveat; the generality is the win. Open question unchanged: does it survive scale + reasoning (8B).
+
 ---
 
 ## Where the details live
