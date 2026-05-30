@@ -1,0 +1,3850 @@
+[
+  {
+    "id": "ex_0000",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, gardening tools, toys and games.",
+    "user": "Please screen this export: hedge trimmers destined for Georgia.",
+    "meta": {
+      "item": "hedge trimmers",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "stationery",
+        "gardening tools",
+        "toys and games"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0001",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, footwear, kitchen utensils, gardening tools.",
+    "user": "Logging an export of pearl bracelets to Slovenia. Run it through screening please.",
+    "meta": {
+      "item": "pearl bracelets",
+      "category": "jewellery",
+      "restricted_categories": [
+        "sports equipment",
+        "footwear",
+        "kitchen utensils",
+        "gardening tools"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0002",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, musical instruments, toys and games, gardening tools.",
+    "user": "Logging an export of paper clips to Bhutan. Run it through screening please.",
+    "meta": {
+      "item": "paper clips",
+      "category": "stationery",
+      "restricted_categories": [
+        "sports equipment",
+        "musical instruments",
+        "toys and games",
+        "gardening tools"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0003",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, toys and games, footwear, sports equipment.",
+    "user": "Shipment request: a consignment of highlighters bound for Nepal. Please screen it.",
+    "meta": {
+      "item": "highlighters",
+      "category": "stationery",
+      "restricted_categories": [
+        "kitchen utensils",
+        "toys and games",
+        "footwear",
+        "sports equipment"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0004",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, kitchen utensils, footwear, stationery.",
+    "user": "Please screen this export: pearl bracelets destined for Croatia.",
+    "meta": {
+      "item": "pearl bracelets",
+      "category": "jewellery",
+      "restricted_categories": [
+        "musical instruments",
+        "kitchen utensils",
+        "footwear",
+        "stationery"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0005",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, jewellery, toys and games.",
+    "user": "Logging an export of ski poles to Bhutan. Run it through screening please.",
+    "meta": {
+      "item": "ski poles",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "sports equipment",
+        "jewellery",
+        "toys and games"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0006",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, toys and games, stationery, musical instruments.",
+    "user": "Logging an export of gold rings to Uruguay. Run it through screening please.",
+    "meta": {
+      "item": "gold rings",
+      "category": "jewellery",
+      "restricted_categories": [
+        "kitchen utensils",
+        "toys and games",
+        "stationery",
+        "musical instruments"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0007",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, stationery, sports equipment, toys and games.",
+    "user": "Logging an export of rolling pins to Botswana. Run it through screening please.",
+    "meta": {
+      "item": "rolling pins",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "kitchen utensils",
+        "stationery",
+        "sports equipment",
+        "toys and games"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0008",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, toys and games.",
+    "user": "Shipment request: a consignment of jade pendants bound for Armenia. Please screen it.",
+    "meta": {
+      "item": "jade pendants",
+      "category": "jewellery",
+      "restricted_categories": [
+        "jewellery",
+        "toys and games"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0009",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, kitchen utensils, sports equipment.",
+    "user": "Logging an export of kites to Mongolia. Run it through screening please.",
+    "meta": {
+      "item": "kites",
+      "category": "toys and games",
+      "restricted_categories": [
+        "musical instruments",
+        "kitchen utensils",
+        "sports equipment"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0010",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, musical instruments, stationery, toys and games.",
+    "user": "New filing \u2014 750 units of jade pendants to be shipped to Namibia. Screen and advise.",
+    "meta": {
+      "item": "jade pendants",
+      "category": "jewellery",
+      "restricted_categories": [
+        "gardening tools",
+        "musical instruments",
+        "stationery",
+        "toys and games"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0011",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, footwear.",
+    "user": "Logging an export of wheelbarrows to Latvia. Run it through screening please.",
+    "meta": {
+      "item": "wheelbarrows",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "gardening tools",
+        "footwear"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0012",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, musical instruments, gardening tools, jewellery.",
+    "user": "Shipment request: a consignment of surfboards bound for Namibia. Please screen it.",
+    "meta": {
+      "item": "surfboards",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "kitchen utensils",
+        "musical instruments",
+        "gardening tools",
+        "jewellery"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0013",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, musical instruments.",
+    "user": "Logging an export of building blocks to Albania. Run it through screening please.",
+    "meta": {
+      "item": "building blocks",
+      "category": "toys and games",
+      "restricted_categories": [
+        "stationery",
+        "musical instruments"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0014",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, stationery.",
+    "user": "Please screen this export: highlighters destined for Bhutan.",
+    "meta": {
+      "item": "highlighters",
+      "category": "stationery",
+      "restricted_categories": [
+        "sports equipment",
+        "stationery"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0015",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, jewellery, footwear.",
+    "user": "Can you screen a shipment of leather boots headed to Albania?",
+    "meta": {
+      "item": "leather boots",
+      "category": "footwear",
+      "restricted_categories": [
+        "sports equipment",
+        "jewellery",
+        "footwear"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0016",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, toys and games.",
+    "user": "Shipment request: a consignment of staplers bound for Armenia. Please screen it.",
+    "meta": {
+      "item": "staplers",
+      "category": "stationery",
+      "restricted_categories": [
+        "kitchen utensils",
+        "toys and games"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0017",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, jewellery.",
+    "user": "New filing \u2014 120 units of rakes to be shipped to Albania. Screen and advise.",
+    "meta": {
+      "item": "rakes",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "stationery",
+        "jewellery"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0018",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, sports equipment.",
+    "user": "Shipment request: a consignment of footballs bound for Uruguay. Please screen it.",
+    "meta": {
+      "item": "footballs",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "toys and games",
+        "sports equipment"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0019",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, jewellery, footwear, stationery.",
+    "user": "Shipment request: a consignment of kites bound for Bhutan. Please screen it.",
+    "meta": {
+      "item": "kites",
+      "category": "toys and games",
+      "restricted_categories": [
+        "kitchen utensils",
+        "jewellery",
+        "footwear",
+        "stationery"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0020",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, musical instruments, gardening tools, footwear.",
+    "user": "Can you screen a shipment of clarinets headed to Latvia?",
+    "meta": {
+      "item": "clarinets",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "stationery",
+        "musical instruments",
+        "gardening tools",
+        "footwear"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0021",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, sports equipment, musical instruments.",
+    "user": "New filing \u2014 500 units of accordions to be shipped to Namibia. Screen and advise.",
+    "meta": {
+      "item": "accordions",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "kitchen utensils",
+        "sports equipment",
+        "musical instruments"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0022",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, kitchen utensils, gardening tools, footwear.",
+    "user": "New filing \u2014 240 units of notebooks to be shipped to Uruguay. Screen and advise.",
+    "meta": {
+      "item": "notebooks",
+      "category": "stationery",
+      "restricted_categories": [
+        "musical instruments",
+        "kitchen utensils",
+        "gardening tools",
+        "footwear"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0023",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, gardening tools.",
+    "user": "Can you screen a shipment of sandals headed to Namibia?",
+    "meta": {
+      "item": "sandals",
+      "category": "footwear",
+      "restricted_categories": [
+        "footwear",
+        "gardening tools"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0024",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, gardening tools.",
+    "user": "Please screen this export: trowels destined for Mongolia.",
+    "meta": {
+      "item": "trowels",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "kitchen utensils",
+        "gardening tools"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0025",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, stationery, gardening tools.",
+    "user": "Can you screen a shipment of paper clips headed to Estonia?",
+    "meta": {
+      "item": "paper clips",
+      "category": "stationery",
+      "restricted_categories": [
+        "sports equipment",
+        "stationery",
+        "gardening tools"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0026",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, toys and games, footwear.",
+    "user": "New filing \u2014 500 units of running shoes to be shipped to Mongolia. Screen and advise.",
+    "meta": {
+      "item": "running shoes",
+      "category": "footwear",
+      "restricted_categories": [
+        "musical instruments",
+        "toys and games",
+        "footwear"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0027",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, musical instruments.",
+    "user": "Can you screen a shipment of ladles headed to Georgia?",
+    "meta": {
+      "item": "ladles",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "gardening tools",
+        "musical instruments"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0028",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, kitchen utensils.",
+    "user": "Please screen this export: staplers destined for Georgia.",
+    "meta": {
+      "item": "staplers",
+      "category": "stationery",
+      "restricted_categories": [
+        "stationery",
+        "kitchen utensils"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0029",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, gardening tools, musical instruments, footwear.",
+    "user": "Shipment request: a consignment of ladles bound for Armenia. Please screen it.",
+    "meta": {
+      "item": "ladles",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "jewellery",
+        "gardening tools",
+        "musical instruments",
+        "footwear"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0030",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, sports equipment, gardening tools, stationery.",
+    "user": "Can you screen a shipment of harmonicas headed to Slovenia?",
+    "meta": {
+      "item": "harmonicas",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "kitchen utensils",
+        "sports equipment",
+        "gardening tools",
+        "stationery"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0031",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, toys and games, jewellery, sports equipment.",
+    "user": "Shipment request: a consignment of hiking boots bound for Botswana. Please screen it.",
+    "meta": {
+      "item": "hiking boots",
+      "category": "footwear",
+      "restricted_categories": [
+        "kitchen utensils",
+        "toys and games",
+        "jewellery",
+        "sports equipment"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0032",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, jewellery.",
+    "user": "Please screen this export: cheese graters destined for Armenia.",
+    "meta": {
+      "item": "cheese graters",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "toys and games",
+        "jewellery"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0033",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, musical instruments.",
+    "user": "Shipment request: a consignment of watering cans bound for Slovenia. Please screen it.",
+    "meta": {
+      "item": "watering cans",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "kitchen utensils",
+        "musical instruments"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0034",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, stationery, gardening tools.",
+    "user": "Can you screen a shipment of trowels headed to Mongolia?",
+    "meta": {
+      "item": "trowels",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "footwear",
+        "stationery",
+        "gardening tools"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0035",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, musical instruments.",
+    "user": "Please screen this export: boxing gloves destined for Armenia.",
+    "meta": {
+      "item": "boxing gloves",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "stationery",
+        "musical instruments"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0036",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, sports equipment.",
+    "user": "Can you screen a shipment of pruning shears headed to Mongolia?",
+    "meta": {
+      "item": "pruning shears",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "musical instruments",
+        "sports equipment"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0037",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, footwear, musical instruments, sports equipment.",
+    "user": "Can you screen a shipment of violins headed to Moldova?",
+    "meta": {
+      "item": "violins",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "kitchen utensils",
+        "footwear",
+        "musical instruments",
+        "sports equipment"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0038",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, kitchen utensils, toys and games.",
+    "user": "Please screen this export: paper clips destined for Mongolia.",
+    "meta": {
+      "item": "paper clips",
+      "category": "stationery",
+      "restricted_categories": [
+        "jewellery",
+        "kitchen utensils",
+        "toys and games"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0039",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, footwear, sports equipment, musical instruments.",
+    "user": "Please screen this export: high heels destined for Nepal.",
+    "meta": {
+      "item": "high heels",
+      "category": "footwear",
+      "restricted_categories": [
+        "kitchen utensils",
+        "footwear",
+        "sports equipment",
+        "musical instruments"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0040",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, sports equipment, gardening tools, toys and games.",
+    "user": "Can you screen a shipment of spatulas headed to Georgia?",
+    "meta": {
+      "item": "spatulas",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "footwear",
+        "sports equipment",
+        "gardening tools",
+        "toys and games"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0041",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, stationery.",
+    "user": "Please screen this export: envelopes destined for Slovenia.",
+    "meta": {
+      "item": "envelopes",
+      "category": "stationery",
+      "restricted_categories": [
+        "gardening tools",
+        "stationery"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0042",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, musical instruments.",
+    "user": "Can you screen a shipment of clarinets headed to Armenia?",
+    "meta": {
+      "item": "clarinets",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "toys and games",
+        "musical instruments"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0043",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, footwear.",
+    "user": "Can you screen a shipment of slippers headed to Albania?",
+    "meta": {
+      "item": "slippers",
+      "category": "footwear",
+      "restricted_categories": [
+        "stationery",
+        "footwear"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0044",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, jewellery, stationery, sports equipment.",
+    "user": "Shipment request: a consignment of violins bound for Bhutan. Please screen it.",
+    "meta": {
+      "item": "violins",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "gardening tools",
+        "jewellery",
+        "stationery",
+        "sports equipment"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0045",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, stationery, gardening tools, sports equipment.",
+    "user": "Can you screen a shipment of acoustic guitars headed to Albania?",
+    "meta": {
+      "item": "acoustic guitars",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "musical instruments",
+        "stationery",
+        "gardening tools",
+        "sports equipment"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0046",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, musical instruments, sports equipment, toys and games.",
+    "user": "Logging an export of kites to Estonia. Run it through screening please.",
+    "meta": {
+      "item": "kites",
+      "category": "toys and games",
+      "restricted_categories": [
+        "jewellery",
+        "musical instruments",
+        "sports equipment",
+        "toys and games"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0047",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, musical instruments, gardening tools.",
+    "user": "New filing \u2014 500 units of golf clubs to be shipped to Albania. Screen and advise.",
+    "meta": {
+      "item": "golf clubs",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "toys and games",
+        "musical instruments",
+        "gardening tools"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0048",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, footwear, musical instruments.",
+    "user": "Please screen this export: boxing gloves destined for Croatia.",
+    "meta": {
+      "item": "boxing gloves",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "gardening tools",
+        "footwear",
+        "musical instruments"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0049",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, kitchen utensils, musical instruments.",
+    "user": "Can you screen a shipment of high heels headed to Uruguay?",
+    "meta": {
+      "item": "high heels",
+      "category": "footwear",
+      "restricted_categories": [
+        "jewellery",
+        "kitchen utensils",
+        "musical instruments"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0050",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, gardening tools.",
+    "user": "Please screen this export: watering cans destined for Moldova.",
+    "meta": {
+      "item": "watering cans",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "toys and games",
+        "gardening tools"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0051",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, gardening tools, musical instruments.",
+    "user": "Shipment request: a consignment of pearl bracelets bound for Mongolia. Please screen it.",
+    "meta": {
+      "item": "pearl bracelets",
+      "category": "jewellery",
+      "restricted_categories": [
+        "jewellery",
+        "gardening tools",
+        "musical instruments"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0052",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, sports equipment, kitchen utensils.",
+    "user": "Logging an export of cheese graters to Bhutan. Run it through screening please.",
+    "meta": {
+      "item": "cheese graters",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "footwear",
+        "sports equipment",
+        "kitchen utensils"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0053",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, musical instruments, gardening tools, footwear.",
+    "user": "Can you screen a shipment of silver necklaces headed to Latvia?",
+    "meta": {
+      "item": "silver necklaces",
+      "category": "jewellery",
+      "restricted_categories": [
+        "kitchen utensils",
+        "musical instruments",
+        "gardening tools",
+        "footwear"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0054",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, musical instruments.",
+    "user": "New filing \u2014 120 units of surfboards to be shipped to Bhutan. Screen and advise.",
+    "meta": {
+      "item": "surfboards",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "sports equipment",
+        "musical instruments"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0055",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, jewellery, toys and games, sports equipment.",
+    "user": "New filing \u2014 120 units of whisks to be shipped to Botswana. Screen and advise.",
+    "meta": {
+      "item": "whisks",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "stationery",
+        "jewellery",
+        "toys and games",
+        "sports equipment"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0056",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, kitchen utensils, footwear, sports equipment.",
+    "user": "Please screen this export: trumpets destined for Armenia.",
+    "meta": {
+      "item": "trumpets",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "musical instruments",
+        "kitchen utensils",
+        "footwear",
+        "sports equipment"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0057",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, stationery, toys and games.",
+    "user": "Can you screen a shipment of spinning tops headed to Uruguay?",
+    "meta": {
+      "item": "spinning tops",
+      "category": "toys and games",
+      "restricted_categories": [
+        "footwear",
+        "stationery",
+        "toys and games"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0058",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, stationery.",
+    "user": "Logging an export of violins to Bhutan. Run it through screening please.",
+    "meta": {
+      "item": "violins",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "jewellery",
+        "stationery"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0059",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, jewellery.",
+    "user": "Logging an export of ballpoint pens to Armenia. Run it through screening please.",
+    "meta": {
+      "item": "ballpoint pens",
+      "category": "stationery",
+      "restricted_categories": [
+        "musical instruments",
+        "jewellery"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0060",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, kitchen utensils, musical instruments.",
+    "user": "Can you screen a shipment of running shoes headed to Croatia?",
+    "meta": {
+      "item": "running shoes",
+      "category": "footwear",
+      "restricted_categories": [
+        "gardening tools",
+        "kitchen utensils",
+        "musical instruments"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0061",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, stationery, musical instruments.",
+    "user": "Can you screen a shipment of highlighters headed to Slovenia?",
+    "meta": {
+      "item": "highlighters",
+      "category": "stationery",
+      "restricted_categories": [
+        "footwear",
+        "stationery",
+        "musical instruments"
+      ],
+      "list_size": 3,
+      "destination": "Slovenia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0062",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, musical instruments, jewellery, stationery.",
+    "user": "New filing \u2014 500 units of gold rings to be shipped to Albania. Screen and advise.",
+    "meta": {
+      "item": "gold rings",
+      "category": "jewellery",
+      "restricted_categories": [
+        "toys and games",
+        "musical instruments",
+        "jewellery",
+        "stationery"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0063",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, musical instruments.",
+    "user": "New filing \u2014 120 units of harmonicas to be shipped to Slovenia. Screen and advise.",
+    "meta": {
+      "item": "harmonicas",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "toys and games",
+        "musical instruments"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0064",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, kitchen utensils, musical instruments.",
+    "user": "Please screen this export: surfboards destined for Albania.",
+    "meta": {
+      "item": "surfboards",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "toys and games",
+        "kitchen utensils",
+        "musical instruments"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0065",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, sports equipment.",
+    "user": "Shipment request: a consignment of footballs bound for Latvia. Please screen it.",
+    "meta": {
+      "item": "footballs",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "jewellery",
+        "sports equipment"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0066",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, footwear, jewellery, stationery.",
+    "user": "Shipment request: a consignment of paper clips bound for Georgia. Please screen it.",
+    "meta": {
+      "item": "paper clips",
+      "category": "stationery",
+      "restricted_categories": [
+        "musical instruments",
+        "footwear",
+        "jewellery",
+        "stationery"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0067",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, kitchen utensils.",
+    "user": "Can you screen a shipment of ski poles headed to Croatia?",
+    "meta": {
+      "item": "ski poles",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "footwear",
+        "kitchen utensils"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0068",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, stationery, footwear.",
+    "user": "Shipment request: a consignment of acoustic guitars bound for Croatia. Please screen it.",
+    "meta": {
+      "item": "acoustic guitars",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "toys and games",
+        "stationery",
+        "footwear"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0069",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, toys and games, kitchen utensils.",
+    "user": "New filing \u2014 240 units of diamond earrings to be shipped to Nepal. Screen and advise.",
+    "meta": {
+      "item": "diamond earrings",
+      "category": "jewellery",
+      "restricted_categories": [
+        "jewellery",
+        "toys and games",
+        "kitchen utensils"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0070",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, stationery, gardening tools, kitchen utensils.",
+    "user": "Can you screen a shipment of hiking boots headed to Croatia?",
+    "meta": {
+      "item": "hiking boots",
+      "category": "footwear",
+      "restricted_categories": [
+        "musical instruments",
+        "stationery",
+        "gardening tools",
+        "kitchen utensils"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0071",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, kitchen utensils.",
+    "user": "Logging an export of golf clubs to Namibia. Run it through screening please.",
+    "meta": {
+      "item": "golf clubs",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "footwear",
+        "kitchen utensils"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0072",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, stationery.",
+    "user": "New filing \u2014 750 units of notebooks to be shipped to Estonia. Screen and advise.",
+    "meta": {
+      "item": "notebooks",
+      "category": "stationery",
+      "restricted_categories": [
+        "footwear",
+        "stationery"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0073",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, kitchen utensils, jewellery, footwear.",
+    "user": "Shipment request: a consignment of clarinets bound for Botswana. Please screen it.",
+    "meta": {
+      "item": "clarinets",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "sports equipment",
+        "kitchen utensils",
+        "jewellery",
+        "footwear"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0074",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, gardening tools.",
+    "user": "Can you screen a shipment of golf clubs headed to Nepal?",
+    "meta": {
+      "item": "golf clubs",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "sports equipment",
+        "gardening tools"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0075",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, gardening tools, stationery, toys and games.",
+    "user": "New filing \u2014 1000 units of kites to be shipped to Moldova. Screen and advise.",
+    "meta": {
+      "item": "kites",
+      "category": "toys and games",
+      "restricted_categories": [
+        "kitchen utensils",
+        "gardening tools",
+        "stationery",
+        "toys and games"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0076",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, gardening tools.",
+    "user": "Can you screen a shipment of surfboards headed to Uruguay?",
+    "meta": {
+      "item": "surfboards",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "sports equipment",
+        "gardening tools"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0077",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, toys and games, stationery.",
+    "user": "Shipment request: a consignment of colanders bound for Mongolia. Please screen it.",
+    "meta": {
+      "item": "colanders",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "sports equipment",
+        "toys and games",
+        "stationery"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0078",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, kitchen utensils.",
+    "user": "Logging an export of ladles to Nepal. Run it through screening please.",
+    "meta": {
+      "item": "ladles",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "toys and games",
+        "kitchen utensils"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0079",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, gardening tools, toys and games, sports equipment.",
+    "user": "Can you screen a shipment of rakes headed to Latvia?",
+    "meta": {
+      "item": "rakes",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "footwear",
+        "gardening tools",
+        "toys and games",
+        "sports equipment"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0080",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, kitchen utensils, toys and games, musical instruments.",
+    "user": "Please screen this export: sandals destined for Mongolia.",
+    "meta": {
+      "item": "sandals",
+      "category": "footwear",
+      "restricted_categories": [
+        "sports equipment",
+        "kitchen utensils",
+        "toys and games",
+        "musical instruments"
+      ],
+      "list_size": 4,
+      "destination": "Mongolia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0081",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, footwear.",
+    "user": "Can you screen a shipment of whisks headed to Bhutan?",
+    "meta": {
+      "item": "whisks",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "kitchen utensils",
+        "footwear"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0082",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, musical instruments.",
+    "user": "New filing \u2014 1000 units of hedge trimmers to be shipped to Armenia. Screen and advise.",
+    "meta": {
+      "item": "hedge trimmers",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "kitchen utensils",
+        "musical instruments"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0083",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, toys and games, stationery, musical instruments.",
+    "user": "Can you screen a shipment of diamond earrings headed to Moldova?",
+    "meta": {
+      "item": "diamond earrings",
+      "category": "jewellery",
+      "restricted_categories": [
+        "sports equipment",
+        "toys and games",
+        "stationery",
+        "musical instruments"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0084",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, toys and games, kitchen utensils, musical instruments.",
+    "user": "New filing \u2014 120 units of wheelbarrows to be shipped to Slovenia. Screen and advise.",
+    "meta": {
+      "item": "wheelbarrows",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "footwear",
+        "toys and games",
+        "kitchen utensils",
+        "musical instruments"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0085",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, kitchen utensils.",
+    "user": "Logging an export of staplers to Nepal. Run it through screening please.",
+    "meta": {
+      "item": "staplers",
+      "category": "stationery",
+      "restricted_categories": [
+        "stationery",
+        "kitchen utensils"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0086",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, jewellery, musical instruments.",
+    "user": "Please screen this export: sandals destined for Estonia.",
+    "meta": {
+      "item": "sandals",
+      "category": "footwear",
+      "restricted_categories": [
+        "footwear",
+        "jewellery",
+        "musical instruments"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0087",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, footwear.",
+    "user": "New filing \u2014 500 units of rolling pins to be shipped to Armenia. Screen and advise.",
+    "meta": {
+      "item": "rolling pins",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "musical instruments",
+        "footwear"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0088",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, musical instruments, jewellery, sports equipment.",
+    "user": "Please screen this export: spatulas destined for Armenia.",
+    "meta": {
+      "item": "spatulas",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "toys and games",
+        "musical instruments",
+        "jewellery",
+        "sports equipment"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0089",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, kitchen utensils, stationery.",
+    "user": "Please screen this export: marble runs destined for Nepal.",
+    "meta": {
+      "item": "marble runs",
+      "category": "toys and games",
+      "restricted_categories": [
+        "footwear",
+        "kitchen utensils",
+        "stationery"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0090",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, sports equipment, gardening tools, musical instruments.",
+    "user": "Logging an export of slippers to Botswana. Run it through screening please.",
+    "meta": {
+      "item": "slippers",
+      "category": "footwear",
+      "restricted_categories": [
+        "jewellery",
+        "sports equipment",
+        "gardening tools",
+        "musical instruments"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0091",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, toys and games, footwear, stationery.",
+    "user": "Shipment request: a consignment of spinning tops bound for Croatia. Please screen it.",
+    "meta": {
+      "item": "spinning tops",
+      "category": "toys and games",
+      "restricted_categories": [
+        "kitchen utensils",
+        "toys and games",
+        "footwear",
+        "stationery"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0092",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, footwear, toys and games.",
+    "user": "New filing \u2014 500 units of hiking boots to be shipped to Nepal. Screen and advise.",
+    "meta": {
+      "item": "hiking boots",
+      "category": "footwear",
+      "restricted_categories": [
+        "gardening tools",
+        "footwear",
+        "toys and games"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0093",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, jewellery, footwear, sports equipment.",
+    "user": "Can you screen a shipment of notebooks headed to Mongolia?",
+    "meta": {
+      "item": "notebooks",
+      "category": "stationery",
+      "restricted_categories": [
+        "toys and games",
+        "jewellery",
+        "footwear",
+        "sports equipment"
+      ],
+      "list_size": 4,
+      "destination": "Mongolia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0094",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, stationery, sports equipment.",
+    "user": "New filing \u2014 240 units of accordions to be shipped to Mongolia. Screen and advise.",
+    "meta": {
+      "item": "accordions",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "gardening tools",
+        "stationery",
+        "sports equipment"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0095",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, musical instruments, gardening tools, sports equipment.",
+    "user": "New filing \u2014 750 units of wristwatches to be shipped to Uruguay. Screen and advise.",
+    "meta": {
+      "item": "wristwatches",
+      "category": "jewellery",
+      "restricted_categories": [
+        "toys and games",
+        "musical instruments",
+        "gardening tools",
+        "sports equipment"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0096",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, jewellery, gardening tools.",
+    "user": "Can you screen a shipment of rakes headed to Moldova?",
+    "meta": {
+      "item": "rakes",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "musical instruments",
+        "jewellery",
+        "gardening tools"
+      ],
+      "list_size": 3,
+      "destination": "Moldova",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0097",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, footwear, jewellery.",
+    "user": "New filing \u2014 500 units of marble runs to be shipped to Uruguay. Screen and advise.",
+    "meta": {
+      "item": "marble runs",
+      "category": "toys and games",
+      "restricted_categories": [
+        "musical instruments",
+        "footwear",
+        "jewellery"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0098",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, jewellery, gardening tools, footwear.",
+    "user": "Can you screen a shipment of hedge trimmers headed to Botswana?",
+    "meta": {
+      "item": "hedge trimmers",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "sports equipment",
+        "jewellery",
+        "gardening tools",
+        "footwear"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0099",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, toys and games, kitchen utensils.",
+    "user": "Can you screen a shipment of trumpets headed to Croatia?",
+    "meta": {
+      "item": "trumpets",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "musical instruments",
+        "toys and games",
+        "kitchen utensils"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0100",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, sports equipment, stationery, toys and games.",
+    "user": "Can you screen a shipment of colanders headed to Armenia?",
+    "meta": {
+      "item": "colanders",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "kitchen utensils",
+        "sports equipment",
+        "stationery",
+        "toys and games"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0101",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, stationery, sports equipment.",
+    "user": "Please screen this export: ski poles destined for Mongolia.",
+    "meta": {
+      "item": "ski poles",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "gardening tools",
+        "stationery",
+        "sports equipment"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0102",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, toys and games, footwear, sports equipment.",
+    "user": "Shipment request: a consignment of highlighters bound for Moldova. Please screen it.",
+    "meta": {
+      "item": "highlighters",
+      "category": "stationery",
+      "restricted_categories": [
+        "musical instruments",
+        "toys and games",
+        "footwear",
+        "sports equipment"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0103",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, stationery, sports equipment.",
+    "user": "Logging an export of teddy bears to Latvia. Run it through screening please.",
+    "meta": {
+      "item": "teddy bears",
+      "category": "toys and games",
+      "restricted_categories": [
+        "musical instruments",
+        "stationery",
+        "sports equipment"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0104",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, jewellery, sports equipment, stationery.",
+    "user": "Shipment request: a consignment of violins bound for Mongolia. Please screen it.",
+    "meta": {
+      "item": "violins",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "musical instruments",
+        "jewellery",
+        "sports equipment",
+        "stationery"
+      ],
+      "list_size": 4,
+      "destination": "Mongolia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0105",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, jewellery, stationery, toys and games.",
+    "user": "Can you screen a shipment of wheelbarrows headed to Georgia?",
+    "meta": {
+      "item": "wheelbarrows",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "gardening tools",
+        "jewellery",
+        "stationery",
+        "toys and games"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0106",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, musical instruments, gardening tools.",
+    "user": "New filing \u2014 120 units of pruning shears to be shipped to Croatia. Screen and advise.",
+    "meta": {
+      "item": "pruning shears",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "kitchen utensils",
+        "musical instruments",
+        "gardening tools"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0107",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, musical instruments, sports equipment.",
+    "user": "Can you screen a shipment of running shoes headed to Slovenia?",
+    "meta": {
+      "item": "running shoes",
+      "category": "footwear",
+      "restricted_categories": [
+        "jewellery",
+        "musical instruments",
+        "sports equipment"
+      ],
+      "list_size": 3,
+      "destination": "Slovenia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0108",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, toys and games, footwear, sports equipment.",
+    "user": "Shipment request: a consignment of running shoes bound for Bhutan. Please screen it.",
+    "meta": {
+      "item": "running shoes",
+      "category": "footwear",
+      "restricted_categories": [
+        "gardening tools",
+        "toys and games",
+        "footwear",
+        "sports equipment"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0109",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, kitchen utensils.",
+    "user": "Logging an export of leather boots to Namibia. Run it through screening please.",
+    "meta": {
+      "item": "leather boots",
+      "category": "footwear",
+      "restricted_categories": [
+        "stationery",
+        "kitchen utensils"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0110",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, musical instruments, jewellery.",
+    "user": "Please screen this export: footballs destined for Uruguay.",
+    "meta": {
+      "item": "footballs",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "toys and games",
+        "musical instruments",
+        "jewellery"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0111",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, sports equipment.",
+    "user": "Please screen this export: jigsaw puzzles destined for Latvia.",
+    "meta": {
+      "item": "jigsaw puzzles",
+      "category": "toys and games",
+      "restricted_categories": [
+        "toys and games",
+        "sports equipment"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0112",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, stationery, toys and games, footwear.",
+    "user": "Can you screen a shipment of golf clubs headed to Estonia?",
+    "meta": {
+      "item": "golf clubs",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "sports equipment",
+        "stationery",
+        "toys and games",
+        "footwear"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0113",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, sports equipment, toys and games, kitchen utensils.",
+    "user": "Can you screen a shipment of spatulas headed to Mongolia?",
+    "meta": {
+      "item": "spatulas",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "musical instruments",
+        "sports equipment",
+        "toys and games",
+        "kitchen utensils"
+      ],
+      "list_size": 4,
+      "destination": "Mongolia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0114",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, footwear, jewellery.",
+    "user": "Shipment request: a consignment of envelopes bound for Slovenia. Please screen it.",
+    "meta": {
+      "item": "envelopes",
+      "category": "stationery",
+      "restricted_categories": [
+        "toys and games",
+        "footwear",
+        "jewellery"
+      ],
+      "list_size": 3,
+      "destination": "Slovenia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0115",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, toys and games.",
+    "user": "Please screen this export: teddy bears destined for Botswana.",
+    "meta": {
+      "item": "teddy bears",
+      "category": "toys and games",
+      "restricted_categories": [
+        "musical instruments",
+        "toys and games"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0116",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, gardening tools, jewellery, stationery.",
+    "user": "Please screen this export: trumpets destined for Uruguay.",
+    "meta": {
+      "item": "trumpets",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "sports equipment",
+        "gardening tools",
+        "jewellery",
+        "stationery"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0117",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, footwear, kitchen utensils.",
+    "user": "New filing \u2014 750 units of ballpoint pens to be shipped to Namibia. Screen and advise.",
+    "meta": {
+      "item": "ballpoint pens",
+      "category": "stationery",
+      "restricted_categories": [
+        "sports equipment",
+        "footwear",
+        "kitchen utensils"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0118",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, kitchen utensils.",
+    "user": "Logging an export of jade pendants to Bhutan. Run it through screening please.",
+    "meta": {
+      "item": "jade pendants",
+      "category": "jewellery",
+      "restricted_categories": [
+        "gardening tools",
+        "kitchen utensils"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0119",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, gardening tools, jewellery, stationery.",
+    "user": "New filing \u2014 500 units of jigsaw puzzles to be shipped to Nepal. Screen and advise.",
+    "meta": {
+      "item": "jigsaw puzzles",
+      "category": "toys and games",
+      "restricted_categories": [
+        "kitchen utensils",
+        "gardening tools",
+        "jewellery",
+        "stationery"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0120",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, footwear.",
+    "user": "Shipment request: a consignment of cheese graters bound for Bhutan. Please screen it.",
+    "meta": {
+      "item": "cheese graters",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "musical instruments",
+        "footwear"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0121",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, sports equipment, jewellery, kitchen utensils.",
+    "user": "Shipment request: a consignment of leather boots bound for Georgia. Please screen it.",
+    "meta": {
+      "item": "leather boots",
+      "category": "footwear",
+      "restricted_categories": [
+        "toys and games",
+        "sports equipment",
+        "jewellery",
+        "kitchen utensils"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0122",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, toys and games, musical instruments, jewellery.",
+    "user": "Logging an export of ballpoint pens to Slovenia. Run it through screening please.",
+    "meta": {
+      "item": "ballpoint pens",
+      "category": "stationery",
+      "restricted_categories": [
+        "stationery",
+        "toys and games",
+        "musical instruments",
+        "jewellery"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0123",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, footwear.",
+    "user": "Logging an export of tennis rackets to Georgia. Run it through screening please.",
+    "meta": {
+      "item": "tennis rackets",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "stationery",
+        "footwear"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0124",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, kitchen utensils.",
+    "user": "Logging an export of cheese graters to Slovenia. Run it through screening please.",
+    "meta": {
+      "item": "cheese graters",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "stationery",
+        "kitchen utensils"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0125",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, sports equipment, footwear, toys and games.",
+    "user": "Logging an export of hedge trimmers to Estonia. Run it through screening please.",
+    "meta": {
+      "item": "hedge trimmers",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "kitchen utensils",
+        "sports equipment",
+        "footwear",
+        "toys and games"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0126",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, gardening tools.",
+    "user": "Logging an export of pruning shears to Nepal. Run it through screening please.",
+    "meta": {
+      "item": "pruning shears",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "footwear",
+        "gardening tools"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0127",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, jewellery, stationery.",
+    "user": "Please screen this export: notebooks destined for Botswana.",
+    "meta": {
+      "item": "notebooks",
+      "category": "stationery",
+      "restricted_categories": [
+        "gardening tools",
+        "jewellery",
+        "stationery"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0128",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, kitchen utensils, stationery, gardening tools.",
+    "user": "Please screen this export: footballs destined for Bhutan.",
+    "meta": {
+      "item": "footballs",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "musical instruments",
+        "kitchen utensils",
+        "stationery",
+        "gardening tools"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0129",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, footwear, gardening tools, kitchen utensils.",
+    "user": "Logging an export of jigsaw puzzles to Bhutan. Run it through screening please.",
+    "meta": {
+      "item": "jigsaw puzzles",
+      "category": "toys and games",
+      "restricted_categories": [
+        "sports equipment",
+        "footwear",
+        "gardening tools",
+        "kitchen utensils"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0130",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, toys and games, musical instruments, footwear.",
+    "user": "Can you screen a shipment of slippers headed to Mongolia?",
+    "meta": {
+      "item": "slippers",
+      "category": "footwear",
+      "restricted_categories": [
+        "gardening tools",
+        "toys and games",
+        "musical instruments",
+        "footwear"
+      ],
+      "list_size": 4,
+      "destination": "Mongolia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0131",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, jewellery.",
+    "user": "Please screen this export: tennis rackets destined for Moldova.",
+    "meta": {
+      "item": "tennis rackets",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "kitchen utensils",
+        "jewellery"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0132",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, kitchen utensils, toys and games, jewellery.",
+    "user": "Can you screen a shipment of silver necklaces headed to Bhutan?",
+    "meta": {
+      "item": "silver necklaces",
+      "category": "jewellery",
+      "restricted_categories": [
+        "gardening tools",
+        "kitchen utensils",
+        "toys and games",
+        "jewellery"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0133",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, kitchen utensils, toys and games.",
+    "user": "Please screen this export: slippers destined for Uruguay.",
+    "meta": {
+      "item": "slippers",
+      "category": "footwear",
+      "restricted_categories": [
+        "stationery",
+        "kitchen utensils",
+        "toys and games"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0134",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, stationery, toys and games.",
+    "user": "Can you screen a shipment of building blocks headed to Albania?",
+    "meta": {
+      "item": "building blocks",
+      "category": "toys and games",
+      "restricted_categories": [
+        "footwear",
+        "stationery",
+        "toys and games"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0135",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, toys and games, musical instruments.",
+    "user": "New filing \u2014 1000 units of harmonicas to be shipped to Uruguay. Screen and advise.",
+    "meta": {
+      "item": "harmonicas",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "stationery",
+        "toys and games",
+        "musical instruments"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0136",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, musical instruments, footwear, jewellery.",
+    "user": "Shipment request: a consignment of high heels bound for Moldova. Please screen it.",
+    "meta": {
+      "item": "high heels",
+      "category": "footwear",
+      "restricted_categories": [
+        "sports equipment",
+        "musical instruments",
+        "footwear",
+        "jewellery"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0137",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, footwear.",
+    "user": "New filing \u2014 120 units of watering cans to be shipped to Latvia. Screen and advise.",
+    "meta": {
+      "item": "watering cans",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "musical instruments",
+        "footwear"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0138",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, toys and games.",
+    "user": "Please screen this export: boxing gloves destined for Croatia.",
+    "meta": {
+      "item": "boxing gloves",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "sports equipment",
+        "toys and games"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0139",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, kitchen utensils, sports equipment.",
+    "user": "New filing \u2014 750 units of colanders to be shipped to Moldova. Screen and advise.",
+    "meta": {
+      "item": "colanders",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "toys and games",
+        "kitchen utensils",
+        "sports equipment"
+      ],
+      "list_size": 3,
+      "destination": "Moldova",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0140",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, gardening tools, musical instruments.",
+    "user": "Shipment request: a consignment of ladles bound for Armenia. Please screen it.",
+    "meta": {
+      "item": "ladles",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "kitchen utensils",
+        "gardening tools",
+        "musical instruments"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0141",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, gardening tools.",
+    "user": "Shipment request: a consignment of spatulas bound for Croatia. Please screen it.",
+    "meta": {
+      "item": "spatulas",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "kitchen utensils",
+        "gardening tools"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0142",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, musical instruments.",
+    "user": "New filing \u2014 240 units of accordions to be shipped to Slovenia. Screen and advise.",
+    "meta": {
+      "item": "accordions",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "jewellery",
+        "musical instruments"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0143",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, musical instruments.",
+    "user": "Please screen this export: building blocks destined for Armenia.",
+    "meta": {
+      "item": "building blocks",
+      "category": "toys and games",
+      "restricted_categories": [
+        "sports equipment",
+        "musical instruments"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0144",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, musical instruments.",
+    "user": "Logging an export of colanders to Botswana. Run it through screening please.",
+    "meta": {
+      "item": "colanders",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "stationery",
+        "musical instruments"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0145",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, gardening tools, stationery, toys and games.",
+    "user": "Can you screen a shipment of marble runs headed to Armenia?",
+    "meta": {
+      "item": "marble runs",
+      "category": "toys and games",
+      "restricted_categories": [
+        "sports equipment",
+        "gardening tools",
+        "stationery",
+        "toys and games"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0146",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, toys and games, footwear, kitchen utensils.",
+    "user": "Please screen this export: silver necklaces destined for Estonia.",
+    "meta": {
+      "item": "silver necklaces",
+      "category": "jewellery",
+      "restricted_categories": [
+        "musical instruments",
+        "toys and games",
+        "footwear",
+        "kitchen utensils"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0147",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, jewellery.",
+    "user": "Can you screen a shipment of acoustic guitars headed to Croatia?",
+    "meta": {
+      "item": "acoustic guitars",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "musical instruments",
+        "jewellery"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0148",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, toys and games, stationery.",
+    "user": "New filing \u2014 1000 units of trowels to be shipped to Uruguay. Screen and advise.",
+    "meta": {
+      "item": "trowels",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "footwear",
+        "toys and games",
+        "stationery"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0149",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, gardening tools, sports equipment.",
+    "user": "Logging an export of harmonicas to Armenia. Run it through screening please.",
+    "meta": {
+      "item": "harmonicas",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "jewellery",
+        "gardening tools",
+        "sports equipment"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0150",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, stationery, sports equipment, gardening tools.",
+    "user": "Shipment request: a consignment of acoustic guitars bound for Botswana. Please screen it.",
+    "meta": {
+      "item": "acoustic guitars",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "toys and games",
+        "stationery",
+        "sports equipment",
+        "gardening tools"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0151",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, toys and games, jewellery.",
+    "user": "Shipment request: a consignment of wristwatches bound for Georgia. Please screen it.",
+    "meta": {
+      "item": "wristwatches",
+      "category": "jewellery",
+      "restricted_categories": [
+        "musical instruments",
+        "toys and games",
+        "jewellery"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0152",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, jewellery, toys and games, kitchen utensils.",
+    "user": "Logging an export of clarinets to Armenia. Run it through screening please.",
+    "meta": {
+      "item": "clarinets",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "stationery",
+        "jewellery",
+        "toys and games",
+        "kitchen utensils"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0153",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, kitchen utensils, footwear.",
+    "user": "New filing \u2014 240 units of hiking boots to be shipped to Bhutan. Screen and advise.",
+    "meta": {
+      "item": "hiking boots",
+      "category": "footwear",
+      "restricted_categories": [
+        "toys and games",
+        "kitchen utensils",
+        "footwear"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0154",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, gardening tools, jewellery, footwear.",
+    "user": "Shipment request: a consignment of pearl bracelets bound for Namibia. Please screen it.",
+    "meta": {
+      "item": "pearl bracelets",
+      "category": "jewellery",
+      "restricted_categories": [
+        "stationery",
+        "gardening tools",
+        "jewellery",
+        "footwear"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0155",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, gardening tools.",
+    "user": "New filing \u2014 500 units of watering cans to be shipped to Namibia. Screen and advise.",
+    "meta": {
+      "item": "watering cans",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "jewellery",
+        "gardening tools"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0156",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, stationery, toys and games, gardening tools.",
+    "user": "Can you screen a shipment of high heels headed to Bhutan?",
+    "meta": {
+      "item": "high heels",
+      "category": "footwear",
+      "restricted_categories": [
+        "kitchen utensils",
+        "stationery",
+        "toys and games",
+        "gardening tools"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0157",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, jewellery.",
+    "user": "Shipment request: a consignment of wristwatches bound for Bhutan. Please screen it.",
+    "meta": {
+      "item": "wristwatches",
+      "category": "jewellery",
+      "restricted_categories": [
+        "footwear",
+        "jewellery"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0158",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, kitchen utensils.",
+    "user": "Can you screen a shipment of whisks headed to Georgia?",
+    "meta": {
+      "item": "whisks",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "toys and games",
+        "kitchen utensils"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0159",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, stationery, gardening tools, musical instruments.",
+    "user": "Please screen this export: envelopes destined for Nepal.",
+    "meta": {
+      "item": "envelopes",
+      "category": "stationery",
+      "restricted_categories": [
+        "sports equipment",
+        "stationery",
+        "gardening tools",
+        "musical instruments"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0160",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, stationery, sports equipment, toys and games.",
+    "user": "Can you screen a shipment of building blocks headed to Armenia?",
+    "meta": {
+      "item": "building blocks",
+      "category": "toys and games",
+      "restricted_categories": [
+        "jewellery",
+        "stationery",
+        "sports equipment",
+        "toys and games"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0161",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, musical instruments, toys and games.",
+    "user": "New filing \u2014 500 units of wheelbarrows to be shipped to Armenia. Screen and advise.",
+    "meta": {
+      "item": "wheelbarrows",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "kitchen utensils",
+        "musical instruments",
+        "toys and games"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0162",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, footwear, kitchen utensils, stationery.",
+    "user": "Can you screen a shipment of spinning tops headed to Latvia?",
+    "meta": {
+      "item": "spinning tops",
+      "category": "toys and games",
+      "restricted_categories": [
+        "jewellery",
+        "footwear",
+        "kitchen utensils",
+        "stationery"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0163",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, footwear.",
+    "user": "Logging an export of leather boots to Armenia. Run it through screening please.",
+    "meta": {
+      "item": "leather boots",
+      "category": "footwear",
+      "restricted_categories": [
+        "stationery",
+        "footwear"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0164",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, musical instruments, gardening tools.",
+    "user": "Logging an export of wristwatches to Botswana. Run it through screening please.",
+    "meta": {
+      "item": "wristwatches",
+      "category": "jewellery",
+      "restricted_categories": [
+        "toys and games",
+        "musical instruments",
+        "gardening tools"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0165",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, jewellery.",
+    "user": "Please screen this export: gold rings destined for Moldova.",
+    "meta": {
+      "item": "gold rings",
+      "category": "jewellery",
+      "restricted_categories": [
+        "kitchen utensils",
+        "jewellery"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0166",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, toys and games, gardening tools, stationery.",
+    "user": "Please screen this export: marble runs destined for Estonia.",
+    "meta": {
+      "item": "marble runs",
+      "category": "toys and games",
+      "restricted_categories": [
+        "musical instruments",
+        "toys and games",
+        "gardening tools",
+        "stationery"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0167",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, gardening tools.",
+    "user": "Can you screen a shipment of accordions headed to Latvia?",
+    "meta": {
+      "item": "accordions",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "jewellery",
+        "gardening tools"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0168",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, musical instruments, sports equipment, stationery.",
+    "user": "Can you screen a shipment of tennis rackets headed to Moldova?",
+    "meta": {
+      "item": "tennis rackets",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "kitchen utensils",
+        "musical instruments",
+        "sports equipment",
+        "stationery"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0169",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, kitchen utensils, jewellery.",
+    "user": "Shipment request: a consignment of teddy bears bound for Namibia. Please screen it.",
+    "meta": {
+      "item": "teddy bears",
+      "category": "toys and games",
+      "restricted_categories": [
+        "gardening tools",
+        "kitchen utensils",
+        "jewellery"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0170",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, sports equipment.",
+    "user": "New filing \u2014 240 units of boxing gloves to be shipped to Armenia. Screen and advise.",
+    "meta": {
+      "item": "boxing gloves",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "gardening tools",
+        "sports equipment"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0171",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, footwear, jewellery.",
+    "user": "Shipment request: a consignment of staplers bound for Georgia. Please screen it.",
+    "meta": {
+      "item": "staplers",
+      "category": "stationery",
+      "restricted_categories": [
+        "toys and games",
+        "footwear",
+        "jewellery"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0172",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, kitchen utensils, jewellery.",
+    "user": "Shipment request: a consignment of jade pendants bound for Namibia. Please screen it.",
+    "meta": {
+      "item": "jade pendants",
+      "category": "jewellery",
+      "restricted_categories": [
+        "gardening tools",
+        "kitchen utensils",
+        "jewellery"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0173",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, sports equipment, kitchen utensils.",
+    "user": "New filing \u2014 500 units of rolling pins to be shipped to Bhutan. Screen and advise.",
+    "meta": {
+      "item": "rolling pins",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "jewellery",
+        "sports equipment",
+        "kitchen utensils"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0174",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: musical instruments, sports equipment.",
+    "user": "Shipment request: a consignment of envelopes bound for Georgia. Please screen it.",
+    "meta": {
+      "item": "envelopes",
+      "category": "stationery",
+      "restricted_categories": [
+        "musical instruments",
+        "sports equipment"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0175",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, musical instruments, sports equipment.",
+    "user": "Please screen this export: tennis rackets destined for Botswana.",
+    "meta": {
+      "item": "tennis rackets",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "toys and games",
+        "musical instruments",
+        "sports equipment"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0176",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "footwear",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, sports equipment, gardening tools.",
+    "user": "Can you screen a shipment of sandals headed to Croatia?",
+    "meta": {
+      "item": "sandals",
+      "category": "footwear",
+      "restricted_categories": [
+        "jewellery",
+        "sports equipment",
+        "gardening tools"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0177",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, toys and games, stationery, musical instruments.",
+    "user": "Logging an export of jigsaw puzzles to Georgia. Run it through screening please.",
+    "meta": {
+      "item": "jigsaw puzzles",
+      "category": "toys and games",
+      "restricted_categories": [
+        "sports equipment",
+        "toys and games",
+        "stationery",
+        "musical instruments"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0178",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "sports equipment",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: stationery, footwear, gardening tools, kitchen utensils.",
+    "user": "Logging an export of ski poles to Namibia. Run it through screening please.",
+    "meta": {
+      "item": "ski poles",
+      "category": "sports equipment",
+      "restricted_categories": [
+        "stationery",
+        "footwear",
+        "gardening tools",
+        "kitchen utensils"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0179",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: gardening tools, jewellery.",
+    "user": "New filing \u2014 240 units of diamond earrings to be shipped to Albania. Screen and advise.",
+    "meta": {
+      "item": "diamond earrings",
+      "category": "jewellery",
+      "restricted_categories": [
+        "gardening tools",
+        "jewellery"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0180",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, stationery, footwear.",
+    "user": "New filing \u2014 1000 units of whisks to be shipped to Armenia. Screen and advise.",
+    "meta": {
+      "item": "whisks",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "toys and games",
+        "stationery",
+        "footwear"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0181",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "stationery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, stationery, toys and games.",
+    "user": "Logging an export of ballpoint pens to Uruguay. Run it through screening please.",
+    "meta": {
+      "item": "ballpoint pens",
+      "category": "stationery",
+      "restricted_categories": [
+        "sports equipment",
+        "stationery",
+        "toys and games"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0182",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, musical instruments, kitchen utensils, stationery.",
+    "user": "Can you screen a shipment of spinning tops headed to Latvia?",
+    "meta": {
+      "item": "spinning tops",
+      "category": "toys and games",
+      "restricted_categories": [
+        "jewellery",
+        "musical instruments",
+        "kitchen utensils",
+        "stationery"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0183",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, toys and games.",
+    "user": "Please screen this export: gold rings destined for Nepal.",
+    "meta": {
+      "item": "gold rings",
+      "category": "jewellery",
+      "restricted_categories": [
+        "footwear",
+        "toys and games"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0184",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "toys and games",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, jewellery, gardening tools, toys and games.",
+    "user": "Logging an export of teddy bears to Albania. Run it through screening please.",
+    "meta": {
+      "item": "teddy bears",
+      "category": "toys and games",
+      "restricted_categories": [
+        "sports equipment",
+        "jewellery",
+        "gardening tools",
+        "toys and games"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0185",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: footwear, musical instruments.",
+    "user": "Can you screen a shipment of trowels headed to Slovenia?",
+    "meta": {
+      "item": "trowels",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "footwear",
+        "musical instruments"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "phrasing": 3
+    }
+  },
+  {
+    "id": "ex_0186",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, toys and games, gardening tools.",
+    "user": "New filing \u2014 120 units of silver necklaces to be shipped to Nepal. Screen and advise.",
+    "meta": {
+      "item": "silver necklaces",
+      "category": "jewellery",
+      "restricted_categories": [
+        "jewellery",
+        "toys and games",
+        "gardening tools"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "phrasing": 2
+    }
+  },
+  {
+    "id": "ex_0187",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "jewellery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, musical instruments.",
+    "user": "Please screen this export: diamond earrings destined for Croatia.",
+    "meta": {
+      "item": "diamond earrings",
+      "category": "jewellery",
+      "restricted_categories": [
+        "kitchen utensils",
+        "musical instruments"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "phrasing": 1
+    }
+  },
+  {
+    "id": "ex_0188",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "kitchen utensils",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: jewellery, sports equipment, musical instruments.",
+    "user": "Shipment request: a consignment of rolling pins bound for Botswana. Please screen it.",
+    "meta": {
+      "item": "rolling pins",
+      "category": "kitchen utensils",
+      "restricted_categories": [
+        "jewellery",
+        "sports equipment",
+        "musical instruments"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0189",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "musical instruments",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: sports equipment, jewellery, kitchen utensils.",
+    "user": "Shipment request: a consignment of trumpets bound for Namibia. Please screen it.",
+    "meta": {
+      "item": "trumpets",
+      "category": "musical instruments",
+      "restricted_categories": [
+        "sports equipment",
+        "jewellery",
+        "kitchen utensils"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "phrasing": 0
+    }
+  },
+  {
+    "id": "ex_0190",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: toys and games, kitchen utensils.",
+    "user": "Logging an export of pruning shears to Bhutan. Run it through screening please.",
+    "meta": {
+      "item": "pruning shears",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "toys and games",
+        "kitchen utensils"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 4
+    }
+  },
+  {
+    "id": "ex_0191",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "gardening tools",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: kitchen utensils, jewellery, toys and games, stationery.",
+    "user": "Shipment request: a consignment of rakes bound for Croatia. Please screen it.",
+    "meta": {
+      "item": "rakes",
+      "category": "gardening tools",
+      "restricted_categories": [
+        "kitchen utensils",
+        "jewellery",
+        "toys and games",
+        "stationery"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "phrasing": 0
+    }
+  }
+]
