@@ -62,12 +62,41 @@ What would make the result *uninteresting* (and we'd say so): behaviour ≈ or >
 
 | Run ID | Dataset | Model | Device/dtype | Split | N | Best layer | AUROC | Verdict | Notes |
 |---|---|---|---|---|---|---|---|---|---|
-| 2026-05-29_r4 | [conditions_v2](datasets.md#conditions_v2json--current) +behaviour | Qwen3-0.6B | cpu / float32 | stratified 5-fold | 192 | 18 | 0.892 | GO | **Thesis test.** Behaviour 0.521 (proceed-default) vs probe 0.792. Probe catches 61/80 (76%) of behavioural escalation misses + 11/12 false alarms. All 4 pre-registered predictions HIT. Caveats: supervised probe vs zero-shot behaviour; proceed-default under greedy/no-thinking 0.6B. |
+| 2026-05-29_r5 | controls on [conditions_v2](datasets.md#conditions_v2json--current) | Qwen3-0.6B | cpu / float32 | stratified 5-fold | 192 | 18 | — | — | **Probe-validation controls** ([controls.py](controls.py)). Shuffle passes (~0.50 → pipeline honest). BUT logreg reads arbitrary junk at 0.75–0.80 → its 0.892 headline has low selectivity. Trustworthy signal is **diff-of-means 0.684**, which clears the clean controls (dest-alpha 0.52, item-irrelevant membership 0.44). Recognition is real but smaller than claimed; **revises r3/r4 headline down**. |
+| 2026-05-29_r4 | [conditions_v2](datasets.md#conditions_v2json--current) +behaviour | Qwen3-0.6B | cpu / float32 | stratified 5-fold | 192 | 18 | 0.892 | GO | **Thesis test.** Behaviour 0.521 (proceed-default) vs probe 0.792. Probe catches 61/80 (76%) of behavioural escalation misses + 11/12 false alarms. All 4 pre-registered predictions HIT. Caveats: supervised probe vs zero-shot behaviour; proceed-default under greedy/no-thinking 0.6B. **⚠ See r5: logreg headline inflated; honest recognition signal is diff-of-means ~0.68, so the gap is ~0.16 not ~0.37.** |
 | 2026-05-29_r3 | [conditions_v2](datasets.md#conditions_v2json--current) | Qwen3-0.6B | cpu / float32 | stratified 5-fold | 192 | 18 | 0.892 | GO | Semantic rung. Signal emerges deep (~L16), peaks 0.892, never saturates; diffmean never catches logreg (stays distributed). Leave-category-out barely drops (0.871) → abstract, transferable feature. The contrast with r2, not the number, is the finding. |
 | 2026-05-29_r2 | [conditions_v1](datasets.md#conditions_v1json--current) | Qwen3-0.6B | cpu / float32 | stratified 5-fold | 200 | 16 | **1.000** | GO | Clean computation profile (chance early → saturates mid-net). Repetition control passed. But 0.6B saturating means the task is the *syntactic floor* — string-matching, not semantic recognition. |
 | 2026-05-29_r1 | [scenarios_v2](datasets.md#scenarios_v2json--superseded) | Qwen3-0.6B | cpu / float32 | leave-one-pair-out | 40 | 14 | 0.978 | GO* | *GO is misleading. A 0.6B model can't do the task behaviourally, so 0.978 = the probe reading **topic**, not recognition. This result motivated building `conditions_v1`. |
 
 Both runs were dry-runs on the tiny Qwen3-0.6B to validate the pipeline and dataset design on a laptop (CPU) before committing to a GPU run on Qwen3-8B. Treat the numbers as design diagnostics, not headline findings.
+
+---
+
+## `2026-05-29_r5` — probe-validation controls on conditions_v2
+
+Ran [controls.py](controls.py) to test whether the probe reads *recognition* or just fits structure. **It caught real inflation in our logreg headline.**
+
+- **How run:** `python controls.py --activations activations_conditions_v2.npz --dataset inputs/conditions_v2.json` (seed 0, layer 18, stratified 5-fold OOF, reusing train_probe's probe/CV).
+
+| task (layer 18) | logreg | diffmean | selectivity (logreg) |
+|---|---|---|---|
+| REAL escalation | 0.892 | **0.684** | — |
+| shuffle labels (mean of 5) | 0.495 | 0.511 | 0.398 |
+| junk: destination alpha-half | 0.754 | 0.519 | 0.139 |
+| junk: item-name parity *(confounded w/ identity — ignore)* | 0.800 | 0.642 | 0.093 |
+| surface: phrasing template | 1.000 | 1.000 | −0.108 |
+| **item-IRRELEVANT membership** (corr w/ real 0.04) | 0.561 | **0.437** | 0.331 |
+
+**Findings:**
+1. **Shuffle passes (~0.50):** OOF pipeline is honest; the real AUROC is not a D>N/CV artefact.
+2. **logreg is low-selectivity here:** it reads arbitrary junk at 0.75–0.80, so the 0.892 headline is mostly "powerful probe on a rich representation," only ~0.1 above junk. **Stop headlining the logreg number.**
+3. **diff-of-means is properly selective and is the trustworthy signal:** escalation 0.684 clears the *clean* controls — shuffle 0.51, destination 0.52, and the sharp **item-irrelevant membership 0.44** — by 0.16–0.25. So the representation specifically encodes the **item-cued match** (recognition), not generic list contents.
+4. phrasing = 1.0 (both probes): surface phrasing is the loudest axis — which is *why* high-capacity logreg can read junk. item-name parity (0.64 diffmean) is a bad control (proxies item identity); disregard.
+
+**Consequences for earlier runs (annotated, not rewritten):**
+- The recognition signal **survives** but is **~0.68 (diff-of-means), not 0.89**.
+- The r4 recognise-but-don't-act gap is **~0.16 (0.68 vs 0.52), not ~0.37**. Real but modest.
+- **Reporting rule going forward:** lead with diff-of-means (selective); treat logreg as an upper bound; always report selectivity vs controls. For the *monitor* framing, logreg still legitimately predicts escalation (shuffle proves it), so "flags 76% of misses" stands as a monitor result — but not as evidence of recognition magnitude.
 
 ---
 
@@ -102,6 +131,8 @@ should-proceed FALSE ALARMS: 12/96  | probe said proceed on 11 (0.92)
 ---
 
 ## `2026-05-29_r3` — conditions_v2 (semantic), Qwen3-0.6B
+
+> **⚠ Revised by r5:** the 0.892 here is the *logreg* number, which the controls show is low-selectivity (logreg reads arbitrary junk at 0.75–0.80). The trustworthy recognition signal is **diff-of-means ≈ 0.68**. The qualitative findings below (deeper, distributed, generalises) still hold; the absolute magnitude is lower than the logreg headline.
 
 The semantic rung. **The headline is the contrast with r2 (same model, syntactic task), not the absolute number.** Pre-registered predictions scored above (3 HIT, 1 MISS).
 

@@ -105,6 +105,26 @@ and any confound you ruled in or out.
 
 ---
 
+## Probe validation: run controls before trusting a probe number
+
+A high probe AUROC does **not** prove the representation encodes the property — a
+powerful probe can read structure the model never computed (Hewitt & Liang 2019).
+Before reporting any probe result as a finding, run [controls.py](controls.py):
+
+```bash
+python controls.py --activations <run.npz> --dataset <dataset.json>
+```
+
+It runs three controls, reusing train_probe's exact probe/CV:
+1. **shuffle labels** — must collapse to ~0.5, else the OOF pipeline is leaking.
+2. **arbitrary properties** — task-irrelevant facts (e.g. destination alphabetical, name length); calibrate how much arbitrary structure is decodable.
+3. **item-irrelevant membership** — same computation type as the real task minus the cue; the sharpest test of whether the signal is *specific*.
+
+**Reporting rules this established (r5):**
+- **Lead with diff-of-means** (low-capacity → high-selectivity); treat **logreg as an upper bound**. On conditions_v2, logreg read arbitrary junk at 0.75–0.80, so its 0.89 was inflated; the honest signal was diff-of-means ~0.68.
+- **Always report selectivity** = real − control, not the raw probe number.
+- A probe number with no control beside it is not a finding yet.
+
 ## Empirical lessons already learned (inherit these)
 
 - **The surface-confound trap.** Our first dataset (`scenarios_v2`) separated escalate
