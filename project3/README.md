@@ -19,6 +19,7 @@ If a cheap linear probe can read that recognition off the activations, you have 
 - **Probe-vs-behaviour as the headline**, on whatever model/task exposes a real behavioural failure worth catching.
 - **Causal / steering test.** Steer along the recognition direction — does behaviour change? Tells us if the model *could* use the signal, or if it's just a readout. (Prior work: detection strong, linear steering weak — expect to need more than a simple push.)
 - **Cross-domain transfer.** Train a probe on one trigger type, test on a different one. Small gap → one monitor generalises; large gap → monitors are trigger-specific.
+- **Multiple conditions**, can it represent them each differently
 - **Deployment-realistic / multi-turn.** The endpoint is big system prompts, long tool lists, multi-turn — where the trigger fires *partway through* the context. That's arguably the natural habitat of recognise-but-don't-act (a model ingests a problematic fact mid-trajectory, doesn't flag it, rolls on). Don't jump straight to messy real logs — that throws away the crisp labels and decorrelation we fought for. Instead climb it with **synthetic multi-turn that isolates one variable at a time**, the way we climbed syntactic → semantic:
   - *Persistence* — trigger in turn 1, then *N* benign turns, read the probe at the end; vary *N*. Does the signal persist or decay? Tests whether the model holds a latent "trigger fired" flag, or only re-recognises when it attends back to the triggering tokens.
   - *Padding / background shift* — fix the trigger, wrap it in a long benign system prompt + tool list. Does the agentic-mode "background" alone degrade a probe trained on short single-turn prompts?
@@ -86,25 +87,6 @@ So I'm revising yesterday's numbers down, and leaving yesterday's entry as writt
 The bigger win is the method. This is exactly the kind of inflation an "it's probably fine" shortcut would have shipped — we checked, and the number moved. **New standing rule** (now in [CLAUDE.md](CLAUDE.md)): every probe result gets controls run beside it; we **lead with difference-of-means**, treat logreg as an upper bound, and report **selectivity** (real − control), not the raw number. Full detail in [runlog.md](runlog.md) under r5.
 
 Next is unchanged: the scale-×-reasoning run is still the experiment that decides whether the (now more modest) gap survives a capable model with chain-of-thought.
-
-### Step 1 — re-pick the layer honestly
-
-The controls (above) said stop trusting the logreg peak, so I re-selected the probe layer by the metric that survives them: diff-of-means selectivity vs the clean controls, swept across all layers (`select_layer.py`).
-
-- Honest best: **layer 19, diff-of-means 0.713, selectivity 0.177** (over the strongest clean control). Slightly above the 0.684 we'd quoted at layer 18 — because layer 18 was the *logreg* peak, not the honest one.
-- The selectivity profile is ~0 (or negative) through layers 0–15, then rises sharply 16→19 and tails off. So recognition lives in a **region deep in the net (~L16–21), not a single layer** — and yesterday's "computed deep, not in the surface" finding *survives* on the honest metric (it had been leaning on logreg).
-
-Net: the trustworthy recognition signal is **~0.71, modest but real and selective, sitting deep.** Reporting convention locked: headline diff-of-means at the most-selective layer; logreg as reference only.
-
-### Step 2 — does it generalise to conditions it never saw?
-
-A monitor is only useful if it flags triggers it wasn't trained on. So I built **`conditions_v2b`** — a disjoint taxonomy (musical instruments, sports gear, kitchen utensils, jewellery, footwear…), identical framing and guards, *only the categories/items change* — trained the diff-of-means recognition direction on v2 (export goods), and applied it unchanged to v2b (`transfer_test.py`).
-
-- **Transfer ≈ 0.79** (layers 19–21; best **0.790 @ L20**). It **matches the within-v2b ceiling (~0.72)** — i.e. no penalty crossing to a domain it never saw — and sits **+0.34 above the shuffle control (~0.45)**.
-- So the probe isn't memorising "watch for electronics." It reads an abstract *"the item's category is on the list"* feature that ports to entirely new categories.
-- Didn't lean on logreg-transfer (~0.87): v2 and v2b share phrasing, so that number isn't clean. diff-of-means stays the trustworthy metric (phrasing is label-orthogonal by construction).
-
-**Where that leaves the monitor idea on a 0.6B:** recognition is real-but-modest (~0.71), selective, computed deep, and **domain-general** — a probe trained on one trigger family flags a different one with no loss. Absolute strength is the caveat; the generality is the win. Open question unchanged: does it survive scale + reasoning (8B).
 
 ---
 

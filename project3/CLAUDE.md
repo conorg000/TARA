@@ -93,17 +93,12 @@ AUROC, verdict, and a one-line honest note. For any run worth keeping, add a det
 block below with **the full per-layer table pasted verbatim** — the `.npz` files are
 gitignored and regenerable, so the table in `runlog.md` is the durable record.
 
-Record the **exact command and the short git commit SHA the code was at** (`git
-rev-parse --short HEAD`). The scripts evolve, so a command alone doesn't reproduce a
-run — the same `./run.sh …` did different things at r2 vs r4. Command = what to type,
-commit = what the code was; datasets reproduce from seed (datasets.md). See the
-reproducibility convention at the top of runlog.md.
-
 In the note, do the interpretation, not just the number. Flag: sanity checks
 (layer-0 should be ~0.5), whether a result is a finding or just a dry-run diagnostic,
 and any confound you ruled in or out.
 
 ### Conventions
+- **Record the code version with each run.** `extract_activations.py` stamps the git SHA (+ `-dirty` if the tree differs from HEAD) into the run's meta and prints it (`code: git <sha>`); copy that into the run's *How run* line. A command reproduces a result only against the commit it ran on, so the SHA — not the command string — is the real pin. **Commit before a keeper run** so the SHA isn't `-dirty`. (Runs r1–r6 predate this convention; left unrecorded rather than back-guessed.)
 - **Don't fabricate timestamps.** Use a real one (file mtime is fine) or just the date + run order. Honesty extends to metadata.
 - **Don't report dry-run / tiny-model numbers as findings.** Label them as design diagnostics.
 - **Don't delete a recorded run**, even a mistaken one. Annotate it. The mistakes are part of the trail (see run `r1`).

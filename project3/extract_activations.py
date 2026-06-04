@@ -55,6 +55,27 @@ from pathlib import Path
 import numpy as np
 
 
+def git_commit() -> str:
+    """Short git SHA (+ '-dirty' if the working tree differs from HEAD), for
+    reproducibility. Returns 'unknown' if we're not in a git checkout — e.g. the
+    folder was copied to the GPU box without its .git. A command is only
+    reproducible against the code state it ran on; this records that state.
+    """
+    import subprocess
+
+    here = Path(__file__).resolve().parent
+    try:
+        sha = subprocess.check_output(
+            ["git", "rev-parse", "--short", "HEAD"], cwd=here, stderr=subprocess.DEVNULL
+        ).decode().strip()
+        dirty = subprocess.call(
+            ["git", "diff", "--quiet", "HEAD"], cwd=here, stderr=subprocess.DEVNULL
+        ) != 0
+        return f"{sha}{'-dirty' if dirty else ''}"
+    except Exception:
+        return "unknown"
+
+
 def load_dataset(dataset_path: Path) -> list[dict]:
     """Load the condition-recognition dataset (see make_dataset.py for shape)."""
     with dataset_path.open() as f:
@@ -144,6 +165,9 @@ def main() -> None:
     if max_new_tokens is None:
         max_new_tokens = 1024 if args.enable_thinking else 24
 
+    commit = git_commit()
+    print(f"code: git {commit}")
+
     # Heavy imports deferred so --help works without torch installed.
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -221,6 +245,7 @@ def main() -> None:
     meta = {
         "model": args.model,
         "dtype": args.dtype,
+        "git_commit": commit,
         "enable_thinking": args.enable_thinking,
         "num_examples": len(records),
         "num_hidden_state_indices": activations.shape[1],

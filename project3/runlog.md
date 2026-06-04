@@ -9,15 +9,6 @@ To add a run: append a row to the table and, if it's interesting, a detail block
 below. Activation `.npz` files are gitignored (regenerable from the model), so
 record the full per-layer table here for any result worth keeping.
 
-**Reproducibility convention.** Each detail block records the exact command **and
-the short git commit SHA the code was at** (`git rev-parse --short HEAD`), because
-the scripts evolve — e.g. `./run.sh …` meant something different at r2 (no
-behaviour) than at r4 (with `--generate`). The command is *what to type*; the
-commit is *what the code was* — only the pair reproduces a run. Datasets are
-reproducible from seed (see [datasets.md](datasets.md)); model / dtype / device /
-split / N are in the row. Record the SHA of the code you actually ran (commit
-before uploading to a GPU box; note "tree dirty" if it wasn't clean).
-
 ## Pre-registered predictions
 
 Written **before** the run, per the pre-registration rule in [CLAUDE.md](CLAUDE.md). Recorded so the
@@ -76,8 +67,6 @@ What would make the result *uninteresting* (and we'd say so): behaviour ≈ or >
 - **r8 — thinking ON**, `--generate` (auto 1024-token budget so the model clears its `<think>` block before the marker). Reasoning comparison. *Readout note:* the probe is read at the **pre-reasoning** token (generation header, before `<think>`); behaviour is the **post-reasoning** final answer. So a "probe-right / behaviour-wrong" case in r8 means *recognised at input, reasoned, still omitted* — a stronger claim than r7's.
 - **Controls** (`controls.py`) on r7 and r8 activations — standing rule; lead with diff-of-means, report selectivity.
 - **r9 (secondary)** — transfer v2→v2b on r7 activations: does the domain-generality from r6 survive scale? Needs an 8B extract on v2b (forward passes only, no generation).
-
-When these land, record each run's command **and** the commit SHA the code was at (see the reproducibility convention at the top of this file).
 
 **Anchors (0.6B, r4/r5):** behaviour acc **0.521** (28 esc / 164 proc, proceed-default); probe acc **0.792**; honest recognition diff-of-means AUROC **~0.71**; monitor payoff **61/80 = 0.76**; probe-OK/behaviour-WRONG cell **72**; aggregate gap (probe acc − behav acc) **0.27**.
 
