@@ -128,6 +128,31 @@ What would make the result *uninteresting* (and we'd say so): behaviour ≈ or >
 - **Resolved (2026-06-05, [train_probe.py](train_probe.py) decomposition on `activations_conditions_v3_obj0_action.npz`, [results.json](activations_conditions_v3_obj0_action.results.json)) — yes, the weaker ground-truth monitor works.** Best layer L23: recognition logreg OOF **0.976**, diff-of-means OOF **0.959** (≈ the 0.950 select_layer reported). Behaviour acc 0.818, probe acc 0.911. Of the **33** should-escalate silent misses, the probe flagged escalate on **23/33 (0.70)** — the monitor payoff. False alarms only 2/96 (probe 0/2, n too small to read). 2×2: probe-OK/behaviour-WRONG **23** vs probe-WRONG/behaviour-OK **5**.
   - **What this is — and isn't.** It's a useful *ground-truth* monitor: "catch restricted items the agent let through," and it recovers 70% of them. The payoff is **stable ~70% across regimes** — 0.6B 61/80 (0.76), r7 8B 9/13 (0.69), here 23/33 (0.70) — so the probe's ability to flag ground-truth-restricted silent misses survives scale and the agent framing. But it is **not** a "the model recognised but didn't act" monitor: the direct-ask already showed the model itself calls 24 of these 33 *not*-restricted, so the probe is catching them **by decoding the ground-truth category fact the model got wrong**, not the model's own recognition. So this *confirms* the load-bearing implication above rather than rescuing the dissociation story — the probe is a ground-truth oracle here, not a window into the model's recognition.
 
+**Pivot experiment (2026-06-05, advisor step 1+2) — TRUTH-probe vs BELIEF-probe + the litmus. PASS on belief≠truth; belief≈action means the recognition-vs-action question stays open.**
+Built the probe the project actually wants ([belief_probe.py](belief_probe.py), [results.json](activations_conditions_v3_obj0_action.belief.results.json)): same diff-of-means/logreg/OOF as every run, two changes only — activations from the **action rollout** (engagement: recognition while doing the task, attention *not* pointed at the condition), labels from the model's **direct-ask answer** (says-restricted vs says-not), truth discarded. N=164 (28 ask-unclear dropped); truth 74/90, belief 47 says-restricted / 117 says-not. **ask-vs-action agreement 0.957**, belief-vs-truth agreement 0.823. Litmus subset = the **28** items where truth=restricted but the model said NO.
+
+Per-layer OOF AUROC (truth target | belief target) + litmus (% of the 28 flip items each probe CALLS restricted), verbatim, key layers:
+
+```
+layer | truth_dm truth_lr | belief_dm belief_lr | T->flip%R B->flip%R
+   0  |   0.500    0.495  |    0.500    0.482   |    0.00      0.00   (emb sanity ✓)
+  18  |   0.582    0.817  |    0.544    0.790   |    0.50      0.14
+  19  |   0.644    0.920  |    0.636    0.933   |    0.75      0.18
+  20  |   0.921    0.953  |    0.976    0.985   |    0.68      0.21
+  21  |   0.953    0.982  |    0.983    0.988   |    0.64      0.14   ← best belief layer
+  23  |   0.968    0.986  |    0.989    0.985   |    0.71      0.18   ← best truth layer
+  27  |   0.959    0.982  |    0.988    0.981   |    0.82      0.18
+```
+
+Litmus readout (the 28 truth-restricted / model-says-NO items):
+- **@ L21** — TRUTH probe calls **18/28 (0.64)** restricted, mean P **0.72** [dm 0.46]; BELIEF probe calls **4/28 (0.14)**, mean P **0.15** [dm 0.14].
+- **@ L23** — TRUTH **20/28 (0.71)**, P **0.73** [dm 0.57]; BELIEF **5/28 (0.18)**, P **0.22** [dm 0.21].
+
+**Reading — a real PASS on the stated litmus, with one load-bearing caveat:**
+1. **Belief is decodable and distinct from truth (PASS).** From the action-rollout activations alone, a probe predicts the model's *own* ask-answer at **0.99** (lr) / **0.98** (dm). On the silent-miss items it reads them the way the **model** sees them (not-restricted, 14–18%), where the truth probe reads them the way the **world** does (restricted, 64–71%). Both metrics agree (diff-of-means too), layer-0 is chance, signal emerges ~L19–21 — same recognition profile as every prior run. The truth/belief confound we argued for is now *demonstrated*: there is a representational axis that tracks the model's belief, not ground truth. The tell: the low-capacity diff-of-means *truth* direction already can't confidently call the flip items restricted (0.46 @ L21) — in activation space they look like proceed items, because the model represents them as fine.
+2. **But belief ≈ action here (0.957), so this does NOT yet show belief ≠ action.** A probe trained on the ask-answer is, on this data, ~the same probe as one trained on the action — it could be reading "what I'm about to do," not "what I recognise." On v3-L0 the belief-probe therefore adds **~nothing over watching the output** (they agree 95.7%), and the model's belief *is* the co-failure (it represents these as not-restricted) — still no "knew but didn't act." The belief-probe's value exists **only** in a regime where belief and action diverge (ask=YES while action=NO).
+3. **Net.** Step 2 passes in the precise sense the advisor framed it (a recognition axis separate from truth is buildable at 8B, ~0.98, validated). It cannot separate recognition from action on this dataset *by construction*. That separation **requires the load lever** (step 3): a manipulation that drops action while the direct-ask stays YES. We now have a validated instrument and a sharp, falsifiable target for it.
+
 ---
 
 ---
