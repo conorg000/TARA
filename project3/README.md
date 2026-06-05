@@ -90,11 +90,26 @@ Next is unchanged: the scale-×-reasoning run is still the experiment that decid
 
 ---
 
+## 5 June 2026 — scale confirms recognition, closes the gap, and the probe outruns the model
+
+To the GPU at last (Qwen3-8B; we also split the workflow — extract on the GPU, probe on the laptop, see [LOGISTICS.md](LOGISTICS.md)). Three results and one sharp lesson. Blow-by-blow in [runlog.md](runlog.md) (r7–r9 + the v3 go/no-go).
+
+**Recognition is robust.** The 8B reads "restricted" at diff-of-means **~0.97** — and *more* selective than the 0.6B (0.46 vs 0.18). It's unchanged with thinking on, and the direction **transfers to a disjoint taxonomy at 0.98** with no penalty. Recognition survives scale, reasoning, and domain.
+
+**But the recognise-but-don't-act gap does not.** A capable model *acts* on what it recognises — behaviour 0.90 (0.94 with reasoning), silent misses 13 → 7, the gap shrinking toward zero. The dramatic 0.6B dissociation was mostly a small-model proceed-default. **A benign, unambiguous task can't produce the gap the monitor exists to catch** — now shown twice (reasoning off and on).
+
+**So we tried to engineer one (conditions_v3)** by adding a competing throughput objective to the prompt — keeping the escalation rule mandatory. It **didn't move behaviour at all** (escalate-rate 66 → 68% across neutral → strong): a capable model won't drop a mandatory rule for KPI pressure. The *agentic framing itself* did move it (escalation 86% → 66%) — but a new **direct-ask check** ("is this restricted? [YES]/[NO]") exposed it as a **co-failure, not a dissociation**: on the items it under-escalates, the model *says they aren't restricted*. The frame degraded recognition; it didn't pry recognition apart from action.
+
+**The lesson worth keeping.** The probe still reads **0.95 on the very items the model itself calls not-restricted** — it decodes the *ground-truth* fact, which here **diverges from the model's own recognition**. So **probe-high + action-low is *not* evidence of "knew but didn't act."** The direct-ask is now mandatory, and it sets a crisp bar for a *real* dissociation: **ask-YES + action-NO** — which we have not produced. On benign tasks, recognition and action stay coupled, so the genuine gap likely needs a **motivated/withholding** setup (the model recognises, would admit it, yet withholds), not a task made merely harder. That's the next swing — taken, this time, with an instrument that can tell a real dissociation from a confound.
+
+---
+
 ## Where the details live
 
 - [datasets.md](datasets.md) — every dataset, its design rationale, how to regenerate it.
 - [runlog.md](runlog.md) — every run: config, full per-layer results, predictions and outcomes.
 - [controls.py](controls.py) — the probe-validation controls (shuffle / arbitrary / item-irrelevant).
 - [CLAUDE.md](CLAUDE.md) — how to work in this project, and the scientific stance.
+- [LOGISTICS.md](LOGISTICS.md) — the operational runbook: extract-on-GPU / probe-on-laptop, vast.ai basics.
 - [USAGE.md](USAGE.md) — how to run it (laptop dry-run and GPU).
 - [overview.html](overview.html) — a visual explainer of the design.
