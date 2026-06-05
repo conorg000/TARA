@@ -107,6 +107,7 @@ What would make the result *uninteresting* (and we'd say so): behaviour ≈ or >
 
 | Run ID | Dataset | Model | Device/dtype | Split | N | Best layer | AUROC | Verdict | Notes |
 |---|---|---|---|---|---|---|---|---|---|
+| 2026-06-05_r9 | transfer [v2](datasets.md#conditions_v2json--current)→[v2b](datasets.md#conditions_v2bjson--current) | Qwen3-8B | cuda / bf16 | train-on-v2 / test-on-v2b | 192→192 | 24 | **0.984** | — | **Cross-taxonomy transfer at scale.** Recognition direction fit only on v2 (export goods) reads "condition fired" on disjoint v2b (instruments/sports/jewellery) at **0.984 @ L24** — *no transfer penalty*: ≈ within-target (0.984) ≈ within-source (0.978). Fully domain-general at 8B (vs 0.6B's 0.79, r6). Caveat: shuffle control noisy on a single perm (0.30 @ L24 but 0.8 @ L30–34); average more to firm up. |
 | 2026-06-05_r8 | [conditions_v2](datasets.md#conditions_v2json--current) +behaviour | Qwen3-8B *(thinking ON)* | cuda / bf16 | stratified 5-fold | 192 | 24 | **0.987** | GO | **8B scale, thinking ON.** Reasoning *improves* behaviour 0.896→**0.938**; recognition unchanged (diff-of-means 0.971, selectivity 0.42 ≈ r7). Gap closes further: only **7** silent misses, probe catches **7/7** (wide CI). Honest nuance: thresholded probe acc 0.922 < behaviour 0.938 (different errors) — probe isn't a better overall classifier, just catches behaviour's specific misses. Confirms the benign line is exhausted → need a dissociation task. Extracted at af19212, probed locally. |
 | 2026-06-05_r7 | [conditions_v2](datasets.md#conditions_v2json--current) +behaviour | Qwen3-8B | cuda / bf16 | stratified 5-fold | 192 | 28 | **0.993** | GO | **8B scale, thinking OFF.** Recognition survives scale strongly — diff-of-means **0.982 @ L23**, *catches* logreg (~0.99) → explicit axis. Behaviour **0.896** (the 8B does the task), probe **0.948** → recognise-but-don't-act gap shrinks to **0.05** (from 0.6B's 0.27). Monitor payoff **9/13 (0.69)** on the rare silent misses (wide CI). ⚠ Selectivity controls pending — 0.98 is high. Extracted at 05c74de (torch 2.11.0+cu128 / transformers 5.10.2), probed at d972a32. |
 | 2026-05-30_r6 | transfer [v2](datasets.md#conditions_v2json--current)→[v2b](datasets.md#conditions_v2bjson--current) | Qwen3-0.6B | cpu / float32 | train-on-v2 / test-on-v2b | 192→192 | 20 | 0.790 | — | **Cross-taxonomy generalisation (Step 2).** Diff-of-means recognition direction trained only on export goods detects "condition fired" on a disjoint domain (instruments/sports/jewellery…) at **~0.79 (L19–21)** — *no transfer penalty*: matches/exceeds the within-v2b ceiling (~0.72), +0.34 over shuffle (0.45). Recognition direction is domain-general. (logreg-transfer ~0.87 but NOT clean — v2/v2b share phrasing, so logreg's surface reliance carries over; diff-of-means stays the trustworthy metric.) |
@@ -117,6 +118,33 @@ What would make the result *uninteresting* (and we'd say so): behaviour ≈ or >
 | 2026-05-29_r1 | [scenarios_v2](datasets.md#scenarios_v2json--superseded) | Qwen3-0.6B | cpu / float32 | leave-one-pair-out | 40 | 14 | 0.978 | GO* | *GO is misleading. A 0.6B model can't do the task behaviourally, so 0.978 = the probe reading **topic**, not recognition. This result motivated building `conditions_v1`. |
 
 The 0.6B rows above were dry-runs to validate the pipeline and dataset design on a laptop (CPU) before the GPU run. Treat their numbers as design diagnostics, not headline findings. r7 (below) is the first real GPU run.
+
+---
+
+## `2026-06-05_r9` — cross-taxonomy transfer at scale (v2→v2b, 8B thinking off)
+
+Does the domain-generality from r6 (0.6B, ~0.79) survive scale? Extracted v2b on the 3090 at af19212 (behaviour on v2b **0.896** ≈ v2 — difficulty-matched), pulled home, ran [transfer_test.py](transfer_test.py) locally.
+
+Transfer across layers (diff-of-means, the trustworthy metric), verbatim:
+
+| layer | within-src (v2) | within-tgt (v2b) | TRANSFER v2→v2b | shuffle-trans | logreg-trans |
+|---|---|---|---|---|---|
+| 18 | 0.584 | 0.563 | 0.676 | 0.451 | 0.909 |
+| 20 | 0.930 | 0.963 | 0.961 | 0.641 | 0.981 |
+| 22 | 0.971 | 0.980 | 0.979 | 0.647 | 0.981 |
+| **24** | 0.978 | 0.984 | **0.984** | 0.304 | 0.975 |
+| 26 | 0.974 | 0.978 | 0.977 | 0.480 | 0.974 |
+| 28 | 0.974 | 0.979 | 0.979 | 0.450 | 0.975 |
+| 30 | 0.972 | 0.966 | 0.966 | 0.809 | 0.973 |
+| 32 | 0.972 | 0.961 | 0.964 | 0.825 | 0.973 |
+| 34 | 0.968 | 0.963 | 0.964 | 0.792 | 0.972 |
+
+**Findings:**
+1. **Recognition is fully domain-general at scale — no transfer penalty.** A diff-of-means direction fit only on v2 reads v2b's disjoint taxonomy at **0.984 @ L24**, matching within-target (0.984) and within-source (0.978). Far above r6's 0.6B transfer (0.79) — cleaner *and* more transferable at 8B.
+2. **logreg-transfer also high (~0.97)** but not clean evidence (v2/v2b share phrasing — the r5/r6 caveat); diff-of-means stays the trustworthy metric.
+3. **Caveat — shuffle control is noisy** (single permutation): 0.304 at the best layer L24 but 0.79–0.82 at L30–34. Transfer clearly clears shuffle at L24, but averaging several shuffles (as `controls.py` does for within-domain) would firm this up before we lean on the number.
+
+Capstone on the recognition story: recognition **survives scale** (r7), **survives reasoning** (r8), and is **domain-general** (r9) — a probe trained on one trigger family flags a disjoint one with no loss. The recognition half of the thesis is thoroughly established; the gap (monitor) half needs the dissociation task.
 
 ---
 
