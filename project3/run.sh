@@ -35,9 +35,18 @@ if [[ "${THINK:-0}" == "1" ]]; then
     THINK_FLAG="--enable-thinking"
 fi
 
+# Tee everything to a UTC-timestamped logfile so results survive a dropped SSH or
+# frozen terminal. UTC (not the box's local clock) so the name means the same
+# instant on any machine it's later read or copied to.
+mkdir -p logs
+RUN_TS="$(date -u +%Y%m%dT%H%M%SZ)"
+LOG="logs/$(basename "$DATASET" .json)${TAG:+_$TAG}_${RUN_TS}.log"
+exec > >(tee -a "$LOG") 2>&1
+
 echo "=================================================================="
 echo " model=$MODEL  device=$DEVICE  dtype=$DTYPE  thinking=${THINK:-0}"
 echo " dataset=$DATASET  ->  $OUT"
+echo " log=$LOG  (UTC)  host=$(hostname)"
 echo "=================================================================="
 
 echo

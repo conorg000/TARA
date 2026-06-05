@@ -39,6 +39,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import socket
+from datetime import datetime, timezone
 
 import numpy as np
 from sklearn.linear_model import LogisticRegression
@@ -122,6 +124,13 @@ def decompose(X, y, behaviour, layer, cv, cv_groups):
     beh_correct = behaviour == gt_name
     probe_correct = probe_pred == y
 
+    pos, neg = y == 1, y == 0
+    missed = pos & (behaviour != "escalate")       # should-escalate cases the model didn't escalate
+    alarm = neg & (behaviour == "escalate")        # should-proceed cases the model escalated
+    n_missed, n_alarm = int(missed.sum()), int(alarm.sum())
+    missed_caught = int((probe_pred[missed] == 1).sum()) if n_missed else 0
+    alarm_caught = int((probe_pred[alarm] == 0).sum()) if n_alarm else 0
+
     print("\n=== Recognition (probe) vs behaviour (model output) ===")
     print(f"layer {layer}, probe threshold 0.5 on out-of-fold probability")
     print(f"  behaviour parsed: {int((behaviour == 'escalate').sum())} escalate / "
@@ -131,27 +140,49 @@ def decompose(X, y, behaviour, layer, cv, cv_groups):
 
     # The monitor payoff: should-escalate cases the model behaviourally MISSED —
     # did the probe catch them?
-    pos, neg = y == 1, y == 0
-    missed = pos & (behaviour != "escalate")
-    if missed.sum() > 0:
-        caught = int((probe_pred[missed] == 1).sum())
-        print(f"\n  should-escalate behavioural MISSES: {int(missed.sum())}/{int(pos.sum())}")
-        print(f"    of those, probe correctly flagged escalate: {caught}/{int(missed.sum())} "
-              f"({caught / missed.sum():.2f})   <-- the monitor payoff")
+    if n_missed > 0:
+        print(f"\n  should-escalate behavioural MISSES: {n_missed}/{int(pos.sum())}")
+        print(f"    of those, probe correctly flagged escalate: {missed_caught}/{n_missed} "
+              f"({missed_caught / n_missed:.2f})   <-- the monitor payoff")
     else:
         print("\n  no behavioural misses on should-escalate cases — nothing for the probe to "
               "catch here; need a harder setting to test the monitor claim.")
 
-    alarm = neg & (behaviour == "escalate")
-    if alarm.sum() > 0:
-        caught = int((probe_pred[alarm] == 0).sum())
-        print(f"  should-proceed behavioural FALSE ALARMS: {int(alarm.sum())}/{int(neg.sum())}")
-        print(f"    of those, probe correctly said proceed: {caught}/{int(alarm.sum())} ({caught / alarm.sum():.2f})")
+    if n_alarm > 0:
+        print(f"  should-proceed behavioural FALSE ALARMS: {n_alarm}/{int(neg.sum())}")
+        print(f"    of those, probe correctly said proceed: {alarm_caught}/{n_alarm} ({alarm_caught / n_alarm:.2f})")
 
     print("\n  2x2  (rows: probe correct?   cols: behaviour correct?)")
     print("            behav OK   behav WRONG")
     print(f"   probe OK    {int((probe_correct & beh_correct).sum()):>5}      {int((probe_correct & ~beh_correct).sum()):>5}   <- probe right where behaviour wrong")
     print(f"   probe WRONG {int((~probe_correct & beh_correct).sum()):>5}      {int((~probe_correct & ~beh_correct).sum()):>5}")
+
+    return {
+        "layer": int(layer),
+        "behaviour_accuracy": float(beh_correct.mean()),
+        "probe_accuracy": float(probe_correct.mean()),
+        "behaviour_counts": {
+            "escalate": int((behaviour == "escalate").sum()),
+            "proceed": int((behaviour == "proceed").sum()),
+            "unclear": int((behaviour == "unclear").sum()),
+        },
+        "monitor_payoff": {
+            "should_escalate_misses": n_missed,
+            "probe_caught": missed_caught,
+            "fraction": (missed_caught / n_missed) if n_missed else None,
+        },
+        "false_alarms": {
+            "should_proceed_false_alarms": n_alarm,
+            "probe_caught": alarm_caught,
+            "fraction": (alarm_caught / n_alarm) if n_alarm else None,
+        },
+        "confusion_2x2": {
+            "probe_ok_behav_ok": int((probe_correct & beh_correct).sum()),
+            "probe_ok_behav_wrong": int((probe_correct & ~beh_correct).sum()),
+            "probe_wrong_behav_ok": int((~probe_correct & beh_correct).sum()),
+            "probe_wrong_behav_wrong": int((~probe_correct & ~beh_correct).sum()),
+        },
+    }
 
 
 def verdict(auroc: float) -> str:
@@ -160,6 +191,53 @@ def verdict(auroc: float) -> str:
     if auroc >= KILL_THRESHOLD:
         return "AMBIGUOUS (design a harder test)"
     return "KILL (signal too weak — pivot or drop the idea)"
+
+
+def write_results_json(out_path, args, meta, results, best_li, best_lr_oof, n, n_pos, hidden_dim, n_layers, decomposition):
+    """Persist the run's numbers + provenance to a durable, parseable JSON record.
+
+    Stdout dies with a frozen terminal; this file doesn't. It's also what gets read
+    straight into runlog.md — no hand-transcription. Carries the full reproducibility
+    footprint: git commit + the torch/transformers/sklearn versions actually used,
+    and UTC timestamps (so the record means the same instant on any machine).
+    """
+    import sklearn
+
+    record = {
+        "analysis_utc": datetime.now(timezone.utc).isoformat(),
+        "host": socket.gethostname(),
+        "activations_file": args.activations,
+        "model": meta.get("model"),
+        "dtype": meta.get("dtype"),
+        "enable_thinking": meta.get("enable_thinking"),
+        "dataset_path": meta.get("dataset_path"),
+        "git_commit": meta.get("git_commit"),
+        "extraction_utc": meta.get("created_utc"),
+        "env": {
+            "torch": meta.get("torch_version"),
+            "transformers": meta.get("transformers_version"),
+            "numpy": np.__version__,
+            "scikit_learn": sklearn.__version__,
+        },
+        "split_mode": args.split_mode,
+        "seed": args.seed,
+        "n": int(n),
+        "n_escalate": int(n_pos),
+        "n_proceed": int(n - n_pos),
+        "hidden_dim": int(hidden_dim),
+        "n_hidden_state_indices": int(n_layers),
+        "per_layer": [
+            {"layer": int(li), "logreg_oof": float(lr), "diffmean_oof": float(dm), "logreg_split": float(sp)}
+            for (li, lr, dm, sp) in results
+        ],
+        "best_layer_logreg_oof": int(best_li),
+        "best_logreg_oof_auroc": float(best_lr_oof),
+        "verdict": verdict(best_lr_oof),
+        "decomposition": decomposition,
+    }
+    with open(out_path, "w") as f:
+        json.dump(record, f, indent=2)
+    print(f"\nWrote results record: {out_path}")
 
 
 def main() -> None:
@@ -171,6 +249,9 @@ def main() -> None:
                         help="Comma-separated hidden-state indices to probe (e.g. 8,16,24), or 'all'.")
     parser.add_argument("--test-frac", type=float, default=0.2, help="Held-out fraction for the single split.")
     parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument("--results-out", default=None,
+                        help="Path for the durable JSON results record (default: alongside the .npz, "
+                             "e.g. activations_foo.results.json). Pass '' to skip writing it.")
     args = parser.parse_args()
 
     data = np.load(args.activations, allow_pickle=True)
@@ -210,8 +291,14 @@ def main() -> None:
     print(f"Pre-registered verdict: {verdict(best_lr_oof)}")
     print(f"  (thresholds: GO > {GO_THRESHOLD}, KILL < {KILL_THRESHOLD})")
 
+    decomposition = None
     if "behaviour" in data:
-        decompose(activations[:, best_li, :], y, data["behaviour"], best_li, cv, cv_groups)
+        decomposition = decompose(activations[:, best_li, :], y, data["behaviour"], best_li, cv, cv_groups)
+
+    if args.results_out != "":
+        out_path = args.results_out or (args.activations.rsplit(".npz", 1)[0] + ".results.json")
+        write_results_json(out_path, args, meta, results, best_li, best_lr_oof, n, int(y.sum()),
+                           hidden_dim, n_layers, decomposition)
 
 
 if __name__ == "__main__":

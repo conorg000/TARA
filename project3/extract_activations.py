@@ -50,6 +50,7 @@ from __future__ import annotations
 
 import argparse
 import json
+from datetime import datetime, timezone
 from pathlib import Path
 
 import numpy as np
@@ -166,10 +167,12 @@ def main() -> None:
         max_new_tokens = 1024 if args.enable_thinking else 24
 
     commit = git_commit()
-    print(f"code: git {commit}")
+    created_utc = datetime.now(timezone.utc).isoformat()
+    print(f"code: git {commit}  |  started {created_utc}")
 
     # Heavy imports deferred so --help works without torch installed.
     import torch
+    import transformers
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
     dataset_path = Path(args.dataset)
@@ -246,6 +249,9 @@ def main() -> None:
         "model": args.model,
         "dtype": args.dtype,
         "git_commit": commit,
+        "created_utc": created_utc,
+        "torch_version": torch.__version__,
+        "transformers_version": transformers.__version__,
         "enable_thinking": args.enable_thinking,
         "num_examples": len(records),
         "num_hidden_state_indices": activations.shape[1],
