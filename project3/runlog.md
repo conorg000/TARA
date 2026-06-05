@@ -88,10 +88,19 @@ What would make the result *uninteresting* (and we'd say so): behaviour ≈ or >
 
 **What would make this uninteresting (recorded so we don't reframe a null):** if the 8B aces behaviour (≈ probe) with thinking *off* already, there's no silent-omission gap to catch on this dataset → conditions_v2 is too easy for an 8B, and we'd need a harder rung (rarer / fuzzier items) before scale teaches us anything. We'd say so plainly.
 
+**Outcome (r7, 2026-06-05) — 4 HIT (P2's selectivity clause pending controls):**
+1. **HIT (strong).** behaviour **0.896** ≫ 0.65 (vs 0.6B 0.521). The 8B genuinely does the task — a residual gap can no longer be dismissed as "too weak to act."
+2. **HIT (and selective).** diff-of-means **0.982 @ L23** (≥ 0.71, strongly), and it *catches* logreg (~0.98) → the feature consolidated into an explicit axis. **Selectivity confirmed** ([select_layer.py](select_layer.py), run locally on the pulled `.npz`): shuffle ~0.47 and item-irrelevant membership ~0.43 sit at chance while real recognition is ~0.97 → selectivity **0.459 @ L34** (vs the 0.6B's 0.18). The 0.98 is clean, selective recognition, not a rich-representation artefact.
+3. **HIT (wide CI).** Of **13** should-escalate behavioural misses, the probe flagged escalate on **9 (0.69)** ≥ 0.60. Clears the bar, but on only 13 misses — the pre-registered wide-CI caveat applies.
+4. **HIT.** probe **0.948** ≥ behaviour **0.896**; aggregate gap 0.948 − 0.896 = **0.052** < 0.27. Shrank mechanically, as predicted.
+
+**Read:** recognition survives scale *strongly*; the recognise-but-don't-act *gap* largely **closes** at 8B (0.27 → 0.05) — the dramatic 0.6B dissociation was substantially a proceed-default / small-model artefact. The monitor keeps residual value (9/13 of the rare silent misses) but the phenomenon is now ~7% of cases, not dominant. Trending toward the pre-registered "v2 is easy for an 8B," which motivates a harder rung. Full table + decomposition in the r7 detail block below.
+
 ---
 
 | Run ID | Dataset | Model | Device/dtype | Split | N | Best layer | AUROC | Verdict | Notes |
 |---|---|---|---|---|---|---|---|---|---|
+| 2026-06-05_r7 | [conditions_v2](datasets.md#conditions_v2json--current) +behaviour | Qwen3-8B | cuda / bf16 | stratified 5-fold | 192 | 28 | **0.993** | GO | **8B scale, thinking OFF.** Recognition survives scale strongly — diff-of-means **0.982 @ L23**, *catches* logreg (~0.99) → explicit axis. Behaviour **0.896** (the 8B does the task), probe **0.948** → recognise-but-don't-act gap shrinks to **0.05** (from 0.6B's 0.27). Monitor payoff **9/13 (0.69)** on the rare silent misses (wide CI). ⚠ Selectivity controls pending — 0.98 is high. Extracted at 05c74de (torch 2.11.0+cu128 / transformers 5.10.2), probed at d972a32. |
 | 2026-05-30_r6 | transfer [v2](datasets.md#conditions_v2json--current)→[v2b](datasets.md#conditions_v2bjson--current) | Qwen3-0.6B | cpu / float32 | train-on-v2 / test-on-v2b | 192→192 | 20 | 0.790 | — | **Cross-taxonomy generalisation (Step 2).** Diff-of-means recognition direction trained only on export goods detects "condition fired" on a disjoint domain (instruments/sports/jewellery…) at **~0.79 (L19–21)** — *no transfer penalty*: matches/exceeds the within-v2b ceiling (~0.72), +0.34 over shuffle (0.45). Recognition direction is domain-general. (logreg-transfer ~0.87 but NOT clean — v2/v2b share phrasing, so logreg's surface reliance carries over; diff-of-means stays the trustworthy metric.) |
 | 2026-05-29_r5 | controls on [conditions_v2](datasets.md#conditions_v2json--current) | Qwen3-0.6B | cpu / float32 | stratified 5-fold | 192 | 18 | — | — | **Probe-validation controls** ([controls.py](controls.py)). Shuffle passes (~0.50 → pipeline honest). BUT logreg reads arbitrary junk at 0.75–0.80 → its 0.892 headline has low selectivity. Trustworthy signal is **diff-of-means 0.684**, which clears the clean controls (dest-alpha 0.52, item-irrelevant membership 0.44). Recognition is real but smaller than claimed; **revises r3/r4 headline down**. |
 | 2026-05-29_r4 | [conditions_v2](datasets.md#conditions_v2json--current) +behaviour | Qwen3-0.6B | cpu / float32 | stratified 5-fold | 192 | 18 | 0.892 | GO | **Thesis test.** Behaviour 0.521 (proceed-default) vs probe 0.792. Probe catches 61/80 (76%) of behavioural escalation misses + 11/12 false alarms. All 4 pre-registered predictions HIT. Caveats: supervised probe vs zero-shot behaviour; proceed-default under greedy/no-thinking 0.6B. **⚠ See r5: logreg headline inflated; honest recognition signal is diff-of-means ~0.68, so the gap is ~0.16 not ~0.37.** |
@@ -99,7 +108,79 @@ What would make the result *uninteresting* (and we'd say so): behaviour ≈ or >
 | 2026-05-29_r2 | [conditions_v1](datasets.md#conditions_v1json--current) | Qwen3-0.6B | cpu / float32 | stratified 5-fold | 200 | 16 | **1.000** | GO | Clean computation profile (chance early → saturates mid-net). Repetition control passed. But 0.6B saturating means the task is the *syntactic floor* — string-matching, not semantic recognition. |
 | 2026-05-29_r1 | [scenarios_v2](datasets.md#scenarios_v2json--superseded) | Qwen3-0.6B | cpu / float32 | leave-one-pair-out | 40 | 14 | 0.978 | GO* | *GO is misleading. A 0.6B model can't do the task behaviourally, so 0.978 = the probe reading **topic**, not recognition. This result motivated building `conditions_v1`. |
 
-Both runs were dry-runs on the tiny Qwen3-0.6B to validate the pipeline and dataset design on a laptop (CPU) before committing to a GPU run on Qwen3-8B. Treat the numbers as design diagnostics, not headline findings.
+The 0.6B rows above were dry-runs to validate the pipeline and dataset design on a laptop (CPU) before the GPU run. Treat their numbers as design diagnostics, not headline findings. r7 (below) is the first real GPU run.
+
+---
+
+## `2026-06-05_r7` — Qwen3-8B, conditions_v2, thinking OFF (scale comparison to r4)
+
+First real GPU run. **Extracted on a rented RTX 3090 (vast.ai)** at commit 05c74de (torch 2.11.0+cu128, transformers 5.10.2); all-layer final-token activations, 192 examples, `--generate` for behaviour. Probe re-run (after a frozen-terminal recovery) at commit d972a32, which writes `results.json`. From here, probing moves to the laptop (see [LOGISTICS.md](LOGISTICS.md)).
+
+Per-layer AUROC (logreg OOF | diffmean OOF | logreg single split), **verbatim**:
+
+```
+layer | logreg OOF | diffmean OOF | logreg split
+  0   |   0.492    |    0.500     |    0.500   (emb — sanity)
+  1   |   0.469    |    0.533     |    0.508
+  2   |   0.448    |    0.524     |    0.453
+  3   |   0.426    |    0.537     |    0.411
+  4   |   0.481    |    0.525     |    0.513
+  5   |   0.469    |    0.527     |    0.482
+  6   |   0.453    |    0.530     |    0.421
+  7   |   0.495    |    0.526     |    0.484
+  8   |   0.516    |    0.530     |    0.484
+  9   |   0.586    |    0.528     |    0.582
+ 10   |   0.600    |    0.545     |    0.597
+ 11   |   0.610    |    0.538     |    0.558
+ 12   |   0.634    |    0.543     |    0.553
+ 13   |   0.612    |    0.537     |    0.547
+ 14   |   0.562    |    0.535     |    0.542
+ 15   |   0.573    |    0.533     |    0.545
+ 16   |   0.632    |    0.537     |    0.618
+ 17   |   0.820    |    0.555     |    0.805   ← logreg lifts off
+ 18   |   0.913    |    0.584     |    0.905
+ 19   |   0.962    |    0.697     |    0.937
+ 20   |   0.963    |    0.930     |    0.958   ← diffmean snaps up
+ 21   |   0.976    |    0.962     |    0.961
+ 22   |   0.982    |    0.971     |    0.955
+ 23   |   0.992    |    0.982     |    0.966   ← diffmean peak
+ 24   |   0.991    |    0.978     |    0.942
+ 25   |   0.992    |    0.976     |    0.942
+ 26   |   0.992    |    0.974     |    0.945
+ 27   |   0.993    |    0.975     |    0.942
+ 28   |   0.993    |    0.974     |    0.947   ← logreg best
+ 29   |   0.992    |    0.974     |    0.945
+ 30   |   0.990    |    0.972     |    0.945
+ 31   |   0.992    |    0.971     |    0.942
+ 32   |   0.991    |    0.972     |    0.937
+ 33   |   0.985    |    0.972     |    0.934
+ 34   |   0.984    |    0.968     |    0.937
+ 35   |   0.982    |    0.967     |    0.947
+ 36   |   0.982    |    0.967     |    0.950
+```
+
+Best layer (logreg pooled OOF): **layer 28, 0.993**. Diff-of-means peak **0.982 @ L23**.
+
+Recognition vs behaviour @ L28:
+
+```
+                          behav OK   behav WRONG
+   probe OK                 169          13      <- probe right where behaviour wrong
+   probe WRONG                3           7
+
+behaviour: 90 escalate / 102 proceed / 0 unclear   |  accuracy 0.896
+probe accuracy @ L28: 0.948
+should-escalate MISSES: 13/96  | probe flagged escalate on 9 (0.69)  <- monitor payoff
+should-proceed FALSE ALARMS: 7/96 | probe said proceed on 4 (0.57)
+```
+
+**Reading:**
+- **Recognition survives scale, strongly.** diff-of-means 0.71 (0.6B) → **0.98** (8B), and it *catches logreg* (both ~0.98 by L21+) — the semantic feature consolidated into an explicit, axis-aligned direction (the 0.6B did this only for the *syntactic* floor in r2). The low-capacity probe reading it ~as well as logreg is reassuring it isn't overfitting. (This separability is also literally why logreg is slow to fit at 4096 dims.)
+- **The recognise-but-don't-act gap mostly closes.** 0.6B gap 0.27 → 8B **0.05**. The 8B mostly *acts* on what it recognises (behaviour 0.896), so the dramatic 0.6B dissociation was substantially a proceed-default / small-model artefact. Recorded straight, not reframed.
+- **Monitor: residual value on rare events.** 9/13 (0.69) of the silent misses caught — but misses are now 13/192 (~7%), not the dominant mode (0.6B: 80/96).
+- **Depth:** signal emerges ~L17 (of 36), saturates low-20s — similar *relative* depth to the 0.6B's ~L16 (of 28).
+
+**Selectivity (ran locally on the pulled `.npz` — [select_layer.py](select_layer.py)): the 0.98 is clean.** Per-layer diff-of-means selectivity vs the clean controls — shuffle collapses to ~0.47–0.52 (pipeline honest), destination ~0.52, and the sharp **item-irrelevant membership ~0.40–0.46** — all at/below chance while real recognition is ~0.97. Most-selective layer **L34: diff-of-means 0.968, selectivity 0.459** (raw diff-of-means peak L23 0.982, sel 0.437). So 8B recognition is not only stronger than the 0.6B (0.97 vs 0.71) but **far more selective** (0.46 vs 0.18) — genuinely the item-cued match, not a rich-representation artefact. This validates the dogfood path too: extracted on GPU, all probing/controls run on the laptop off the one pulled `.npz`. (`controls.py` running for the full standing-rule table.)
 
 ---
 
