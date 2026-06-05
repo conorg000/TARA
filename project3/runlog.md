@@ -180,7 +180,20 @@ should-proceed FALSE ALARMS: 7/96 | probe said proceed on 4 (0.57)
 - **Monitor: residual value on rare events.** 9/13 (0.69) of the silent misses caught — but misses are now 13/192 (~7%), not the dominant mode (0.6B: 80/96).
 - **Depth:** signal emerges ~L17 (of 36), saturates low-20s — similar *relative* depth to the 0.6B's ~L16 (of 28).
 
-**Selectivity (ran locally on the pulled `.npz` — [select_layer.py](select_layer.py)): the 0.98 is clean.** Per-layer diff-of-means selectivity vs the clean controls — shuffle collapses to ~0.47–0.52 (pipeline honest), destination ~0.52, and the sharp **item-irrelevant membership ~0.40–0.46** — all at/below chance while real recognition is ~0.97. Most-selective layer **L34: diff-of-means 0.968, selectivity 0.459** (raw diff-of-means peak L23 0.982, sel 0.437). So 8B recognition is not only stronger than the 0.6B (0.97 vs 0.71) but **far more selective** (0.46 vs 0.18) — genuinely the item-cued match, not a rich-representation artefact. This validates the dogfood path too: extracted on GPU, all probing/controls run on the laptop off the one pulled `.npz`. (`controls.py` running for the full standing-rule table.)
+**Selectivity (ran locally on the pulled `.npz` — [select_layer.py](select_layer.py)): the 0.98 is clean.** Per-layer diff-of-means selectivity vs the clean controls — shuffle collapses to ~0.47–0.52 (pipeline honest), destination ~0.52, and the sharp **item-irrelevant membership ~0.40–0.46** — all at/below chance while real recognition is ~0.97. Most-selective layer **L34: diff-of-means 0.968, selectivity 0.459** (raw diff-of-means peak L23 0.982, sel 0.437). So 8B recognition is not only stronger than the 0.6B (0.97 vs 0.71) but **far more selective** (0.46 vs 0.18) — genuinely the item-cued match, not a rich-representation artefact. This validates the dogfood path too: extracted on GPU, all probing/controls run on the laptop off the one pulled `.npz`.
+
+**Full controls table** ([controls.py](controls.py), layer 28, verbatim):
+
+| task | logreg | diffmean | selectivity (logreg) |
+|---|---|---|---|
+| REAL (escalation) | 0.993 | 0.974 | — |
+| shuffle labels (mean of 5) | 0.488 | 0.480 | 0.505 |
+| junk: destination alpha-half | 0.603 | 0.524 | 0.390 |
+| junk: item-name length parity | 0.624 | 0.574 | 0.369 |
+| surface: phrasing template | 1.000 | 0.924 | −0.007 |
+| **item-IRRELEVANT membership** (corr w/ real 0.04) | 0.484 | **0.430** | 0.509 |
+
+Shuffle ~0.48 → honest pipeline. The decisive row is **item-irrelevant membership ~0.43** (chance) while real recognition is 0.97 → the probe reads the **item-cued match**, not generic membership. Unlike the 0.6B (r5), **even logreg is now selective** — junk controls read only ~0.60 here (vs the 0.6B's 0.75–0.80) while real is 0.99, so logreg selectivity is high (~0.39–0.51). Phrasing stays perfectly decodable (1.000 / 0.924) but is **label-orthogonal by construction**, so it isn't what the real label direction reads. Net: the r5 "logreg inflated" worry has largely evaporated at 8B — both probes clear the controls, and recognition is clean.
 
 ---
 
