@@ -23,6 +23,11 @@
 
 set -euo pipefail
 
+# Unbuffered Python so per-layer progress streams live to the logfile/terminal.
+# Buffered stdout-to-a-file otherwise hides all progress until the run ends,
+# making a long run look hung when it's actually working.
+export PYTHONUNBUFFERED=1
+
 MODEL="${1:-Qwen/Qwen3-8B}"
 DEVICE="${2:-cuda}"
 DTYPE="${3:-bfloat16}"
