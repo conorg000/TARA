@@ -1,0 +1,4234 @@
+[
+  {
+    "id": "ex_0000",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, construction materials, industrial machinery.",
+    "user": "Shipment under review: glass panes bound for Georgia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0001",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, office furniture, textiles and apparel, construction materials.",
+    "user": "Shipment under review: painkiller capsules bound for Slovenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "consumer electronics",
+        "office furniture",
+        "textiles and apparel",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0002",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, agricultural produce, industrial machinery, construction materials.",
+    "user": "Shipment under review: radiators bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "radiators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce",
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0003",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, industrial machinery, office furniture, consumer electronics.",
+    "user": "Shipment under review: fuel injectors bound for Nepal. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0004",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, textiles and apparel, office furniture, automotive parts.",
+    "user": "Shipment under review: painkiller capsules bound for Croatia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel",
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0005",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, pharmaceuticals, industrial machinery.",
+    "user": "Shipment under review: televisions bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0006",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, industrial machinery, automotive parts, agricultural produce.",
+    "user": "Shipment under review: insulin vials bound for Uruguay. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0007",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, automotive parts, consumer electronics, industrial machinery.",
+    "user": "Shipment under review: linen sheets bound for Botswana. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "automotive parts",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0008",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, industrial machinery.",
+    "user": "Shipment under review: antiseptic solution bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0009",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, textiles and apparel, consumer electronics.",
+    "user": "Shipment under review: CNC routers bound for Mongolia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0010",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, agricultural produce, automotive parts, industrial machinery.",
+    "user": "Shipment under review: antiseptic solution bound for Namibia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "construction materials",
+        "agricultural produce",
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0011",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, office furniture.",
+    "user": "Shipment under review: roofing tiles bound for Latvia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0012",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, agricultural produce, construction materials, pharmaceuticals.",
+    "user": "Shipment under review: game consoles bound for Namibia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce",
+        "construction materials",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0013",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, agricultural produce.",
+    "user": "Shipment under review: conveyor belts bound for Albania. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0014",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, automotive parts.",
+    "user": "Shipment under review: fuel injectors bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0015",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, pharmaceuticals, office furniture.",
+    "user": "Shipment under review: dining chairs bound for Albania. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "dining chairs",
+      "category": "office furniture",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0016",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, industrial machinery.",
+    "user": "Shipment under review: alternators bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0017",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, pharmaceuticals.",
+    "user": "Shipment under review: cement bags bound for Albania. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0018",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, consumer electronics.",
+    "user": "Shipment under review: smartphones bound for Uruguay. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0019",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, pharmaceuticals, office furniture, automotive parts.",
+    "user": "Shipment under review: CNC routers bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals",
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0020",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, agricultural produce, construction materials, office furniture.",
+    "user": "Shipment under review: almonds bound for Latvia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "construction materials",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0021",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, consumer electronics, agricultural produce.",
+    "user": "Shipment under review: olive oil bound for Namibia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "textiles and apparel",
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0022",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, textiles and apparel, construction materials, office furniture.",
+    "user": "Shipment under review: brake pads bound for Uruguay. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel",
+        "construction materials",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0023",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, construction materials.",
+    "user": "Shipment under review: wardrobes bound for Namibia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wardrobes",
+      "category": "office furniture",
+      "restricted_categories": [
+        "office furniture",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0024",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, construction materials.",
+    "user": "Shipment under review: steel rebar bound for Mongolia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0025",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, automotive parts, construction materials.",
+    "user": "Shipment under review: radiators bound for Estonia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "radiators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0026",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, industrial machinery, office furniture.",
+    "user": "Shipment under review: bookshelves bound for Mongolia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bookshelves",
+      "category": "office furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "industrial machinery",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0027",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, agricultural produce.",
+    "user": "Shipment under review: silk scarves bound for Georgia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0028",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, textiles and apparel.",
+    "user": "Shipment under review: alternators bound for Georgia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0029",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, construction materials, agricultural produce, office furniture.",
+    "user": "Shipment under review: silk scarves bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "construction materials",
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0030",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, consumer electronics, construction materials, automotive parts.",
+    "user": "Shipment under review: maize bound for Slovenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "textiles and apparel",
+        "consumer electronics",
+        "construction materials",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0031",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, industrial machinery, pharmaceuticals, consumer electronics.",
+    "user": "Shipment under review: filing cabinets bound for Botswana. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "office furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0032",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, pharmaceuticals.",
+    "user": "Shipment under review: knitted gloves bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0033",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, agricultural produce.",
+    "user": "Shipment under review: plywood sheets bound for Slovenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0034",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, automotive parts, construction materials.",
+    "user": "Shipment under review: steel rebar bound for Mongolia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "office furniture",
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0035",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, agricultural produce.",
+    "user": "Shipment under review: headphones bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0036",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, consumer electronics.",
+    "user": "Shipment under review: ceramic bricks bound for Mongolia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0037",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, office furniture, agricultural produce, consumer electronics.",
+    "user": "Shipment under review: soybeans bound for Moldova. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "textiles and apparel",
+        "office furniture",
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0038",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, textiles and apparel, industrial machinery.",
+    "user": "Shipment under review: radiators bound for Mongolia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "radiators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0039",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, office furniture, consumer electronics, agricultural produce.",
+    "user": "Shipment under review: bed frames bound for Nepal. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bed frames",
+      "category": "office furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "office furniture",
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0040",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, consumer electronics, construction materials, industrial machinery.",
+    "user": "Shipment under review: wool sweaters bound for Georgia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "office furniture",
+        "consumer electronics",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0041",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, automotive parts.",
+    "user": "Shipment under review: clutch plates bound for Slovenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "construction materials",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0042",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, agricultural produce.",
+    "user": "Shipment under review: almonds bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0043",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, office furniture.",
+    "user": "Shipment under review: sofas bound for Albania. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "sofas",
+      "category": "office furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0044",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, pharmaceuticals, automotive parts, consumer electronics.",
+    "user": "Shipment under review: soybeans bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "construction materials",
+        "pharmaceuticals",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0045",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, automotive parts, construction materials, consumer electronics.",
+    "user": "Shipment under review: wheat grain bound for Albania. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts",
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0046",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, agricultural produce, consumer electronics, industrial machinery.",
+    "user": "Shipment under review: CNC routers bound for Estonia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "agricultural produce",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0047",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, agricultural produce, construction materials.",
+    "user": "Shipment under review: tablets bound for Albania. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "tablets",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0048",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, office furniture, agricultural produce.",
+    "user": "Shipment under review: headphones bound for Croatia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "office furniture",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0049",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, textiles and apparel, agricultural produce.",
+    "user": "Shipment under review: bed frames bound for Uruguay. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bed frames",
+      "category": "office furniture",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0050",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, construction materials.",
+    "user": "Shipment under review: plywood sheets bound for Moldova. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0051",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, construction materials, agricultural produce.",
+    "user": "Shipment under review: painkiller capsules bound for Mongolia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "construction materials",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0052",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, consumer electronics, textiles and apparel.",
+    "user": "Shipment under review: knitted gloves bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "office furniture",
+        "consumer electronics",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0053",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, agricultural produce, construction materials, office furniture.",
+    "user": "Shipment under review: antibiotic tablets bound for Latvia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce",
+        "construction materials",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0054",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, agricultural produce.",
+    "user": "Shipment under review: game consoles bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0055",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, pharmaceuticals, industrial machinery, consumer electronics.",
+    "user": "Shipment under review: denim jeans bound for Botswana. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "pharmaceuticals",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0056",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, textiles and apparel, office furniture, consumer electronics.",
+    "user": "Shipment under review: coffee beans bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel",
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0057",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, automotive parts, industrial machinery.",
+    "user": "Shipment under review: injection moulders bound for Uruguay. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "office furniture",
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0058",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, automotive parts.",
+    "user": "Shipment under review: soybeans bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0059",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, pharmaceuticals.",
+    "user": "Shipment under review: spark plugs bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0060",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, textiles and apparel, agricultural produce.",
+    "user": "Shipment under review: bookshelves bound for Croatia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bookshelves",
+      "category": "office furniture",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0061",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, automotive parts, agricultural produce.",
+    "user": "Shipment under review: fuel injectors bound for Slovenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "office furniture",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Slovenia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0062",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, agricultural produce, pharmaceuticals, automotive parts.",
+    "user": "Shipment under review: insulin vials bound for Albania. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce",
+        "pharmaceuticals",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0063",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, agricultural produce.",
+    "user": "Shipment under review: maize bound for Slovenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0064",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, textiles and apparel, agricultural produce.",
+    "user": "Shipment under review: game consoles bound for Albania. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "industrial machinery",
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0065",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, consumer electronics.",
+    "user": "Shipment under review: smartphones bound for Latvia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0066",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, office furniture, pharmaceuticals, automotive parts.",
+    "user": "Shipment under review: radiators bound for Georgia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "radiators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture",
+        "pharmaceuticals",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0067",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, textiles and apparel.",
+    "user": "Shipment under review: televisions bound for Croatia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "office furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0068",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, automotive parts, office furniture.",
+    "user": "Shipment under review: wheat grain bound for Croatia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "automotive parts",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0069",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, industrial machinery, textiles and apparel.",
+    "user": "Shipment under review: vaccine doses bound for Nepal. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0070",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, automotive parts, construction materials, textiles and apparel.",
+    "user": "Shipment under review: filing cabinets bound for Croatia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "office furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts",
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0071",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, textiles and apparel.",
+    "user": "Shipment under review: tablets bound for Namibia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "tablets",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "office furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0072",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, automotive parts.",
+    "user": "Shipment under review: brake pads bound for Estonia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0073",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, textiles and apparel, pharmaceuticals, office furniture.",
+    "user": "Shipment under review: almonds bound for Botswana. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "consumer electronics",
+        "textiles and apparel",
+        "pharmaceuticals",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0074",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, construction materials.",
+    "user": "Shipment under review: tablets bound for Nepal. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "tablets",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0075",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, construction materials, automotive parts, industrial machinery.",
+    "user": "Shipment under review: CNC routers bound for Moldova. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials",
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0076",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, construction materials.",
+    "user": "Shipment under review: game consoles bound for Uruguay. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0077",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, industrial machinery, automotive parts.",
+    "user": "Shipment under review: leather jackets bound for Mongolia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "consumer electronics",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0078",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, textiles and apparel.",
+    "user": "Shipment under review: silk scarves bound for Nepal. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0079",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, construction materials, industrial machinery, consumer electronics.",
+    "user": "Shipment under review: cement bags bound for Latvia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "office furniture",
+        "construction materials",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0080",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, textiles and apparel, industrial machinery, agricultural produce.",
+    "user": "Shipment under review: wardrobes bound for Mongolia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wardrobes",
+      "category": "office furniture",
+      "restricted_categories": [
+        "consumer electronics",
+        "textiles and apparel",
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Mongolia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0081",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, office furniture.",
+    "user": "Shipment under review: denim jeans bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0082",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, agricultural produce.",
+    "user": "Shipment under review: glass panes bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0083",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, industrial machinery, automotive parts, agricultural produce.",
+    "user": "Shipment under review: vaccine doses bound for Moldova. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "consumer electronics",
+        "industrial machinery",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0084",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, industrial machinery, textiles and apparel, agricultural produce.",
+    "user": "Shipment under review: roofing tiles bound for Slovenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "office furniture",
+        "industrial machinery",
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0085",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, textiles and apparel.",
+    "user": "Shipment under review: alternators bound for Nepal. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0086",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, pharmaceuticals, agricultural produce.",
+    "user": "Shipment under review: wardrobes bound for Estonia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wardrobes",
+      "category": "office furniture",
+      "restricted_categories": [
+        "office furniture",
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0087",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, office furniture.",
+    "user": "Shipment under review: linen sheets bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0088",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, agricultural produce, pharmaceuticals, consumer electronics.",
+    "user": "Shipment under review: wool sweaters bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce",
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0089",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, textiles and apparel, automotive parts.",
+    "user": "Shipment under review: welding robots bound for Nepal. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "office furniture",
+        "textiles and apparel",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0090",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, consumer electronics, construction materials, agricultural produce.",
+    "user": "Shipment under review: sofas bound for Botswana. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "sofas",
+      "category": "office furniture",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "construction materials",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0091",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, industrial machinery, office furniture, automotive parts.",
+    "user": "Shipment under review: injection moulders bound for Croatia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0092",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, office furniture, industrial machinery.",
+    "user": "Shipment under review: filing cabinets bound for Nepal. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "office furniture",
+      "restricted_categories": [
+        "construction materials",
+        "office furniture",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0093",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, pharmaceuticals, office furniture, consumer electronics.",
+    "user": "Shipment under review: brake pads bound for Mongolia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "pharmaceuticals",
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Mongolia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0094",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, automotive parts, consumer electronics.",
+    "user": "Shipment under review: olive oil bound for Mongolia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "construction materials",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0095",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, agricultural produce, construction materials, consumer electronics.",
+    "user": "Shipment under review: cough syrup bound for Uruguay. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce",
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0096",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, pharmaceuticals, construction materials.",
+    "user": "Shipment under review: cement bags bound for Moldova. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "agricultural produce",
+        "pharmaceuticals",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Moldova",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0097",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, office furniture, pharmaceuticals.",
+    "user": "Shipment under review: welding robots bound for Uruguay. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0098",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, pharmaceuticals, construction materials, office furniture.",
+    "user": "Shipment under review: glass panes bound for Botswana. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals",
+        "construction materials",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0099",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, industrial machinery, textiles and apparel.",
+    "user": "Shipment under review: coffee beans bound for Croatia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0100",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, consumer electronics, automotive parts, industrial machinery.",
+    "user": "Shipment under review: leather jackets bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "consumer electronics",
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0101",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, automotive parts, consumer electronics.",
+    "user": "Shipment under review: televisions bound for Mongolia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0102",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, industrial machinery, office furniture, consumer electronics.",
+    "user": "Shipment under review: fuel injectors bound for Moldova. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "agricultural produce",
+        "industrial machinery",
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0103",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, automotive parts, consumer electronics.",
+    "user": "Shipment under review: lathes bound for Latvia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0104",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, pharmaceuticals, consumer electronics, automotive parts.",
+    "user": "Shipment under review: soybeans bound for Mongolia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "pharmaceuticals",
+        "consumer electronics",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Mongolia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0105",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, pharmaceuticals, automotive parts, industrial machinery.",
+    "user": "Shipment under review: roofing tiles bound for Georgia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "pharmaceuticals",
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0106",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, agricultural produce, construction materials.",
+    "user": "Shipment under review: ceramic bricks bound for Croatia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0107",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, agricultural produce, consumer electronics.",
+    "user": "Shipment under review: bookshelves bound for Slovenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bookshelves",
+      "category": "office furniture",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Slovenia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0108",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, industrial machinery, office furniture, consumer electronics.",
+    "user": "Shipment under review: bookshelves bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bookshelves",
+      "category": "office furniture",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0109",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, textiles and apparel.",
+    "user": "Shipment under review: dining chairs bound for Namibia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "dining chairs",
+      "category": "office furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0110",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, agricultural produce, pharmaceuticals.",
+    "user": "Shipment under review: smartphones bound for Uruguay. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0111",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, consumer electronics.",
+    "user": "Shipment under review: hydraulic presses bound for Latvia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0112",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, automotive parts, industrial machinery, office furniture.",
+    "user": "Shipment under review: tablets bound for Estonia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "tablets",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts",
+        "industrial machinery",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0113",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, consumer electronics, industrial machinery, textiles and apparel.",
+    "user": "Shipment under review: wool sweaters bound for Mongolia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Mongolia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0114",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, office furniture, pharmaceuticals.",
+    "user": "Shipment under review: clutch plates bound for Slovenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "office furniture",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Slovenia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0115",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, industrial machinery.",
+    "user": "Shipment under review: lathes bound for Botswana. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0116",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, construction materials, pharmaceuticals, automotive parts.",
+    "user": "Shipment under review: coffee beans bound for Uruguay. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "consumer electronics",
+        "construction materials",
+        "pharmaceuticals",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0117",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, office furniture, textiles and apparel.",
+    "user": "Shipment under review: spark plugs bound for Namibia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "office furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0118",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, textiles and apparel.",
+    "user": "Shipment under review: antiseptic solution bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0119",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, construction materials, pharmaceuticals, automotive parts.",
+    "user": "Shipment under review: hydraulic presses bound for Nepal. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials",
+        "pharmaceuticals",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0120",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, office furniture.",
+    "user": "Shipment under review: knitted gloves bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0121",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, consumer electronics, pharmaceuticals, textiles and apparel.",
+    "user": "Shipment under review: dining chairs bound for Georgia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "dining chairs",
+      "category": "office furniture",
+      "restricted_categories": [
+        "industrial machinery",
+        "consumer electronics",
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0122",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, industrial machinery, agricultural produce, pharmaceuticals.",
+    "user": "Shipment under review: spark plugs bound for Slovenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery",
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0123",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, office furniture.",
+    "user": "Shipment under review: laptops bound for Georgia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0124",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, textiles and apparel.",
+    "user": "Shipment under review: knitted gloves bound for Slovenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0125",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, consumer electronics, office furniture, industrial machinery.",
+    "user": "Shipment under review: glass panes bound for Estonia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "consumer electronics",
+        "office furniture",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0126",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, construction materials.",
+    "user": "Shipment under review: ceramic bricks bound for Nepal. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "office furniture",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0127",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, pharmaceuticals, automotive parts.",
+    "user": "Shipment under review: brake pads bound for Botswana. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "construction materials",
+        "pharmaceuticals",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0128",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, textiles and apparel, automotive parts, construction materials.",
+    "user": "Shipment under review: smartphones bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel",
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0129",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, office furniture, construction materials, textiles and apparel.",
+    "user": "Shipment under review: hydraulic presses bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "consumer electronics",
+        "office furniture",
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0130",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, industrial machinery, agricultural produce, office furniture.",
+    "user": "Shipment under review: sofas bound for Mongolia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "sofas",
+      "category": "office furniture",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Mongolia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0131",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, pharmaceuticals.",
+    "user": "Shipment under review: laptops bound for Moldova. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0132",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, textiles and apparel, industrial machinery, pharmaceuticals.",
+    "user": "Shipment under review: antibiotic tablets bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel",
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0133",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, textiles and apparel, industrial machinery.",
+    "user": "Shipment under review: sofas bound for Uruguay. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "sofas",
+      "category": "office furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0134",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, automotive parts, industrial machinery.",
+    "user": "Shipment under review: conveyor belts bound for Albania. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "office furniture",
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0135",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, industrial machinery, agricultural produce.",
+    "user": "Shipment under review: maize bound for Uruguay. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0136",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, agricultural produce, office furniture, pharmaceuticals.",
+    "user": "Shipment under review: bed frames bound for Moldova. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bed frames",
+      "category": "office furniture",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce",
+        "office furniture",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0137",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, office furniture.",
+    "user": "Shipment under review: plywood sheets bound for Latvia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0138",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, industrial machinery.",
+    "user": "Shipment under review: headphones bound for Croatia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0139",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, textiles and apparel, consumer electronics.",
+    "user": "Shipment under review: leather jackets bound for Moldova. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "industrial machinery",
+        "textiles and apparel",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Moldova",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0140",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, construction materials, agricultural produce.",
+    "user": "Shipment under review: silk scarves bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0141",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, construction materials.",
+    "user": "Shipment under review: wool sweaters bound for Croatia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0142",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, agricultural produce.",
+    "user": "Shipment under review: olive oil bound for Slovenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0143",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, agricultural produce.",
+    "user": "Shipment under review: conveyor belts bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0144",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, agricultural produce.",
+    "user": "Shipment under review: leather jackets bound for Botswana. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0145",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, construction materials, automotive parts, industrial machinery.",
+    "user": "Shipment under review: welding robots bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "consumer electronics",
+        "construction materials",
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0146",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, industrial machinery, office furniture, textiles and apparel.",
+    "user": "Shipment under review: antibiotic tablets bound for Estonia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "agricultural produce",
+        "industrial machinery",
+        "office furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0147",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, pharmaceuticals.",
+    "user": "Shipment under review: wheat grain bound for Croatia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0148",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, industrial machinery, automotive parts.",
+    "user": "Shipment under review: steel rebar bound for Uruguay. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "office furniture",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0149",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, construction materials, consumer electronics.",
+    "user": "Shipment under review: maize bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0150",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, automotive parts, consumer electronics, construction materials.",
+    "user": "Shipment under review: wheat grain bound for Botswana. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "automotive parts",
+        "consumer electronics",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0151",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, industrial machinery, pharmaceuticals.",
+    "user": "Shipment under review: cough syrup bound for Georgia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "agricultural produce",
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0152",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, pharmaceuticals, industrial machinery, textiles and apparel.",
+    "user": "Shipment under review: almonds bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "pharmaceuticals",
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0153",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, textiles and apparel, office furniture.",
+    "user": "Shipment under review: filing cabinets bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "office furniture",
+      "restricted_categories": [
+        "industrial machinery",
+        "textiles and apparel",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0154",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, construction materials, pharmaceuticals, office furniture.",
+    "user": "Shipment under review: painkiller capsules bound for Namibia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials",
+        "pharmaceuticals",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0155",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, construction materials.",
+    "user": "Shipment under review: plywood sheets bound for Namibia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0156",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, automotive parts, industrial machinery, construction materials.",
+    "user": "Shipment under review: bed frames bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bed frames",
+      "category": "office furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "automotive parts",
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0157",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, pharmaceuticals.",
+    "user": "Shipment under review: cough syrup bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "office furniture",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0158",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, textiles and apparel.",
+    "user": "Shipment under review: denim jeans bound for Georgia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0159",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, automotive parts, construction materials, agricultural produce.",
+    "user": "Shipment under review: clutch plates bound for Nepal. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts",
+        "construction materials",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0160",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, automotive parts, consumer electronics, industrial machinery.",
+    "user": "Shipment under review: conveyor belts bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "automotive parts",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0161",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, agricultural produce, industrial machinery.",
+    "user": "Shipment under review: roofing tiles bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0162",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, office furniture, textiles and apparel, automotive parts.",
+    "user": "Shipment under review: injection moulders bound for Latvia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "office furniture",
+        "textiles and apparel",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0163",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, office furniture.",
+    "user": "Shipment under review: dining chairs bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "dining chairs",
+      "category": "office furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0164",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, agricultural produce, construction materials.",
+    "user": "Shipment under review: cough syrup bound for Botswana. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0165",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, pharmaceuticals.",
+    "user": "Shipment under review: insulin vials bound for Moldova. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0166",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, industrial machinery, construction materials, automotive parts.",
+    "user": "Shipment under review: welding robots bound for Estonia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "industrial machinery",
+        "construction materials",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0167",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, construction materials.",
+    "user": "Shipment under review: olive oil bound for Latvia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0168",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, agricultural produce, consumer electronics, automotive parts.",
+    "user": "Shipment under review: laptops bound for Moldova. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce",
+        "consumer electronics",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0169",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, textiles and apparel, pharmaceuticals.",
+    "user": "Shipment under review: lathes bound for Namibia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0170",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, consumer electronics.",
+    "user": "Shipment under review: headphones bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0171",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, office furniture, pharmaceuticals.",
+    "user": "Shipment under review: alternators bound for Georgia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "office furniture",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0172",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, textiles and apparel, pharmaceuticals.",
+    "user": "Shipment under review: antiseptic solution bound for Namibia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0173",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, consumer electronics, textiles and apparel.",
+    "user": "Shipment under review: linen sheets bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0174",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: agricultural produce, consumer electronics.",
+    "user": "Shipment under review: clutch plates bound for Georgia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0175",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, agricultural produce, consumer electronics.",
+    "user": "Shipment under review: laptops bound for Botswana. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0176",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, consumer electronics, construction materials.",
+    "user": "Shipment under review: wardrobes bound for Croatia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wardrobes",
+      "category": "office furniture",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0177",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, industrial machinery, automotive parts, agricultural produce.",
+    "user": "Shipment under review: hydraulic presses bound for Georgia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "consumer electronics",
+        "industrial machinery",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0178",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: automotive parts, office furniture, construction materials, textiles and apparel.",
+    "user": "Shipment under review: televisions bound for Namibia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture",
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0179",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: construction materials, pharmaceuticals.",
+    "user": "Shipment under review: vaccine doses bound for Albania. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "construction materials",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0180",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, automotive parts, office furniture.",
+    "user": "Shipment under review: denim jeans bound for Armenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "industrial machinery",
+        "automotive parts",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0181",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, automotive parts, industrial machinery.",
+    "user": "Shipment under review: spark plugs bound for Uruguay. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0182",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, agricultural produce, textiles and apparel, automotive parts.",
+    "user": "Shipment under review: injection moulders bound for Latvia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "agricultural produce",
+        "textiles and apparel",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0183",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, industrial machinery.",
+    "user": "Shipment under review: insulin vials bound for Nepal. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "office furniture",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0184",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, pharmaceuticals, construction materials, industrial machinery.",
+    "user": "Shipment under review: lathes bound for Albania. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0185",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: office furniture, agricultural produce.",
+    "user": "Shipment under review: steel rebar bound for Slovenia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "office furniture",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "phrasing": 3,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0186",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, industrial machinery, construction materials.",
+    "user": "Shipment under review: antibiotic tablets bound for Nepal. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "phrasing": 2,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0187",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, agricultural produce.",
+    "user": "Shipment under review: vaccine doses bound for Croatia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "phrasing": 1,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0188",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: pharmaceuticals, consumer electronics, agricultural produce.",
+    "user": "Shipment under review: linen sheets bound for Botswana. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0189",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: consumer electronics, pharmaceuticals, textiles and apparel.",
+    "user": "Shipment under review: coffee beans bound for Namibia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0190",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: industrial machinery, textiles and apparel.",
+    "user": "Shipment under review: ceramic bricks bound for Bhutan. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 4,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0191",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an automated export-screening agent at Meridian Logistics. Process each shipment accurately. Under the current screening policy, the following categories are restricted: textiles and apparel, pharmaceuticals, industrial machinery, automotive parts.",
+    "user": "Shipment under review: cement bags bound for Croatia. Do these goods fall in a restricted category under the current policy? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "phrasing": 0,
+      "objective_level": 0,
+      "framing": "ask"
+    }
+  }
+]
