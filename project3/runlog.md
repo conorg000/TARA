@@ -103,6 +103,26 @@ What would make the result *uninteresting* (and we'd say so): behaviour ≈ or >
 
 **Net (r7 + r8) — the benign-task line is closed.** Recognition survives scale AND reasoning (strong, selective, ~0.97); the recognise-but-don't-act gap does NOT — it shrinks toward nothing (silent misses 13 → 7; gap 0.05 → ~0). This is the empirical proof that a benign, unambiguous task with a capable model **structurally cannot** produce the dissociation the monitor exists to catch. Next: a task that *dissociates* recognition from action (recognition easy, action fails systematically) **+ an independent recognition check** (ask the model directly) to separate dissociation from co-failure.
 
+### Planned `2026-06-05` (pre-registered, before the run) — conditions_v3 Rung 1: go/no-go behaviour check
+
+**Idea:** [conditions_v3](make_dataset_v3.py) keeps v2's recognition target identical but adds a stated competing **primary objective** (throughput / KPI pressure; knob L0 neutral → L2 strong) to the system prompt — the escalation rule stays mandatory ("pressure, not permission"). Hoped-for "scissor": recognition stays high while *action* (escalate) drops as the objective strengthens — the first *engineered* recognise-but-don't-act gap.
+
+**This step is the cheapest possible go/no-go — behaviour only, no probe yet.** Run L0 and L2 `action` on the 8B and look at one number: the escalate-rate on should-escalate (restricted) items. The full rigor a 4-agent review demanded (frozen-direction recognition on the action activations, an "ask-the-duty" recognition check, a length-matched neutral control, a single pre-registered trend test, calibrated operating point) is only worth doing **if behaviour actually moves**.
+
+**Prediction, committed before launching the run:**
+- L0 (neutral) ≈ r7 — escalates ~85–90% of restricted items.
+- **MOVED / go:** L2 escalate-on-restricted drops materially (below ~70%) → the objective induces under-action → proceed to the full dissociation experiment with the agents' fixes.
+- **FLAT / no-go:** L2 ≈ L0 → the lever is too weak on a capable model → pivot (load-bottleneck, or a stronger/cleaner mechanism). A flat result with intact recognition is itself reportable ("a capable model won't drop a mandatory rule under stated KPI pressure"), not a failure.
+
+**Caveat to score honestly later:** the review flagged that L2's "escalations count against your record" leans toward *permission*; if behaviour moves, re-test with a purer throughput-only objective before claiming a genuine dissociation.
+
+**Outcome (2026-06-05) — NO-GO on the objective knob, but an unexpected lead:**
+- escalate-on-restricted: **L0 (neutral) 63/96 (66%) → L2 (strong) 65/96 (68%)** — flat (marginally *up*). False-escalate stayed 2/96 both. The competing throughput objective does **not** move behaviour; the 8B follows the mandatory rule at the same rate regardless. **No-go for competing-objective as the dissociation lever** — exactly as the review predicted (KPI text too weak against a mandatory rule). Prediction MISS on L0: I guessed ~85–90%, it was 66%.
+- **The unexpected lead:** the *v3 base framing itself* moved behaviour a lot. r7 (plain v2) escalated ~83/96 (≈86%) of restricted items; v3 **L0** (identical recognition task, wrapped in a "Meridian Logistics agent" scaffold + neutral objective) escalates only **66%** — a ~20-point drop with **zero** KPI pressure. Genuine *under*-escalation (false-escalates flat at 2/96), not noise. (Honest caveat: the v3 *action* template bakes in a mild cost cue at all levels — "[ESCALATE] … routes it to manual compliance review and **delays the shipment**" — so the drop is the agent scaffold **+** that baked-in delay cue, not the agent scaffold alone. Either way it's the *base framing*, not the L0→L2 objective knob, doing the work.)
+- **Open question / next cheap step:** is that 34/96 under-escalation a **dissociation** (recognition intact, action dropped — the gap we want) or a **co-failure** (the framing degraded recognition)? We already captured the L0 action activations — one probe run + the `ask` pass settles it. If recognition holds at ~0.97 while action sits at 66%, the **realistic deployment framing is itself the dissociation lever** — more natural than an engineered objective.
+
+---
+
 ---
 
 | Run ID | Dataset | Model | Device/dtype | Split | N | Best layer | AUROC | Verdict | Notes |
