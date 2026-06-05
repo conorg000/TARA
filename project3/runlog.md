@@ -96,10 +96,18 @@ What would make the result *uninteresting* (and we'd say so): behaviour ≈ or >
 
 **Read:** recognition survives scale *strongly*; the recognise-but-don't-act *gap* largely **closes** at 8B (0.27 → 0.05) — the dramatic 0.6B dissociation was substantially a proceed-default / small-model artefact. The monitor keeps residual value (9/13 of the rare silent misses) but the phenomenon is now ~7% of cases, not dominant. Trending toward the pre-registered "v2 is easy for an 8B," which motivates a harder rung. Full table + decomposition in the r7 detail block below.
 
+**Outcome (r8, 2026-06-05) — the "gap closes" branch, as pre-committed:**
+5. **HIT.** behaviour **0.938** > r7's 0.896 — reasoning *improves* behaviour (the 8B acts on what it recognises even more when it thinks).
+6. **HIT.** recognition unchanged by the thinking toggle: diff-of-means **0.971 @ L27** vs r7's 0.968, within ±0.05. Read at the pre-reasoning token, so on/off barely matters.
+7. **"Gap closes" outcome.** Recognition AUROC (0.987 / dm 0.97) still ≥ behaviour 0.938, and the monitor caught **7/7** of the should-escalate silent misses — but there are now only **7** (wide CI). Honest nuance that complicates the framing: at a 0.5 threshold the probe's *accuracy* (0.922) dips **below** behaviour (0.938) — they make different errors — so the probe isn't a better overall classifier than the reasoning model; its value is narrowly in catching behaviour's specific silent misses. Net: reasoning largely fixes silent omission on this benign task → the monitor matters *less* for reasoning models here. The pre-committed deflating-but-honest read.
+
+**Net (r7 + r8) — the benign-task line is closed.** Recognition survives scale AND reasoning (strong, selective, ~0.97); the recognise-but-don't-act gap does NOT — it shrinks toward nothing (silent misses 13 → 7; gap 0.05 → ~0). This is the empirical proof that a benign, unambiguous task with a capable model **structurally cannot** produce the dissociation the monitor exists to catch. Next: a task that *dissociates* recognition from action (recognition easy, action fails systematically) **+ an independent recognition check** (ask the model directly) to separate dissociation from co-failure.
+
 ---
 
 | Run ID | Dataset | Model | Device/dtype | Split | N | Best layer | AUROC | Verdict | Notes |
 |---|---|---|---|---|---|---|---|---|---|
+| 2026-06-05_r8 | [conditions_v2](datasets.md#conditions_v2json--current) +behaviour | Qwen3-8B *(thinking ON)* | cuda / bf16 | stratified 5-fold | 192 | 24 | **0.987** | GO | **8B scale, thinking ON.** Reasoning *improves* behaviour 0.896→**0.938**; recognition unchanged (diff-of-means 0.971, selectivity 0.42 ≈ r7). Gap closes further: only **7** silent misses, probe catches **7/7** (wide CI). Honest nuance: thresholded probe acc 0.922 < behaviour 0.938 (different errors) — probe isn't a better overall classifier, just catches behaviour's specific misses. Confirms the benign line is exhausted → need a dissociation task. Extracted at af19212, probed locally. |
 | 2026-06-05_r7 | [conditions_v2](datasets.md#conditions_v2json--current) +behaviour | Qwen3-8B | cuda / bf16 | stratified 5-fold | 192 | 28 | **0.993** | GO | **8B scale, thinking OFF.** Recognition survives scale strongly — diff-of-means **0.982 @ L23**, *catches* logreg (~0.99) → explicit axis. Behaviour **0.896** (the 8B does the task), probe **0.948** → recognise-but-don't-act gap shrinks to **0.05** (from 0.6B's 0.27). Monitor payoff **9/13 (0.69)** on the rare silent misses (wide CI). ⚠ Selectivity controls pending — 0.98 is high. Extracted at 05c74de (torch 2.11.0+cu128 / transformers 5.10.2), probed at d972a32. |
 | 2026-05-30_r6 | transfer [v2](datasets.md#conditions_v2json--current)→[v2b](datasets.md#conditions_v2bjson--current) | Qwen3-0.6B | cpu / float32 | train-on-v2 / test-on-v2b | 192→192 | 20 | 0.790 | — | **Cross-taxonomy generalisation (Step 2).** Diff-of-means recognition direction trained only on export goods detects "condition fired" on a disjoint domain (instruments/sports/jewellery…) at **~0.79 (L19–21)** — *no transfer penalty*: matches/exceeds the within-v2b ceiling (~0.72), +0.34 over shuffle (0.45). Recognition direction is domain-general. (logreg-transfer ~0.87 but NOT clean — v2/v2b share phrasing, so logreg's surface reliance carries over; diff-of-means stays the trustworthy metric.) |
 | 2026-05-29_r5 | controls on [conditions_v2](datasets.md#conditions_v2json--current) | Qwen3-0.6B | cpu / float32 | stratified 5-fold | 192 | 18 | — | — | **Probe-validation controls** ([controls.py](controls.py)). Shuffle passes (~0.50 → pipeline honest). BUT logreg reads arbitrary junk at 0.75–0.80 → its 0.892 headline has low selectivity. Trustworthy signal is **diff-of-means 0.684**, which clears the clean controls (dest-alpha 0.52, item-irrelevant membership 0.44). Recognition is real but smaller than claimed; **revises r3/r4 headline down**. |
@@ -109,6 +117,50 @@ What would make the result *uninteresting* (and we'd say so): behaviour ≈ or >
 | 2026-05-29_r1 | [scenarios_v2](datasets.md#scenarios_v2json--superseded) | Qwen3-0.6B | cpu / float32 | leave-one-pair-out | 40 | 14 | 0.978 | GO* | *GO is misleading. A 0.6B model can't do the task behaviourally, so 0.978 = the probe reading **topic**, not recognition. This result motivated building `conditions_v1`. |
 
 The 0.6B rows above were dry-runs to validate the pipeline and dataset design on a laptop (CPU) before the GPU run. Treat their numbers as design diagnostics, not headline findings. r7 (below) is the first real GPU run.
+
+---
+
+## `2026-06-05_r8` — Qwen3-8B, conditions_v2, thinking ON (reasoning comparison)
+
+Extracted on the RTX 3090 at commit af19212 (`extract.sh THINK=1`, 1024-token budget so reasoning completes before the marker); probed locally. Full per-layer table in the committed [results record](activations_conditions_v2_8b_think.results.json); signal region below (logreg OOF | diffmean OOF | logreg split):
+
+```
+layer | logreg | diffmean | split
+  0   | 0.492  |  0.500   | 0.500   (emb — sanity)
+1–17  | ~chance, logreg climbing 0.40→0.84, diffmean ~0.52
+ 18   | 0.931  |  0.693   | 0.921
+ 19   | 0.968  |  0.806   | 0.963
+ 20   | 0.974  |  0.947   | 0.958   ← diffmean snaps up
+ 21   | 0.982  |  0.960   | 0.953
+ 22   | 0.983  |  0.962   | 0.966
+ 23   | 0.987  |  0.972   | 0.963   ← diffmean peak
+ 24   | 0.987  |  0.970   | 0.963   ← logreg best
+ 26   | 0.987  |  0.972   | 0.966
+ 36   | 0.982  |  0.966   | 0.932
+```
+
+Best layer (logreg OOF): **L24, 0.987**. Diff-of-means peak **0.972** (L23/26). Selectivity ([select_layer.py](select_layer.py)): most-selective **L27 diff-of-means 0.971, selectivity 0.418** (item-irrelevant control ~0.37–0.39 at chance, shuffle ~0.50) — clean, ≈ r7.
+
+Recognition vs behaviour @ L24:
+
+```
+                          behav OK   behav WRONG
+   probe OK                 167          10
+   probe WRONG               13           2
+
+behaviour: 94 escalate / 97 proceed / 1 unclear   |  accuracy 0.938  (r7: 0.896)
+probe accuracy @ L24: 0.922
+should-escalate MISSES: 7/96  | probe flagged escalate on 7 (1.00)  <- monitor payoff
+should-proceed FALSE ALARMS: 5/96 | probe said proceed on 3 (0.60)
+```
+
+**Reading:**
+- **Reasoning improves behaviour** (0.896 → 0.938): the 8B acts on what it recognises *more* when it reasons.
+- **Recognition unchanged by the thinking toggle** (diff-of-means 0.971 ≈ r7's 0.968): read at the pre-reasoning token, so on/off barely matters.
+- **The gap closes further.** Only **7** silent misses (r7 had 13); probe catches **7/7** — perfect but tiny-N (wide CI). Honest nuance: thresholded probe accuracy (0.922) dips *below* behaviour (0.938) — they make different errors — so the probe isn't a better overall classifier than the reasoning model; its value is narrowly in catching behaviour's specific silent misses.
+- **Net:** reasoning largely fixes silent omission on this benign task → the monitor matters *less* for reasoning models here. The pre-committed deflating-but-honest outcome.
+
+**Closes the benign-task line (r7 + r8):** recognition survives scale and reasoning (strong, selective, ~0.97); the recognise-but-don't-act gap does not (13 → 7 misses, gap → ~0). Empirical proof that a benign task + capable model can't produce the dissociation the monitor exists to catch. Next: a dissociation task + an independent recognition check.
 
 ---
 
