@@ -1,5 +1,11 @@
 # Running the probe experiment
 
+> **⚠ Partly superseded.** The current workflow is the two-machine split in
+> [LOGISTICS.md](LOGISTICS.md) (extract on GPU, probe on laptop) — trust that for
+> how we run things now. The command examples below predate `conditions_v2`
+> (they reference the old 40-scenario paired data and a grouped default split);
+> kept mainly for the environment-setup notes.
+
 Two steps: a GPU step that dumps activations once, and a CPU step that trains
 probes on them (re-runnable on a laptop). See [README.md](README.md) for what
 the experiment tests and why.

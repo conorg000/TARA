@@ -66,7 +66,9 @@ collaboration.
 - **`make_dataset.py`** — generates datasets into `inputs/`. The design argument for why a dataset isolates recognition lives in its docstring.
 - **`extract_activations.py`** — GPU/CPU step: runs the model over each example, dumps final-token residual-stream activations for every layer to an `.npz`.
 - **`train_probe.py`** — CPU step: trains linear probes per layer, reports pooled out-of-fold AUROC, prints the pre-registered verdict.
-- **`run.sh`** — chains smoke → full extract → probe. `./run.sh <model> <device> <dtype>`.
+- **`extract.sh`** — **the GPU step** (extract-only): smoke → full extract → `.npz` + log, no training. Probing happens on the laptop. See [LOGISTICS.md](LOGISTICS.md).
+- **`run.sh`** — laptop all-in-one (extract + probe in one go); handy for small-model dry-runs.
+- **`LOGISTICS.md`** — operational runbook: the GPU/laptop split, vast.ai basics, and the extract → pull → probe cycle.
 - **`datasets.md`** — registry of datasets (shape, rationale, regenerate command).
 - **`runlog.md`** — history of runs (config + results + interpretation).
 - **`README.md`** — the question, the design, the pre-registered thresholds.
