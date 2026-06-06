@@ -12,3 +12,11 @@ transformers>=4.51
 accelerate>=0.30
 numpy>=1.24
 scikit-learn>=1.3
+
+# Behavioural-gate harness (inspect_gate.py / gate_report.py): runs the model on
+# OpenRouter via Inspect to capture behaviour + the direct-ask cheaply, with no
+# activations (Step-0 gate, Step-1 load sweep). Needs OPENROUTER_API_KEY (read from
+# ../.env). inspect-ai pinned to match ../project. Not needed for the probe steps.
+inspect-ai>=0.3.226,<0.4.0
+openai>=1.0.0
+python-dotenv>=1.0.0

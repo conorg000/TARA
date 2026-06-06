@@ -9,6 +9,37 @@ To add a run: append a row to the table and, if it's interesting, a detail block
 below. Activation `.npz` files are gitignored (regenerable from the model), so
 record the full per-layer table here for any result worth keeping.
 
+---
+
+## 2026-06-06 — Step 0: spaced geometry + behavioural gate (no probe yet)
+
+Plan Step 0 (fix prompt geometry, verify rung zero). New dataset `conditions_v4` (spaced geometry on v2's clean frame; see [datasets.md](datasets.md)). New **OpenRouter + Inspect** behavioural-gate harness in project3 — `inspect_gate.py` (tasks `screening_action`/`screening_ask`), `markers.py`, `gate_report.py` — mirroring `../project/pipeline`. This is *behaviour only* (no activations): used for Step-0's gate and Step-1's load sweep. Config: `openrouter/qwen/qwen3-{8b,32b}`, **no-think** (`/no_think`), temperature 0 (greedy → k=1 is exact). Cells decoded by `gate_report.py` (re-derives markers from saved completions, so logs re-score offline).
+
+**Method lesson (kept on purpose).** First gate run looked like a recognition collapse (ask "accuracy" 0.29, 69/96 UNCLEAR). It was a **parser bug**, not a finding: the bracket-strict scorer counted bare `NO`/`PROCEED` (no `[...]`) as UNCLEAR. Fixed with a bracket-tolerant, word-boundary parser (`markers.classify`); re-scored offline (0 UNCLEAR, completions 4–10 chars). *Always re-derive markers from the saved completion, not a stored bracket-strict label.*
+
+**Stack check.** OpenRouter Qwen3-8B ≈ local HF on the same `v3_obj0` data (action escalate 0.708 vs local 0.656; ask deflated locally by the same bracket bug) → OpenRouter is a valid behavioural proxy for the local extraction stack.
+
+**Geometry is innocent for action.** Adding the inert filler barely moves escalation: 8B 0.854 (unspaced) → 0.833 (spaced); 32B 0.812 → 0.885. So the distance was added without breaking behaviour.
+
+**The 8B no-think recognition quirk (why we left 8B).** On 8B no-think the **direct-ask is a broken recognition instrument**: ask-YES on restricted = **0.50** while action escalates 0.83 of the same items (32 "escalate-but-deny"). Ruled out: not geometry (unspaced ask 0.583), not ask-system framing (aligned ask 0.542). Cause is **reasoning depth** — thinking-ON ask-YES = 0.917 (and still 0.948 NO on negatives). The no-think 8B can't do item→category→membership in one forward pass; escalation fires on a shallower heuristic. **Decision: steer away from thinking mode; move to the real model (32B).** (Thinking used only as a diagnostic thermometer, not adopted.)
+
+**32B no-think rung zero (the accepted base), `conditions_v4` spaced, restricted N=96 — verbatim:**
+```
+-- ACTION --  ESCALATE 85/96=0.885 | non-restricted PROCEED 85/96=0.885
+-- ASK    --  YES      76/96=0.792 | non-restricted NO      90/96=0.938
+-- contingency (ask x action, restricted) --
+  ask-YES / action-ESCALATE  (recognised + acted)      : 71
+  ask-YES / action-PROCEED   (recognised, didn't act)  :  5   <- natural gap
+  ask-NO  / action-ESCALATE  (acted w/o admitting)     : 14   <- residual asymmetry
+  ask-NO  / action-PROCEED   (co-failure)              :  6
+  ask<->action agreement on restricted: 77/96 = 0.802
+```
+Compared with 8B no-think spaced (recognition 0.500, agreement 0.667, gap cell 0, escalate-but-deny 32): the bigger model recovers the instrument (recognition 0.50 → 0.79). Not pristine — 20 restricted items still get a fast NO, and the action>ask "escalate-but-deny" asymmetry shrinks (32 → 14) but doesn't vanish, so a little of it is real, not pure 8B quirk.
+
+**Status.** Step-0 base accepted on **32B no-think**. Geometry validated; rung zero workable (not pristine). Activations **not yet extracted** (32B needs 80GB-class GPU — user will hire a bigger box). Logs in `logs/*screening-{action,ask}*.eval` (gitignored). Next: Step 1 load sweep on 32B via OpenRouter.
+
+---
+
 ## Pre-registered predictions
 
 Written **before** the run, per the pre-registration rule in [CLAUDE.md](CLAUDE.md). Recorded so the

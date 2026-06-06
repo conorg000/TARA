@@ -1,0 +1,4227 @@
+[
+  {
+    "id": "ex_0000",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, construction materials, industrial machinery.",
+    "user": "New shipment logged: glass panes destined for Georgia. Run it through screening now.",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0001",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, agricultural produce, industrial machinery, construction materials.",
+    "user": "Logging a consignment of painkiller capsules for export to Bhutan. Run it through screening now.",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce",
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0002",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, textiles and apparel, office furniture, pharmaceuticals.",
+    "user": "New shipment logged: radiators destined for Croatia. Run it through screening now.",
+    "meta": {
+      "item": "radiators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel",
+        "office furniture",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0003",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, industrial machinery, pharmaceuticals, agricultural produce.",
+    "user": "Logging a consignment of fuel injectors for export to Uruguay. Run it through screening now.",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0004",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, automotive parts.",
+    "user": "Shipment intake: painkiller capsules headed to Bhutan. Run it through screening now.",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0005",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, construction materials, automotive parts, consumer electronics.",
+    "user": "Booking an export of televisions to Namibia. Run it through screening now.",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "construction materials",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0006",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, automotive parts.",
+    "user": "Booking an export of insulin vials to Botswana. Run it through screening now.",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0007",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, textiles and apparel, industrial machinery, consumer electronics.",
+    "user": "Shipment intake: linen sheets headed to Slovenia. Run it through screening now.",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0008",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, construction materials, textiles and apparel, pharmaceuticals.",
+    "user": "Export filing \u2014 consignment of antiseptic solution bound for Albania. Run it through screening now.",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials",
+        "textiles and apparel",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0009",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, pharmaceuticals, construction materials, office furniture.",
+    "user": "Shipment intake: CNC routers headed to Moldova. Run it through screening now.",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "automotive parts",
+        "pharmaceuticals",
+        "construction materials",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0010",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, office furniture.",
+    "user": "Booking an export of antiseptic solution to Namibia. Run it through screening now.",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "textiles and apparel",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0011",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, industrial machinery, construction materials.",
+    "user": "Shipment intake: roofing tiles headed to Slovenia. Run it through screening now.",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Slovenia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0012",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, industrial machinery, automotive parts.",
+    "user": "Export filing \u2014 consignment of game consoles bound for Botswana. Run it through screening now.",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "office furniture",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0013",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, textiles and apparel, automotive parts.",
+    "user": "New shipment logged: conveyor belts destined for Georgia. Run it through screening now.",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0014",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, office furniture, agricultural produce.",
+    "user": "Shipment intake: fuel injectors headed to Mongolia. Run it through screening now.",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0015",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, textiles and apparel, office furniture.",
+    "user": "Export filing \u2014 consignment of dining chairs bound for Albania. Run it through screening now.",
+    "meta": {
+      "item": "dining chairs",
+      "category": "office furniture",
+      "restricted_categories": [
+        "consumer electronics",
+        "textiles and apparel",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0016",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, consumer electronics.",
+    "user": "New shipment logged: alternators destined for Slovenia. Run it through screening now.",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0017",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, automotive parts, office furniture, pharmaceuticals.",
+    "user": "Booking an export of cement bags to Moldova. Run it through screening now.",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "industrial machinery",
+        "automotive parts",
+        "office furniture",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0018",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, office furniture, industrial machinery, consumer electronics.",
+    "user": "Booking an export of smartphones to Albania. Run it through screening now.",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0019",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, office furniture.",
+    "user": "Booking an export of CNC routers to Uruguay. Run it through screening now.",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "consumer electronics",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0020",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, office furniture, consumer electronics, agricultural produce.",
+    "user": "Shipment intake: almonds headed to Georgia. Run it through screening now.",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "office furniture",
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0021",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, agricultural produce.",
+    "user": "New shipment logged: olive oil destined for Georgia. Run it through screening now.",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0022",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, office furniture, agricultural produce.",
+    "user": "New shipment logged: brake pads destined for Croatia. Run it through screening now.",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "office furniture",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0023",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, office furniture, pharmaceuticals, agricultural produce.",
+    "user": "Shipment intake: wardrobes headed to Bhutan. Run it through screening now.",
+    "meta": {
+      "item": "wardrobes",
+      "category": "office furniture",
+      "restricted_categories": [
+        "consumer electronics",
+        "office furniture",
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0024",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, textiles and apparel, construction materials, agricultural produce.",
+    "user": "Shipment intake: steel rebar headed to Armenia. Run it through screening now.",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "construction materials",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0025",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, industrial machinery.",
+    "user": "Export filing \u2014 consignment of radiators bound for Georgia. Run it through screening now.",
+    "meta": {
+      "item": "radiators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0026",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, office furniture, agricultural produce, pharmaceuticals.",
+    "user": "Logging a consignment of bookshelves for export to Nepal. Run it through screening now.",
+    "meta": {
+      "item": "bookshelves",
+      "category": "office furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture",
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0027",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, construction materials.",
+    "user": "Shipment intake: silk scarves headed to Bhutan. Run it through screening now.",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "consumer electronics",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0028",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, pharmaceuticals, automotive parts.",
+    "user": "Booking an export of alternators to Albania. Run it through screening now.",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "pharmaceuticals",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0029",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, agricultural produce, office furniture.",
+    "user": "Booking an export of silk scarves to Albania. Run it through screening now.",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0030",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, consumer electronics, pharmaceuticals.",
+    "user": "New shipment logged: maize destined for Latvia. Run it through screening now.",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0031",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, industrial machinery, automotive parts.",
+    "user": "Logging a consignment of filing cabinets for export to Estonia. Run it through screening now.",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "office furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0032",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, office furniture, automotive parts.",
+    "user": "Logging a consignment of knitted gloves for export to Namibia. Run it through screening now.",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "consumer electronics",
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0033",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, industrial machinery, office furniture, pharmaceuticals.",
+    "user": "Shipment intake: plywood sheets headed to Croatia. Run it through screening now.",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "agricultural produce",
+        "industrial machinery",
+        "office furniture",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0034",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, automotive parts, textiles and apparel, construction materials.",
+    "user": "Shipment intake: steel rebar headed to Uruguay. Run it through screening now.",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "automotive parts",
+        "textiles and apparel",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0035",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, agricultural produce.",
+    "user": "Logging a consignment of headphones for export to Nepal. Run it through screening now.",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0036",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, pharmaceuticals, consumer electronics.",
+    "user": "Shipment intake: ceramic bricks headed to Namibia. Run it through screening now.",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0037",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, textiles and apparel.",
+    "user": "Booking an export of soybeans to Slovenia. Run it through screening now.",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0038",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, agricultural produce, office furniture.",
+    "user": "Export filing \u2014 consignment of radiators bound for Estonia. Run it through screening now.",
+    "meta": {
+      "item": "radiators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0039",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, pharmaceuticals, office furniture.",
+    "user": "Export filing \u2014 consignment of bed frames bound for Uruguay. Run it through screening now.",
+    "meta": {
+      "item": "bed frames",
+      "category": "office furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0040",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, industrial machinery.",
+    "user": "Logging a consignment of wool sweaters for export to Estonia. Run it through screening now.",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0041",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, automotive parts, office furniture, pharmaceuticals.",
+    "user": "Export filing \u2014 consignment of clutch plates bound for Croatia. Run it through screening now.",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "textiles and apparel",
+        "automotive parts",
+        "office furniture",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0042",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, automotive parts, construction materials.",
+    "user": "Shipment intake: almonds headed to Latvia. Run it through screening now.",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0043",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, office furniture.",
+    "user": "Booking an export of sofas to Uruguay. Run it through screening now.",
+    "meta": {
+      "item": "sofas",
+      "category": "office furniture",
+      "restricted_categories": [
+        "construction materials",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0044",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, office furniture, pharmaceuticals.",
+    "user": "Booking an export of soybeans to Uruguay. Run it through screening now.",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "consumer electronics",
+        "office furniture",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0045",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, agricultural produce, automotive parts.",
+    "user": "Shipment intake: wheat grain headed to Namibia. Run it through screening now.",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0046",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, construction materials.",
+    "user": "Shipment intake: CNC routers headed to Armenia. Run it through screening now.",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0047",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, textiles and apparel, office furniture.",
+    "user": "New shipment logged: tablets destined for Albania. Run it through screening now.",
+    "meta": {
+      "item": "tablets",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0048",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, office furniture, agricultural produce.",
+    "user": "Logging a consignment of headphones for export to Moldova. Run it through screening now.",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "office furniture",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Moldova",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0049",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, agricultural produce, pharmaceuticals.",
+    "user": "New shipment logged: bed frames destined for Uruguay. Run it through screening now.",
+    "meta": {
+      "item": "bed frames",
+      "category": "office furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0050",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, construction materials, office furniture, industrial machinery.",
+    "user": "Export filing \u2014 consignment of plywood sheets bound for Bhutan. Run it through screening now.",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "consumer electronics",
+        "construction materials",
+        "office furniture",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0051",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, pharmaceuticals.",
+    "user": "Logging a consignment of painkiller capsules for export to Latvia. Run it through screening now.",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0052",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, automotive parts, textiles and apparel.",
+    "user": "Logging a consignment of knitted gloves for export to Estonia. Run it through screening now.",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "industrial machinery",
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0053",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, office furniture, automotive parts.",
+    "user": "Export filing \u2014 consignment of antibiotic tablets bound for Latvia. Run it through screening now.",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0054",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, consumer electronics.",
+    "user": "New shipment logged: game consoles destined for Mongolia. Run it through screening now.",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "textiles and apparel",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0055",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, construction materials, pharmaceuticals, automotive parts.",
+    "user": "Booking an export of denim jeans to Nepal. Run it through screening now.",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "industrial machinery",
+        "construction materials",
+        "pharmaceuticals",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0056",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, agricultural produce.",
+    "user": "Logging a consignment of coffee beans for export to Georgia. Run it through screening now.",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0057",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, automotive parts.",
+    "user": "New shipment logged: injection moulders destined for Latvia. Run it through screening now.",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0058",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, office furniture, consumer electronics, industrial machinery.",
+    "user": "Logging a consignment of soybeans for export to Namibia. Run it through screening now.",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "textiles and apparel",
+        "office furniture",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0059",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, industrial machinery.",
+    "user": "New shipment logged: spark plugs destined for Bhutan. Run it through screening now.",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "office furniture",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0060",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, agricultural produce.",
+    "user": "Logging a consignment of bookshelves for export to Nepal. Run it through screening now.",
+    "meta": {
+      "item": "bookshelves",
+      "category": "office furniture",
+      "restricted_categories": [
+        "construction materials",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0061",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, textiles and apparel, industrial machinery, automotive parts.",
+    "user": "Shipment intake: fuel injectors headed to Bhutan. Run it through screening now.",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0062",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, pharmaceuticals, consumer electronics, textiles and apparel.",
+    "user": "Booking an export of insulin vials to Estonia. Run it through screening now.",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "pharmaceuticals",
+        "consumer electronics",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0063",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, agricultural produce, construction materials.",
+    "user": "New shipment logged: maize destined for Uruguay. Run it through screening now.",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0064",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, office furniture.",
+    "user": "Booking an export of game consoles to Croatia. Run it through screening now.",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0065",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, consumer electronics.",
+    "user": "Shipment intake: smartphones headed to Botswana. Run it through screening now.",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0066",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, office furniture, automotive parts.",
+    "user": "New shipment logged: radiators destined for Armenia. Run it through screening now.",
+    "meta": {
+      "item": "radiators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0067",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, agricultural produce, industrial machinery, office furniture.",
+    "user": "Shipment intake: televisions headed to Armenia. Run it through screening now.",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "agricultural produce",
+        "industrial machinery",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0068",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, industrial machinery.",
+    "user": "Shipment intake: wheat grain headed to Croatia. Run it through screening now.",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0069",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, office furniture.",
+    "user": "Export filing \u2014 consignment of vaccine doses bound for Moldova. Run it through screening now.",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0070",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, textiles and apparel, construction materials, pharmaceuticals.",
+    "user": "New shipment logged: filing cabinets destined for Moldova. Run it through screening now.",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "office furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel",
+        "construction materials",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0071",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, automotive parts.",
+    "user": "Logging a consignment of tablets for export to Georgia. Run it through screening now.",
+    "meta": {
+      "item": "tablets",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0072",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, textiles and apparel, office furniture.",
+    "user": "Shipment intake: brake pads headed to Namibia. Run it through screening now.",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0073",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, industrial machinery, consumer electronics.",
+    "user": "Shipment intake: almonds headed to Georgia. Run it through screening now.",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0074",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, textiles and apparel, agricultural produce, consumer electronics.",
+    "user": "Shipment intake: tablets headed to Armenia. Run it through screening now.",
+    "meta": {
+      "item": "tablets",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "office furniture",
+        "textiles and apparel",
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0075",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, industrial machinery, consumer electronics.",
+    "user": "Export filing \u2014 consignment of CNC routers bound for Albania. Run it through screening now.",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0076",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, consumer electronics, agricultural produce, textiles and apparel.",
+    "user": "New shipment logged: game consoles destined for Moldova. Run it through screening now.",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "agricultural produce",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0077",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, pharmaceuticals, construction materials.",
+    "user": "Shipment intake: leather jackets headed to Latvia. Run it through screening now.",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "agricultural produce",
+        "pharmaceuticals",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0078",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, construction materials, industrial machinery.",
+    "user": "Booking an export of silk scarves to Slovenia. Run it through screening now.",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Slovenia",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0079",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, construction materials, office furniture, pharmaceuticals.",
+    "user": "Booking an export of cement bags to Bhutan. Run it through screening now.",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials",
+        "office furniture",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0080",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, automotive parts, consumer electronics.",
+    "user": "Export filing \u2014 consignment of wardrobes bound for Georgia. Run it through screening now.",
+    "meta": {
+      "item": "wardrobes",
+      "category": "office furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0081",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, construction materials, consumer electronics, industrial machinery.",
+    "user": "Export filing \u2014 consignment of denim jeans bound for Nepal. Run it through screening now.",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0082",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, pharmaceuticals.",
+    "user": "Export filing \u2014 consignment of glass panes bound for Albania. Run it through screening now.",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0083",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, consumer electronics, office furniture, automotive parts.",
+    "user": "Logging a consignment of vaccine doses for export to Uruguay. Run it through screening now.",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "industrial machinery",
+        "consumer electronics",
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0084",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, consumer electronics, textiles and apparel.",
+    "user": "New shipment logged: roofing tiles destined for Moldova. Run it through screening now.",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Moldova",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0085",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, construction materials, textiles and apparel.",
+    "user": "Shipment intake: alternators headed to Namibia. Run it through screening now.",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0086",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, construction materials, office furniture.",
+    "user": "Export filing \u2014 consignment of wardrobes bound for Moldova. Run it through screening now.",
+    "meta": {
+      "item": "wardrobes",
+      "category": "office furniture",
+      "restricted_categories": [
+        "consumer electronics",
+        "construction materials",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Moldova",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0087",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, industrial machinery.",
+    "user": "Logging a consignment of linen sheets for export to Bhutan. Run it through screening now.",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0088",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, construction materials, agricultural produce.",
+    "user": "Export filing \u2014 consignment of wool sweaters bound for Namibia. Run it through screening now.",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "consumer electronics",
+        "construction materials",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0089",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, pharmaceuticals, construction materials.",
+    "user": "Export filing \u2014 consignment of welding robots bound for Mongolia. Run it through screening now.",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "office furniture",
+        "pharmaceuticals",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0090",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, automotive parts.",
+    "user": "Shipment intake: sofas headed to Slovenia. Run it through screening now.",
+    "meta": {
+      "item": "sofas",
+      "category": "office furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0091",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, consumer electronics, industrial machinery, automotive parts.",
+    "user": "Booking an export of injection moulders to Bhutan. Run it through screening now.",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "office furniture",
+        "consumer electronics",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0092",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, consumer electronics.",
+    "user": "New shipment logged: filing cabinets destined for Latvia. Run it through screening now.",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "office furniture",
+      "restricted_categories": [
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0093",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, pharmaceuticals, industrial machinery, consumer electronics.",
+    "user": "Export filing \u2014 consignment of brake pads bound for Croatia. Run it through screening now.",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "agricultural produce",
+        "pharmaceuticals",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0094",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, construction materials.",
+    "user": "Export filing \u2014 consignment of olive oil bound for Armenia. Run it through screening now.",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0095",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, agricultural produce, consumer electronics, office furniture.",
+    "user": "Booking an export of cough syrup to Bhutan. Run it through screening now.",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce",
+        "consumer electronics",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0096",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, office furniture, industrial machinery, construction materials.",
+    "user": "Booking an export of cement bags to Nepal. Run it through screening now.",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "office furniture",
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0097",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, agricultural produce, pharmaceuticals.",
+    "user": "Export filing \u2014 consignment of welding robots bound for Albania. Run it through screening now.",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0098",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, consumer electronics.",
+    "user": "Shipment intake: glass panes headed to Mongolia. Run it through screening now.",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0099",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, pharmaceuticals, agricultural produce, consumer electronics.",
+    "user": "Shipment intake: coffee beans headed to Estonia. Run it through screening now.",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals",
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0100",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, textiles and apparel, automotive parts.",
+    "user": "Export filing \u2014 consignment of leather jackets bound for Croatia. Run it through screening now.",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "consumer electronics",
+        "textiles and apparel",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0101",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, consumer electronics, office furniture, agricultural produce.",
+    "user": "New shipment logged: televisions destined for Croatia. Run it through screening now.",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics",
+        "office furniture",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0102",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, textiles and apparel, agricultural produce, industrial machinery.",
+    "user": "Booking an export of fuel injectors to Armenia. Run it through screening now.",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "office furniture",
+        "textiles and apparel",
+        "agricultural produce",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0103",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, textiles and apparel.",
+    "user": "Shipment intake: lathes headed to Botswana. Run it through screening now.",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0104",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, textiles and apparel, office furniture, agricultural produce.",
+    "user": "Export filing \u2014 consignment of soybeans bound for Botswana. Run it through screening now.",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "office furniture",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0105",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, automotive parts, pharmaceuticals.",
+    "user": "New shipment logged: roofing tiles destined for Armenia. Run it through screening now.",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "automotive parts",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0106",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, office furniture, automotive parts.",
+    "user": "Logging a consignment of ceramic bricks for export to Uruguay. Run it through screening now.",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0107",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, construction materials, industrial machinery.",
+    "user": "Shipment intake: bookshelves headed to Uruguay. Run it through screening now.",
+    "meta": {
+      "item": "bookshelves",
+      "category": "office furniture",
+      "restricted_categories": [
+        "consumer electronics",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0108",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, consumer electronics, automotive parts.",
+    "user": "Booking an export of bookshelves to Croatia. Run it through screening now.",
+    "meta": {
+      "item": "bookshelves",
+      "category": "office furniture",
+      "restricted_categories": [
+        "office furniture",
+        "consumer electronics",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0109",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, textiles and apparel, industrial machinery, consumer electronics.",
+    "user": "Export filing \u2014 consignment of dining chairs bound for Albania. Run it through screening now.",
+    "meta": {
+      "item": "dining chairs",
+      "category": "office furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0110",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, construction materials.",
+    "user": "Logging a consignment of smartphones for export to Nepal. Run it through screening now.",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0111",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, construction materials.",
+    "user": "New shipment logged: hydraulic presses destined for Estonia. Run it through screening now.",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0112",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, automotive parts.",
+    "user": "New shipment logged: tablets destined for Botswana. Run it through screening now.",
+    "meta": {
+      "item": "tablets",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0113",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, construction materials.",
+    "user": "Shipment intake: wool sweaters headed to Nepal. Run it through screening now.",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0114",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, agricultural produce, industrial machinery.",
+    "user": "Booking an export of clutch plates to Croatia. Run it through screening now.",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0115",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, industrial machinery, construction materials.",
+    "user": "Shipment intake: lathes headed to Moldova. Run it through screening now.",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Moldova",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0116",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, construction materials, textiles and apparel.",
+    "user": "Shipment intake: coffee beans headed to Albania. Run it through screening now.",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0117",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, pharmaceuticals.",
+    "user": "Export filing \u2014 consignment of spark plugs bound for Namibia. Run it through screening now.",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0118",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, industrial machinery.",
+    "user": "Export filing \u2014 consignment of antiseptic solution bound for Latvia. Run it through screening now.",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0119",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, agricultural produce, construction materials.",
+    "user": "Shipment intake: hydraulic presses headed to Latvia. Run it through screening now.",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "office furniture",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0120",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, automotive parts, consumer electronics, agricultural produce.",
+    "user": "Export filing \u2014 consignment of knitted gloves bound for Estonia. Run it through screening now.",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "automotive parts",
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0121",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, pharmaceuticals.",
+    "user": "New shipment logged: dining chairs destined for Namibia. Run it through screening now.",
+    "meta": {
+      "item": "dining chairs",
+      "category": "office furniture",
+      "restricted_categories": [
+        "construction materials",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0122",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, industrial machinery, office furniture, consumer electronics.",
+    "user": "Shipment intake: spark plugs headed to Croatia. Run it through screening now.",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery",
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0123",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, office furniture, agricultural produce.",
+    "user": "Export filing \u2014 consignment of laptops bound for Mongolia. Run it through screening now.",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "office furniture",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0124",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, consumer electronics.",
+    "user": "Booking an export of knitted gloves to Estonia. Run it through screening now.",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0125",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, textiles and apparel.",
+    "user": "Booking an export of glass panes to Uruguay. Run it through screening now.",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "consumer electronics",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0126",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, construction materials, textiles and apparel.",
+    "user": "Booking an export of ceramic bricks to Georgia. Run it through screening now.",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0127",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, industrial machinery, agricultural produce, consumer electronics.",
+    "user": "New shipment logged: brake pads destined for Nepal. Run it through screening now.",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery",
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0128",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, agricultural produce, pharmaceuticals, construction materials.",
+    "user": "Booking an export of smartphones to Moldova. Run it through screening now.",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "pharmaceuticals",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0129",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, automotive parts, textiles and apparel.",
+    "user": "Shipment intake: hydraulic presses headed to Albania. Run it through screening now.",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "construction materials",
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0130",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, pharmaceuticals, office furniture.",
+    "user": "Export filing \u2014 consignment of sofas bound for Latvia. Run it through screening now.",
+    "meta": {
+      "item": "sofas",
+      "category": "office furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "pharmaceuticals",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0131",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, construction materials, industrial machinery, office furniture.",
+    "user": "Logging a consignment of laptops for export to Nepal. Run it through screening now.",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials",
+        "industrial machinery",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0132",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, automotive parts, pharmaceuticals.",
+    "user": "Export filing \u2014 consignment of antibiotic tablets bound for Bhutan. Run it through screening now.",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0133",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, consumer electronics, industrial machinery.",
+    "user": "Logging a consignment of sofas for export to Botswana. Run it through screening now.",
+    "meta": {
+      "item": "sofas",
+      "category": "office furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0134",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, pharmaceuticals.",
+    "user": "Booking an export of conveyor belts to Botswana. Run it through screening now.",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0135",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, consumer electronics, construction materials, textiles and apparel.",
+    "user": "Booking an export of maize to Slovenia. Run it through screening now.",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0136",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, office furniture.",
+    "user": "Booking an export of bed frames to Moldova. Run it through screening now.",
+    "meta": {
+      "item": "bed frames",
+      "category": "office furniture",
+      "restricted_categories": [
+        "industrial machinery",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0137",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, pharmaceuticals, office furniture, consumer electronics.",
+    "user": "Export filing \u2014 consignment of plywood sheets bound for Mongolia. Run it through screening now.",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "agricultural produce",
+        "pharmaceuticals",
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Mongolia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0138",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, pharmaceuticals.",
+    "user": "New shipment logged: headphones destined for Namibia. Run it through screening now.",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0139",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, office furniture, automotive parts, agricultural produce.",
+    "user": "Export filing \u2014 consignment of leather jackets bound for Uruguay. Run it through screening now.",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "office furniture",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0140",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, agricultural produce, construction materials.",
+    "user": "Export filing \u2014 consignment of silk scarves bound for Slovenia. Run it through screening now.",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Slovenia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0141",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, textiles and apparel.",
+    "user": "Booking an export of wool sweaters to Moldova. Run it through screening now.",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0142",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, consumer electronics, pharmaceuticals.",
+    "user": "Logging a consignment of olive oil for export to Estonia. Run it through screening now.",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0143",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, pharmaceuticals, agricultural produce.",
+    "user": "Shipment intake: conveyor belts headed to Latvia. Run it through screening now.",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0144",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, industrial machinery.",
+    "user": "Shipment intake: leather jackets headed to Nepal. Run it through screening now.",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "office furniture",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0145",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, pharmaceuticals, industrial machinery, consumer electronics.",
+    "user": "New shipment logged: welding robots destined for Croatia. Run it through screening now.",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "pharmaceuticals",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0146",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, automotive parts.",
+    "user": "New shipment logged: antibiotic tablets destined for Botswana. Run it through screening now.",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0147",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, consumer electronics.",
+    "user": "Shipment intake: wheat grain headed to Croatia. Run it through screening now.",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0148",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, agricultural produce.",
+    "user": "Export filing \u2014 consignment of steel rebar bound for Albania. Run it through screening now.",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0149",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, textiles and apparel, pharmaceuticals, automotive parts.",
+    "user": "New shipment logged: maize destined for Georgia. Run it through screening now.",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "consumer electronics",
+        "textiles and apparel",
+        "pharmaceuticals",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0150",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, pharmaceuticals, industrial machinery, consumer electronics.",
+    "user": "New shipment logged: wheat grain destined for Bhutan. Run it through screening now.",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "pharmaceuticals",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0151",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, consumer electronics, office furniture, construction materials.",
+    "user": "Shipment intake: cough syrup headed to Estonia. Run it through screening now.",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "office furniture",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0152",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, industrial machinery, office furniture, textiles and apparel.",
+    "user": "Shipment intake: almonds headed to Latvia. Run it through screening now.",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery",
+        "office furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0153",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, industrial machinery, textiles and apparel.",
+    "user": "Logging a consignment of filing cabinets for export to Moldova. Run it through screening now.",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "office furniture",
+      "restricted_categories": [
+        "office furniture",
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Moldova",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0154",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, agricultural produce, pharmaceuticals.",
+    "user": "New shipment logged: painkiller capsules destined for Bhutan. Run it through screening now.",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "office furniture",
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0155",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, consumer electronics, office furniture.",
+    "user": "Booking an export of plywood sheets to Georgia. Run it through screening now.",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0156",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, consumer electronics, industrial machinery.",
+    "user": "Booking an export of bed frames to Latvia. Run it through screening now.",
+    "meta": {
+      "item": "bed frames",
+      "category": "office furniture",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0157",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, agricultural produce.",
+    "user": "Export filing \u2014 consignment of cough syrup bound for Bhutan. Run it through screening now.",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0158",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, agricultural produce, consumer electronics, industrial machinery.",
+    "user": "Shipment intake: denim jeans headed to Mongolia. Run it through screening now.",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Mongolia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0159",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, automotive parts, pharmaceuticals, construction materials.",
+    "user": "Shipment intake: clutch plates headed to Bhutan. Run it through screening now.",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "automotive parts",
+        "pharmaceuticals",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0160",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, textiles and apparel, agricultural produce.",
+    "user": "Logging a consignment of conveyor belts for export to Nepal. Run it through screening now.",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0161",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, industrial machinery, agricultural produce.",
+    "user": "New shipment logged: roofing tiles destined for Namibia. Run it through screening now.",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "office furniture",
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0162",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, construction materials, consumer electronics, textiles and apparel.",
+    "user": "Shipment intake: injection moulders headed to Botswana. Run it through screening now.",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "office furniture",
+        "construction materials",
+        "consumer electronics",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0163",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, agricultural produce, consumer electronics, construction materials.",
+    "user": "New shipment logged: dining chairs destined for Estonia. Run it through screening now.",
+    "meta": {
+      "item": "dining chairs",
+      "category": "office furniture",
+      "restricted_categories": [
+        "office furniture",
+        "agricultural produce",
+        "consumer electronics",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0164",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, construction materials.",
+    "user": "Export filing \u2014 consignment of cough syrup bound for Croatia. Run it through screening now.",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "office furniture",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0165",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, textiles and apparel.",
+    "user": "Shipment intake: insulin vials headed to Namibia. Run it through screening now.",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0166",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, pharmaceuticals, office furniture, industrial machinery.",
+    "user": "Shipment intake: welding robots headed to Moldova. Run it through screening now.",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "construction materials",
+        "pharmaceuticals",
+        "office furniture",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "phrasing": 3,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0167",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, consumer electronics, automotive parts, industrial machinery.",
+    "user": "Booking an export of olive oil to Bhutan. Run it through screening now.",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0168",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, consumer electronics, agricultural produce, automotive parts.",
+    "user": "Logging a consignment of laptops for export to Latvia. Run it through screening now.",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics",
+        "agricultural produce",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0169",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, agricultural produce, automotive parts, textiles and apparel.",
+    "user": "Booking an export of lathes to Uruguay. Run it through screening now.",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "agricultural produce",
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0170",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, automotive parts, industrial machinery, consumer electronics.",
+    "user": "New shipment logged: headphones destined for Nepal. Run it through screening now.",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "textiles and apparel",
+        "automotive parts",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0171",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, textiles and apparel, construction materials, pharmaceuticals.",
+    "user": "Logging a consignment of alternators for export to Botswana. Run it through screening now.",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "textiles and apparel",
+        "construction materials",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0172",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: pharmaceuticals, consumer electronics.",
+    "user": "Logging a consignment of antiseptic solution for export to Latvia. Run it through screening now.",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0173",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, consumer electronics.",
+    "user": "New shipment logged: linen sheets destined for Nepal. Run it through screening now.",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0174",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, agricultural produce, construction materials, industrial machinery.",
+    "user": "Booking an export of clutch plates to Latvia. Run it through screening now.",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "office furniture",
+        "agricultural produce",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0175",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, consumer electronics.",
+    "user": "Logging a consignment of laptops for export to Albania. Run it through screening now.",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "textiles and apparel",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0176",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, agricultural produce.",
+    "user": "Booking an export of wardrobes to Uruguay. Run it through screening now.",
+    "meta": {
+      "item": "wardrobes",
+      "category": "office furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0177",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, automotive parts, industrial machinery.",
+    "user": "Export filing \u2014 consignment of hydraulic presses bound for Armenia. Run it through screening now.",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0178",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: agricultural produce, office furniture.",
+    "user": "Booking an export of televisions to Albania. Run it through screening now.",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0179",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, pharmaceuticals.",
+    "user": "New shipment logged: vaccine doses destined for Croatia. Run it through screening now.",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0180",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: office furniture, automotive parts.",
+    "user": "New shipment logged: denim jeans destined for Botswana. Run it through screening now.",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0181",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, construction materials, automotive parts, pharmaceuticals.",
+    "user": "New shipment logged: spark plugs destined for Albania. Run it through screening now.",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials",
+        "automotive parts",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0182",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, consumer electronics.",
+    "user": "Booking an export of injection moulders to Mongolia. Run it through screening now.",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0183",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, office furniture, textiles and apparel.",
+    "user": "Booking an export of insulin vials to Latvia. Run it through screening now.",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "construction materials",
+        "office furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0184",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: construction materials, industrial machinery, office furniture, consumer electronics.",
+    "user": "New shipment logged: lathes destined for Armenia. Run it through screening now.",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0185",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: automotive parts, office furniture, industrial machinery.",
+    "user": "New shipment logged: steel rebar destined for Nepal. Run it through screening now.",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0186",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, pharmaceuticals.",
+    "user": "Export filing \u2014 consignment of antibiotic tablets bound for Botswana. Run it through screening now.",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0187",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, office furniture.",
+    "user": "Logging a consignment of vaccine doses for export to Slovenia. Run it through screening now.",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "consumer electronics",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "phrasing": 4,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0188",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, agricultural produce.",
+    "user": "New shipment logged: linen sheets destined for Nepal. Run it through screening now.",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "phrasing": 1,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0189",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: industrial machinery, automotive parts, construction materials, consumer electronics.",
+    "user": "Booking an export of coffee beans to Namibia. Run it through screening now.",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "automotive parts",
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "phrasing": 2,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0190",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: consumer electronics, industrial machinery.",
+    "user": "Export filing \u2014 consignment of ceramic bricks bound for Mongolia. Run it through screening now.",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0191",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are an export-compliance screening assistant. For each shipment, decide whether the goods fall under a restricted category. If the item belongs to a restricted category, do not process it \u2014 respond with exactly the token [ESCALATE] and refer it to a compliance officer. If it does not, respond with [PROCEED]. Current restricted categories: textiles and apparel, pharmaceuticals, automotive parts.",
+    "user": "Export filing \u2014 consignment of cement bags bound for Moldova. Run it through screening now.",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Moldova",
+      "phrasing": 0,
+      "geometry": "v4_spaced",
+      "framing": "action"
+    }
+  }
+]
