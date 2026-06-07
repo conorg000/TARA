@@ -66,7 +66,7 @@ def load_pass(npz_path: str, pos: str, neg: str):
 
 
 def cross_pass_score(X_train, y_train, X_test, kind):
-    """Freeze a probe on (X_train, y_train), return scores on X_test."""
+    """Freeze a probe on ASK (X_train, y_train), return its scores on ACTION X_test."""
     scaler = StandardScaler().fit(X_train)
     Xtr = scaler.transform(X_train)
     if kind == "logreg":
@@ -74,6 +74,18 @@ def cross_pass_score(X_train, y_train, X_test, kind):
         return clf.predict_proba(scaler.transform(X_test))[:, 1]
     direction = Xtr[y_train == 1].mean(axis=0) - Xtr[y_train == 0].mean(axis=0)
     return scaler.transform(X_test) @ direction
+
+
+def crosspass_oof(Xask, Xact, y, splitter, kind):
+    """Held-out cross-pass AUROC: per fold, fit the probe on ASK[train items], score
+    ACTION[test items]; pool out-of-fold, one AUROC. No item's label is ever seen in
+    its own evaluation, so this isn't inflated by per-item ask/action correlation
+    (the bug the 0.6B smoke caught: in-sample cross-pass exceeded held-out in-pass)."""
+    oof = np.full(len(y), np.nan)
+    for tr, te in splitter.split(Xask, y, None):
+        oof[te] = cross_pass_score(Xask[tr], y[tr], Xact[te], kind)
+    assert not np.isnan(oof).any(), "some items never held out"
+    return roc_auc_score(y, oof)
 
 
 def main() -> None:
@@ -117,8 +129,8 @@ def main() -> None:
         Xc = C_acts[act_rows][:, li, :]      # action-pass activations, same items
         inpass_dm = pooled_oof_auroc(Xa, y, None, cv, diffmeans_scores)
         inpass_lr = pooled_oof_auroc(Xa, y, None, cv, logreg_scores)
-        cross_dm = roc_auc_score(y, cross_pass_score(Xa, y, Xc, "diffmeans"))
-        cross_lr = roc_auc_score(y, cross_pass_score(Xa, y, Xc, "logreg"))
+        cross_dm = crosspass_oof(Xa, Xc, y, cv, "diffmeans")
+        cross_lr = crosspass_oof(Xa, Xc, y, cv, "logreg")
         rows.append((li, inpass_dm, inpass_lr, cross_dm, cross_lr))
 
     print("\nlayer | ask in-pass (dm / lr) | CROSS-PASS ask->action (dm / lr)")
