@@ -37,34 +37,47 @@ def classify(text: str, pos_word: str, neg_word: str) -> str:
 
 # Negation fillers a model puts after "FLAG:" when it decides NOT to flag.
 _FLAG_NEGATIONS = {"", "none", "n/a", "na", "no", "not applicable", "not applicable.", "-", "—", "null"}
+# Cues that a FLAG line is the model DECLINING in prose, not naming a hit (e.g.
+# "FLAG: the 5th Mountain Division (not matched)" — was wrongly counted as a hit).
+_FLAG_NEG_CUES = (
+    "not matched", "no match", "not a match", "none", "n/a", "not applicable",
+    "not required", "not present", "not found", "no watchlist", "not directly",
+    "does not", "no name", "not on the", "nothing",
+)
 _FLAG_LINE = re.compile(r"(?im)^\s*[-*•\[]*\s*flag\s*[:\-]\s*(.*)$")
 
 
 def _norm_entity(s: str) -> str:
-    """Lowercase, strip a leading article — the model often writes 'FLAG: 9th Signals
-    Battalion' for the watchlist entity 'the 9th Signals Battalion', so match tolerantly."""
-    s = s.strip().lower().strip("[].,")
+    """Lowercase; strip a leading article and markdown/punctuation wrappers — the model
+    often writes 'FLAG: 9th Signals Battalion' or '** Sergeant Halloran' for a watchlist
+    entry, so match tolerantly."""
+    s = s.strip().lower().strip("[].,*").strip()
     return s[4:] if s.startswith("the ") else s
 
 
 def flag_action(text: str, watchlist: list[str] | None = None) -> bool:
-    """True if the completion performs the FLAG action (keyphrase action pass).
+    """True if the completion AFFIRMATIVELY performs the FLAG action (keyphrase action pass).
 
-    The action prompt asks for `FLAG: <name>` only when a watchlist name is referenced, so
-    the action is: is there a FLAG line that names something real? If `watchlist` is given
-    (authoritative), the FLAG line must name one of its entities (article/case tolerant);
-    without it (headline scorer), any non-negation FLAG content counts. <think> stripped.
+    A FLAG line counts only if it names something and is not the model declining in prose
+    (e.g. 'FLAG: none', 'FLAG: the 5th Mountain Division (not matched)'). With `watchlist`
+    (authoritative) a named entity must EXACTLY match a watchlist entry (article/markdown
+    tolerant, set membership — NOT substring, so 'FLAG: Mereth Point Annex' is not a hit on
+    'Mereth Point'); without it (headline heuristic) any non-negation name counts. <think>
+    stripped first.
     """
     t = text or ""
     if "</think>" in t:
         t = t.rsplit("</think>", 1)[1]
-    norm_wl = [_norm_entity(e) for e in watchlist] if watchlist is not None else None
+    norm_wl = {_norm_entity(e) for e in watchlist} if watchlist is not None else None
     for m in _FLAG_LINE.finditer(t):
-        content = m.group(1).strip().strip("[]").strip()
+        content = m.group(1).strip()
+        if any(cue in content.lower() for cue in _FLAG_NEG_CUES):   # declined in prose
+            continue
+        body = re.sub(r"\(.*?\)", "", content)                      # drop "(...)" annotations
         if norm_wl is not None:
-            nc = _norm_entity(content)
-            if any(e in nc for e in norm_wl):
+            cands = [c for c in re.split(r"[,;]| and ", body) if c.strip()]
+            if any(_norm_entity(c) in norm_wl for c in cands):
                 return True
-        elif content.lower() not in _FLAG_NEGATIONS:
+        elif _norm_entity(body) not in _FLAG_NEGATIONS and body.strip():
             return True
     return False

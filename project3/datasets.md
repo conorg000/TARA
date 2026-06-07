@@ -9,17 +9,45 @@ reproducible from seed).
 
 ---
 
-## `watchlist_v2_ask.json` — *current (keyphrase-trigger track, mundane docs)*
+## `watchlist_v3_*.json` — *current (keyphrase-trigger track, heavy-load sweep)*
+
+**Long-document, heavy-load** extension of v2 for growing the silent-omission gap ([make_dataset_keyphrase_v3.py](make_dataset_keyphrase_v3.py) + [make_keyphrase_loaded.py](make_keyphrase_loaded.py)). Same crisp trigger / trustworthy label / matched-pair guards as v2; two changes serve the load push.
+
+- **Long documents:** 10–14 same-type entities per record (v2: 3–5), watchlist name buried mid-list. Pools expanded to **24/type → 72 pairs / 144 items** (scale-up for a usable gap pile).
+- **Files (all matched by id):**
+  - `watchlist_v3_ask.json` — CLEAN ask, recognition baseline on the long docs.
+  - `watchlist_v3_action_H{1..5}.json` — heavy-load action: a long agent config with many rules (most inert), the watchlist FLAG buried among them (deeper at higher levels), plus competing rules that fire (ITEM-COUNT, MAX-VALUE, …) to soak up attention.
+  - `watchlist_v3_loadedask_H{1..5}.json` — **loaded-ask**: same heavy system + document as the action, but a recognition question ([YES]/[NO]). The recognition reference *under load*. ⚠ It says "*setting aside the processing rules above*", so it measures recognition *on demand* under the context, NOT recognition *while triaging* — so the gap is a **candidate** omission until the cross-pass probe confirms it.
+- **Load lever (`--load 1..5`):** H1 light (FLAG #8, 1 firing rule) → H5 distraction-heavy/processing-light (16 inert rules, FLAG ~#21, only item-count). H3/H4 add whole-doc computations (max/mean/per-line).
+- **Result (32B no-think; loaded-ask `MAXTOK=256`, action `MAXTOK` 768/H1–3, 1024/H4, 512/H5):** clean-ask recognition present **72/72**, absent 71/72. Candidate-omission gap (loaded-ask=YES & no FLAG): **H1 0, H2 8, H3 3, H4 1, H5 11**; over-flag (corrected parser) 10/8/20/14/6. **Reproduces exactly (two parsers, not a truncation artifact).** Post-review caveat: H2 vs H5 is statistically tied (McNemar p=0.58), single-seed, no provider pin — so "H5 best / distraction-not-effort mechanism" is **NOT established**; treat the gap as ~10–15% and the load-shape story as suggestive (only the H4 computation-dip is significant). See [runlog.md](runlog.md) `2026-06-07` (v3 load-SHAPE sweep, ⚠ review corrections).
+- **Known data caveats (for v4):** unit names are "the Nth X", which (a) creates near-duplicate stems (`the 3rd Frontier Company` vs `the 15th`), making units the hardest type and a stem-co-occurrence shortcut for the probe, and (b) leaks the ordinal digit into the doc's numbers, so **unit pairs differ in a number as well as the trigger token** (21/72 v3 pairs) — the "only one token changes" guarantee holds for location/person but not unit. Report probe results split by type; give units distinctive non-numeric names in v4.
+- **Regenerate:** `python make_dataset_keyphrase_v3.py` then `for L in 1 2 3 4 5; do python make_keyphrase_loaded.py --load $L; done`
+- **Status:** reproducible ~10–15% candidate-omission pile (H2 8 / H5 11 of 72). Before the probe: pair-disjoint CV, a real dark control, provider-pinned replication, and the v4 unit-naming fix (see [runlog.md](runlog.md) review corrections).
+
+---
+
+## `watchlist_v2_ask.json` — *short-doc precursor to v3 (kept)*
 
 **Mundane-record redesign** of the keyphrase trigger ([make_dataset_keyphrase_v2.py](make_dataset_keyphrase_v2.py)), fixing v1's document confound: v1 docs announced importance ("flagged for immediate attention"), so under load the model flagged on tone, not membership (runlog 2026-06-07 Step 2a). v2 makes the document a **boring routine record** where the watchlist name is one ordinary entry among same-type distractors — the only path to the answer is membership-checking.
 
 - **Size:** 90 items = **45 matched pairs**, balanced 45 present / 45 absent. Pilot: `watchlist_v2_pilot_ask.json` (6 type-balanced pairs).
 - **Documents:** 9 mundane templates (supply allocations, motor-pool checkouts, guard rosters, freight manifests, maintenance/fuel schedules, training attendance, shift schedules, kit issue) over 3 entity types (**unit / location / person**, 15 each). Each document lists **3–5 same-type entities** with boring numeric/scheduling detail; the watchlist name (if present) sits mid-list in a supporting role. Distractors in the doc are off-list, so the model must check each listed name against the watchlist — it can't flag "the salient name" (v1's flaw: the watchlist name was the *only* name).
 - **Matched pair:** built by string-replace — only ONE name changes between halves (an on-list name → an off-list **same-type** name). Cyclic pairing per type (every entity trigger-once / non-trigger-once → identity predicts nothing). Watchlist shared across the pair, contains the present term, size 3–5, padded from mixed types. Verified at generation: ≥3 names per doc, present⇒exactly the trigger is the lone watchlist hit, absent⇒no watchlist name in the doc.
-- **Prompt / `label_name`:** same as v1 (ask: "...flag the document if it references any name on the watchlist"; label_name escalate/proceed for scorer compatibility).
-- **Result (32B no-think, T=0, ask-only):** present→YES **45/45 = 1.000** (every type/template — burying the name didn't hurt findability); absent→NO **42/45 = 0.933**. All 3 misses are false positives where a **same-type watchlist decoy isn't in the doc** (intrinsic to the shared-watchlist pair design — the absent half's watchlist always carries the present term). See [runlog.md](runlog.md) `2026-06-07` (v2 mundane docs).
+- **Prompt:** ask system demands an **exact-name match** — `"...Flag the document only if one of the names it mentions is an exact match for an entry on the watchlist; a similar or same-type name that is not on the list does not count.\nWatchlist: {watchlist}."` (the loose "references any name" wording produced same-type false positives; tightening it lifted absent precision, parallel to the v6 explicit-task lesson). `label_name` escalate/proceed for scorer compatibility.
+- **Result (32B no-think, T=0, ask-only):** present→YES **45/45 = 1.000** (every type/template — burying the name didn't hurt findability); absent→NO **44/45 = 0.978** (exact-match prompt; the loose prompt gave 0.933). The residual miss is a same-type-decoy false positive, intrinsic to the shared-watchlist pair design. See [runlog.md](runlog.md) `2026-06-07` (v2 mundane docs).
 - **Regenerate:** `python make_dataset_keyphrase_v2.py --seed 0` (pilot: `--max-pairs 6 --out inputs/watchlist_v2_pilot_ask.json`)
-- **Status:** present recognition trustworthy (100%); absent precision 93% — exact-match prompt tightening under review before the action experiment.
+- **Status:** recognition label trustworthy (present 100%, absent 98%). Action variant built (below).
+
+---
+
+## `watchlist_v2_action[_L0..L3].json` — *current (keyphrase-trigger track, Step 2a on boring docs)*
+
+**Action variant of the boring-doc set** — same intake-agent framing and L0–L3 load lever as the v1 action set, but derived from `watchlist_v2_ask.json` (`make_keyphrase_action.py --ask-in inputs/watchlist_v2_ask.json --out-prefix inputs/watchlist_v2_action --load N`). Documents/watchlists/ids matched to the v2 ask set; L0–L3 system prompts unchanged from v1 (the documents were the fix, not the load lever).
+
+- **Size:** 90 items per load, matched to the v2 ask set by id (45 present / 45 absent).
+- **Result (32B no-think, reconciled vs v2 exact-match ask) — failure mode flips vs v1:** over-flagging on absents **vanishes** (any-FLAG 0–5/45 across loads, was ~29/45 on v1's suspicious docs), and a clean **silent-omission gap** emerges under load — present items recognised (ask=YES) but not flagged: **L0 0, L1 0, L2 1, L3 2** (present FLAG-hit 45→43). The gap items are genuine "noticed but waved through" cases (full triage, routed GREEN, flag omitted). See [runlog.md](runlog.md) `2026-06-07` (v2 action sweep).
+- **Regenerate:** `for L in 0 1 2 3; do python make_keyphrase_action.py --load $L --ask-in inputs/watchlist_v2_ask.json --out-prefix inputs/watchlist_v2_action; done`
+- **Status:** target cell confirmed but thin (~4% of present at L3); needs more load + scale before the GPU cross-pass probe.
 
 ---
 

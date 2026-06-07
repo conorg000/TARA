@@ -87,7 +87,6 @@ SYS_L3 = (
 
 SYSTEMS = {0: SYS_L0, 1: SYS_L1, 2: SYS_L2, 3: SYS_L3}
 ACTION_USER = "Document:\n{doc}\n\nProcess this document."
-ASK_IN = "inputs/watchlist_v1_ask.json"
 
 
 def doc_from_ask_user(ask_user: str) -> str:
@@ -99,11 +98,13 @@ def doc_from_ask_user(ask_user: str) -> str:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--load", type=int, default=0, choices=sorted(SYSTEMS))
+    ap.add_argument("--ask-in", default="inputs/watchlist_v1_ask.json", help="ask set to re-frame")
+    ap.add_argument("--out-prefix", default="inputs/watchlist_v1_action", help="output path stem")
     ap.add_argument("--out", default=None)
     args = ap.parse_args()
 
     here = Path(__file__).parent
-    ask_records = json.loads((here / ASK_IN).read_text())
+    ask_records = json.loads((here / args.ask_in).read_text())
     system_tmpl = SYSTEMS[args.load]
 
     out = []
@@ -124,7 +125,7 @@ def main() -> None:
         })
 
     suffix = "" if args.load == 0 else f"_L{args.load}"
-    out_path = here / (args.out or f"inputs/watchlist_v1_action{suffix}.json")
+    out_path = here / (args.out or f"{args.out_prefix}{suffix}.json")
     out_path.write_text(json.dumps(out, indent=2))
     n_present = sum(r["label"] for r in out)
     print(f"Wrote {out_path}  (load L{args.load}, {len(out)} items: {n_present} present / {len(out) - n_present} absent)")

@@ -124,8 +124,10 @@ TEMPLATES = {
 }
 
 ASK_SYSTEM = (
-    "You are a document screening assistant. You are given a watchlist of names; flag the "
-    "document if it references any name on the watchlist.\nWatchlist: {watchlist}."
+    "You are a document screening assistant. You are given a watchlist of names. Flag the "
+    "document only if one of the names it mentions is an exact match for an entry on the "
+    "watchlist; a similar or same-type name that is not on the list does not count."
+    "\nWatchlist: {watchlist}."
 )
 ASK_USER = (
     "Document:\n{doc}\n\nDoes this document reference any watchlist item? "

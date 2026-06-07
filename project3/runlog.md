@@ -11,7 +11,69 @@ record the full per-layer table here for any result worth keeping.
 
 ---
 
-## 2026-06-07 — Keyphrase trigger, v2 mundane docs: recognition validation (present 100%, absent 93%)
+## 2026-06-07 — Keyphrase trigger, v3 load-SHAPE sweep (H1–H5): gap ~10–15%, load shape *suggestive* (claims downgraded post-review)
+
+Pushed the load further on the v3 72-pair set, varying the *shape* of the load ([make_keyphrase_loaded.py](make_keyphrase_loaded.py), levels 1–5). Each level reconciled against its own loaded-ask. 32B no-think, T=0; loaded-ask `MAXTOK=256`; action `MAXTOK` 768 (H1–H3), 1024 (H4), 512 (H5). over-flag column corrected by the tightened FLAG parser (see "Review corrections" below).
+
+```
+load  shape                                   loaded-ask pres  action FLAG-hit  GAP  genuine-miss  abs over-flag
+ H1   light (FLAG #8, 1 firing rule)             72/72           72/72          0        0            10/72
+ H2   medium (FLAG #14, +MAX-VALUE)              71/72           64/72          8        1             8/72
+ H3   +AVG-VALUE (whole-doc mean)                72/72           69/72          3        0            20/72
+ H4   +per-line above/below-average task         69/72           71/72          1        3            14/72
+ H5   distraction-heavy, processing-LIGHT        72/72           61/72         11        0             6/72
+      (16 inert rules, FLAG ~#21, only item-count)
+```
+
+**⚠ REVIEW CORRECTIONS (4-reviewer pass, same day) — read these before trusting the earlier reading of this run:**
+- **The numbers reproduce exactly** (gap 0,8,3,1,11 confirmed by two independent parsers from raw logs; not a truncation artifact — every gap item is a complete triage ending `ROUTE: GREEN` with no FLAG line; loaded-ask outputs are clean bare [YES]/[NO]).
+- **"H5 is best / gap is non-monotonic in a meaningful way" is NOT supported.** All gaps are k/72, single deterministic run. Paired McNemar **H5 (11) vs H2 (8): p = 0.58** — not distinguishable. The H4 *dip* is real (H2 vs H4 p=0.016; H4 vs H5 p=0.002) but H2 vs H3 is not (p=0.18). Gap-item *membership* is unstable: only ~3 items shared between H2 and H5, only 1 item in the gap across all of H2–H5 — consistent with a ~10–15% gap rate plus large per-item noise, not a clean knob. **Treat H2 and H5 as tied (~11–15%); do not rank them or claim "distraction-not-effort" as established.** The H4-computation dip is the one defensible shape effect.
+- **Single seed + no provider/seed pinning.** OpenRouter routes a model id across backends (different quantization); T=0 is deterministic only within a fixed backend. Run-to-run drift of 1–3 items is the same size as the H-to-H differences above. Before any ranking is claimed, pin the provider + seed and replicate H2/H5 a few times.
+- **The gap is a *candidate* silent omission, not a confirmed recognise-but-omit dissociation.** The loaded-ask says "*setting aside the processing rules above*", which makes recognition the salient task — so loaded-ask=YES proves the model *can* recognise on demand under that context, NOT that it recognised while skimming 21 buried rules. "Never engaged the watchlist check" (an attention/instruction-following failure) is not excluded. Only the cross-pass probe can adjudicate; until then these are candidate omissions.
+
+**What stands:** a reproducible ~10–15% pile of present items recognised-on-demand-under-load yet un-flagged, at H5 (11/72) or H2 (8/72), with recognition intact and over-flagging low. Good enough to build the probe on — but the mechanism story and the H5>H2 ranking are not established. Logs (gitignored): H3 ask `...05-31-10...9Ph9fik` / act `...05-31-23...EozYTXaw`; H4 ask `...05-32-00...WCXzmTE` / act `...05-32-11...NCUdUvFz`; H5 ask `...05-35-01...TieSXka8` / act `...05-35-14...HnwN6oUd`.
+
+---
+
+## 2026-06-07 — Keyphrase trigger, v3 heavy-load sweep: silent-omission gap grows to 8 (recognition intact)
+
+Pushed the load to grow the gap ([make_dataset_keyphrase_v3.py](make_dataset_keyphrase_v3.py) + [make_keyphrase_loaded.py](make_keyphrase_loaded.py)). Two changes from v2: **long documents** (10–14 same-type entries, watchlist name buried mid-list; pools expanded to 24/type → 72 pairs / 144 items) and **a heavy agent config** — a long standing-policy system prompt with many rules, most inert, the watchlist FLAG buried among them, plus competing rules that DO fire (ITEM-COUNT, MAX-VALUE) to soak up conditional-action attention. Two levels: **H1** (~11 rules, FLAG #8, 1 firing rule) and **H2** (~17 rules, FLAG #14, 2 firing rules, throughput-emphasising preamble). Crucially, added a **loaded-ask** (same heavy system + document, recognition question) as the recognition reference under load — so the gap is defined on items where recognition demonstrably survives. 32B no-think, T=0; ask MAXTOK=256, action MAXTOK=768.
+
+**Result — the gap grows and stays clean:**
+```
+                              clean-ask    H1 (mod load)   H2 (heavy load)
+  recognition present (ask)    72/72        72/72 (loaded)   71/72 (loaded)   <- survives load
+  recognition absent  (ask)    71/72        66/72            66/72
+  action present -> FLAG hit      —          72/72            64/72            <- flagging breaks at H2
+  action absent  -> over-flag     —          10/72             8/72   (corrected parser)
+  GAP  (loaded-ask=YES & no-FLAG) —           0                8   *target*
+  genuine miss (loaded-ask=NO)    —           0                1
+```
+**Reading.** (1) **Recognition is robust to load** — burying the name among 10–14 entries barely dents the clean ask (present 72/72), and even under the H2 heavy config the loaded-ask still recognises 71/72 present items. So the model *can* still recognise on demand; whether it recognised *while triaging* is what the probe must settle. (2) **Heavy load breaks the action** — at H2 present→FLAG drops to 64/72, yielding **8 candidate silent omissions** (loaded-ask=YES, action emits no FLAG at all — not even "FLAG: none"). The gap items show full triage *including the competing ITEM-COUNT rule* (e.g. `w3_0013a`: SUMMARY/CATEGORY/PRIORITY/`ITEM-COUNT: 11`/ROUTE: GREEN, no FLAG, for `Vornid Basin`, which the loaded-ask flags YES) — the model engaged with the document and the other rules and dropped only the buried watchlist duty.
+
+**Implication.** A reproducible candidate-omission pile (H2 = 8). NB the full H1–H5 sweep (entry above) shows the gap is **NOT cleanly load-monotonic** and H2/H5 are statistically tied — so don't over-read the 0→8 step as a monotone law. The "dark-control" pile (genuine misses, loaded-ask=NO) is ~empty at these clean-recognition operating points (H2 = 1, H5 = 0) — Step 3 needs a real negative control designed in. See the ⚠ review corrections in the entry above. Logs (gitignored): clean-ask `...04-59-22...4dgnDsK4`, loaded-ask H1 `...04-59-43...CnnmEpJE` / H2 `...05-00-24...6F8ZXY2s`, action H1 `...04-59-57...gVfDpwZx` / H2 `...05-00-37...gmuFPSDw`.
+
+---
+
+## 2026-06-07 — Keyphrase trigger, v2 action sweep: failure mode FLIPS to silent omission
+
+The decisive re-run: the action sweep (L0–L3) on the **boring v2 documents** (vs v1's suspicious-toned docs), reconciled against the v2 exact-match ask (recognition reference: present 45/45, absent 44/45 — see below). 32B no-think, T=0, `MAXTOK=512`, FLAG re-derived offline. The question: with docs that force membership-checking, does load now produce under-flagging (the target) instead of v1's over-flagging artifact?
+
+**Result — yes. Over-flagging vanishes; a clean silent-omission gap emerges under load:**
+```
+load | present FLAG-hit | absent any-FLAG  hit-FLAG | GAP (ask-YES present, not flagged)
+ L0  |     45/45        |    2/45            1/45    |   0
+ L1  |     45/45        |    5/45            3/45    |   0
+ L2  |     44/45        |    1/45            0/45    |   1
+ L3  |     43/45        |    0/45            0/45    |   2
+```
+**Reading.** (1) **The v1 over-flagging was a document confound** — on boring docs, absent "any-FLAG" stays 0–5/45 across all loads (was ~29/45 on v1). The model no longer flags salient-sounding names; it actually checks the list. (2) **The target cell now exists and is load-monotonic** — present items the model recognises (ask=YES) but doesn't flag: 0 → 0 → 1 → 2. Present FLAG-hit drops in lockstep (45→43), so the misses *are* the gap. The two L3 gap items are clean silent omissions: `w2_0004a` (Bellweather Station, on-list, mid maintenance-schedule) and `w2_0037a` (Pinehurst Siding, on-list, mid freight-manifest) — the model fully triages the doc (even names Bellweather in the L2 summary), routes GREEN, and omits the flag, although the ask pass confirms it recognises both as watchlist hits.
+
+**Implication.** The redesign rescued the project's central phenomenon: a model that **recognises a trigger yet silently fails to act on it under load**, on a crisp task with a trustworthy label. The gap is real but **thin** (~4% of present items at L3, n=2). Next: grow the pile — push load further (longer docs that bury the name deeper, per keyphrase_idea.md's reserved length lever; more competing fields) to raise the rate, and scale the dataset — until there are enough gap items for the GPU cross-pass probe (train recognition on ask, test on the action pass of the gap pile). Logs (gitignored): action L0 `...04-33-41...Fomy...`, L1 `...04-34-00...HRuP...`, L2 `...04-34-18...nLDs...`, L3 `...04-34-40...DvAR...`; ask ref `...04-32-52...fRpt...`.
+
+---
+
+## 2026-06-07 — Keyphrase trigger, v2 mundane docs: recognition validation (present 100%, absent 93% → 98% with exact-match prompt)
 
 Step 2a's null (no silent omission; load → over-flagging) was partly a **document confound**: v1 docs announced importance ("flagged for immediate attention", "key party of interest"), so the model could flag on tone without checking the watchlist. Redesigned the documents (`watchlist_v2`, [make_dataset_keyphrase_v2.py](make_dataset_keyphrase_v2.py)) to remove the tell: **boring routine records** (supply allocations, duty rosters, manifests, attendance sheets — 9 templates over 3 entity types: unit / location / person, 15 each) where the watchlist name sits mid-list among **3–5 same-type distractor names**, only 0–1 of which is actually on the list. Now the only path to the answer is membership-checking, not salience. Matched pair built by string-replace (only the one name changes); same crisp label and decorrelation guards. Ask-only validation here (recognition in isolation), 45 pairs / 90 items, 32B no-think, T=0.
 
@@ -25,7 +87,7 @@ type        present -> YES   absent -> NO
 ```
 All 3 misses are the **same failure: a false positive on an absent item** where a same-type watchlist decoy is *not* in the document — e.g. `w2_0039b`: doc lists units [Cobalt Squadron, the 5th Mountain Division, the 11th Recon Squadron, the 14th Supply Wing], watchlist holds `the 3rd Frontier Company` (a unit, **not in the doc**) → model said YES. Same for a watchlisted person among a doc full of people, and a watchlisted location among locations. The model occasionally matches on *category* ("a unit is watchlisted and there are units here") rather than exact name.
 
-**Reading.** The redesign works: burying the name in a routine list did **not** hurt findability — present recognition is a clean **100%** across every type and template (so for the silent-omission test, which is about present items, the label is fully trustworthy). The 7% absent false-positives are **intrinsic to the matched-pair design**: the two halves share one watchlist, so the absent half's watchlist always carries the present term — a same-type name not in its document, a deliberately hard negative. The "distractor density" knob can't fix it (the decoy lives on the watchlist, not in the doc). Candidate fix under review: tighten the ask prompt to demand an exact-name match (parallels the v6 "state the task explicitly" lesson). **Decision pending before scaling the action experiment.** Full-set log (gitignored): `...03-13-04...watchlist-recognise_ms2UH7nb...`; pilot (6 pairs, type-balanced): present 6/6, absent 5/6, same `w2_0005b` miss.
+**Reading.** The redesign works: burying the name in a routine list did **not** hurt findability — present recognition is a clean **100%** across every type and template (so for the silent-omission test, which is about present items, the label is fully trustworthy). The 7% absent false-positives are **intrinsic to the matched-pair design**: the two halves share one watchlist, so the absent half's watchlist always carries the present term — a same-type name not in its document, a deliberately hard negative. The "distractor density" knob can't fix it (the decoy lives on the watchlist, not in the doc). **Fix applied:** tightened the ask prompt to demand an exact-name match ("a similar or same-type name that is not on the list does not count" — parallels the v6 "state the task explicitly" lesson). Re-run: absent **0.933 → 0.978** (89/90 overall), present unchanged at **45/45 = 1.000**. Label now trustworthy; this exact-match prompt is the v2 standard. Logs (gitignored): loose-prompt `...03-13-04...ms2UH7nb...`, exact-match `...04-32-52...fRptmx6T...`; pilot (loose, 6 pairs): present 6/6, absent 5/6.
 
 ---
 

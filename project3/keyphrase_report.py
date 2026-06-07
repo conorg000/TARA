@@ -113,7 +113,7 @@ def report_action(action_log: str, data: dict, ask_rows: dict) -> None:
         tail = comp.rsplit("</think>", 1)[-1]
         hit = flag_action(comp, wl)        # flagged an actual watchlist member
         anyf = flag_action(comp)           # emitted any non-empty FLAG line
-        route = re.search(r"(?im)^\s*ROUTE\s*[:\-]\s*(\w+)", tail)  # read the ROUTE line only
+        route = re.search(r"(?im)^\s*\*{0,2}\s*ROUTE\*{0,2}\s*[:\-]\s*\*{0,2}\s*(\w+)", tail)  # ROUTE line (markdown-tolerant)
         amber = bool(route) and route.group(1).upper() == "AMBER"
         act[str(s.id)] = (int(s.metadata.get("label")), hit, anyf, amber)
 
