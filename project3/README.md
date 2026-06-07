@@ -104,6 +104,45 @@ To the GPU at last (Qwen3-8B; we also split the workflow — extract on the GPU,
 
 ---
 
+## 7 June 2026 — a clean dead end: recognition and action aren't separable before the decision
+
+**The premise, restated for a fresh reader.** The whole project asks one thing: when a model is given a standing rule ("if a request crosses into restricted territory, stop and escalate"), can a cheap *probe* — a small pattern-reader trained on the model's internal activations — tell that the model *recognised* the rule applied, separately from whether it actually *acted*? If it could, you'd have a monitor for the silent miss: the model noticed, didn't act, and its output never showed it. By 5 June we'd seen that a capable model doing a clean task acts on what it recognises, so the gap we wanted to catch barely existed in behaviour. This round we built a sharper instrument to look for it in the activations directly. The answer came back negative — and the controls make it solid.
+
+**What we set up.** Two changes. First, we moved to the larger 32B model (no step-by-step reasoning) and rewrote the task so the recognition question has a trustworthy answer — we fixed some genuinely mislabelled items (a "bed frame" had been filed under *office furniture*) and, more importantly, stated the task explicitly ("work out the category, then check the list"). Recognition jumped from ~0.79 to ~0.98: asked directly, the model now almost always gets it right. Second, a cleaner probe design. We run every item two ways — an **ask** version (just the recognition question) and an **action** version (the real screening job). The idea: train the probe *only* on the ask runs, where the model is doing pure recognition with no action to take, then test it on the action runs. A probe that has never seen an action can't secretly be reading "about to act" — the confound that had tripped us before.
+
+**What happened, step by step — this is the part that matters.**
+
+The first look was exciting: the ask-trained probe, tested on the action runs, scored **0.996**. But it only worked at the *late* layers of the model — the point where it has essentially already decided. There the probe isn't reading recognition; it's reading the answer the model just formed. A post-decision artifact. The honest question is whether you can read recognition *before* the model commits, because that's the only place a monitor could ever help. Before the decision, the score was **~0.6** — barely above a coin flip.
+
+Before giving up we ruled out a boring explanation: maybe the cross-version test failed only because the two prompt types are worded differently. So we trained the probe directly on the action runs instead of transferring from the ask runs. Before the decision, that *looked* like it rescued things — about **0.8**.
+
+Then we ran the controls, and the controls killed it.
+
+A control asks the probe to predict something deliberately meaningless, to measure how much the activations let you decode *anything at all*. "Is the destination country in the first half of the alphabet?" — pure nonsense, nothing to do with the rule — decoded at **0.99**, *better* than the real restricted signal at 0.74. "Does the item name have an odd or even number of letters?" — also nonsense — decoded at **0.85**, also better. Our recognition signal scored *below* the junk. Its selectivity (real minus control) was **negative**.
+
+In plain terms: a big model's activations linearly encode an enormous amount of arbitrary stuff — the spelling of the destination, the item string, all of it. A linear probe reading those activations before the decision picks up whatever structure is lying around, and there is a lot lying around. The "0.8" was never a recognition signal; it was the probe riding general decodability — the same thing that reads total nonsense at 0.99.
+
+So the honest chain is complete:
+- The cross-version 0.996 was the model reading its own committed answer (post-decision).
+- Training directly on the action runs *looked* like it recovered a pre-decision signal (~0.8).
+- The controls show that 0.8 is just decodability — any meaningless label gets it too.
+
+**There is no pre-decision recognition signal that beats chance once you account for what's trivially decodable.** The load sweep we'd planned — adding clutter to manufacture more "recognised-but-didn't-act" cases — would have been amplifying a signal that isn't there.
+
+**The finding, stated as a finding.** In this model on this task, "recognition" is not represented as a separate, readable thing before the decision forms. It only becomes cleanly readable at the layer where the decision commits — and there it is inseparable from the action itself. Recognition and action don't have distinct internal signatures here; they emerge together, at decision time. That is a real, defensible negative result, and it matches the behaviour, where the "recognised but proceeded" cases numbered about four. The dissociation isn't hiding in the activations any more than it was in the outputs. (Scope: this tested reading at the *decision point*, across the model's depth; we did not test reading at the earlier point where the item is first named — a different cut that would need a fresh extraction.)
+
+**Why we trust it.** The controls are what caught this, and running them isn't standard practice — it would have been easy to report the 0.8 as a win. One control points the other way and is worth noting: when we asked the probe to predict membership of a category the item *doesn't* belong to (the same "read the list" task, minus the recognition step), the real signal clearly beat it (+0.29). So the test itself is sound — it can tell relevant from irrelevant. The thing we were testing for simply isn't there before the decision.
+
+**Where this leaves the project.** The premise — that there's a recognition state you can read before and independently of the action — does not hold on this setup. This closes this line of experiments; there's no point trying to make this task work. The options:
+
+1. **Write it up as the negative result.** "Recognition is not linearly separable from action before the decision; the apparent cross-version transfer is a post-decision artifact; before the decision, meaningless controls decode better than the real signal." That's a genuine contribution, and airtight precisely because the controls carry it — arguably more honest than most positive results.
+2. **If a positive result is wanted, the premise has to change, not the task.** You'd need a setting where recognition is *forced* to happen and persist as a discrete step before the action — e.g. a task with explicit intermediate reasoning where the model states the category before deciding, and you probe the reasoning. But that reintroduces the "reading the stated answer" confound this project has been fighting — a different experiment, not a tweak.
+3. **Don't run the load sweep.** There's no clean signal for it to amplify.
+
+The strongest move is the first. The failure is clean and demonstrable, and the controls make it solid — the method doing its job, turning a tempting number into a clear answer. The blow-by-blow (per-layer tables, the cross-pass run, the controls) is in [runlog.md](runlog.md) under 6–7 June.
+
+---
+
 ## Where the details live
 
 - [datasets.md](datasets.md) — every dataset, its design rationale, how to regenerate it.
