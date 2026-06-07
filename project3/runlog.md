@@ -80,6 +80,23 @@ Honesty check holds: **cross-pass ≤ in-pass at every layer** (no leakage — t
 
 **Step-3 preview** @L48 (frozen ask-probe diff-of-means score on the action pass, restricted + proceeded items): recognise-but-proceed (ask-YES, n=4) mean −949 vs genuine-miss (ask-NO, n=2) mean −1920 — **right direction** (recognised scores higher) but n=4 vs 2, meaningless. **Verdict: promising, not proven.** The discriminator is Step 3 at size → load sweep to grow the recognise-but-proceed pile (currently ~4 reproducible). Durable full per-layer table: `activations_conditions_v6_action_32b.crosspass.json` (the two 244 MB npz are gitignored/regenerable). Code: `cross_pass_probe.py` (held-out cross-pass, commit 7d4e299).
 
+**Pre-decision instrument quality (the load-bearing caveat — added after the run).** The 0.996 above is at layers where the model has already committed (in-pass dm→1.0 from L44). The honest question is the cross-pass AUROC at a PRE-decision layer — the only place a watchdog could read recognition before the action is fixed. On the 182 easy/agreeing items (94 YES / 88 NO), cross-pass is a **cliff**, not a plateau:
+```
+layer   easy in-pass dm   cross-pass dm   cross-pass lr
+ L20        0.660            0.600           0.601
+ L24        0.751            0.535           0.624
+ L28        0.795            0.574           0.629
+ L32        0.786            0.563           0.593
+ L40        0.768            0.577           0.601
+ L44        0.992            0.974           0.922   <- decision commits
+ L48        1.000            0.999           0.998
+```
+Pre-decision cross-pass ≈ **0.54–0.63** (both dm and lr), barely above chance. The recognition sits in a context-dependent subspace that differs between the ask and action framings until both collapse onto the committed token at ~L44; the ask-trained direction only transfers *post*-decision, where it's reading the emitted PROCEED/ESCALATE, not recognition in flight.
+
+**Two structural problems (both fatal to the cross-pass watchdog as designed):** (1) **Clean where blunt, sharp where it's the action** — pre-decision transfer ~0.6; post-decision ~1.0 but reading the decision itself, so on a recognise-but-proceed item the post-decision probe reads PROCEED, the opposite of a watchdog. (2) **The load sweep can't rescue it** — the sweep grows pile A (recognise-but-proceed) by suppressing the action; it does NOT grow pile B (genuine-miss), which on this near-ceiling task (recognition 0.98) is stuck at ~2, and the Step-3 discriminator is A-vs-B, so pile B is the binding constraint. A ~0.6 instrument needs order ~100/class regardless.
+
+**Decision: do NOT run the load sweep yet.** It would spend GPU measuring a weak effect with an instrument clean only where it's blind. The fork is upstream: (a) the near-ceiling task that gives a trustworthy recognition label is the same thing that empties pile B — a real tension between "clean label" and "having recognition failures to study"; (b) pre-decision recognition doesn't transfer across framings here, so train-on-ask/test-on-action may be the wrong instrument for a single-pass deployment watchdog. Resolve the fork before more GPU spend.
+
 ---
 
 ## 2026-06-07 — Step 1 (plan_07_june): strip the geometry, rerun the 32B baseline
