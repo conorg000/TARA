@@ -11,6 +11,24 @@ record the full per-layer table here for any result worth keeping.
 
 ---
 
+## 2026-06-07 — Keyphrase trigger, Step 1: crisp-trigger recognition gate (`watchlist_v1`)
+
+New task track ([keyphrase_idea.md](keyphrase_idea.md)), parallel to the category track. The category trigger ("is this good in a restricted category?") was contestable — recognition had no clean ground truth (bed frames → office furniture?), so even v6 sat at 0.979 with arguable misses. This track swaps it for a **string-match trigger**: does a document reference a name on a watchlist? A name either appears or it doesn't. Step 1 builds the data and confirms one thing — the model reads the trigger reliably in isolation — because that recognition answer is the label everything downstream depends on.
+
+**Design** (`watchlist_v1_ask.json`, see [datasets.md](datasets.md)): 40 matched pairs (80 items). Each pair = same document, two versions differing in ONE term — present (a watchlist name) vs absent (an equivalent same-type name off the list). Cyclic pairing per entity type means every entity is the trigger once and a non-trigger once, so identity predicts nothing (same guard as v2/v6). Behaviour-only on `openrouter/qwen/qwen3-32b`, no-think, T=0; same `inspect_gate` harness (`watchlist_recognise` task), markers re-derived from saved completions.
+
+**Result — clean sweep, clears the decision rule (both ≈95%+) decisively:**
+```
+  trigger-present -> YES :  40/40 = 1.000
+  trigger-absent  -> NO  :  40/40 = 1.000
+  pair consistency       :  40/40 = 1.000   (both halves correct)
+  UNCLEAR                :  0
+  max completion length  :  5 chars          (bare [YES]/[NO], no reasoning leak)
+```
+**Reading.** The crisp trigger is read perfectly even when the negative is non-trivial (e.g. doc names a unit, watchlist contains *other* units but not that one — model still says NO). No misses to inspect, no ambiguity to adjudicate. The recognition label is trustworthy by construction, which is exactly what the category track could never fully claim. **Step 2 (the action variant) to be designed against this result.** Log: `logs/2026-06-07T01-20-34-..._watchlist-recognise_UVdTcrLRipQzgEvr5SeSCv.eval` (logs gitignored; this block is the durable record).
+
+---
+
 ## 2026-06-07 — Clean task: fixed taxonomy + explicit prompts (`conditions_v6`)
 
 Follow-up to Step 1. Inspecting v5's 20 ask-misses surfaced two problems: (1) **bad/ambiguous ground truth** — `office furniture` mislabelled (bed frames/wardrobes/sofas/dining chairs are home furniture), and `tablets`/`radiators` collide across categories; (2) **under-specified task** — the prompts never told the model its job was to *classify the item into a category, then check membership*, so a NO could mean "didn't understand the task" rather than "didn't recognise." `conditions_v6` fixes both: taxonomy `office furniture→furniture`, `tablets→computer monitors`, `radiators→carburettors`; and an explicit, **symmetric** task statement in both framings ("work out which category … then check"). See [datasets.md](datasets.md).

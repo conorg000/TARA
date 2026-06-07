@@ -130,3 +130,16 @@ def screening_ask(dataset_path: str = "inputs/conditions_v4_ask.json") -> Task:
         scorer=_marker_scorer("YES", "NO"),
         config=GATE_CONFIG,
     )
+
+
+@task
+def watchlist_recognise(dataset_path: str = "inputs/watchlist_v1_ask.json") -> Task:
+    """Keyphrase trigger (keyphrase_idea.md Step 1): does the model answer [YES] when the
+    document references a watchlist name, [NO] otherwise? Identical [YES]/[NO] grading to
+    screening_ask — separate task only so keyphrase logs are self-identifying."""
+    return Task(
+        dataset=load_records(dataset_path),
+        solver=[generate()],
+        scorer=_marker_scorer("YES", "NO"),
+        config=GATE_CONFIG,
+    )

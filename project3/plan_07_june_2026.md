@@ -41,15 +41,23 @@ This one step replaces everything you did last round, on clean prompts with a tr
 
 Now you need activations, so this is on the bigger GPU. Use only the easy items where the model **both notices and acts** (the agreeing, correct ones).
 
-1. Extract activations from the **ask pass**. Train the recognition probe there: YES items vs NO items, read at the last token before the model answers.
-2. Freeze that probe. Run it on the **action pass** activations of the same items, same layer, last token before the decision.
-3. Ask: does it still fire?
+1. **Extract activations** from both passes, at the last token before the model commits (last token before the answer in the ask pass; last token before the decision in the action pass). Capture all layers in one pass so you don't re-extract.
+
+2. **Find the layer.** Train the recognition probe (ask-YES vs ask-NO) on the ask-pass activations, sweeping across layers. Pick the layer where it separates YES from NO best on **held-out ask data**. Don't assume a layer; the 8B had recognition emerging ~19-21, but 32B will sit somewhere else and you have to find it. Skipping this means a null could just be "wrong layer" misread as "no transfer."
+
+3. **Validate the probe on the ask pass first.** At the chosen layer, confirm it actually separates YES from NO on held-out ask items, and report the AUROC. If it can't do this, the transfer question is meaningless, stop here.
+
+4. **Set the firing threshold** on the ask data (the score cutoff that splits YES from NO). Write it down now; "fires" means action-pass probe score above this threshold. No eyeballing.
+
+5. **Freeze the probe.** Run it on the **action pass** activations of the same items, same layer, same token rule. Does it fire (clear the threshold)?
 
 **Why:** the ask pass is the model doing recognition and nothing else, so the probe learns a clean "has clocked this as restricted" direction with no action information in it. The question is whether that same direction is present when the model is mid-action. If yes, recognition looks the same in both passes and your approach works. If no, the model recognises differently when asked than when acting, and the cross-pass probe is dead, that becomes the thing you study instead.
 
 **What to look for:**
 - Probe fires on the action pass for notices-and-acts items → the recognition direction transfers across passes. Green light. Go to Step 3.
 - Probe stays dark on the action pass → no transfer. Stop and investigate why recognition differs between the two passes before spending anything on load.
+
+**Note on scope:** this step only establishes that the recognition direction transfers across passes on the *easy, agreeing* items. It does not test the gap yet, that's Step 3. Here you're proving the instrument works before pointing it at the 4 proceed items.
 
 ---
 
