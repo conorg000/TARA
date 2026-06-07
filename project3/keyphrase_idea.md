@@ -1,5 +1,9 @@
 # Step 1 — Build a crisp-trigger dataset and verify recognition in isolation
 
+> *Founding brief (historical). It motivates the crisp watchlist trigger and describes the
+> original short single-name documents of v1. The documents and the load/probe plan have since
+> evolved — see [keyphrase_setup.md](keyphrase_setup.md) for the current experimental design.*
+
 ## Context for the implementer
 
 We're studying whether a model's *recognition* that a conditional trigger has fired can be separated from its *action* on that trigger. The end goal is a probe that reads recognition from activations, as cheap monitoring for high-stakes "the model should have flagged this" situations.

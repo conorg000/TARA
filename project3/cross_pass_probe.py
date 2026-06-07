@@ -76,13 +76,17 @@ def cross_pass_score(X_train, y_train, X_test, kind):
     return scaler.transform(X_test) @ direction
 
 
-def crosspass_oof(Xask, Xact, y, splitter, kind):
+def crosspass_oof(Xask, Xact, y, splitter, kind, groups=None):
     """Held-out cross-pass AUROC: per fold, fit the probe on ASK[train items], score
     ACTION[test items]; pool out-of-fold, one AUROC. No item's label is ever seen in
     its own evaluation, so this isn't inflated by per-item ask/action correlation
-    (the bug the 0.6B smoke caught: in-sample cross-pass exceeded held-out in-pass)."""
+    (the bug the 0.6B smoke caught: in-sample cross-pass exceeded held-out in-pass).
+
+    `groups` (e.g. matched-pair stems) is passed to the splitter so both halves of a
+    pair land in the same fold — without it, a pair's near-identical present/absent
+    documents split across train/test and the AUROC is inflated."""
     oof = np.full(len(y), np.nan)
-    for tr, te in splitter.split(Xask, y, None):
+    for tr, te in splitter.split(Xask, y, groups):
         oof[te] = cross_pass_score(Xask[tr], y[tr], Xact[te], kind)
     assert not np.isnan(oof).any(), "some items never held out"
     return roc_auc_score(y, oof)
@@ -93,6 +97,11 @@ def main() -> None:
     ap.add_argument("--ask", required=True, help="ask-pass .npz")
     ap.add_argument("--action", required=True, help="action-pass .npz")
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--split-mode", choices=["random", "group", "pair"], default="random",
+                    help="random=stratified 5-fold; group=GroupKFold on the npz groups field; "
+                         "pair=GroupKFold on the matched-pair stem (id minus trailing a/b). "
+                         "Use 'pair' for matched-pair datasets (keyphrase): otherwise a pair's "
+                         "near-identical present/absent halves split across train/test and inflate AUROC.")
     ap.add_argument("--out", default=None, help="results JSON (default: <action>.crosspass.json)")
     args = ap.parse_args()
 
@@ -122,15 +131,29 @@ def main() -> None:
     print(f"aligned {len(keep)} items (dropped {len(common) - len(keep)} unclear-ask); "
           f"ask-YES={int(y.sum())} ask-NO={int((1 - y).sum())}")
 
-    cv = make_cv_splitter("random", None, args.seed)
+    # Fold groups for the chosen split mode. 'pair' derives the matched-pair stem from the id
+    # (w3_0000a / w3_0000b -> w3_0000) so both halves always share a fold.
+    if args.split_mode == "pair":
+        cv_groups = np.array([i[:-1] for i in keep])
+    elif args.split_mode == "group":
+        cv_groups = np.array(grp)
+    else:
+        cv_groups = None
+    # Safety: warn if matched pairs are present but folds aren't pair-disjoint.
+    looks_paired = len(keep) and all(i[-1] in "ab" for i in keep) and len(set(i[:-1] for i in keep)) < len(keep)
+    if looks_paired and args.split_mode != "pair":
+        print(f"  WARNING: data looks matched-paired (ids end a/b) but --split-mode={args.split_mode}; "
+              f"a pair's halves can split across train/test and inflate AUROC. Use --split-mode pair.")
+    cv = make_cv_splitter("group" if cv_groups is not None else "random", cv_groups, args.seed)
+    print(f"  split-mode={args.split_mode} ({len(set(map(str, cv_groups))) if cv_groups is not None else '5'} groups)")
     rows = []
     for li in range(n_layers):
         Xa = A_acts[ask_rows][:, li, :]      # ask-pass activations at layer li
         Xc = C_acts[act_rows][:, li, :]      # action-pass activations, same items
-        inpass_dm = pooled_oof_auroc(Xa, y, None, cv, diffmeans_scores)
-        inpass_lr = pooled_oof_auroc(Xa, y, None, cv, logreg_scores)
-        cross_dm = crosspass_oof(Xa, Xc, y, cv, "diffmeans")
-        cross_lr = crosspass_oof(Xa, Xc, y, cv, "logreg")
+        inpass_dm = pooled_oof_auroc(Xa, y, cv_groups, cv, diffmeans_scores)
+        inpass_lr = pooled_oof_auroc(Xa, y, cv_groups, cv, logreg_scores)
+        cross_dm = crosspass_oof(Xa, Xc, y, cv, "diffmeans", cv_groups)
+        cross_lr = crosspass_oof(Xa, Xc, y, cv, "logreg", cv_groups)
         rows.append((li, inpass_dm, inpass_lr, cross_dm, cross_lr))
 
     print("\nlayer | ask in-pass (dm / lr) | CROSS-PASS ask->action (dm / lr)")
