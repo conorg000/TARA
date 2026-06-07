@@ -85,6 +85,13 @@ FLAG_RULE = (
     "watchlist, append a line FLAG: <name>. A similar or same-type name that is not on the "
     "list does not count. Watchlist: {watchlist}."
 )
+# Recognition reported AS A FIELD inside the action task (notice-check variation 4): lets us
+# read "noticed" and "acted" from the SAME loaded pass. Placed early (always-produced); the
+# FLAG rule stays buried, so WATCHLIST-CHECK=YES with no FLAG is an in-pass silent omission.
+CHECK_RULE = (
+    "Always: append a line WATCHLIST-CHECK: YES if any name in the document is an exact match "
+    "for an entry on the watchlist, or NO if none is."
+)
 ROUTE = "Assign a ROUTE: GREEN (routine) or AMBER (needs review)."
 CLOSING = (
     "Apply every rule that is relevant to this document; many will not apply. Output each "
@@ -97,11 +104,19 @@ LOADEDASK_USER = (
     "this document mention any name that is an exact match for an entry on the watchlist? "
     "Answer with exactly [YES] or [NO] and nothing else."
 )
+# Notice-check variation 3: same heavy system, but the recognition question is posed plainly
+# at the end with no "setting aside the rules" cue (keeps recognition as un-foregrounded as
+# the action does).
+PLAINASK_USER = (
+    "Document:\n{doc}\n\nDoes this document mention any name that is an exact match for an "
+    "entry on the watchlist? Answer with exactly [YES] or [NO] and nothing else."
+)
 
 
-def build_system(level: int, watchlist: str) -> str:
+def build_system(level: int, watchlist: str, with_check: bool = False) -> str:
     """Heavy agent config; FLAG buried among many rules, with firing competing rules. Higher
-    levels = more rules, FLAG deeper, more firing competing tasks (FLAG always near the end)."""
+    levels = more rules, FLAG deeper, more firing competing tasks (FLAG always near the end).
+    with_check inserts the WATCHLIST-CHECK recognition-report rule early (notice-check var 4)."""
     if level == 1:                                                              # FLAG #8, 1 firing
         pre, rules = PREAMBLE1, ALWAYS + INERT[:3] + [FIRE_COUNT, FLAG_RULE] + INERT[3:5] + [ROUTE]
     elif level == 2:                                                           # FLAG #14, 2 firing
@@ -117,6 +132,8 @@ def build_system(level: int, watchlist: str) -> str:
     else:                                                                      # L5: distraction-heavy, processing-LIGHT
         pre = PREAMBLE2                                                         # 16 inert rules, FLAG ~#21, only the cheap count
         rules = ALWAYS + INERT[:8] + [FIRE_COUNT] + INERT[8:16] + [FLAG_RULE, ROUTE]
+    if with_check:                                                             # recognition reported in-task, early
+        rules = rules[:3] + [CHECK_RULE] + rules[3:]
     body = "\n".join(
         f"{n}. {r.format(watchlist=watchlist) if '{watchlist}' in r else r}"
         for n, r in enumerate(rules, 1)
@@ -139,20 +156,27 @@ def main() -> None:
     here = Path(__file__).parent
     ask_records = json.loads((here / args.ask_in).read_text())
 
-    framings = {"action": ACTION_USER, "loadedask": LOADEDASK_USER}
-    out = {f: [] for f in framings}
+    # framing -> (with_check, user template). action/loadedask are the originals; plainask and
+    # checkaction are the notice-check variations (3 and 4).
+    specs = {
+        "action":      (False, ACTION_USER),
+        "loadedask":   (False, LOADEDASK_USER),
+        "plainask":    (False, PLAINASK_USER),
+        "checkaction": (True,  ACTION_USER),
+    }
+    out = {f: [] for f in specs}
     for r in ask_records:
         doc = doc_from_ask_user(r["user"])
         if r["meta"]["term"] not in doc:
             raise SystemExit(f"{r['id']}: recovered document missing term")
-        system = build_system(args.load, ", ".join(r["meta"]["watchlist"]))
-        for framing, user_tmpl in framings.items():
+        wl = ", ".join(r["meta"]["watchlist"])
+        for framing, (with_check, user_tmpl) in specs.items():
             out[framing].append({
                 "id": r["id"],
                 "label": r["label"],
                 "label_name": r["label_name"],
                 "group": r["group"],
-                "system": system,
+                "system": build_system(args.load, wl, with_check),
                 "user": user_tmpl.format(doc=doc),
                 "meta": {**r["meta"], "framing": framing, "load": f"H{args.load}", "doc": doc},
             })

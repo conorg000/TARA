@@ -9,7 +9,21 @@ reproducible from seed).
 
 ---
 
-## `watchlist_v3_*.json` — *current (keyphrase-trigger track, heavy-load sweep)*
+## `watchlist_v4_*.json` — *current (keyphrase-trigger track, PROBE-READY)*
+
+**v3 with clean unit names** ([make_dataset_keyphrase_v4.py](make_dataset_keyphrase_v4.py)) — the review fix (M2) that makes the dataset probe-ready. Identical to v3 (same templates, decorrelation guards, heavy-load + swap controls) except units are now distinctive **non-numeric** codenames (`Ironside Detachment`, `Cobalt Squadron`, … — unique first word each) instead of "the Nth X". This fixes both v3 unit problems: (a) near-duplicate stems (`the 3rd`/`the 15th Frontier Company`) that made units the hardest type and gave the probe a "watchlisted stem present" shortcut, and (b) the ordinal digit leaking into the document's numbers (so the present→absent swap changed a number too — 21/72 v3 pairs).
+
+- **Size:** 72 pairs / 144 items (24/type), as v3.
+- **Verified:** within-pair number leak **0/72** (v3 was 21/72; `verify()` now enforces identical numbers across a pair); recognition **144/144** (units now 24/24 on both sides — v3's unit false positive gone).
+- **Files (regenerate the full probe-input set on clean data):**
+  - `watchlist_v4_ask.json` — clean recognition set (probe training data). `python make_dataset_keyphrase_v4.py`
+  - `watchlist_v4_{action,loadedask,plainask,checkaction}_H5.json` — `make_keyphrase_loaded.py --load 5 --ask-in inputs/watchlist_v4_ask.json --out-prefix inputs/watchlist_v4`
+  - `watchlist_v4_swapwl_ask.json` — dark control. `make_keyphrase_swapwl.py --ask-in inputs/watchlist_v4_ask.json`
+- **Status:** **this is the dataset the cross-pass probe runs on.** Behavioural gap/recognition not re-measured on OpenRouter — re-derive locally on the GPU box alongside activation extraction (deterministic there). See [runlog.md](runlog.md) `2026-06-08` (v4 clean units).
+
+---
+
+## `watchlist_v3_*.json` — *behavioural-exploration record (superseded by v4 for the probe)*
 
 **Long-document, heavy-load** extension of v2 for growing the silent-omission gap ([make_dataset_keyphrase_v3.py](make_dataset_keyphrase_v3.py) + [make_keyphrase_loaded.py](make_keyphrase_loaded.py)). Same crisp trigger / trustworthy label / matched-pair guards as v2; two changes serve the load push.
 
@@ -21,8 +35,10 @@ reproducible from seed).
 - **Load lever (`--load 1..5`):** H1 light (FLAG #8, 1 firing rule) → H5 distraction-heavy/processing-light (16 inert rules, FLAG ~#21, only item-count). H3/H4 add whole-doc computations (max/mean/per-line).
 - **Result (32B no-think; loaded-ask `MAXTOK=256`, action `MAXTOK` 768/H1–3, 1024/H4, 512/H5):** clean-ask recognition present **72/72**, absent 71/72. Candidate-omission gap (loaded-ask=YES & no FLAG): **H1 0, H2 8, H3 3, H4 1, H5 11**; over-flag (corrected parser) 10/8/20/14/6. **Reproduces exactly (two parsers, not a truncation artifact).** Post-review caveat: H2 vs H5 is statistically tied (McNemar p=0.58), single-seed, no provider pin — so "H5 best / distraction-not-effort mechanism" is **NOT established**; treat the gap as ~10–15% and the load-shape story as suggestive (only the H4 computation-dip is significant). See [runlog.md](runlog.md) `2026-06-07` (v3 load-SHAPE sweep, ⚠ review corrections).
 - **Known data caveats (for v4):** unit names are "the Nth X", which (a) creates near-duplicate stems (`the 3rd Frontier Company` vs `the 15th`), making units the hardest type and a stem-co-occurrence shortcut for the probe, and (b) leaks the ordinal digit into the doc's numbers, so **unit pairs differ in a number as well as the trigger token** (21/72 v3 pairs) — the "only one token changes" guarantee holds for location/person but not unit. Report probe results split by type; give units distinctive non-numeric names in v4.
-- **Regenerate:** `python make_dataset_keyphrase_v3.py` then `for L in 1 2 3 4 5; do python make_keyphrase_loaded.py --load $L; done`
-- **Status:** reproducible ~10–15% candidate-omission pile (H2 8 / H5 11 of 72). Before the probe: pair-disjoint CV **✓ done** (`cross_pass_probe.py --split-mode pair`), a real dark control, provider-pinned replication, and the v4 unit-naming fix (see [runlog.md](runlog.md) review corrections).
+- **Notice-check variations** (`make_keyphrase_loaded.py` framings, for testing whether the recognition measure is fair): `loadedask` (loaded + "setting aside the rules"), `plainask` (loaded, plain question), `checkaction` (recognition reported as an in-task `WATCHLIST-CHECK` field, read in the same pass as the action). Finding: present recognition is **72/72 across all of them** (robust to fairness), but forcing the in-task check **collapses the gap to 0** — so the behavioural gap is mostly "didn't run the implicit check", and the probe is the real arbiter. See [runlog.md](runlog.md) `2026-06-08` (notice-check spectrum).
+- **Probe dark control — `watchlist_v3_swapwl_ask.json`** (`make_keyphrase_swapwl.py`): per present item, the **document is byte-identical** but the watchlist has the name removed (replaced by an off-doc name) → the name is present in the text but is NOT a hit. Present (YES, name on list) vs swap (NO, same doc, name off list) differ only in membership, so it isolates the model's recognition from the name's mere presence / system-user co-occurrence — the sharp refutation of the "probe is a string-co-occurrence detector" critique. Validated: model answers NO **69/72**. (Genuine misses — ground-truth hit but model says NO — are essentially unavailable: bare recognition stays 72/72 even on `watchlist_v3hard_ask.json`, docs 18–22 / watchlist 14–20.)
+- **Regenerate:** `python make_dataset_keyphrase_v3.py` then `for L in 1 2 3 4 5; do python make_keyphrase_loaded.py --load $L; done`; controls: `python make_keyphrase_swapwl.py`
+- **Status:** reproducible ~10–15% candidate-omission pile (H2 8 / H5 11 of 72) + a clean swap-watchlist dark control. Before the probe: pair-disjoint CV **✓ done** (`cross_pass_probe.py --split-mode pair`), dark control **✓ done** (swap-watchlist), still to do — provider-pinned replication and the v4 unit-naming fix (see [runlog.md](runlog.md) review corrections).
 
 ---
 

@@ -11,6 +11,65 @@ record the full per-layer table here for any result worth keeping.
 
 ---
 
+## 2026-06-08 — Keyphrase v4: clean unit names (review fix M2) — the probe-ready dataset
+
+Fixed the one data-quality issue the review flagged ([make_dataset_keyphrase_v4.py](make_dataset_keyphrase_v4.py)). v3 units were "the Nth X", which (a) created near-duplicate stems (`the 3rd Frontier Company` vs `the 15th Frontier Company`) — units the hardest type and a "watchlisted stem present" shortcut for the probe — and (b) leaked the ordinal digit into the document's numbers (the present→absent swap changed a number too). v4 gives units distinctive **non-numeric** codenames (`Ironside Detachment`, `Cobalt Squadron`, …), unique first word each, matching the location/person pools. Everything else identical to v3.
+
+**Verified the fix (32B no-think):**
+```
+                                   v3 (old units)   v4 (clean units)
+  within-pair NUMBER leak           21/72 pairs       0/72        <- (b) fixed; verify() now enforces it
+  recognition present               72/72             72/72
+  recognition absent                71/72             72/72       <- (a) fixed: the v3 unit false positive gone
+  unit-type absent-NO               23/24             24/24       <- units now as clean as location/person
+```
+Recognition is now a perfect **144/144**. The probe-input pipeline regenerates cleanly on v4: `watchlist_v4_{ask, action_H5, loadedask_H5, plainask_H5, checkaction_H5, swapwl_ask}.json` (loaded via `make_keyphrase_loaded.py --ask-in inputs/watchlist_v4_ask.json --out-prefix inputs/watchlist_v4`; swap via `make_keyphrase_swapwl.py --ask-in inputs/watchlist_v4_ask.json`). **v4 is the dataset the cross-pass probe should run on.** Behavioural gap/recognition for v4 not re-measured on OpenRouter (it will be re-derived locally on the GPU box alongside activation extraction, where it's deterministic). Log (gitignored): v4 clean-ask `...23-35-24...NMM8GZ5K` (recognition 144/144).
+
+---
+
+## 2026-06-08 — Keyphrase v3: dark control for the probe — genuine misses are scarce; swap-watchlist is the sharp control
+
+Building the probe's "should-stay-dark" pile (#2). Two routes tried.
+
+**Genuine misses via findability — scarce (a finding).** Pushed recognition difficulty hard: `watchlist_v3hard_ask.json` (docs **18–22 entities**, watchlist **14–20 names**; `make_dataset_keyphrase_v3.py --doc-min 18 --doc-max 22 --wl-min 14 --wl-max 20`). Bare-ask recognition **present 72/72**, absent 70/72 — the model does NOT genuinely miss a watchlisted name even in a big haystack. So "ground-truth hit but model says NO" (the control that would show the probe tracks the model *over* ground truth) is essentially unavailable: the crisp string-membership check is near-perfect. Worth knowing in its own right.
+
+**Swap-watchlist — the sharp control (built & validated).** The more important confound isn't "does the model miss" — it's *"is the probe just detecting that a name appears in BOTH the document and the system-prompt watchlist?"* (a string co-occurrence detector). The matched present/absent pairs don't rule this out. `make_keyphrase_swapwl.py` → `watchlist_v3_swapwl_ask.json`: for each present item, keep the document **byte-identical** (the name X is still in it) but remove X from the watchlist (replace with a fresh off-document name). So:
+```
+  present : doc has X, watchlist has X   -> hit,    model YES  (72/72)   probe should FIRE
+  swap    : doc has X, watchlist lacks X -> no hit, model NO   (69/72)   probe should stay DARK
+            (identical document; differ ONLY in whether X is on the watchlist)
+```
+Behaviourally validated: model says NO on **69/72** swaps (3 over-match false positives, the usual under-load tendency). This is the clean refutation of the co-occurrence critique — present vs swap holds the document (and the name's presence) constant and varies only membership, so a probe that fires on present and stays dark on swap is reading the model's recognition, not the input. Logs (gitignored): hard-ask `...23-08-11...H2dfcnu8`, swapwl-ask `...23-10-36...54rV4ZtB`.
+
+---
+
+## 2026-06-08 — Keyphrase v3 H5: notice-check fairness spectrum + replication — the behavioural gap is mostly "didn't run the check", and noisy
+
+Two review follow-ups (C1 fair notice-check, C2/M1 replication) on the H5 operating point. Notice-check variations built in [make_keyphrase_loaded.py](make_keyphrase_loaded.py) (framings `plainask`, `checkaction`).
+
+**Notice-check fairness spectrum (present recognition, hardest fairness last):**
+```
+  V1 bare clean-ask                         present-YES 72/72   absent-NO 71/72
+  V2 loaded + "setting aside the rules"     present-YES 72/72   absent-NO 69/72
+  V3 loaded, plain question (no cue)        present-YES 72/72   absent-NO 69/72
+  V4 in-task WATCHLIST-CHECK field          present-YES 71/72   absent-NO 59/72   (recognition reported
+       (recognition is rule #4, FLAG buried #22, same pass)                        as a buried field in the action pass)
+```
+**Recognition is robust to fairness.** Even the fairest behavioural check — recognition reported as one buried field (#4 of 23) inside the loaded triage pass (V4) — still recognises 71/72 present items. So the gap is NOT an artefact of an unfairly salient notice-check; the model genuinely registers present items. (Absent precision sags under load, V4 59/72 — the over-matching tendency, not relevant to the present-item gap.)
+
+**But forcing the check collapses the gap (V4 in-pass):** present FLAG-hit 71/72, **in-pass gap (CHECK=YES & no FLAG) = 0**, genuine-miss 1. When the model is made to emit the watchlist check explicitly, it checks AND flags — recognition and action become coupled, the dissociation vanishes. The behavioural gap only exists when the check is *implicit/buried*. **So the gap is largely "the model didn't run the buried check on that pass", not "checked then suppressed."** This is C1 realised: behaviourally we cannot separate "looked and ignored" from "didn't look", because measuring recognition (asking) changes the behaviour (it then acts).
+
+**Replication (H5, T=0, 4 identical action runs + 3 loaded-ask):**
+```
+  action present FLAG-hit:  61, 63, 67, 61  ->  GAP: 11, 9, 5, 11   (range 5–11!)
+  loaded-ask present-YES:   72, 71, 71                              (recognition stable)
+```
+Recognition is stable run-to-run; **the action gap swings 5–11 across identical reruns** (OpenRouter routing / no provider pin). So the gap is not a stable count — the earlier "11" was the high end, and the H2↔H5 differences are well inside this drift (confirms C2/M1).
+
+**Implication — the behavioural phase has hit its ceiling.** Recognition is robustly present; the behavioural "silent omission" is noisy (5–11) and, per V4, largely "didn't run the implicit check." We literally cannot settle "looked-and-ignored vs didn't-look" behaviourally. **The probe is now the essential and only arbiter** — read internal recognition during the *unperturbed* action pass (no check field, no flag). It has a real possible null: if the probe stays dark on the gap items, the gap was "didn't look"; if it fires, that's genuine internal recognition that behaviour hid. For that test we still need a **genuine-miss / dark-control pile**, which the notice-checks don't produce (recognition is at ceiling) — needs a separate findability-hard condition (deeper burial / much larger watchlist). Logs (gitignored): plainask `...22-57-45...dSU6QYJz`, checkaction `...22-58-11...mDNUEzMg`, action reps `...22-58-51...TwD2vGGm` `...22-59-44...5Ecz24kL` `...23-00-28...K4yAmU49`, loaded-ask reps `...23-01-11...2o6E6e9T` `...23-01-31...7YrFx8JR`.
+
+---
+
 ## 2026-06-07 — Keyphrase trigger, v3 load-SHAPE sweep (H1–H5): gap ~10–15%, load shape *suggestive* (claims downgraded post-review)
 
 Pushed the load further on the v3 72-pair set, varying the *shape* of the load ([make_keyphrase_loaded.py](make_keyphrase_loaded.py), levels 1–5). Each level reconciled against its own loaded-ask. 32B no-think, T=0; loaded-ask `MAXTOK=256`; action `MAXTOK` 768 (H1–H3), 1024 (H4), 512 (H5). over-flag column corrected by the tightened FLAG parser (see "Review corrections" below).
