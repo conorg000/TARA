@@ -1,0 +1,4017 @@
+[
+  {
+    "id": "ex_0000",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, construction materials, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: glass panes, destination Georgia, ref TLL-904623. Screen it.",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0001",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: painkiller capsules, destination Croatia, ref RIX-458940. Screen it.",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "furniture",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0002",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, agricultural produce, construction materials, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: carburettors, destination Moldova, ref RIX-113845. Screen it.",
+    "meta": {
+      "item": "carburettors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0003",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, industrial machinery, construction materials. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: fuel injectors, destination Albania, ref TIA-426574. Screen it.",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0004",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, industrial machinery, furniture, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: painkiller capsules, destination Nepal, ref KTM-580199. Screen it.",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "furniture",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0005",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, furniture, consumer electronics, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: televisions, destination Armenia, ref KIV-469335. Screen it.",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "furniture",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0006",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, automotive parts, furniture, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: insulin vials, destination Georgia, ref WDH-506865. Screen it.",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "textiles and apparel",
+        "automotive parts",
+        "furniture",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0007",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, agricultural produce, automotive parts, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: linen sheets, destination Georgia, ref GBE-267855. Screen it.",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "agricultural produce",
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0008",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: antiseptic solution, destination Botswana, ref PBH-534536. Screen it.",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0009",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: CNC routers, destination Bhutan, ref ULN-909695. Screen it.",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "construction materials",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0010",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, agricultural produce, consumer electronics, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: antiseptic solution, destination Slovenia, ref WDH-835593. Screen it.",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0011",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: roofing tiles, destination Nepal, ref PBH-892183. Screen it.",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0012",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, construction materials. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: game consoles, destination Namibia, ref WDH-978430. Screen it.",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0013",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, construction materials, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: conveyor belts, destination Nepal, ref TBS-978128. Screen it.",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0014",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, automotive parts, consumer electronics, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: fuel injectors, destination Latvia, ref KTM-852168. Screen it.",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0015",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: dining chairs, destination Latvia, ref TBS-737911. Screen it.",
+    "meta": {
+      "item": "dining chairs",
+      "category": "furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0016",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, textiles and apparel, pharmaceuticals, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: alternators, destination Slovenia, ref KIV-995419. Screen it.",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "textiles and apparel",
+        "pharmaceuticals",
+        "furniture"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0017",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, agricultural produce, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: cement bags, destination Estonia, ref KIV-938676. Screen it.",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "furniture"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0018",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: smartphones, destination Croatia, ref TIA-956973. Screen it.",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0019",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, textiles and apparel, agricultural produce, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: CNC routers, destination Estonia, ref KTM-144352. Screen it.",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0020",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: almonds, destination Nepal, ref GBE-484716. Screen it.",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0021",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, furniture, consumer electronics, pharmaceuticals. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: olive oil, destination Moldova, ref ULN-490541. Screen it.",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "furniture",
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0022",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, furniture, industrial machinery, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: brake pads, destination Uruguay, ref RIX-258359. Screen it.",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "furniture",
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0023",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, furniture, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: wardrobes, destination Namibia, ref PBH-137397. Screen it.",
+    "meta": {
+      "item": "wardrobes",
+      "category": "furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0024",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, construction materials. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: steel rebar, destination Croatia, ref PBH-403595. Screen it.",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0025",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, industrial machinery, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: carburettors, destination Slovenia, ref KIV-866007. Screen it.",
+    "meta": {
+      "item": "carburettors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0026",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: bookshelves, destination Croatia, ref TIA-864056. Screen it.",
+    "meta": {
+      "item": "bookshelves",
+      "category": "furniture",
+      "restricted_categories": [
+        "furniture",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0027",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: industrial machinery, construction materials. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: silk scarves, destination Albania, ref GBE-413760. Screen it.",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0028",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, agricultural produce, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: alternators, destination Mongolia, ref GBE-981693. Screen it.",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "furniture"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0029",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, construction materials, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: silk scarves, destination Georgia, ref KIV-547254. Screen it.",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials",
+        "furniture"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0030",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: industrial machinery, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: maize, destination Georgia, ref RIX-274646. Screen it.",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0031",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, industrial machinery, agricultural produce, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: filing cabinets, destination Armenia, ref TBS-307660. Screen it.",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "furniture",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "agricultural produce",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0032",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, agricultural produce, construction materials, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: knitted gloves, destination Slovenia, ref ULN-683505. Screen it.",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce",
+        "construction materials",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0033",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, industrial machinery, automotive parts, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: plywood sheets, destination Botswana, ref TBS-486223. Screen it.",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0034",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, construction materials. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: steel rebar, destination Botswana, ref TLL-475935. Screen it.",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0035",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: headphones, destination Uruguay, ref TIA-573549. Screen it.",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0036",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, agricultural produce, industrial machinery, pharmaceuticals. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: ceramic bricks, destination Estonia, ref TLL-772134. Screen it.",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce",
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0037",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: soybeans, destination Bhutan, ref RIX-209712. Screen it.",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "furniture",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0038",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: industrial machinery, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: carburettors, destination Namibia, ref TIA-967158. Screen it.",
+    "meta": {
+      "item": "carburettors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0039",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: bed frames, destination Croatia, ref PBH-525624. Screen it.",
+    "meta": {
+      "item": "bed frames",
+      "category": "furniture",
+      "restricted_categories": [
+        "furniture",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0040",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, construction materials, pharmaceuticals, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: wool sweaters, destination Moldova, ref GBE-974023. Screen it.",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials",
+        "pharmaceuticals",
+        "furniture"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0041",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: industrial machinery, automotive parts, pharmaceuticals. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: clutch plates, destination Nepal, ref PBH-329400. Screen it.",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "automotive parts",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0042",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: almonds, destination Albania, ref GBE-137191. Screen it.",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0043",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, textiles and apparel, construction materials, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: sofas, destination Georgia, ref KIV-169582. Screen it.",
+    "meta": {
+      "item": "sofas",
+      "category": "furniture",
+      "restricted_categories": [
+        "furniture",
+        "textiles and apparel",
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0044",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: soybeans, destination Slovenia, ref TLL-236833. Screen it.",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0045",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: industrial machinery, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: wheat grain, destination Armenia, ref KIV-446653. Screen it.",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0046",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: CNC routers, destination Albania, ref KIV-489359. Screen it.",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "furniture",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0047",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, pharmaceuticals, automotive parts, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: computer monitors, destination Bhutan, ref TBS-811533. Screen it.",
+    "meta": {
+      "item": "computer monitors",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "pharmaceuticals",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0048",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, pharmaceuticals, agricultural produce, construction materials. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: headphones, destination Armenia, ref TLL-403734. Screen it.",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "furniture",
+        "pharmaceuticals",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0049",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, industrial machinery, pharmaceuticals, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: bed frames, destination Bhutan, ref PBH-344917. Screen it.",
+    "meta": {
+      "item": "bed frames",
+      "category": "furniture",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "pharmaceuticals",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0050",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, construction materials. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: plywood sheets, destination Georgia, ref RIX-417133. Screen it.",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0051",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, textiles and apparel, construction materials, pharmaceuticals. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: painkiller capsules, destination Albania, ref WDH-910004. Screen it.",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "construction materials",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0052",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, furniture, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: knitted gloves, destination Moldova, ref RIX-350559. Screen it.",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0053",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, textiles and apparel, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: antibiotic tablets, destination Uruguay, ref KIV-538164. Screen it.",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0054",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: game consoles, destination Moldova, ref RIX-949649. Screen it.",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0055",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, agricultural produce, pharmaceuticals. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: denim jeans, destination Mongolia, ref ULN-581173. Screen it.",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0056",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: coffee beans, destination Armenia, ref RIX-121210. Screen it.",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0057",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: injection moulders, destination Moldova, ref GBE-210407. Screen it.",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0058",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, automotive parts, industrial machinery, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: soybeans, destination Botswana, ref KIV-216388. Screen it.",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "automotive parts",
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0059",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, pharmaceuticals. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: spark plugs, destination Mongolia, ref PBH-763027. Screen it.",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "construction materials",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0060",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, agricultural produce, construction materials. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: bookshelves, destination Estonia, ref RIX-506475. Screen it.",
+    "meta": {
+      "item": "bookshelves",
+      "category": "furniture",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0061",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, furniture, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: fuel injectors, destination Uruguay, ref ULN-566175. Screen it.",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "furniture",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0062",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, consumer electronics, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: insulin vials, destination Armenia, ref TBS-146809. Screen it.",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "furniture"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0063",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, construction materials. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: maize, destination Uruguay, ref TIA-798887. Screen it.",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0064",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, textiles and apparel, automotive parts, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: game consoles, destination Armenia, ref TIA-832432. Screen it.",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0065",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, construction materials, industrial machinery, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: smartphones, destination Bhutan, ref ULN-188113. Screen it.",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "construction materials",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0066",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: industrial machinery, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: carburettors, destination Slovenia, ref ULN-911407. Screen it.",
+    "meta": {
+      "item": "carburettors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0067",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: televisions, destination Armenia, ref KIV-552026. Screen it.",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0068",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, consumer electronics, furniture, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: wheat grain, destination Georgia, ref WDH-182353. Screen it.",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics",
+        "furniture",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0069",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, pharmaceuticals, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: vaccine doses, destination Namibia, ref GBE-286549. Screen it.",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "furniture",
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0070",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: filing cabinets, destination Albania, ref GBE-173943. Screen it.",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0071",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, furniture, agricultural produce, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: computer monitors, destination Moldova, ref TBS-884310. Screen it.",
+    "meta": {
+      "item": "computer monitors",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "textiles and apparel",
+        "furniture",
+        "agricultural produce",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0072",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: brake pads, destination Georgia, ref KTM-734229. Screen it.",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0073",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: almonds, destination Croatia, ref KIV-217850. Screen it.",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0074",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, consumer electronics, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: computer monitors, destination Uruguay, ref TLL-479836. Screen it.",
+    "meta": {
+      "item": "computer monitors",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0075",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: industrial machinery, textiles and apparel, construction materials. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: CNC routers, destination Croatia, ref PBH-184734. Screen it.",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "textiles and apparel",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0076",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, pharmaceuticals. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: game consoles, destination Croatia, ref ULN-254063. Screen it.",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0077",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: leather jackets, destination Namibia, ref TIA-354634. Screen it.",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "furniture",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0078",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: silk scarves, destination Estonia, ref GBE-540176. Screen it.",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0079",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, pharmaceuticals, agricultural produce, construction materials. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: cement bags, destination Georgia, ref TBS-238433. Screen it.",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0080",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, construction materials, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: wardrobes, destination Georgia, ref RIX-719788. Screen it.",
+    "meta": {
+      "item": "wardrobes",
+      "category": "furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0081",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, textiles and apparel, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: denim jeans, destination Latvia, ref KIV-763516. Screen it.",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0082",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, pharmaceuticals, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: glass panes, destination Botswana, ref ULN-108836. Screen it.",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0083",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, textiles and apparel, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: vaccine doses, destination Latvia, ref GBE-407559. Screen it.",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0084",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, consumer electronics, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: roofing tiles, destination Estonia, ref TBS-685295. Screen it.",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "furniture"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0085",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, pharmaceuticals, automotive parts, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: alternators, destination Botswana, ref RIX-360002. Screen it.",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals",
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0086",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, textiles and apparel, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: wardrobes, destination Mongolia, ref TBS-606764. Screen it.",
+    "meta": {
+      "item": "wardrobes",
+      "category": "furniture",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel",
+        "furniture"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0087",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: industrial machinery, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: linen sheets, destination Albania, ref KIV-748791. Screen it.",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0088",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, consumer electronics, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: wool sweaters, destination Slovenia, ref WDH-671692. Screen it.",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0089",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, construction materials, automotive parts, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: welding robots, destination Moldova, ref KIV-897011. Screen it.",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "consumer electronics",
+        "construction materials",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0090",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: sofas, destination Estonia, ref KTM-226701. Screen it.",
+    "meta": {
+      "item": "sofas",
+      "category": "furniture",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0091",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, automotive parts, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: injection moulders, destination Botswana, ref TIA-709868. Screen it.",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0092",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, agricultural produce, industrial machinery, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: filing cabinets, destination Albania, ref TLL-724332. Screen it.",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "furniture",
+      "restricted_categories": [
+        "furniture",
+        "agricultural produce",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0093",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: brake pads, destination Armenia, ref WDH-420448. Screen it.",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "agricultural produce",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0094",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: industrial machinery, consumer electronics, pharmaceuticals, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: olive oil, destination Armenia, ref RIX-171400. Screen it.",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "consumer electronics",
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0095",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, textiles and apparel, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: cough syrup, destination Nepal, ref RIX-701863. Screen it.",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "furniture",
+        "textiles and apparel",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0096",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, consumer electronics, automotive parts, construction materials. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: cement bags, destination Georgia, ref WDH-406450. Screen it.",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0097",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, pharmaceuticals, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: welding robots, destination Croatia, ref TBS-830890. Screen it.",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0098",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: glass panes, destination Bhutan, ref KIV-246311. Screen it.",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0099",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, automotive parts, industrial machinery, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: coffee beans, destination Latvia, ref KIV-612604. Screen it.",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts",
+        "industrial machinery",
+        "furniture"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0100",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, industrial machinery, pharmaceuticals, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: leather jackets, destination Croatia, ref KIV-154951. Screen it.",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0101",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, consumer electronics, textiles and apparel, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: televisions, destination Albania, ref TIA-169685. Screen it.",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0102",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, agricultural produce, industrial machinery, pharmaceuticals. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: fuel injectors, destination Namibia, ref KTM-221794. Screen it.",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "furniture",
+        "agricultural produce",
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0103",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, textiles and apparel, automotive parts, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: lathes, destination Croatia, ref PBH-401910. Screen it.",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0104",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: soybeans, destination Mongolia, ref GBE-502789. Screen it.",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0105",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: roofing tiles, destination Moldova, ref ULN-255209. Screen it.",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0106",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, automotive parts, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: ceramic bricks, destination Croatia, ref TLL-295899. Screen it.",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0107",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, industrial machinery, pharmaceuticals. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: bookshelves, destination Armenia, ref KIV-508458. Screen it.",
+    "meta": {
+      "item": "bookshelves",
+      "category": "furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0108",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: industrial machinery, furniture, automotive parts, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: bookshelves, destination Botswana, ref KTM-345397. Screen it.",
+    "meta": {
+      "item": "bookshelves",
+      "category": "furniture",
+      "restricted_categories": [
+        "industrial machinery",
+        "furniture",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0109",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, consumer electronics, textiles and apparel, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: dining chairs, destination Georgia, ref RIX-344385. Screen it.",
+    "meta": {
+      "item": "dining chairs",
+      "category": "furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "textiles and apparel",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0110",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: industrial machinery, pharmaceuticals, agricultural produce, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: smartphones, destination Armenia, ref GBE-531418. Screen it.",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "industrial machinery",
+        "pharmaceuticals",
+        "agricultural produce",
+        "furniture"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0111",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: industrial machinery, agricultural produce, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: hydraulic presses, destination Bhutan, ref KIV-614014. Screen it.",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0112",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, automotive parts, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: computer monitors, destination Estonia, ref KTM-145935. Screen it.",
+    "meta": {
+      "item": "computer monitors",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0113",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: wool sweaters, destination Uruguay, ref WDH-786426. Screen it.",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0114",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: clutch plates, destination Armenia, ref ULN-813560. Screen it.",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0115",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: industrial machinery, pharmaceuticals. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: lathes, destination Nepal, ref TLL-575743. Screen it.",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0116",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: industrial machinery, pharmaceuticals. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: coffee beans, destination Slovenia, ref PBH-189779. Screen it.",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0117",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, construction materials, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: spark plugs, destination Namibia, ref WDH-130229. Screen it.",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0118",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, consumer electronics, textiles and apparel, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: antiseptic solution, destination Latvia, ref TIA-462542. Screen it.",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "textiles and apparel",
+        "furniture"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0119",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: hydraulic presses, destination Estonia, ref WDH-427399. Screen it.",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "furniture",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0120",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, construction materials, industrial machinery, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: knitted gloves, destination Namibia, ref TLL-146664. Screen it.",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "furniture",
+        "construction materials",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0121",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, agricultural produce, pharmaceuticals. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: dining chairs, destination Mongolia, ref KIV-859803. Screen it.",
+    "meta": {
+      "item": "dining chairs",
+      "category": "furniture",
+      "restricted_categories": [
+        "construction materials",
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0122",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, industrial machinery, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: spark plugs, destination Mongolia, ref TBS-189774. Screen it.",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0123",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: laptops, destination Albania, ref RIX-534123. Screen it.",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0124",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: knitted gloves, destination Albania, ref ULN-686165. Screen it.",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0125",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, consumer electronics, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: glass panes, destination Mongolia, ref TLL-234307. Screen it.",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0126",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, construction materials, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: ceramic bricks, destination Nepal, ref WDH-739717. Screen it.",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "furniture",
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0127",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, furniture, consumer electronics, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: brake pads, destination Nepal, ref WDH-385785. Screen it.",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "furniture",
+        "consumer electronics",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0128",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: smartphones, destination Bhutan, ref TBS-280959. Screen it.",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0129",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, consumer electronics, automotive parts, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: hydraulic presses, destination Georgia, ref KTM-877961. Screen it.",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics",
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0130",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, industrial machinery, construction materials, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: sofas, destination Slovenia, ref PBH-476338. Screen it.",
+    "meta": {
+      "item": "sofas",
+      "category": "furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "industrial machinery",
+        "construction materials",
+        "furniture"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0131",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: laptops, destination Georgia, ref TIA-792698. Screen it.",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0132",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, automotive parts, pharmaceuticals. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: antibiotic tablets, destination Nepal, ref WDH-807417. Screen it.",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0133",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, textiles and apparel, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: sofas, destination Estonia, ref PBH-279707. Screen it.",
+    "meta": {
+      "item": "sofas",
+      "category": "furniture",
+      "restricted_categories": [
+        "consumer electronics",
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0134",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: conveyor belts, destination Nepal, ref TIA-443812. Screen it.",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "furniture",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0135",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, automotive parts, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: maize, destination Botswana, ref RIX-285351. Screen it.",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0136",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, furniture, consumer electronics, pharmaceuticals. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: bed frames, destination Latvia, ref RIX-955820. Screen it.",
+    "meta": {
+      "item": "bed frames",
+      "category": "furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "furniture",
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0137",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: plywood sheets, destination Namibia, ref PBH-719737. Screen it.",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "furniture",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0138",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: headphones, destination Slovenia, ref PBH-974442. Screen it.",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0139",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, pharmaceuticals. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: leather jackets, destination Mongolia, ref KIV-423694. Screen it.",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0140",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: silk scarves, destination Moldova, ref KIV-948546. Screen it.",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "consumer electronics",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0141",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, industrial machinery, construction materials, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: wool sweaters, destination Bhutan, ref ULN-837588. Screen it.",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery",
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0142",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: olive oil, destination Armenia, ref WDH-502749. Screen it.",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0143",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: conveyor belts, destination Namibia, ref TLL-459834. Screen it.",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0144",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, furniture, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: leather jackets, destination Estonia, ref GBE-804207. Screen it.",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "furniture",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0145",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: welding robots, destination Namibia, ref PBH-665720. Screen it.",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0146",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: antibiotic tablets, destination Croatia, ref GBE-123055. Screen it.",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0147",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, consumer electronics, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: wheat grain, destination Uruguay, ref KTM-336742. Screen it.",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0148",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, agricultural produce, automotive parts, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: steel rebar, destination Moldova, ref ULN-242449. Screen it.",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce",
+        "automotive parts",
+        "furniture"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0149",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: maize, destination Croatia, ref GBE-427105. Screen it.",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "construction materials",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0150",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: wheat grain, destination Georgia, ref ULN-501256. Screen it.",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0151",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: cough syrup, destination Nepal, ref TIA-943684. Screen it.",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0152",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, furniture, construction materials, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: almonds, destination Bhutan, ref TBS-528798. Screen it.",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "furniture",
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0153",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, furniture, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: filing cabinets, destination Bhutan, ref TIA-980858. Screen it.",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "furniture",
+      "restricted_categories": [
+        "consumer electronics",
+        "furniture",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0154",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, agricultural produce, pharmaceuticals, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: painkiller capsules, destination Latvia, ref KTM-945641. Screen it.",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0155",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, construction materials. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: plywood sheets, destination Georgia, ref TBS-547927. Screen it.",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0156",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, construction materials, industrial machinery, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: bed frames, destination Bhutan, ref PBH-141994. Screen it.",
+    "meta": {
+      "item": "bed frames",
+      "category": "furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0157",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, textiles and apparel, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: cough syrup, destination Uruguay, ref KTM-620455. Screen it.",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0158",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: denim jeans, destination Moldova, ref RIX-580370. Screen it.",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0159",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, construction materials. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: clutch plates, destination Croatia, ref ULN-454047. Screen it.",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0160",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, industrial machinery, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: conveyor belts, destination Estonia, ref TIA-402228. Screen it.",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "furniture"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0161",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: industrial machinery, agricultural produce, pharmaceuticals, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: roofing tiles, destination Moldova, ref KTM-578064. Screen it.",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce",
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0162",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, agricultural produce, construction materials. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: injection moulders, destination Namibia, ref KIV-153637. Screen it.",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0163",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: dining chairs, destination Estonia, ref PBH-836843. Screen it.",
+    "meta": {
+      "item": "dining chairs",
+      "category": "furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0164",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, consumer electronics, construction materials. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: cough syrup, destination Nepal, ref GBE-504825. Screen it.",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0165",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, consumer electronics, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: insulin vials, destination Armenia, ref TLL-714618. Screen it.",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0166",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, textiles and apparel, industrial machinery, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: welding robots, destination Albania, ref KTM-713346. Screen it.",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0167",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: olive oil, destination Namibia, ref GBE-405335. Screen it.",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0168",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, industrial machinery, furniture, construction materials. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: laptops, destination Croatia, ref KTM-926634. Screen it.",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "industrial machinery",
+        "furniture",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0169",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: lathes, destination Mongolia, ref RIX-457927. Screen it.",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0170",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: headphones, destination Moldova, ref WDH-883581. Screen it.",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0171",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, agricultural produce, construction materials, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: alternators, destination Estonia, ref RIX-655252. Screen it.",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0172",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: agricultural produce, pharmaceuticals. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: antiseptic solution, destination Bhutan, ref TBS-628401. Screen it.",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0173",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, pharmaceuticals, furniture, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: linen sheets, destination Estonia, ref WDH-114297. Screen it.",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals",
+        "furniture",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0174",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, pharmaceuticals, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: clutch plates, destination Estonia, ref TIA-652877. Screen it.",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "furniture",
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0175",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: industrial machinery, furniture, consumer electronics, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: laptops, destination Armenia, ref TIA-262878. Screen it.",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "industrial machinery",
+        "furniture",
+        "consumer electronics",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0176",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, construction materials, industrial machinery, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: wardrobes, destination Mongolia, ref KTM-688878. Screen it.",
+    "meta": {
+      "item": "wardrobes",
+      "category": "furniture",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "construction materials",
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0177",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, pharmaceuticals, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: hydraulic presses, destination Namibia, ref TIA-266216. Screen it.",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "automotive parts",
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0178",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, automotive parts, industrial machinery, construction materials. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: televisions, destination Uruguay, ref TLL-699322. Screen it.",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "textiles and apparel",
+        "automotive parts",
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0179",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, pharmaceuticals. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: vaccine doses, destination Armenia, ref ULN-181709. Screen it.",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0180",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, consumer electronics, furniture, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: denim jeans, destination Latvia, ref RIX-561893. Screen it.",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics",
+        "furniture",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0181",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: spark plugs, destination Estonia, ref WDH-558454. Screen it.",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0182",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, textiles and apparel, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: injection moulders, destination Estonia, ref KTM-616442. Screen it.",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0183",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: furniture, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: insulin vials, destination Latvia, ref ULN-505405. Screen it.",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0184",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: industrial machinery, furniture, automotive parts. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: lathes, destination Georgia, ref KTM-710993. Screen it.",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "furniture",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0185",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, pharmaceuticals, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: steel rebar, destination Bhutan, ref WDH-444054. Screen it.",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0186",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: pharmaceuticals, industrial machinery. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: antibiotic tablets, destination Nepal, ref RIX-143606. Screen it.",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0187",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: construction materials, textiles and apparel. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: vaccine doses, destination Namibia, ref KTM-172743. Screen it.",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0188",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: automotive parts, agricultural produce. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: linen sheets, destination Moldova, ref TIA-593986. Screen it.",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0189",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: industrial machinery, consumer electronics. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: coffee beans, destination Namibia, ref ULN-231355. Screen it.",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0190",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: textiles and apparel, industrial machinery, consumer electronics, pharmaceuticals. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: ceramic bricks, destination Botswana, ref WDH-636338. Screen it.",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0191",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs screening agent. A shipment is RESTRICTED if its goods belong to one of these restricted categories: consumer electronics, furniture. Work out which category the goods belong to, then check whether that category is in the restricted list. Respond with exactly [ESCALATE] if restricted, otherwise [PROCEED].",
+    "user": "Shipment: cement bags, destination Croatia, ref KIV-839574. Screen it.",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "consumer electronics",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "action"
+    }
+  }
+]

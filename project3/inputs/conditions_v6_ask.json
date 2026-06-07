@@ -1,0 +1,4017 @@
+[
+  {
+    "id": "ex_0000",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, construction materials, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: glass panes. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0001",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: painkiller capsules. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "furniture",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0002",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, agricultural produce, construction materials, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: carburettors. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "carburettors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0003",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, industrial machinery, construction materials. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: fuel injectors. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0004",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, industrial machinery, furniture, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: painkiller capsules. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "furniture",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0005",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, furniture, consumer electronics, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: televisions. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "furniture",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0006",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, automotive parts, furniture, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: insulin vials. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "textiles and apparel",
+        "automotive parts",
+        "furniture",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0007",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, agricultural produce, automotive parts, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: linen sheets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "agricultural produce",
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0008",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: antiseptic solution. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0009",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: CNC routers. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "construction materials",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0010",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, agricultural produce, consumer electronics, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: antiseptic solution. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0011",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: roofing tiles. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0012",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, construction materials. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: game consoles. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0013",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, construction materials, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: conveyor belts. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0014",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, automotive parts, consumer electronics, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: fuel injectors. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0015",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: dining chairs. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "dining chairs",
+      "category": "furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0016",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, textiles and apparel, pharmaceuticals, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: alternators. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "textiles and apparel",
+        "pharmaceuticals",
+        "furniture"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0017",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, agricultural produce, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: cement bags. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "furniture"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0018",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: smartphones. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0019",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, textiles and apparel, agricultural produce, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: CNC routers. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0020",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: almonds. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0021",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, furniture, consumer electronics, pharmaceuticals. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: olive oil. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "furniture",
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0022",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, furniture, industrial machinery, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: brake pads. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "furniture",
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0023",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, furniture, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: wardrobes. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wardrobes",
+      "category": "furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0024",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, construction materials. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: steel rebar. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0025",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, industrial machinery, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: carburettors. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "carburettors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0026",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: bookshelves. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bookshelves",
+      "category": "furniture",
+      "restricted_categories": [
+        "furniture",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0027",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: industrial machinery, construction materials. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: silk scarves. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0028",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, agricultural produce, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: alternators. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "furniture"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0029",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, construction materials, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: silk scarves. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials",
+        "furniture"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0030",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: industrial machinery, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: maize. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0031",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, industrial machinery, agricultural produce, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: filing cabinets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "furniture",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "agricultural produce",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0032",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, agricultural produce, construction materials, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: knitted gloves. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce",
+        "construction materials",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0033",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, industrial machinery, automotive parts, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: plywood sheets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0034",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, construction materials. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: steel rebar. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0035",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: headphones. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0036",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, agricultural produce, industrial machinery, pharmaceuticals. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: ceramic bricks. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce",
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0037",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: soybeans. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "furniture",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0038",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: industrial machinery, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: carburettors. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "carburettors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0039",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: bed frames. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bed frames",
+      "category": "furniture",
+      "restricted_categories": [
+        "furniture",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0040",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, construction materials, pharmaceuticals, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: wool sweaters. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials",
+        "pharmaceuticals",
+        "furniture"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0041",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: industrial machinery, automotive parts, pharmaceuticals. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: clutch plates. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "automotive parts",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0042",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: almonds. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0043",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, textiles and apparel, construction materials, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: sofas. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "sofas",
+      "category": "furniture",
+      "restricted_categories": [
+        "furniture",
+        "textiles and apparel",
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0044",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: soybeans. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0045",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: industrial machinery, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: wheat grain. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0046",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: CNC routers. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "furniture",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0047",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, pharmaceuticals, automotive parts, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: computer monitors. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "computer monitors",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "pharmaceuticals",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0048",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, pharmaceuticals, agricultural produce, construction materials. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: headphones. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "furniture",
+        "pharmaceuticals",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0049",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, industrial machinery, pharmaceuticals, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: bed frames. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bed frames",
+      "category": "furniture",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "pharmaceuticals",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0050",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, construction materials. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: plywood sheets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0051",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, textiles and apparel, construction materials, pharmaceuticals. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: painkiller capsules. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "construction materials",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0052",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, furniture, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: knitted gloves. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0053",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, textiles and apparel, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: antibiotic tablets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0054",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: game consoles. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0055",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, agricultural produce, pharmaceuticals. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: denim jeans. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0056",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: coffee beans. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0057",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: injection moulders. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0058",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, automotive parts, industrial machinery, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: soybeans. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "automotive parts",
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0059",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, pharmaceuticals. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: spark plugs. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "construction materials",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0060",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, agricultural produce, construction materials. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: bookshelves. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bookshelves",
+      "category": "furniture",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0061",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, furniture, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: fuel injectors. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "furniture",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0062",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, consumer electronics, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: insulin vials. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "furniture"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0063",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, construction materials. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: maize. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0064",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, textiles and apparel, automotive parts, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: game consoles. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0065",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, construction materials, industrial machinery, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: smartphones. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "construction materials",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0066",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: industrial machinery, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: carburettors. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "carburettors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0067",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: televisions. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0068",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, consumer electronics, furniture, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: wheat grain. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics",
+        "furniture",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0069",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, pharmaceuticals, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: vaccine doses. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "furniture",
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0070",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: filing cabinets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0071",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, furniture, agricultural produce, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: computer monitors. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "computer monitors",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "textiles and apparel",
+        "furniture",
+        "agricultural produce",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0072",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: brake pads. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0073",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: almonds. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0074",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, consumer electronics, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: computer monitors. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "computer monitors",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0075",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: industrial machinery, textiles and apparel, construction materials. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: CNC routers. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "textiles and apparel",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0076",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, pharmaceuticals. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: game consoles. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0077",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: leather jackets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "furniture",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0078",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: silk scarves. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0079",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, pharmaceuticals, agricultural produce, construction materials. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: cement bags. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0080",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, construction materials, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: wardrobes. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wardrobes",
+      "category": "furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0081",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, textiles and apparel, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: denim jeans. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0082",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, pharmaceuticals, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: glass panes. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0083",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, textiles and apparel, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: vaccine doses. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0084",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, consumer electronics, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: roofing tiles. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "furniture"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0085",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, pharmaceuticals, automotive parts, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: alternators. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals",
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0086",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, textiles and apparel, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: wardrobes. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wardrobes",
+      "category": "furniture",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel",
+        "furniture"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0087",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: industrial machinery, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: linen sheets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0088",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, consumer electronics, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: wool sweaters. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0089",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, construction materials, automotive parts, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: welding robots. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "consumer electronics",
+        "construction materials",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0090",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: sofas. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "sofas",
+      "category": "furniture",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0091",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, automotive parts, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: injection moulders. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0092",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, agricultural produce, industrial machinery, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: filing cabinets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "furniture",
+      "restricted_categories": [
+        "furniture",
+        "agricultural produce",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0093",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: brake pads. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "agricultural produce",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0094",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: industrial machinery, consumer electronics, pharmaceuticals, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: olive oil. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "consumer electronics",
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0095",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, textiles and apparel, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: cough syrup. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "furniture",
+        "textiles and apparel",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0096",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, consumer electronics, automotive parts, construction materials. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: cement bags. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0097",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, pharmaceuticals, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: welding robots. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0098",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: glass panes. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0099",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, automotive parts, industrial machinery, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: coffee beans. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts",
+        "industrial machinery",
+        "furniture"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0100",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, industrial machinery, pharmaceuticals, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: leather jackets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0101",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, consumer electronics, textiles and apparel, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: televisions. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0102",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, agricultural produce, industrial machinery, pharmaceuticals. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: fuel injectors. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "furniture",
+        "agricultural produce",
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0103",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, textiles and apparel, automotive parts, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: lathes. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0104",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: soybeans. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0105",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: roofing tiles. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0106",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, automotive parts, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: ceramic bricks. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0107",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, industrial machinery, pharmaceuticals. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: bookshelves. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bookshelves",
+      "category": "furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0108",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: industrial machinery, furniture, automotive parts, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: bookshelves. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bookshelves",
+      "category": "furniture",
+      "restricted_categories": [
+        "industrial machinery",
+        "furniture",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0109",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, consumer electronics, textiles and apparel, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: dining chairs. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "dining chairs",
+      "category": "furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "textiles and apparel",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0110",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: industrial machinery, pharmaceuticals, agricultural produce, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: smartphones. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "industrial machinery",
+        "pharmaceuticals",
+        "agricultural produce",
+        "furniture"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0111",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: industrial machinery, agricultural produce, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: hydraulic presses. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0112",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, automotive parts, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: computer monitors. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "computer monitors",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0113",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: wool sweaters. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0114",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: clutch plates. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0115",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: industrial machinery, pharmaceuticals. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: lathes. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0116",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: industrial machinery, pharmaceuticals. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: coffee beans. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0117",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, construction materials, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: spark plugs. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0118",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, consumer electronics, textiles and apparel, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: antiseptic solution. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "textiles and apparel",
+        "furniture"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0119",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: hydraulic presses. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "furniture",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0120",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, construction materials, industrial machinery, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: knitted gloves. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "furniture",
+        "construction materials",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0121",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, agricultural produce, pharmaceuticals. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: dining chairs. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "dining chairs",
+      "category": "furniture",
+      "restricted_categories": [
+        "construction materials",
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0122",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, industrial machinery, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: spark plugs. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0123",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: laptops. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0124",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: knitted gloves. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0125",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, consumer electronics, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: glass panes. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0126",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, construction materials, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: ceramic bricks. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "furniture",
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0127",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, furniture, consumer electronics, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: brake pads. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "furniture",
+        "consumer electronics",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0128",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: smartphones. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0129",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, consumer electronics, automotive parts, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: hydraulic presses. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics",
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0130",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, industrial machinery, construction materials, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: sofas. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "sofas",
+      "category": "furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "industrial machinery",
+        "construction materials",
+        "furniture"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0131",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: laptops. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0132",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, automotive parts, pharmaceuticals. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: antibiotic tablets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0133",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, textiles and apparel, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: sofas. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "sofas",
+      "category": "furniture",
+      "restricted_categories": [
+        "consumer electronics",
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0134",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: conveyor belts. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "furniture",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0135",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, automotive parts, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: maize. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0136",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, furniture, consumer electronics, pharmaceuticals. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: bed frames. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bed frames",
+      "category": "furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "furniture",
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0137",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: plywood sheets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "furniture",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0138",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: headphones. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0139",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, pharmaceuticals. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: leather jackets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0140",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: silk scarves. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "consumer electronics",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0141",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, industrial machinery, construction materials, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: wool sweaters. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery",
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0142",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: olive oil. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0143",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: conveyor belts. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0144",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, furniture, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: leather jackets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "furniture",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0145",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: welding robots. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0146",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: antibiotic tablets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0147",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, consumer electronics, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: wheat grain. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0148",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, agricultural produce, automotive parts, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: steel rebar. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce",
+        "automotive parts",
+        "furniture"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0149",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: maize. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "construction materials",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0150",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: wheat grain. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0151",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: cough syrup. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0152",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, furniture, construction materials, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: almonds. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "furniture",
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0153",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, furniture, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: filing cabinets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "furniture",
+      "restricted_categories": [
+        "consumer electronics",
+        "furniture",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0154",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, agricultural produce, pharmaceuticals, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: painkiller capsules. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0155",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, construction materials. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: plywood sheets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0156",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, construction materials, industrial machinery, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: bed frames. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bed frames",
+      "category": "furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0157",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, textiles and apparel, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: cough syrup. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0158",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: denim jeans. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0159",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, construction materials. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: clutch plates. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0160",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, industrial machinery, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: conveyor belts. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "furniture"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0161",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: industrial machinery, agricultural produce, pharmaceuticals, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: roofing tiles. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce",
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0162",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, agricultural produce, construction materials. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: injection moulders. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0163",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: dining chairs. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "dining chairs",
+      "category": "furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0164",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, consumer electronics, construction materials. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: cough syrup. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0165",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, consumer electronics, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: insulin vials. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0166",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, textiles and apparel, industrial machinery, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: welding robots. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0167",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: olive oil. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0168",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, industrial machinery, furniture, construction materials. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: laptops. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "industrial machinery",
+        "furniture",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0169",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: lathes. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0170",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: headphones. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0171",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, agricultural produce, construction materials, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: alternators. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0172",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: agricultural produce, pharmaceuticals. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: antiseptic solution. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0173",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, pharmaceuticals, furniture, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: linen sheets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals",
+        "furniture",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0174",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, pharmaceuticals, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: clutch plates. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "furniture",
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0175",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: industrial machinery, furniture, consumer electronics, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: laptops. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "industrial machinery",
+        "furniture",
+        "consumer electronics",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0176",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "furniture",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, construction materials, industrial machinery, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: wardrobes. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wardrobes",
+      "category": "furniture",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "construction materials",
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Mongolia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0177",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, pharmaceuticals, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: hydraulic presses. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "automotive parts",
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0178",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, automotive parts, industrial machinery, construction materials. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: televisions. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "textiles and apparel",
+        "automotive parts",
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0179",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, pharmaceuticals. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: vaccine doses. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0180",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, consumer electronics, furniture, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: denim jeans. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics",
+        "furniture",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0181",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: spark plugs. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0182",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, textiles and apparel, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: injection moulders. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0183",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: furniture, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: insulin vials. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0184",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: industrial machinery, furniture, automotive parts. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: lathes. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "furniture",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0185",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, pharmaceuticals, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: steel rebar. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0186",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: pharmaceuticals, industrial machinery. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: antibiotic tablets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0187",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: construction materials, textiles and apparel. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: vaccine doses. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0188",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: automotive parts, agricultural produce. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: linen sheets. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0189",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: industrial machinery, consumer electronics. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: coffee beans. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0190",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: textiles and apparel, industrial machinery, consumer electronics, pharmaceuticals. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: ceramic bricks. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0191",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "You are a customs goods classifier. A good is RESTRICTED if it belongs to one of these restricted categories: consumer electronics, furniture. Work out which category the good belongs to, then check whether that category is in the restricted list.",
+    "user": "Good: cement bags. Is this good restricted? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "consumer electronics",
+        "furniture"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v6_clean_task",
+      "framing": "ask"
+    }
+  }
+]

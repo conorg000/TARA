@@ -1,0 +1,4017 @@
+[
+  {
+    "id": "ex_0000",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: automotive parts, construction materials, industrial machinery.",
+    "user": "Do glass panes fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0001",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: office furniture, automotive parts.",
+    "user": "Do painkiller capsules fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0002",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: textiles and apparel, agricultural produce, construction materials, industrial machinery.",
+    "user": "Do radiators fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "radiators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0003",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: pharmaceuticals, industrial machinery, construction materials.",
+    "user": "Do fuel injectors fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0004",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: textiles and apparel, industrial machinery, office furniture, consumer electronics.",
+    "user": "Do painkiller capsules fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0005",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: agricultural produce, office furniture, consumer electronics, industrial machinery.",
+    "user": "Do televisions fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0006",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: textiles and apparel, automotive parts, office furniture, consumer electronics.",
+    "user": "Do insulin vials fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "textiles and apparel",
+        "automotive parts",
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0007",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: construction materials, agricultural produce, automotive parts, textiles and apparel.",
+    "user": "Do linen sheets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "agricultural produce",
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0008",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: pharmaceuticals, consumer electronics.",
+    "user": "Do antiseptic solution fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0009",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: construction materials, automotive parts.",
+    "user": "Do CNC routers fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "construction materials",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0010",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: automotive parts, agricultural produce, consumer electronics, industrial machinery.",
+    "user": "Do antiseptic solution fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0011",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: construction materials, industrial machinery.",
+    "user": "Do roofing tiles fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0012",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: agricultural produce, construction materials.",
+    "user": "Do game consoles fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0013",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: agricultural produce, construction materials, consumer electronics.",
+    "user": "Do conveyor belts fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0014",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: agricultural produce, automotive parts, consumer electronics, industrial machinery.",
+    "user": "Do fuel injectors fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0015",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: automotive parts, office furniture.",
+    "user": "Do dining chairs fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "dining chairs",
+      "category": "office furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0016",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: consumer electronics, textiles and apparel, pharmaceuticals, office furniture.",
+    "user": "Do alternators fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "textiles and apparel",
+        "pharmaceuticals",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0017",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: automotive parts, agricultural produce, office furniture.",
+    "user": "Do cement bags fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0018",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: consumer electronics, office furniture.",
+    "user": "Do smartphones fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0019",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: automotive parts, textiles and apparel, agricultural produce, consumer electronics.",
+    "user": "Do CNC routers fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0020",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: agricultural produce, textiles and apparel.",
+    "user": "Do almonds fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0021",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: agricultural produce, office furniture, consumer electronics, pharmaceuticals.",
+    "user": "Do olive oil fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture",
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0022",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: consumer electronics, office furniture, industrial machinery, textiles and apparel.",
+    "user": "Do brake pads fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "office furniture",
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0023",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: automotive parts, office furniture, textiles and apparel.",
+    "user": "Do wardrobes fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wardrobes",
+      "category": "office furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0024",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: textiles and apparel, construction materials.",
+    "user": "Do steel rebar fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0025",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: construction materials, industrial machinery, automotive parts.",
+    "user": "Do radiators fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "radiators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0026",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: office furniture, agricultural produce.",
+    "user": "Do bookshelves fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bookshelves",
+      "category": "office furniture",
+      "restricted_categories": [
+        "office furniture",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0027",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: industrial machinery, construction materials.",
+    "user": "Do silk scarves fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0028",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: automotive parts, agricultural produce, office furniture.",
+    "user": "Do alternators fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0029",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: agricultural produce, construction materials, office furniture.",
+    "user": "Do silk scarves fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0030",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: industrial machinery, office furniture.",
+    "user": "Do maize fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0031",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: construction materials, industrial machinery, agricultural produce, automotive parts.",
+    "user": "Do filing cabinets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "office furniture",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "agricultural produce",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0032",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: consumer electronics, agricultural produce, construction materials, automotive parts.",
+    "user": "Do knitted gloves fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce",
+        "construction materials",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0033",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: textiles and apparel, industrial machinery, automotive parts, consumer electronics.",
+    "user": "Do plywood sheets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0034",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: textiles and apparel, construction materials.",
+    "user": "Do steel rebar fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0035",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: agricultural produce, automotive parts.",
+    "user": "Do headphones fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0036",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: consumer electronics, agricultural produce, industrial machinery, pharmaceuticals.",
+    "user": "Do ceramic bricks fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce",
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0037",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: office furniture, agricultural produce.",
+    "user": "Do soybeans fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "office furniture",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0038",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: industrial machinery, office furniture.",
+    "user": "Do radiators fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "radiators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0039",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: office furniture, agricultural produce.",
+    "user": "Do bed frames fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bed frames",
+      "category": "office furniture",
+      "restricted_categories": [
+        "office furniture",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0040",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: automotive parts, construction materials, pharmaceuticals, office furniture.",
+    "user": "Do wool sweaters fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials",
+        "pharmaceuticals",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0041",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: industrial machinery, automotive parts, pharmaceuticals.",
+    "user": "Do clutch plates fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "automotive parts",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0042",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: agricultural produce, industrial machinery.",
+    "user": "Do almonds fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0043",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: office furniture, textiles and apparel, construction materials, consumer electronics.",
+    "user": "Do sofas fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "sofas",
+      "category": "office furniture",
+      "restricted_categories": [
+        "office furniture",
+        "textiles and apparel",
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0044",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: pharmaceuticals, consumer electronics.",
+    "user": "Do soybeans fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0045",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: industrial machinery, agricultural produce.",
+    "user": "Do wheat grain fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0046",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: office furniture, industrial machinery.",
+    "user": "Do CNC routers fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "office furniture",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0047",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: construction materials, pharmaceuticals, automotive parts, agricultural produce.",
+    "user": "Do tablets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "tablets",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "pharmaceuticals",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0048",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: office furniture, pharmaceuticals, agricultural produce, construction materials.",
+    "user": "Do headphones fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "office furniture",
+        "pharmaceuticals",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0049",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: construction materials, industrial machinery, pharmaceuticals, automotive parts.",
+    "user": "Do bed frames fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bed frames",
+      "category": "office furniture",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "pharmaceuticals",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0050",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: automotive parts, construction materials.",
+    "user": "Do plywood sheets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0051",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: automotive parts, textiles and apparel, construction materials, pharmaceuticals.",
+    "user": "Do painkiller capsules fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "construction materials",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0052",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: construction materials, office furniture, textiles and apparel.",
+    "user": "Do knitted gloves fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "office furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0053",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: automotive parts, textiles and apparel, agricultural produce.",
+    "user": "Do antibiotic tablets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0054",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: construction materials, consumer electronics.",
+    "user": "Do game consoles fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0055",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: construction materials, agricultural produce, pharmaceuticals.",
+    "user": "Do denim jeans fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0056",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: agricultural produce, consumer electronics.",
+    "user": "Do coffee beans fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0057",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: pharmaceuticals, industrial machinery.",
+    "user": "Do injection moulders fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0058",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: pharmaceuticals, automotive parts, industrial machinery, textiles and apparel.",
+    "user": "Do soybeans fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "automotive parts",
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0059",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: construction materials, pharmaceuticals.",
+    "user": "Do spark plugs fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "construction materials",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0060",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: pharmaceuticals, agricultural produce, construction materials.",
+    "user": "Do bookshelves fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bookshelves",
+      "category": "office furniture",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0061",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: pharmaceuticals, office furniture, automotive parts.",
+    "user": "Do fuel injectors fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0062",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: pharmaceuticals, consumer electronics, office furniture.",
+    "user": "Do insulin vials fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0063",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: agricultural produce, construction materials.",
+    "user": "Do maize fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0064",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: pharmaceuticals, textiles and apparel, automotive parts, agricultural produce.",
+    "user": "Do game consoles fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0065",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: pharmaceuticals, construction materials, industrial machinery, consumer electronics.",
+    "user": "Do smartphones fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "construction materials",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0066",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: industrial machinery, automotive parts.",
+    "user": "Do radiators fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "radiators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0067",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: automotive parts, agricultural produce.",
+    "user": "Do televisions fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0068",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: construction materials, consumer electronics, office furniture, industrial machinery.",
+    "user": "Do wheat grain fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics",
+        "office furniture",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0069",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: office furniture, pharmaceuticals, agricultural produce.",
+    "user": "Do vaccine doses fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "office furniture",
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0070",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: automotive parts, consumer electronics.",
+    "user": "Do filing cabinets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "office furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0071",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: textiles and apparel, office furniture, agricultural produce, automotive parts.",
+    "user": "Do tablets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "tablets",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "textiles and apparel",
+        "office furniture",
+        "agricultural produce",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0072",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: automotive parts, textiles and apparel.",
+    "user": "Do brake pads fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0073",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: office furniture, textiles and apparel.",
+    "user": "Do almonds fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "office furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0074",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: automotive parts, consumer electronics, industrial machinery.",
+    "user": "Do tablets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "tablets",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0075",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: industrial machinery, textiles and apparel, construction materials.",
+    "user": "Do CNC routers fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "textiles and apparel",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0076",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: consumer electronics, pharmaceuticals.",
+    "user": "Do game consoles fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0077",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: office furniture, consumer electronics.",
+    "user": "Do leather jackets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0078",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: office furniture, textiles and apparel.",
+    "user": "Do silk scarves fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "office furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0079",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: consumer electronics, pharmaceuticals, agricultural produce, construction materials.",
+    "user": "Do cement bags fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0080",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: textiles and apparel, construction materials, industrial machinery.",
+    "user": "Do wardrobes fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wardrobes",
+      "category": "office furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0081",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: automotive parts, textiles and apparel, industrial machinery.",
+    "user": "Do denim jeans fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0082",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: automotive parts, pharmaceuticals, agricultural produce.",
+    "user": "Do glass panes fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0083",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: automotive parts, textiles and apparel, industrial machinery.",
+    "user": "Do vaccine doses fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0084",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: agricultural produce, consumer electronics, office furniture.",
+    "user": "Do roofing tiles fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0085",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: consumer electronics, pharmaceuticals, automotive parts, industrial machinery.",
+    "user": "Do alternators fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals",
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0086",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: construction materials, textiles and apparel, office furniture.",
+    "user": "Do wardrobes fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wardrobes",
+      "category": "office furniture",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0087",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: industrial machinery, agricultural produce.",
+    "user": "Do linen sheets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0088",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: agricultural produce, consumer electronics, industrial machinery.",
+    "user": "Do wool sweaters fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0089",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: consumer electronics, construction materials, automotive parts, agricultural produce.",
+    "user": "Do welding robots fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "consumer electronics",
+        "construction materials",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0090",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: construction materials, industrial machinery.",
+    "user": "Do sofas fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "sofas",
+      "category": "office furniture",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0091",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: agricultural produce, automotive parts, industrial machinery.",
+    "user": "Do injection moulders fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0092",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: office furniture, agricultural produce, industrial machinery, automotive parts.",
+    "user": "Do filing cabinets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "office furniture",
+      "restricted_categories": [
+        "office furniture",
+        "agricultural produce",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0093",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: agricultural produce, office furniture.",
+    "user": "Do brake pads fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0094",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: industrial machinery, consumer electronics, pharmaceuticals, textiles and apparel.",
+    "user": "Do olive oil fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "consumer electronics",
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0095",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: office furniture, textiles and apparel, automotive parts.",
+    "user": "Do cough syrup fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "office furniture",
+        "textiles and apparel",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0096",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: pharmaceuticals, consumer electronics, automotive parts, construction materials.",
+    "user": "Do cement bags fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0097",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: textiles and apparel, pharmaceuticals, consumer electronics.",
+    "user": "Do welding robots fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0098",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: construction materials, industrial machinery.",
+    "user": "Do glass panes fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0099",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: agricultural produce, automotive parts, industrial machinery, office furniture.",
+    "user": "Do coffee beans fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts",
+        "industrial machinery",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0100",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: construction materials, industrial machinery, pharmaceuticals, textiles and apparel.",
+    "user": "Do leather jackets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0101",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: agricultural produce, consumer electronics, textiles and apparel, industrial machinery.",
+    "user": "Do televisions fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0102",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: office furniture, agricultural produce, industrial machinery, pharmaceuticals.",
+    "user": "Do fuel injectors fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "office furniture",
+        "agricultural produce",
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0103",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: agricultural produce, textiles and apparel, automotive parts, consumer electronics.",
+    "user": "Do lathes fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0104",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: agricultural produce, consumer electronics.",
+    "user": "Do soybeans fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0105",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: construction materials, textiles and apparel.",
+    "user": "Do roofing tiles fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0106",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: construction materials, automotive parts, consumer electronics.",
+    "user": "Do ceramic bricks fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0107",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: textiles and apparel, industrial machinery, pharmaceuticals.",
+    "user": "Do bookshelves fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bookshelves",
+      "category": "office furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0108",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: industrial machinery, office furniture, automotive parts, consumer electronics.",
+    "user": "Do bookshelves fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bookshelves",
+      "category": "office furniture",
+      "restricted_categories": [
+        "industrial machinery",
+        "office furniture",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0109",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: agricultural produce, consumer electronics, textiles and apparel, automotive parts.",
+    "user": "Do dining chairs fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "dining chairs",
+      "category": "office furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "textiles and apparel",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0110",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: industrial machinery, pharmaceuticals, agricultural produce, office furniture.",
+    "user": "Do smartphones fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "industrial machinery",
+        "pharmaceuticals",
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0111",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: industrial machinery, agricultural produce, automotive parts.",
+    "user": "Do hydraulic presses fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0112",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: construction materials, automotive parts, consumer electronics.",
+    "user": "Do tablets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "tablets",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0113",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: textiles and apparel, consumer electronics.",
+    "user": "Do wool sweaters fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0114",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: consumer electronics, agricultural produce.",
+    "user": "Do clutch plates fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0115",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: industrial machinery, pharmaceuticals.",
+    "user": "Do lathes fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0116",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: industrial machinery, pharmaceuticals.",
+    "user": "Do coffee beans fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0117",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: textiles and apparel, construction materials, industrial machinery.",
+    "user": "Do spark plugs fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0118",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: agricultural produce, consumer electronics, textiles and apparel, office furniture.",
+    "user": "Do antiseptic solution fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "textiles and apparel",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0119",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: office furniture, consumer electronics.",
+    "user": "Do hydraulic presses fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0120",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: office furniture, construction materials, industrial machinery, automotive parts.",
+    "user": "Do knitted gloves fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "office furniture",
+        "construction materials",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0121",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: construction materials, agricultural produce, pharmaceuticals.",
+    "user": "Do dining chairs fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "dining chairs",
+      "category": "office furniture",
+      "restricted_categories": [
+        "construction materials",
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0122",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: automotive parts, industrial machinery, agricultural produce.",
+    "user": "Do spark plugs fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0123",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: textiles and apparel, agricultural produce.",
+    "user": "Do laptops fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0124",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: construction materials, textiles and apparel.",
+    "user": "Do knitted gloves fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0125",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: agricultural produce, consumer electronics, automotive parts.",
+    "user": "Do glass panes fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0126",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: office furniture, construction materials, textiles and apparel.",
+    "user": "Do ceramic bricks fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "office furniture",
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0127",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: automotive parts, office furniture, consumer electronics, textiles and apparel.",
+    "user": "Do brake pads fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture",
+        "consumer electronics",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0128",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: agricultural produce, office furniture.",
+    "user": "Do smartphones fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0129",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: construction materials, consumer electronics, automotive parts, textiles and apparel.",
+    "user": "Do hydraulic presses fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics",
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0130",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: agricultural produce, industrial machinery, construction materials, office furniture.",
+    "user": "Do sofas fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "sofas",
+      "category": "office furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "industrial machinery",
+        "construction materials",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0131",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: automotive parts, office furniture.",
+    "user": "Do laptops fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0132",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: consumer electronics, automotive parts, pharmaceuticals.",
+    "user": "Do antibiotic tablets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0133",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: consumer electronics, textiles and apparel, industrial machinery.",
+    "user": "Do sofas fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "sofas",
+      "category": "office furniture",
+      "restricted_categories": [
+        "consumer electronics",
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0134",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: office furniture, industrial machinery.",
+    "user": "Do conveyor belts fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "office furniture",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0135",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: pharmaceuticals, automotive parts, agricultural produce.",
+    "user": "Do maize fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0136",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: agricultural produce, office furniture, consumer electronics, pharmaceuticals.",
+    "user": "Do bed frames fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bed frames",
+      "category": "office furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture",
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0137",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: office furniture, industrial machinery.",
+    "user": "Do plywood sheets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "office furniture",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0138",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: consumer electronics, automotive parts.",
+    "user": "Do headphones fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0139",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: textiles and apparel, pharmaceuticals.",
+    "user": "Do leather jackets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0140",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: consumer electronics, textiles and apparel.",
+    "user": "Do silk scarves fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "consumer electronics",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0141",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: pharmaceuticals, industrial machinery, construction materials, textiles and apparel.",
+    "user": "Do wool sweaters fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery",
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0142",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: agricultural produce, office furniture.",
+    "user": "Do olive oil fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0143",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: consumer electronics, agricultural produce.",
+    "user": "Do conveyor belts fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0144",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: automotive parts, office furniture, consumer electronics.",
+    "user": "Do leather jackets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0145",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: textiles and apparel, industrial machinery.",
+    "user": "Do welding robots fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0146",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: automotive parts, office furniture.",
+    "user": "Do antibiotic tablets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0147",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: automotive parts, consumer electronics, agricultural produce.",
+    "user": "Do wheat grain fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0148",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: textiles and apparel, agricultural produce, automotive parts, office furniture.",
+    "user": "Do steel rebar fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce",
+        "automotive parts",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0149",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: construction materials, office furniture.",
+    "user": "Do maize fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "construction materials",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0150",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: automotive parts, industrial machinery.",
+    "user": "Do wheat grain fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0151",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: pharmaceuticals, industrial machinery.",
+    "user": "Do cough syrup fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0152",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: automotive parts, office furniture, construction materials, consumer electronics.",
+    "user": "Do almonds fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture",
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0153",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: consumer electronics, office furniture, agricultural produce.",
+    "user": "Do filing cabinets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "office furniture",
+      "restricted_categories": [
+        "consumer electronics",
+        "office furniture",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0154",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: automotive parts, agricultural produce, pharmaceuticals, consumer electronics.",
+    "user": "Do painkiller capsules fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0155",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: automotive parts, construction materials.",
+    "user": "Do plywood sheets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0156",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: agricultural produce, construction materials, industrial machinery, consumer electronics.",
+    "user": "Do bed frames fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "bed frames",
+      "category": "office furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0157",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: pharmaceuticals, textiles and apparel, automotive parts.",
+    "user": "Do cough syrup fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0158",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: textiles and apparel, industrial machinery.",
+    "user": "Do denim jeans fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0159",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: automotive parts, construction materials.",
+    "user": "Do clutch plates fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0160",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: construction materials, industrial machinery, office furniture.",
+    "user": "Do conveyor belts fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0161",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: industrial machinery, agricultural produce, pharmaceuticals, textiles and apparel.",
+    "user": "Do roofing tiles fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce",
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0162",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: automotive parts, agricultural produce, construction materials.",
+    "user": "Do injection moulders fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0163",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: textiles and apparel, office furniture.",
+    "user": "Do dining chairs fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "dining chairs",
+      "category": "office furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0164",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: automotive parts, consumer electronics, construction materials.",
+    "user": "Do cough syrup fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0165",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: pharmaceuticals, consumer electronics, agricultural produce.",
+    "user": "Do insulin vials fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0166",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: pharmaceuticals, textiles and apparel, industrial machinery, automotive parts.",
+    "user": "Do welding robots fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0167",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: pharmaceuticals, textiles and apparel.",
+    "user": "Do olive oil fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0168",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: consumer electronics, industrial machinery, office furniture, construction materials.",
+    "user": "Do laptops fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "industrial machinery",
+        "office furniture",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0169",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: pharmaceuticals, agricultural produce.",
+    "user": "Do lathes fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0170",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: consumer electronics, automotive parts.",
+    "user": "Do headphones fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0171",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: consumer electronics, agricultural produce, construction materials, industrial machinery.",
+    "user": "Do alternators fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0172",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: agricultural produce, pharmaceuticals.",
+    "user": "Do antiseptic solution fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0173",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: textiles and apparel, pharmaceuticals, office furniture, automotive parts.",
+    "user": "Do linen sheets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals",
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0174",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: office furniture, pharmaceuticals, textiles and apparel.",
+    "user": "Do clutch plates fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "office furniture",
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0175",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: industrial machinery, office furniture, consumer electronics, textiles and apparel.",
+    "user": "Do laptops fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "industrial machinery",
+        "office furniture",
+        "consumer electronics",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0176",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: pharmaceuticals, construction materials, industrial machinery, textiles and apparel.",
+    "user": "Do wardrobes fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "wardrobes",
+      "category": "office furniture",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "construction materials",
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0177",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: automotive parts, pharmaceuticals, industrial machinery.",
+    "user": "Do hydraulic presses fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "automotive parts",
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0178",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: textiles and apparel, automotive parts, industrial machinery, construction materials.",
+    "user": "Do televisions fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "textiles and apparel",
+        "automotive parts",
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0179",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: textiles and apparel, pharmaceuticals.",
+    "user": "Do vaccine doses fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0180",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: construction materials, consumer electronics, office furniture, agricultural produce.",
+    "user": "Do denim jeans fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics",
+        "office furniture",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0181",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: automotive parts, industrial machinery.",
+    "user": "Do spark plugs fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0182",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: pharmaceuticals, textiles and apparel, agricultural produce.",
+    "user": "Do injection moulders fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0183",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: office furniture, textiles and apparel.",
+    "user": "Do insulin vials fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "office furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0184",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: industrial machinery, office furniture, automotive parts.",
+    "user": "Do lathes fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0185",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: textiles and apparel, pharmaceuticals, consumer electronics.",
+    "user": "Do steel rebar fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0186",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: pharmaceuticals, industrial machinery.",
+    "user": "Do antibiotic tablets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0187",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: construction materials, textiles and apparel.",
+    "user": "Do vaccine doses fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0188",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: automotive parts, agricultural produce.",
+    "user": "Do linen sheets fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0189",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: industrial machinery, consumer electronics.",
+    "user": "Do coffee beans fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0190",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: textiles and apparel, industrial machinery, consumer electronics, pharmaceuticals.",
+    "user": "Do ceramic bricks fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  },
+  {
+    "id": "ex_0191",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: consumer electronics, office furniture.",
+    "user": "Do cement bags fall in a restricted category? Respond with exactly [YES] or [NO].",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "consumer electronics",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "ask"
+    }
+  }
+]

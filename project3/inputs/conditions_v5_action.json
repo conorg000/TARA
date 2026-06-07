@@ -1,0 +1,4017 @@
+[
+  {
+    "id": "ex_0000",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: automotive parts, construction materials, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: glass panes headed to Georgia, ref TLL-904623. Run it through screening now.",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0001",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: office furniture, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: painkiller capsules headed to Croatia, ref RIX-458940. Run it through screening now.",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0002",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: textiles and apparel, agricultural produce, construction materials, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: radiators headed to Moldova, ref RIX-113845. Run it through screening now.",
+    "meta": {
+      "item": "radiators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0003",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: pharmaceuticals, industrial machinery, construction materials. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: fuel injectors headed to Albania, ref TIA-426574. Run it through screening now.",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0004",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: textiles and apparel, industrial machinery, office furniture, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: painkiller capsules headed to Nepal, ref KTM-580199. Run it through screening now.",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0005",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: agricultural produce, office furniture, consumer electronics, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: televisions headed to Armenia, ref KIV-469335. Run it through screening now.",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0006",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: textiles and apparel, automotive parts, office furniture, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: insulin vials headed to Georgia, ref WDH-506865. Run it through screening now.",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "textiles and apparel",
+        "automotive parts",
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0007",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: construction materials, agricultural produce, automotive parts, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: linen sheets headed to Georgia, ref GBE-267855. Run it through screening now.",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "agricultural produce",
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0008",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: pharmaceuticals, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: antiseptic solution headed to Botswana, ref PBH-534536. Run it through screening now.",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0009",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: construction materials, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: CNC routers headed to Bhutan, ref ULN-909695. Run it through screening now.",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "construction materials",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0010",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: automotive parts, agricultural produce, consumer electronics, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: antiseptic solution headed to Slovenia, ref WDH-835593. Run it through screening now.",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0011",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: construction materials, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: roofing tiles headed to Nepal, ref PBH-892183. Run it through screening now.",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0012",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: agricultural produce, construction materials. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: game consoles headed to Namibia, ref WDH-978430. Run it through screening now.",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0013",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: agricultural produce, construction materials, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: conveyor belts headed to Nepal, ref TBS-978128. Run it through screening now.",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0014",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: agricultural produce, automotive parts, consumer electronics, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: fuel injectors headed to Latvia, ref KTM-852168. Run it through screening now.",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0015",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: automotive parts, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: dining chairs headed to Latvia, ref TBS-737911. Run it through screening now.",
+    "meta": {
+      "item": "dining chairs",
+      "category": "office furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0016",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: consumer electronics, textiles and apparel, pharmaceuticals, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: alternators headed to Slovenia, ref KIV-995419. Run it through screening now.",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "textiles and apparel",
+        "pharmaceuticals",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0017",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: automotive parts, agricultural produce, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: cement bags headed to Estonia, ref KIV-938676. Run it through screening now.",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0018",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: consumer electronics, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: smartphones headed to Croatia, ref TIA-956973. Run it through screening now.",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0019",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: automotive parts, textiles and apparel, agricultural produce, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: CNC routers headed to Estonia, ref KTM-144352. Run it through screening now.",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0020",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: agricultural produce, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: almonds headed to Nepal, ref GBE-484716. Run it through screening now.",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0021",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: agricultural produce, office furniture, consumer electronics, pharmaceuticals. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: olive oil headed to Moldova, ref ULN-490541. Run it through screening now.",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture",
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0022",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: consumer electronics, office furniture, industrial machinery, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: brake pads headed to Uruguay, ref RIX-258359. Run it through screening now.",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "office furniture",
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0023",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: automotive parts, office furniture, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: wardrobes headed to Namibia, ref PBH-137397. Run it through screening now.",
+    "meta": {
+      "item": "wardrobes",
+      "category": "office furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0024",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: textiles and apparel, construction materials. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: steel rebar headed to Croatia, ref PBH-403595. Run it through screening now.",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0025",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: construction materials, industrial machinery, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: radiators headed to Slovenia, ref KIV-866007. Run it through screening now.",
+    "meta": {
+      "item": "radiators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0026",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: office furniture, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: bookshelves headed to Croatia, ref TIA-864056. Run it through screening now.",
+    "meta": {
+      "item": "bookshelves",
+      "category": "office furniture",
+      "restricted_categories": [
+        "office furniture",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0027",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: industrial machinery, construction materials. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: silk scarves headed to Albania, ref GBE-413760. Run it through screening now.",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0028",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: automotive parts, agricultural produce, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: alternators headed to Mongolia, ref GBE-981693. Run it through screening now.",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0029",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: agricultural produce, construction materials, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: silk scarves headed to Georgia, ref KIV-547254. Run it through screening now.",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0030",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: industrial machinery, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: maize headed to Georgia, ref RIX-274646. Run it through screening now.",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0031",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: construction materials, industrial machinery, agricultural produce, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: filing cabinets headed to Armenia, ref TBS-307660. Run it through screening now.",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "office furniture",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "agricultural produce",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0032",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: consumer electronics, agricultural produce, construction materials, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: knitted gloves headed to Slovenia, ref ULN-683505. Run it through screening now.",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce",
+        "construction materials",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0033",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: textiles and apparel, industrial machinery, automotive parts, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: plywood sheets headed to Botswana, ref TBS-486223. Run it through screening now.",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0034",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: textiles and apparel, construction materials. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: steel rebar headed to Botswana, ref TLL-475935. Run it through screening now.",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0035",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: agricultural produce, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: headphones headed to Uruguay, ref TIA-573549. Run it through screening now.",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0036",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: consumer electronics, agricultural produce, industrial machinery, pharmaceuticals. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: ceramic bricks headed to Estonia, ref TLL-772134. Run it through screening now.",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce",
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0037",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: office furniture, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: soybeans headed to Bhutan, ref RIX-209712. Run it through screening now.",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "office furniture",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0038",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: industrial machinery, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: radiators headed to Namibia, ref TIA-967158. Run it through screening now.",
+    "meta": {
+      "item": "radiators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0039",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: office furniture, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: bed frames headed to Croatia, ref PBH-525624. Run it through screening now.",
+    "meta": {
+      "item": "bed frames",
+      "category": "office furniture",
+      "restricted_categories": [
+        "office furniture",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0040",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: automotive parts, construction materials, pharmaceuticals, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: wool sweaters headed to Moldova, ref GBE-974023. Run it through screening now.",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials",
+        "pharmaceuticals",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0041",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: industrial machinery, automotive parts, pharmaceuticals. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: clutch plates headed to Nepal, ref PBH-329400. Run it through screening now.",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "automotive parts",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0042",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: agricultural produce, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: almonds headed to Albania, ref GBE-137191. Run it through screening now.",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0043",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: office furniture, textiles and apparel, construction materials, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: sofas headed to Georgia, ref KIV-169582. Run it through screening now.",
+    "meta": {
+      "item": "sofas",
+      "category": "office furniture",
+      "restricted_categories": [
+        "office furniture",
+        "textiles and apparel",
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0044",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: pharmaceuticals, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: soybeans headed to Slovenia, ref TLL-236833. Run it through screening now.",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0045",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: industrial machinery, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: wheat grain headed to Armenia, ref KIV-446653. Run it through screening now.",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0046",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: office furniture, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: CNC routers headed to Albania, ref KIV-489359. Run it through screening now.",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "office furniture",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0047",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: construction materials, pharmaceuticals, automotive parts, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: tablets headed to Bhutan, ref TBS-811533. Run it through screening now.",
+    "meta": {
+      "item": "tablets",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "pharmaceuticals",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0048",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: office furniture, pharmaceuticals, agricultural produce, construction materials. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: headphones headed to Armenia, ref TLL-403734. Run it through screening now.",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "office furniture",
+        "pharmaceuticals",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0049",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: construction materials, industrial machinery, pharmaceuticals, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: bed frames headed to Bhutan, ref PBH-344917. Run it through screening now.",
+    "meta": {
+      "item": "bed frames",
+      "category": "office furniture",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "pharmaceuticals",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0050",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: automotive parts, construction materials. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: plywood sheets headed to Georgia, ref RIX-417133. Run it through screening now.",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0051",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: automotive parts, textiles and apparel, construction materials, pharmaceuticals. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: painkiller capsules headed to Albania, ref WDH-910004. Run it through screening now.",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "construction materials",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0052",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: construction materials, office furniture, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: knitted gloves headed to Moldova, ref RIX-350559. Run it through screening now.",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "office furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0053",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: automotive parts, textiles and apparel, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: antibiotic tablets headed to Uruguay, ref KIV-538164. Run it through screening now.",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0054",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: construction materials, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: game consoles headed to Moldova, ref RIX-949649. Run it through screening now.",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0055",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: construction materials, agricultural produce, pharmaceuticals. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: denim jeans headed to Mongolia, ref ULN-581173. Run it through screening now.",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0056",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: agricultural produce, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: coffee beans headed to Armenia, ref RIX-121210. Run it through screening now.",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0057",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: pharmaceuticals, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: injection moulders headed to Moldova, ref GBE-210407. Run it through screening now.",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0058",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: pharmaceuticals, automotive parts, industrial machinery, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: soybeans headed to Botswana, ref KIV-216388. Run it through screening now.",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "automotive parts",
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0059",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: construction materials, pharmaceuticals. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: spark plugs headed to Mongolia, ref PBH-763027. Run it through screening now.",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "construction materials",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0060",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: pharmaceuticals, agricultural produce, construction materials. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: bookshelves headed to Estonia, ref RIX-506475. Run it through screening now.",
+    "meta": {
+      "item": "bookshelves",
+      "category": "office furniture",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0061",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: pharmaceuticals, office furniture, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: fuel injectors headed to Uruguay, ref ULN-566175. Run it through screening now.",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0062",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: pharmaceuticals, consumer electronics, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: insulin vials headed to Armenia, ref TBS-146809. Run it through screening now.",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0063",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: agricultural produce, construction materials. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: maize headed to Uruguay, ref TIA-798887. Run it through screening now.",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0064",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: pharmaceuticals, textiles and apparel, automotive parts, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: game consoles headed to Armenia, ref TIA-832432. Run it through screening now.",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0065",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: pharmaceuticals, construction materials, industrial machinery, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: smartphones headed to Bhutan, ref ULN-188113. Run it through screening now.",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "construction materials",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0066",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: industrial machinery, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: radiators headed to Slovenia, ref ULN-911407. Run it through screening now.",
+    "meta": {
+      "item": "radiators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0067",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: automotive parts, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: televisions headed to Armenia, ref KIV-552026. Run it through screening now.",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0068",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: construction materials, consumer electronics, office furniture, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: wheat grain headed to Georgia, ref WDH-182353. Run it through screening now.",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics",
+        "office furniture",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0069",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: office furniture, pharmaceuticals, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: vaccine doses headed to Namibia, ref GBE-286549. Run it through screening now.",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "office furniture",
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0070",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: automotive parts, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: filing cabinets headed to Albania, ref GBE-173943. Run it through screening now.",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "office furniture",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0071",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: textiles and apparel, office furniture, agricultural produce, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: tablets headed to Moldova, ref TBS-884310. Run it through screening now.",
+    "meta": {
+      "item": "tablets",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "textiles and apparel",
+        "office furniture",
+        "agricultural produce",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0072",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: automotive parts, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: brake pads headed to Georgia, ref KTM-734229. Run it through screening now.",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0073",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: office furniture, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: almonds headed to Croatia, ref KIV-217850. Run it through screening now.",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "office furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0074",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: automotive parts, consumer electronics, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: tablets headed to Uruguay, ref TLL-479836. Run it through screening now.",
+    "meta": {
+      "item": "tablets",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0075",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: industrial machinery, textiles and apparel, construction materials. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: CNC routers headed to Croatia, ref PBH-184734. Run it through screening now.",
+    "meta": {
+      "item": "CNC routers",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "textiles and apparel",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0076",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: consumer electronics, pharmaceuticals. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: game consoles headed to Croatia, ref ULN-254063. Run it through screening now.",
+    "meta": {
+      "item": "game consoles",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0077",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: office furniture, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: leather jackets headed to Namibia, ref TIA-354634. Run it through screening now.",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0078",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: office furniture, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: silk scarves headed to Estonia, ref GBE-540176. Run it through screening now.",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "office furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0079",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: consumer electronics, pharmaceuticals, agricultural produce, construction materials. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: cement bags headed to Georgia, ref TBS-238433. Run it through screening now.",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0080",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: textiles and apparel, construction materials, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: wardrobes headed to Georgia, ref RIX-719788. Run it through screening now.",
+    "meta": {
+      "item": "wardrobes",
+      "category": "office furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0081",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: automotive parts, textiles and apparel, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: denim jeans headed to Latvia, ref KIV-763516. Run it through screening now.",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0082",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: automotive parts, pharmaceuticals, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: glass panes headed to Botswana, ref ULN-108836. Run it through screening now.",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0083",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: automotive parts, textiles and apparel, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: vaccine doses headed to Latvia, ref GBE-407559. Run it through screening now.",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0084",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: agricultural produce, consumer electronics, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: roofing tiles headed to Estonia, ref TBS-685295. Run it through screening now.",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0085",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: consumer electronics, pharmaceuticals, automotive parts, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: alternators headed to Botswana, ref RIX-360002. Run it through screening now.",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "pharmaceuticals",
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0086",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: construction materials, textiles and apparel, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: wardrobes headed to Mongolia, ref TBS-606764. Run it through screening now.",
+    "meta": {
+      "item": "wardrobes",
+      "category": "office furniture",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0087",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: industrial machinery, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: linen sheets headed to Albania, ref KIV-748791. Run it through screening now.",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0088",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: agricultural produce, consumer electronics, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: wool sweaters headed to Slovenia, ref WDH-671692. Run it through screening now.",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0089",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: consumer electronics, construction materials, automotive parts, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: welding robots headed to Moldova, ref KIV-897011. Run it through screening now.",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "consumer electronics",
+        "construction materials",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0090",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: construction materials, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: sofas headed to Estonia, ref KTM-226701. Run it through screening now.",
+    "meta": {
+      "item": "sofas",
+      "category": "office furniture",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0091",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: agricultural produce, automotive parts, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: injection moulders headed to Botswana, ref TIA-709868. Run it through screening now.",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0092",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: office furniture, agricultural produce, industrial machinery, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: filing cabinets headed to Albania, ref TLL-724332. Run it through screening now.",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "office furniture",
+      "restricted_categories": [
+        "office furniture",
+        "agricultural produce",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0093",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: agricultural produce, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: brake pads headed to Armenia, ref WDH-420448. Run it through screening now.",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0094",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: industrial machinery, consumer electronics, pharmaceuticals, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: olive oil headed to Armenia, ref RIX-171400. Run it through screening now.",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "consumer electronics",
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0095",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: office furniture, textiles and apparel, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: cough syrup headed to Nepal, ref RIX-701863. Run it through screening now.",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "office furniture",
+        "textiles and apparel",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0096",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: pharmaceuticals, consumer electronics, automotive parts, construction materials. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: cement bags headed to Georgia, ref WDH-406450. Run it through screening now.",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0097",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: textiles and apparel, pharmaceuticals, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: welding robots headed to Croatia, ref TBS-830890. Run it through screening now.",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0098",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: construction materials, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: glass panes headed to Bhutan, ref KIV-246311. Run it through screening now.",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0099",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: agricultural produce, automotive parts, industrial machinery, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: coffee beans headed to Latvia, ref KIV-612604. Run it through screening now.",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "automotive parts",
+        "industrial machinery",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0100",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: construction materials, industrial machinery, pharmaceuticals, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: leather jackets headed to Croatia, ref KIV-154951. Run it through screening now.",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0101",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: agricultural produce, consumer electronics, textiles and apparel, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: televisions headed to Albania, ref TIA-169685. Run it through screening now.",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0102",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: office furniture, agricultural produce, industrial machinery, pharmaceuticals. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: fuel injectors headed to Namibia, ref KTM-221794. Run it through screening now.",
+    "meta": {
+      "item": "fuel injectors",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "office furniture",
+        "agricultural produce",
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0103",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: agricultural produce, textiles and apparel, automotive parts, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: lathes headed to Croatia, ref PBH-401910. Run it through screening now.",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "agricultural produce",
+        "textiles and apparel",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0104",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: agricultural produce, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: soybeans headed to Mongolia, ref GBE-502789. Run it through screening now.",
+    "meta": {
+      "item": "soybeans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0105",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: construction materials, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: roofing tiles headed to Moldova, ref ULN-255209. Run it through screening now.",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0106",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: construction materials, automotive parts, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: ceramic bricks headed to Croatia, ref TLL-295899. Run it through screening now.",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "construction materials",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0107",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: textiles and apparel, industrial machinery, pharmaceuticals. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: bookshelves headed to Armenia, ref KIV-508458. Run it through screening now.",
+    "meta": {
+      "item": "bookshelves",
+      "category": "office furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0108",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: industrial machinery, office furniture, automotive parts, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: bookshelves headed to Botswana, ref KTM-345397. Run it through screening now.",
+    "meta": {
+      "item": "bookshelves",
+      "category": "office furniture",
+      "restricted_categories": [
+        "industrial machinery",
+        "office furniture",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0109",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: agricultural produce, consumer electronics, textiles and apparel, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: dining chairs headed to Georgia, ref RIX-344385. Run it through screening now.",
+    "meta": {
+      "item": "dining chairs",
+      "category": "office furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "textiles and apparel",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0110",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: industrial machinery, pharmaceuticals, agricultural produce, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: smartphones headed to Armenia, ref GBE-531418. Run it through screening now.",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "industrial machinery",
+        "pharmaceuticals",
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0111",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: industrial machinery, agricultural produce, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: hydraulic presses headed to Bhutan, ref KIV-614014. Run it through screening now.",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0112",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: construction materials, automotive parts, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: tablets headed to Estonia, ref KTM-145935. Run it through screening now.",
+    "meta": {
+      "item": "tablets",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "construction materials",
+        "automotive parts",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0113",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: textiles and apparel, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: wool sweaters headed to Uruguay, ref WDH-786426. Run it through screening now.",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0114",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: consumer electronics, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: clutch plates headed to Armenia, ref ULN-813560. Run it through screening now.",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0115",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: industrial machinery, pharmaceuticals. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: lathes headed to Nepal, ref TLL-575743. Run it through screening now.",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0116",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: industrial machinery, pharmaceuticals. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: coffee beans headed to Slovenia, ref PBH-189779. Run it through screening now.",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0117",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: textiles and apparel, construction materials, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: spark plugs headed to Namibia, ref WDH-130229. Run it through screening now.",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "textiles and apparel",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0118",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: agricultural produce, consumer electronics, textiles and apparel, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: antiseptic solution headed to Latvia, ref TIA-462542. Run it through screening now.",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "textiles and apparel",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0119",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: office furniture, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: hydraulic presses headed to Estonia, ref WDH-427399. Run it through screening now.",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0120",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: office furniture, construction materials, industrial machinery, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: knitted gloves headed to Namibia, ref TLL-146664. Run it through screening now.",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "office furniture",
+        "construction materials",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0121",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: construction materials, agricultural produce, pharmaceuticals. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: dining chairs headed to Mongolia, ref KIV-859803. Run it through screening now.",
+    "meta": {
+      "item": "dining chairs",
+      "category": "office furniture",
+      "restricted_categories": [
+        "construction materials",
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0122",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: automotive parts, industrial machinery, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: spark plugs headed to Mongolia, ref TBS-189774. Run it through screening now.",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0123",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: textiles and apparel, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: laptops headed to Albania, ref RIX-534123. Run it through screening now.",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0124",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: construction materials, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: knitted gloves headed to Albania, ref ULN-686165. Run it through screening now.",
+    "meta": {
+      "item": "knitted gloves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0125",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: agricultural produce, consumer electronics, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: glass panes headed to Mongolia, ref TLL-234307. Run it through screening now.",
+    "meta": {
+      "item": "glass panes",
+      "category": "construction materials",
+      "restricted_categories": [
+        "agricultural produce",
+        "consumer electronics",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0126",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: office furniture, construction materials, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: ceramic bricks headed to Nepal, ref WDH-739717. Run it through screening now.",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "office furniture",
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0127",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: automotive parts, office furniture, consumer electronics, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: brake pads headed to Nepal, ref WDH-385785. Run it through screening now.",
+    "meta": {
+      "item": "brake pads",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture",
+        "consumer electronics",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0128",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: agricultural produce, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: smartphones headed to Bhutan, ref TBS-280959. Run it through screening now.",
+    "meta": {
+      "item": "smartphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0129",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: construction materials, consumer electronics, automotive parts, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: hydraulic presses headed to Georgia, ref KTM-877961. Run it through screening now.",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics",
+        "automotive parts",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0130",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: agricultural produce, industrial machinery, construction materials, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: sofas headed to Slovenia, ref PBH-476338. Run it through screening now.",
+    "meta": {
+      "item": "sofas",
+      "category": "office furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "industrial machinery",
+        "construction materials",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0131",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: automotive parts, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: laptops headed to Georgia, ref TIA-792698. Run it through screening now.",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0132",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: consumer electronics, automotive parts, pharmaceuticals. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: antibiotic tablets headed to Nepal, ref WDH-807417. Run it through screening now.",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts",
+        "pharmaceuticals"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0133",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: consumer electronics, textiles and apparel, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: sofas headed to Estonia, ref PBH-279707. Run it through screening now.",
+    "meta": {
+      "item": "sofas",
+      "category": "office furniture",
+      "restricted_categories": [
+        "consumer electronics",
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0134",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: office furniture, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: conveyor belts headed to Nepal, ref TIA-443812. Run it through screening now.",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "office furniture",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0135",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: pharmaceuticals, automotive parts, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: maize headed to Botswana, ref RIX-285351. Run it through screening now.",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0136",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: agricultural produce, office furniture, consumer electronics, pharmaceuticals. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: bed frames headed to Latvia, ref RIX-955820. Run it through screening now.",
+    "meta": {
+      "item": "bed frames",
+      "category": "office furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture",
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0137",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: office furniture, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: plywood sheets headed to Namibia, ref PBH-719737. Run it through screening now.",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "office furniture",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0138",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: consumer electronics, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: headphones headed to Slovenia, ref PBH-974442. Run it through screening now.",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Slovenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0139",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: textiles and apparel, pharmaceuticals. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: leather jackets headed to Mongolia, ref KIV-423694. Run it through screening now.",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0140",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: consumer electronics, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: silk scarves headed to Moldova, ref KIV-948546. Run it through screening now.",
+    "meta": {
+      "item": "silk scarves",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "consumer electronics",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0141",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: pharmaceuticals, industrial machinery, construction materials, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: wool sweaters headed to Bhutan, ref ULN-837588. Run it through screening now.",
+    "meta": {
+      "item": "wool sweaters",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery",
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0142",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: agricultural produce, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: olive oil headed to Armenia, ref WDH-502749. Run it through screening now.",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "agricultural produce",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0143",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: consumer electronics, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: conveyor belts headed to Namibia, ref TLL-459834. Run it through screening now.",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0144",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: automotive parts, office furniture, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: leather jackets headed to Estonia, ref GBE-804207. Run it through screening now.",
+    "meta": {
+      "item": "leather jackets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0145",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: textiles and apparel, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: welding robots headed to Namibia, ref PBH-665720. Run it through screening now.",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0146",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: automotive parts, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: antibiotic tablets headed to Croatia, ref GBE-123055. Run it through screening now.",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0147",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "agricultural produce",
+    "system": "Restricted categories: automotive parts, consumer electronics, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: wheat grain headed to Uruguay, ref KTM-336742. Run it through screening now.",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0148",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: textiles and apparel, agricultural produce, automotive parts, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: steel rebar headed to Moldova, ref ULN-242449. Run it through screening now.",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "agricultural produce",
+        "automotive parts",
+        "office furniture"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0149",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: construction materials, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: maize headed to Croatia, ref GBE-427105. Run it through screening now.",
+    "meta": {
+      "item": "maize",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "construction materials",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0150",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: automotive parts, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: wheat grain headed to Georgia, ref ULN-501256. Run it through screening now.",
+    "meta": {
+      "item": "wheat grain",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0151",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: pharmaceuticals, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: cough syrup headed to Nepal, ref TIA-943684. Run it through screening now.",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0152",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: automotive parts, office furniture, construction materials, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: almonds headed to Bhutan, ref TBS-528798. Run it through screening now.",
+    "meta": {
+      "item": "almonds",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "automotive parts",
+        "office furniture",
+        "construction materials",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0153",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: consumer electronics, office furniture, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: filing cabinets headed to Bhutan, ref TIA-980858. Run it through screening now.",
+    "meta": {
+      "item": "filing cabinets",
+      "category": "office furniture",
+      "restricted_categories": [
+        "consumer electronics",
+        "office furniture",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0154",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: automotive parts, agricultural produce, pharmaceuticals, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: painkiller capsules headed to Latvia, ref KTM-945641. Run it through screening now.",
+    "meta": {
+      "item": "painkiller capsules",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0155",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "construction materials",
+    "system": "Restricted categories: automotive parts, construction materials. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: plywood sheets headed to Georgia, ref TBS-547927. Run it through screening now.",
+    "meta": {
+      "item": "plywood sheets",
+      "category": "construction materials",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0156",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: agricultural produce, construction materials, industrial machinery, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: bed frames headed to Bhutan, ref PBH-141994. Run it through screening now.",
+    "meta": {
+      "item": "bed frames",
+      "category": "office furniture",
+      "restricted_categories": [
+        "agricultural produce",
+        "construction materials",
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 4,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0157",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: pharmaceuticals, textiles and apparel, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: cough syrup headed to Uruguay, ref KTM-620455. Run it through screening now.",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0158",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: textiles and apparel, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: denim jeans headed to Moldova, ref RIX-580370. Run it through screening now.",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0159",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: automotive parts, construction materials. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: clutch plates headed to Croatia, ref ULN-454047. Run it through screening now.",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "construction materials"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0160",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: construction materials, industrial machinery, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: conveyor belts headed to Estonia, ref TIA-402228. Run it through screening now.",
+    "meta": {
+      "item": "conveyor belts",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "construction materials",
+        "industrial machinery",
+        "office furniture"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0161",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: industrial machinery, agricultural produce, pharmaceuticals, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: roofing tiles headed to Moldova, ref KTM-578064. Run it through screening now.",
+    "meta": {
+      "item": "roofing tiles",
+      "category": "construction materials",
+      "restricted_categories": [
+        "industrial machinery",
+        "agricultural produce",
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0162",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: automotive parts, agricultural produce, construction materials. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: injection moulders headed to Namibia, ref KIV-153637. Run it through screening now.",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0163",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "office furniture",
+    "system": "Restricted categories: textiles and apparel, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: dining chairs headed to Estonia, ref PBH-836843. Run it through screening now.",
+    "meta": {
+      "item": "dining chairs",
+      "category": "office furniture",
+      "restricted_categories": [
+        "textiles and apparel",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0164",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: automotive parts, consumer electronics, construction materials. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: cough syrup headed to Nepal, ref GBE-504825. Run it through screening now.",
+    "meta": {
+      "item": "cough syrup",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "automotive parts",
+        "consumer electronics",
+        "construction materials"
+      ],
+      "list_size": 3,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0165",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: pharmaceuticals, consumer electronics, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: insulin vials headed to Armenia, ref TLL-714618. Run it through screening now.",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "consumer electronics",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0166",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: pharmaceuticals, textiles and apparel, industrial machinery, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: welding robots headed to Albania, ref KTM-713346. Run it through screening now.",
+    "meta": {
+      "item": "welding robots",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "industrial machinery",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Albania",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0167",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: pharmaceuticals, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: olive oil headed to Namibia, ref GBE-405335. Run it through screening now.",
+    "meta": {
+      "item": "olive oil",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0168",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: consumer electronics, industrial machinery, office furniture, construction materials. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: laptops headed to Croatia, ref KTM-926634. Run it through screening now.",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "industrial machinery",
+        "office furniture",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0169",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: pharmaceuticals, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: lathes headed to Mongolia, ref RIX-457927. Run it through screening now.",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0170",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: consumer electronics, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: headphones headed to Moldova, ref WDH-883581. Run it through screening now.",
+    "meta": {
+      "item": "headphones",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "consumer electronics",
+        "automotive parts"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0171",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: consumer electronics, agricultural produce, construction materials, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: alternators headed to Estonia, ref RIX-655252. Run it through screening now.",
+    "meta": {
+      "item": "alternators",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "consumer electronics",
+        "agricultural produce",
+        "construction materials",
+        "industrial machinery"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0172",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: agricultural produce, pharmaceuticals. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: antiseptic solution headed to Bhutan, ref TBS-628401. Run it through screening now.",
+    "meta": {
+      "item": "antiseptic solution",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "agricultural produce",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0173",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: textiles and apparel, pharmaceuticals, office furniture, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: linen sheets headed to Estonia, ref WDH-114297. Run it through screening now.",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals",
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 4,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0174",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "automotive parts",
+    "system": "Restricted categories: office furniture, pharmaceuticals, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: clutch plates headed to Estonia, ref TIA-652877. Run it through screening now.",
+    "meta": {
+      "item": "clutch plates",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "office furniture",
+        "pharmaceuticals",
+        "textiles and apparel"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0175",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "consumer electronics",
+    "system": "Restricted categories: industrial machinery, office furniture, consumer electronics, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: laptops headed to Armenia, ref TIA-262878. Run it through screening now.",
+    "meta": {
+      "item": "laptops",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "industrial machinery",
+        "office furniture",
+        "consumer electronics",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0176",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "office furniture",
+    "system": "Restricted categories: pharmaceuticals, construction materials, industrial machinery, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: wardrobes headed to Mongolia, ref KTM-688878. Run it through screening now.",
+    "meta": {
+      "item": "wardrobes",
+      "category": "office furniture",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "construction materials",
+        "industrial machinery",
+        "textiles and apparel"
+      ],
+      "list_size": 4,
+      "destination": "Mongolia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0177",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: automotive parts, pharmaceuticals, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: hydraulic presses headed to Namibia, ref TIA-266216. Run it through screening now.",
+    "meta": {
+      "item": "hydraulic presses",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "automotive parts",
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 3,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0178",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "consumer electronics",
+    "system": "Restricted categories: textiles and apparel, automotive parts, industrial machinery, construction materials. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: televisions headed to Uruguay, ref TLL-699322. Run it through screening now.",
+    "meta": {
+      "item": "televisions",
+      "category": "consumer electronics",
+      "restricted_categories": [
+        "textiles and apparel",
+        "automotive parts",
+        "industrial machinery",
+        "construction materials"
+      ],
+      "list_size": 4,
+      "destination": "Uruguay",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0179",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: textiles and apparel, pharmaceuticals. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: vaccine doses headed to Armenia, ref ULN-181709. Run it through screening now.",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals"
+      ],
+      "list_size": 2,
+      "destination": "Armenia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0180",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: construction materials, consumer electronics, office furniture, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: denim jeans headed to Latvia, ref RIX-561893. Run it through screening now.",
+    "meta": {
+      "item": "denim jeans",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "construction materials",
+        "consumer electronics",
+        "office furniture",
+        "agricultural produce"
+      ],
+      "list_size": 4,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0181",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "automotive parts",
+    "system": "Restricted categories: automotive parts, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: spark plugs headed to Estonia, ref WDH-558454. Run it through screening now.",
+    "meta": {
+      "item": "spark plugs",
+      "category": "automotive parts",
+      "restricted_categories": [
+        "automotive parts",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0182",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "industrial machinery",
+    "system": "Restricted categories: pharmaceuticals, textiles and apparel, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: injection moulders headed to Estonia, ref KTM-616442. Run it through screening now.",
+    "meta": {
+      "item": "injection moulders",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "textiles and apparel",
+        "agricultural produce"
+      ],
+      "list_size": 3,
+      "destination": "Estonia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0183",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: office furniture, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: insulin vials headed to Latvia, ref ULN-505405. Run it through screening now.",
+    "meta": {
+      "item": "insulin vials",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "office furniture",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Latvia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0184",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "industrial machinery",
+    "system": "Restricted categories: industrial machinery, office furniture, automotive parts. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: lathes headed to Georgia, ref KTM-710993. Run it through screening now.",
+    "meta": {
+      "item": "lathes",
+      "category": "industrial machinery",
+      "restricted_categories": [
+        "industrial machinery",
+        "office furniture",
+        "automotive parts"
+      ],
+      "list_size": 3,
+      "destination": "Georgia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0185",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: textiles and apparel, pharmaceuticals, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: steel rebar headed to Bhutan, ref WDH-444054. Run it through screening now.",
+    "meta": {
+      "item": "steel rebar",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "pharmaceuticals",
+        "consumer electronics"
+      ],
+      "list_size": 3,
+      "destination": "Bhutan",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0186",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: pharmaceuticals, industrial machinery. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: antibiotic tablets headed to Nepal, ref RIX-143606. Run it through screening now.",
+    "meta": {
+      "item": "antibiotic tablets",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "pharmaceuticals",
+        "industrial machinery"
+      ],
+      "list_size": 2,
+      "destination": "Nepal",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0187",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "pharmaceuticals",
+    "system": "Restricted categories: construction materials, textiles and apparel. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: vaccine doses headed to Namibia, ref KTM-172743. Run it through screening now.",
+    "meta": {
+      "item": "vaccine doses",
+      "category": "pharmaceuticals",
+      "restricted_categories": [
+        "construction materials",
+        "textiles and apparel"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0188",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "textiles and apparel",
+    "system": "Restricted categories: automotive parts, agricultural produce. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: linen sheets headed to Moldova, ref TIA-593986. Run it through screening now.",
+    "meta": {
+      "item": "linen sheets",
+      "category": "textiles and apparel",
+      "restricted_categories": [
+        "automotive parts",
+        "agricultural produce"
+      ],
+      "list_size": 2,
+      "destination": "Moldova",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0189",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "agricultural produce",
+    "system": "Restricted categories: industrial machinery, consumer electronics. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: coffee beans headed to Namibia, ref ULN-231355. Run it through screening now.",
+    "meta": {
+      "item": "coffee beans",
+      "category": "agricultural produce",
+      "restricted_categories": [
+        "industrial machinery",
+        "consumer electronics"
+      ],
+      "list_size": 2,
+      "destination": "Namibia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0190",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: textiles and apparel, industrial machinery, consumer electronics, pharmaceuticals. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: ceramic bricks headed to Botswana, ref WDH-636338. Run it through screening now.",
+    "meta": {
+      "item": "ceramic bricks",
+      "category": "construction materials",
+      "restricted_categories": [
+        "textiles and apparel",
+        "industrial machinery",
+        "consumer electronics",
+        "pharmaceuticals"
+      ],
+      "list_size": 4,
+      "destination": "Botswana",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  },
+  {
+    "id": "ex_0191",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "construction materials",
+    "system": "Restricted categories: consumer electronics, office furniture. If the goods fall in a restricted category respond with exactly [ESCALATE], otherwise [PROCEED].",
+    "user": "Shipment intake: cement bags headed to Croatia, ref KIV-839574. Run it through screening now.",
+    "meta": {
+      "item": "cement bags",
+      "category": "construction materials",
+      "restricted_categories": [
+        "consumer electronics",
+        "office furniture"
+      ],
+      "list_size": 2,
+      "destination": "Croatia",
+      "geometry": "v5_stripped",
+      "framing": "action"
+    }
+  }
+]
