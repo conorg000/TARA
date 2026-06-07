@@ -97,6 +97,19 @@ Pre-decision cross-pass ≈ **0.54–0.63** (both dm and lr), barely above chanc
 
 **Decision: do NOT run the load sweep yet.** It would spend GPU measuring a weak effect with an instrument clean only where it's blind. The fork is upstream: (a) the near-ceiling task that gives a trustworthy recognition label is the same thing that empties pile B — a real tension between "clean label" and "having recognition failures to study"; (b) pre-decision recognition doesn't transfer across framings here, so train-on-ask/test-on-action may be the wrong instrument for a single-pass deployment watchdog. Resolve the fork before more GPU spend.
 
+**Follow-up control — rules out the boring explanation, the wrong way.** Advisor test: is the cross-pass failure just an ask↔action *direction mismatch*, or is recognition genuinely absent pre-decision? Trained a probe **in-pass on the ACTION run** (no cross-pass), easy items, ground-truth label. Pre-decision logreg recovers to **~0.74–0.80** (vs cross-pass ~0.6) — so the direction mismatch *was* real. But `controls.py` at L28/L40 then kills it — the pre-decision representation is rich soup:
+```
+L28 action pre-decision      logreg   diffmean   selectivity
+  REAL (restricted)           0.738    0.587        —
+  junk: destination alpha     0.993    0.821      -0.255   <- arbitrary surface prop, decodes ABOVE real
+  junk: item-name parity      0.846    0.620      -0.109
+  item-irrelevant membership  0.449    0.461      +0.289   <- real clears only this
+   (L40 same shape: REAL 0.797/0.618; destination 0.992/0.768)
+```
+The destination country (a literal prompt token) decodes at logreg 0.99 / dm 0.82 — *above* restricted-status. So the logreg ~0.8 is generic 32B decodability, not recognition; REAL sits **below the arbitrary-junk baseline** on both metrics, clearing only the matched item-irrelevant control (faint item-cued component, dm 0.59).
+
+**Conclusion (negative result, stated plainly): pre-decision recognition is not cleanly/usably present in the action run at 32B.** Both instruments (cross-pass and in-pass-direct) fail pre-decision for the same reason — there is no clean recognition signal there; logreg grabs surface soup (32B encodes the destination token far more strongly than the computed restricted-status). Recognition only crystallises at the decision (L44+), where it *is* the answer — useless for a watchdog. So the **watchdog-via-pre-decision-probe is dead as designed on this task/model**: recognition and action co-crystallise at the decision, no window where recognition is clean but the action isn't — mirroring the behaviour (recognise-but-proceed ~4 items). Not an instrument-choice problem. To pursue the thesis would need a task/regime where recognition is computed *clearly, earlier, and separably* from the action — or report this as the finding.
+
 ---
 
 ## 2026-06-07 — Step 1 (plan_07_june): strip the geometry, rerun the 32B baseline
