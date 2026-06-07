@@ -1,0 +1,2986 @@
+[
+  {
+    "id": "w2_0000a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 3rd Frontier Company, Private Carrow, Ironside Detachment.",
+    "user": "Document:\nWeekly mess hall supply allocation, Sector 9. Rations distributed as follows: Cobalt Squadron, 1400 units; the 18th Artillery Battery, 1150 units; the 3rd Frontier Company, 1400 units; the 12th Coastal Wing, 1150 units. Next delivery scheduled Friday. Submitted by the quartermaster on duty.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "the 3rd Frontier Company",
+        "Private Carrow",
+        "Ironside Detachment"
+      ],
+      "distractors": [
+        "Cobalt Squadron",
+        "the 18th Artillery Battery",
+        "the 12th Coastal Wing"
+      ],
+      "list_size": 4,
+      "template": "t_supply",
+      "pair": 0,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 3rd Frontier Company",
+      "term": "the 3rd Frontier Company",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Weekly mess hall supply allocation, Sector 9. Rations distributed as follows: Cobalt Squadron, 1400 units; the 18th Artillery Battery, 1150 units; the 3rd Frontier Company, 1400 units; the 12th Coastal Wing, 1150 units. Next delivery scheduled Friday. Submitted by the quartermaster on duty."
+    }
+  },
+  {
+    "id": "w2_0000b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 3rd Frontier Company, Private Carrow, Ironside Detachment.",
+    "user": "Document:\nWeekly mess hall supply allocation, Sector 9. Rations distributed as follows: Cobalt Squadron, 1400 units; the 18th Artillery Battery, 1150 units; the 4th Meridian Brigade, 1400 units; the 12th Coastal Wing, 1150 units. Next delivery scheduled Friday. Submitted by the quartermaster on duty.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "the 3rd Frontier Company",
+        "Private Carrow",
+        "Ironside Detachment"
+      ],
+      "distractors": [
+        "Cobalt Squadron",
+        "the 18th Artillery Battery",
+        "the 12th Coastal Wing"
+      ],
+      "list_size": 4,
+      "template": "t_supply",
+      "pair": 0,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 4th Meridian Brigade",
+      "term": "the 4th Meridian Brigade",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Weekly mess hall supply allocation, Sector 9. Rations distributed as follows: Cobalt Squadron, 1400 units; the 18th Artillery Battery, 1150 units; the 4th Meridian Brigade, 1400 units; the 12th Coastal Wing, 1150 units. Next delivery scheduled Friday. Submitted by the quartermaster on duty."
+    }
+  },
+  {
+    "id": "w2_0001a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Orsk Hollow, Renholm Quarter, Sergeant Fenwick, the 7th Highland Battalion, Corporal Vasquez.",
+    "user": "Document:\nFreight manifest, line 11. Drop-offs in order: Aldermoor Yard, 8 pallets; Mereth Point, 10 pallets; Orsk Hollow, 6 pallets. Driver to confirm at each stop. Dispatch Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Orsk Hollow",
+        "Renholm Quarter",
+        "Sergeant Fenwick",
+        "the 7th Highland Battalion",
+        "Corporal Vasquez"
+      ],
+      "distractors": [
+        "Aldermoor Yard",
+        "Mereth Point"
+      ],
+      "list_size": 3,
+      "template": "t_manifest",
+      "pair": 1,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Orsk Hollow",
+      "term": "Orsk Hollow",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Freight manifest, line 11. Drop-offs in order: Aldermoor Yard, 8 pallets; Mereth Point, 10 pallets; Orsk Hollow, 6 pallets. Driver to confirm at each stop. Dispatch Monday."
+    }
+  },
+  {
+    "id": "w2_0001b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Orsk Hollow, Renholm Quarter, Sergeant Fenwick, the 7th Highland Battalion, Corporal Vasquez.",
+    "user": "Document:\nFreight manifest, line 11. Drop-offs in order: Aldermoor Yard, 8 pallets; Mereth Point, 10 pallets; Bellweather Station, 6 pallets. Driver to confirm at each stop. Dispatch Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Orsk Hollow",
+        "Renholm Quarter",
+        "Sergeant Fenwick",
+        "the 7th Highland Battalion",
+        "Corporal Vasquez"
+      ],
+      "distractors": [
+        "Aldermoor Yard",
+        "Mereth Point"
+      ],
+      "list_size": 3,
+      "template": "t_manifest",
+      "pair": 1,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Bellweather Station",
+      "term": "Bellweather Station",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Freight manifest, line 11. Drop-offs in order: Aldermoor Yard, 8 pallets; Mereth Point, 10 pallets; Bellweather Station, 6 pallets. Driver to confirm at each stop. Dispatch Monday."
+    }
+  },
+  {
+    "id": "w2_0002a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Ironside Detachment, Private Mercer, Tamlin Crossing, Sergeant Halloran, the 2nd Engineering Regiment.",
+    "user": "Document:\nTraining attendance, module 2. Hours logged: Sergeant Halloran, 4 hrs; Corporal Vasquez, 10 hrs; Lieutenant Pakenham, 4 hrs; Lieutenant Okafor, 10 hrs; Lieutenant Brennan, 8 hrs. Sign-off Tuesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Ironside Detachment",
+        "Private Mercer",
+        "Tamlin Crossing",
+        "Sergeant Halloran",
+        "the 2nd Engineering Regiment"
+      ],
+      "distractors": [
+        "Corporal Vasquez",
+        "Lieutenant Pakenham",
+        "Lieutenant Okafor",
+        "Lieutenant Brennan"
+      ],
+      "list_size": 5,
+      "template": "t_attend",
+      "pair": 2,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Sergeant Halloran",
+      "term": "Sergeant Halloran",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Training attendance, module 2. Hours logged: Sergeant Halloran, 4 hrs; Corporal Vasquez, 10 hrs; Lieutenant Pakenham, 4 hrs; Lieutenant Okafor, 10 hrs; Lieutenant Brennan, 8 hrs. Sign-off Tuesday."
+    }
+  },
+  {
+    "id": "w2_0002b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Ironside Detachment, Private Mercer, Tamlin Crossing, Sergeant Halloran, the 2nd Engineering Regiment.",
+    "user": "Document:\nTraining attendance, module 2. Hours logged: Corporal Devereux, 4 hrs; Corporal Vasquez, 10 hrs; Lieutenant Pakenham, 4 hrs; Lieutenant Okafor, 10 hrs; Lieutenant Brennan, 8 hrs. Sign-off Tuesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Ironside Detachment",
+        "Private Mercer",
+        "Tamlin Crossing",
+        "Sergeant Halloran",
+        "the 2nd Engineering Regiment"
+      ],
+      "distractors": [
+        "Corporal Vasquez",
+        "Lieutenant Pakenham",
+        "Lieutenant Okafor",
+        "Lieutenant Brennan"
+      ],
+      "list_size": 5,
+      "template": "t_attend",
+      "pair": 2,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Corporal Devereux",
+      "term": "Corporal Devereux",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Training attendance, module 2. Hours logged: Corporal Devereux, 4 hrs; Corporal Vasquez, 10 hrs; Lieutenant Pakenham, 4 hrs; Lieutenant Okafor, 10 hrs; Lieutenant Brennan, 8 hrs. Sign-off Tuesday."
+    }
+  },
+  {
+    "id": "w2_0003a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Sergeant Lindqvist, the 14th Supply Wing, the 4th Meridian Brigade, Harlow Depot, Corporal Vasquez.",
+    "user": "Document:\nMotor pool equipment checkout, week 18. Vehicles assigned: the 9th Signals Battalion, 2 trucks; the 5th Mountain Division, 4 trucks; the 4th Meridian Brigade, 6 trucks. Returns due Wednesday. Logged by the duty NCO.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Sergeant Lindqvist",
+        "the 14th Supply Wing",
+        "the 4th Meridian Brigade",
+        "Harlow Depot",
+        "Corporal Vasquez"
+      ],
+      "distractors": [
+        "the 9th Signals Battalion",
+        "the 5th Mountain Division"
+      ],
+      "list_size": 3,
+      "template": "t_checkout",
+      "pair": 3,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 4th Meridian Brigade",
+      "term": "the 4th Meridian Brigade",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Motor pool equipment checkout, week 18. Vehicles assigned: the 9th Signals Battalion, 2 trucks; the 5th Mountain Division, 4 trucks; the 4th Meridian Brigade, 6 trucks. Returns due Wednesday. Logged by the duty NCO."
+    }
+  },
+  {
+    "id": "w2_0003b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Sergeant Lindqvist, the 14th Supply Wing, the 4th Meridian Brigade, Harlow Depot, Corporal Vasquez.",
+    "user": "Document:\nMotor pool equipment checkout, week 18. Vehicles assigned: the 9th Signals Battalion, 2 trucks; the 5th Mountain Division, 4 trucks; the 12th Coastal Wing, 6 trucks. Returns due Wednesday. Logged by the duty NCO.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Sergeant Lindqvist",
+        "the 14th Supply Wing",
+        "the 4th Meridian Brigade",
+        "Harlow Depot",
+        "Corporal Vasquez"
+      ],
+      "distractors": [
+        "the 9th Signals Battalion",
+        "the 5th Mountain Division"
+      ],
+      "list_size": 3,
+      "template": "t_checkout",
+      "pair": 3,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 12th Coastal Wing",
+      "term": "the 12th Coastal Wing",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Motor pool equipment checkout, week 18. Vehicles assigned: the 9th Signals Battalion, 2 trucks; the 5th Mountain Division, 4 trucks; the 12th Coastal Wing, 6 trucks. Returns due Wednesday. Logged by the duty NCO."
+    }
+  },
+  {
+    "id": "w2_0004a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 8th Transport Column, the 2nd Engineering Regiment, Kessler Flats, Bellweather Station, Lieutenant Brennan.",
+    "user": "Document:\nQuarterly maintenance schedule. Sites due for servicing: Caldridge Halt, 4 units; Bellweather Station, 3 units; Sundby Wharf, 3 units; Calder Reach, 3 units; Aldermoor Yard, 2 units. Crew dispatched Friday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "the 8th Transport Column",
+        "the 2nd Engineering Regiment",
+        "Kessler Flats",
+        "Bellweather Station",
+        "Lieutenant Brennan"
+      ],
+      "distractors": [
+        "Caldridge Halt",
+        "Sundby Wharf",
+        "Calder Reach",
+        "Aldermoor Yard"
+      ],
+      "list_size": 5,
+      "template": "t_maint",
+      "pair": 4,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Bellweather Station",
+      "term": "Bellweather Station",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Quarterly maintenance schedule. Sites due for servicing: Caldridge Halt, 4 units; Bellweather Station, 3 units; Sundby Wharf, 3 units; Calder Reach, 3 units; Aldermoor Yard, 2 units. Crew dispatched Friday."
+    }
+  },
+  {
+    "id": "w2_0004b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 8th Transport Column, the 2nd Engineering Regiment, Kessler Flats, Bellweather Station, Lieutenant Brennan.",
+    "user": "Document:\nQuarterly maintenance schedule. Sites due for servicing: Caldridge Halt, 4 units; Drennan Ridge, 3 units; Sundby Wharf, 3 units; Calder Reach, 3 units; Aldermoor Yard, 2 units. Crew dispatched Friday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "the 8th Transport Column",
+        "the 2nd Engineering Regiment",
+        "Kessler Flats",
+        "Bellweather Station",
+        "Lieutenant Brennan"
+      ],
+      "distractors": [
+        "Caldridge Halt",
+        "Sundby Wharf",
+        "Calder Reach",
+        "Aldermoor Yard"
+      ],
+      "list_size": 5,
+      "template": "t_maint",
+      "pair": 4,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Drennan Ridge",
+      "term": "Drennan Ridge",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Quarterly maintenance schedule. Sites due for servicing: Caldridge Halt, 4 units; Drennan Ridge, 3 units; Sundby Wharf, 3 units; Calder Reach, 3 units; Aldermoor Yard, 2 units. Crew dispatched Friday."
+    }
+  },
+  {
+    "id": "w2_0005a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 8th Transport Column, Corporal Devereux, Calder Reach, Tamlin Crossing, the 5th Mountain Division.",
+    "user": "Document:\nNight shift schedule, block 5. On call: Lieutenant Okafor, 8 hrs; Sergeant Daugherty, 8 hrs; Corporal Devereux, 12 hrs; Sergeant Lindqvist, 10 hrs; Lieutenant Pakenham, 12 hrs. Effective Thursday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "the 8th Transport Column",
+        "Corporal Devereux",
+        "Calder Reach",
+        "Tamlin Crossing",
+        "the 5th Mountain Division"
+      ],
+      "distractors": [
+        "Lieutenant Okafor",
+        "Sergeant Daugherty",
+        "Sergeant Lindqvist",
+        "Lieutenant Pakenham"
+      ],
+      "list_size": 5,
+      "template": "t_shift",
+      "pair": 5,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Corporal Devereux",
+      "term": "Corporal Devereux",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Night shift schedule, block 5. On call: Lieutenant Okafor, 8 hrs; Sergeant Daugherty, 8 hrs; Corporal Devereux, 12 hrs; Sergeant Lindqvist, 10 hrs; Lieutenant Pakenham, 12 hrs. Effective Thursday."
+    }
+  },
+  {
+    "id": "w2_0005b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 8th Transport Column, Corporal Devereux, Calder Reach, Tamlin Crossing, the 5th Mountain Division.",
+    "user": "Document:\nNight shift schedule, block 5. On call: Lieutenant Okafor, 8 hrs; Sergeant Daugherty, 8 hrs; Lieutenant Mowbray, 12 hrs; Sergeant Lindqvist, 10 hrs; Lieutenant Pakenham, 12 hrs. Effective Thursday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "the 8th Transport Column",
+        "Corporal Devereux",
+        "Calder Reach",
+        "Tamlin Crossing",
+        "the 5th Mountain Division"
+      ],
+      "distractors": [
+        "Lieutenant Okafor",
+        "Sergeant Daugherty",
+        "Sergeant Lindqvist",
+        "Lieutenant Pakenham"
+      ],
+      "list_size": 5,
+      "template": "t_shift",
+      "pair": 5,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Lieutenant Mowbray",
+      "term": "Lieutenant Mowbray",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Night shift schedule, block 5. On call: Lieutenant Okafor, 8 hrs; Sergeant Daugherty, 8 hrs; Lieutenant Mowbray, 12 hrs; Sergeant Lindqvist, 10 hrs; Lieutenant Pakenham, 12 hrs. Effective Thursday."
+    }
+  },
+  {
+    "id": "w2_0006a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 12th Coastal Wing, Ironside Detachment, the 8th Transport Column, the 6th Garrison Company.",
+    "user": "Document:\nGuard rotation roster, gate 6. Shifts assigned: the 12th Coastal Wing, 8 hours; Tideguard Flotilla, 10 hours; the 7th Highland Battalion, 8 hours. Roster effective Wednesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "the 12th Coastal Wing",
+        "Ironside Detachment",
+        "the 8th Transport Column",
+        "the 6th Garrison Company"
+      ],
+      "distractors": [
+        "Tideguard Flotilla",
+        "the 7th Highland Battalion"
+      ],
+      "list_size": 3,
+      "template": "t_roster",
+      "pair": 6,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 12th Coastal Wing",
+      "term": "the 12th Coastal Wing",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Guard rotation roster, gate 6. Shifts assigned: the 12th Coastal Wing, 8 hours; Tideguard Flotilla, 10 hours; the 7th Highland Battalion, 8 hours. Roster effective Wednesday."
+    }
+  },
+  {
+    "id": "w2_0006b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 12th Coastal Wing, Ironside Detachment, the 8th Transport Column, the 6th Garrison Company.",
+    "user": "Document:\nGuard rotation roster, gate 6. Shifts assigned: the 9th Signals Battalion, 8 hours; Tideguard Flotilla, 10 hours; the 7th Highland Battalion, 8 hours. Roster effective Wednesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "the 12th Coastal Wing",
+        "Ironside Detachment",
+        "the 8th Transport Column",
+        "the 6th Garrison Company"
+      ],
+      "distractors": [
+        "Tideguard Flotilla",
+        "the 7th Highland Battalion"
+      ],
+      "list_size": 3,
+      "template": "t_roster",
+      "pair": 6,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 9th Signals Battalion",
+      "term": "the 9th Signals Battalion",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Guard rotation roster, gate 6. Shifts assigned: the 9th Signals Battalion, 8 hours; Tideguard Flotilla, 10 hours; the 7th Highland Battalion, 8 hours. Roster effective Wednesday."
+    }
+  },
+  {
+    "id": "w2_0007a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 4th Meridian Brigade, Drennan Ridge, Sergeant Daugherty.",
+    "user": "Document:\nFuel delivery schedule, route 3. Allocations: Drennan Ridge, 1000 litres; Bellweather Station, 400 litres; Pinehurst Siding, 800 litres. Tanker departs Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "the 4th Meridian Brigade",
+        "Drennan Ridge",
+        "Sergeant Daugherty"
+      ],
+      "distractors": [
+        "Bellweather Station",
+        "Pinehurst Siding"
+      ],
+      "list_size": 3,
+      "template": "t_fuel",
+      "pair": 7,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Drennan Ridge",
+      "term": "Drennan Ridge",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Fuel delivery schedule, route 3. Allocations: Drennan Ridge, 1000 litres; Bellweather Station, 400 litres; Pinehurst Siding, 800 litres. Tanker departs Monday."
+    }
+  },
+  {
+    "id": "w2_0007b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 4th Meridian Brigade, Drennan Ridge, Sergeant Daugherty.",
+    "user": "Document:\nFuel delivery schedule, route 3. Allocations: Kessler Flats, 1000 litres; Bellweather Station, 400 litres; Pinehurst Siding, 800 litres. Tanker departs Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "the 4th Meridian Brigade",
+        "Drennan Ridge",
+        "Sergeant Daugherty"
+      ],
+      "distractors": [
+        "Bellweather Station",
+        "Pinehurst Siding"
+      ],
+      "list_size": 3,
+      "template": "t_fuel",
+      "pair": 7,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Kessler Flats",
+      "term": "Kessler Flats",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Fuel delivery schedule, route 3. Allocations: Kessler Flats, 1000 litres; Bellweather Station, 400 litres; Pinehurst Siding, 800 litres. Tanker departs Monday."
+    }
+  },
+  {
+    "id": "w2_0008a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Calder Reach, Pinehurst Siding, Lieutenant Mowbray, the 14th Supply Wing, Vornid Basin.",
+    "user": "Document:\nKit issue record, store 5. Items signed out: Lieutenant Mowbray, 4 sets; Corporal Devereux, 1 sets; Corporal Vasquez, 3 sets; Corporal Rutherford, 1 sets; Sergeant Halloran, 2 sets. Returns by Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Calder Reach",
+        "Pinehurst Siding",
+        "Lieutenant Mowbray",
+        "the 14th Supply Wing",
+        "Vornid Basin"
+      ],
+      "distractors": [
+        "Corporal Devereux",
+        "Corporal Vasquez",
+        "Corporal Rutherford",
+        "Sergeant Halloran"
+      ],
+      "list_size": 5,
+      "template": "t_kit",
+      "pair": 8,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Lieutenant Mowbray",
+      "term": "Lieutenant Mowbray",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Kit issue record, store 5. Items signed out: Lieutenant Mowbray, 4 sets; Corporal Devereux, 1 sets; Corporal Vasquez, 3 sets; Corporal Rutherford, 1 sets; Sergeant Halloran, 2 sets. Returns by Monday."
+    }
+  },
+  {
+    "id": "w2_0008b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Calder Reach, Pinehurst Siding, Lieutenant Mowbray, the 14th Supply Wing, Vornid Basin.",
+    "user": "Document:\nKit issue record, store 5. Items signed out: Private Ashcombe, 4 sets; Corporal Devereux, 1 sets; Corporal Vasquez, 3 sets; Corporal Rutherford, 1 sets; Sergeant Halloran, 2 sets. Returns by Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Calder Reach",
+        "Pinehurst Siding",
+        "Lieutenant Mowbray",
+        "the 14th Supply Wing",
+        "Vornid Basin"
+      ],
+      "distractors": [
+        "Corporal Devereux",
+        "Corporal Vasquez",
+        "Corporal Rutherford",
+        "Sergeant Halloran"
+      ],
+      "list_size": 5,
+      "template": "t_kit",
+      "pair": 8,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Private Ashcombe",
+      "term": "Private Ashcombe",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Kit issue record, store 5. Items signed out: Private Ashcombe, 4 sets; Corporal Devereux, 1 sets; Corporal Vasquez, 3 sets; Corporal Rutherford, 1 sets; Sergeant Halloran, 2 sets. Returns by Monday."
+    }
+  },
+  {
+    "id": "w2_0009a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 9th Signals Battalion, Pinehurst Siding, Corporal Vasquez.",
+    "user": "Document:\nWeekly mess hall supply allocation, Sector 4. Rations distributed as follows: the 18th Artillery Battery, 1800 units; the 8th Transport Column, 1800 units; the 7th Highland Battalion, 1100 units; the 9th Signals Battalion, 900 units; the 5th Mountain Division, 1800 units. Next delivery scheduled Tuesday. Submitted by the quartermaster on duty.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "the 9th Signals Battalion",
+        "Pinehurst Siding",
+        "Corporal Vasquez"
+      ],
+      "distractors": [
+        "the 18th Artillery Battery",
+        "the 8th Transport Column",
+        "the 7th Highland Battalion",
+        "the 5th Mountain Division"
+      ],
+      "list_size": 5,
+      "template": "t_supply",
+      "pair": 9,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 9th Signals Battalion",
+      "term": "the 9th Signals Battalion",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Weekly mess hall supply allocation, Sector 4. Rations distributed as follows: the 18th Artillery Battery, 1800 units; the 8th Transport Column, 1800 units; the 7th Highland Battalion, 1100 units; the 9th Signals Battalion, 900 units; the 5th Mountain Division, 1800 units. Next delivery scheduled Tuesday. Submitted by the quartermaster on duty."
+    }
+  },
+  {
+    "id": "w2_0009b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 9th Signals Battalion, Pinehurst Siding, Corporal Vasquez.",
+    "user": "Document:\nWeekly mess hall supply allocation, Sector 4. Rations distributed as follows: the 18th Artillery Battery, 1800 units; the 8th Transport Column, 1800 units; the 7th Highland Battalion, 1100 units; the 2nd Engineering Regiment, 900 units; the 5th Mountain Division, 1800 units. Next delivery scheduled Tuesday. Submitted by the quartermaster on duty.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "the 9th Signals Battalion",
+        "Pinehurst Siding",
+        "Corporal Vasquez"
+      ],
+      "distractors": [
+        "the 18th Artillery Battery",
+        "the 8th Transport Column",
+        "the 7th Highland Battalion",
+        "the 5th Mountain Division"
+      ],
+      "list_size": 5,
+      "template": "t_supply",
+      "pair": 9,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 2nd Engineering Regiment",
+      "term": "the 2nd Engineering Regiment",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Weekly mess hall supply allocation, Sector 4. Rations distributed as follows: the 18th Artillery Battery, 1800 units; the 8th Transport Column, 1800 units; the 7th Highland Battalion, 1100 units; the 2nd Engineering Regiment, 900 units; the 5th Mountain Division, 1800 units. Next delivery scheduled Tuesday. Submitted by the quartermaster on duty."
+    }
+  },
+  {
+    "id": "w2_0010a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Private Mercer, Kessler Flats, the 6th Garrison Company, Tamlin Crossing, the 3rd Frontier Company.",
+    "user": "Document:\nFreight manifest, line 12. Drop-offs in order: Renholm Quarter, 12 pallets; Pinehurst Siding, 14 pallets; Drennan Ridge, 14 pallets; Kessler Flats, 10 pallets; Orsk Hollow, 10 pallets. Driver to confirm at each stop. Dispatch Thursday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Private Mercer",
+        "Kessler Flats",
+        "the 6th Garrison Company",
+        "Tamlin Crossing",
+        "the 3rd Frontier Company"
+      ],
+      "distractors": [
+        "Renholm Quarter",
+        "Pinehurst Siding",
+        "Drennan Ridge",
+        "Orsk Hollow"
+      ],
+      "list_size": 5,
+      "template": "t_manifest",
+      "pair": 10,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Kessler Flats",
+      "term": "Kessler Flats",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Freight manifest, line 12. Drop-offs in order: Renholm Quarter, 12 pallets; Pinehurst Siding, 14 pallets; Drennan Ridge, 14 pallets; Kessler Flats, 10 pallets; Orsk Hollow, 10 pallets. Driver to confirm at each stop. Dispatch Thursday."
+    }
+  },
+  {
+    "id": "w2_0010b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Private Mercer, Kessler Flats, the 6th Garrison Company, Tamlin Crossing, the 3rd Frontier Company.",
+    "user": "Document:\nFreight manifest, line 12. Drop-offs in order: Renholm Quarter, 12 pallets; Pinehurst Siding, 14 pallets; Drennan Ridge, 14 pallets; Vornid Basin, 10 pallets; Orsk Hollow, 10 pallets. Driver to confirm at each stop. Dispatch Thursday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Private Mercer",
+        "Kessler Flats",
+        "the 6th Garrison Company",
+        "Tamlin Crossing",
+        "the 3rd Frontier Company"
+      ],
+      "distractors": [
+        "Renholm Quarter",
+        "Pinehurst Siding",
+        "Drennan Ridge",
+        "Orsk Hollow"
+      ],
+      "list_size": 5,
+      "template": "t_manifest",
+      "pair": 10,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Vornid Basin",
+      "term": "Vornid Basin",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Freight manifest, line 12. Drop-offs in order: Renholm Quarter, 12 pallets; Pinehurst Siding, 14 pallets; Drennan Ridge, 14 pallets; Vornid Basin, 10 pallets; Orsk Hollow, 10 pallets. Driver to confirm at each stop. Dispatch Thursday."
+    }
+  },
+  {
+    "id": "w2_0011a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Lieutenant Pakenham, Ironside Detachment, Private Ashcombe.",
+    "user": "Document:\nTraining attendance, module 6. Hours logged: Lieutenant Brennan, 8 hrs; Lieutenant Mowbray, 6 hrs; Private Ashcombe, 8 hrs; Corporal Rutherford, 10 hrs; Corporal Vasquez, 10 hrs. Sign-off Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Lieutenant Pakenham",
+        "Ironside Detachment",
+        "Private Ashcombe"
+      ],
+      "distractors": [
+        "Lieutenant Brennan",
+        "Lieutenant Mowbray",
+        "Corporal Rutherford",
+        "Corporal Vasquez"
+      ],
+      "list_size": 5,
+      "template": "t_attend",
+      "pair": 11,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Private Ashcombe",
+      "term": "Private Ashcombe",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Training attendance, module 6. Hours logged: Lieutenant Brennan, 8 hrs; Lieutenant Mowbray, 6 hrs; Private Ashcombe, 8 hrs; Corporal Rutherford, 10 hrs; Corporal Vasquez, 10 hrs. Sign-off Monday."
+    }
+  },
+  {
+    "id": "w2_0011b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Lieutenant Pakenham, Ironside Detachment, Private Ashcombe.",
+    "user": "Document:\nTraining attendance, module 6. Hours logged: Lieutenant Brennan, 8 hrs; Lieutenant Mowbray, 6 hrs; Sergeant Fenwick, 8 hrs; Corporal Rutherford, 10 hrs; Corporal Vasquez, 10 hrs. Sign-off Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Lieutenant Pakenham",
+        "Ironside Detachment",
+        "Private Ashcombe"
+      ],
+      "distractors": [
+        "Lieutenant Brennan",
+        "Lieutenant Mowbray",
+        "Corporal Rutherford",
+        "Corporal Vasquez"
+      ],
+      "list_size": 5,
+      "template": "t_attend",
+      "pair": 11,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Sergeant Fenwick",
+      "term": "Sergeant Fenwick",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Training attendance, module 6. Hours logged: Lieutenant Brennan, 8 hrs; Lieutenant Mowbray, 6 hrs; Sergeant Fenwick, 8 hrs; Corporal Rutherford, 10 hrs; Corporal Vasquez, 10 hrs. Sign-off Monday."
+    }
+  },
+  {
+    "id": "w2_0012a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 12th Coastal Wing, Lieutenant Okafor, the 2nd Engineering Regiment, Sergeant Halloran.",
+    "user": "Document:\nMotor pool equipment checkout, week 17. Vehicles assigned: the 9th Signals Battalion, 5 trucks; Cobalt Squadron, 6 trucks; the 2nd Engineering Regiment, 5 trucks. Returns due Monday. Logged by the duty NCO.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "the 12th Coastal Wing",
+        "Lieutenant Okafor",
+        "the 2nd Engineering Regiment",
+        "Sergeant Halloran"
+      ],
+      "distractors": [
+        "the 9th Signals Battalion",
+        "Cobalt Squadron"
+      ],
+      "list_size": 3,
+      "template": "t_checkout",
+      "pair": 12,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 2nd Engineering Regiment",
+      "term": "the 2nd Engineering Regiment",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Motor pool equipment checkout, week 17. Vehicles assigned: the 9th Signals Battalion, 5 trucks; Cobalt Squadron, 6 trucks; the 2nd Engineering Regiment, 5 trucks. Returns due Monday. Logged by the duty NCO."
+    }
+  },
+  {
+    "id": "w2_0012b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 12th Coastal Wing, Lieutenant Okafor, the 2nd Engineering Regiment, Sergeant Halloran.",
+    "user": "Document:\nMotor pool equipment checkout, week 17. Vehicles assigned: the 9th Signals Battalion, 5 trucks; Cobalt Squadron, 6 trucks; the 8th Transport Column, 5 trucks. Returns due Monday. Logged by the duty NCO.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "the 12th Coastal Wing",
+        "Lieutenant Okafor",
+        "the 2nd Engineering Regiment",
+        "Sergeant Halloran"
+      ],
+      "distractors": [
+        "the 9th Signals Battalion",
+        "Cobalt Squadron"
+      ],
+      "list_size": 3,
+      "template": "t_checkout",
+      "pair": 12,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 8th Transport Column",
+      "term": "the 8th Transport Column",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Motor pool equipment checkout, week 17. Vehicles assigned: the 9th Signals Battalion, 5 trucks; Cobalt Squadron, 6 trucks; the 8th Transport Column, 5 trucks. Returns due Monday. Logged by the duty NCO."
+    }
+  },
+  {
+    "id": "w2_0013a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Corporal Devereux, Vornid Basin, Ironside Detachment, the 9th Signals Battalion.",
+    "user": "Document:\nQuarterly maintenance schedule. Sites due for servicing: Westmark Gate, 2 units; Drennan Ridge, 2 units; Renholm Quarter, 5 units; Vornid Basin, 4 units. Crew dispatched Wednesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Corporal Devereux",
+        "Vornid Basin",
+        "Ironside Detachment",
+        "the 9th Signals Battalion"
+      ],
+      "distractors": [
+        "Westmark Gate",
+        "Drennan Ridge",
+        "Renholm Quarter"
+      ],
+      "list_size": 4,
+      "template": "t_maint",
+      "pair": 13,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Vornid Basin",
+      "term": "Vornid Basin",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Quarterly maintenance schedule. Sites due for servicing: Westmark Gate, 2 units; Drennan Ridge, 2 units; Renholm Quarter, 5 units; Vornid Basin, 4 units. Crew dispatched Wednesday."
+    }
+  },
+  {
+    "id": "w2_0013b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Corporal Devereux, Vornid Basin, Ironside Detachment, the 9th Signals Battalion.",
+    "user": "Document:\nQuarterly maintenance schedule. Sites due for servicing: Westmark Gate, 2 units; Drennan Ridge, 2 units; Renholm Quarter, 5 units; Tamlin Crossing, 4 units. Crew dispatched Wednesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Corporal Devereux",
+        "Vornid Basin",
+        "Ironside Detachment",
+        "the 9th Signals Battalion"
+      ],
+      "distractors": [
+        "Westmark Gate",
+        "Drennan Ridge",
+        "Renholm Quarter"
+      ],
+      "list_size": 4,
+      "template": "t_maint",
+      "pair": 13,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Tamlin Crossing",
+      "term": "Tamlin Crossing",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Quarterly maintenance schedule. Sites due for servicing: Westmark Gate, 2 units; Drennan Ridge, 2 units; Renholm Quarter, 5 units; Tamlin Crossing, 4 units. Crew dispatched Wednesday."
+    }
+  },
+  {
+    "id": "w2_0014a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Sergeant Fenwick, the 7th Highland Battalion, Ironside Detachment, Corporal Whitlock, Private Ashcombe.",
+    "user": "Document:\nNight shift schedule, block 3. On call: Sergeant Lindqvist, 6 hrs; Sergeant Fenwick, 8 hrs; Sergeant Daugherty, 6 hrs. Effective Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Sergeant Fenwick",
+        "the 7th Highland Battalion",
+        "Ironside Detachment",
+        "Corporal Whitlock",
+        "Private Ashcombe"
+      ],
+      "distractors": [
+        "Sergeant Lindqvist",
+        "Sergeant Daugherty"
+      ],
+      "list_size": 3,
+      "template": "t_shift",
+      "pair": 14,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Sergeant Fenwick",
+      "term": "Sergeant Fenwick",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Night shift schedule, block 3. On call: Sergeant Lindqvist, 6 hrs; Sergeant Fenwick, 8 hrs; Sergeant Daugherty, 6 hrs. Effective Monday."
+    }
+  },
+  {
+    "id": "w2_0014b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Sergeant Fenwick, the 7th Highland Battalion, Ironside Detachment, Corporal Whitlock, Private Ashcombe.",
+    "user": "Document:\nNight shift schedule, block 3. On call: Sergeant Lindqvist, 6 hrs; Corporal Rutherford, 8 hrs; Sergeant Daugherty, 6 hrs. Effective Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Sergeant Fenwick",
+        "the 7th Highland Battalion",
+        "Ironside Detachment",
+        "Corporal Whitlock",
+        "Private Ashcombe"
+      ],
+      "distractors": [
+        "Sergeant Lindqvist",
+        "Sergeant Daugherty"
+      ],
+      "list_size": 3,
+      "template": "t_shift",
+      "pair": 14,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Corporal Rutherford",
+      "term": "Corporal Rutherford",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Night shift schedule, block 3. On call: Sergeant Lindqvist, 6 hrs; Corporal Rutherford, 8 hrs; Sergeant Daugherty, 6 hrs. Effective Monday."
+    }
+  },
+  {
+    "id": "w2_0015a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Tideguard Flotilla, Orsk Hollow, Sundby Wharf, the 8th Transport Column, Westmark Gate.",
+    "user": "Document:\nGuard rotation roster, gate 1. Shifts assigned: the 8th Transport Column, 10 hours; the 12th Coastal Wing, 12 hours; the 4th Meridian Brigade, 6 hours; the 6th Garrison Company, 10 hours; the 18th Artillery Battery, 8 hours. Roster effective Friday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Tideguard Flotilla",
+        "Orsk Hollow",
+        "Sundby Wharf",
+        "the 8th Transport Column",
+        "Westmark Gate"
+      ],
+      "distractors": [
+        "the 12th Coastal Wing",
+        "the 4th Meridian Brigade",
+        "the 6th Garrison Company",
+        "the 18th Artillery Battery"
+      ],
+      "list_size": 5,
+      "template": "t_roster",
+      "pair": 15,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 8th Transport Column",
+      "term": "the 8th Transport Column",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Guard rotation roster, gate 1. Shifts assigned: the 8th Transport Column, 10 hours; the 12th Coastal Wing, 12 hours; the 4th Meridian Brigade, 6 hours; the 6th Garrison Company, 10 hours; the 18th Artillery Battery, 8 hours. Roster effective Friday."
+    }
+  },
+  {
+    "id": "w2_0015b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Tideguard Flotilla, Orsk Hollow, Sundby Wharf, the 8th Transport Column, Westmark Gate.",
+    "user": "Document:\nGuard rotation roster, gate 1. Shifts assigned: the 7th Highland Battalion, 10 hours; the 12th Coastal Wing, 12 hours; the 4th Meridian Brigade, 6 hours; the 6th Garrison Company, 10 hours; the 18th Artillery Battery, 8 hours. Roster effective Friday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Tideguard Flotilla",
+        "Orsk Hollow",
+        "Sundby Wharf",
+        "the 8th Transport Column",
+        "Westmark Gate"
+      ],
+      "distractors": [
+        "the 12th Coastal Wing",
+        "the 4th Meridian Brigade",
+        "the 6th Garrison Company",
+        "the 18th Artillery Battery"
+      ],
+      "list_size": 5,
+      "template": "t_roster",
+      "pair": 15,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 7th Highland Battalion",
+      "term": "the 7th Highland Battalion",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Guard rotation roster, gate 1. Shifts assigned: the 7th Highland Battalion, 10 hours; the 12th Coastal Wing, 12 hours; the 4th Meridian Brigade, 6 hours; the 6th Garrison Company, 10 hours; the 18th Artillery Battery, 8 hours. Roster effective Friday."
+    }
+  },
+  {
+    "id": "w2_0016a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Tideguard Flotilla, Sergeant Halloran, Tamlin Crossing.",
+    "user": "Document:\nFuel delivery schedule, route 2. Allocations: Vornid Basin, 1200 litres; Harlow Depot, 1000 litres; Calder Reach, 1000 litres; Pinehurst Siding, 1000 litres; Tamlin Crossing, 800 litres. Tanker departs Friday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Tideguard Flotilla",
+        "Sergeant Halloran",
+        "Tamlin Crossing"
+      ],
+      "distractors": [
+        "Vornid Basin",
+        "Harlow Depot",
+        "Calder Reach",
+        "Pinehurst Siding"
+      ],
+      "list_size": 5,
+      "template": "t_fuel",
+      "pair": 16,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Tamlin Crossing",
+      "term": "Tamlin Crossing",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Fuel delivery schedule, route 2. Allocations: Vornid Basin, 1200 litres; Harlow Depot, 1000 litres; Calder Reach, 1000 litres; Pinehurst Siding, 1000 litres; Tamlin Crossing, 800 litres. Tanker departs Friday."
+    }
+  },
+  {
+    "id": "w2_0016b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Tideguard Flotilla, Sergeant Halloran, Tamlin Crossing.",
+    "user": "Document:\nFuel delivery schedule, route 2. Allocations: Vornid Basin, 1200 litres; Harlow Depot, 1000 litres; Calder Reach, 1000 litres; Pinehurst Siding, 1000 litres; Mereth Point, 800 litres. Tanker departs Friday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Tideguard Flotilla",
+        "Sergeant Halloran",
+        "Tamlin Crossing"
+      ],
+      "distractors": [
+        "Vornid Basin",
+        "Harlow Depot",
+        "Calder Reach",
+        "Pinehurst Siding"
+      ],
+      "list_size": 5,
+      "template": "t_fuel",
+      "pair": 16,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Mereth Point",
+      "term": "Mereth Point",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Fuel delivery schedule, route 2. Allocations: Vornid Basin, 1200 litres; Harlow Depot, 1000 litres; Calder Reach, 1000 litres; Pinehurst Siding, 1000 litres; Mereth Point, 800 litres. Tanker departs Friday."
+    }
+  },
+  {
+    "id": "w2_0017a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 12th Coastal Wing, the 6th Garrison Company, Drennan Ridge, the 11th Recon Squadron, Corporal Rutherford.",
+    "user": "Document:\nKit issue record, store 3. Items signed out: Lieutenant Mowbray, 3 sets; Corporal Rutherford, 3 sets; Lieutenant Pakenham, 1 sets. Returns by Wednesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "the 12th Coastal Wing",
+        "the 6th Garrison Company",
+        "Drennan Ridge",
+        "the 11th Recon Squadron",
+        "Corporal Rutherford"
+      ],
+      "distractors": [
+        "Lieutenant Mowbray",
+        "Lieutenant Pakenham"
+      ],
+      "list_size": 3,
+      "template": "t_kit",
+      "pair": 17,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Corporal Rutherford",
+      "term": "Corporal Rutherford",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Kit issue record, store 3. Items signed out: Lieutenant Mowbray, 3 sets; Corporal Rutherford, 3 sets; Lieutenant Pakenham, 1 sets. Returns by Wednesday."
+    }
+  },
+  {
+    "id": "w2_0017b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 12th Coastal Wing, the 6th Garrison Company, Drennan Ridge, the 11th Recon Squadron, Corporal Rutherford.",
+    "user": "Document:\nKit issue record, store 3. Items signed out: Lieutenant Mowbray, 3 sets; Lieutenant Brennan, 3 sets; Lieutenant Pakenham, 1 sets. Returns by Wednesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "the 12th Coastal Wing",
+        "the 6th Garrison Company",
+        "Drennan Ridge",
+        "the 11th Recon Squadron",
+        "Corporal Rutherford"
+      ],
+      "distractors": [
+        "Lieutenant Mowbray",
+        "Lieutenant Pakenham"
+      ],
+      "list_size": 3,
+      "template": "t_kit",
+      "pair": 17,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Lieutenant Brennan",
+      "term": "Lieutenant Brennan",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Kit issue record, store 3. Items signed out: Lieutenant Mowbray, 3 sets; Lieutenant Brennan, 3 sets; Lieutenant Pakenham, 1 sets. Returns by Wednesday."
+    }
+  },
+  {
+    "id": "w2_0018a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Lieutenant Mowbray, Harlow Depot, the 7th Highland Battalion, Pinehurst Siding.",
+    "user": "Document:\nWeekly mess hall supply allocation, Sector 2. Rations distributed as follows: the 12th Coastal Wing, 1150 units; the 7th Highland Battalion, 1100 units; the 2nd Engineering Regiment, 1600 units; the 4th Meridian Brigade, 1800 units; the 6th Garrison Company, 900 units. Next delivery scheduled Wednesday. Submitted by the quartermaster on duty.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Lieutenant Mowbray",
+        "Harlow Depot",
+        "the 7th Highland Battalion",
+        "Pinehurst Siding"
+      ],
+      "distractors": [
+        "the 12th Coastal Wing",
+        "the 2nd Engineering Regiment",
+        "the 4th Meridian Brigade",
+        "the 6th Garrison Company"
+      ],
+      "list_size": 5,
+      "template": "t_supply",
+      "pair": 18,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 7th Highland Battalion",
+      "term": "the 7th Highland Battalion",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Weekly mess hall supply allocation, Sector 2. Rations distributed as follows: the 12th Coastal Wing, 1150 units; the 7th Highland Battalion, 1100 units; the 2nd Engineering Regiment, 1600 units; the 4th Meridian Brigade, 1800 units; the 6th Garrison Company, 900 units. Next delivery scheduled Wednesday. Submitted by the quartermaster on duty."
+    }
+  },
+  {
+    "id": "w2_0018b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Lieutenant Mowbray, Harlow Depot, the 7th Highland Battalion, Pinehurst Siding.",
+    "user": "Document:\nWeekly mess hall supply allocation, Sector 2. Rations distributed as follows: the 12th Coastal Wing, 1150 units; the 5th Mountain Division, 1100 units; the 2nd Engineering Regiment, 1600 units; the 4th Meridian Brigade, 1800 units; the 6th Garrison Company, 900 units. Next delivery scheduled Wednesday. Submitted by the quartermaster on duty.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Lieutenant Mowbray",
+        "Harlow Depot",
+        "the 7th Highland Battalion",
+        "Pinehurst Siding"
+      ],
+      "distractors": [
+        "the 12th Coastal Wing",
+        "the 2nd Engineering Regiment",
+        "the 4th Meridian Brigade",
+        "the 6th Garrison Company"
+      ],
+      "list_size": 5,
+      "template": "t_supply",
+      "pair": 18,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 5th Mountain Division",
+      "term": "the 5th Mountain Division",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Weekly mess hall supply allocation, Sector 2. Rations distributed as follows: the 12th Coastal Wing, 1150 units; the 5th Mountain Division, 1100 units; the 2nd Engineering Regiment, 1600 units; the 4th Meridian Brigade, 1800 units; the 6th Garrison Company, 900 units. Next delivery scheduled Wednesday. Submitted by the quartermaster on duty."
+    }
+  },
+  {
+    "id": "w2_0019a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 11th Recon Squadron, Private Mercer, Westmark Gate, Mereth Point, the 6th Garrison Company.",
+    "user": "Document:\nFreight manifest, line 3. Drop-offs in order: Tamlin Crossing, 12 pallets; Caldridge Halt, 12 pallets; Bellweather Station, 6 pallets; Mereth Point, 10 pallets. Driver to confirm at each stop. Dispatch Wednesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "the 11th Recon Squadron",
+        "Private Mercer",
+        "Westmark Gate",
+        "Mereth Point",
+        "the 6th Garrison Company"
+      ],
+      "distractors": [
+        "Tamlin Crossing",
+        "Caldridge Halt",
+        "Bellweather Station"
+      ],
+      "list_size": 4,
+      "template": "t_manifest",
+      "pair": 19,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Mereth Point",
+      "term": "Mereth Point",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Freight manifest, line 3. Drop-offs in order: Tamlin Crossing, 12 pallets; Caldridge Halt, 12 pallets; Bellweather Station, 6 pallets; Mereth Point, 10 pallets. Driver to confirm at each stop. Dispatch Wednesday."
+    }
+  },
+  {
+    "id": "w2_0019b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 11th Recon Squadron, Private Mercer, Westmark Gate, Mereth Point, the 6th Garrison Company.",
+    "user": "Document:\nFreight manifest, line 3. Drop-offs in order: Tamlin Crossing, 12 pallets; Caldridge Halt, 12 pallets; Bellweather Station, 6 pallets; Calder Reach, 10 pallets. Driver to confirm at each stop. Dispatch Wednesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "the 11th Recon Squadron",
+        "Private Mercer",
+        "Westmark Gate",
+        "Mereth Point",
+        "the 6th Garrison Company"
+      ],
+      "distractors": [
+        "Tamlin Crossing",
+        "Caldridge Halt",
+        "Bellweather Station"
+      ],
+      "list_size": 4,
+      "template": "t_manifest",
+      "pair": 19,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Calder Reach",
+      "term": "Calder Reach",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Freight manifest, line 3. Drop-offs in order: Tamlin Crossing, 12 pallets; Caldridge Halt, 12 pallets; Bellweather Station, 6 pallets; Calder Reach, 10 pallets. Driver to confirm at each stop. Dispatch Wednesday."
+    }
+  },
+  {
+    "id": "w2_0020a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Sergeant Daugherty, Cobalt Squadron, Lieutenant Brennan, Bellweather Station.",
+    "user": "Document:\nTraining attendance, module 8. Hours logged: Lieutenant Brennan, 8 hrs; Private Ashcombe, 10 hrs; Sergeant Halloran, 10 hrs; Sergeant Lindqvist, 6 hrs; Corporal Whitlock, 10 hrs. Sign-off Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Sergeant Daugherty",
+        "Cobalt Squadron",
+        "Lieutenant Brennan",
+        "Bellweather Station"
+      ],
+      "distractors": [
+        "Private Ashcombe",
+        "Sergeant Halloran",
+        "Sergeant Lindqvist",
+        "Corporal Whitlock"
+      ],
+      "list_size": 5,
+      "template": "t_attend",
+      "pair": 20,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Lieutenant Brennan",
+      "term": "Lieutenant Brennan",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Training attendance, module 8. Hours logged: Lieutenant Brennan, 8 hrs; Private Ashcombe, 10 hrs; Sergeant Halloran, 10 hrs; Sergeant Lindqvist, 6 hrs; Corporal Whitlock, 10 hrs. Sign-off Monday."
+    }
+  },
+  {
+    "id": "w2_0020b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Sergeant Daugherty, Cobalt Squadron, Lieutenant Brennan, Bellweather Station.",
+    "user": "Document:\nTraining attendance, module 8. Hours logged: Private Carrow, 8 hrs; Private Ashcombe, 10 hrs; Sergeant Halloran, 10 hrs; Sergeant Lindqvist, 6 hrs; Corporal Whitlock, 10 hrs. Sign-off Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Sergeant Daugherty",
+        "Cobalt Squadron",
+        "Lieutenant Brennan",
+        "Bellweather Station"
+      ],
+      "distractors": [
+        "Private Ashcombe",
+        "Sergeant Halloran",
+        "Sergeant Lindqvist",
+        "Corporal Whitlock"
+      ],
+      "list_size": 5,
+      "template": "t_attend",
+      "pair": 20,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Private Carrow",
+      "term": "Private Carrow",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Training attendance, module 8. Hours logged: Private Carrow, 8 hrs; Private Ashcombe, 10 hrs; Sergeant Halloran, 10 hrs; Sergeant Lindqvist, 6 hrs; Corporal Whitlock, 10 hrs. Sign-off Monday."
+    }
+  },
+  {
+    "id": "w2_0021a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Kessler Flats, the 2nd Engineering Regiment, the 5th Mountain Division.",
+    "user": "Document:\nMotor pool equipment checkout, week 27. Vehicles assigned: the 4th Meridian Brigade, 3 trucks; Cobalt Squadron, 2 trucks; the 3rd Frontier Company, 5 trucks; the 5th Mountain Division, 5 trucks. Returns due Wednesday. Logged by the duty NCO.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Kessler Flats",
+        "the 2nd Engineering Regiment",
+        "the 5th Mountain Division"
+      ],
+      "distractors": [
+        "the 4th Meridian Brigade",
+        "Cobalt Squadron",
+        "the 3rd Frontier Company"
+      ],
+      "list_size": 4,
+      "template": "t_checkout",
+      "pair": 21,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 5th Mountain Division",
+      "term": "the 5th Mountain Division",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Motor pool equipment checkout, week 27. Vehicles assigned: the 4th Meridian Brigade, 3 trucks; Cobalt Squadron, 2 trucks; the 3rd Frontier Company, 5 trucks; the 5th Mountain Division, 5 trucks. Returns due Wednesday. Logged by the duty NCO."
+    }
+  },
+  {
+    "id": "w2_0021b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Kessler Flats, the 2nd Engineering Regiment, the 5th Mountain Division.",
+    "user": "Document:\nMotor pool equipment checkout, week 27. Vehicles assigned: the 4th Meridian Brigade, 3 trucks; Cobalt Squadron, 2 trucks; the 3rd Frontier Company, 5 trucks; the 18th Artillery Battery, 5 trucks. Returns due Wednesday. Logged by the duty NCO.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Kessler Flats",
+        "the 2nd Engineering Regiment",
+        "the 5th Mountain Division"
+      ],
+      "distractors": [
+        "the 4th Meridian Brigade",
+        "Cobalt Squadron",
+        "the 3rd Frontier Company"
+      ],
+      "list_size": 4,
+      "template": "t_checkout",
+      "pair": 21,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 18th Artillery Battery",
+      "term": "the 18th Artillery Battery",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Motor pool equipment checkout, week 27. Vehicles assigned: the 4th Meridian Brigade, 3 trucks; Cobalt Squadron, 2 trucks; the 3rd Frontier Company, 5 trucks; the 18th Artillery Battery, 5 trucks. Returns due Wednesday. Logged by the duty NCO."
+    }
+  },
+  {
+    "id": "w2_0022a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 6th Garrison Company, Lieutenant Okafor, Caldridge Halt, Calder Reach.",
+    "user": "Document:\nQuarterly maintenance schedule. Sites due for servicing: Kessler Flats, 4 units; Calder Reach, 3 units; Renholm Quarter, 2 units. Crew dispatched Friday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "the 6th Garrison Company",
+        "Lieutenant Okafor",
+        "Caldridge Halt",
+        "Calder Reach"
+      ],
+      "distractors": [
+        "Kessler Flats",
+        "Renholm Quarter"
+      ],
+      "list_size": 3,
+      "template": "t_maint",
+      "pair": 22,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Calder Reach",
+      "term": "Calder Reach",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Quarterly maintenance schedule. Sites due for servicing: Kessler Flats, 4 units; Calder Reach, 3 units; Renholm Quarter, 2 units. Crew dispatched Friday."
+    }
+  },
+  {
+    "id": "w2_0022b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 6th Garrison Company, Lieutenant Okafor, Caldridge Halt, Calder Reach.",
+    "user": "Document:\nQuarterly maintenance schedule. Sites due for servicing: Kessler Flats, 4 units; Sundby Wharf, 3 units; Renholm Quarter, 2 units. Crew dispatched Friday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "the 6th Garrison Company",
+        "Lieutenant Okafor",
+        "Caldridge Halt",
+        "Calder Reach"
+      ],
+      "distractors": [
+        "Kessler Flats",
+        "Renholm Quarter"
+      ],
+      "list_size": 3,
+      "template": "t_maint",
+      "pair": 22,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Sundby Wharf",
+      "term": "Sundby Wharf",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Quarterly maintenance schedule. Sites due for servicing: Kessler Flats, 4 units; Sundby Wharf, 3 units; Renholm Quarter, 2 units. Crew dispatched Friday."
+    }
+  },
+  {
+    "id": "w2_0023a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 6th Garrison Company, Bellweather Station, Renholm Quarter, Lieutenant Pakenham, Private Carrow.",
+    "user": "Document:\nNight shift schedule, block 5. On call: Corporal Rutherford, 8 hrs; Corporal Vasquez, 6 hrs; Corporal Whitlock, 10 hrs; Private Ashcombe, 10 hrs; Private Carrow, 10 hrs. Effective Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "the 6th Garrison Company",
+        "Bellweather Station",
+        "Renholm Quarter",
+        "Lieutenant Pakenham",
+        "Private Carrow"
+      ],
+      "distractors": [
+        "Corporal Rutherford",
+        "Corporal Vasquez",
+        "Corporal Whitlock",
+        "Private Ashcombe"
+      ],
+      "list_size": 5,
+      "template": "t_shift",
+      "pair": 23,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Private Carrow",
+      "term": "Private Carrow",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Night shift schedule, block 5. On call: Corporal Rutherford, 8 hrs; Corporal Vasquez, 6 hrs; Corporal Whitlock, 10 hrs; Private Ashcombe, 10 hrs; Private Carrow, 10 hrs. Effective Monday."
+    }
+  },
+  {
+    "id": "w2_0023b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 6th Garrison Company, Bellweather Station, Renholm Quarter, Lieutenant Pakenham, Private Carrow.",
+    "user": "Document:\nNight shift schedule, block 5. On call: Corporal Rutherford, 8 hrs; Corporal Vasquez, 6 hrs; Corporal Whitlock, 10 hrs; Private Ashcombe, 10 hrs; Sergeant Lindqvist, 10 hrs. Effective Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "the 6th Garrison Company",
+        "Bellweather Station",
+        "Renholm Quarter",
+        "Lieutenant Pakenham",
+        "Private Carrow"
+      ],
+      "distractors": [
+        "Corporal Rutherford",
+        "Corporal Vasquez",
+        "Corporal Whitlock",
+        "Private Ashcombe"
+      ],
+      "list_size": 5,
+      "template": "t_shift",
+      "pair": 23,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Sergeant Lindqvist",
+      "term": "Sergeant Lindqvist",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Night shift schedule, block 5. On call: Corporal Rutherford, 8 hrs; Corporal Vasquez, 6 hrs; Corporal Whitlock, 10 hrs; Private Ashcombe, 10 hrs; Sergeant Lindqvist, 10 hrs. Effective Monday."
+    }
+  },
+  {
+    "id": "w2_0024a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Harlow Depot, the 18th Artillery Battery, the 3rd Frontier Company, Lieutenant Mowbray.",
+    "user": "Document:\nGuard rotation roster, gate 1. Shifts assigned: Cobalt Squadron, 6 hours; the 4th Meridian Brigade, 8 hours; the 18th Artillery Battery, 8 hours. Roster effective Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Harlow Depot",
+        "the 18th Artillery Battery",
+        "the 3rd Frontier Company",
+        "Lieutenant Mowbray"
+      ],
+      "distractors": [
+        "Cobalt Squadron",
+        "the 4th Meridian Brigade"
+      ],
+      "list_size": 3,
+      "template": "t_roster",
+      "pair": 24,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 18th Artillery Battery",
+      "term": "the 18th Artillery Battery",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Guard rotation roster, gate 1. Shifts assigned: Cobalt Squadron, 6 hours; the 4th Meridian Brigade, 8 hours; the 18th Artillery Battery, 8 hours. Roster effective Monday."
+    }
+  },
+  {
+    "id": "w2_0024b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Harlow Depot, the 18th Artillery Battery, the 3rd Frontier Company, Lieutenant Mowbray.",
+    "user": "Document:\nGuard rotation roster, gate 1. Shifts assigned: Cobalt Squadron, 6 hours; the 4th Meridian Brigade, 8 hours; the 6th Garrison Company, 8 hours. Roster effective Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Harlow Depot",
+        "the 18th Artillery Battery",
+        "the 3rd Frontier Company",
+        "Lieutenant Mowbray"
+      ],
+      "distractors": [
+        "Cobalt Squadron",
+        "the 4th Meridian Brigade"
+      ],
+      "list_size": 3,
+      "template": "t_roster",
+      "pair": 24,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 6th Garrison Company",
+      "term": "the 6th Garrison Company",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Guard rotation roster, gate 1. Shifts assigned: Cobalt Squadron, 6 hours; the 4th Meridian Brigade, 8 hours; the 6th Garrison Company, 8 hours. Roster effective Monday."
+    }
+  },
+  {
+    "id": "w2_0025a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Corporal Devereux, Corporal Vasquez, Corporal Whitlock, Sundby Wharf.",
+    "user": "Document:\nFuel delivery schedule, route 3. Allocations: Sundby Wharf, 1200 litres; Harlow Depot, 1200 litres; Mereth Point, 400 litres; Caldridge Halt, 1000 litres. Tanker departs Tuesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Corporal Devereux",
+        "Corporal Vasquez",
+        "Corporal Whitlock",
+        "Sundby Wharf"
+      ],
+      "distractors": [
+        "Harlow Depot",
+        "Mereth Point",
+        "Caldridge Halt"
+      ],
+      "list_size": 4,
+      "template": "t_fuel",
+      "pair": 25,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Sundby Wharf",
+      "term": "Sundby Wharf",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Fuel delivery schedule, route 3. Allocations: Sundby Wharf, 1200 litres; Harlow Depot, 1200 litres; Mereth Point, 400 litres; Caldridge Halt, 1000 litres. Tanker departs Tuesday."
+    }
+  },
+  {
+    "id": "w2_0025b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Corporal Devereux, Corporal Vasquez, Corporal Whitlock, Sundby Wharf.",
+    "user": "Document:\nFuel delivery schedule, route 3. Allocations: Renholm Quarter, 1200 litres; Harlow Depot, 1200 litres; Mereth Point, 400 litres; Caldridge Halt, 1000 litres. Tanker departs Tuesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Corporal Devereux",
+        "Corporal Vasquez",
+        "Corporal Whitlock",
+        "Sundby Wharf"
+      ],
+      "distractors": [
+        "Harlow Depot",
+        "Mereth Point",
+        "Caldridge Halt"
+      ],
+      "list_size": 4,
+      "template": "t_fuel",
+      "pair": 25,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Renholm Quarter",
+      "term": "Renholm Quarter",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Fuel delivery schedule, route 3. Allocations: Renholm Quarter, 1200 litres; Harlow Depot, 1200 litres; Mereth Point, 400 litres; Caldridge Halt, 1000 litres. Tanker departs Tuesday."
+    }
+  },
+  {
+    "id": "w2_0026a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Aldermoor Yard, Bellweather Station, Vornid Basin, Sergeant Lindqvist.",
+    "user": "Document:\nKit issue record, store 2. Items signed out: Sergeant Daugherty, 3 sets; Sergeant Halloran, 3 sets; Sergeant Lindqvist, 3 sets. Returns by Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Aldermoor Yard",
+        "Bellweather Station",
+        "Vornid Basin",
+        "Sergeant Lindqvist"
+      ],
+      "distractors": [
+        "Sergeant Daugherty",
+        "Sergeant Halloran"
+      ],
+      "list_size": 3,
+      "template": "t_kit",
+      "pair": 26,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Sergeant Lindqvist",
+      "term": "Sergeant Lindqvist",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Kit issue record, store 2. Items signed out: Sergeant Daugherty, 3 sets; Sergeant Halloran, 3 sets; Sergeant Lindqvist, 3 sets. Returns by Monday."
+    }
+  },
+  {
+    "id": "w2_0026b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Aldermoor Yard, Bellweather Station, Vornid Basin, Sergeant Lindqvist.",
+    "user": "Document:\nKit issue record, store 2. Items signed out: Sergeant Daugherty, 3 sets; Sergeant Halloran, 3 sets; Corporal Vasquez, 3 sets. Returns by Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Aldermoor Yard",
+        "Bellweather Station",
+        "Vornid Basin",
+        "Sergeant Lindqvist"
+      ],
+      "distractors": [
+        "Sergeant Daugherty",
+        "Sergeant Halloran"
+      ],
+      "list_size": 3,
+      "template": "t_kit",
+      "pair": 26,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Corporal Vasquez",
+      "term": "Corporal Vasquez",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Kit issue record, store 2. Items signed out: Sergeant Daugherty, 3 sets; Sergeant Halloran, 3 sets; Corporal Vasquez, 3 sets. Returns by Monday."
+    }
+  },
+  {
+    "id": "w2_0027a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Tideguard Flotilla, the 6th Garrison Company, Corporal Rutherford, Sergeant Halloran.",
+    "user": "Document:\nWeekly mess hall supply allocation, Sector 6. Rations distributed as follows: the 6th Garrison Company, 1800 units; Ironside Detachment, 1150 units; the 12th Coastal Wing, 900 units. Next delivery scheduled Monday. Submitted by the quartermaster on duty.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Tideguard Flotilla",
+        "the 6th Garrison Company",
+        "Corporal Rutherford",
+        "Sergeant Halloran"
+      ],
+      "distractors": [
+        "Ironside Detachment",
+        "the 12th Coastal Wing"
+      ],
+      "list_size": 3,
+      "template": "t_supply",
+      "pair": 27,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 6th Garrison Company",
+      "term": "the 6th Garrison Company",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Weekly mess hall supply allocation, Sector 6. Rations distributed as follows: the 6th Garrison Company, 1800 units; Ironside Detachment, 1150 units; the 12th Coastal Wing, 900 units. Next delivery scheduled Monday. Submitted by the quartermaster on duty."
+    }
+  },
+  {
+    "id": "w2_0027b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Tideguard Flotilla, the 6th Garrison Company, Corporal Rutherford, Sergeant Halloran.",
+    "user": "Document:\nWeekly mess hall supply allocation, Sector 6. Rations distributed as follows: the 11th Recon Squadron, 1800 units; Ironside Detachment, 1150 units; the 12th Coastal Wing, 900 units. Next delivery scheduled Monday. Submitted by the quartermaster on duty.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Tideguard Flotilla",
+        "the 6th Garrison Company",
+        "Corporal Rutherford",
+        "Sergeant Halloran"
+      ],
+      "distractors": [
+        "Ironside Detachment",
+        "the 12th Coastal Wing"
+      ],
+      "list_size": 3,
+      "template": "t_supply",
+      "pair": 27,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 11th Recon Squadron",
+      "term": "the 11th Recon Squadron",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Weekly mess hall supply allocation, Sector 6. Rations distributed as follows: the 11th Recon Squadron, 1800 units; Ironside Detachment, 1150 units; the 12th Coastal Wing, 900 units. Next delivery scheduled Monday. Submitted by the quartermaster on duty."
+    }
+  },
+  {
+    "id": "w2_0028a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Corporal Whitlock, the 12th Coastal Wing, Renholm Quarter.",
+    "user": "Document:\nFreight manifest, line 8. Drop-offs in order: Mereth Point, 12 pallets; Orsk Hollow, 6 pallets; Aldermoor Yard, 6 pallets; Renholm Quarter, 12 pallets. Driver to confirm at each stop. Dispatch Tuesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Corporal Whitlock",
+        "the 12th Coastal Wing",
+        "Renholm Quarter"
+      ],
+      "distractors": [
+        "Mereth Point",
+        "Orsk Hollow",
+        "Aldermoor Yard"
+      ],
+      "list_size": 4,
+      "template": "t_manifest",
+      "pair": 28,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Renholm Quarter",
+      "term": "Renholm Quarter",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Freight manifest, line 8. Drop-offs in order: Mereth Point, 12 pallets; Orsk Hollow, 6 pallets; Aldermoor Yard, 6 pallets; Renholm Quarter, 12 pallets. Driver to confirm at each stop. Dispatch Tuesday."
+    }
+  },
+  {
+    "id": "w2_0028b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Corporal Whitlock, the 12th Coastal Wing, Renholm Quarter.",
+    "user": "Document:\nFreight manifest, line 8. Drop-offs in order: Mereth Point, 12 pallets; Orsk Hollow, 6 pallets; Aldermoor Yard, 6 pallets; Harlow Depot, 12 pallets. Driver to confirm at each stop. Dispatch Tuesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Corporal Whitlock",
+        "the 12th Coastal Wing",
+        "Renholm Quarter"
+      ],
+      "distractors": [
+        "Mereth Point",
+        "Orsk Hollow",
+        "Aldermoor Yard"
+      ],
+      "list_size": 4,
+      "template": "t_manifest",
+      "pair": 28,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Harlow Depot",
+      "term": "Harlow Depot",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Freight manifest, line 8. Drop-offs in order: Mereth Point, 12 pallets; Orsk Hollow, 6 pallets; Aldermoor Yard, 6 pallets; Harlow Depot, 12 pallets. Driver to confirm at each stop. Dispatch Tuesday."
+    }
+  },
+  {
+    "id": "w2_0029a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Renholm Quarter, the 5th Mountain Division, Kessler Flats, the 18th Artillery Battery, Corporal Vasquez.",
+    "user": "Document:\nTraining attendance, module 8. Hours logged: Corporal Rutherford, 10 hrs; Corporal Vasquez, 4 hrs; Corporal Devereux, 4 hrs; Sergeant Lindqvist, 10 hrs; Lieutenant Pakenham, 8 hrs. Sign-off Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Renholm Quarter",
+        "the 5th Mountain Division",
+        "Kessler Flats",
+        "the 18th Artillery Battery",
+        "Corporal Vasquez"
+      ],
+      "distractors": [
+        "Corporal Rutherford",
+        "Corporal Devereux",
+        "Sergeant Lindqvist",
+        "Lieutenant Pakenham"
+      ],
+      "list_size": 5,
+      "template": "t_attend",
+      "pair": 29,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Corporal Vasquez",
+      "term": "Corporal Vasquez",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Training attendance, module 8. Hours logged: Corporal Rutherford, 10 hrs; Corporal Vasquez, 4 hrs; Corporal Devereux, 4 hrs; Sergeant Lindqvist, 10 hrs; Lieutenant Pakenham, 8 hrs. Sign-off Monday."
+    }
+  },
+  {
+    "id": "w2_0029b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Renholm Quarter, the 5th Mountain Division, Kessler Flats, the 18th Artillery Battery, Corporal Vasquez.",
+    "user": "Document:\nTraining attendance, module 8. Hours logged: Corporal Rutherford, 10 hrs; Lieutenant Okafor, 4 hrs; Corporal Devereux, 4 hrs; Sergeant Lindqvist, 10 hrs; Lieutenant Pakenham, 8 hrs. Sign-off Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Renholm Quarter",
+        "the 5th Mountain Division",
+        "Kessler Flats",
+        "the 18th Artillery Battery",
+        "Corporal Vasquez"
+      ],
+      "distractors": [
+        "Corporal Rutherford",
+        "Corporal Devereux",
+        "Sergeant Lindqvist",
+        "Lieutenant Pakenham"
+      ],
+      "list_size": 5,
+      "template": "t_attend",
+      "pair": 29,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Lieutenant Okafor",
+      "term": "Lieutenant Okafor",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Training attendance, module 8. Hours logged: Corporal Rutherford, 10 hrs; Lieutenant Okafor, 4 hrs; Corporal Devereux, 4 hrs; Sergeant Lindqvist, 10 hrs; Lieutenant Pakenham, 8 hrs. Sign-off Monday."
+    }
+  },
+  {
+    "id": "w2_0030a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Private Mercer, Sergeant Lindqvist, the 11th Recon Squadron.",
+    "user": "Document:\nMotor pool equipment checkout, week 28. Vehicles assigned: the 8th Transport Column, 2 trucks; the 9th Signals Battalion, 2 trucks; the 11th Recon Squadron, 2 trucks; the 5th Mountain Division, 5 trucks. Returns due Wednesday. Logged by the duty NCO.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Private Mercer",
+        "Sergeant Lindqvist",
+        "the 11th Recon Squadron"
+      ],
+      "distractors": [
+        "the 8th Transport Column",
+        "the 9th Signals Battalion",
+        "the 5th Mountain Division"
+      ],
+      "list_size": 4,
+      "template": "t_checkout",
+      "pair": 30,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 11th Recon Squadron",
+      "term": "the 11th Recon Squadron",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Motor pool equipment checkout, week 28. Vehicles assigned: the 8th Transport Column, 2 trucks; the 9th Signals Battalion, 2 trucks; the 11th Recon Squadron, 2 trucks; the 5th Mountain Division, 5 trucks. Returns due Wednesday. Logged by the duty NCO."
+    }
+  },
+  {
+    "id": "w2_0030b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Private Mercer, Sergeant Lindqvist, the 11th Recon Squadron.",
+    "user": "Document:\nMotor pool equipment checkout, week 28. Vehicles assigned: the 8th Transport Column, 2 trucks; the 9th Signals Battalion, 2 trucks; the 14th Supply Wing, 2 trucks; the 5th Mountain Division, 5 trucks. Returns due Wednesday. Logged by the duty NCO.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Private Mercer",
+        "Sergeant Lindqvist",
+        "the 11th Recon Squadron"
+      ],
+      "distractors": [
+        "the 8th Transport Column",
+        "the 9th Signals Battalion",
+        "the 5th Mountain Division"
+      ],
+      "list_size": 4,
+      "template": "t_checkout",
+      "pair": 30,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 14th Supply Wing",
+      "term": "the 14th Supply Wing",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Motor pool equipment checkout, week 28. Vehicles assigned: the 8th Transport Column, 2 trucks; the 9th Signals Battalion, 2 trucks; the 14th Supply Wing, 2 trucks; the 5th Mountain Division, 5 trucks. Returns due Wednesday. Logged by the duty NCO."
+    }
+  },
+  {
+    "id": "w2_0031a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 8th Transport Column, Harlow Depot, Corporal Devereux, Lieutenant Okafor.",
+    "user": "Document:\nQuarterly maintenance schedule. Sites due for servicing: Bellweather Station, 5 units; Pinehurst Siding, 4 units; Harlow Depot, 2 units. Crew dispatched Tuesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "the 8th Transport Column",
+        "Harlow Depot",
+        "Corporal Devereux",
+        "Lieutenant Okafor"
+      ],
+      "distractors": [
+        "Bellweather Station",
+        "Pinehurst Siding"
+      ],
+      "list_size": 3,
+      "template": "t_maint",
+      "pair": 31,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Harlow Depot",
+      "term": "Harlow Depot",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Quarterly maintenance schedule. Sites due for servicing: Bellweather Station, 5 units; Pinehurst Siding, 4 units; Harlow Depot, 2 units. Crew dispatched Tuesday."
+    }
+  },
+  {
+    "id": "w2_0031b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 8th Transport Column, Harlow Depot, Corporal Devereux, Lieutenant Okafor.",
+    "user": "Document:\nQuarterly maintenance schedule. Sites due for servicing: Bellweather Station, 5 units; Pinehurst Siding, 4 units; Aldermoor Yard, 2 units. Crew dispatched Tuesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "the 8th Transport Column",
+        "Harlow Depot",
+        "Corporal Devereux",
+        "Lieutenant Okafor"
+      ],
+      "distractors": [
+        "Bellweather Station",
+        "Pinehurst Siding"
+      ],
+      "list_size": 3,
+      "template": "t_maint",
+      "pair": 31,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Aldermoor Yard",
+      "term": "Aldermoor Yard",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Quarterly maintenance schedule. Sites due for servicing: Bellweather Station, 5 units; Pinehurst Siding, 4 units; Aldermoor Yard, 2 units. Crew dispatched Tuesday."
+    }
+  },
+  {
+    "id": "w2_0032a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Bellweather Station, Lieutenant Okafor, Tamlin Crossing, the 8th Transport Column.",
+    "user": "Document:\nNight shift schedule, block 1. On call: Lieutenant Brennan, 12 hrs; Lieutenant Mowbray, 12 hrs; Lieutenant Okafor, 12 hrs. Effective Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Bellweather Station",
+        "Lieutenant Okafor",
+        "Tamlin Crossing",
+        "the 8th Transport Column"
+      ],
+      "distractors": [
+        "Lieutenant Brennan",
+        "Lieutenant Mowbray"
+      ],
+      "list_size": 3,
+      "template": "t_shift",
+      "pair": 32,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Lieutenant Okafor",
+      "term": "Lieutenant Okafor",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Night shift schedule, block 1. On call: Lieutenant Brennan, 12 hrs; Lieutenant Mowbray, 12 hrs; Lieutenant Okafor, 12 hrs. Effective Monday."
+    }
+  },
+  {
+    "id": "w2_0032b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Bellweather Station, Lieutenant Okafor, Tamlin Crossing, the 8th Transport Column.",
+    "user": "Document:\nNight shift schedule, block 1. On call: Lieutenant Brennan, 12 hrs; Lieutenant Mowbray, 12 hrs; Private Mercer, 12 hrs. Effective Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Bellweather Station",
+        "Lieutenant Okafor",
+        "Tamlin Crossing",
+        "the 8th Transport Column"
+      ],
+      "distractors": [
+        "Lieutenant Brennan",
+        "Lieutenant Mowbray"
+      ],
+      "list_size": 3,
+      "template": "t_shift",
+      "pair": 32,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Private Mercer",
+      "term": "Private Mercer",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Night shift schedule, block 1. On call: Lieutenant Brennan, 12 hrs; Lieutenant Mowbray, 12 hrs; Private Mercer, 12 hrs. Effective Monday."
+    }
+  },
+  {
+    "id": "w2_0033a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 4th Meridian Brigade, the 14th Supply Wing, Kessler Flats.",
+    "user": "Document:\nGuard rotation roster, gate 2. Shifts assigned: Tideguard Flotilla, 6 hours; the 3rd Frontier Company, 8 hours; the 14th Supply Wing, 10 hours; the 8th Transport Column, 6 hours. Roster effective Friday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "the 4th Meridian Brigade",
+        "the 14th Supply Wing",
+        "Kessler Flats"
+      ],
+      "distractors": [
+        "Tideguard Flotilla",
+        "the 3rd Frontier Company",
+        "the 8th Transport Column"
+      ],
+      "list_size": 4,
+      "template": "t_roster",
+      "pair": 33,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 14th Supply Wing",
+      "term": "the 14th Supply Wing",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Guard rotation roster, gate 2. Shifts assigned: Tideguard Flotilla, 6 hours; the 3rd Frontier Company, 8 hours; the 14th Supply Wing, 10 hours; the 8th Transport Column, 6 hours. Roster effective Friday."
+    }
+  },
+  {
+    "id": "w2_0033b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 4th Meridian Brigade, the 14th Supply Wing, Kessler Flats.",
+    "user": "Document:\nGuard rotation roster, gate 2. Shifts assigned: Tideguard Flotilla, 6 hours; the 3rd Frontier Company, 8 hours; Ironside Detachment, 10 hours; the 8th Transport Column, 6 hours. Roster effective Friday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "the 4th Meridian Brigade",
+        "the 14th Supply Wing",
+        "Kessler Flats"
+      ],
+      "distractors": [
+        "Tideguard Flotilla",
+        "the 3rd Frontier Company",
+        "the 8th Transport Column"
+      ],
+      "list_size": 4,
+      "template": "t_roster",
+      "pair": 33,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Ironside Detachment",
+      "term": "Ironside Detachment",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Guard rotation roster, gate 2. Shifts assigned: Tideguard Flotilla, 6 hours; the 3rd Frontier Company, 8 hours; Ironside Detachment, 10 hours; the 8th Transport Column, 6 hours. Roster effective Friday."
+    }
+  },
+  {
+    "id": "w2_0034a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Drennan Ridge, Tideguard Flotilla, the 18th Artillery Battery, Aldermoor Yard, the 4th Meridian Brigade.",
+    "user": "Document:\nFuel delivery schedule, route 5. Allocations: Orsk Hollow, 600 litres; Vornid Basin, 600 litres; Tamlin Crossing, 1000 litres; Caldridge Halt, 400 litres; Aldermoor Yard, 1000 litres. Tanker departs Wednesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Drennan Ridge",
+        "Tideguard Flotilla",
+        "the 18th Artillery Battery",
+        "Aldermoor Yard",
+        "the 4th Meridian Brigade"
+      ],
+      "distractors": [
+        "Orsk Hollow",
+        "Vornid Basin",
+        "Tamlin Crossing",
+        "Caldridge Halt"
+      ],
+      "list_size": 5,
+      "template": "t_fuel",
+      "pair": 34,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Aldermoor Yard",
+      "term": "Aldermoor Yard",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Fuel delivery schedule, route 5. Allocations: Orsk Hollow, 600 litres; Vornid Basin, 600 litres; Tamlin Crossing, 1000 litres; Caldridge Halt, 400 litres; Aldermoor Yard, 1000 litres. Tanker departs Wednesday."
+    }
+  },
+  {
+    "id": "w2_0034b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Drennan Ridge, Tideguard Flotilla, the 18th Artillery Battery, Aldermoor Yard, the 4th Meridian Brigade.",
+    "user": "Document:\nFuel delivery schedule, route 5. Allocations: Orsk Hollow, 600 litres; Vornid Basin, 600 litres; Tamlin Crossing, 1000 litres; Caldridge Halt, 400 litres; Pinehurst Siding, 1000 litres. Tanker departs Wednesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Drennan Ridge",
+        "Tideguard Flotilla",
+        "the 18th Artillery Battery",
+        "Aldermoor Yard",
+        "the 4th Meridian Brigade"
+      ],
+      "distractors": [
+        "Orsk Hollow",
+        "Vornid Basin",
+        "Tamlin Crossing",
+        "Caldridge Halt"
+      ],
+      "list_size": 5,
+      "template": "t_fuel",
+      "pair": 34,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Pinehurst Siding",
+      "term": "Pinehurst Siding",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Fuel delivery schedule, route 5. Allocations: Orsk Hollow, 600 litres; Vornid Basin, 600 litres; Tamlin Crossing, 1000 litres; Caldridge Halt, 400 litres; Pinehurst Siding, 1000 litres. Tanker departs Wednesday."
+    }
+  },
+  {
+    "id": "w2_0035a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Private Mercer, the 18th Artillery Battery, Cobalt Squadron.",
+    "user": "Document:\nKit issue record, store 5. Items signed out: Sergeant Lindqvist, 1 sets; Private Mercer, 1 sets; Lieutenant Okafor, 3 sets; Corporal Rutherford, 2 sets. Returns by Thursday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Private Mercer",
+        "the 18th Artillery Battery",
+        "Cobalt Squadron"
+      ],
+      "distractors": [
+        "Sergeant Lindqvist",
+        "Lieutenant Okafor",
+        "Corporal Rutherford"
+      ],
+      "list_size": 4,
+      "template": "t_kit",
+      "pair": 35,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Private Mercer",
+      "term": "Private Mercer",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Kit issue record, store 5. Items signed out: Sergeant Lindqvist, 1 sets; Private Mercer, 1 sets; Lieutenant Okafor, 3 sets; Corporal Rutherford, 2 sets. Returns by Thursday."
+    }
+  },
+  {
+    "id": "w2_0035b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Private Mercer, the 18th Artillery Battery, Cobalt Squadron.",
+    "user": "Document:\nKit issue record, store 5. Items signed out: Sergeant Lindqvist, 1 sets; Sergeant Daugherty, 1 sets; Lieutenant Okafor, 3 sets; Corporal Rutherford, 2 sets. Returns by Thursday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Private Mercer",
+        "the 18th Artillery Battery",
+        "Cobalt Squadron"
+      ],
+      "distractors": [
+        "Sergeant Lindqvist",
+        "Lieutenant Okafor",
+        "Corporal Rutherford"
+      ],
+      "list_size": 4,
+      "template": "t_kit",
+      "pair": 35,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Sergeant Daugherty",
+      "term": "Sergeant Daugherty",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Kit issue record, store 5. Items signed out: Sergeant Lindqvist, 1 sets; Sergeant Daugherty, 1 sets; Lieutenant Okafor, 3 sets; Corporal Rutherford, 2 sets. Returns by Thursday."
+    }
+  },
+  {
+    "id": "w2_0036a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 4th Meridian Brigade, Caldridge Halt, Ironside Detachment, the 8th Transport Column, the 6th Garrison Company.",
+    "user": "Document:\nWeekly mess hall supply allocation, Sector 7. Rations distributed as follows: Cobalt Squadron, 1400 units; Ironside Detachment, 1800 units; the 12th Coastal Wing, 900 units. Next delivery scheduled Tuesday. Submitted by the quartermaster on duty.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "the 4th Meridian Brigade",
+        "Caldridge Halt",
+        "Ironside Detachment",
+        "the 8th Transport Column",
+        "the 6th Garrison Company"
+      ],
+      "distractors": [
+        "Cobalt Squadron",
+        "the 12th Coastal Wing"
+      ],
+      "list_size": 3,
+      "template": "t_supply",
+      "pair": 36,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Ironside Detachment",
+      "term": "Ironside Detachment",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Weekly mess hall supply allocation, Sector 7. Rations distributed as follows: Cobalt Squadron, 1400 units; Ironside Detachment, 1800 units; the 12th Coastal Wing, 900 units. Next delivery scheduled Tuesday. Submitted by the quartermaster on duty."
+    }
+  },
+  {
+    "id": "w2_0036b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 4th Meridian Brigade, Caldridge Halt, Ironside Detachment, the 8th Transport Column, the 6th Garrison Company.",
+    "user": "Document:\nWeekly mess hall supply allocation, Sector 7. Rations distributed as follows: Cobalt Squadron, 1400 units; Tideguard Flotilla, 1800 units; the 12th Coastal Wing, 900 units. Next delivery scheduled Tuesday. Submitted by the quartermaster on duty.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "the 4th Meridian Brigade",
+        "Caldridge Halt",
+        "Ironside Detachment",
+        "the 8th Transport Column",
+        "the 6th Garrison Company"
+      ],
+      "distractors": [
+        "Cobalt Squadron",
+        "the 12th Coastal Wing"
+      ],
+      "list_size": 3,
+      "template": "t_supply",
+      "pair": 36,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Tideguard Flotilla",
+      "term": "Tideguard Flotilla",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Weekly mess hall supply allocation, Sector 7. Rations distributed as follows: Cobalt Squadron, 1400 units; Tideguard Flotilla, 1800 units; the 12th Coastal Wing, 900 units. Next delivery scheduled Tuesday. Submitted by the quartermaster on duty."
+    }
+  },
+  {
+    "id": "w2_0037a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Sundby Wharf, Lieutenant Mowbray, the 3rd Frontier Company, Pinehurst Siding.",
+    "user": "Document:\nFreight manifest, line 3. Drop-offs in order: Drennan Ridge, 8 pallets; Renholm Quarter, 12 pallets; Pinehurst Siding, 10 pallets; Mereth Point, 14 pallets; Vornid Basin, 6 pallets. Driver to confirm at each stop. Dispatch Thursday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Sundby Wharf",
+        "Lieutenant Mowbray",
+        "the 3rd Frontier Company",
+        "Pinehurst Siding"
+      ],
+      "distractors": [
+        "Drennan Ridge",
+        "Renholm Quarter",
+        "Mereth Point",
+        "Vornid Basin"
+      ],
+      "list_size": 5,
+      "template": "t_manifest",
+      "pair": 37,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Pinehurst Siding",
+      "term": "Pinehurst Siding",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Freight manifest, line 3. Drop-offs in order: Drennan Ridge, 8 pallets; Renholm Quarter, 12 pallets; Pinehurst Siding, 10 pallets; Mereth Point, 14 pallets; Vornid Basin, 6 pallets. Driver to confirm at each stop. Dispatch Thursday."
+    }
+  },
+  {
+    "id": "w2_0037b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Sundby Wharf, Lieutenant Mowbray, the 3rd Frontier Company, Pinehurst Siding.",
+    "user": "Document:\nFreight manifest, line 3. Drop-offs in order: Drennan Ridge, 8 pallets; Renholm Quarter, 12 pallets; Westmark Gate, 10 pallets; Mereth Point, 14 pallets; Vornid Basin, 6 pallets. Driver to confirm at each stop. Dispatch Thursday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Sundby Wharf",
+        "Lieutenant Mowbray",
+        "the 3rd Frontier Company",
+        "Pinehurst Siding"
+      ],
+      "distractors": [
+        "Drennan Ridge",
+        "Renholm Quarter",
+        "Mereth Point",
+        "Vornid Basin"
+      ],
+      "list_size": 5,
+      "template": "t_manifest",
+      "pair": 37,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Westmark Gate",
+      "term": "Westmark Gate",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Freight manifest, line 3. Drop-offs in order: Drennan Ridge, 8 pallets; Renholm Quarter, 12 pallets; Westmark Gate, 10 pallets; Mereth Point, 14 pallets; Vornid Basin, 6 pallets. Driver to confirm at each stop. Dispatch Thursday."
+    }
+  },
+  {
+    "id": "w2_0038a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Orsk Hollow, Pinehurst Siding, the 14th Supply Wing, Sergeant Daugherty.",
+    "user": "Document:\nTraining attendance, module 6. Hours logged: Sergeant Daugherty, 4 hrs; Private Carrow, 6 hrs; Corporal Devereux, 10 hrs; Lieutenant Mowbray, 10 hrs. Sign-off Tuesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Orsk Hollow",
+        "Pinehurst Siding",
+        "the 14th Supply Wing",
+        "Sergeant Daugherty"
+      ],
+      "distractors": [
+        "Private Carrow",
+        "Corporal Devereux",
+        "Lieutenant Mowbray"
+      ],
+      "list_size": 4,
+      "template": "t_attend",
+      "pair": 38,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Sergeant Daugherty",
+      "term": "Sergeant Daugherty",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Training attendance, module 6. Hours logged: Sergeant Daugherty, 4 hrs; Private Carrow, 6 hrs; Corporal Devereux, 10 hrs; Lieutenant Mowbray, 10 hrs. Sign-off Tuesday."
+    }
+  },
+  {
+    "id": "w2_0038b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Orsk Hollow, Pinehurst Siding, the 14th Supply Wing, Sergeant Daugherty.",
+    "user": "Document:\nTraining attendance, module 6. Hours logged: Corporal Whitlock, 4 hrs; Private Carrow, 6 hrs; Corporal Devereux, 10 hrs; Lieutenant Mowbray, 10 hrs. Sign-off Tuesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Orsk Hollow",
+        "Pinehurst Siding",
+        "the 14th Supply Wing",
+        "Sergeant Daugherty"
+      ],
+      "distractors": [
+        "Private Carrow",
+        "Corporal Devereux",
+        "Lieutenant Mowbray"
+      ],
+      "list_size": 4,
+      "template": "t_attend",
+      "pair": 38,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Corporal Whitlock",
+      "term": "Corporal Whitlock",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Training attendance, module 6. Hours logged: Corporal Whitlock, 4 hrs; Private Carrow, 6 hrs; Corporal Devereux, 10 hrs; Lieutenant Mowbray, 10 hrs. Sign-off Tuesday."
+    }
+  },
+  {
+    "id": "w2_0039a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Tideguard Flotilla, Kessler Flats, Renholm Quarter, the 3rd Frontier Company.",
+    "user": "Document:\nMotor pool equipment checkout, week 18. Vehicles assigned: Tideguard Flotilla, 3 trucks; the 5th Mountain Division, 4 trucks; the 11th Recon Squadron, 2 trucks; the 14th Supply Wing, 5 trucks. Returns due Friday. Logged by the duty NCO.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Tideguard Flotilla",
+        "Kessler Flats",
+        "Renholm Quarter",
+        "the 3rd Frontier Company"
+      ],
+      "distractors": [
+        "the 5th Mountain Division",
+        "the 11th Recon Squadron",
+        "the 14th Supply Wing"
+      ],
+      "list_size": 4,
+      "template": "t_checkout",
+      "pair": 39,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Tideguard Flotilla",
+      "term": "Tideguard Flotilla",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Motor pool equipment checkout, week 18. Vehicles assigned: Tideguard Flotilla, 3 trucks; the 5th Mountain Division, 4 trucks; the 11th Recon Squadron, 2 trucks; the 14th Supply Wing, 5 trucks. Returns due Friday. Logged by the duty NCO."
+    }
+  },
+  {
+    "id": "w2_0039b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Tideguard Flotilla, Kessler Flats, Renholm Quarter, the 3rd Frontier Company.",
+    "user": "Document:\nMotor pool equipment checkout, week 18. Vehicles assigned: Cobalt Squadron, 3 trucks; the 5th Mountain Division, 4 trucks; the 11th Recon Squadron, 2 trucks; the 14th Supply Wing, 5 trucks. Returns due Friday. Logged by the duty NCO.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Tideguard Flotilla",
+        "Kessler Flats",
+        "Renholm Quarter",
+        "the 3rd Frontier Company"
+      ],
+      "distractors": [
+        "the 5th Mountain Division",
+        "the 11th Recon Squadron",
+        "the 14th Supply Wing"
+      ],
+      "list_size": 4,
+      "template": "t_checkout",
+      "pair": 39,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Cobalt Squadron",
+      "term": "Cobalt Squadron",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Motor pool equipment checkout, week 18. Vehicles assigned: Cobalt Squadron, 3 trucks; the 5th Mountain Division, 4 trucks; the 11th Recon Squadron, 2 trucks; the 14th Supply Wing, 5 trucks. Returns due Friday. Logged by the duty NCO."
+    }
+  },
+  {
+    "id": "w2_0040a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 12th Coastal Wing, the 3rd Frontier Company, Bellweather Station, Westmark Gate.",
+    "user": "Document:\nQuarterly maintenance schedule. Sites due for servicing: Westmark Gate, 5 units; Renholm Quarter, 3 units; Drennan Ridge, 5 units; Mereth Point, 4 units; Calder Reach, 2 units. Crew dispatched Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "the 12th Coastal Wing",
+        "the 3rd Frontier Company",
+        "Bellweather Station",
+        "Westmark Gate"
+      ],
+      "distractors": [
+        "Renholm Quarter",
+        "Drennan Ridge",
+        "Mereth Point",
+        "Calder Reach"
+      ],
+      "list_size": 5,
+      "template": "t_maint",
+      "pair": 40,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Westmark Gate",
+      "term": "Westmark Gate",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Quarterly maintenance schedule. Sites due for servicing: Westmark Gate, 5 units; Renholm Quarter, 3 units; Drennan Ridge, 5 units; Mereth Point, 4 units; Calder Reach, 2 units. Crew dispatched Monday."
+    }
+  },
+  {
+    "id": "w2_0040b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 12th Coastal Wing, the 3rd Frontier Company, Bellweather Station, Westmark Gate.",
+    "user": "Document:\nQuarterly maintenance schedule. Sites due for servicing: Caldridge Halt, 5 units; Renholm Quarter, 3 units; Drennan Ridge, 5 units; Mereth Point, 4 units; Calder Reach, 2 units. Crew dispatched Monday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "the 12th Coastal Wing",
+        "the 3rd Frontier Company",
+        "Bellweather Station",
+        "Westmark Gate"
+      ],
+      "distractors": [
+        "Renholm Quarter",
+        "Drennan Ridge",
+        "Mereth Point",
+        "Calder Reach"
+      ],
+      "list_size": 5,
+      "template": "t_maint",
+      "pair": 40,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Caldridge Halt",
+      "term": "Caldridge Halt",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Quarterly maintenance schedule. Sites due for servicing: Caldridge Halt, 5 units; Renholm Quarter, 3 units; Drennan Ridge, 5 units; Mereth Point, 4 units; Calder Reach, 2 units. Crew dispatched Monday."
+    }
+  },
+  {
+    "id": "w2_0041a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Corporal Whitlock, the 5th Mountain Division, Lieutenant Brennan, Mereth Point.",
+    "user": "Document:\nNight shift schedule, block 3. On call: Corporal Devereux, 8 hrs; Private Mercer, 6 hrs; Corporal Whitlock, 6 hrs; Sergeant Fenwick, 6 hrs. Effective Wednesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Corporal Whitlock",
+        "the 5th Mountain Division",
+        "Lieutenant Brennan",
+        "Mereth Point"
+      ],
+      "distractors": [
+        "Corporal Devereux",
+        "Private Mercer",
+        "Sergeant Fenwick"
+      ],
+      "list_size": 4,
+      "template": "t_shift",
+      "pair": 41,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Corporal Whitlock",
+      "term": "Corporal Whitlock",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Night shift schedule, block 3. On call: Corporal Devereux, 8 hrs; Private Mercer, 6 hrs; Corporal Whitlock, 6 hrs; Sergeant Fenwick, 6 hrs. Effective Wednesday."
+    }
+  },
+  {
+    "id": "w2_0041b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Corporal Whitlock, the 5th Mountain Division, Lieutenant Brennan, Mereth Point.",
+    "user": "Document:\nNight shift schedule, block 3. On call: Corporal Devereux, 8 hrs; Private Mercer, 6 hrs; Lieutenant Pakenham, 6 hrs; Sergeant Fenwick, 6 hrs. Effective Wednesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Corporal Whitlock",
+        "the 5th Mountain Division",
+        "Lieutenant Brennan",
+        "Mereth Point"
+      ],
+      "distractors": [
+        "Corporal Devereux",
+        "Private Mercer",
+        "Sergeant Fenwick"
+      ],
+      "list_size": 4,
+      "template": "t_shift",
+      "pair": 41,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Lieutenant Pakenham",
+      "term": "Lieutenant Pakenham",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Night shift schedule, block 3. On call: Corporal Devereux, 8 hrs; Private Mercer, 6 hrs; Lieutenant Pakenham, 6 hrs; Sergeant Fenwick, 6 hrs. Effective Wednesday."
+    }
+  },
+  {
+    "id": "w2_0042a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Cobalt Squadron, Private Mercer, Private Ashcombe, Westmark Gate.",
+    "user": "Document:\nGuard rotation roster, gate 5. Shifts assigned: the 8th Transport Column, 8 hours; Cobalt Squadron, 6 hours; Tideguard Flotilla, 12 hours; the 6th Garrison Company, 12 hours. Roster effective Wednesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Cobalt Squadron",
+        "Private Mercer",
+        "Private Ashcombe",
+        "Westmark Gate"
+      ],
+      "distractors": [
+        "the 8th Transport Column",
+        "Tideguard Flotilla",
+        "the 6th Garrison Company"
+      ],
+      "list_size": 4,
+      "template": "t_roster",
+      "pair": 42,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Cobalt Squadron",
+      "term": "Cobalt Squadron",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Guard rotation roster, gate 5. Shifts assigned: the 8th Transport Column, 8 hours; Cobalt Squadron, 6 hours; Tideguard Flotilla, 12 hours; the 6th Garrison Company, 12 hours. Roster effective Wednesday."
+    }
+  },
+  {
+    "id": "w2_0042b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "unit",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Cobalt Squadron, Private Mercer, Private Ashcombe, Westmark Gate.",
+    "user": "Document:\nGuard rotation roster, gate 5. Shifts assigned: the 8th Transport Column, 8 hours; the 3rd Frontier Company, 6 hours; Tideguard Flotilla, 12 hours; the 6th Garrison Company, 12 hours. Roster effective Wednesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Cobalt Squadron",
+        "Private Mercer",
+        "Private Ashcombe",
+        "Westmark Gate"
+      ],
+      "distractors": [
+        "the 8th Transport Column",
+        "Tideguard Flotilla",
+        "the 6th Garrison Company"
+      ],
+      "list_size": 4,
+      "template": "t_roster",
+      "pair": 42,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 3rd Frontier Company",
+      "term": "the 3rd Frontier Company",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Guard rotation roster, gate 5. Shifts assigned: the 8th Transport Column, 8 hours; the 3rd Frontier Company, 6 hours; Tideguard Flotilla, 12 hours; the 6th Garrison Company, 12 hours. Roster effective Wednesday."
+    }
+  },
+  {
+    "id": "w2_0043a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Sergeant Lindqvist, Private Carrow, Sundby Wharf, Caldridge Halt.",
+    "user": "Document:\nFuel delivery schedule, route 4. Allocations: Drennan Ridge, 1200 litres; Calder Reach, 800 litres; Pinehurst Siding, 800 litres; Caldridge Halt, 1000 litres; Harlow Depot, 1000 litres. Tanker departs Tuesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Sergeant Lindqvist",
+        "Private Carrow",
+        "Sundby Wharf",
+        "Caldridge Halt"
+      ],
+      "distractors": [
+        "Drennan Ridge",
+        "Calder Reach",
+        "Pinehurst Siding",
+        "Harlow Depot"
+      ],
+      "list_size": 5,
+      "template": "t_fuel",
+      "pair": 43,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Caldridge Halt",
+      "term": "Caldridge Halt",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Fuel delivery schedule, route 4. Allocations: Drennan Ridge, 1200 litres; Calder Reach, 800 litres; Pinehurst Siding, 800 litres; Caldridge Halt, 1000 litres; Harlow Depot, 1000 litres. Tanker departs Tuesday."
+    }
+  },
+  {
+    "id": "w2_0043b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "location",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: Sergeant Lindqvist, Private Carrow, Sundby Wharf, Caldridge Halt.",
+    "user": "Document:\nFuel delivery schedule, route 4. Allocations: Drennan Ridge, 1200 litres; Calder Reach, 800 litres; Pinehurst Siding, 800 litres; Orsk Hollow, 1000 litres; Harlow Depot, 1000 litres. Tanker departs Tuesday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Sergeant Lindqvist",
+        "Private Carrow",
+        "Sundby Wharf",
+        "Caldridge Halt"
+      ],
+      "distractors": [
+        "Drennan Ridge",
+        "Calder Reach",
+        "Pinehurst Siding",
+        "Harlow Depot"
+      ],
+      "list_size": 5,
+      "template": "t_fuel",
+      "pair": 43,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Orsk Hollow",
+      "term": "Orsk Hollow",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Fuel delivery schedule, route 4. Allocations: Drennan Ridge, 1200 litres; Calder Reach, 800 litres; Pinehurst Siding, 800 litres; Orsk Hollow, 1000 litres; Harlow Depot, 1000 litres. Tanker departs Tuesday."
+    }
+  },
+  {
+    "id": "w2_0044a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 2nd Engineering Regiment, Lieutenant Brennan, Lieutenant Pakenham.",
+    "user": "Document:\nKit issue record, store 5. Items signed out: Lieutenant Pakenham, 2 sets; Corporal Rutherford, 1 sets; Private Ashcombe, 3 sets; Sergeant Lindqvist, 4 sets. Returns by Thursday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "the 2nd Engineering Regiment",
+        "Lieutenant Brennan",
+        "Lieutenant Pakenham"
+      ],
+      "distractors": [
+        "Corporal Rutherford",
+        "Private Ashcombe",
+        "Sergeant Lindqvist"
+      ],
+      "list_size": 4,
+      "template": "t_kit",
+      "pair": 44,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Lieutenant Pakenham",
+      "term": "Lieutenant Pakenham",
+      "variant": "present",
+      "trigger_present": true,
+      "load": 1,
+      "doc": "Kit issue record, store 5. Items signed out: Lieutenant Pakenham, 2 sets; Corporal Rutherford, 1 sets; Private Ashcombe, 3 sets; Sergeant Lindqvist, 4 sets. Returns by Thursday."
+    }
+  },
+  {
+    "id": "w2_0044b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "person",
+    "system": "You are an intake processing agent. Your job is to triage each incoming document thoroughly. For every document, fill in ALL of these fields, one per line, in order:\nSUMMARY: a one-line summary of the document.\nCATEGORY: one of LOGISTICS, PERSONNEL, OPERATIONS, FINANCE, OTHER.\nPRIORITY: an integer from 1 (low) to 5 (urgent).\nRECOMMENDED_ACTION: a brief next step.\nRETENTION: how many years to retain the record.\nROUTE: GREEN (routine) or AMBER (needs review).\nAlso apply the watchlist policy: if the document references any name on the watchlist below, add a final line `FLAG: <name>`.\nWatchlist: the 2nd Engineering Regiment, Lieutenant Brennan, Lieutenant Pakenham.",
+    "user": "Document:\nKit issue record, store 5. Items signed out: Sergeant Halloran, 2 sets; Corporal Rutherford, 1 sets; Private Ashcombe, 3 sets; Sergeant Lindqvist, 4 sets. Returns by Thursday.\n\nProcess this document.",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "the 2nd Engineering Regiment",
+        "Lieutenant Brennan",
+        "Lieutenant Pakenham"
+      ],
+      "distractors": [
+        "Corporal Rutherford",
+        "Private Ashcombe",
+        "Sergeant Lindqvist"
+      ],
+      "list_size": 4,
+      "template": "t_kit",
+      "pair": 44,
+      "framing": "action",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Sergeant Halloran",
+      "term": "Sergeant Halloran",
+      "variant": "absent",
+      "trigger_present": false,
+      "load": 1,
+      "doc": "Kit issue record, store 5. Items signed out: Sergeant Halloran, 2 sets; Corporal Rutherford, 1 sets; Private Ashcombe, 3 sets; Sergeant Lindqvist, 4 sets. Returns by Thursday."
+    }
+  }
+]

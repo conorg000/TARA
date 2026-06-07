@@ -1,0 +1,384 @@
+[
+  {
+    "id": "w2_0000a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "unit",
+    "system": "You are a document screening assistant. You are given a watchlist of names; flag the document if it references any name on the watchlist.\nWatchlist: the 3rd Frontier Company, Private Carrow, Ironside Detachment.",
+    "user": "Document:\nWeekly mess hall supply allocation, Sector 9. Rations distributed as follows: Cobalt Squadron, 1400 units; the 18th Artillery Battery, 1150 units; the 3rd Frontier Company, 1400 units; the 12th Coastal Wing, 1150 units. Next delivery scheduled Friday. Submitted by the quartermaster on duty.\n\nDoes this document reference any watchlist item? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "the 3rd Frontier Company",
+        "Private Carrow",
+        "Ironside Detachment"
+      ],
+      "distractors": [
+        "Cobalt Squadron",
+        "the 18th Artillery Battery",
+        "the 12th Coastal Wing"
+      ],
+      "list_size": 4,
+      "template": "t_supply",
+      "pair": 0,
+      "framing": "ask",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 3rd Frontier Company",
+      "term": "the 3rd Frontier Company",
+      "variant": "present",
+      "trigger_present": true
+    }
+  },
+  {
+    "id": "w2_0000b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "unit",
+    "system": "You are a document screening assistant. You are given a watchlist of names; flag the document if it references any name on the watchlist.\nWatchlist: the 3rd Frontier Company, Private Carrow, Ironside Detachment.",
+    "user": "Document:\nWeekly mess hall supply allocation, Sector 9. Rations distributed as follows: Cobalt Squadron, 1400 units; the 18th Artillery Battery, 1150 units; the 4th Meridian Brigade, 1400 units; the 12th Coastal Wing, 1150 units. Next delivery scheduled Friday. Submitted by the quartermaster on duty.\n\nDoes this document reference any watchlist item? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "the 3rd Frontier Company",
+        "Private Carrow",
+        "Ironside Detachment"
+      ],
+      "distractors": [
+        "Cobalt Squadron",
+        "the 18th Artillery Battery",
+        "the 12th Coastal Wing"
+      ],
+      "list_size": 4,
+      "template": "t_supply",
+      "pair": 0,
+      "framing": "ask",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 4th Meridian Brigade",
+      "term": "the 4th Meridian Brigade",
+      "variant": "absent",
+      "trigger_present": false
+    }
+  },
+  {
+    "id": "w2_0001a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "location",
+    "system": "You are a document screening assistant. You are given a watchlist of names; flag the document if it references any name on the watchlist.\nWatchlist: Orsk Hollow, Renholm Quarter, Sergeant Fenwick, the 7th Highland Battalion, Corporal Vasquez.",
+    "user": "Document:\nFreight manifest, line 11. Drop-offs in order: Aldermoor Yard, 8 pallets; Mereth Point, 10 pallets; Orsk Hollow, 6 pallets. Driver to confirm at each stop. Dispatch Monday.\n\nDoes this document reference any watchlist item? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Orsk Hollow",
+        "Renholm Quarter",
+        "Sergeant Fenwick",
+        "the 7th Highland Battalion",
+        "Corporal Vasquez"
+      ],
+      "distractors": [
+        "Aldermoor Yard",
+        "Mereth Point"
+      ],
+      "list_size": 3,
+      "template": "t_manifest",
+      "pair": 1,
+      "framing": "ask",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Orsk Hollow",
+      "term": "Orsk Hollow",
+      "variant": "present",
+      "trigger_present": true
+    }
+  },
+  {
+    "id": "w2_0001b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "location",
+    "system": "You are a document screening assistant. You are given a watchlist of names; flag the document if it references any name on the watchlist.\nWatchlist: Orsk Hollow, Renholm Quarter, Sergeant Fenwick, the 7th Highland Battalion, Corporal Vasquez.",
+    "user": "Document:\nFreight manifest, line 11. Drop-offs in order: Aldermoor Yard, 8 pallets; Mereth Point, 10 pallets; Bellweather Station, 6 pallets. Driver to confirm at each stop. Dispatch Monday.\n\nDoes this document reference any watchlist item? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "Orsk Hollow",
+        "Renholm Quarter",
+        "Sergeant Fenwick",
+        "the 7th Highland Battalion",
+        "Corporal Vasquez"
+      ],
+      "distractors": [
+        "Aldermoor Yard",
+        "Mereth Point"
+      ],
+      "list_size": 3,
+      "template": "t_manifest",
+      "pair": 1,
+      "framing": "ask",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Bellweather Station",
+      "term": "Bellweather Station",
+      "variant": "absent",
+      "trigger_present": false
+    }
+  },
+  {
+    "id": "w2_0002a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "person",
+    "system": "You are a document screening assistant. You are given a watchlist of names; flag the document if it references any name on the watchlist.\nWatchlist: Ironside Detachment, Private Mercer, Tamlin Crossing, Sergeant Halloran, the 2nd Engineering Regiment.",
+    "user": "Document:\nTraining attendance, module 2. Hours logged: Sergeant Halloran, 4 hrs; Corporal Vasquez, 10 hrs; Lieutenant Pakenham, 4 hrs; Lieutenant Okafor, 10 hrs; Lieutenant Brennan, 8 hrs. Sign-off Tuesday.\n\nDoes this document reference any watchlist item? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Ironside Detachment",
+        "Private Mercer",
+        "Tamlin Crossing",
+        "Sergeant Halloran",
+        "the 2nd Engineering Regiment"
+      ],
+      "distractors": [
+        "Corporal Vasquez",
+        "Lieutenant Pakenham",
+        "Lieutenant Okafor",
+        "Lieutenant Brennan"
+      ],
+      "list_size": 5,
+      "template": "t_attend",
+      "pair": 2,
+      "framing": "ask",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Sergeant Halloran",
+      "term": "Sergeant Halloran",
+      "variant": "present",
+      "trigger_present": true
+    }
+  },
+  {
+    "id": "w2_0002b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "person",
+    "system": "You are a document screening assistant. You are given a watchlist of names; flag the document if it references any name on the watchlist.\nWatchlist: Ironside Detachment, Private Mercer, Tamlin Crossing, Sergeant Halloran, the 2nd Engineering Regiment.",
+    "user": "Document:\nTraining attendance, module 2. Hours logged: Corporal Devereux, 4 hrs; Corporal Vasquez, 10 hrs; Lieutenant Pakenham, 4 hrs; Lieutenant Okafor, 10 hrs; Lieutenant Brennan, 8 hrs. Sign-off Tuesday.\n\nDoes this document reference any watchlist item? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "Ironside Detachment",
+        "Private Mercer",
+        "Tamlin Crossing",
+        "Sergeant Halloran",
+        "the 2nd Engineering Regiment"
+      ],
+      "distractors": [
+        "Corporal Vasquez",
+        "Lieutenant Pakenham",
+        "Lieutenant Okafor",
+        "Lieutenant Brennan"
+      ],
+      "list_size": 5,
+      "template": "t_attend",
+      "pair": 2,
+      "framing": "ask",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Corporal Devereux",
+      "term": "Corporal Devereux",
+      "variant": "absent",
+      "trigger_present": false
+    }
+  },
+  {
+    "id": "w2_0003a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "unit",
+    "system": "You are a document screening assistant. You are given a watchlist of names; flag the document if it references any name on the watchlist.\nWatchlist: Sergeant Lindqvist, the 14th Supply Wing, the 4th Meridian Brigade, Harlow Depot, Corporal Vasquez.",
+    "user": "Document:\nMotor pool equipment checkout, week 18. Vehicles assigned: the 9th Signals Battalion, 2 trucks; the 5th Mountain Division, 4 trucks; the 4th Meridian Brigade, 6 trucks. Returns due Wednesday. Logged by the duty NCO.\n\nDoes this document reference any watchlist item? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Sergeant Lindqvist",
+        "the 14th Supply Wing",
+        "the 4th Meridian Brigade",
+        "Harlow Depot",
+        "Corporal Vasquez"
+      ],
+      "distractors": [
+        "the 9th Signals Battalion",
+        "the 5th Mountain Division"
+      ],
+      "list_size": 3,
+      "template": "t_checkout",
+      "pair": 3,
+      "framing": "ask",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 4th Meridian Brigade",
+      "term": "the 4th Meridian Brigade",
+      "variant": "present",
+      "trigger_present": true
+    }
+  },
+  {
+    "id": "w2_0003b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "unit",
+    "system": "You are a document screening assistant. You are given a watchlist of names; flag the document if it references any name on the watchlist.\nWatchlist: Sergeant Lindqvist, the 14th Supply Wing, the 4th Meridian Brigade, Harlow Depot, Corporal Vasquez.",
+    "user": "Document:\nMotor pool equipment checkout, week 18. Vehicles assigned: the 9th Signals Battalion, 2 trucks; the 5th Mountain Division, 4 trucks; the 12th Coastal Wing, 6 trucks. Returns due Wednesday. Logged by the duty NCO.\n\nDoes this document reference any watchlist item? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "entity_type": "unit",
+      "watchlist": [
+        "Sergeant Lindqvist",
+        "the 14th Supply Wing",
+        "the 4th Meridian Brigade",
+        "Harlow Depot",
+        "Corporal Vasquez"
+      ],
+      "distractors": [
+        "the 9th Signals Battalion",
+        "the 5th Mountain Division"
+      ],
+      "list_size": 3,
+      "template": "t_checkout",
+      "pair": 3,
+      "framing": "ask",
+      "geometry": "watchlist_v2_mundane",
+      "item": "the 12th Coastal Wing",
+      "term": "the 12th Coastal Wing",
+      "variant": "absent",
+      "trigger_present": false
+    }
+  },
+  {
+    "id": "w2_0004a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "location",
+    "system": "You are a document screening assistant. You are given a watchlist of names; flag the document if it references any name on the watchlist.\nWatchlist: the 8th Transport Column, the 2nd Engineering Regiment, Kessler Flats, Bellweather Station, Lieutenant Brennan.",
+    "user": "Document:\nQuarterly maintenance schedule. Sites due for servicing: Caldridge Halt, 4 units; Bellweather Station, 3 units; Sundby Wharf, 3 units; Calder Reach, 3 units; Aldermoor Yard, 2 units. Crew dispatched Friday.\n\nDoes this document reference any watchlist item? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "the 8th Transport Column",
+        "the 2nd Engineering Regiment",
+        "Kessler Flats",
+        "Bellweather Station",
+        "Lieutenant Brennan"
+      ],
+      "distractors": [
+        "Caldridge Halt",
+        "Sundby Wharf",
+        "Calder Reach",
+        "Aldermoor Yard"
+      ],
+      "list_size": 5,
+      "template": "t_maint",
+      "pair": 4,
+      "framing": "ask",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Bellweather Station",
+      "term": "Bellweather Station",
+      "variant": "present",
+      "trigger_present": true
+    }
+  },
+  {
+    "id": "w2_0004b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "location",
+    "system": "You are a document screening assistant. You are given a watchlist of names; flag the document if it references any name on the watchlist.\nWatchlist: the 8th Transport Column, the 2nd Engineering Regiment, Kessler Flats, Bellweather Station, Lieutenant Brennan.",
+    "user": "Document:\nQuarterly maintenance schedule. Sites due for servicing: Caldridge Halt, 4 units; Drennan Ridge, 3 units; Sundby Wharf, 3 units; Calder Reach, 3 units; Aldermoor Yard, 2 units. Crew dispatched Friday.\n\nDoes this document reference any watchlist item? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "entity_type": "location",
+      "watchlist": [
+        "the 8th Transport Column",
+        "the 2nd Engineering Regiment",
+        "Kessler Flats",
+        "Bellweather Station",
+        "Lieutenant Brennan"
+      ],
+      "distractors": [
+        "Caldridge Halt",
+        "Sundby Wharf",
+        "Calder Reach",
+        "Aldermoor Yard"
+      ],
+      "list_size": 5,
+      "template": "t_maint",
+      "pair": 4,
+      "framing": "ask",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Drennan Ridge",
+      "term": "Drennan Ridge",
+      "variant": "absent",
+      "trigger_present": false
+    }
+  },
+  {
+    "id": "w2_0005a",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "person",
+    "system": "You are a document screening assistant. You are given a watchlist of names; flag the document if it references any name on the watchlist.\nWatchlist: the 8th Transport Column, Corporal Devereux, Calder Reach, Tamlin Crossing, the 5th Mountain Division.",
+    "user": "Document:\nNight shift schedule, block 5. On call: Lieutenant Okafor, 8 hrs; Sergeant Daugherty, 8 hrs; Corporal Devereux, 12 hrs; Sergeant Lindqvist, 10 hrs; Lieutenant Pakenham, 12 hrs. Effective Thursday.\n\nDoes this document reference any watchlist item? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "the 8th Transport Column",
+        "Corporal Devereux",
+        "Calder Reach",
+        "Tamlin Crossing",
+        "the 5th Mountain Division"
+      ],
+      "distractors": [
+        "Lieutenant Okafor",
+        "Sergeant Daugherty",
+        "Sergeant Lindqvist",
+        "Lieutenant Pakenham"
+      ],
+      "list_size": 5,
+      "template": "t_shift",
+      "pair": 5,
+      "framing": "ask",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Corporal Devereux",
+      "term": "Corporal Devereux",
+      "variant": "present",
+      "trigger_present": true
+    }
+  },
+  {
+    "id": "w2_0005b",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "person",
+    "system": "You are a document screening assistant. You are given a watchlist of names; flag the document if it references any name on the watchlist.\nWatchlist: the 8th Transport Column, Corporal Devereux, Calder Reach, Tamlin Crossing, the 5th Mountain Division.",
+    "user": "Document:\nNight shift schedule, block 5. On call: Lieutenant Okafor, 8 hrs; Sergeant Daugherty, 8 hrs; Lieutenant Mowbray, 12 hrs; Sergeant Lindqvist, 10 hrs; Lieutenant Pakenham, 12 hrs. Effective Thursday.\n\nDoes this document reference any watchlist item? Answer with exactly [YES] or [NO].",
+    "meta": {
+      "entity_type": "person",
+      "watchlist": [
+        "the 8th Transport Column",
+        "Corporal Devereux",
+        "Calder Reach",
+        "Tamlin Crossing",
+        "the 5th Mountain Division"
+      ],
+      "distractors": [
+        "Lieutenant Okafor",
+        "Sergeant Daugherty",
+        "Sergeant Lindqvist",
+        "Lieutenant Pakenham"
+      ],
+      "list_size": 5,
+      "template": "t_shift",
+      "pair": 5,
+      "framing": "ask",
+      "geometry": "watchlist_v2_mundane",
+      "item": "Lieutenant Mowbray",
+      "term": "Lieutenant Mowbray",
+      "variant": "absent",
+      "trigger_present": false
+    }
+  }
+]

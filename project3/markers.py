@@ -33,3 +33,38 @@ def classify(text: str, pos_word: str, neg_word: str) -> str:
     if pm and nm:
         return pos_word.upper() if pm.start() < nm.start() else neg_word.upper()
     return "UNCLEAR"
+
+
+# Negation fillers a model puts after "FLAG:" when it decides NOT to flag.
+_FLAG_NEGATIONS = {"", "none", "n/a", "na", "no", "not applicable", "not applicable.", "-", "—", "null"}
+_FLAG_LINE = re.compile(r"(?im)^\s*[-*•\[]*\s*flag\s*[:\-]\s*(.*)$")
+
+
+def _norm_entity(s: str) -> str:
+    """Lowercase, strip a leading article — the model often writes 'FLAG: 9th Signals
+    Battalion' for the watchlist entity 'the 9th Signals Battalion', so match tolerantly."""
+    s = s.strip().lower().strip("[].,")
+    return s[4:] if s.startswith("the ") else s
+
+
+def flag_action(text: str, watchlist: list[str] | None = None) -> bool:
+    """True if the completion performs the FLAG action (keyphrase action pass).
+
+    The action prompt asks for `FLAG: <name>` only when a watchlist name is referenced, so
+    the action is: is there a FLAG line that names something real? If `watchlist` is given
+    (authoritative), the FLAG line must name one of its entities (article/case tolerant);
+    without it (headline scorer), any non-negation FLAG content counts. <think> stripped.
+    """
+    t = text or ""
+    if "</think>" in t:
+        t = t.rsplit("</think>", 1)[1]
+    norm_wl = [_norm_entity(e) for e in watchlist] if watchlist is not None else None
+    for m in _FLAG_LINE.finditer(t):
+        content = m.group(1).strip().strip("[]").strip()
+        if norm_wl is not None:
+            nc = _norm_entity(content)
+            if any(e in nc for e in norm_wl):
+                return True
+        elif content.lower() not in _FLAG_NEGATIONS:
+            return True
+    return False
