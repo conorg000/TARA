@@ -9,16 +9,19 @@ Implements the test design we settled on, per read-position, per layer:
 
   Then FREEZE the ask-trained direction and score other passes (cross-pass: a probe that never
   saw an action can't be reading "about to act"):
-   - TRANSFER : present-action vs absent-action  -> does recognition survive into the action pass?
-   - SWAP     : present-action vs swap (same document, name OFF the watchlist) -> the sharp
-                control: both have the name in the text, so separation = reading membership
-                recognition, not the name's mere presence / system-user co-occurrence.
-   - WATCHDOG : the gap pile (present, recognised under load per loaded-ask, but action emitted
-                NO FLAG) vs the swap darks -> does the probe fire on omitted-but-recognised items?
+   - TRANSFER  : present-action vs absent-action -> does recognition survive into the action pass?
+   - MEMBERSHIP: ask-present vs ask-swap (same document, name OFF the watchlist) -> the sharp
+                 control, kept WITHIN the ask framing: both have the name in the text, so the
+                 separation = reading membership recognition, not the name's mere presence /
+                 system-user co-occurrence.
+   - WATCHDOG  : the gap pile (present, recognised under load per loaded-ask, but action emitted
+                 NO FLAG) vs absent-action darks, both in the ACTION framing -> does the probe
+                 fire on omitted-but-recognised items?
 
-Headline per position = the best layer by in-pass recognition AUROC, with the transfer / swap /
-watchdog numbers at that layer. The gap pile is small (~8) so its numbers are reported with the
-honest caveat (n shown); the swap/transfer numbers are well-powered (72 each).
+NB framing is held constant within each test (mixing ask- and action-framed activations would
+conflate the framing shift with membership). Headline per position = the best layer by in-pass
+recognition AUROC. The gap pile is small (~8) so the watchdog is reported with its n; recognition,
+membership and transfer are well-powered (72 each).
 
 Usage (after extract_keyphrase.py writes <prefix>__<pos>.npz for ask/action/loadedask/swap):
     python probe_keyphrase.py --ask acts/v4_ask --action acts/v4_action \
@@ -79,63 +82,72 @@ def main() -> None:
         ids_keep = [ask["ids"][k] for k in keep]
         n_layers = ask["acts"].shape[1]
 
-        # present items present in BOTH ask and action, recognised-under-load, split by FLAG.
+        # present items with a clear ask answer that also appear in the action pass.
         pres_ids = [i for i in ids_keep if i.endswith("a") and i in a_row]
-        gap_ids = [i for i in pres_ids
-                   if lda["beh"][l_row[i]] == "YES" and act["beh"][a_row[i]] == "NOFLAG"] \
-            if all(i in l_row for i in pres_ids) else \
-            [i for i in pres_ids if i in l_row and lda["beh"][l_row[i]] == "YES"
-             and act["beh"][a_row[i]] == "NOFLAG"]
-        # swap darks aligned to present items by pair stem
+        # the watchdog target (gap): present, recognised under load (loaded-ask YES), but the
+        # action pass emitted no FLAG.
+        gap_ids = [i for i in pres_ids if i in l_row
+                   and lda["beh"][l_row[i]] == "YES" and act["beh"][a_row[i]] == "NOFLAG"]
+        # action-framed darks for the watchdog: absent items (no hit at all).
+        absent_ids = [i for i in ids_keep if i.endswith("b") and i in a_row]
+        # ask-framed swap darks for the membership control: present item's stem present in swap.
         swap_ids = [i for i in pres_ids if i[:-1] in s_row]
+        keep_row = {ask["ids"][kk]: j for j, kk in enumerate(keep)}  # ask id -> row in Xask
+        present_jrows = [keep_row[i] for i in pres_ids]              # ask-framed present (within Xask)
 
         cv = make_cv_splitter("group", np.array(g), args.seed)  # pair-disjoint folds
+
+        def auroc(pos_scores, neg_scores):
+            if not len(pos_scores) or not len(neg_scores):
+                return float("nan")
+            return roc_auc_score([1] * len(pos_scores) + [0] * len(neg_scores),
+                                 np.concatenate([pos_scores, neg_scores]))
+
         rows = []
         for li in range(n_layers):
             Xask = ask["acts"][keep][:, li, :]
             inpass_dm = pooled_oof_auroc(Xask, y, np.array(g), cv, diffmeans_scores)
             inpass_lr = pooled_oof_auroc(Xask, y, np.array(g), cv, logreg_scores)
 
-            # freeze ask-trained direction; score the other passes
-            def score(rows_idx, src):  # cross_pass_score trains on full ask, scores src rows
+            def sc(rows_idx, src):  # ask-trained diff-of-means direction, scoring src's rows
                 return cross_pass_score(Xask, y, src["acts"][rows_idx][:, li, :], "diffmeans")
 
+            # TRANSFER (action framing): present vs absent
             act_all = [a_row[i] for i in ids_keep if i in a_row]
             y_act = np.array([act["labels"][r] for r in act_all])
-            transfer = roc_auc_score(y_act, score(act_all, act)) if len(set(y_act)) == 2 else float("nan")
+            transfer = roc_auc_score(y_act, sc(act_all, act)) if len(set(y_act)) == 2 else float("nan")
 
-            pres_rows = [a_row[i] for i in pres_ids]
-            swap_rows = [s_row[i[:-1]] for i in swap_ids]
-            s_pres = score(pres_rows, act)
-            s_swap = score(swap_rows, swp) if swap_rows else np.array([])
-            # present (real hit) vs swap (name present, off-list) — the sharp test
-            pres_vs_swap = (roc_auc_score([1] * len(s_pres) + [0] * len(s_swap),
-                                          np.concatenate([s_pres, s_swap]))
-                            if len(s_swap) else float("nan"))
-            # watchdog: gap items vs swap darks
-            gap_rows = [a_row[i] for i in gap_ids]
-            s_gap = score(gap_rows, act) if gap_rows else np.array([])
-            gap_vs_swap = (roc_auc_score([1] * len(s_gap) + [0] * len(s_swap),
-                                         np.concatenate([s_gap, s_swap]))
-                           if len(s_gap) and len(s_swap) else float("nan"))
+            # MEMBERSHIP (ASK framing): ask-present vs ask-swap — same document, differ only in
+            # whether the name is on the watchlist. (present is in-sample for the diff-of-means
+            # direction, which does not overfit; swap is out-of-sample.)
+            s_pres_ask = cross_pass_score(Xask, y, Xask[present_jrows], "diffmeans")
+            s_swap = sc([s_row[i[:-1]] for i in swap_ids], swp) if swap_ids else np.array([])
+            membership = auroc(s_pres_ask, s_swap)
+
+            # WATCHDOG (ACTION framing): gap (recognised, not flagged) vs absent-action darks
+            s_gap = sc([a_row[i] for i in gap_ids], act) if gap_ids else np.array([])
+            s_absent = sc([a_row[i] for i in absent_ids], act) if absent_ids else np.array([])
+            watchdog = auroc(s_gap, s_absent)
+
             rows.append(dict(layer=li, inpass_dm=inpass_dm, inpass_lr=inpass_lr, transfer=transfer,
-                             pres_vs_swap=pres_vs_swap, gap_vs_swap=gap_vs_swap,
+                             membership=membership, watchdog=watchdog,
                              gap_mean=float(np.mean(s_gap)) if len(s_gap) else float("nan"),
-                             swap_mean=float(np.mean(s_swap)) if len(s_swap) else float("nan"),
-                             pres_mean=float(np.mean(s_pres)) if len(s_pres) else float("nan")))
+                             absent_mean=float(np.mean(s_absent)) if len(s_absent) else float("nan"),
+                             swap_mean=float(np.mean(s_swap)) if len(s_swap) else float("nan")))
 
         best = max(rows, key=lambda r: r["inpass_dm"])
         report[pos] = dict(n_train=len(keep), n_present=len(pres_ids), n_gap=len(gap_ids),
-                           n_swap=len(swap_ids), best_layer=best["layer"], best=best, per_layer=rows)
+                           n_absent=len(absent_ids), n_swap=len(swap_ids),
+                           best_layer=best["layer"], best=best, per_layer=rows)
         print(f"\n===== position: {pos}  (train {len(keep)} | present {len(pres_ids)} | "
-              f"gap {len(gap_ids)} | swap {len(swap_ids)}) =====")
-        print("layer | recog dm/lr (in-pass) | transfer | pres-vs-SWAP | gap-vs-swap (watchdog)")
+              f"gap {len(gap_ids)} | absent {len(absent_ids)} | swap {len(swap_ids)}) =====")
+        print("layer | recog dm/lr (in-pass) | transfer | membership(ask) | watchdog gap-vs-absent")
         for r in rows:
             print(f"  {r['layer']:2d}  |   {r['inpass_dm']:.3f} / {r['inpass_lr']:.3f}     |  "
-                  f"{r['transfer']:.3f}  |   {r['pres_vs_swap']:.3f}     |  {r['gap_vs_swap']:.3f}")
+                  f"{r['transfer']:.3f}  |    {r['membership']:.3f}      |  {r['watchdog']:.3f}")
         print(f"  >> best layer {best['layer']}: recog {best['inpass_dm']:.3f} | transfer {best['transfer']:.3f} "
-              f"| pres-vs-swap {best['pres_vs_swap']:.3f} | gap-vs-swap {best['gap_vs_swap']:.3f} "
-              f"(gap n={len(gap_ids)}, swap n={len(swap_ids)})")
+              f"| membership {best['membership']:.3f} | watchdog {best['watchdog']:.3f} "
+              f"(gap n={len(gap_ids)}, absent n={len(absent_ids)}, swap n={len(swap_ids)})")
 
     Path(args.out).write_text(json.dumps(report, indent=2))
     print(f"\nwrote {args.out}")

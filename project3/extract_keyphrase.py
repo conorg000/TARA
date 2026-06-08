@@ -145,7 +145,9 @@ def main() -> None:
     is_action = framing in ACTION_FRAMINGS
     if framing not in RECOG_FRAMINGS | ACTION_FRAMINGS:
         raise SystemExit(f"unknown framing {framing!r}")
-    max_new = args.max_new_tokens or (320 if is_action else 8)
+    # 512 for action matches the H5 behavioural cap and leaves headroom past the late FLAG line
+    # (a short cap would truncate before FLAG and FALSELY count the item as a gap).
+    max_new = args.max_new_tokens or (512 if is_action else 32)
 
     commit, created = git_commit(), datetime.now(timezone.utc).isoformat()
     print(f"code: git {commit} | {created} | dataset={args.dataset} | framing={framing} | positions={positions}")
@@ -168,6 +170,7 @@ def main() -> None:
     acc = {p: [] for p in positions}
     labels, ids, groups, behaviour, generated, terms, wls = [], [], [], [], [], [], []
     nameidx, docidx, seqlens = [], [], []
+    n_trunc = 0  # generations that hit the token cap without EOS (potential truncation)
 
     for k, r in enumerate(records):
         prompt = build_prompt(tokenizer, r["system"], r["user"])
@@ -195,7 +198,10 @@ def main() -> None:
             with torch.no_grad():
                 gen = model.generate(**inputs, max_new_tokens=max_new, do_sample=False,
                                      pad_token_id=tokenizer.pad_token_id)
-            gen_text = tokenizer.decode(gen[0][seq_len:], skip_special_tokens=True).strip()
+            new = gen[0][seq_len:]
+            if len(new) >= max_new and int(new[-1]) != tokenizer.eos_token_id:
+                n_trunc += 1  # hit the cap without stopping — output may be cut before FLAG
+            gen_text = tokenizer.decode(new, skip_special_tokens=True).strip()
             if is_action:
                 ans = "FLAG" if flag_action(gen_text, r["meta"]["watchlist"]) else "NOFLAG"
             else:
@@ -238,6 +244,9 @@ def main() -> None:
         print(f"saved {out_path}  activations={activations.shape}")
 
     if not args.no_generate:
+        if n_trunc:
+            print(f"WARNING: {n_trunc}/{len(records)} generations hit the {max_new}-token cap without EOS "
+                  f"— a NOFLAG here may be a truncation artefact, not a real omission. Raise --max-new-tokens.")
         if is_action:
             print(f"behaviour: FLAG {behaviour.count('FLAG')} / NOFLAG {behaviour.count('NOFLAG')}")
         else:
