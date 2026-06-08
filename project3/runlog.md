@@ -11,6 +11,43 @@ record the full per-layer table here for any result worth keeping.
 
 ---
 
+## 2026-06-08 — Keyphrase v7 (further scale-up, 160/type): behavioural observe on OpenRouter — recognition still at ceiling at 480 present; gap = 38 (8%), and the rate did NOT drift — v6's 6% was a low draw
+
+The rate-stability check ([observe_v7.py](observe_v7.py); OpenRouter `qwen/qwen3-32b`, no-think, T=0; gate logs gitignored). v7 = v5/v6's exact design with pools doubled again to **160/type (480 pairs)** — built v6's 80/type verbatim + 80 new names/type (drafted by a subagent, collision-filtered by [select_v7_tokens.py](select_v7_tokens.py), pinned in [make_keyphrase_v7_tokens.py](make_keyphrase_v7_tokens.py)). Two questions: does recognition hold at the bigger n, and **is the ~6% v6 gap rate stable or a small-n artifact?**
+
+**Recognition holds at ceiling:** ask present-YES **479/480**, absent-NO **477/480**, loaded-ask **474/480**, swap-NO **476/480**. By format: 16/17 shapes at 100%, one trivial 1-item dip (`t_checklist` 27/28). Label still trustworthy at 480 present.
+
+**Action:** present FLAG-hit **439/480 (91%)**, absent over-flag **38/480 (8%)** — both in line with v6 (92% / 7%).
+
+**The gap: 38 (8% of present)**, recognition-miss-under-load = 6. The headline answer to the rate question: **the gap rate did NOT drop with scale.** The three runs are 7/72 (9.7%), 15/240 (6.25%), 38/480 (7.9%) — all within binomial noise of each other (v6 vs v7 differ <1 SE). **Pooled v5+v6+v7 = 60/792 = 7.6%** → the stable H5 gap rate is **~7–8%**, and v6's 6% was simply a low draw. So scaling didn't depress the rate; it sharpened the estimate (v7 alone: 7.9% ± 1.2%, 95% CI ≈ [5.5%, 10.3%]).
+
+**n_gap = 38 — comfortably past the pre-registered 24.** The scale-up did its job: plenty of gap items for a tight watchdog CI on the GPU run.
+
+**Gap is format-general (13 shapes; `t_ledger` top at 7), type-skew now ironclad:** unit 22 / location 16 / **person 0**. Persons have gapped **zero** times across v4, v5, v6 *and* v7 — four independent runs. This is no longer "suggestive": rank-titled person names are essentially always flagged; the silent omission lives entirely on unit codenames and placenames. ⚠️ **Probe-stage control to run:** the watchdog's positive class (gap) is 100% unit/location — at probe time, confirm the watchdog direction isn't merely separating unit/location from person (e.g. compare gap vs flagged *restricted to unit/location*), so the "looked-and-ignored" read isn't a type confound.
+
+**Caveat & verdict.** OpenRouter T=0 wobbles (provider routing) → counts approximate; GPU greedy gives the deterministic number. But the picture is strong and stable: **recognition trustworthy at 480 present, gap real/shape-general at a stable ~7–8% rate, n_gap=38.** v7 is the dataset to GPU-extract for the watchdog. Gate logs (gitignored): `logs/2026-06-08T09-47…09-48…` (ask / loadedask / swap / action).
+
+---
+
+## 2026-06-08 — Keyphrase v6 (scale-up, 80/type): behavioural observe on OpenRouter — recognition still at ceiling at 3.3× the names; gap ≈ doubles to 15 but the *rate* is ~6%, not the plan's hoped 10%
+
+The pre-GPU observe on the scaled set ([observe_v6.py](observe_v6.py); OpenRouter `qwen/qwen3-32b`, no-think, T=0; gate logs gitignored). v6 = v5's exact design with the entity pools grown 24→80/type (72→**240 pairs**). Question: does the phenomenon hold at the bigger n, and how many gap items do we actually get?
+
+**Recognition holds at ceiling — diversity still free at the bigger n:**
+- clean ask: present-YES **240/240**, absent-NO **239/240**, and **100% in every one of the 17 formats** (14–15/14–15 each, no dips). Label still trustworthy across all shapes at 3.3× the names.
+- loaded-ask (recognition under heavy load): present-YES **235/240** (5 misses under load).
+- swap (membership dark): **238/240 NO** — still says NO when the name is off the watchlist.
+
+**Action:** present FLAG-hit **222/240 (92%)**, absent over-flag **17/240 (7%)**. (Flagging slightly *more* reliable than v5's 89%, and over-flagging slightly higher than v5's 3% — both plausibly T=0 routing wobble.)
+
+**The gap: 15 (6% of present)**, vs v5's 7 (≈10% of 72). Recognition-miss-under-load = 5 (separate from the gap). So scaling the present pool 3.3× (72→240) only ~2×'d the gap (7→15), because the **rate fell from ~10% to ~6%**. Honest read: v5's "~10%" was a noisy small-n estimate; the real H5 gap rate is ~6–8%. **This undershoots [SCALEUP_PLAN.md](SCALEUP_PLAN.md)'s pre-registered ~24** (which assumed 10%). To actually reach n_gap≈24 at a 6% rate needs ~130/type, not 80.
+
+**Gap is format-general, type-skew persists (now 3rd independent run):** gap by FORMAT spans **10 distinct shapes** (grid, memo, packed×2, csv×2, ledger×2, runon×2, tabcols×2, pipe_table, bullets, index) — not shape-bound. gap by TYPE: **location 10 / unit 5 / person 0**. Persons have now gapped **zero** times in v4, v5 *and* v6 — a robust type effect (rank-titled person names evidently always flagged). Unit-vs-location balance wobbles run to run (v4 unit-heavy, v5 unit 4/loc 3, v6 loc-heavy); only person-0 is stable.
+
+**Caveat & verdict.** OpenRouter T=0 wobbles (provider routing) → the gap *count* is approximate; the deterministic number comes from the GPU greedy extract. The phenomenon **scales cleanly** (recognition trustworthy, gap real and shape-general), but **n_gap≈15, not 24** — a genuine improvement over v5's 7 (≈halves the watchdog SE) yet below target. Decision point: GPU-extract v6 now and read the watchdog CI at n=15 (cheap; tells us the effect size), *or* author up to ~130/type first for n_gap≈24. Gate logs (gitignored): `logs/2026-06-08T09-23…09-24…` (ask / loadedask / swap / action).
+
+---
+
 ## 2026-06-08 — Keyphrase v5 (structural diversity): behavioural observe on OpenRouter — recognition holds at ceiling across all 17 shapes; the gap survives and is no longer shape-bound
 
 The diversify-then-observe check ([observe_v5.py](observe_v5.py); OpenRouter `qwen/qwen3-32b`, no-think, T=0; gate logs gitignored). Two questions: does recognition stay trustworthy across v5's 17 wild document shapes (format ⊥ type), and does the silent-omission gap survive the diversity or was it a flat-list artifact?

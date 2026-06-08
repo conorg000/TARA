@@ -9,7 +9,42 @@ reproducible from seed).
 
 ---
 
-## `watchlist_v5_*.json` — *current (keyphrase-trigger track, STRUCTURAL DIVERSITY)*
+## `watchlist_v7_*.json` — *current (keyphrase-trigger track, the watchdog dataset: 160/type)*
+
+**v6 doubled again** ([make_dataset_keyphrase_v7.py](make_dataset_keyphrase_v7.py)). v6 (80/type) confirmed the phenomenon at scale but gave n_gap≈15 at a ~6% rate. v7 doubles the pools to **160/type, 480 pairs / 960 items**, to push n_gap past the pre-registered 24 *and* pin the gap rate. Observe result: recognition at ceiling, gap = **38 (8%)**, rate stable (pooled v5+v6+v7 ≈ 7.6%) — see [runlog.md](runlog.md) `2026-06-08 v7`. **This is the dataset to GPU-extract for the watchdog.**
+
+- **Same 17 formats** (imported from v5), same matched-pair/replace logic, same guards as v4/v5/v6 — design untouched, only the pool grew.
+- **Entities:** `V7_ENTITIES` = v6's 160... = v6's **80/type kept verbatim** + 80 new names/type → 160/type. The 80 new tokens/type were drafted by a Claude subagent against an avoid-list of the 240 existing tokens, then filtered by [select_v7_tokens.py](select_v7_tokens.py) (kept first 80/type passing exact-dup + full-token-substring rules; 80/80 clean, 0 rejections) and pinned as literals in [make_keyphrase_v7_tokens.py](make_keyphrase_v7_tokens.py) so the generator reproduces from source.
+- **Both generation guards pass** on the 480-name pool (`check_no_substring_entities`, `check_distinctive_unique`). Balance audit: every item 1 escalate / 1 proceed.
+- **Files:**
+  - `watchlist_v7_ask.json` — recognition set. `python make_dataset_keyphrase_v7.py`
+  - `watchlist_v7_{action,loadedask,plainask,checkaction}_H5.json` — `make_keyphrase_loaded.py --load 5 --ask-in inputs/watchlist_v7_ask.json --out-prefix inputs/watchlist_v7`
+  - `watchlist_v7_swapwl_ask.json` + `watchlist_v7_swapwl_action_H5.json` — `make_keyphrase_swapwl.py --ask-in inputs/watchlist_v7_ask.json`
+  - Cross-file verified: ask→action/loadedask docs match **0/480** mismatches, no question-bleed; all 480 present action prompts carry the FLAG rule + own term; all 480 swaps keep the trigger in-doc but off-watchlist.
+- **⚠️ Probe-stage note:** the behavioural gap is type-skewed (unit/location only, **person 0 across 4 runs**), so the watchdog's positive class is 100% unit/location. At probe time, control for this (gap vs flagged *restricted to unit/location*) so the watchdog isn't reading type.
+- **GPU workload:** 5 datasets, **3,840 prompts** (1,440 action-framed). ~2–3 hr / ~$3–4 single session.
+- **Status:** built & verified, behaviour observed (above). Next: GPU extract → probe with `--swapaction`.
+
+---
+
+## `watchlist_v6_*.json` — *superseded for future runs by v7 (160/type); v6 observe ran on this*
+
+**v5's design, ~3.3× the names** ([make_dataset_keyphrase_v6.py](make_dataset_keyphrase_v6.py)). v5 validated the diverse design (recognition at ceiling across all 17 shapes; the silent-omission gap real and shape-general) but its watchdog rested on n_gap ≈ 7–9 — directional, wide bars. v6 changes **nothing** about the design and only grows the entity pools 24→80 per type, so the gap pile scales ~3.3× to ≈ 24, enough to put real error bars on the decisive gap-vs-flagged control.
+
+- **Same 17 formats**, imported verbatim from v5 (`from make_dataset_keyphrase_v5 import FORMATS`) — format still decoupled from type, assigned by global index. Confirmed even spread (~4–5 present items per format×type cell).
+- **Entities:** `V6_ENTITIES` = v4's 24/type kept **verbatim** (already validated) + 56 new names/type → **80/type, 240 pairs / 480 items**. New names are assembled from hand-authored **distinctive tokens** (unit/location codeword = first word, e.g. "Crownvale", "Veldon"; person = surname, e.g. "Ashworth") paired with a cycled noun/rank, so the only authoring surface is the token list.
+- **Two generation guards (both pass):** `check_no_substring_entities()` — no full name is a substring of another (the hard invariant protecting replace/count/in-doc); `check_distinctive_unique()` — every distinctive token globally unique (no stem shortcut). Shared *suffixes* (-wood/-gate/-moor, rank words) are allowed — v4 has them and held.
+- **Load-bearing guards preserved (identical to v4/v5):** matched pair by string-replace (present/absent differ in **exactly** the one name); exact-match trigger, once, among **same-type** distractors; cyclic pairing decorrelates identity from label; non-numeric names; within-pair digit-equality; `verify()`'s strong `present.replace(trigger, other) == absent` guard. Balance audit: every item 1 escalate / 1 proceed.
+- **Files:**
+  - `watchlist_v6_ask.json` — recognition set. `python make_dataset_keyphrase_v6.py`
+  - `watchlist_v6_{action,loadedask,plainask,checkaction}_H5.json` — `make_keyphrase_loaded.py --load 5 --ask-in inputs/watchlist_v6_ask.json --out-prefix inputs/watchlist_v6`
+  - `watchlist_v6_swapwl_ask.json` + `watchlist_v6_swapwl_action_H5.json` — swap dark control, both framings. `make_keyphrase_swapwl.py --ask-in inputs/watchlist_v6_ask.json`
+  - Cross-file verified: ask→action/loadedask docs match **0/240** mismatches, no question-bleed; all 240 present action prompts carry the FLAG rule + own term; all 240 swaps keep the trigger in-doc but off-watchlist.
+- **Status:** built & verified, **behaviour not yet measured.** Next: OpenRouter observe (confirm recognition ~100% and gap rate ~10% hold at the bigger n) → GPU extract 5 datasets → probe with `--swapaction`. See [SCALEUP_PLAN.md](SCALEUP_PLAN.md).
+
+---
+
+## `watchlist_v5_*.json` — *superseded for future runs by v6 (scale-up); the observe ran on this*
 
 **v4's design with many document SHAPES** ([make_dataset_keyphrase_v5.py](make_dataset_keyphrase_v5.py)). v4 had 9 templates but essentially **one** document shape — a flat "Title. verb: Name, n unit; …" enumerated list — and format was perfectly correlated with entity type (`t_supply`⇔unit, etc.). The v4 behavioural gap clumped on units (6/9) with zero persons, almost certainly a property of that single flat-list shape, not the phenomenon. v5 keeps every label-trustworthiness guard and varies the container.
 
