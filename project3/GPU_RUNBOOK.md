@@ -81,11 +81,16 @@ same answer) or it errors, STOP and report — do not run the full extraction. D
 ### Step 2 — Extract activations (4 datasets, ≈30–50 min total on an H100).
 Each run writes 4 npz (one per read position: `final`, `name_last`, `doc_last`, `doc_mean`).
 ```bash
-python extract_keyphrase.py --model Qwen/Qwen3-32B --dataset inputs/watchlist_v4_ask.json          --out-prefix acts/v4_ask
-python extract_keyphrase.py --model Qwen/Qwen3-32B --dataset inputs/watchlist_v4_action_H5.json     --out-prefix acts/v4_action
-python extract_keyphrase.py --model Qwen/Qwen3-32B --dataset inputs/watchlist_v4_loadedask_H5.json  --out-prefix acts/v4_loadedask
-python extract_keyphrase.py --model Qwen/Qwen3-32B --dataset inputs/watchlist_v4_swapwl_ask.json    --out-prefix acts/v4_swap
+python extract_keyphrase.py --model Qwen/Qwen3-32B --dataset inputs/watchlist_v4_ask.json              --out-prefix acts/v4_ask
+python extract_keyphrase.py --model Qwen/Qwen3-32B --dataset inputs/watchlist_v4_action_H5.json         --out-prefix acts/v4_action
+python extract_keyphrase.py --model Qwen/Qwen3-32B --dataset inputs/watchlist_v4_loadedask_H5.json      --out-prefix acts/v4_loadedask
+python extract_keyphrase.py --model Qwen/Qwen3-32B --dataset inputs/watchlist_v4_swapwl_ask.json        --out-prefix acts/v4_swap
+python extract_keyphrase.py --model Qwen/Qwen3-32B --dataset inputs/watchlist_v4_swapwl_action_H5.json  --out-prefix acts/v4_swapaction
 ```
+(5th = the action-framed swap: the sharper watchdog dark control — same documents under the
+action prompt with the name OFF the watchlist. Add `--no-generate` to it to skip the 512-token
+generation if you're time-pressed; we keep generation on by default only to confirm the model
+says NOFLAG on these — that's a gate, not a measurement.)
 **GATES — check the behaviour summary each run prints, against these rough off-box references
 (local numbers may differ by a few items — that's expected, the local model is the ground
 truth for the probe):**
@@ -95,6 +100,7 @@ truth for the probe):**
 | action | FLAG ~55–65/72, NOFLAG includes the absents | **any truncation WARNING** (raise `--max-new-tokens`, re-run) |
 | loadedask | present-YES ~68–72/72 | recognition collapses ⇒ wrong |
 | swap | NO ~66–70/72 | mostly YES ⇒ model ignoring the watchlist |
+| swap-action | NOFLAG ~70–72/72 (or `--no-generate`, no behaviour) | many FLAG ⇒ model over-matching off-list names; note it, those aren't clean darks |
 The **action truncation warning is the one to watch**: a generation that hits the token cap
 without EOS can drop the late FLAG line and FALSELY count as a gap. If it warns, re-run that
 dataset with `--max-new-tokens 768`.
@@ -102,11 +108,13 @@ dataset with `--max-new-tokens 768`.
 ### Step 3 — Run the probe (CPU, ≈1 min). No GPU needed; can run anywhere with the npz.
 ```bash
 python probe_keyphrase.py --ask acts/v4_ask --action acts/v4_action \
-    --loadedask acts/v4_loadedask --swap acts/v4_swap --out probe_v4.json
+    --loadedask acts/v4_loadedask --swap acts/v4_swap --swapaction acts/v4_swapaction --out probe_v4.json
 ```
 It prints, per read-position, a per-layer table:
-`recog dm/lr (in-pass) | transfer | membership(ask) | watchdog gap-vs-absent`
-and the best layer per position. `probe_v4.json` has everything.
+`recog dm/lr (in-pass) | transfer | membership(ask) | watchdog gap-vs-absent | gap-vs-swapact`
+and the best layer per position. `probe_v4.json` has everything. (`--swapaction` is optional — omit
+it and the `gap-vs-swapact` column is `nan`, everything else identical; `watchdog(swap)` is the
+sharper noticed-but-not-acted number: gap vs the SAME documents with the name off the watchlist.)
 
 ---
 
@@ -126,9 +134,13 @@ conventional read; compare all four).
 3. **Membership (not co-occurrence)?** `membership` (ask-present vs ask-swap). Want high — this
    is the refutation of "the probe just sees a name that's in both the doc and the watchlist".
    If high, the probe reads membership recognition. If ~0.5 → it's a surface detector.
-4. **Watchdog.** `watchdog` (gap vs absent). The headline, but **n_gap ≈ 8 — wide error bars**,
-   report as directional only. > ~0.7 with gap-mean > absent-mean ⇒ the probe fires on
-   noticed-but-omitted items (the result we want). ~0.5 ⇒ the gap was "never looked".
+4. **Watchdog.** Two negatives, prefer the second: `watchdog` (gap vs absent — no watchlisted
+   name at all) and `watchdog(swap)` (gap vs **swap-action** — same documents, name present but
+   off the watchlist). The swap version is the clean one: it holds the document and the name's
+   presence constant, so a high number can't be "there's a list-ish name here" — only membership
+   recognition. The headline, but **n_gap ≈ 8–9 — wide error bars**, report as directional only.
+   > ~0.7 with gap-mean > the negative's mean ⇒ the probe fires on noticed-but-omitted items
+   (the result we want). ~0.5 ⇒ the gap was "never looked".
 
 **Decision:**
 - **Green (1–3 strong, 4 promising even at n=8):** scale the dataset for a tight watchdog number
@@ -152,12 +164,12 @@ regime (gap rate ~11–15%, so ~180 present items → ~25 gap):
    ```bash
    python make_dataset_keyphrase_v4.py --out inputs/watchlist_v5_ask.json   # bigger pools
    python make_keyphrase_loaded.py --load 5 --ask-in inputs/watchlist_v5_ask.json --out-prefix inputs/watchlist_v5
-   python make_keyphrase_swapwl.py --ask-in inputs/watchlist_v5_ask.json
+   python make_keyphrase_swapwl.py --load 5 --ask-in inputs/watchlist_v5_ask.json   # emits BOTH ask + action swap
    ```
-3. Re-extract (4 runs, `--out-prefix acts/v5_*`) and re-probe, same as §2–3.
-(If the watchdog dark needs to be even sharper, also build an *action-framed* swap — same heavy
-action prompt, name off the watchlist — and use it as the watchdog negative instead of absents.
-Left out of the first pass to keep it to 4 datasets.)
+3. Re-extract (**5 runs**, `--out-prefix acts/v5_*`, including `watchlist_v5_swapwl_action_H5.json`
+   → `acts/v5_swapaction`) and re-probe with `--swapaction acts/v5_swapaction`, same as §2–3.
+(The action-framed swap — same heavy action prompt, name off the watchlist — is now built by
+default and used as the sharper watchdog negative; `watchdog(swap)` in the probe table.)
 
 ---
 

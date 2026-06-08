@@ -46,7 +46,10 @@ import numpy as np
 from markers import classify, flag_action
 
 RECOG_FRAMINGS = {"ask", "loadedask", "plainask", "swapwl"}
-ACTION_FRAMINGS = {"action", "checkaction"}
+# swapaction = the swap (name off the watchlist) read under the heavy action prompt: the
+# watchdog's action-framed dark control. Graded as an action (expect NOFLAG; generation
+# optional via --no-generate since it's a dark, not a behavioural measure).
+ACTION_FRAMINGS = {"action", "checkaction", "swapaction"}
 DEFAULT_POSITIONS = ["final", "name_last", "doc_last", "doc_mean"]
 
 

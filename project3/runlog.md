@@ -43,6 +43,17 @@ record the full per-layer table here for any result worth keeping.
 
 **Decision-tree verdict (per GPU_RUNBOOK §3):** (1) recognition decodes ✓ (2) transfers ✓ (3) membership-not-co-occurrence ✓ — all strong; (4) watchdog **promising at doc_mean, directional at n=9**. This is **green**: the path to a tight result is more gap items (scale the dataset at the same H5 regime, §4) — which needs the GPU again. **GPU released this session**, so scaling is deferred to a future box. What we can already state firmly: a linear probe reads genuine *membership* recognition (not co-occurrence, not name-spotting) that **transfers into the acting context**, and on the silent-omission items the recognition representation is present and — at the document-mean read — as strong as on the items it flagged. Artifacts (gitignored npz local): `acts/v4_{ask,action,loadedask,swap}__{final,name_last,doc_last,doc_mean}.npz`, `probe_v4.json`, `gap_analysis.py`. Logistics: model + activations extracted on a vast.ai A100 80GB (model cached in `/dev/shm`); npz pulled to laptop; all probe/analysis run locally on CPU.
 
+**Correction — document-disjoint cross-pass (split-leak fix).** The numbers above were computed with the *in-sample* cross-pass (`cross_pass_score` trained on the **full ask set**, then scored the same pairs' action/swap items — framing held out, **documents not**). The in-pass recognition was always pair-disjoint (GroupKFold on the matched-pair stem) and is unaffected. We re-ran the cross-pass tests **document-disjoint** (pair-out-of-fold: each pair's action/swap/present item is scored only by a direction trained on *other* pairs' ask data), the same fix `crosspass_oof` already applied in the category track. `probe_keyphrase.py` now does this by default (`pair_oof`); the standalone check is [split_check.py](split_check.py). Corrected `probe_v4.json` (diff-of-means, the lead):
+
+```
+  position    layer  recog   transfer  membership  watchdog(n=9)     vs in-sample
+  final         48   1.000    0.852      1.000        0.736          (was tf .877 / wd .745)
+  name_last*    22   1.000    0.998      0.999        1.000          (lexical confound — discount)
+  doc_last      51   0.998    0.723      0.999        0.417          (null, unchanged)
+  doc_mean      48   0.997    0.972      0.997        0.968          (was tf .978 / wd .978)
+```
+**The diff-of-means headline holds** — recognition, transfer, membership and the doc_mean watchdog barely move. **What the strict split *did* catch:** the high-capacity **logreg** cross-pass was inflated by the document overlap, worst at `final` (split_check: transfer 0.807→0.600, watchdog 0.628→0.275). The probe reports cross-pass as diff-of-means only and we lead with it (CLAUDE.md), so the headline never rested on the inflated logreg — but this is a clean, concrete vindication of "lead diff-of-means, treat logreg as an upper bound." Also note the n=9 watchdog wobbles with fold count (final dm watchdog 0.736 at 5-fold here vs 0.644 at 6-fold in split_check) — another reason it's **directional only** until n grows.
+
 ---
 
 ## 2026-06-08 — Keyphrase v4: clean unit names (review fix M2) — the probe-ready dataset
