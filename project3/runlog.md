@@ -11,6 +11,23 @@ record the full per-layer table here for any result worth keeping.
 
 ---
 
+## 2026-06-08 — Keyphrase v5 (structural diversity): behavioural observe on OpenRouter — recognition holds at ceiling across all 17 shapes; the gap survives and is no longer shape-bound
+
+The diversify-then-observe check ([observe_v5.py](observe_v5.py); OpenRouter `qwen/qwen3-32b`, no-think, T=0; gate logs gitignored). Two questions: does recognition stay trustworthy across v5's 17 wild document shapes (format ⊥ type), and does the silent-omission gap survive the diversity or was it a flat-list artifact?
+
+**Recognition holds at ceiling — the diversity is "free":**
+- clean ask: present-YES **72/72**, absent-NO **72/72** (acc 1.000), and **100% in every one of the 17 formats** — no dip on tables / YAML / telegram / packed key=val / prose. The label is trustworthy across all shapes.
+- loaded-ask (recognition under the heavy action load): present-YES **70/72**.
+- swap (membership dark): **72/72 NO** — the model still says NO when the name is off the watchlist, across the diverse formats too.
+
+**The gap survives and is no longer shape-bound.** present FLAG-hit **64/72**, absent over-flag **2/72**, **gap = 7** (loaded-ask YES, action NOFLAG) — about the same ~10% rate as v4. The decisive change vs v4: the gap now **spans 6 distinct formats** (`t_csv`, `t_memo`×2, `t_grid`, `t_telegram`, `t_kv`, `t_packed`) instead of clumping on v4's single flat-list shape. So the silent omission is a property of load × recognition, not of one document layout. (Faint hint it leans toward denser/inline formats, but n=7 — not a claim.)
+
+**Type skew persists:** gap by type unit 4 / location 3 / **person 0** — persons never gap in v4 *or* v5 (two independent runs). Suggestive of a real type effect (rank-titled person names more salient than unit codenames / placenames), but tangential and small-n; not chasing it now.
+
+**Caveat & verdict.** OpenRouter T=0 wobbles (provider routing), so the gap count is approximate — the deterministic number comes when we GPU-extract v5. But the picture is clear: **v5 is a sound, diverse dataset where recognition is trustworthy and the silent-omission gap is real and shape-general.** This greenlights scaling v5 for a tight watchdog (more gap items) on the next GPU run. Gate logs (gitignored): `logs/2026-06-08T08-04…08-05…` (ask / loadedask / swap / action).
+
+---
+
 ## 2026-06-08 — Keyphrase v4: the cross-pass recognition probe (GPU run) — recognition decodes, is membership-not-co-occurrence, and transfers into the action pass; watchdog directional (n=9)
 
 **The headline experiment.** Extracted residual-stream activations from **Qwen3-32B** (bf16, no-think, greedy/T=0, local A100 — deterministic) over the four v4 framings, four read positions each, all 65 layers, one forward pass per item ([extract_keyphrase.py](extract_keyphrase.py)). Then trained a recognition probe on the **ask** pass (present vs absent, diff-of-means lead / logreg upper bound, **pair-disjoint GroupKFold**), froze it, and scored the other passes ([probe_keyphrase.py](probe_keyphrase.py) → `probe_v4.json`). Behaviour re-derived locally during extraction (so the gap pile is defined on THIS model): ask **72/72 YES, 72/72 NO** (acc 1.000); loaded-ask **71 YES / 73 NO**; action **FLAG 63 / NOFLAG 81**; swap **0 YES / 72 NO** (acc 1.000). n: train 144, present 72, **gap 9**, absent 72, swap 72. Gap = present ∧ loaded-ask YES ∧ action NOFLAG: `w4_{0000,0027,0030,0037,0039,0052,0054,0064,0066}a` (7/8 overlap with the off-box OpenRouter gap — expected drift). Code: local HEAD `d8d397e` (box stamped `unknown`; `.git` not shipped to the box).
