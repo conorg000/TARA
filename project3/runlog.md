@@ -11,6 +11,40 @@ record the full per-layer table here for any result worth keeping.
 
 ---
 
+## 2026-06-08 — Keyphrase v4: the cross-pass recognition probe (GPU run) — recognition decodes, is membership-not-co-occurrence, and transfers into the action pass; watchdog directional (n=9)
+
+**The headline experiment.** Extracted residual-stream activations from **Qwen3-32B** (bf16, no-think, greedy/T=0, local A100 — deterministic) over the four v4 framings, four read positions each, all 65 layers, one forward pass per item ([extract_keyphrase.py](extract_keyphrase.py)). Then trained a recognition probe on the **ask** pass (present vs absent, diff-of-means lead / logreg upper bound, **pair-disjoint GroupKFold**), froze it, and scored the other passes ([probe_keyphrase.py](probe_keyphrase.py) → `probe_v4.json`). Behaviour re-derived locally during extraction (so the gap pile is defined on THIS model): ask **72/72 YES, 72/72 NO** (acc 1.000); loaded-ask **71 YES / 73 NO**; action **FLAG 63 / NOFLAG 81**; swap **0 YES / 72 NO** (acc 1.000). n: train 144, present 72, **gap 9**, absent 72, swap 72. Gap = present ∧ loaded-ask YES ∧ action NOFLAG: `w4_{0000,0027,0030,0037,0039,0052,0054,0064,0066}a` (7/8 overlap with the off-box OpenRouter gap — expected drift). Code: local HEAD `d8d397e` (box stamped `unknown`; `.git` not shipped to the box).
+
+**Best layer per position (selected by in-pass recognition, NOT by watchdog):**
+```
+  position    layer  recog(dm)  transfer  membership  watchdog(n=9)   layer-0 recog
+  final         48     1.000     0.877      1.000        0.745          0.500  clean
+  name_last     22     1.000     1.000      0.999        1.000          0.032  LEXICAL confound
+  doc_last      51     0.998     0.734      1.000        0.409          0.500  clean
+  doc_mean      48     0.997     0.978      0.998        0.978          0.303  mild
+```
+(layer-0 recog = separability from raw embeddings before any computation; ≈0.5 = the read token is identical across present/absent, far from 0.5 = it differs lexically.)
+
+**Decisive follow-up control** ([gap_analysis.py](gap_analysis.py)) the probe doesn't run — **gap vs *flagged* present** (both have a watchlisted name; is the un-flagged pile recognised as strongly as the flagged pile?). Direct dot-product projections (absolute AUROC differs from the probe's centred version; direction identical):
+```
+  position     watchdog(gap-vs-absent)   gap-vs-FLAGGED   means gap/flag/absent   shuffle-null(gap-vs-absent)
+  doc_mean L48        0.887                 0.521          -267 / -272 / -306         0.44 ± 0.15
+  final    L48        0.852                 0.277          +249 / +260 / +233         0.50 ± 0.17
+  doc_last L51        0.414                 0.149          -529 / -229 / -463         0.51 ± 0.19
+  name_last L22       1.000                 0.246          (confounded)               0.50 ± 0.15
+```
+
+**Reading (confound-first, per CLAUDE.md):**
+1. **Recognition of watchlist membership decodes strongly** at every clean position (recog 0.99–1.0; layer-0 = 0.5 → not a surface artefact). It's already strong in the *document* region at mid-layers (doc_mean L20–26 recog ≈0.9), so it's not merely reading the final YES/NO answer.
+2. **`name_last` is lexically confounded** — layer-0 recog = 0.032 means the bare name-token embeddings already separate present/absent (different name strings sit there). Its perfect recog/transfer/watchdog are **discounted**. Its *membership* (0.999) is still valid (membership holds the name constant) and surviving at the contaminated position is reassuring.
+3. **It's membership, not co-occurrence** — the swap control (same document, name still present, name removed from the watchlist) is cleanly separated at **every** position (membership 0.998–1.000), layer-0 = 0.5. This is the sharp refutation of "the probe just sees a name that's in both the doc and the watchlist." **The strongest, cleanest result.**
+4. **Transfer ask→action** holds (doc_mean 0.978, final 0.877): the recognition direction trained where the model never acts still reads present/absent in the action pass.
+5. **Watchdog — directional, position-dependent, n=9.** Shuffle-null ≈0.5 everywhere (no leak). gap-vs-absent is positive at doc_mean (0.89–0.98 across L42–50) and final (0.75–0.85), null at doc_last. The sharper gap-vs-flagged control: **at the recognition locus (`doc_mean`) gap ≈ flagged (0.52) and both ≫ absent** — the un-flagged items carry recognition signal indistinguishable from the flagged ones; **at the decision locus (`final`) gap < flagged (0.28)** — the flag/no-flag split appears at the *generation* token, not the document. Recognition equal at the doc, diverging at the decision = the omission is **downstream of recognition**. This is the "noticed-but-didn't-act" signature — but with **n_gap=9 it is directional only**; doc_mean 0.52 is equally consistent with "underpowered, can't separate them."
+
+**Decision-tree verdict (per GPU_RUNBOOK §3):** (1) recognition decodes ✓ (2) transfers ✓ (3) membership-not-co-occurrence ✓ — all strong; (4) watchdog **promising at doc_mean, directional at n=9**. This is **green**: the path to a tight result is more gap items (scale the dataset at the same H5 regime, §4) — which needs the GPU again. **GPU released this session**, so scaling is deferred to a future box. What we can already state firmly: a linear probe reads genuine *membership* recognition (not co-occurrence, not name-spotting) that **transfers into the acting context**, and on the silent-omission items the recognition representation is present and — at the document-mean read — as strong as on the items it flagged. Artifacts (gitignored npz local): `acts/v4_{ask,action,loadedask,swap}__{final,name_last,doc_last,doc_mean}.npz`, `probe_v4.json`, `gap_analysis.py`. Logistics: model + activations extracted on a vast.ai A100 80GB (model cached in `/dev/shm`); npz pulled to laptop; all probe/analysis run locally on CPU.
+
+---
+
 ## 2026-06-08 — Keyphrase v4: clean unit names (review fix M2) — the probe-ready dataset
 
 Fixed the one data-quality issue the review flagged ([make_dataset_keyphrase_v4.py](make_dataset_keyphrase_v4.py)). v3 units were "the Nth X", which (a) created near-duplicate stems (`the 3rd Frontier Company` vs `the 15th Frontier Company`) — units the hardest type and a "watchlisted stem present" shortcut for the probe — and (b) leaked the ordinal digit into the document's numbers (the present→absent swap changed a number too). v4 gives units distinctive **non-numeric** codenames (`Ironside Detachment`, `Cobalt Squadron`, …), unique first word each, matching the location/person pools. Everything else identical to v3.
