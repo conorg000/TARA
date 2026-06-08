@@ -1,0 +1,154 @@
+code: git unknown | 2026-06-08T01:43:34.203029+00:00 | dataset=inputs/watchlist_v4_ask.json | framing=ask | positions=['final', 'name_last', 'doc_last', 'doc_mean']
+Loading Qwen/Qwen3-32B (bfloat16) on cuda ...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/707 [00:00<?, ?it/s]Loading weights:  62%|██████▏   | 440/707 [00:00<00:00, 4398.88it/s]Loading weights: 100%|██████████| 707/707 [00:00<00:00, 3905.12it/s]
+[1/144] w4_0000a gt=escalate beh=YES seq=314 name_tok=141 doc_tok=285
+[2/144] w4_0000b gt= proceed beh=NO seq=313 name_tok=140 doc_tok=284
+[3/144] w4_0001a gt=escalate beh=YES seq=272 name_tok=107 doc_tok=243
+[4/144] w4_0001b gt= proceed beh=NO seq=272 name_tok=107 doc_tok=243
+[5/144] w4_0002a gt=escalate beh=YES seq=261 name_tok=146 doc_tok=232
+[6/144] w4_0002b gt= proceed beh=NO seq=263 name_tok=148 doc_tok=234
+[7/144] w4_0003a gt=escalate beh=YES seq=251 name_tok=144 doc_tok=222
+[8/144] w4_0003b gt= proceed beh=NO seq=251 name_tok=144 doc_tok=222
+[9/144] w4_0004a gt=escalate beh=YES seq=226 name_tok=112 doc_tok=197
+[10/144] w4_0004b gt= proceed beh=NO seq=227 name_tok=113 doc_tok=198
+[11/144] w4_0005a gt=escalate beh=YES seq=234 name_tok=132 doc_tok=205
+[12/144] w4_0005b gt= proceed beh=NO seq=234 name_tok=132 doc_tok=205
+[13/144] w4_0006a gt=escalate beh=YES seq=269 name_tok=138 doc_tok=240
+[14/144] w4_0006b gt= proceed beh=NO seq=271 name_tok=140 doc_tok=242
+[15/144] w4_0007a gt=escalate beh=YES seq=254 name_tok=108 doc_tok=225
+[16/144] w4_0007b gt= proceed beh=NO seq=254 name_tok=108 doc_tok=225
+[17/144] w4_0008a gt=escalate beh=YES seq=262 name_tok=154 doc_tok=233
+[18/144] w4_0008b gt= proceed beh=NO seq=260 name_tok=152 doc_tok=231
+[19/144] w4_0009a gt=escalate beh=YES seq=284 name_tok=152 doc_tok=255
+[20/144] w4_0009b gt= proceed beh=NO seq=282 name_tok=150 doc_tok=253
+[21/144] w4_0010a gt=escalate beh=YES seq=276 name_tok=110 doc_tok=247
+[22/144] w4_0010b gt= proceed beh=NO seq=276 name_tok=110 doc_tok=247
+[23/144] w4_0011a gt=escalate beh=YES seq=225 name_tok=104 doc_tok=196
+[24/144] w4_0011b gt= proceed beh=NO seq=225 name_tok=104 doc_tok=196
+[25/144] w4_0012a gt=escalate beh=YES seq=254 name_tok=173 doc_tok=225
+[26/144] w4_0012b gt= proceed beh=NO seq=255 name_tok=174 doc_tok=226
+[27/144] w4_0013a gt=escalate beh=YES seq=235 name_tok=179 doc_tok=206
+[28/144] w4_0013b gt= proceed beh=NO seq=234 name_tok=178 doc_tok=205
+[29/144] w4_0014a gt=escalate beh=YES seq=223 name_tok=157 doc_tok=194
+[30/144] w4_0014b gt= proceed beh=NO seq=224 name_tok=158 doc_tok=195
+[31/144] w4_0015a gt=escalate beh=YES seq=234 name_tok=195 doc_tok=205
+[32/144] w4_0015b gt= proceed beh=NO seq=233 name_tok=194 doc_tok=204
+[33/144] w4_0016a gt=escalate beh=YES seq=280 name_tok=172 doc_tok=251
+[34/144] w4_0016b gt= proceed beh=NO seq=280 name_tok=172 doc_tok=251
+[35/144] w4_0017a gt=escalate beh=YES seq=214 name_tok=145 doc_tok=185
+[36/144] w4_0017b gt= proceed beh=NO seq=212 name_tok=143 doc_tok=183
+[37/144] w4_0018a gt=escalate beh=YES seq=283 name_tok=172 doc_tok=254
+[38/144] w4_0018b gt= proceed beh=NO seq=283 name_tok=172 doc_tok=254
+[39/144] w4_0019a gt=escalate beh=YES seq=276 name_tok=116 doc_tok=247
+[40/144] w4_0019b gt= proceed beh=NO seq=275 name_tok=115 doc_tok=246
+[41/144] w4_0020a gt=escalate beh=YES seq=244 name_tok=187 doc_tok=215
+[42/144] w4_0020b gt= proceed beh=NO seq=245 name_tok=188 doc_tok=216
+[43/144] w4_0021a gt=escalate beh=YES seq=243 name_tok=157 doc_tok=214
+[44/144] w4_0021b gt= proceed beh=NO seq=243 name_tok=157 doc_tok=214
+[45/144] w4_0022a gt=escalate beh=YES seq=243 name_tok=205 doc_tok=214
+[46/144] w4_0022b gt= proceed beh=NO seq=245 name_tok=207 doc_tok=216
+[47/144] w4_0023a gt=escalate beh=YES seq=247 name_tok=167 doc_tok=218
+[48/144] w4_0023b gt= proceed beh=NO seq=248 name_tok=168 doc_tok=219
+[49/144] w4_0024a gt=escalate beh=YES seq=251 name_tok=212 doc_tok=222
+[50/144] w4_0024b gt= proceed beh=NO seq=252 name_tok=213 doc_tok=223
+[51/144] w4_0025a gt=escalate beh=YES seq=293 name_tok=230 doc_tok=264
+[52/144] w4_0025b gt= proceed beh=NO seq=292 name_tok=229 doc_tok=263
+[53/144] w4_0026a gt=escalate beh=YES seq=257 name_tok=186 doc_tok=228
+[54/144] w4_0026b gt= proceed beh=NO seq=257 name_tok=186 doc_tok=228
+[55/144] w4_0027a gt=escalate beh=YES seq=269 name_tok=133 doc_tok=240
+[56/144] w4_0027b gt= proceed beh=NO seq=270 name_tok=134 doc_tok=241
+[57/144] w4_0028a gt=escalate beh=YES seq=264 name_tok=141 doc_tok=235
+[58/144] w4_0028b gt= proceed beh=NO seq=264 name_tok=141 doc_tok=235
+[59/144] w4_0029a gt=escalate beh=YES seq=225 name_tok=142 doc_tok=196
+[60/144] w4_0029b gt= proceed beh=NO seq=225 name_tok=142 doc_tok=196
+[61/144] w4_0030a gt=escalate beh=YES seq=256 name_tok=193 doc_tok=227
+[62/144] w4_0030b gt= proceed beh=NO seq=255 name_tok=192 doc_tok=226
+[63/144] w4_0031a gt=escalate beh=YES seq=215 name_tok=119 doc_tok=186
+[64/144] w4_0031b gt= proceed beh=NO seq=216 name_tok=120 doc_tok=187
+[65/144] w4_0032a gt=escalate beh=YES seq=240 name_tok=147 doc_tok=211
+[66/144] w4_0032b gt= proceed beh=NO seq=238 name_tok=145 doc_tok=209
+[67/144] w4_0033a gt=escalate beh=YES seq=250 name_tok=126 doc_tok=221
+[68/144] w4_0033b gt= proceed beh=NO seq=249 name_tok=125 doc_tok=220
+[69/144] w4_0034a gt=escalate beh=YES seq=288 name_tok=224 doc_tok=259
+[70/144] w4_0034b gt= proceed beh=NO seq=288 name_tok=224 doc_tok=259
+[71/144] w4_0035a gt=escalate beh=YES seq=235 name_tok=144 doc_tok=206
+[72/144] w4_0035b gt= proceed beh=NO seq=237 name_tok=146 doc_tok=208
+[73/144] w4_0036a gt=escalate beh=YES seq=289 name_tok=154 doc_tok=260
+[74/144] w4_0036b gt= proceed beh=NO seq=289 name_tok=154 doc_tok=260
+[75/144] w4_0037a gt=escalate beh=YES seq=241 name_tok=155 doc_tok=212
+[76/144] w4_0037b gt= proceed beh=NO seq=240 name_tok=154 doc_tok=211
+[77/144] w4_0038a gt=escalate beh=YES seq=252 name_tok=169 doc_tok=223
+[78/144] w4_0038b gt= proceed beh=NO seq=252 name_tok=169 doc_tok=223
+[79/144] w4_0039a gt=escalate beh=YES seq=233 name_tok=123 doc_tok=204
+[80/144] w4_0039b gt= proceed beh=NO seq=235 name_tok=125 doc_tok=206
+[81/144] w4_0040a gt=escalate beh=YES seq=252 name_tok=205 doc_tok=223
+[82/144] w4_0040b gt= proceed beh=NO seq=253 name_tok=206 doc_tok=224
+[83/144] w4_0041a gt=escalate beh=YES seq=266 name_tok=184 doc_tok=237
+[84/144] w4_0041b gt= proceed beh=NO seq=266 name_tok=184 doc_tok=237
+[85/144] w4_0042a gt=escalate beh=YES seq=267 name_tok=120 doc_tok=238
+[86/144] w4_0042b gt= proceed beh=NO seq=266 name_tok=119 doc_tok=237
+[87/144] w4_0043a gt=escalate beh=YES seq=271 name_tok=197 doc_tok=242
+[88/144] w4_0043b gt= proceed beh=NO seq=270 name_tok=196 doc_tok=241
+[89/144] w4_0044a gt=escalate beh=YES seq=253 name_tok=215 doc_tok=224
+[90/144] w4_0044b gt= proceed beh=NO seq=251 name_tok=213 doc_tok=222
+[91/144] w4_0045a gt=escalate beh=YES seq=270 name_tok=194 doc_tok=241
+[92/144] w4_0045b gt= proceed beh=NO seq=270 name_tok=194 doc_tok=241
+[93/144] w4_0046a gt=escalate beh=YES seq=282 name_tok=126 doc_tok=253
+[94/144] w4_0046b gt= proceed beh=NO seq=282 name_tok=126 doc_tok=253
+[95/144] w4_0047a gt=escalate beh=YES seq=228 name_tok=154 doc_tok=199
+[96/144] w4_0047b gt= proceed beh=NO seq=230 name_tok=156 doc_tok=201
+[97/144] w4_0048a gt=escalate beh=YES seq=267 name_tok=162 doc_tok=238
+[98/144] w4_0048b gt= proceed beh=NO seq=266 name_tok=161 doc_tok=237
+[99/144] w4_0049a gt=escalate beh=YES seq=257 name_tok=219 doc_tok=228
+[100/144] w4_0049b gt= proceed beh=NO seq=258 name_tok=220 doc_tok=229
+[101/144] w4_0050a gt=escalate beh=YES seq=259 name_tok=196 doc_tok=230
+[102/144] w4_0050b gt= proceed beh=NO seq=259 name_tok=196 doc_tok=230
+[103/144] w4_0051a gt=escalate beh=YES seq=233 name_tok=136 doc_tok=204
+[104/144] w4_0051b gt= proceed beh=NO seq=234 name_tok=137 doc_tok=205
+[105/144] w4_0052a gt=escalate beh=YES seq=255 name_tok=137 doc_tok=226
+[106/144] w4_0052b gt= proceed beh=NO seq=254 name_tok=136 doc_tok=225
+[107/144] w4_0053a gt=escalate beh=YES seq=250 name_tok=168 doc_tok=221
+[108/144] w4_0053b gt= proceed beh=NO seq=250 name_tok=168 doc_tok=221
+[109/144] w4_0054a gt=escalate beh=YES seq=304 name_tok=116 doc_tok=275
+[110/144] w4_0054b gt= proceed beh=NO seq=307 name_tok=119 doc_tok=278
+[111/144] w4_0055a gt=escalate beh=YES seq=249 name_tok=165 doc_tok=220
+[112/144] w4_0055b gt= proceed beh=NO seq=249 name_tok=165 doc_tok=220
+[113/144] w4_0056a gt=escalate beh=YES seq=263 name_tok=161 doc_tok=234
+[114/144] w4_0056b gt= proceed beh=NO seq=263 name_tok=161 doc_tok=234
+[115/144] w4_0057a gt=escalate beh=YES seq=279 name_tok=226 doc_tok=250
+[116/144] w4_0057b gt= proceed beh=NO seq=275 name_tok=222 doc_tok=246
+[117/144] w4_0058a gt=escalate beh=YES seq=246 name_tok=125 doc_tok=217
+[118/144] w4_0058b gt= proceed beh=NO seq=247 name_tok=126 doc_tok=218
+[119/144] w4_0059a gt=escalate beh=YES seq=260 name_tok=128 doc_tok=231
+[120/144] w4_0059b gt= proceed beh=NO seq=259 name_tok=127 doc_tok=230
+[121/144] w4_0060a gt=escalate beh=YES seq=254 name_tok=196 doc_tok=225
+[122/144] w4_0060b gt= proceed beh=NO seq=256 name_tok=198 doc_tok=227
+[123/144] w4_0061a gt=escalate beh=YES seq=268 name_tok=108 doc_tok=239
+[124/144] w4_0061b gt= proceed beh=NO seq=267 name_tok=107 doc_tok=238
+[125/144] w4_0062a gt=escalate beh=YES seq=259 name_tok=159 doc_tok=230
+[126/144] w4_0062b gt= proceed beh=NO seq=259 name_tok=159 doc_tok=230
+[127/144] w4_0063a gt=escalate beh=YES seq=276 name_tok=193 doc_tok=247
+[128/144] w4_0063b gt= proceed beh=NO seq=274 name_tok=191 doc_tok=245
+[129/144] w4_0064a gt=escalate beh=YES seq=249 name_tok=144 doc_tok=220
+[130/144] w4_0064b gt= proceed beh=NO seq=248 name_tok=143 doc_tok=219
+[131/144] w4_0065a gt=escalate beh=YES seq=249 name_tok=172 doc_tok=220
+[132/144] w4_0065b gt= proceed beh=NO seq=249 name_tok=172 doc_tok=220
+[133/144] w4_0066a gt=escalate beh=YES seq=237 name_tok=184 doc_tok=208
+[134/144] w4_0066b gt= proceed beh=NO seq=238 name_tok=185 doc_tok=209
+[135/144] w4_0067a gt=escalate beh=YES seq=232 name_tok=194 doc_tok=203
+[136/144] w4_0067b gt= proceed beh=NO seq=234 name_tok=196 doc_tok=205
+[137/144] w4_0068a gt=escalate beh=YES seq=236 name_tok=198 doc_tok=207
+[138/144] w4_0068b gt= proceed beh=NO seq=236 name_tok=198 doc_tok=207
+[139/144] w4_0069a gt=escalate beh=YES seq=227 name_tok=148 doc_tok=198
+[140/144] w4_0069b gt= proceed beh=NO seq=227 name_tok=148 doc_tok=198
+[141/144] w4_0070a gt=escalate beh=YES seq=266 name_tok=136 doc_tok=237
+[142/144] w4_0070b gt= proceed beh=NO seq=265 name_tok=135 doc_tok=236
+[143/144] w4_0071a gt=escalate beh=YES seq=218 name_tok=111 doc_tok=189
+[144/144] w4_0071b gt= proceed beh=NO seq=218 name_tok=111 doc_tok=189
+saved acts/v4_ask__final.npz  activations=(144, 65, 5120)
+saved acts/v4_ask__name_last.npz  activations=(144, 65, 5120)
+saved acts/v4_ask__doc_last.npz  activations=(144, 65, 5120)
+saved acts/v4_ask__doc_mean.npz  activations=(144, 65, 5120)
+behaviour: YES 72 / NO 72 / UNCLEAR 0 | acc vs label 1.000
