@@ -9,7 +9,24 @@ reproducible from seed).
 
 ---
 
-## `watchlist_v4_*.json` — *current (keyphrase-trigger track, PROBE-READY)*
+## `watchlist_v5_*.json` — *current (keyphrase-trigger track, STRUCTURAL DIVERSITY)*
+
+**v4's design with many document SHAPES** ([make_dataset_keyphrase_v5.py](make_dataset_keyphrase_v5.py)). v4 had 9 templates but essentially **one** document shape — a flat "Title. verb: Name, n unit; …" enumerated list — and format was perfectly correlated with entity type (`t_supply`⇔unit, etc.). The v4 behavioural gap clumped on units (6/9) with zero persons, almost certainly a property of that single flat-list shape, not the phenomenon. v5 keeps every label-trustworthiness guard and varies the container.
+
+- **17 genuinely different formats:** bulleted, numbered, pipe table, CSV, key=value, prose paragraph, ALL-CAPS telegram, timestamped log, YAML-ish, checklist, tab columns, slash run-on, memo, dotted ledger, index, packed key=val, mid-dot grid. The trigger sometimes sits in a sentence, sometimes a table cell, sometimes a bare list.
+- **Format decoupled from type:** each format is type-agnostic (generic record framings — allocation/stocktake/ledger/index — so any entity fits without surreal phrasing) and assigned by global index (17 ⊥ 3), so format no longer predicts unit/location/person. Verified: each format spans all three types.
+- **Size:** 72 pairs / 144 items (24/type), same scale as v4 (this round is *diversify-then-observe*, not scale-up). List sizes 5–13 (v4 was 10–14).
+- **Load-bearing guards preserved (identical to v4):** matched pair built by string-replace (present/absent differ in **exactly** the one name); trigger an exact-match string, once, among **same-type** distractors (membership, not category); cyclic pairing decorrelates identity from label; clean non-numeric names; within-pair digit-equality. **New stronger guard:** `verify()` asserts `present.replace(trigger, other) == absent` — catches any formatting that depends on name **length** (column padding) or **content** (sorting), which would leave a label-correlated whitespace/order artifact. So the wild formats use fixed separators only.
+- **Files:**
+  - `watchlist_v5_ask.json` — recognition set. `python make_dataset_keyphrase_v5.py`
+  - `watchlist_v5_{action,loadedask,plainask,checkaction}_H5.json` — `make_keyphrase_loaded.py --load 5 --ask-in inputs/watchlist_v5_ask.json --out-prefix inputs/watchlist_v5`
+  - `watchlist_v5_swapwl_ask.json` + `watchlist_v5_swapwl_action_H5.json` — swap dark control, both framings. `make_keyphrase_swapwl.py --ask-in inputs/watchlist_v5_ask.json`
+  - Round-trip verified: ask→action docs match 0/144 mismatches (multi-line YAML/tables survive intact); FLAG still buried at rule #21.
+- **Status:** built & verified, **behaviour not yet measured.** Next: re-measure recognition + gap rate on OpenRouter (no GPU) to check the phenomenon survives diverse shapes and isn't flat-list-specific, *before* deciding on scale. If recognition stays ~100% and the gap spreads across formats/types, this (scaled up) becomes the next probe dataset.
+
+---
+
+## `watchlist_v4_*.json` — *the cross-pass probe ran on this; superseded for future runs by v5 (diversity)*
 
 **v3 with clean unit names** ([make_dataset_keyphrase_v4.py](make_dataset_keyphrase_v4.py)) — the review fix (M2) that makes the dataset probe-ready. Identical to v3 (same templates, decorrelation guards, heavy-load + swap controls) except units are now distinctive **non-numeric** codenames (`Ironside Detachment`, `Cobalt Squadron`, … — unique first word each) instead of "the Nth X". This fixes both v3 unit problems: (a) near-duplicate stems (`the 3rd`/`the 15th Frontier Company`) that made units the hardest type and gave the probe a "watchlisted stem present" shortcut, and (b) the ordinal digit leaking into the document's numbers (so the present→absent swap changed a number too — 21/72 v3 pairs).
 
@@ -18,8 +35,8 @@ reproducible from seed).
 - **Files (regenerate the full probe-input set on clean data):**
   - `watchlist_v4_ask.json` — clean recognition set (probe training data). `python make_dataset_keyphrase_v4.py`
   - `watchlist_v4_{action,loadedask,plainask,checkaction}_H5.json` — `make_keyphrase_loaded.py --load 5 --ask-in inputs/watchlist_v4_ask.json --out-prefix inputs/watchlist_v4`
-  - `watchlist_v4_swapwl_ask.json` — dark control. `make_keyphrase_swapwl.py --ask-in inputs/watchlist_v4_ask.json`
-- **Status:** **this is the dataset the cross-pass probe runs on.** Behavioural gap/recognition not re-measured on OpenRouter — re-derive locally on the GPU box alongside activation extraction (deterministic there). See [runlog.md](runlog.md) `2026-06-08` (v4 clean units).
+  - `watchlist_v4_swapwl_ask.json` + `watchlist_v4_swapwl_action_H5.json` — the swap dark control in **both framings**. `make_keyphrase_swapwl.py --load 5 --ask-in inputs/watchlist_v4_ask.json`. The **ask** swap is the membership control for the recognition probe; the **action** swap (same swapped watchlist, read under the H5 action prompt) is the sharper **watchdog** negative — the gap items are action-framed, so their "should-stay-dark" comparison must be action-framed too. Holding the document and the name's presence identical isolates membership from name-presence in the acting context. Probe consumes it via `probe_keyphrase.py --swapaction` (`watchdog(swap)` column; optional, back-compatible). Expected behaviour: ask-swap → NO, action-swap → NOFLAG.
+- **Status:** **this is the dataset the cross-pass probe runs on.** Behavioural gap/recognition not re-measured on OpenRouter — re-derive locally on the GPU box alongside activation extraction (deterministic there). See [runlog.md](runlog.md) `2026-06-08` (v4 clean units; cross-pass probe). The action-swap was added 2026-06-08 after the first probe run — it ships on the **next** extraction (no re-extract of the existing four needed to keep their numbers).
 
 ---
 
