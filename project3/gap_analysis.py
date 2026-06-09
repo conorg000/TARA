@@ -17,7 +17,7 @@ watchdog cherry-picking).
 import numpy as np
 from sklearn.metrics import roc_auc_score
 
-POS_LAYER = {"final": 48, "doc_mean": 48, "doc_last": 51, "name_last": 22}
+POS_LAYER = {"final": 49, "doc_mean": 48, "doc_last": 51, "name_last": 24}  # v6 best-by-recog
 
 
 def load(prefix, pos):
@@ -36,7 +36,7 @@ def auroc(pos, neg):
 
 rng = np.random.default_rng(0)
 for pos, L in POS_LAYER.items():
-    ask, act, lda = load("v4_ask", pos), load("v4_action", pos), load("v4_loadedask", pos)
+    ask, act, lda = load("v6_ask", pos), load("v6_action", pos), load("v6_loadedask", pos)
     yb = np.array([1 if b == "YES" else (0 if b == "NO" else -1) for b in ask["beh"]])
     keep = yb >= 0
     Xask = ask["acts"][:, L, :]

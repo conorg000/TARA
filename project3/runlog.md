@@ -11,6 +11,53 @@ record the full per-layer table here for any result worth keeping.
 
 ---
 
+## 2026-06-09 — Keyphrase v6: the cross-pass recognition probe (GPU, deterministic) — recognition/membership/transfer STRONG on diverse data; watchdog INCONCLUSIVE because the deterministic gap is only n=9 (the scale-up did NOT raise it)
+
+**The payoff run, and an honest miss on its headline goal.** Extracted Qwen3-32B activations (bf16, no-think, greedy/T=0 — deterministic) over the 5 v6 framings, 4 read positions, all 65 layers, on a vast.ai A100 ([extract_keyphrase.py](extract_keyphrase.py)); probed on the laptop ([probe_keyphrase.py](probe_keyphrase.py) → `probe_v6.json`, [gap_analysis.py](gap_analysis.py)). Code: `extract_keyphrase.py` at **988479e** (box stamped `988479e-dirty` only because the committed `extract_v6.sh` launcher was overwritten on the box; the extractor and the v6 datasets are the unmodified 988479e versions). Local greedy behaviour (the ground truth the gap is defined on): ask **479/480** (YES 241/NO 239), loaded-ask **473/480** (YES 235), swap **240/240 NO**, action FLAG 239/NOFLAG 241, swap-action NOFLAG 218/FLAG 22.
+
+**THE GAP IS n=9 — not the ~15 the OpenRouter observe implied, and the same as v4's 9.** The deterministic greedy 32B flags present items far more reliably than the T=0 OpenRouter routing did: of 240 present, 227 flagged, 13 didn't, and 9 of those were recognised under load (loaded-ask YES) = the gap. So **the scale-up to 240 present items did NOT increase the deterministic gap** (v4: 9/72; v6: 9/240 → the deterministic gap *rate* is ~4%, not the 6–8% OpenRouter showed). The OpenRouter observe over-counted the gap; greedy is the truth, and on greedy the silent omission is genuinely rare. **The watchdog is therefore still at n=9 — the one thing the scale-up was meant to fix, it did not.**
+
+**Well-powered results (n=240) — STRONG, and now on the structurally-diverse data (the real gain):**
+```
+position    best L  recog(dm)  transfer  membership  wd(gap-vs-absent)  wd(gap-vs-swapact)
+final         49     1.000      0.724      1.000        0.666              0.657
+name_last*    24     1.000      1.000      0.999        1.000              0.998   *LEXICAL confound — discount
+doc_last      51     0.918      0.692      0.927        0.746              0.744
+doc_mean      48     0.979      0.930      0.986        0.792              0.800
+```
+doc_mean per-layer (the clean recognition locus), L44–52, verbatim:
+```
+  L  recog_dm recog_lr transfer membership wd(abs) wd(swap)
+  44  0.943   0.999   0.884    0.961     0.756   0.765
+  45  0.946   0.997   0.909    0.965     0.781   0.785
+  46  0.961   0.996   0.916    0.974     0.788   0.794
+  47  0.978   0.997   0.934    0.987     0.811   0.818
+  48  0.979   0.998   0.930    0.986     0.792   0.800
+  49  0.971   0.998   0.920    0.979     0.765   0.769
+  50  0.967   0.999   0.926    0.976     0.801   0.804
+  51  0.948   0.999   0.901    0.961     0.743   0.747
+  52  0.932   0.999   0.878    0.948     0.691   0.699
+```
+So **recognition decodes (doc_mean 0.94–0.98, layer-0 ≈0.5 elsewhere — not surface), is membership-not-co-occurrence (0.95–0.99; swap held the name in the doc), and transfers ask→action (0.88–0.93)** — all strong, stable across layers, well-powered, and now demonstrated across the 17 diverse document shapes (v4 had a single flat-list shape). This is the banked contribution.
+
+**The decisive control ([gap_analysis.py](gap_analysis.py)) — gap-vs-FLAGGED — is INCONCLUSIVE at n=9 and position-inconsistent:**
+```
+position   L   gap-vs-absent  gap-vs-FLAGGED  means gap/flag/abs        shuffle-null
+final      49     0.686          0.500        +140 / +156 / +72         0.498 ± 0.137
+doc_mean   48     0.648          0.245        -261 / -215 / -285        0.505 ± 0.113
+doc_last   51     0.662          0.468        -981 / -960 /-1166        0.513 ± 0.063
+name_last* 24     1.000          0.348        (confounded)             0.537 ± 0.186
+```
+At `final`, gap is recognised exactly like flagged (0.500) and both ≫ absent → looks-and-ignored. At `doc_mean`, gap is recognised *less* than flagged (0.245) → didn't-fully-look. **These contradict each other, and v6 shows the OPPOSITE position-pattern to v4** (v4: doc_mean 0.52 / final 0.28). With n_gap=9 (SE of AUROC ≈ 0.17), the gap-vs-flagged CI spans ~0.2–0.8 — it cannot distinguish the two stories. Shuffle nulls ≈0.5 (no leak). **Honest verdict: the watchdog is not resolved; v4 and v6 disagreeing on the pattern is exactly what n=9 noise produces.**
+
+**Type skew (5th independent confirmation) + its confound:** gap = location 5 / unit 4 / **person 0** (greedy data too); flagged = unit 73 / loc 74 / person 80. Per the type-confound control flagged in the dialogue: restricting gap-vs-flagged to unit/location only moves doc_mean 0.245→**0.347** and final 0.500→**0.556** — i.e. part of the doc_mean "didn't-fully-look" signal *was* the person-flagged items being more separable. Real but small; n=9 dominates regardless.
+
+**Verdict & decision.** (1) recognition decodes ✓ (2) transfers ✓ (3) membership-not-co-occurrence ✓ — all strong, well-powered, and now robust to document diversity: **the single-condition existence proof is banked.** (4) The watchdog — the monitor claim — is **underpowered, not a clean null**: the deterministic gap is rare (~4%), so n_gap=9 here. Scaling further barely helps: v7 (built, 480 present) would give ≈18 at this rate — still wide; truly powering gap-vs-flagged would need ~1000+ present items (a much bigger build than planned). Per the 9-June dialogue, that is **not** the right spend — the higher-leverage move is the multi-condition / separability frontier, not more keyphrase n. **So: close out keyphrase here — a strong, honest single-condition floor (recognition reads, transfers, is membership) on diverse data, with the silent-omission watchdog reported as underpowered (the gap is deterministically rarer than the off-model estimate suggested).** Artifacts: `acts/v6_*__*.npz` (gitignored), `probe_v6.json`, `gap_analysis.py`. Key methodological note for the writeup: **the OpenRouter T=0 observe over-counts the gap vs deterministic greedy (15 → 9) — use it as a sanity check on recognition, not as a gap-size predictor.**
+
+**Projection / monitor view** ([recognition_projection.py](recognition_projection.py) `--tag v6`; the distribution+threshold companion to gap_analysis). Each group projected onto the recognition axis, z-scored vs the absent baseline (`doc_mean` L48, full-ask single axis): flagged **+1.32**, gap **+0.45** (p10 −0.98 … p90 +1.27), recog-miss +0.53, absent 0.00 (p10 −1.23 … p90 +1.25). The gap sits in the murky middle — partial recognition (~⅓ of flagged), heavily overlapping the wide clean-doc baseline; gap-vs-absent on this single axis = **0.648** (vs the probe's document-disjoint 0.792 — a projection must use one fixed direction). **Monitor operating points** (catch k of 9 omissions → false-alarm on clean docs): 9/9 → **89%** (`final` 93%); 7/9 → 32% (60%); 4/9 → 22% (11%). **Verdict: no usable drop-in threshold monitor** — not a weak probe (recognition 0.98) but the gap docs' partial, scattered signal overlaps the clean baseline. doc_mean leans "didn't-fully-look" (gap far closer to absent than flagged); read-out cannot predict whether causal **steering** would change behaviour (separate GPU experiment), and the heavy flagged/gap overlap hints flagging is not gated on recognition magnitude. Plain-language writeup: [keyphrase_v6_probe_outcome.md](keyphrase_v6_probe_outcome.md).
+
+---
+
 ## 2026-06-08 — Keyphrase v7 (further scale-up, 160/type): behavioural observe on OpenRouter — recognition still at ceiling at 480 present; gap = 38 (8%), and the rate did NOT drift — v6's 6% was a low draw
 
 The rate-stability check ([observe_v7.py](observe_v7.py); OpenRouter `qwen/qwen3-32b`, no-think, T=0; gate logs gitignored). v7 = v5/v6's exact design with pools doubled again to **160/type (480 pairs)** — built v6's 80/type verbatim + 80 new names/type (drafted by a subagent, collision-filtered by [select_v7_tokens.py](select_v7_tokens.py), pinned in [make_keyphrase_v7_tokens.py](make_keyphrase_v7_tokens.py)). Two questions: does recognition hold at the bigger n, and **is the ~6% v6 gap rate stable or a small-n artifact?**
