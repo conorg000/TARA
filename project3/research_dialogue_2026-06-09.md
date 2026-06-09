@@ -272,3 +272,152 @@ Distilled, the open program that this conversation surfaced:
   (syntactic/string-match recognition). The semantic frontier is exactly where the previous task died
   (7-June). The topic variant is the bridge between them — and the honest test of whether the monitor
   story reaches deployment-relevant recognition at all.
+
+---
+
+## 6. Productionising this — what a deployer actually does (later that day)
+
+The thread Conor most wants to push long-term. Key separation: **validating the method** (the rigorous,
+one-time, field-level work — matched pairs, controls, manufacturing a gap) vs **deploying a monitor**
+(streamlined; trusts the method). A deployer does a much lighter descendant of what we do.
+
+- **What they need:** `(input, condition-label)` pairs → model activations → a linear probe. The ML is
+  commodity; the *data* is the whole job.
+- **They do NOT need the recognise-but-don't-act gap for *training*.** They train on condition-holds.
+  The gap is needed for **validation** (is this a recognition-probe or just an action-echo?) and for
+  **demonstrating value** — and gap cases can be **harvested from production logs** (probe-fired-but-no-
+  action, spot-checked), not synthesized. So: small eval need, not a big data burden.
+- **Labelling can be cheap/auto:** by construction (you generated it), a judge model, or the target
+  model's own ask-framing. (Caveat: for fuzzy conditions the model's ask-answer is a judgment, not a
+  fact — see §7.)
+- **A 3-condition prompt:** data where the conditions vary *independently* (decorrelated), one probe per
+  condition (or one multi-label probe). The lurking risk is **separability/composition** — if two
+  conditions' directions collide, no data fixes it. That's the unproven research question, now a
+  concrete deployment blocker.
+- **What's actually packageable:** *the data-factory + the automated controls (a trust report), not the
+  probe.* Anyone can fit a logistic regression; almost nobody can tell you whether it reads the
+  condition or a confound. That validation harness is the defensible core.
+- **Hard edges:** needs activation access → **self-hosted open models only** (Qwen/Llama yes; closed
+  APIs no). Probes are model-and-layer-specific → it's a *re-training pipeline*, not a one-shot artifact.
+  Fuzzy conditions are where auto-generation + decorrelation is hardest — and where the value is highest.
+- **Blue-sky shape (Conor's):** highlight the conditions you want monitored → tool synthesizes
+  decorrelated labelled data → fits a probe → returns it *with a trust report*. Coherent; the value is in
+  the data + controls, not the classifier.
+
+---
+
+## 7. The fact we kept fumbling — what you train the probe *against* (resolved & triangulated)
+
+This one wobbled in conversation. It is now nailed down against the project's own
+[ADVISOR_FEEDBACK.md](ADVISOR_FEEDBACK.md) (5 June), the existing `probe_keyphrase.py` (which already does
+the right thing), two independent verification agents, and the broader probing literature. **The clean
+fact:**
+
+**A probe means whatever you label it with.** There are two different probes:
+- label = **ground truth** → probe means *"is the condition true in the world."* (the standard default for
+  generic property probing — harmfulness, eval-awareness, truth probes)
+- label = **the model's own direct-ask answer** → probe means *"does the model think the condition is
+  true."*
+
+**Our goal is the second** ("did the model recognise it"), so we **train on the model's own answer, not
+ground truth.** ADVISOR_FEEDBACK Step 1, verbatim: *"Retrain the probe on the model's own answers, not on
+truth… that is the one change that points the probe at recognition instead of at the right answer."* This
+is *not* unusual or circular — it's the belief-probing approach (calibration / CCS / deception family) —
+**provided it's cross-pass**: take the label from the direct-ask pass, read the probe on the *action
+rollout*. (Circular only if you read the same pass you elicited the answer from. We don't.)
+
+**Why ground truth is actively *wrong* for our goal** (the documented confound): a truth-trained probe
+learns the truth direction, so on items that are objectively positive but the model *didn't* recognise, it
+reads **~0.95** — "an oracle for the label you trained on, sitting next to a model that disagrees." It
+**can't tell "knew but didn't act" from "never knew"** — the exact distinction the monitor exists to make.
+
+**The canonical litmus** (how you know which probe you built): on items where truth = YES but the model
+*said* NO, a **recognition** probe reads **LOW**, a **truth** probe reads **HIGH**. Ground truth isn't
+discarded — it becomes the **check**, not the label.
+
+**The deeper nuance** (also from the advisor): the direct-ask is itself only a *proxy*. Two recognitions —
+*ask/capability* (recognition when prompted) vs *engaged/rollout* (recognition during the action pass,
+attention never pointed at the condition). The rollout one is the real target and **no label gives it
+directly** — which is why the empirical gap/genuine-miss split, not the label, is the actual instrument.
+Full 4-row table (Ask × probe-on-rollout × action) is in ADVISOR_FEEDBACK §"The reframe".
+
+*Why this matters for keyphrase specifically:* recognition is at ceiling, so model's-answer ≈ ground truth
+— the choice is empty here and the confound doesn't bite. It bites **hard** the moment recognition drops
+(the topic/semantic task), which is exactly when we must use the model's answer.
+
+---
+
+## 8. Probe facts — the one-page reference (build / evaluate / use)
+
+> The anchor: a probe reads whatever you label it with. The label *is* the meaning. Decide what you want
+> it to mean before anything else.
+
+**Building**
+- Label with **ground truth** → probe means *"is the condition true in the world."*
+- Label with the **model's own answer** (its direct-ask YES/NO) → probe means *"does the model think the
+  condition is true."*
+- Our goal is *"did the model recognise it"* → **label with the model's own answer, not ground truth.**
+- Get the label from one pass (the direct-ask) and **read the probe on a different pass** (the action
+  rollout). That split keeps it honest and is why the probe beats just watching the output.
+
+**Evaluating**
+- A high accuracy number alone means **nothing** — it can be a confound, or the probe copying the
+  behaviour.
+- The only test that counts is the **disagreement cases**: the probe must fire where the model
+  *recognised but didn't act*, and stay quiet where the model *genuinely didn't recognise*.
+- Litmus: on truly-positive items the model called NO, a **recognition** probe reads **low**, a **truth**
+  probe reads **high** — that's how you tell which you built.
+- Ground truth becomes the **check**, not the **label**.
+- Lead with **difference-of-means**; treat logistic regression as an **upper bound** (it can read noise).
+
+**Using**
+- Run model + probe together; alarm when the probe says *"recognised"* but the behaviour didn't act.
+- **All the value is in that gap.** If probe and behaviour never disagree, the monitor adds nothing over
+  reading the output.
+- A probe is specific to **one model and one layer** and needs the internal activations → works only on a
+  model you run yourself (open weights), not a closed API.
+
+---
+
+## 9. Heads up out of the weeds — where we are, the gap to the vision, the path
+
+**The vision** (Conor's, the long-term direction): a deployment-style prompt with several conditional
+rules, and a **separate recognition probe per condition**, so you can catch silent omissions *per rule* —
+a per-condition monitoring panel.
+
+**Where we are:** a solid **single-condition** result. Crisp trigger, validated method (model's-answer
+label, cross-pass, litmus), gap/watchdog. The v7 GPU run banks it at proper power. That's the floor, done
+well — and the existence proof the whole panel rests on.
+
+**The gap is smaller than it looks — almost everything transfers:**
+- *Transfers wholesale:* the generators (matched pairs, decorrelation, formats), the H5 load prompt, the
+  probe code (cross-pass, diff-of-means, litmus, controls), the GPU/observe pipeline, the conceptual
+  clarity in §7–8.
+- *Genuinely new:* (1) a **decorrelated multi-condition dataset** (each condition fires independently),
+  and (2) the **separability analysis** (probe A must stay dark on B). That's basically it.
+
+**Key insight — transfer, don't restart: our H5 prompt is already a multi-condition deployment prompt.**
+It carries ~20 rules; today only the watchlist-FLAG fires and the rest sit inert (finance-review on >£10k,
+expedite on a 48h deadline, contact-on-file on an email/phone…). To get a panel, just make 2–3 of those
+rules *actually fire*, controllably and decorrelated, and probe each. Same domain, same scaffold.
+
+**The panel design (crisp anchor + fuzzy test, so failures are diagnosable):**
+- **2 conditions = one crisp + one fuzzy.** The crisp one (keyphrase-style) is the **anchor / positive
+  control** — we know it reads, it calibrates everything. The fuzzy one (semantic "is this about topic X")
+  is **the real test**, of readability *and* separability. Don't go all-crisp (a regex would do it) or
+  all-fuzzy (no known-good control if it all fails).
+- **Run each condition's own litmus *and* the cross-condition separability check.** That makes any failure
+  attributable: fuzzy fails its *own* litmus → readability problem (the 7-June semantic wall); both pass
+  but cross-fire → separability problem; crisp can't separate even from crisp → panel idea dead for a
+  basic reason.
+
+**The path from here:**
+1. **Finish keyphrase** (run v7) — bank the single-condition existence proof.
+2. **Multi-condition, same prompt** — activate a crisp + a fuzzy rule, decorrelated data, run the
+   **separability test first** (cheap kill-switch). Proves/disproves the panel, reusing ~all infra.
+3. **Map it out** — if 2 conditions separate, push to 3+ and to more condition *kinds*; the
+   composition/separability map is the deployment-relevant prize.
+
+**What would disprove the vision (pre-register):** recognition directions collinear (can't separate),
+stacking conditions collapses recognition, or a condition can't pass its litmus inside the shared prompt.
+Any of those is a real, reportable finding.
