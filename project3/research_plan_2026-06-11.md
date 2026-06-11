@@ -265,6 +265,48 @@ decodability.*
 | "The probe learned the ask-prompt *format*" | Ask phrasing randomised across training items; direction must survive paraphrase. |
 | "It reads about-to-act" | Same firewall as ever: train on ask (no action), cross-pass to action. |
 
+## Activation capture spec (locked before extraction; regret-proofing)
+
+Capture is the one choice that can't be revisited without re-paying GPU time, so it is
+generous by design. Two principles bound it:
+
+1. **Causal attention makes pre-document positions worthless** for doc-dependent
+   labels — no reads over the rule text or watchlist span. The last pre-document token
+   is kept *only* as a positional negative control (must be ~0.5 on everything
+   doc-dependent, else the pipeline leaks).
+2. **Span-means everywhere; full per-token only on a pilot.** A span summary at all
+   layers ≈ 0.7MB/doc fp16; full token×layer ≈ 100×. Budget allows generosity in
+   spans, not in tokens.
+
+**Per extraction, all layers, fp16:**
+
+| Position | Status | Why |
+|---|---|---|
+| `doc_mean` | **primary** (carried from v6) | the pre-registered headline read; comparability with v6 |
+| `final` (last prompt token) | secondary (carried) | the decision-adjacent camera; P4 lives here |
+| `doc_last` | carried | continuity with v6 tables |
+| `name_last`, `name_mean` | diagnostic only | lexically contaminated (layer-0 ≈ 0.06 in v6); kept for localization, never headlined. Absent docs get a matched random-position read so the field always exists |
+| `post_name_mean` (tokens name_end+1 … +8; matched offset window in absent docs) | **new, exploratory** | where recognition should crystallize — just after the name, without reading the name's own tokens. Must pass the layer-0 check to be used at all |
+| `pre_doc_final` (last instruction token) | **new, control** | positional negative control per principle 1 |
+| `question_mean` (ask passes: the ask-question span) | new | the question tokens sit after the doc and integrate it; sharpens the clean-ask vs loaded-ask training comparison |
+| `pressure_mean` (where the lever text exists) | new, minor | mostly informative for user-turn levers (L2), where the plea *follows* the doc and its tokens integrate it |
+| **Generation prefix** (action passes): first generated token + mean over first ~16 generated tokens | **new — requires a pipeline change** (hooks during generation, not just prefill) | the omission decision happens *during generation*; suppression (P4) most plausibly lives here, not in the prompt. Caveat: across piles the generated *content* differs, so this read carries a content confound — exploratory only |
+
+Exp 2 analogues: `message_mean` (primary), `message_last`, `final`, `question_mean`,
+`pre_message_final`, generation prefix. No `name_*` analogue exists — a fuzzy trigger
+has no crisp span; that's the point of the rung.
+
+**Position-discovery pilot:** before each keeper extraction, one small run (~50–100
+docs, full per-token capture at every 4th layer, ≈13GB) to heat-map where the
+recognition signal actually lives. Any position promoted from the pilot is chosen on
+pilot docs and measured on keeper docs (anti-wobble rule 2 applies to positions, not
+just levers).
+
+**Multiple-comparisons discipline:** more positions = more stray 0.9s. `doc_mean`
+(/`message_mean`) stays the pre-registered primary regardless of what the extras show;
+a secondary position can only be promoted by replicating on fresh data, never by
+outscoring the primary post hoc.
+
 ## Decision tree (one-glance version)
 
 ```

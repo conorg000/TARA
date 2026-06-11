@@ -9,6 +9,51 @@ reproducible from seed).
 
 ---
 
+## `exp2_keeper_*.json` — *current (Experiment 2 keeper: the fuzzy climb — legal/medical advice-seeking)*
+
+**The fuzzy-condition probe dataset** ([make_exp2_keeper.py](make_exp2_keeper.py) ←
+content in `exp2_content.json`), per the plan's Experiment 2. Fresh docs (Screen B was
+throwaway). Tests: *the model computes a readable registration of an ad-hoc,
+prompt-specified fuzzy condition — not topic, not a trained-in category, not generic
+decodability.*
+
+- **184 docs:** 64 hit / 64 near / 28 form / 28 none. Two conditions (legal, medical),
+  32 register-matched scenario pairs each. **The register-matched near is the key control:**
+  each `near` shares person, topic, situation and tense with its `hit` and carries the
+  domain vocabulary (tribunal, GP, deposit scheme, dose) — differing ONLY in
+  asking-for-guidance vs reporting-an-outcome. Validated behaviourally before authoring
+  (runlog 2026-06-12 construction-validation: K2 0%, K3 0%). `form` = advice-seeking on a
+  neutral topic (request-shape control; no health/fitness/legal items); `none` = neither.
+- **Dual-rule (the K3 swap, the novelty control):** every doc is emitted under BOTH the
+  legal and medical rule. ASK = the rule's question (`exp2_keeper_ask_<cond>_p<1-3>.json`,
+  3 paraphrases — format-confound guard + K1 consistency filter). ACTION = intake-clerk
+  system prompt whose standing rule names the condition
+  (`exp2_keeper_action_<cond>.json`). The same text scores YES/FLAG under the matching
+  rule, NO/no-FLAG under the swapped one — label flips with the prompt, not the text.
+- **Labels:** the model's own greedy ask answers (consistency-filtered over the 3
+  paraphrases), not ground truth — the v6-§7 method; Screen B confirmed legal/medical are
+  judged consistently. Recognition decode is the FLOOR (the category track already showed
+  semantic recognition decodes at 0.95–0.99); the load-bearing tests are K2 (vs near),
+  K3 (rule-swap), K4 (vs arbitrary-property junk — analysis-time).
+- **Status:** behaviourally validated at scale (coarse); **extraction is GPU-ready** —
+  [extract_exp2.py](extract_exp2.py) (message-relative positions: `message_mean` primary,
+  `message_first/last`, `final`, `question_mean`, `pre_message_final`, `post_message_mean`,
+  + gen-prefix on action; no `name_*` — a fuzzy trigger has no crisp span) + launcher
+  [extract_exp2.sh](extract_exp2.sh) (8 passes: 6 ask + 2 action). Span-finding + CV
+  grouping pre-verified off-GPU by [extract_exp2_selftest.py](extract_exp2_selftest.py)
+  (char + group + token-level via the real tokenizer — all pass). Greedy ask labels are
+  consistency-filtered over the 3 paraphrases at probe time. Queue behind 1b/1c on the box.
+- **Construction-validation set** `exp2_validate_*` ([make_exp2_validate.py](make_exp2_validate.py),
+  THROWAWAY): the 16-pair pre-authoring check that the register-matched construction holds.
+- **Regenerate:**
+  ```bash
+  python make_exp2_keeper.py
+  ./run_exp2_keeper_validate.sh                                   # coarse scaled K2/K3 check
+  ./.venv/bin/python observe_exp2_validate.py --prefix exp2_keeper_ask
+  ```
+
+---
+
 ## `screen_c_*.json` — *current (Experiment 1c Screen C: load titration of the attention gap, THROWAWAY)*
 
 **The dose-response screen** ([make_screen_c.py](make_screen_c.py)), per appendix **A4**

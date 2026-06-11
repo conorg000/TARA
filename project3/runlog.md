@@ -11,6 +11,25 @@ record the full per-layer table here for any result worth keeping.
 
 ---
 
+## 2026-06-12 — Experiment 2 keeper, CONSTRUCTION VALIDATION (OpenRouter coarse, ask-only, throwaway): register-matched near holds (K2 0%), behavioural rule-swap flips (K3 0%) — Screen B's cleanliness was NOT surface register; GO to author the keeper
+
+**Why:** Screen B's clean legal/medical separation may have ridden on surface register (hit = 1st-person present-tense question; near = 3rd-person past-tense anecdote — the scenarios_v2 confound). Before authoring the keeper, [make_exp2_validate.py](make_exp2_validate.py) built **16 register-matched pairs** (8 legal + 8 medical): each `near` shares person, topic, situation and tense with its `hit`, differing ONLY in seeking-guidance vs reporting-an-outcome, and deliberately carries domain vocabulary (deposit scheme, pharmacist, dose) so a vocab-reader would mis-fire. Plus 6 form (neutral advice-seeking) + 6 none. Every doc asked under BOTH the legal and medical questions, 3 paraphrases. `openrouter/qwen/qwen3-32b`, no-think, T=0; 6 evals; read by [observe_exp2_validate.py](observe_exp2_validate.py).
+
+```
+asked under LEGAL Q          maj-YES        asked under MEDICAL Q        maj-YES
+  legal/hit   (capability)    8/8             medical/hit (capability)    8/8
+  legal/near  (K2)            0/8  PASS        medical/near (K2)           0/8  PASS
+  medical/hit (K3 swap)       0/8  PASS        legal/hit (K3 swap)         0/8  PASS
+  neutral/form                0/6  PASS        neutral/form                1/6  (one item)
+  neutral/none                0/6              neutral/none                0/6
+```
+
+**Reads.** (1) **K2 PASS (0% both ways) is the load-bearing result:** register-matched, vocab-carrying near items still read NO, so the model reads advice-*seeking*, not register/topic/vocabulary — Screen B's cleanliness was real, not surface. (2) **K3 behavioural swap PASS:** legal hits read NO under the medical question and vice versa (one stray YES per direction, single paraphrase; majority 0/8) — the cross-rule flip the keeper's activation-level K3 will test has behavioural footing. (3) **Capability 100%.** (4) **One form item fired under medical (the "get fitter at sixty — walking or the gym?" item)** — genuinely health-adjacent, a content issue not a construction fault. **Keeper fix: exclude fitness/health-adjacent items from the neutral form pool.** Coarse + throwaway (screens choose, keepers measure); Gate B proper is greedy-on-GPU on the keeper. **Decision: GO** — author the full keeper in this shape. Datasets: `exp2_validate_*` (throwaway). Logs gitignored (`logs/exp2_validate_run.log`).
+
+**Scaled confirmation + keeper LOCKED (same day).** Authored the keeper at scale — 32 register-matched scenario pairs/condition (subagent-drafted from the validated template, then hand-audited: 0 rejections), + 28 form + 28 none = **184 docs** (`exp2_content.json` → [make_exp2_keeper.py](make_exp2_keeper.py); ask under both rules × 3 paraphrases + action under both rules). Re-ran the K2/K3 behavioural check on all 184 ([run_exp2_keeper_validate.sh](run_exp2_keeper_validate.sh), coarse): **capability 100%/100%, K2 register-near 9%(legal)/0%(medical), K3 swap 3%/0%, form/none 0% — all gates pass at scale.** Diagnosis of the residual wobble: it's concentrated in **paraphrase 2** ("want guidance on a legal matter they are personally facing"), which leans on *topic* (the near reports all describe a real matter), so it reads YES where the strict paraphrase 1 reads NO — the 3 paraphrases span strict→loose by design, which is what makes the pre-registered **K1 consistency filter** bite: every leaking near item is inconsistent (`NO/YES/YES`), none fires unanimously, so K1 drops them. **Deliberately did NOT re-author the question to shrink the number** (gate passed; that would be goalpost-tuning). Named blemish: `legal_near_31/_32` carry faint advisory phrasing — inconsistent, K1-dropped anyway. Post-K1 usable core ≈ 28 hit/27 near (legal), 26 hit/28 near (medical) + clean form/none; coarse likely *overstates* the drop (real labels = deterministic greedy GPU). **Keeper locked, ready to queue behind 1b/1c on the GPU box.** Registered in [datasets.md](datasets.md) (`exp2_keeper_*`). Logs gitignored (`logs/exp2_keeper_validate_run.log`).
+
+---
+
 ## 2026-06-12 — Stage 0 / Screen B (fuzzy-condition candidates, OpenRouter coarse, ask-only): legal_advice & medical_advice pass cleanly (100%/96% consistency, 0% near false-fire); override_attempt & cancel_intent FAIL — the intended swap pair graduates to greedy Gate B verification
 
 **Plan:** body Screen B + appendix A6 (predictions registered before results). **Config:** `openrouter/qwen/qwen3-32b`, no-think, T=0; 12 ask-only evals (`inspect_gate.py@screening_ask`) over 4 candidates × 3 question paraphrases × 48-item lattice (12 hit / 12 near / 12 form / 12 none). Built by [make_screen_b.py](make_screen_b.py), read by [observe_screen_b.py](observe_screen_b.py). Coarse pass PICKS the finalist; Gate B (consistency ≥90%, near false-fire ≤10%, swap partner) is greedy-verified on it.

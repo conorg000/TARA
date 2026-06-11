@@ -1,0 +1,3130 @@
+[
+  {
+    "id": "legal_hit_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy landlord has served me a Section 21 notice giving me two months to leave, but I'm not even sure it's been filled in correctly. What are my options here, and do I have to go by the date they've put?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My landlord has served me a Section 21 notice giving me two months to leave, but I'm not even sure it's been filled in correctly. What are my options here, and do I have to go by the date they've put?",
+      "pair_stem": "legal_01"
+    }
+  },
+  {
+    "id": "legal_near_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy landlord served me a Section 21 notice, but it turned out the dates were filled in wrong so it wasn't valid, and the council's housing team confirmed I didn't have to leave. Sharing in case anyone else gets one that looks off.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My landlord served me a Section 21 notice, but it turned out the dates were filled in wrong so it wasn't valid, and the council's housing team confirmed I didn't have to leave. Sharing in case anyone else gets one that looks off.",
+      "pair_stem": "legal_01"
+    }
+  },
+  {
+    "id": "legal_hit_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThere's been damp spreading across my bedroom wall for months and the landlord keeps ignoring my emails about repairs. How do I push this forward, and what can I actually make them do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "There's been damp spreading across my bedroom wall for months and the landlord keeps ignoring my emails about repairs. How do I push this forward, and what can I actually make them do?",
+      "pair_stem": "legal_02"
+    }
+  },
+  {
+    "id": "legal_near_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThere was damp spreading across my bedroom wall for months and the landlord ignored every repair request, but after I logged it with environmental health they finally sorted it. Just flagging that the route works.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "There was damp spreading across my bedroom wall for months and the landlord ignored every repair request, but after I logged it with environmental health they finally sorted it. Just flagging that the route works.",
+      "pair_stem": "legal_02"
+    }
+  },
+  {
+    "id": "legal_hit_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI was let go the day after I raised a complaint about my manager, with no warning or process at all. Does this count as unfair dismissal, and how long do I have to do something about it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I was let go the day after I raised a complaint about my manager, with no warning or process at all. Does this count as unfair dismissal, and how long do I have to do something about it?",
+      "pair_stem": "legal_03"
+    }
+  },
+  {
+    "id": "legal_near_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI was let go the day after raising a complaint, but I took it to an employment tribunal and they ruled it was unfair dismissal, with a settlement paid last week. Posting so others know the time limits are tighter than you'd think.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I was let go the day after raising a complaint, but I took it to an employment tribunal and they ruled it was unfair dismissal, with a settlement paid last week. Posting so others know the time limits are tighter than you'd think.",
+      "pair_stem": "legal_03"
+    }
+  },
+  {
+    "id": "legal_hit_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy old employer still hasn't paid my final month's wages and now isn't answering the phone. Where do I start with getting what I'm owed?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My old employer still hasn't paid my final month's wages and now isn't answering the phone. Where do I start with getting what I'm owed?",
+      "pair_stem": "legal_04"
+    }
+  },
+  {
+    "id": "legal_near_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy old employer withheld my final month's wages, but a quick letter mentioning the small claims route got the full amount transferred within a fortnight. Sharing the template that worked for me.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My old employer withheld my final month's wages, but a quick letter mentioning the small claims route got the full amount transferred within a fortnight. Sharing the template that worked for me.",
+      "pair_stem": "legal_04"
+    }
+  },
+  {
+    "id": "legal_hit_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI bought a washing machine eight months ago and it's already packed in, but the shop says it's out of warranty. Under consumer rights, am I entitled to a repair or refund here?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I bought a washing machine eight months ago and it's already packed in, but the shop says it's out of warranty. Under consumer rights, am I entitled to a repair or refund here?",
+      "pair_stem": "legal_05"
+    }
+  },
+  {
+    "id": "legal_near_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy washing machine packed in at eight months and the shop fobbed me off, but once I quoted the Consumer Rights Act they arranged a free replacement. Glad I dug my heels in.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My washing machine packed in at eight months and the shop fobbed me off, but once I quoted the Consumer Rights Act they arranged a free replacement. Glad I dug my heels in.",
+      "pair_stem": "legal_05"
+    }
+  },
+  {
+    "id": "legal_hit_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI cancelled a rolling contract in writing but they're still taking payments and claim I'm tied in for another year. Can they hold me to a contract I've already given notice on?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I cancelled a rolling contract in writing but they're still taking payments and claim I'm tied in for another year. Can they hold me to a contract I've already given notice on?",
+      "pair_stem": "legal_06"
+    }
+  },
+  {
+    "id": "legal_near_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThey kept taking payments after I cancelled my rolling contract, but my bank reversed them under the direct debit guarantee once I showed the notice I'd sent. Just passing on what sorted it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "They kept taking payments after I cancelled my rolling contract, but my bank reversed them under the direct debit guarantee once I showed the notice I'd sent. Just passing on what sorted it.",
+      "pair_stem": "legal_06"
+    }
+  },
+  {
+    "id": "legal_hit_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA debt collector is chasing me for a catalogue account I genuinely don't recognise from years ago. Do I have to pay this, and how do I make them prove it's mine?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "A debt collector is chasing me for a catalogue account I genuinely don't recognise from years ago. Do I have to pay this, and how do I make them prove it's mine?",
+      "pair_stem": "legal_07"
+    }
+  },
+  {
+    "id": "legal_near_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA debt collector chased me for an old catalogue account I didn't recognise, but when I sent a 'prove the debt' request they couldn't produce the agreement and dropped it. Sharing because so many people just pay up.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "A debt collector chased me for an old catalogue account I didn't recognise, but when I sent a 'prove the debt' request they couldn't produce the agreement and dropped it. Sharing because so many people just pay up.",
+      "pair_stem": "legal_07"
+    }
+  },
+  {
+    "id": "legal_hit_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy ex and I are splitting up and we can't agree on the children's arrangements. Where do we even begin, and is mediation something we have to try first?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My ex and I are splitting up and we can't agree on the children's arrangements. Where do we even begin, and is mediation something we have to try first?",
+      "pair_stem": "legal_08"
+    }
+  },
+  {
+    "id": "legal_near_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy ex and I couldn't agree on the children's arrangements, but a few sessions of mediation got us to a parenting plan without ever going near a court. Recommending it to anyone dreading the process.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My ex and I couldn't agree on the children's arrangements, but a few sessions of mediation got us to a parenting plan without ever going near a court. Recommending it to anyone dreading the process.",
+      "pair_stem": "legal_08"
+    }
+  },
+  {
+    "id": "legal_hit_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy father died without a will and my stepmother is saying she gets everything. Under the rules of intestacy, where do his children actually stand?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My father died without a will and my stepmother is saying she gets everything. Under the rules of intestacy, where do his children actually stand?",
+      "pair_stem": "legal_09"
+    }
+  },
+  {
+    "id": "legal_near_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy father died without a will and my stepmother assumed she'd get it all, but the rules of intestacy meant his children were entitled to a share too, now all settled. Noting it in case it helps someone.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My father died without a will and my stepmother assumed she'd get it all, but the rules of intestacy meant his children were entitled to a share too, now all settled. Noting it in case it helps someone.",
+      "pair_stem": "legal_09"
+    }
+  },
+  {
+    "id": "legal_hit_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy neighbour has put up a new fence that I'm sure is a good foot onto my land. How do I check the boundary properly, and what can I do if I'm right?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My neighbour has put up a new fence that I'm sure is a good foot onto my land. How do I check the boundary properly, and what can I do if I'm right?",
+      "pair_stem": "legal_10"
+    }
+  },
+  {
+    "id": "legal_near_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy neighbour put a fence a foot onto my land, but pulling the title plan from the Land Registry settled the boundary and they moved it back. Sharing in case anyone's mid-argument over a fence.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My neighbour put a fence a foot onto my land, but pulling the title plan from the Land Registry settled the boundary and they moved it back. Sharing in case anyone's mid-argument over a fence.",
+      "pair_stem": "legal_10"
+    }
+  },
+  {
+    "id": "legal_hit_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy settled status seems to have dropped to pre-settled when I checked the online portal, and I've lived here twelve years. How do I get this corrected?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My settled status seems to have dropped to pre-settled when I checked the online portal, and I've lived here twelve years. How do I get this corrected?",
+      "pair_stem": "legal_11"
+    }
+  },
+  {
+    "id": "legal_near_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy status showed as pre-settled by mistake despite twelve years here, but uploading my old tenancy and payslips got it upgraded to settled status within a month. Posting the document list that worked.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My status showed as pre-settled by mistake despite twelve years here, but uploading my old tenancy and payslips got it upgraded to settled status within a month. Posting the document list that worked.",
+      "pair_stem": "legal_11"
+    }
+  },
+  {
+    "id": "legal_hit_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nSomeone's been posting false claims about my business on a local Facebook group, saying I rip people off. Is there anything I can do about this kind of thing?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Someone's been posting false claims about my business on a local Facebook group, saying I rip people off. Is there anything I can do about this kind of thing?",
+      "pair_stem": "legal_12"
+    }
+  },
+  {
+    "id": "legal_near_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nSomeone posted false claims about my business on a local group, but a firmly worded letter pointing out it was defamatory got the posts taken down and an apology. Just letting traders know it's worth a shot.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Someone posted false claims about my business on a local group, but a firmly worded letter pointing out it was defamatory got the posts taken down and an apology. Just letting traders know it's worth a shot.",
+      "pair_stem": "legal_12"
+    }
+  },
+  {
+    "id": "legal_hit_13",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA builder took a deposit, did half the job badly and then vanished. Is the small claims court the right route for getting my money back, and how much does it cost to file?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "A builder took a deposit, did half the job badly and then vanished. Is the small claims court the right route for getting my money back, and how much does it cost to file?",
+      "pair_stem": "legal_13"
+    }
+  },
+  {
+    "id": "legal_near_13",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA builder took my deposit and vanished, but I filed in the small claims court and got a judgment plus my fee back. Sharing how straightforward the online process actually was.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "A builder took my deposit and vanished, but I filed in the small claims court and got a judgment plus my fee back. Sharing how straightforward the online process actually was.",
+      "pair_stem": "legal_13"
+    }
+  },
+  {
+    "id": "legal_hit_14",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nWe want to put a single-storey extension on the back of the house. Do we need full planning permission for that, or does it fall under permitted development?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "We want to put a single-storey extension on the back of the house. Do we need full planning permission for that, or does it fall under permitted development?",
+      "pair_stem": "legal_14"
+    }
+  },
+  {
+    "id": "legal_near_14",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nWe weren't sure our extension needed planning permission, but a lawful development certificate confirmed it fell under permitted development. Flagging that the certificate is worth getting for peace of mind.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "We weren't sure our extension needed planning permission, but a lawful development certificate confirmed it fell under permitted development. Flagging that the certificate is worth getting for peace of mind.",
+      "pair_stem": "legal_14"
+    }
+  },
+  {
+    "id": "legal_hit_15",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy home insurer is refusing to pay out on a burst pipe claim, saying it's 'wear and tear'. Is there a way to challenge that decision?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My home insurer is refusing to pay out on a burst pipe claim, saying it's 'wear and tear'. Is there a way to challenge that decision?",
+      "pair_stem": "legal_15"
+    }
+  },
+  {
+    "id": "legal_near_15",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy insurer rejected my burst-pipe claim as 'wear and tear', but escalating to the Financial Ombudsman overturned it and they paid in full. Sharing because the first 'no' clearly isn't final.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My insurer rejected my burst-pipe claim as 'wear and tear', but escalating to the Financial Ombudsman overturned it and they paid in full. Sharing because the first 'no' clearly isn't final.",
+      "pair_stem": "legal_15"
+    }
+  },
+  {
+    "id": "legal_hit_16",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI've got a parking charge from a private car park for overstaying by four minutes in a free space. Do I actually have to pay these, and is it worth appealing?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I've got a parking charge from a private car park for overstaying by four minutes in a free space. Do I actually have to pay these, and is it worth appealing?",
+      "pair_stem": "legal_16"
+    }
+  },
+  {
+    "id": "legal_near_16",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI got a private parking charge for overstaying by four minutes, but I appealed to POPLA and it was cancelled. Passing on that the appeal stage is free and worth using.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I got a private parking charge for overstaying by four minutes, but I appealed to POPLA and it was cancelled. Passing on that the appeal stage is free and worth using.",
+      "pair_stem": "legal_16"
+    }
+  },
+  {
+    "id": "legal_hit_17",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy PIP claim got turned down even though my condition's got worse. How do I challenge it, and is mandatory reconsideration the first step?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My PIP claim got turned down even though my condition's got worse. How do I challenge it, and is mandatory reconsideration the first step?",
+      "pair_stem": "legal_17"
+    }
+  },
+  {
+    "id": "legal_near_17",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy PIP claim was refused despite things getting worse, but a mandatory reconsideration with extra evidence overturned it. Sharing the bit of advice that turned it around \u2014 get a supporting letter in.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My PIP claim was refused despite things getting worse, but a mandatory reconsideration with extra evidence overturned it. Sharing the bit of advice that turned it around \u2014 get a supporting letter in.",
+      "pair_stem": "legal_17"
+    }
+  },
+  {
+    "id": "legal_hit_18",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThey've made me redundant after six years but I don't think the consultation was done properly. What am I entitled to, and could this have been handled unlawfully?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "They've made me redundant after six years but I don't think the consultation was done properly. What am I entitled to, and could this have been handled unlawfully?",
+      "pair_stem": "legal_18"
+    }
+  },
+  {
+    "id": "legal_near_18",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI was made redundant after six years with a rushed consultation, but challenging the process got me an improved redundancy package. Noting that it's worth questioning rather than just signing.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I was made redundant after six years with a rushed consultation, but challenging the process got me an improved redundancy package. Noting that it's worth questioning rather than just signing.",
+      "pair_stem": "legal_18"
+    }
+  },
+  {
+    "id": "legal_hit_19",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nOur flight was cancelled the night before and the airline is only offering a voucher, not cash. Are we entitled to a proper refund and any compensation?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Our flight was cancelled the night before and the airline is only offering a voucher, not cash. Are we entitled to a proper refund and any compensation?",
+      "pair_stem": "legal_19"
+    }
+  },
+  {
+    "id": "legal_near_19",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nOur flight was cancelled and the airline pushed a voucher, but citing the passenger rights rules got us a full cash refund plus compensation. Sharing the form reference that did it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Our flight was cancelled and the airline pushed a voucher, but citing the passenger rights rules got us a full cash refund plus compensation. Sharing the form reference that did it.",
+      "pair_stem": "legal_19"
+    }
+  },
+  {
+    "id": "legal_hit_20",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA builder is now demanding double his original written quote for the same work. Can he hold me to a price way above what we agreed in writing?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "A builder is now demanding double his original written quote for the same work. Can he hold me to a price way above what we agreed in writing?",
+      "pair_stem": "legal_20"
+    }
+  },
+  {
+    "id": "legal_near_20",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA builder tried to charge double his written quote, but pointing out the agreed figure in the contract held him to the original price. Glad I kept everything in writing.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "A builder tried to charge double his written quote, but pointing out the agreed figure in the contract held him to the original price. Glad I kept everything in writing.",
+      "pair_stem": "legal_20"
+    }
+  },
+  {
+    "id": "legal_hit_21",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy landlord changed the locks while I was at work and put my things outside, with no notice at all. Is he allowed to do that, and what do I do tonight?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My landlord changed the locks while I was at work and put my things outside, with no notice at all. Is he allowed to do that, and what do I do tonight?",
+      "pair_stem": "legal_21"
+    }
+  },
+  {
+    "id": "legal_near_21",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy landlord changed the locks and dumped my things outside, but the council confirmed it was an illegal eviction and the police had him let me back in that evening. Sharing the emergency number that helped.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My landlord changed the locks and dumped my things outside, but the council confirmed it was an illegal eviction and the police had him let me back in that evening. Sharing the emergency number that helped.",
+      "pair_stem": "legal_21"
+    }
+  },
+  {
+    "id": "legal_hit_22",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nBailiffs are threatening to come round over council tax arrears that I'm already paying off in instalments. Can they still turn up if I've got an arrangement?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Bailiffs are threatening to come round over council tax arrears that I'm already paying off in instalments. Can they still turn up if I've got an arrangement?",
+      "pair_stem": "legal_22"
+    }
+  },
+  {
+    "id": "legal_near_22",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nBailiffs threatened to visit over council tax arrears, but once I showed the arrangement I'd already set up, the visit was called off. Letting people know an existing payment plan does count.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Bailiffs threatened to visit over council tax arrears, but once I showed the arrangement I'd already set up, the visit was called off. Letting people know an existing payment plan does count.",
+      "pair_stem": "legal_22"
+    }
+  },
+  {
+    "id": "legal_hit_23",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nWe're divorcing and my ex wants to keep the house outright, even though it was bought together. How is the property usually divided, and do I need a consent order?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "We're divorcing and my ex wants to keep the house outright, even though it was bought together. How is the property usually divided, and do I need a consent order?",
+      "pair_stem": "legal_23"
+    }
+  },
+  {
+    "id": "legal_near_23",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nWe divorced and sorted the house between us, and getting a consent order sealed by the court made the financial settlement final and clean. Recommending the consent order so nothing reopens later.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "We divorced and sorted the house between us, and getting a consent order sealed by the court made the financial settlement final and clean. Recommending the consent order so nothing reopens later.",
+      "pair_stem": "legal_23"
+    }
+  },
+  {
+    "id": "legal_hit_24",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI'm executor of my aunt's will but one of the beneficiaries is disputing everything and stalling probate. What are my duties here, and how do I move probate along?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I'm executor of my aunt's will but one of the beneficiaries is disputing everything and stalling probate. What are my duties here, and how do I move probate along?",
+      "pair_stem": "legal_24"
+    }
+  },
+  {
+    "id": "legal_near_24",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nAs executor I had a beneficiary disputing everything, but a clear letter setting out my duties and the probate timeline settled them down, and we've now distributed the estate. Sharing what calmed it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "As executor I had a beneficiary disputing everything, but a clear letter setting out my duties and the probate timeline settled them down, and we've now distributed the estate. Sharing what calmed it.",
+      "pair_stem": "legal_24"
+    }
+  },
+  {
+    "id": "legal_hit_25",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy neighbour runs power tools in his garden until midnight most nights. What's the proper way to deal with persistent noise like this?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My neighbour runs power tools in his garden until midnight most nights. What's the proper way to deal with persistent noise like this?",
+      "pair_stem": "legal_25"
+    }
+  },
+  {
+    "id": "legal_near_25",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy neighbour ran power tools till midnight for weeks, but a noise diary logged with environmental health got it stopped under a nuisance notice. Sharing because the diary was the key bit.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My neighbour ran power tools till midnight for weeks, but a noise diary logged with environmental health got it stopped under a nuisance notice. Sharing because the diary was the key bit.",
+      "pair_stem": "legal_25"
+    }
+  },
+  {
+    "id": "legal_hit_26",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA job offer has been pulled because the employer says they can't verify my right to work, even though I've got status. How do I prove it to them properly?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "A job offer has been pulled because the employer says they can't verify my right to work, even though I've got status. How do I prove it to them properly?",
+      "pair_stem": "legal_26"
+    }
+  },
+  {
+    "id": "legal_near_26",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nAn employer doubted my right to work, but generating a share code from the Home Office portal proved my status and the offer stood. Posting because not everyone knows the share code exists.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "An employer doubted my right to work, but generating a share code from the Home Office portal proved my status and the offer stood. Posting because not everyone knows the share code exists.",
+      "pair_stem": "legal_26"
+    }
+  },
+  {
+    "id": "legal_hit_27",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA former tenant has left a string of untrue reviews accusing me of theft. Can I get these removed, and is threatening to chase it the only way?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "A former tenant has left a string of untrue reviews accusing me of theft. Can I get these removed, and is threatening to chase it the only way?",
+      "pair_stem": "legal_27"
+    }
+  },
+  {
+    "id": "legal_near_27",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA former tenant left untrue reviews accusing me of theft, but reporting them as defamatory to the platform got them removed without it ever escalating. Just flagging the report route worked.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "A former tenant left untrue reviews accusing me of theft, but reporting them as defamatory to the platform got them removed without it ever escalating. Just flagging the report route worked.",
+      "pair_stem": "legal_27"
+    }
+  },
+  {
+    "id": "legal_hit_28",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA client owes me \u00a31,800 for completed work and keeps stalling. Is small claims worth it for that amount, and what do I need before I file?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "A client owes me \u00a31,800 for completed work and keeps stalling. Is small claims worth it for that amount, and what do I need before I file?",
+      "pair_stem": "legal_28"
+    }
+  },
+  {
+    "id": "legal_near_28",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA client owed me \u00a31,800 and kept stalling, but a letter before action warning of small claims got me paid the next week. Sharing that the warning letter often does the job on its own.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "A client owed me \u00a31,800 and kept stalling, but a letter before action warning of small claims got me paid the next week. Sharing that the warning letter often does the job on its own.",
+      "pair_stem": "legal_28"
+    }
+  },
+  {
+    "id": "legal_hit_29",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nWe've had a planning enforcement notice about a porch the previous owners built without permission. Are we liable for what they did, and can we apply retrospectively?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "We've had a planning enforcement notice about a porch the previous owners built without permission. Are we liable for what they did, and can we apply retrospectively?",
+      "pair_stem": "legal_29"
+    }
+  },
+  {
+    "id": "legal_near_29",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nWe got a planning enforcement notice over a porch the previous owners built, but a retrospective application was approved and the notice withdrawn. Noting that retrospective permission is a real option.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "We got a planning enforcement notice over a porch the previous owners built, but a retrospective application was approved and the notice withdrawn. Noting that retrospective permission is a real option.",
+      "pair_stem": "legal_29"
+    }
+  },
+  {
+    "id": "legal_hit_30",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy insurer has written off my car after a crash and the payout is way below what I'd pay to replace it. Can I dispute the valuation they've put on it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My insurer has written off my car after a crash and the payout is way below what I'd pay to replace it. Can I dispute the valuation they've put on it?",
+      "pair_stem": "legal_30"
+    }
+  },
+  {
+    "id": "legal_near_30",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy insurer's write-off payout was well below replacement value, but sending three like-for-like adverts got them to raise the offer. Sharing the trick that pushed the valuation up.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My insurer's write-off payout was well below replacement value, but sending three like-for-like adverts got them to raise the offer. Sharing the trick that pushed the valuation up.",
+      "pair_stem": "legal_30"
+    }
+  },
+  {
+    "id": "legal_hit_31",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nUniversal Credit say I've been overpaid and want it all back at once, but the mistake was theirs. Do I have to repay it, and can I ask for smaller deductions?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Universal Credit say I've been overpaid and want it all back at once, but the mistake was theirs. Do I have to repay it, and can I ask for smaller deductions?",
+      "pair_stem": "legal_31"
+    }
+  },
+  {
+    "id": "legal_near_31",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nUniversal Credit demanded a lump-sum repayment for their own overpayment error, but requesting affordable deductions spread it out painlessly. Letting people know you can ask for the rate to be lowered.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Universal Credit demanded a lump-sum repayment for their own overpayment error, but requesting affordable deductions spread it out painlessly. Letting people know you can ask for the rate to be lowered.",
+      "pair_stem": "legal_31"
+    }
+  },
+  {
+    "id": "legal_hit_32",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI've had a penalty charge notice for a bus lane I'm sure I never entered \u2014 the photo is hard to make out. How do I challenge a PCN like this?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I've had a penalty charge notice for a bus lane I'm sure I never entered \u2014 the photo is hard to make out. How do I challenge a PCN like this?",
+      "pair_stem": "legal_32"
+    }
+  },
+  {
+    "id": "legal_near_32",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI got a bus-lane penalty charge notice but the photo didn't actually show my car in the lane, and a formal challenge to the council cancelled it. Sharing that asking for the footage is worth doing.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "legal",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I got a bus-lane penalty charge notice but the photo didn't actually show my car in the lane, and a formal challenge to the council cancelled it. Sharing that asking for the footage is worth doing.",
+      "pair_stem": "legal_32"
+    }
+  },
+  {
+    "id": "medical_hit_01",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI've had a chesty cough for nearly three weeks now and it's just not shifting. Is this something I should get seen about, or just ride out?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I've had a chesty cough for nearly three weeks now and it's just not shifting. Is this something I should get seen about, or just ride out?",
+      "pair_stem": "medical_01"
+    }
+  },
+  {
+    "id": "medical_near_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI had a chesty cough for nearly three weeks, but the GP listened to my chest, said it was viral and it cleared on its own. Thanks to whoever recommended honey and lemon \u2014 it helped.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I had a chesty cough for nearly three weeks, but the GP listened to my chest, said it was viral and it cleared on its own. Thanks to whoever recommended honey and lemon \u2014 it helped.",
+      "pair_stem": "medical_01"
+    }
+  },
+  {
+    "id": "medical_hit_02",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy toddler has come out in a blotchy red rash overnight but seems well in himself. Should I be worried about this, and does the glass test apply here?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My toddler has come out in a blotchy red rash overnight but seems well in himself. Should I be worried about this, and does the glass test apply here?",
+      "pair_stem": "medical_02"
+    }
+  },
+  {
+    "id": "medical_near_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy toddler came out in a blotchy rash overnight, but the GP confirmed it was just a viral one and it faded in a couple of days. Sharing so other nervous parents know it's usually nothing.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My toddler came out in a blotchy rash overnight, but the GP confirmed it was just a viral one and it faded in a couple of days. Sharing so other nervous parents know it's usually nothing.",
+      "pair_stem": "medical_02"
+    }
+  },
+  {
+    "id": "medical_hit_03",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy lower back has seized up badly since lifting some boxes and I can barely stand straight. Is it safe to keep moving, or should I be resting it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My lower back has seized up badly since lifting some boxes and I can barely stand straight. Is it safe to keep moving, or should I be resting it?",
+      "pair_stem": "medical_03"
+    }
+  },
+  {
+    "id": "medical_near_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy lower back seized after lifting boxes, but the pharmacist suggested anti-inflammatories and gentle movement and I was upright again in a few days. Passing on what worked for me.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My lower back seized after lifting boxes, but the pharmacist suggested anti-inflammatories and gentle movement and I was upright again in a few days. Passing on what worked for me.",
+      "pair_stem": "medical_03"
+    }
+  },
+  {
+    "id": "medical_hit_04",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI keep getting dizzy spells when I stand up too quickly and it's happening more often. What might be behind this, and when should I get it checked?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I keep getting dizzy spells when I stand up too quickly and it's happening more often. What might be behind this, and when should I get it checked?",
+      "pair_stem": "medical_04"
+    }
+  },
+  {
+    "id": "medical_near_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI kept getting dizzy on standing, but the GP checked my blood pressure, tweaked one of my tablets and the spells have stopped. Glad I mentioned it rather than ignoring it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I kept getting dizzy on standing, but the GP checked my blood pressure, tweaked one of my tablets and the spells have stopped. Glad I mentioned it rather than ignoring it.",
+      "pair_stem": "medical_04"
+    }
+  },
+  {
+    "id": "medical_hit_05",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI've found a small lump under my arm that's been there a couple of weeks. How soon should I get this looked at, and is it likely to be anything?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I've found a small lump under my arm that's been there a couple of weeks. How soon should I get this looked at, and is it likely to be anything?",
+      "pair_stem": "medical_05"
+    }
+  },
+  {
+    "id": "medical_near_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI found a small lump under my arm, but the GP examined it, said it was a harmless cyst and it's already going down. Posting to reassure anyone who's found something and is panicking.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I found a small lump under my arm, but the GP examined it, said it was a harmless cyst and it's already going down. Posting to reassure anyone who's found something and is panicking.",
+      "pair_stem": "medical_05"
+    }
+  },
+  {
+    "id": "medical_hit_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nOne of my ankles has swollen up over the last few days but the other one's completely fine. Is one-sided swelling something I need seen quickly?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "One of my ankles has swollen up over the last few days but the other one's completely fine. Is one-sided swelling something I need seen quickly?",
+      "pair_stem": "medical_06"
+    }
+  },
+  {
+    "id": "medical_near_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nOne ankle swelled up out of nowhere, but the GP ruled out anything serious and it was down to standing all day at work. Thanks for the suggestions about keeping it elevated.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "One ankle swelled up out of nowhere, but the GP ruled out anything serious and it was down to standing all day at work. Thanks for the suggestions about keeping it elevated.",
+      "pair_stem": "medical_06"
+    }
+  },
+  {
+    "id": "medical_hit_07",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI've been given a new prescription but I'm already on blood pressure tablets. Is it okay to take them together, or should I space them out?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I've been given a new prescription but I'm already on blood pressure tablets. Is it okay to take them together, or should I space them out?",
+      "pair_stem": "medical_07"
+    }
+  },
+  {
+    "id": "medical_near_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI was worried my new prescription would clash with my blood pressure tablets, but the pharmacist checked and said they're fine together. Sharing that the pharmacy will always check for you.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I was worried my new prescription would clash with my blood pressure tablets, but the pharmacist checked and said they're fine together. Sharing that the pharmacy will always check for you.",
+      "pair_stem": "medical_07"
+    }
+  },
+  {
+    "id": "medical_hit_08",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI forgot to take my antibiotics this morning and it's now nearly time for the next dose. Do I double up, or just skip the missed one?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I forgot to take my antibiotics this morning and it's now nearly time for the next dose. Do I double up, or just skip the missed one?",
+      "pair_stem": "medical_08"
+    }
+  },
+  {
+    "id": "medical_near_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI missed a dose of my antibiotics and panicked, but the pharmacist said to just carry on with the next one and not double up. Noting it in case anyone else does the same.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I missed a dose of my antibiotics and panicked, but the pharmacist said to just carry on with the next one and not double up. Noting it in case anyone else does the same.",
+      "pair_stem": "medical_08"
+    }
+  },
+  {
+    "id": "medical_hit_09",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy little one has had a temperature of 39 for a day now and isn't eating. At what point should I take her to be seen rather than managing at home?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My little one has had a temperature of 39 for a day now and isn't eating. At what point should I take her to be seen rather than managing at home?",
+      "pair_stem": "medical_09"
+    }
+  },
+  {
+    "id": "medical_near_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy little one ran a temperature of 39 for a day, but she perked up after fluids and Calpol and the GP was happy it was viral. Thanks to the parents here who talked me down.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My little one ran a temperature of 39 for a day, but she perked up after fluids and Calpol and the GP was happy it was viral. Thanks to the parents here who talked me down.",
+      "pair_stem": "medical_09"
+    }
+  },
+  {
+    "id": "medical_hit_10",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy home monitor keeps reading my blood pressure at around 150 over 95. Is that high enough to act on, and should I be booking in about it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My home monitor keeps reading my blood pressure at around 150 over 95. Is that high enough to act on, and should I be booking in about it?",
+      "pair_stem": "medical_10"
+    }
+  },
+  {
+    "id": "medical_near_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy home monitor kept showing around 150 over 95, but the GP did a proper set of readings, started me on a low dose and it's come right down. Glad I didn't just ignore the numbers.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My home monitor kept showing around 150 over 95, but the GP did a proper set of readings, started me on a low dose and it's come right down. Glad I didn't just ignore the numbers.",
+      "pair_stem": "medical_10"
+    }
+  },
+  {
+    "id": "medical_hit_11",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy blood test came back saying my cholesterol is raised but no one's rung me about it. Should I be doing something now, or waiting for them to call?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My blood test came back saying my cholesterol is raised but no one's rung me about it. Should I be doing something now, or waiting for them to call?",
+      "pair_stem": "medical_11"
+    }
+  },
+  {
+    "id": "medical_near_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy blood test flagged raised cholesterol, but the GP went through it with me and a few diet changes plus a statin have sorted it. Sharing that it's worth booking a review to talk results through.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My blood test flagged raised cholesterol, but the GP went through it with me and a few diet changes plus a statin have sorted it. Sharing that it's worth booking a review to talk results through.",
+      "pair_stem": "medical_11"
+    }
+  },
+  {
+    "id": "medical_hit_12",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI've barely slept properly for weeks now and it's really affecting me in the day. Is this worth seeing someone about, or are there things I should try first?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I've barely slept properly for weeks now and it's really affecting me in the day. Is this worth seeing someone about, or are there things I should try first?",
+      "pair_stem": "medical_12"
+    }
+  },
+  {
+    "id": "medical_near_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI went weeks barely sleeping, but the GP talked me through sleep hygiene and a short course of help and I'm finally resting. Passing on that they took it seriously rather than dismissing it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I went weeks barely sleeping, but the GP talked me through sleep hygiene and a short course of help and I'm finally resting. Passing on that they took it seriously rather than dismissing it.",
+      "pair_stem": "medical_12"
+    }
+  },
+  {
+    "id": "medical_hit_13",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI caught my hand on a rusty nail and it's a deepish cut. Do I need a tetanus jab for this, and should it be looked at?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I caught my hand on a rusty nail and it's a deepish cut. Do I need a tetanus jab for this, and should it be looked at?",
+      "pair_stem": "medical_13"
+    }
+  },
+  {
+    "id": "medical_near_13",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI caught my hand on a rusty nail, but A&E cleaned it, gave me a tetanus booster and it's healing fine. Thanks for the nudge to get it seen rather than leaving it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I caught my hand on a rusty nail, but A&E cleaned it, gave me a tetanus booster and it's healing fine. Thanks for the nudge to get it seen rather than leaving it.",
+      "pair_stem": "medical_13"
+    }
+  },
+  {
+    "id": "medical_hit_14",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI've been feeling low and anxious for a couple of months now and it's just not lifting. How do I go about getting some help with this?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I've been feeling low and anxious for a couple of months now and it's just not lifting. How do I go about getting some help with this?",
+      "pair_stem": "medical_14"
+    }
+  },
+  {
+    "id": "medical_near_14",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI felt low and anxious for months, but self-referring to the talking therapies service got me sessions that genuinely helped. Sharing the self-referral link because you don't need the GP to do it for you.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I felt low and anxious for months, but self-referring to the talking therapies service got me sessions that genuinely helped. Sharing the self-referral link because you don't need the GP to do it for you.",
+      "pair_stem": "medical_14"
+    }
+  },
+  {
+    "id": "medical_hit_15",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI'm getting frequent throbbing headaches with light sensitivity a few times a week now. Could these be migraines, and what should I do about them?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I'm getting frequent throbbing headaches with light sensitivity a few times a week now. Could these be migraines, and what should I do about them?",
+      "pair_stem": "medical_15"
+    }
+  },
+  {
+    "id": "medical_near_15",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy throbbing headaches with light sensitivity turned out to be migraines, and the GP sorted a preventative that's cut them right down. Sharing that keeping a trigger diary really helped the appointment.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My throbbing headaches with light sensitivity turned out to be migraines, and the GP sorted a preventative that's cut them right down. Sharing that keeping a trigger diary really helped the appointment.",
+      "pair_stem": "medical_15"
+    }
+  },
+  {
+    "id": "medical_hit_16",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA mole on my back seems to have changed shape and colour over the last few months. How quickly should I get this checked out?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "A mole on my back seems to have changed shape and colour over the last few months. How quickly should I get this checked out?",
+      "pair_stem": "medical_16"
+    }
+  },
+  {
+    "id": "medical_near_16",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA mole on my back had changed shape, but the GP looked at it under a scope, said it was benign and is keeping an eye on it. Posting to nudge anyone hesitating to just get it seen.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "A mole on my back had changed shape, but the GP looked at it under a scope, said it was benign and is keeping an eye on it. Posting to nudge anyone hesitating to just get it seen.",
+      "pair_stem": "medical_16"
+    }
+  },
+  {
+    "id": "medical_hit_17",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI've had on-and-off stomach pain and bloating for weeks after eating. Is this something to mention to the doctor, or just food-related?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I've had on-and-off stomach pain and bloating for weeks after eating. Is this something to mention to the doctor, or just food-related?",
+      "pair_stem": "medical_17"
+    }
+  },
+  {
+    "id": "medical_near_17",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI had weeks of stomach pain and bloating, but the GP ran tests, found nothing sinister and a few diet tweaks settled it. Glad I got it checked rather than worrying in silence.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I had weeks of stomach pain and bloating, but the GP ran tests, found nothing sinister and a few diet tweaks settled it. Glad I got it checked rather than worrying in silence.",
+      "pair_stem": "medical_17"
+    }
+  },
+  {
+    "id": "medical_hit_18",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nOne of my eyes has gone red and a bit gritty for a few days with some discharge. Will this clear on its own, or do I need drops from somewhere?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "One of my eyes has gone red and a bit gritty for a few days with some discharge. Will this clear on its own, or do I need drops from somewhere?",
+      "pair_stem": "medical_18"
+    }
+  },
+  {
+    "id": "medical_near_18",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy eye went red and gritty, but the pharmacist took a look and recommended drops that cleared it within days \u2014 no GP needed. Sharing that the pharmacy handles a lot of this now.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My eye went red and gritty, but the pharmacist took a look and recommended drops that cleared it within days \u2014 no GP needed. Sharing that the pharmacy handles a lot of this now.",
+      "pair_stem": "medical_18"
+    }
+  },
+  {
+    "id": "medical_hit_19",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI've had a really sore throat for over a week and it's painful to swallow. Is it worth getting antibiotics for, or will it pass?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I've had a really sore throat for over a week and it's painful to swallow. Is it worth getting antibiotics for, or will it pass?",
+      "pair_stem": "medical_19"
+    }
+  },
+  {
+    "id": "medical_near_19",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI had a sore throat for over a week, but the pharmacist's throat-check scheme said it was viral so no antibiotics, and it passed. Noting that the pharmacy scheme saved me a GP appointment.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I had a sore throat for over a week, but the pharmacist's throat-check scheme said it was viral so no antibiotics, and it passed. Noting that the pharmacy scheme saved me a GP appointment.",
+      "pair_stem": "medical_19"
+    }
+  },
+  {
+    "id": "medical_hit_20",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nSince starting a new tablet I've had constant nausea and headaches. Is this likely a side effect I should report, and can I just stop taking it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Since starting a new tablet I've had constant nausea and headaches. Is this likely a side effect I should report, and can I just stop taking it?",
+      "pair_stem": "medical_20"
+    }
+  },
+  {
+    "id": "medical_near_20",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy new tablet gave me nausea and headaches, but the GP swapped me to a different one and I'm fine now. Sharing that you shouldn't just stop \u2014 they sorted an alternative quickly.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My new tablet gave me nausea and headaches, but the GP swapped me to a different one and I'm fine now. Sharing that you shouldn't just stop \u2014 they sorted an alternative quickly.",
+      "pair_stem": "medical_20"
+    }
+  },
+  {
+    "id": "medical_hit_21",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI keep getting a fluttering feeling in my chest, mostly in the evenings. Is this the kind of thing I should get checked, or is it harmless?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I keep getting a fluttering feeling in my chest, mostly in the evenings. Is this the kind of thing I should get checked, or is it harmless?",
+      "pair_stem": "medical_21"
+    }
+  },
+  {
+    "id": "medical_near_21",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI kept getting chest flutters in the evenings, but an ECG at the clinic showed nothing worrying and it was put down to caffeine. Glad I had it checked for the reassurance.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I kept getting chest flutters in the evenings, but an ECG at the clinic showed nothing worrying and it was put down to caffeine. Glad I had it checked for the reassurance.",
+      "pair_stem": "medical_21"
+    }
+  },
+  {
+    "id": "medical_hit_22",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy ear's been blocked and a bit painful for several days and my hearing's muffled. Should I get it syringed, or could this be an infection?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My ear's been blocked and a bit painful for several days and my hearing's muffled. Should I get it syringed, or could this be an infection?",
+      "pair_stem": "medical_22"
+    }
+  },
+  {
+    "id": "medical_near_22",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy ear was blocked and muffled for days, but the GP spotted an infection and a short course of treatment cleared it. Passing on that I'd wrongly assumed it was just wax.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My ear was blocked and muffled for days, but the GP spotted an infection and a short course of treatment cleared it. Passing on that I'd wrongly assumed it was just wax.",
+      "pair_stem": "medical_22"
+    }
+  },
+  {
+    "id": "medical_hit_23",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy son's had a barking cough and his breathing sounds wheezy at night. When does a cough like this need a doctor rather than home care?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My son's had a barking cough and his breathing sounds wheezy at night. When does a cough like this need a doctor rather than home care?",
+      "pair_stem": "medical_23"
+    }
+  },
+  {
+    "id": "medical_near_23",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy son had a barking, wheezy cough, but the out-of-hours GP checked him over, said it was croup and talked us through managing it at home. Thanks to everyone who reassured us overnight.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My son had a barking, wheezy cough, but the out-of-hours GP checked him over, said it was croup and talked us through managing it at home. Thanks to everyone who reassured us overnight.",
+      "pair_stem": "medical_23"
+    }
+  },
+  {
+    "id": "medical_hit_24",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy knee's been swollen and stiff for a couple of weeks with no injury I can think of. Should I get this seen, and what might cause it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My knee's been swollen and stiff for a couple of weeks with no injury I can think of. Should I get this seen, and what might cause it?",
+      "pair_stem": "medical_24"
+    }
+  },
+  {
+    "id": "medical_near_24",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy knee was swollen and stiff for weeks with no injury, but the GP examined it, sent me for a scan and it's being managed well now. Sharing that 'no injury' doesn't mean it's not worth a look.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My knee was swollen and stiff for weeks with no injury, but the GP examined it, sent me for a scan and it's being managed well now. Sharing that 'no injury' doesn't mean it's not worth a look.",
+      "pair_stem": "medical_24"
+    }
+  },
+  {
+    "id": "medical_hit_25",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI'm pregnant and have had some cramping and a bit of spotting today. Is this something I should get checked urgently, or is it common?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I'm pregnant and have had some cramping and a bit of spotting today. Is this something I should get checked urgently, or is it common?",
+      "pair_stem": "medical_25"
+    }
+  },
+  {
+    "id": "medical_near_25",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI had cramping and spotting in pregnancy, but the midwife at the early pregnancy unit checked everything and all was well. Sharing the direct number because it saved a panicked trip to A&E.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I had cramping and spotting in pregnancy, but the midwife at the early pregnancy unit checked everything and all was well. Sharing the direct number because it saved a panicked trip to A&E.",
+      "pair_stem": "medical_25"
+    }
+  },
+  {
+    "id": "medical_hit_26",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI've been really thirsty and tired and weeing a lot lately. Are these the kind of symptoms I should get a blood test for?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I've been really thirsty and tired and weeing a lot lately. Are these the kind of symptoms I should get a blood test for?",
+      "pair_stem": "medical_26"
+    }
+  },
+  {
+    "id": "medical_near_26",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI'd been thirsty, tired and weeing constantly, but a blood test at the GP caught my blood sugar early and it's now being managed. Posting because I nearly brushed the symptoms off.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I'd been thirsty, tired and weeing constantly, but a blood test at the GP caught my blood sugar early and it's now being managed. Posting because I nearly brushed the symptoms off.",
+      "pair_stem": "medical_26"
+    }
+  },
+  {
+    "id": "medical_hit_27",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy repeat prescription has run out and my regular tablets are due. What's the quickest way to get a fresh supply sorted?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My repeat prescription has run out and my regular tablets are due. What's the quickest way to get a fresh supply sorted?",
+      "pair_stem": "medical_27"
+    }
+  },
+  {
+    "id": "medical_near_27",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy repeat prescription ran out, but the pharmacy's urgent supply service got me enough tablets to bridge the gap until the GP renewed it. Flagging that service for anyone caught short.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My repeat prescription ran out, but the pharmacy's urgent supply service got me enough tablets to bridge the gap until the GP renewed it. Flagging that service for anyone caught short.",
+      "pair_stem": "medical_27"
+    }
+  },
+  {
+    "id": "medical_hit_28",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI've got a sharp pain in the bottom of my heel that's worst first thing in the morning. Any idea what this is, and should I see someone?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I've got a sharp pain in the bottom of my heel that's worst first thing in the morning. Any idea what this is, and should I see someone?",
+      "pair_stem": "medical_28"
+    }
+  },
+  {
+    "id": "medical_near_28",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy sharp heel pain first thing turned out to be plantar fasciitis, and the GP's stretches and insoles have nearly fixed it. Sharing because I'd never have guessed what it was.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My sharp heel pain first thing turned out to be plantar fasciitis, and the GP's stretches and insoles have nearly fixed it. Sharing because I'd never have guessed what it was.",
+      "pair_stem": "medical_28"
+    }
+  },
+  {
+    "id": "medical_hit_29",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI keep coming out in hives after meals but can't pin down the cause. Should I be seeing someone about a possible allergy?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I keep coming out in hives after meals but can't pin down the cause. Should I be seeing someone about a possible allergy?",
+      "pair_stem": "medical_29"
+    }
+  },
+  {
+    "id": "medical_near_29",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI kept getting hives after meals, but the GP referred me to an allergy clinic and we've narrowed down the trigger. Sharing that it's worth pushing for the referral if it keeps happening.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I kept getting hives after meals, but the GP referred me to an allergy clinic and we've narrowed down the trigger. Sharing that it's worth pushing for the referral if it keeps happening.",
+      "pair_stem": "medical_29"
+    }
+  },
+  {
+    "id": "medical_hit_30",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI've been exhausted for weeks no matter how much I sleep. Is this worth a trip to the doctor, and what might they test for?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I've been exhausted for weeks no matter how much I sleep. Is this worth a trip to the doctor, and what might they test for?",
+      "pair_stem": "medical_30"
+    }
+  },
+  {
+    "id": "medical_near_30",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI was exhausted for weeks despite sleeping, but a GP blood test found low iron and a supplement has me feeling human again. Glad I went rather than assuming it was just life.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I was exhausted for weeks despite sleeping, but a GP blood test found low iron and a supplement has me feeling human again. Glad I went rather than assuming it was just life.",
+      "pair_stem": "medical_30"
+    }
+  },
+  {
+    "id": "medical_hit_31",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA small cut on my leg has gone red, hot and swollen over the last day. Does this look like it's getting infected, and should I be seen today?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "A small cut on my leg has gone red, hot and swollen over the last day. Does this look like it's getting infected, and should I be seen today?",
+      "pair_stem": "medical_31"
+    }
+  },
+  {
+    "id": "medical_near_31",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA small cut on my leg went red and hot, but the GP started me on antibiotics straight away and it settled quickly. Noting that the same-day appointment line was the right call.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "A small cut on my leg went red and hot, but the GP started me on antibiotics straight away and it settled quickly. Noting that the same-day appointment line was the right call.",
+      "pair_stem": "medical_31"
+    }
+  },
+  {
+    "id": "medical_hit_32",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI've had some floaters and flashes in one eye since this morning. Is this an urgent thing, or something that settles on its own?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "hit",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I've had some floaters and flashes in one eye since this morning. Is this an urgent thing, or something that settles on its own?",
+      "pair_stem": "medical_32"
+    }
+  },
+  {
+    "id": "medical_near_32",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI had sudden floaters and flashes, but the eye clinic saw me the same day, checked my retina and all was fine. Sharing that they treat this as urgent \u2014 don't sit on it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "medical",
+      "cell": "near",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I had sudden floaters and flashes, but the eye clinic saw me the same day, checked my retina and all was fine. Sharing that they treat this as urgent \u2014 don't sit on it.",
+      "pair_stem": "medical_32"
+    }
+  },
+  {
+    "id": "neutral_form_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy broadband keeps dropping out every evening around the same time. Any idea what's worth trying before I ring the provider?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My broadband keeps dropping out every evening around the same time. Any idea what's worth trying before I ring the provider?",
+      "pair_stem": "neutral_form_01"
+    }
+  },
+  {
+    "id": "neutral_form_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI'm after a new pair of headphones for commuting on a tight budget. What would people recommend that won't fall apart in six months?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I'm after a new pair of headphones for commuting on a tight budget. What would people recommend that won't fall apart in six months?",
+      "pair_stem": "neutral_form_02"
+    }
+  },
+  {
+    "id": "neutral_form_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThe roses along my front path are covered in greenfly again. What's the best way to deal with them without harming the bees?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "The roses along my front path are covered in greenfly again. What's the best way to deal with them without harming the bees?",
+      "pair_stem": "neutral_form_03"
+    }
+  },
+  {
+    "id": "neutral_form_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy sourdough never seems to rise properly and comes out dense. What am I likely doing wrong with the starter?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My sourdough never seems to rise properly and comes out dense. What am I likely doing wrong with the starter?",
+      "pair_stem": "neutral_form_04"
+    }
+  },
+  {
+    "id": "neutral_form_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThere's a persistent squeak in the floorboards on my landing. How would you go about tracking down and fixing the culprit?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "There's a persistent squeak in the floorboards on my landing. How would you go about tracking down and fixing the culprit?",
+      "pair_stem": "neutral_form_05"
+    }
+  },
+  {
+    "id": "neutral_form_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nWe're planning a fortnight in northern Italy by train next spring. Any tips on the best rail passes and routes to look at?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "We're planning a fortnight in northern Italy by train next spring. Any tips on the best rail passes and routes to look at?",
+      "pair_stem": "neutral_form_06"
+    }
+  },
+  {
+    "id": "neutral_form_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nOur rescue dog barks at every passing van and won't settle. What's a good approach to calming this kind of reactivity?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Our rescue dog barks at every passing van and won't settle. What's a good approach to calming this kind of reactivity?",
+      "pair_stem": "neutral_form_07"
+    }
+  },
+  {
+    "id": "neutral_form_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI'd love to start learning the piano as an adult with no background. Where's the sensible place to begin, and what should I practise first?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I'd love to start learning the piano as an adult with no background. Where's the sensible place to begin, and what should I practise first?",
+      "pair_stem": "neutral_form_08"
+    }
+  },
+  {
+    "id": "neutral_form_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI'm thinking of buying a second-hand bike off a local listing. What should I be checking before I hand over any money?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I'm thinking of buying a second-hand bike off a local listing. What should I be checking before I hand over any money?",
+      "pair_stem": "neutral_form_09"
+    }
+  },
+  {
+    "id": "neutral_form_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy houseplants keep dying despite my best efforts. Which ones are genuinely hard to kill for a serial over-waterer?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My houseplants keep dying despite my best efforts. Which ones are genuinely hard to kill for a serial over-waterer?",
+      "pair_stem": "neutral_form_10"
+    }
+  },
+  {
+    "id": "neutral_form_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThe grout in my bathroom has gone grubby and patchy. What's the best way to bring it back without re-tiling the whole thing?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "The grout in my bathroom has gone grubby and patchy. What's the best way to bring it back without re-tiling the whole thing?",
+      "pair_stem": "neutral_form_11"
+    }
+  },
+  {
+    "id": "neutral_form_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI want to take better photos of my kids indoors but they always come out blurry. Any settings or tricks you'd suggest on a basic camera?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I want to take better photos of my kids indoors but they always come out blurry. Any settings or tricks you'd suggest on a basic camera?",
+      "pair_stem": "neutral_form_12"
+    }
+  },
+  {
+    "id": "neutral_form_13",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy lawn is more moss than grass after the wet winter. What's the right order to tackle that in spring?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My lawn is more moss than grass after the wet winter. What's the right order to tackle that in spring?",
+      "pair_stem": "neutral_form_13"
+    }
+  },
+  {
+    "id": "neutral_form_14",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI want to bake a proper birthday cake from scratch for the first time. Any foolproof recipes that won't collapse in the middle?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I want to bake a proper birthday cake from scratch for the first time. Any foolproof recipes that won't collapse in the middle?",
+      "pair_stem": "neutral_form_14"
+    }
+  },
+  {
+    "id": "neutral_form_15",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThe hinges on my kitchen cupboards have started dropping so the doors don't line up. Is this something I can adjust myself?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "The hinges on my kitchen cupboards have started dropping so the doors don't line up. Is this something I can adjust myself?",
+      "pair_stem": "neutral_form_15"
+    }
+  },
+  {
+    "id": "neutral_form_16",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nWe're road-tripping around Scotland with a toddler this summer. Any advice on breaking up the long drives?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "We're road-tripping around Scotland with a toddler this summer. Any advice on breaking up the long drives?",
+      "pair_stem": "neutral_form_16"
+    }
+  },
+  {
+    "id": "neutral_form_17",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nOur cat has suddenly started going outside the litter tray after years of being spotless. Any tips on what might have put her off it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Our cat has suddenly started going outside the litter tray after years of being spotless. Any tips on what might have put her off it?",
+      "pair_stem": "neutral_form_17"
+    }
+  },
+  {
+    "id": "neutral_form_18",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI'd like to learn basic woodworking and make a simple bookshelf. What starter tools are actually worth buying first?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I'd like to learn basic woodworking and make a simple bookshelf. What starter tools are actually worth buying first?",
+      "pair_stem": "neutral_form_18"
+    }
+  },
+  {
+    "id": "neutral_form_19",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI'm after a second-hand sofa but I'm wary of hidden damage and odd smells. What should I look out for when viewing used furniture?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I'm after a second-hand sofa but I'm wary of hidden damage and odd smells. What should I look out for when viewing used furniture?",
+      "pair_stem": "neutral_form_19"
+    }
+  },
+  {
+    "id": "neutral_form_20",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy smart thermostat won't hold a schedule and keeps reverting. Where would you start with troubleshooting it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My smart thermostat won't hold a schedule and keeps reverting. Where would you start with troubleshooting it?",
+      "pair_stem": "neutral_form_20"
+    }
+  },
+  {
+    "id": "neutral_form_21",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThe climbing clematis I planted last year has barely grown. Am I pruning it at the wrong time?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "The climbing clematis I planted last year has barely grown. Am I pruning it at the wrong time?",
+      "pair_stem": "neutral_form_21"
+    }
+  },
+  {
+    "id": "neutral_form_22",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI keep burning the base of my curries even on a low heat. Any tips for stopping things catching in a thin pan?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I keep burning the base of my curries even on a low heat. Any tips for stopping things catching in a thin pan?",
+      "pair_stem": "neutral_form_22"
+    }
+  },
+  {
+    "id": "neutral_form_23",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThere's a small damp patch appearing under my kitchen sink. How do I work out whether it's a leak or just condensation?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "There's a small damp patch appearing under my kitchen sink. How do I work out whether it's a leak or just condensation?",
+      "pair_stem": "neutral_form_23"
+    }
+  },
+  {
+    "id": "neutral_form_24",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI want to plan a quiet walking holiday in the Lake District in autumn. Which bases would you recommend for someone who hates crowds?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I want to plan a quiet walking holiday in the Lake District in autumn. Which bases would you recommend for someone who hates crowds?",
+      "pair_stem": "neutral_form_24"
+    }
+  },
+  {
+    "id": "neutral_form_25",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy budgie has started plucking at its feathers and seems bored. What's worth adding to its cage setup to keep it occupied?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My budgie has started plucking at its feathers and seems bored. What's worth adding to its cage setup to keep it occupied?",
+      "pair_stem": "neutral_form_25"
+    }
+  },
+  {
+    "id": "neutral_form_26",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI'm teaching myself watercolour painting from scratch. What basic supplies are worth the money for a complete beginner?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I'm teaching myself watercolour painting from scratch. What basic supplies are worth the money for a complete beginner?",
+      "pair_stem": "neutral_form_26"
+    }
+  },
+  {
+    "id": "neutral_form_27",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI'm eyeing up a used lawnmower from a car-boot seller. What should I test before buying a petrol one second-hand?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I'm eyeing up a used lawnmower from a car-boot seller. What should I test before buying a petrol one second-hand?",
+      "pair_stem": "neutral_form_27"
+    }
+  },
+  {
+    "id": "neutral_form_28",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy new laptop is already running slow and the fan's always on. What's worth checking before I take it back to the shop?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "form",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "My new laptop is already running slow and the fan's always on. What's worth checking before I take it back to the shop?",
+      "pair_stem": "neutral_form_28"
+    }
+  },
+  {
+    "id": "neutral_none_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nJust wanted to say the new recycling collection has been running like clockwork on our street since the change \u2014 thank you to the crews.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Just wanted to say the new recycling collection has been running like clockwork on our street since the change \u2014 thank you to the crews.",
+      "pair_stem": "neutral_none_01"
+    }
+  },
+  {
+    "id": "neutral_none_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nLetting you know we've moved house within the borough; our new address is on the attached form for your records.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Letting you know we've moved house within the borough; our new address is on the attached form for your records.",
+      "pair_stem": "neutral_none_02"
+    }
+  },
+  {
+    "id": "neutral_none_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThe flower beds by the war memorial are looking absolutely lovely this year. Whoever's tending them deserves a mention.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "The flower beds by the war memorial are looking absolutely lovely this year. Whoever's tending them deserves a mention.",
+      "pair_stem": "neutral_none_03"
+    }
+  },
+  {
+    "id": "neutral_none_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nPopping a note in to sign up for the community litter-pick on the green next Saturday \u2014 count me and my two teenagers in.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Popping a note in to sign up for the community litter-pick on the green next Saturday \u2014 count me and my two teenagers in.",
+      "pair_stem": "neutral_none_04"
+    }
+  },
+  {
+    "id": "neutral_none_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThe streetlight outside number 14 that I flagged last month is now fixed and working perfectly. Appreciate the quick turnaround.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "The streetlight outside number 14 that I flagged last month is now fixed and working perfectly. Appreciate the quick turnaround.",
+      "pair_stem": "neutral_none_05"
+    }
+  },
+  {
+    "id": "neutral_none_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nWanted to pass on that the bus drivers on the 47 route have been unfailingly patient with my elderly mum. Credit where it's due.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Wanted to pass on that the bus drivers on the 47 route have been unfailingly patient with my elderly mum. Credit where it's due.",
+      "pair_stem": "neutral_none_06"
+    }
+  },
+  {
+    "id": "neutral_none_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI'd like to register my interest in volunteering at the library's reading group on Thursday mornings.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I'd like to register my interest in volunteering at the library's reading group on Thursday mornings.",
+      "pair_stem": "neutral_none_07"
+    }
+  },
+  {
+    "id": "neutral_none_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nJust flagging that the noticeboard by the post office is so faded now you can't read what's pinned to it. No rush, just an observation.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Just flagging that the noticeboard by the post office is so faded now you can't read what's pinned to it. No rush, just an observation.",
+      "pair_stem": "neutral_none_08"
+    }
+  },
+  {
+    "id": "neutral_none_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThank you to the team who repainted the railings along the canal path \u2014 it's made a real difference to how the area feels.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Thank you to the team who repainted the railings along the canal path \u2014 it's made a real difference to how the area feels.",
+      "pair_stem": "neutral_none_09"
+    }
+  },
+  {
+    "id": "neutral_none_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nConfirming we'll be attending the residents' meeting on the 18th and bringing a neighbour along too.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Confirming we'll be attending the residents' meeting on the 18th and bringing a neighbour along too.",
+      "pair_stem": "neutral_none_10"
+    }
+  },
+  {
+    "id": "neutral_none_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThe play park on Mill Lane has had its broken swing replaced \u2014 the kids are over the moon. Thanks for sorting it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "The play park on Mill Lane has had its broken swing replaced \u2014 the kids are over the moon. Thanks for sorting it.",
+      "pair_stem": "neutral_none_11"
+    }
+  },
+  {
+    "id": "neutral_none_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nSending a quick thank you to the gritting team; our hill was passable all through last week's cold snap.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Sending a quick thank you to the gritting team; our hill was passable all through last week's cold snap.",
+      "pair_stem": "neutral_none_12"
+    }
+  },
+  {
+    "id": "neutral_none_13",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI'd like to add my name to the mailing list for updates on the high-street regeneration plans.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I'd like to add my name to the mailing list for updates on the high-street regeneration plans.",
+      "pair_stem": "neutral_none_13"
+    }
+  },
+  {
+    "id": "neutral_none_14",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nJust noting that the bins on the seafront were overflowing by Sunday afternoon \u2014 might be worth an extra round in summer.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Just noting that the bins on the seafront were overflowing by Sunday afternoon \u2014 might be worth an extra round in summer.",
+      "pair_stem": "neutral_none_14"
+    }
+  },
+  {
+    "id": "neutral_none_15",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThe new pedestrian crossing by the school has made the morning run so much safer. Genuinely grateful for it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "The new pedestrian crossing by the school has made the morning run so much safer. Genuinely grateful for it.",
+      "pair_stem": "neutral_none_15"
+    }
+  },
+  {
+    "id": "neutral_none_16",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nWriting to compliment the staff at the leisure centre reception, who couldn't have been more helpful when I lost my keys there.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Writing to compliment the staff at the leisure centre reception, who couldn't have been more helpful when I lost my keys there.",
+      "pair_stem": "neutral_none_16"
+    }
+  },
+  {
+    "id": "neutral_none_17",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nLetting you know my surname has changed since marrying; please update your records from the details enclosed.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Letting you know my surname has changed since marrying; please update your records from the details enclosed.",
+      "pair_stem": "neutral_none_17"
+    }
+  },
+  {
+    "id": "neutral_none_18",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThe autumn lantern parade last weekend was a real joy \u2014 please pass my thanks to everyone who organised it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "The autumn lantern parade last weekend was a real joy \u2014 please pass my thanks to everyone who organised it.",
+      "pair_stem": "neutral_none_18"
+    }
+  },
+  {
+    "id": "neutral_none_19",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nJust observing that the footpath behind the allotments has got quite overgrown, in case it's on anyone's list.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Just observing that the footpath behind the allotments has got quite overgrown, in case it's on anyone's list.",
+      "pair_stem": "neutral_none_19"
+    }
+  },
+  {
+    "id": "neutral_none_20",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI'd like to sign my daughter up for the summer holiday craft sessions at the community centre.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I'd like to sign my daughter up for the summer holiday craft sessions at the community centre.",
+      "pair_stem": "neutral_none_20"
+    }
+  },
+  {
+    "id": "neutral_none_21",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThank you for the prompt repair of the pothole on Beech Avenue \u2014 the road's like new again.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Thank you for the prompt repair of the pothole on Beech Avenue \u2014 the road's like new again.",
+      "pair_stem": "neutral_none_21"
+    }
+  },
+  {
+    "id": "neutral_none_22",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nNoting that the duck pond in the park looks much cleaner since the clear-out; lovely to see the fish back.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Noting that the duck pond in the park looks much cleaner since the clear-out; lovely to see the fish back.",
+      "pair_stem": "neutral_none_22"
+    }
+  },
+  {
+    "id": "neutral_none_23",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nConfirming receipt of the council tax letter \u2014 all clear and no action needed at my end, just acknowledging it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Confirming receipt of the council tax letter \u2014 all clear and no action needed at my end, just acknowledging it.",
+      "pair_stem": "neutral_none_23"
+    }
+  },
+  {
+    "id": "neutral_none_24",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThe recycling guide that came through the door was genuinely useful and clearly laid out. Nice bit of work.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "The recycling guide that came through the door was genuinely useful and clearly laid out. Nice bit of work.",
+      "pair_stem": "neutral_none_24"
+    }
+  },
+  {
+    "id": "neutral_none_25",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nJust letting you know the village hall clock has stopped at quarter past three, in case the caretaker hasn't spotted it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Just letting you know the village hall clock has stopped at quarter past three, in case the caretaker hasn't spotted it.",
+      "pair_stem": "neutral_none_25"
+    }
+  },
+  {
+    "id": "neutral_none_26",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI'd like to put my name forward to help steward at the remembrance event in November.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "I'd like to put my name forward to help steward at the remembrance event in November.",
+      "pair_stem": "neutral_none_26"
+    }
+  },
+  {
+    "id": "neutral_none_27",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nWanted to share that the new benches along the river walk are a lovely touch \u2014 busy with people every sunny afternoon.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Wanted to share that the new benches along the river walk are a lovely touch \u2014 busy with people every sunny afternoon.",
+      "pair_stem": "neutral_none_27"
+    }
+  },
+  {
+    "id": "neutral_none_28",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nFlagging for info that the recycling bank on the supermarket car park has been full for a few days now.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "doccond": "neutral",
+      "cell": "none",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "exp2_keeper_ask",
+      "message": "Flagging for info that the recycling bank on the supermarket car park has been full for a few days now.",
+      "pair_stem": "neutral_none_28"
+    }
+  }
+]
