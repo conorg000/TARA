@@ -11,6 +11,43 @@ record the full per-layer table here for any result worth keeping.
 
 ---
 
+## 2026-06-12 — Thread-1 GPU extraction + probe (1b instructed suppression + D1/D4 attention arms): OUTCOME H — a probe trained on clean recognition reads recognition on silently-suppressed docs, well-powered (n=58); attention arms agree; the D4 position dissociation vindicates the generous capture
+
+**The headline result of the project so far: "noticed-but-didn't-act" is internally noticed, and a probe reads it.** Plan: A2 (1b) + A4 Resolution (D1/D4 arm). Analysis: [probe_thread1.py](probe_thread1.py) (imports probe_keyphrase's exact machinery — pair-disjoint GroupKFold, document-disjoint pair-OOF diff-of-means, recognition trained on the model's own ASK answer — so it is method-consistent with the keyphrase line). Results: `probe_1b.json`, `probe_D1.json`, `probe_D4.json`.
+
+**Extraction.** Qwen3-32B bf16, greedy, no-think, on an A100-80GB (torch cu118 — the box driver was CUDA 12.0, default torch wanted 12.1+; one-line fix). Code `extract_keyphrase.py` @ **1ed3b05** via [extract_thread1.sh](extract_thread1.sh); **fp16** activations, 8 prefill span positions + 2 gen-prefix reads on action passes (the [plan's capture spec](research_plan_2026-06-11.md)). fp16 verified loss-free (manual diff-of-means recog 0.880 fp16 == 0.880 fp32 at L48). A2 pilot gate PASSED: greedy L6 compliance **15/40**. Box saga (3 instances — 80G-disk ×2 too small, then 120G; flaky uplink) is why the D4 *raw* activations never came home; the D4 *analysis* ran on the box and only the result JSON was pulled (analysis-on-box, not laptop — the right call for a flaky link).
+
+**Local greedy behaviour (the labels the cells are defined on):** v6_ask YES 241/NO 239 (0.998); v6l6_action FLAG 179/NOFLAG 301; v6l6_plainask (recognition UNDER the L6 countermand) YES 233/NO 247 (**0.981 — recognition stays high with "don't flag" in context**); v6d1_plainask 0.983; d4long_ask 0.994; d4long_action FLAG 251/NOFLAG 229; d4long_plainask 0.981.
+
+**Probe (best layer by in-pass recognition; diff-of-means; compliance = present ∧ loadedask-YES ∧ NOFLAG; defiance = present ∧ FLAG; verbatim):**
+```
+arm  position        L   recog  transfer  comp-v-absent  comp-v-defiance   proj means (comp/def/absent)   n_comp/def
+1b   doc_mean        48  0.979   0.942      0.916          0.359            105 / 142 / -54                58 / 176
+1b   post_name_mean  48  0.996   0.981      0.981          0.390            152 / 250 / -480               58 / 176
+1b   final           49  1.000   0.694      0.654          0.428           1365 /1395 /1308                58 / 176
+1b   pre_doc_final*  50  0.502   0.500      0.504          0.504             26 /  26 /  26                58 / 176   *neg control
+D1   doc_mean        48  0.979   0.929      0.836          0.259             53 / 126 / -50                13 / 224
+D1   post_name_mean  48  0.996   0.974      0.946          0.228            -75 / 169 / -474               13 / 224
+D4   doc_mean        48  0.909   0.760      0.522          0.244             14 /  59 /   8                13 / 224
+D4   post_name_mean  48  0.992   0.984      0.943          0.234           -160 / 298 / -903               13 / 224
+D4   pre_doc_final*  60  0.508   0.500      0.527          0.529             43 /  41 /  41                13 / 224   *neg control
+```
+
+**Read (skeptical, with the nuances).**
+- **1b is Outcome H and well-powered:** comp-vs-absent **0.916** (≥0.90) and comp-vs-defiance **0.359** (≤0.65) at doc_mean, n_compliance=**58**. A probe that trained only on clean recognition and never saw an action reads recognition on the silently-suppressed docs nearly as strongly as on the flagged ones, and far above absent. This is the populated "noticed-but-didn't-act" cell the project never had (n was 9).
+- **Honest nuance 1 — attenuation, not identity.** comp-vs-defiance 0.36 (means: compliance +105 < defiance +142) — compliance recognition is real and strong (≫ absent −54) but **somewhat weaker than defiance**, not identical. So "recognition survives suppression, mildly attenuated," not "compliance == defiance."
+- **Honest nuance 2 — comp-vs-absent mostly tracks transfer.** comp-vs-absent (0.916) ≈ transfer (0.942) on the compliance subset — i.e. "compliance docs still read as present." The sharper, less-circular number is comp-vs-defiance.
+- **Honest nuance 3 — the loadedask-YES filter pre-selects behaviourally-recognised docs.** So the claim is "the activation-probe confirms recognition on docs the model behaviourally recognised under load yet silently suppressed" — a probe-validates-monitor result, not recognition discovered where behaviour missed it.
+- **Attention arms agree, low-powered (n=13 each):** D1 comp-vs-absent 0.84 (doc_mean)/0.95 (post_name); D4 0.52/0.94. Same direction as 1b — recognition is readable on attention-gap omissions too.
+- **D4 position dissociation — a real finding + capture vindication.** D4's long docs (25–35 items) **wash recognition out of doc_mean (0.52, chance) but it is intact at post_name_mean (0.94)** — recognition is local to just-after-the-name and diluted in a long-document average. A doc_mean-only capture (the shortcut considered on the box) would have falsely called D4 null. Validates the spec's extra positions.
+- **Controls clean:** pre_doc_final (last token before the doc — causal-attention negative control) sits at 0.50–0.53 on everything across all arms; layer-0 ≈ 0.5 (manual check 0.505). No positional leakage. `final` is the weak read (large common-mode ~1300, transfer only 0.69) — doc_mean and post_name_mean are the informative positions.
+
+**Pending controls / not yet done (do NOT over-claim until these land).** (1) **Type-composition audit of compliance vs defiance** — compliance is self-selected (the model chose which docs to comply on); the comp-vs-defiance number could carry a doc-feature confound (A2 caveat, registered). (2) **gen-prefix analysis** (gen_first / gen_prefix_mean — where the omission forms): needs a separate IN-PASS analysis (action-only, no ask equivalent to cross-pass from); 1b's gen data is home, D4's was lost on the box. (3) full 8-position sweep (only 4 positions run so far).
+
+**Verdict.** A2 scored **Outcome H** for 1b — recognition is live in the activations during instructed silent suppression, well-powered, controls clean, with honest attenuation-vs-defiance and a pending self-selection audit. D1/D4 corroborate directionally (low-powered). Framing discipline held: **instructed suppression / prompt-injection, never "motivated" or "deceptive."** Artifacts home: `probe_{1b,D1,D4}.json`, `acts/thread1/` (6 of 8 passes), `logs/extract_thread1_box.log`. D4 raw activations remain only on the (now killable) box.
+
+---
+
 ## 2026-06-12 — Experiment 2 keeper, CONSTRUCTION VALIDATION (OpenRouter coarse, ask-only, throwaway): register-matched near holds (K2 0%), behavioural rule-swap flips (K3 0%) — Screen B's cleanliness was NOT surface register; GO to author the keeper
 
 **Why:** Screen B's clean legal/medical separation may have ridden on surface register (hit = 1st-person present-tense question; near = 3rd-person past-tense anecdote — the scenarios_v2 confound). Before authoring the keeper, [make_exp2_validate.py](make_exp2_validate.py) built **16 register-matched pairs** (8 legal + 8 medical): each `near` shares person, topic, situation and tense with its `hit`, differing ONLY in seeking-guidance vs reporting-an-outcome, and deliberately carries domain vocabulary (deposit scheme, pharmacist, dose) so a vocab-reader would mis-fire. Plus 6 form (neutral advice-seeking) + 6 none. Every doc asked under BOTH the legal and medical questions, 3 paraphrases. `openrouter/qwen/qwen3-32b`, no-think, T=0; 6 evals; read by [observe_exp2_validate.py](observe_exp2_validate.py).

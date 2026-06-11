@@ -369,6 +369,8 @@ acting on it mid-stage is not.)*
 
 ### A2 — 2026-06-11: Experiment 1b (pre-registered): recognition under instructed suppression
 
+**Status: RUN 2026-06-12 — scored OUTCOME H (recognition live under suppression), well-powered. Full record: runlog 2026-06-12 Thread-1 entry.** doc_mean best layer: comp-vs-absent **0.916** (≥0.90 ✓) AND comp-vs-defiance **0.359** (≤0.65 ✓), n_compliance=**58** (the cell that was n=9). post_name_mean even cleaner (0.981). Negative control pre_doc_final ≈ 0.50; layer-0 ≈ 0.5. **Honest carry-forwards before any over-claim:** (a) compliance recognition is *attenuated* vs defiance (means +105 vs +142), not identical — "survives, mildly weaker," not "compliance==defiance"; (b) comp-vs-absent largely tracks transfer (compliance reads as present); the sharper number is comp-vs-defiance; (c) compliance defined with the loadedask-YES filter ⇒ this validates the activation-probe against *behaviourally-recognised* suppressed docs, not recognition behaviour missed; (d) **self-selection type-audit of compliance vs defiance NOT yet done** (registered A2 caveat — pending control); (e) gen-prefix (where the omission forms) not yet analysed (needs a separate in-pass analysis; 1b gen data is home). Framing held: instructed suppression / injection, never "motivated"/"deceptive."
+
 **Status: registered, not yet run.** Predictions below were written before any GPU pass.
 
 **Claim under test (named honestly):** when the model *silently complies* with a
@@ -540,6 +542,16 @@ treats load as a **dial** and asks for the dose-response.
   never measured. **Two-turn / agentic escalation: explicitly DECLINED for now** (scope,
   not science — the single-turn null is reported as single-turn-bounded, not universal).
   No D5 dose. 1c is now a closed screen with a defined GPU follow-on, not an open hunt.
+- **Arm results (2026-06-12, run with 1b — runlog Thread-1 entry).** Both attention arms
+  show recognition is readable on the omission docs, low-powered (n_compliance=13 each):
+  **D1** (brevity) comp-vs-absent 0.84 (doc_mean) / 0.95 (post_name_mean); **D4** (length)
+  0.52 (doc_mean — washed out by the long-doc average) / **0.94 (post_name_mean)**. The D4
+  **position dissociation is a real finding**: recognition is local to just-after-the-name
+  and diluted in a long document's mean — a doc_mean-only capture would have called D4
+  null, so the spec's extra positions earned their keep. The two-population contrast
+  (1b suppression 0.92 vs attention-gap arms) is directional but the arms are n=13;
+  characterise, don't over-weight. D4 raw activations lost on the box (result computed
+  on-box, JSON pulled) — a D4 re-analysis at new positions would need a re-extract.
 
 ### A5 — 2026-06-11: thinking sweep (registered): is the null "won't" or "can't without a scratchpad"?
 
