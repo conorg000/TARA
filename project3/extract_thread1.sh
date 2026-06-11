@@ -31,14 +31,21 @@ exec > >(tee -a "$LOG") 2>&1
 
 ex() {  # ex <dataset> <out-prefix> [extra extractor args...]
   local ds="$1" out="$2"; shift 2
-  # Default: capture the FULL generous position set (8 span + gen-prefix on action), fp16,
-  # per the plan's activation-capture spec — regret-proofing, the box has the room.
-  # Override with POSITIONS=<comma list> to subset (e.g. on a disk-constrained box).
-  local posarg=""
-  [ -n "${POSITIONS:-}" ] && posarg="--positions $POSITIONS"
+  # Disk throttle (small-box streaming): the 32B weights eat ~65G of an 80G disk, so the
+  # full activation set can't all sit here at once. Wait until the host-side pull-loop has
+  # freed space (it rsyncs each finished pass home, then deletes it) before starting a pass.
+  while :; do
+    local avail; avail=$(df -P acts 2>/dev/null | awk 'NR==2{print int($4/1048576)}')
+    [ "${avail:-0}" -ge "${MIN_FREE_GB:-6}" ] && break
+    echo ">>> only ${avail}G free (< ${MIN_FREE_GB:-6}G) — waiting for the pull-loop..."; sleep 20
+  done
+  # Default: FULL generous position set (8 span + gen-prefix on action), fp16, per the
+  # capture spec. Override with POSITIONS=<comma list> to subset.
+  local posarg=""; [ -n "${POSITIONS:-}" ] && posarg="--positions $POSITIONS"
   echo; echo ">>> extract  $ds  ->  $out"
   $PY extract_keyphrase.py --model "$MODEL" --device "$DEVICE" --dtype "$DTYPE" \
       --dataset "inputs/$ds" --out-prefix "$out" $posarg "$@"
+  touch "${out}.DONE"   # signal the host pull-loop this pass is complete & safe to pull
 }
 
 echo "=================================================================="
@@ -73,6 +80,7 @@ ex watchlist_d4long_ask.json        acts/d4long_ask
 ex watchlist_d4long_action_H5.json  acts/d4long_action
 ex watchlist_d4long_plainask_H5.json acts/d4long_plainask
 
+touch acts/.ALL_DONE   # final signal for the host pull-loop
 echo
 echo "=================================================================="
 echo " DONE. Per-pass behaviour summaries are above — scan for:"
