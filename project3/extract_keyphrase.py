@@ -50,7 +50,28 @@ RECOG_FRAMINGS = {"ask", "loadedask", "plainask", "swapwl"}
 # watchdog's action-framed dark control. Graded as an action (expect NOFLAG; generation
 # optional via --no-generate since it's a dark, not a behavioural measure).
 ACTION_FRAMINGS = {"action", "checkaction", "swapaction"}
-DEFAULT_POSITIONS = ["final", "name_last", "doc_last", "doc_mean"]
+
+# Prefill span positions (all captured in one forward pass over the prompt). Per the
+# plan's "Activation capture spec" (regret-proofing): generous span-means, fp16. Causal
+# attention makes pre-document positions worthless for doc-dependent labels, so the one
+# pre-doc read (pre_doc_final) exists ONLY as a positional negative control (must be
+# ~0.5). Absent docs carry the off-list swapped name at the matched position, so every
+# name-relative read has a natural matched control — no random-position hack needed.
+DEFAULT_POSITIONS = [
+    "doc_mean",        # primary (carried from v6) — the pre-registered headline read
+    "final",           # secondary (carried) — the decision-adjacent camera (P4)
+    "doc_last",        # carried — continuity with v6 tables
+    "name_last",       # diagnostic — lexically contaminated (layer-0 ≈ 0.06 in v6)
+    "name_mean",       # diagnostic — name span mean
+    "post_name_mean",  # NEW exploratory — tokens just AFTER the name (recognition crystallizes here, without reading the name's own tokens)
+    "post_doc_mean",   # NEW — the span after the document (≈ the ask question / the action instruction)
+    "pre_doc_final",   # NEW control — last instruction token BEFORE the doc; must be ~0.5 on doc-dependent labels
+]
+# Generation-prefix reads (action passes only; a SECOND forward over prompt + first
+# generated tokens — where the omission decision actually happens). Auto-added for action
+# framings unless --no-gen-prefix. Content differs across piles ⇒ exploratory only.
+GEN_POSITIONS = ["gen_first", "gen_prefix_mean"]
+GEN_PREFIX_K = 16  # mean over the first ~16 generated tokens
 
 
 def git_commit() -> str:
@@ -112,12 +133,21 @@ def locate(prompt: str, offsets, doc_body: str, term: str) -> tuple[list[int], l
 
 
 def position_indices(seq_len: int, doc_tok: list[int], name_tok: list[int]) -> dict:
-    """Map each named position to the token index/indices it reads."""
+    """Map each named span position to the prompt token index/indices it reads.
+    Token-index based (no fragile char re-search): every read is relative to the located
+    document span and name span, so it works identically for present and absent docs."""
+    d0, d1, n1 = doc_tok[0], doc_tok[-1], name_tok[-1]
+    post_name = list(range(n1 + 1, min(n1 + 1 + 8, seq_len))) or [n1]   # 8 tokens after the name
+    post_doc = list(range(d1 + 1, seq_len - 1)) or [seq_len - 1]        # span after the doc, before the final token
     return {
-        "final": [seq_len - 1],
-        "name_last": [name_tok[-1]],
-        "doc_last": [doc_tok[-1]],
         "doc_mean": doc_tok,
+        "final": [seq_len - 1],
+        "doc_last": [d1],
+        "name_last": [n1],
+        "name_mean": name_tok,
+        "post_name_mean": post_name,
+        "post_doc_mean": post_doc,
+        "pre_doc_final": [max(0, d0 - 1)],
     }
 
 
@@ -131,6 +161,10 @@ def main() -> None:
     ap.add_argument("--positions", default=",".join(DEFAULT_POSITIONS))
     ap.add_argument("--max-examples", type=int, default=None)
     ap.add_argument("--no-generate", action="store_true", help="skip behaviour grading (activations only)")
+    ap.add_argument("--no-gen-prefix", action="store_true",
+                    help="skip the generation-prefix reads (action passes; a 2nd forward over prompt+first-K-generated)")
+    ap.add_argument("--save-dtype", default="float16", choices=["float16", "float32"],
+                    help="stored activation dtype (spec: fp16 — halves disk; means computed in fp32 regardless)")
     ap.add_argument("--max-new-tokens", type=int, default=None, help="override (default 8 recog / 320 action)")
     args = ap.parse_args()
 
@@ -169,8 +203,15 @@ def main() -> None:
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token_id = tokenizer.eos_token_id
 
-    # accumulators: per position -> list of [L, D]; plus shared metadata columns
+    # accumulators: per position -> list of [L+1, D]; plus shared metadata columns.
+    # gen-prefix reads are action-only (need a generated continuation to read).
+    gen_capture = is_action and not args.no_generate and not args.no_gen_prefix
+    save_np = np.float16 if args.save_dtype == "float16" else np.float32
     acc = {p: [] for p in positions}
+    if gen_capture:
+        acc.update({p: [] for p in GEN_POSITIONS})
+    print(f"positions: prefill={positions}" + (f" + gen={GEN_POSITIONS}" if gen_capture else "")
+          + f" | save_dtype={args.save_dtype}")
     labels, ids, groups, behaviour, generated, terms, wls = [], [], [], [], [], [], []
     nameidx, docidx, seqlens = [], [], []
     n_trunc = 0  # generations that hit the token cap without EOS (potential truncation)
@@ -210,6 +251,23 @@ def main() -> None:
             else:
                 ans = classify(gen_text, "YES", "NO")
 
+        if gen_capture:
+            # SECOND forward over prompt + first K generated tokens: read where the
+            # omission decision actually forms. Content differs across piles ⇒ exploratory.
+            if len(new) > 0:
+                kk = min(GEN_PREFIX_K, len(new))
+                ext = gen[:, : seq_len + kk]
+                with torch.no_grad():
+                    out2 = model(input_ids=ext, output_hidden_states=True, use_cache=False)
+                gpos = list(range(seq_len, seq_len + kk))
+                acc["gen_first"].append(
+                    np.stack([hs[0, seq_len, :].float().cpu().numpy() for hs in out2.hidden_states], axis=0))
+                acc["gen_prefix_mean"].append(
+                    np.stack([hs[0, gpos, :].float().mean(0).cpu().numpy() for hs in out2.hidden_states], axis=0))
+            else:  # empty generation (immediate EOS) — keep rectangular with the prefill final-token state
+                z = np.stack([hs[0, seq_len - 1, :].float().cpu().numpy() for hs in out.hidden_states], axis=0)
+                acc["gen_first"].append(z); acc["gen_prefix_mean"].append(z)
+
         labels.append(int(r["label"])); ids.append(r["id"])
         groups.append(r["id"][:-1])  # matched-pair stem (w4_0000a/b/s -> w4_0000)
         behaviour.append(ans); generated.append(gen_text)
@@ -223,6 +281,7 @@ def main() -> None:
         "torch_version": torch.__version__, "transformers_version": transformers.__version__,
         "dataset_path": args.dataset, "framing": framing, "num_examples": len(records),
         "no_think": True, "generate": not args.no_generate, "max_new_tokens": max_new,
+        "save_dtype": args.save_dtype, "gen_prefix": gen_capture, "gen_prefix_k": GEN_PREFIX_K,
         "groups_note": "matched-pair stem (id minus trailing a/b/s) for pair-disjoint CV",
         "sample_prompt": build_prompt(tokenizer, records[0]["system"], records[0]["user"]),
     }
@@ -232,19 +291,25 @@ def main() -> None:
         terms=np.array(terms), watchlists=np.array(wls),
         name_token=np.array(nameidx), doc_token=np.array(docidx), seq_len=np.array(seqlens),
     )
-    for p in positions:
-        activations = np.stack(acc[p], axis=0).astype(np.float32)  # [N, L+1, D]
+    POS_DESC = {
+        "doc_mean": "mean over document-body tokens (primary)",
+        "final": "last prompt token (pre-generation; decision-adjacent)",
+        "doc_last": "last token of the document body",
+        "name_last": "last token of the watchlist name in the document (lexically contaminated)",
+        "name_mean": "mean over the watchlist-name tokens (lexically contaminated)",
+        "post_name_mean": "mean over the 8 tokens AFTER the name (recognition crystallizes here)",
+        "post_doc_mean": "mean over tokens after the document (the ask question / action instruction)",
+        "pre_doc_final": "last instruction token BEFORE the document — positional negative control (~0.5 expected)",
+        "gen_first": "first generated token (2nd forward over prompt+generation)",
+        "gen_prefix_mean": f"mean over the first {GEN_PREFIX_K} generated tokens (where omission forms)",
+    }
+    for p in acc:
+        activations = np.stack(acc[p], axis=0).astype(save_np)  # [N, L+1, D]
         m = {**meta, "position": p, "num_transformer_layers": activations.shape[1] - 1,
-             "hidden_dim": activations.shape[2],
-             "token_position": {
-                 "final": "last prompt token (pre-generation)",
-                 "name_last": "last token of the watchlist name in the document",
-                 "doc_last": "last token of the document body",
-                 "doc_mean": "mean over document-body tokens",
-             }[p]}
+             "hidden_dim": activations.shape[2], "token_position": POS_DESC.get(p, p)}
         out_path = f"{args.out_prefix}__{p}.npz"
         np.savez(out_path, activations=activations, meta=json.dumps(m), **common)
-        print(f"saved {out_path}  activations={activations.shape}")
+        print(f"saved {out_path}  activations={activations.shape} {activations.dtype}")
 
     if not args.no_generate:
         if n_trunc:

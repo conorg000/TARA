@@ -31,10 +31,14 @@ exec > >(tee -a "$LOG") 2>&1
 
 ex() {  # ex <dataset> <out-prefix> [extra extractor args...]
   local ds="$1" out="$2"; shift 2
+  # Default: capture the FULL generous position set (8 span + gen-prefix on action), fp16,
+  # per the plan's activation-capture spec — regret-proofing, the box has the room.
+  # Override with POSITIONS=<comma list> to subset (e.g. on a disk-constrained box).
+  local posarg=""
+  [ -n "${POSITIONS:-}" ] && posarg="--positions $POSITIONS"
   echo; echo ">>> extract  $ds  ->  $out"
   $PY extract_keyphrase.py --model "$MODEL" --device "$DEVICE" --dtype "$DTYPE" \
-      --dataset "inputs/$ds" --out-prefix "$out" \
-      --positions "${POSITIONS:-final,name_last,doc_last,doc_mean}" "$@"
+      --dataset "inputs/$ds" --out-prefix "$out" $posarg "$@"
 }
 
 echo "=================================================================="
