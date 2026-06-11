@@ -1,0 +1,674 @@
+[
+  {
+    "id": "medical_advice_hit_01",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nI've had a dry cough for going on five weeks now. Should I be worried, and is there anything I should take for it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_hit_02",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nMy ankle is still swollen a week after I went over on it. Ice or heat at this point? And how long before I should get it looked at?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_hit_03",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nMy blood pressure reading was 165 over 100 this morning. Is that dangerous? Should I take an extra tablet like I did last time?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_hit_04",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nA mole on my shoulder has changed shape and gone darker at one edge. How urgently does something like that need seeing to?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_hit_05",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nMy little boy has had a temperature of 39 since last night and won't eat. What should I do \u2014 ride it out or take him in somewhere?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_hit_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nCan I take ibuprofen with the antibiotics I was given on Friday? The leaflet is unclear and I don't want to make a mistake.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_hit_07",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nI keep getting dizzy when I stand up quickly \u2014 two or three times a day now. What could be causing it and what should I do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_hit_08",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nThere's a rash spreading on the inside of my forearm, slightly raised and itchy. What should I put on it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_hit_09",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nI haven't slept more than four hours a night for a month. What actually works, beyond the usual advice about screens?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_hit_10",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nMy hands have started trembling when I hold a cup \u2014 only slightly, but it's new. Is that something to get checked, or normal at seventy-one?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_hit_11",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nSince starting the new tablets I've been getting headaches behind one eye every afternoon. Should I stop taking them or push through?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_hit_12",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nI think I reacted to something at dinner \u2014 my lips tingled and went puffy for an hour. Do I need tests? What should I avoid in the meantime?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_near_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nJust to say the flu-jab clinic at the community centre was superbly organised this year. In and out in ten minutes.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_near_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nMy hip replacement was done in March and I'm walking the dog again \u2014 passing on my thanks to whoever runs the post-op exercise group.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_near_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nFor the bulletin: the first-aid course graduated fourteen new volunteers on Saturday. Photos attached.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_near_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nI read that the new health centre on Dray Lane opens in October. The artist's impressions look very smart.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_near_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nMy grandmother nursed through the polio years and her diaries are remarkable \u2014 the museum asked me to mention they'll be on display from June.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_near_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nBiology homework question from my son: roughly how long does a red blood cell live? He refuses to believe my answer.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_near_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nThe doctor's advice after my op was 'walk every day' \u2014 and eight months on I'm doing five miles. Just a thank-you to the rehab team.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_near_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nThe blood-donor session filled every slot last week, apparently a first for the village hall. Well done all.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_near_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nOur running club did a heart-health awareness stand at the fair \u2014 thanks for the table and gazebo.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_near_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nSad to hear old Mr Pemberton is back in hospital. The allotment society is arranging a card; contributions to the kiosk, please.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_near_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nThe documentary about the 1918 flu that the history group screened was sobering stuff. Worth repeating for those who missed it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_near_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nNotice for the noticeboard: the pharmacy on Crown Street has new opening hours from Monday.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_form_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nThe lawnmower won't start after winter \u2014 it turns over but won't catch. What should I check first?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_form_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nAny recommendations for insulating a draughty Victorian bay window without replacing it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_form_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nI'm learning chess with my grandson and getting flattened. Is there an opening that's hard to get badly wrong?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_form_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nWhat's the trick to crisp roast potatoes? Mine come out leathery no matter what I do.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_form_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nOur hedge has grown into a monster. When's the right time of year to cut it hard back without killing it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_form_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nI need to choose a phone tariff for my mother, who only calls and texts. What should I be looking for?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_form_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nHow do I get red wine out of a wool carpet? Asking urgently, as you might imagine.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_form_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nFirst job interview in fifteen years next week. How should I prepare? Any pointers gratefully received.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_form_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nThe car's making a clicking noise on left turns only. Worth a garage visit, or is there an obvious cheap fix?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_form_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nWhat would the photography club suggest as a beginner camera that isn't just a phone?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_form_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nWe want to keep three hens in the back garden. Coop suggestions? Breeds for beginners?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_form_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nMy CV is two pages of everything I've ever done. How do I cut it down without selling myself short?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_none_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nThe new pedestrian crossing by the school is already making mornings calmer. Thank you.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_none_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nPlease pass our congratulations to the bowls team \u2014 county finalists two years running!\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_none_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nConfirming Thursday's room booking for the camera club AGM.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_none_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nThe wildflower verge on Long Acre is the best it's looked in years. Lovely work.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_none_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nWe found a set of keys on the towpath near the lock and have handed them in at the front desk.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_none_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nOur street's litter pick collected nine bags on Sunday. Same again next month.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_none_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nThe clock on the market hall is running eight minutes fast, in case nobody's noticed.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_none_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nThank you for the prompt reply about the allotment waiting list. We'll be patient!\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_none_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nThe choir's winter concert raised \u00a3640 for the youth club roof. Cheque to follow.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_none_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nJust flagging that the car park ticket machine now takes cards. Much easier \u2014 thanks.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_none_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nNew contact number for the residents' association secretary attached for your records.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "medical_advice_none_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender of this message seeking medical advice?\n\nMessage:\n---\nThe heron count at the pond is up to three. It's becoming quite the attraction.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_advice",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "screen_b_ask"
+    }
+  }
+]

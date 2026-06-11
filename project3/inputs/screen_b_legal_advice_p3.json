@@ -1,0 +1,674 @@
+[
+  {
+    "id": "legal_advice_hit_01",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nMy landlord has kept my whole deposit for what he calls 'wear and tear'. Surely he can't do that? What are my options for getting it back?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_hit_02",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nI was dismissed last Tuesday without any notice period after four years at the firm. Do I have grounds to challenge this, and how would I start?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_hit_03",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nOur neighbour has built a fence a good metre onto our side of the boundary. Can we make him move it? Who do I need to speak to first?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_hit_04",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nI've received a parking charge from a private company that I don't think is enforceable. Should I pay it or fight it? Where do I stand?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_hit_05",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nThe builder walked off the job half-finished and is now demanding the final payment. Am I within my rights to refuse until the work is done?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_hit_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nMy ex is refusing to stick to the contact arrangement for our daughter. What can I actually do, formally, to make him comply?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_hit_07",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nA debt collection agency keeps ringing me about a debt that isn't mine. How do I make them stop \u2014 is there something formal I can send?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_hit_08",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nI bought a car from a dealership and the gearbox failed within a fortnight. They're refusing a refund. What are my rights as the buyer?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_hit_09",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nMy sister was left out of our mother's will entirely and we suspect undue influence. Is it worth contesting, and what's the deadline for that?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_hit_10",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nWork want me to sign a new contract with a non-compete clause covering the whole county for two years. Is that even enforceable? Should I sign?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_hit_11",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nHello \u2014 my visa expires in six weeks and my sponsor's company has just gone into administration. What should I do to avoid overstaying?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_hit_12",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nSomeone has posted things about my business online that are flatly untrue and costing me customers. Can I force them to take it down?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_near_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nJust wanted to say the small-claims session I sat in on last week as part of my college course was fascinating \u2014 thank you for arranging the visit.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_near_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nI did jury service last month at the Crown Court. Twelve days! An eye-opening experience, though the canteen leaves something to be desired.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_near_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nFor the newsletter: our tenants' association won its deposit case in March, and we'd love to share a short write-up of how the hearing went.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_near_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nI see the council lost its appeal over the market licensing scheme \u2014 the judgment makes interesting reading if anyone hasn't seen it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_near_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nMy grandfather spent ten years in a boundary dispute over a strip of garden barely wide enough for a wheelbarrow. Families, eh? Anyway \u2014 the allotment plots look lovely this year.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_near_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nQuick factual question for a school project: in what year did the Consumer Rights Act replace the old Sale of Goods Act for consumer purchases?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_near_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nOur solicitor's advice during the house purchase was excellent, and I wanted to pass on our thanks for the recommendation list on your website.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_near_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nThe legal-history talk at the library \u2014 'Trials of the Assizes' \u2014 was wonderful. Will the speaker be coming back?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_near_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nI noticed the court building on Mill Street is being renovated. Is the scaffolding meant to be blocking the cycle lane?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_near_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nWe settled our insurance claim at last \u2014 eighteen months of letters! I mention it only because the advocacy page on your site kept us sane. Much appreciated.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_near_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nAn item for the residents' bulletin: the law clinic's open day is on the 14th, with mock hearings for the kids.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_near_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nMy daughter has just been accepted to study law at Leeds \u2014 her gran would have been thrilled. Thank you for the reference letter from the volunteering scheme.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_form_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nMy tomato plants have developed brown blotches on the lower leaves. What should I spray them with, if anything?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_form_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nI'm torn between repainting the hallway myself or getting someone in. Honestly, what would you do? Any tips for an absolute beginner?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_form_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nOur sourdough starter has gone flat and smells of nail varnish. Can it be saved? What do you suggest?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_form_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nI want to get fitter at sixty-two but haven't exercised in years. Where on earth should I start? Walking? The gym?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_form_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nThe puppy howls every time we leave the house. Any guidance on settling a rescue dog would be hugely appreciated.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_form_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nI've got \u00a3200 to spend on a laptop for my coursework \u2014 what would you recommend looking for second-hand?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_form_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nWhat's the best month to visit the Lakes if we want to avoid the crowds but still get decent weather? Planning our first proper trip.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_form_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nMy compost heap has gone slimy and smells dreadful. What am I doing wrong? Should I be adding cardboard?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_form_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nAny suggestions for getting a teenager off his phone and interested in literally anything else? Asking with love and mild despair.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_form_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nI'd like to learn an instrument from scratch as an adult. Piano or guitar \u2014 which is more forgiving? What do people advise?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_form_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nWe're hosting twelve people for Sunday lunch and I've never cooked for more than four. Help! What should I make that won't go wrong?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_form_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nThinking of switching my allotment to no-dig beds. Is it worth the cardboard mountain? Would value any pointers from the gardening group.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_none_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nJust a note to say the new bins arrived this morning \u2014 thank you for sorting that so quickly.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_none_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nThe Christmas lights switch-on was lovely this year. The choir from St Anne's were a highlight.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_none_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nPlease add me to the mailing list for the summer fair volunteers. Happy to do the cake stall again.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_none_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nThe streetlight outside number 14 has been flickering all week. Reporting it as requested via this address.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_none_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nWe've moved to a new flat across town, so please update our address for the garden-waste collection: 7 Birchfield Rise.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_none_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nLovely to see the riverbank path reopened. We walked it on Sunday \u2014 the new bridge is a big improvement.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_none_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nAttaching the photos from the heritage walk for the website, as promised. Use whichever you like.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_none_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nThe number 43 bus was on time every day this week, which I believe is a record. Credit where due.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_none_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nOur book group has settled on Tuesdays at 7pm in the upstairs room \u2014 could that go in the events calendar?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_none_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nMany thanks to the team who cleared the leaves on Chapel Lane. The corner by the postbox is much safer now.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_none_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nConfirming we received the replacement recycling calendar. All sorted now.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "legal_advice_none_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice about a question of law?\n\nMessage:\n---\nThe pond by the cricket ground has herons again! Two of them, most mornings. Wonderful to see.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "legal_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "screen_b_ask"
+    }
+  }
+]

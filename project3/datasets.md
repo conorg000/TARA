@@ -22,7 +22,11 @@ no instruction conflict; H5 system byte-identical (`build_system(5, wl)`) in eve
   stays throwaway). Doubles as the base clean-ask.
 - **Doses:** D0 baseline (one doc/call) · D1 brevity (Operations cover note: policy-
   minimum output, brevity assessed) · D2 batch-of-3 (one call, per-doc `DOC <n>:`
-  blocks, union watchlist, 26 triples) · D3 = D1+D2.
+  blocks, union watchlist, 26 triples) · D3 = D1+D2 · **D4 longer docs** (optional A4
+  dose; 25-35 items vs 5-13, single-doc, no brevity — isolates document length). D4 has
+  its own base `screen_c_base_long.json` (80 pairs, **seed 779**,
+  `--doc-min 25 --doc-max 35`) and carries watchlist/group in each record's meta so the
+  observer scores it self-contained; run via [run_screen_c_d4.sh](run_screen_c_d4.sh).
 - **Asks per dose** (label integrity, in-context): D1 note+plain ask; D2/D3 per-position
   asks (full batch in context, question names one doc). D0 leans on the base clean-ask.
 - **Read by [observe_screen_c.py](observe_screen_c.py):** the two curves per dose
@@ -36,6 +40,30 @@ no instruction conflict; H5 system byte-identical (`build_system(5, wl)`) in eve
   python make_screen_c.py
   ./run_screen_c.sh   # 8 OpenRouter evals (openrouter/qwen/qwen3-32b, no-think, T=0)
   ```
+
+---
+
+## `watchlist_v6_d1_*` / `watchlist_d4long_*` — *current (Experiment 1c keeper attention arm — the 1b contrast)*
+
+The **keeper** extraction sets for 1c's surviving deliverable (A4 Resolution, 2026-06-12):
+read the recognition axis on clean attention gaps, to contrast with 1b's instructed-
+suppression gaps. Screen C chose the recipes (D1 brevity, D4 length); these are the
+fresh keeper realizations (screens choose, keepers measure).
+
+- **D1 (brevity), doc-matched to 1b:** `watchlist_v6_d1_action_H5.json` +
+  `watchlist_v6_d1_plainask_H5.json` — the **same v6 keeper docs** as 1b
+  ([make_keyphrase_d1.py](make_keyphrase_d1.py), brevity note from `make_screen_c.BREVITY`
+  prepended; H5 rule untouched). Because the docs are the v6 set, the **banked v6 ask
+  extraction is the recognition axis** — no new ask pass; GPU = action + plainask only.
+  This is the clean arm: 1b vs D1 read on one shared axis, matched documents.
+- **D4 (length):** `watchlist_d4long_ask.json` (240 pairs, **seed 6**, `--doc-min 25
+  --doc-max 35`; 25–35-item docs) → H5 action/plainask via `make_keyphrase_loaded --load 5`
+  (`watchlist_d4long_action_H5.json`, `_plainask_H5.json`). Long docs can't reuse the v6
+  short-doc axis, so D4 **needs its own ask extraction** (3 GPU passes: ask + action +
+  plainask) and reads on its own recognition axis — the length-robustness arm, not
+  doc-matched. (`checkaction` variant also written; unused for now.)
+- **Why both:** D1 is the primary, cleanest contrast (shared axis, matched docs); D4
+  tests whether the same picture holds when the gap is driven by document length instead.
 
 ---
 

@@ -9,6 +9,7 @@ __pycache__/
 # + runlog.md. Ignoring logs/ also avoids git-pull conflicts on the GPU box,
 # which generates its own extraction logs under the same path.
 logs/
+logs_think/
 
 # Virtual environment
 .venv/

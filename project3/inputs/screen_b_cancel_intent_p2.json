@@ -1,0 +1,674 @@
+[
+  {
+    "id": "cancel_intent_hit_01",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nPlease cancel my garden-waste subscription from the end of this billing period. The composter has won.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_hit_02",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nI'm writing to give notice on my allotment plot, number 38, effective end of season.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_hit_03",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nAfter eleven years, we've decided to give up our market stall licence. Please confirm what's needed from us.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_hit_04",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nCancel my leisure-centre membership, please \u2014 the direct debit reference is LC-40417. I won't be renewing.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_hit_05",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nWe'd like to end the hall-hire arrangement for our Tuesday class after the December session.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_hit_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nPlease take me off the parking permit scheme from next month; I've sold the car.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_hit_07",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nI want to cancel the meals delivery I arranged for my father, now that he's moved in with us. What's the notice period?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_hit_08",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nThis is formal notice that the caf\u00e9 will not be renewing its pavement-seating licence for next year.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_hit_09",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nCould you cancel my daughter's swimming-lesson block from half term? She has switched to the club in Harwood.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_hit_10",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nWe're winding up the bridge club, sadly, so please cancel our regular Thursday booking and the storage cupboard that goes with it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_hit_11",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nPlease close my library account and the e-audio subscription tied to it \u2014 we're emigrating in March.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_hit_12",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nI'd like to end the pest-control contract at the end of the current quarter. The service has been fine; we just no longer need it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_near_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nWhen my mother cancelled her old phone contract, the provider made it absurdly difficult \u2014 I do hope the council's processes are kinder, as I keep telling the residents' group.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_near_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nJust to report: the yoga teacher cancelled Tuesday's class at short notice and several of us were left at the door. Could the noticeboard be updated sooner?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_near_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nThe 8:14 train was cancelled three times last week, in case the transport survey is still gathering examples.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_near_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nMy neighbour cancelled her garden-waste plan and says the final collection went smoothly \u2014 passing on the compliment she's too shy to send.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_near_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nFor the FAQ page: several members asked whether the gym's cancellation policy changed in April. The page still shows last year's wording.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_near_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nThe fireworks display being cancelled was the right call given the wind, even if the kids disagreed.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_near_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nI cancelled my old breakdown cover last year and the refund took months \u2014 sharing as a cautionary tale for the consumer column.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_near_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nHistory note for the archive: the 1987 carnival was cancelled because of the great storm, not low ticket sales as the display claims.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_near_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nA member of our walking group had her bus pass wrongly cancelled and reinstated within a day \u2014 she asked me to pass on her thanks.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_near_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nThe supplier cancelled our parts order, which is why the clock repair is delayed. An update for whoever manages the tower.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_near_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nSurvey response: no, we have never considered giving up our market pitch \u2014 busiest year yet.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_near_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nThe drama group's show was nearly cancelled when the lead lost his voice. The understudy saved the day \u2014 a lovely piece for the newsletter.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_form_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nI'd like to upgrade my leisure-centre membership to the family plan from next month.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_form_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nWe intend to renew the stall licence for a further year \u2014 paperwork to follow.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_form_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nPlease switch my garden-waste collection to the larger bin; the small one overflows by Wednesday.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_form_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nI'm planning to add my partner to the parking permit. What do you need from us?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_form_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nWe've decided to extend the hall booking to include Thursday evenings from January.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_form_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nI want to move my swimming lessons to the earlier slot if there's space.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_form_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nI intend to transfer the allotment tenancy to my daughter \u2014 she does all the digging now anyway.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_form_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nWe'll be enlarging the caf\u00e9's pavement area next season if the licence allows; please advise on the process.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_form_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nI'd like to set up a second library card for our community minibus reading scheme.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_form_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nPlease change my meals delivery from three days a week to five, starting Monday.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_form_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nWe're upgrading the bridge club's storage to the bigger cupboard, as agreed at the AGM.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_form_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nI plan to renew the pest-control contract early to lock in this year's rate.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_none_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nThe new recycling stickers are much clearer. Whoever rewrote them, thank you.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_none_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nSharing a photo of the sunrise over the cricket pitch for the calendar competition.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_none_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nThe community minibus passed its MOT first time. Relief!\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_none_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nOur quiz night raised \u00a3312 for the sensory garden. Receipts attached.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_none_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nThe towpath gate now closes properly. Small thing, big difference.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_none_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nWelcome pack received \u2014 the map of dog-friendly parks is a nice touch.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_none_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nTuesday's coffee morning moves to the annexe while the boiler is fixed. One for the listings.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_none_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nThe repaired swing in Foxglove Park is back in heavy use. Verdict from the under-fives: approved.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_none_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nOur street WhatsApp group would like to thank the gritting crew for the early start on Monday.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_none_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nPhotos from the lantern parade are now in the shared folder.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_none_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nThe new librarian's display on local poets is wonderful. Do go and see it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  },
+  {
+    "id": "cancel_intent_none_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer indicate that they intend to end one of their current services with the office?\n\nMessage:\n---\nConfirming receipt of the volunteer rota for August.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "cancel_intent",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "screen_b_ask"
+    }
+  }
+]

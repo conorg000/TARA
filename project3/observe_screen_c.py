@@ -23,7 +23,7 @@ from inspect_ai.log import read_eval_log
 
 from markers import classify, flag_action
 
-DOSES = ["D0", "D1", "D2", "D3"]
+DOSES = ["D0", "D1", "D2", "D3", "D4"]   # D4 (longer docs) optional — reported if its logs exist
 WANT = {"base_ask": "screen_c_base.json"}
 for d in DOSES:
     WANT[f"{d}/action"] = f"screen_c_{d}_action.json"
@@ -85,10 +85,20 @@ for dose in DOSES:
     omitted: list[str] = []      # doc ids
     by_pos: Counter = Counter()
     unparsed = 0
+    group_of: dict[str, str] = {}   # doc_id -> type, per-dose (D4 docs aren't in `base`)
     if dose in ("D0", "D1"):
         scored = [i for i in pres if i in acts]
         for i in scored:
+            group_of[i] = base[i]["group"]
             if not flag_action(acts[i], base[i]["meta"]["watchlist"]):
+                omitted.append(i)
+    elif dose == "D4":  # single-doc, longer docs from the long base; self-contained meta
+        data = {r["id"]: r for r in
+                json.loads(open("inputs/screen_c_D4_action.json").read())}
+        scored = [i for i in data if i in acts]
+        for i in scored:
+            group_of[i] = data[i]["group"]
+            if not flag_action(acts[i], data[i]["meta"]["watchlist"]):
                 omitted.append(i)
     else:
         data = {r["id"]: r for r in
@@ -97,6 +107,7 @@ for dose in DOSES:
         for tid, raw in acts.items():
             segs = split_batch(raw)
             for n, d in enumerate(data[tid]["meta"]["docs"], 1):
+                group_of[d["id"]] = d["group"]
                 if n not in segs:
                     unparsed += 1
                     continue
@@ -118,7 +129,7 @@ for dose in DOSES:
         ask_yes_str = f"{sum(a == 'YES' for a in ask)}/{len(ask)}"
 
     all_omits.update(omitted)
-    types = dict(Counter(base[i]["group"] for i in omitted))
+    types = dict(Counter(group_of[i] for i in omitted))
     rate = len(omitted) / len(scored) if scored else 0.0
     rows.append((dose, len(scored), len(omitted), rate, ask_yes_rate, types,
                  len(set(omitted)), by_pos, unparsed))

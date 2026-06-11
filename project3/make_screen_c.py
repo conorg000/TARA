@@ -19,6 +19,9 @@ Doses:
   D2 batch      three documents per call, per-doc output blocks ("DOC <n>:"); attention
                 divided three ways.
   D3 both       brevity note + batch.
+  D4 long       longer documents (25-35 items vs 5-13), single-doc, no brevity — the
+                optional A4 dose; isolates DOCUMENT LENGTH. Built only if the long base
+                (inputs/screen_c_base_long.json, seed 779) exists.
 
 Label integrity per dose: D0 leans on the base clean ask; D1 gets an in-context ask
 (note + plain question); D2/D3 get per-position asks (full batch in context, question
@@ -128,11 +131,33 @@ def main() -> None:
                     {"framing": "screen_c", "load": "H5", "dose": dose,
                      "doc_id": r["id"], "term": r["meta"]["term"], "position": n}))
 
+    # D4 (optional, A4): longer documents — the one untried load axis after D1-D3.
+    # Single-doc (no batch confound) + no brevity note: isolates DOCUMENT LENGTH as the
+    # dial, so it can raise the rate the way batching did while preserving labels the way
+    # brevity did. Built from a separate long-doc base (25-35 items vs the base's 5-13);
+    # each record carries its own watchlist/term/group so observe_screen_c is self-contained.
+    long_path = here / "inputs/screen_c_base_long.json"
+    if long_path.exists():
+        long_present = [r for r in json.loads(long_path.read_text()) if r["label"] == 1]
+        out["D4_action"], out["D4_ask"] = [], []
+        for r in long_present:
+            doc, wl = r["meta"]["doc"], ", ".join(r["meta"]["watchlist"])
+            if r["meta"]["term"] not in doc:
+                raise SystemExit(f"{r['id']}: term missing from long meta.doc")
+            system = build_system(5, wl)  # byte-identical H5, as every dose
+            meta = {**r["meta"], "framing": "screen_c", "load": "H5", "dose": "D4"}
+            out["D4_action"].append(rec(r["id"], r["group"], system,
+                                        ACTION_USER.format(doc=doc), meta))
+            out["D4_ask"].append(rec(r["id"], r["group"], system,
+                                     PLAINASK_USER.format(doc=doc), meta))
+
     for name, records in out.items():
         path = here / f"inputs/screen_c_{name}.json"
         path.write_text(json.dumps(records, indent=2))
         print(f"Wrote {path.name} ({len(records)} records)")
     print(f"docs unused in batch doses (80 -> 26 triples): {unused}")
+    if not long_path.exists():
+        print("(D4 skipped: inputs/screen_c_base_long.json not present — generate it to build D4)")
 
 
 if __name__ == "__main__":
