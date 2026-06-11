@@ -160,7 +160,6 @@ def analyze(cond: str, acts_dir: str, position: str, seed: int) -> dict:
         Xask = Xrot[:, li, :]
         s = pair_oof(Xask, y, g, fold_of, n_folds, Xask, g)             # per-item OOF scores
         recog_dm = auroc(s[y == 1], s[y == 0])
-        recog_lr = pooled_oof_auroc(Xask, y, g, cv, logreg_scores)
         k2_hit_near = auroc(s[is_hit], s[is_near])
         k2_near_none = auroc(s[is_near], s[is_none])
 
@@ -179,17 +178,19 @@ def analyze(cond: str, acts_dir: str, position: str, seed: int) -> dict:
                 a = pooled_oof_auroc(Xask, jl, g, cv, diffmeans_scores)
                 junk_best = max(junk_best, a, 1 - a)
         selectivity = recog_dm - junk_best
-        shuffle = float(np.mean([
-            pooled_oof_auroc(Xask, np.random.RandomState(1000 * seed + 10 * li + p).permutation(y),
-                             g, cv, diffmeans_scores)
-            for p in range(N_SHUFFLE)]))
-
-        rows.append(dict(layer=li, recog_dm=recog_dm, recog_lr=recog_lr,
+        rows.append(dict(layer=li, recog_dm=recog_dm, recog_lr=float("nan"),
                          k2_hit_near=k2_hit_near, k2_near_none=k2_near_none,
                          k3_swap=k3_swap, transfer=transfer,
-                         junk_best=junk_best, selectivity=selectivity, shuffle=shuffle))
+                         junk_best=junk_best, selectivity=selectivity, shuffle=float("nan")))
 
     best = max(rows, key=lambda r: r["recog_dm"])
+    # logreg upper-bound + shuffle leak-check ONLY at the diff-of-means-selected layer:
+    # the per-layer 5120-dim logreg sweep is the bottleneck (1 fit, not 65).
+    Xb = Xrot[:, best["layer"], :]
+    best["recog_lr"] = pooled_oof_auroc(Xb, y, g, cv, logreg_scores)
+    best["shuffle"] = float(np.mean([
+        pooled_oof_auroc(Xb, np.random.RandomState(1000 * seed + p).permutation(y), g, cv, diffmeans_scores)
+        for p in range(N_SHUFFLE)]))
     return dict(n_kept=len(kept), n_dropped=n_drop, drop_rate=round(n_drop / max(len(kept) + n_drop, 1), 3),
                 n_hit=int(is_hit.sum()), n_near=int(is_near.sum()), n_none=int(is_none.sum()),
                 best_layer=best["layer"], best=best, per_layer=rows)
@@ -226,14 +227,16 @@ def main() -> None:
             print(f"\n===== {cond.upper()} | position {pos}  "
                   f"(kept {b['n_kept']}, dropped {b['n_dropped']} = {b['drop_rate']:.0%}; "
                   f"hit {b['n_hit']} / near {b['n_near']} / none {b['n_none']}) =====")
-            print("layer | recog dm/lr | K2 hit-near | K2 near-none | K3 swap | transfer | selec | shuffle")
+            print("layer | recog_dm | K2 hit-near | K2 near-none | K3 swap | transfer | selec")
             for r in b["per_layer"]:
-                print(f"  {r['layer']:2d}  | {r['recog_dm']:.3f}/{r['recog_lr']:.3f} | "
-                      f"{r['k2_hit_near']:.3f}      | {r['k2_near_none']:.3f}       | "
-                      f"{r['k3_swap']:.3f}   | {r['transfer']:.3f}    | {r['selectivity']:+.3f}| {r['shuffle']:.3f}")
+                print(f"  {r['layer']:2d}  |  {r['recog_dm']:.3f}  | {r['k2_hit_near']:.3f}      | "
+                      f"{r['k2_near_none']:.3f}       | {r['k3_swap']:.3f}   | {r['transfer']:.3f}    | "
+                      f"{r['selectivity']:+.3f}")
             bb = b["best"]
-            print(f"  >> best L{b['best_layer']}: recog {bb['recog_dm']:.3f} | K2 {bb['k2_hit_near']:.3f}/"
-                  f"{bb['k2_near_none']:.3f} | K3 {bb['k3_swap']:.3f} | selec {bb['selectivity']:+.3f}  ->  {verdict(b)}")
+            print(f"  >> best L{b['best_layer']}: recog dm {bb['recog_dm']:.3f} / lr {bb['recog_lr']:.3f} | "
+                  f"K2 hit-near {bb['k2_hit_near']:.3f} / near-none {bb['k2_near_none']:.3f} | "
+                  f"K3 swap {bb['k3_swap']:.3f} | transfer {bb['transfer']:.3f} | "
+                  f"selec {bb['selectivity']:+.3f} | shuffle {bb['shuffle']:.3f}  ->  {verdict(b)}")
 
     Path(args.out).write_text(json.dumps(report, indent=2))
     print(f"\nwrote {args.out}")
