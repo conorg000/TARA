@@ -621,3 +621,35 @@ written before reading any numbers, so the finalist can't be retrofitted:
 Failure-branch reminder (body): if no candidate clears after one redesign round,
 record "the model's own judgment is too unstable to provide labels at this rung" and
 stop the climb — itself a finding about where the ladder ends.
+
+### A7 — 2026-06-12: Experiment 2 keeper probe — OUTCOME (recognition real; K3 fails)
+
+**Status: RUN 2026-06-12 (GPU extraction + probe, fresh A100). Full record: runlog
+2026-06-12 Experiment 2 entry; plain-language: [exp2_fuzzy_outcome.md](exp2_fuzzy_outcome.md).**
+
+Result against the body's K1–K4 (read at `message_last`, layer-robust over recog>0.9 layers):
+- **K1 stability — PASS** (consistency drop 6–7%).
+- **Recognition floor — PASS, strong** (1.000; layer-0 ≈ chance, negative control ≈ 0.50,
+  shuffle ≈ 0.5 → computed feature, no leak). Beats the old category track's contestable
+  labels.
+- **K2 topic — PASS at the message-local read** (hit-vs-near 1.000 — reads advice-SEEKING,
+  register/length-matched; near-vs-none 0.60–0.64). ⚠ position-dependent: topic leaks in at
+  `final`/`message_mean` (near-none 0.94–1.00).
+- **K4 junk — PASS at message_last (+0.11)**, thin elsewhere (message length is highly
+  decodable; the seeking signal itself is length-clean via the matched pairs).
+- **K3 rule-swap — FAIL, robustly** (layer-robust median 0.53–0.57, both conditions; the
+  best-recog-layer medical 0.918 was a layer-selection artifact). The recognition does not
+  flip with the prompt's rule → **content-/topic-based detector, not a prompt-conditioned
+  registration.**
+
+**Decision applied (body's K3-fail rule): report where the ladder ends; no goalpost moves;
+the borderline/graded-belief idea stays parked.** The claim "*readable registration of an
+ad-hoc, prompt-specified fuzzy condition*" is **partially** supported — readable ✓, genuine
+advice-seeking (not topic, not junk) ✓ at the message-local read — but **"prompt-specified"
+fails** (K3): it behaves like a trained-in content detector.
+
+**Experiment 3 (fuzzy × motivated) does NOT become live** — its precondition was Exp 1 AND
+Exp 2 both passing their gates; Exp 1 (motivated gap) was closed at Screen A, and Exp 2's
+novelty control (K3) fails. No new experiment is opened. Outstanding/parked, NOT pursued
+(would be goalpost-moving): a causal steering test of whether recognition drives the flag;
+a redesign hunting prompt-conditioning. Both belong in a future program, not this one.

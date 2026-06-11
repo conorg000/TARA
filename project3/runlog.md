@@ -11,6 +11,40 @@ record the full per-layer table here for any result worth keeping.
 
 ---
 
+## 2026-06-12 — Experiment 2 GPU extraction + probe (fuzzy climb: legal/medical advice-seeking): recognition is REAL and reads advice-seeking (not topic, not junk) — but K3 rule-swap FAILS robustly: it's a content detector, NOT a prompt-conditioned registration
+
+**Plan:** Experiment 2 + appendix A6. **Run:** 2026-06-12, fresh A100-80GB (CUDA 13.0, torch 2.12.0+cu130), Qwen3-32B bf16, greedy/T=0, no-think. Extraction [extract_exp2.py](extract_exp2.py) (8 passes: 6 ask + 2 action, 184 docs, 7 message-relative positions) at git `3c9110c`; probe [probe_exp2.py](probe_exp2.py) at `5135fa8` → `probe_exp2.json`. Keeper `exp2_keeper_*` (32 register-matched scenario pairs/condition + 28 form + 28 none). **Claim under test (plan):** *the model computes a readable registration of an ad-hoc, prompt-specified fuzzy condition — not topic, not a trained-in category, not generic decodability.*
+
+**Behaviour (greedy, verbatim).** Ask present-YES (expected 32 hits/condition): legal p1/p2/p3 = 28/40/35 (acc 0.967/0.957/0.984), medical = 26/35/36 (0.967/0.984/0.978) — the strict→loose paraphrase span the coarse run predicted, reproduced at greedy. K1 consistency drop (all-3-agree filter): legal **12/184 (6%)**, medical **13/184 (7%)** — labels stable. Action FLAG: legal **56/184**, medical **63/184** (vs 32 true hits each → the model OVER-applies the flag when acting: ~24/31 false flags; behavioural note, not a probe input).
+
+**Probe — best-recog-layer per position (verbatim from probe_exp2.json), legal then medical:**
+```
+position          recog dm/lr  K2 hit-near  K2 near-none  K3 swap  transfer  selec   shuffle
+LEGAL message_mean  L12 0.998/0.997   1.000      0.939       0.545    1.000   +0.056   0.456
+LEGAL message_last  L16 1.000/0.999   1.000      0.643       0.533    1.000   +0.139   0.467
+LEGAL final         L47 1.000/1.000   1.000      1.000       0.714    1.000   +0.060   0.459
+LEGAL post_message  L44 1.000/1.000   1.000      0.992       0.883    1.000   +0.039   0.452
+LEGAL pre_msg_final L0  0.500/0.441   0.500      0.500       0.500    0.500   +0.000   0.500   (neg control ✓)
+MED   message_mean  L8  1.000/1.000   1.000      0.996       0.599    1.000   +0.059   0.458
+MED   message_last  L46 1.000/1.000   1.000      0.724       0.918    1.000   +0.102   0.478
+MED   final         L46 1.000/1.000   1.000      0.996       0.854    1.000   +0.042   0.538
+MED   post_message  L45 1.000/1.000   1.000      1.000       1.000    1.000   +0.053   0.520
+```
+`message_first`/`question_mean` recog ≈ chance (0.46–0.63) — the message onset hasn't integrated the content, and the question text is identical across items; expected.
+
+**⚠️ Best-recog-layer K3 is a SELECTION ARTIFACT — the layer-robust K3 is the honest one.** K3 peaks at different layers than recognition, so the recog-best-layer K3 (esp. MED message_last 0.918) is cherry-picked. Median K3 over the 64 layers with recog>0.9 at `message_last`: **legal 0.572, medical 0.527** — both ≈ chance. The "medical recognition flips with the rule" reading the best-layer suggested is NOT real; K3 fails for both conditions. Layer-robust medians at `message_last` (recog>0.9): recog 0.999/0.998, K2 hit-near **1.000/1.000**, K2 near-none **0.642/0.604**, K3 **0.572/0.527**, transfer 1.000, selec **+0.119/+0.107**.
+
+**Verdict against the pre-registered kills (read at `message_last`, the clean decision-adjacent position; layer-robust):**
+- **K1 stability — PASS.** Drop 6–7% (<10%); labels are the model's own consistency-filtered answers.
+- **Recognition floor — PASS, strong.** 1.000, layer-0 ≈ chance, negative control (`pre_message_final`) ≈ 0.50, shuffle ≈ 0.5 → a *computed* feature, no leak. (The category track's contestable-label problem is solved.)
+- **K2 topic — PASS at message_last.** hit-vs-near **1.000** (reads advice-SEEKING; hits/nears are register- and length-matched, so not surface/length) AND near-vs-none **0.60–0.64** (≤0.65; near reads close to none → not a topic detector *here*). ⚠ Position-dependent: at `final`/`message_mean` near-none is 0.94–1.00 (topic leaks in when the read isn't message-local) — so the "not topic" result holds only at the message-local read.
+- **K4 junk selectivity — PASS at message_last (+0.11), thin elsewhere.** Message length is highly decodable (junk≈0.86–0.94 at mean-pooled positions), so selectivity is thin off the message-end token; but the core hit-vs-near is length-matched, so the *seeking* signal is length-clean.
+- **K3 rule-swap — FAIL, robustly (0.53–0.57, both conditions, layer-robust).** The same hit document scores the same on the recognition axis whether the active rule names its domain or the partner's. **The recognition does NOT flip with the prompt's rule → it is a content-/topic-based detector, not a prompt-conditioned registration.** This is the load-bearing novelty control; it fails for both conditions at every clean position.
+
+**Decision (plan rule for K3 fail): report where the ladder ends; no goalpost moves; Experiment 3 (fuzzy × motivated) does NOT become live.** The honest map: a linear probe *can* read a fuzzy advice-seeking condition as genuine recognition (clean labels, reads seeking-not-topic at the message-local read, beats generic decodability, no leak) — a real result, the rung where probes beat regex with the contestable-label problem solved. **But the representation is content-driven, not registered against the prompt's specific rule** (K3): it looks like a trained-in "is this advice-seeking" detector, not a per-prompt computation. Caveats: K2/K4 pass only at the message-local position (topic + length leak at `final`/mean); n≈26 hits/condition; K3 tests whether the *ask-trained* direction is rule-conditioned (a causal steering test is separate future work). Plain-language writeup: [exp2_fuzzy_outcome.md](exp2_fuzzy_outcome.md). Activations on the box (`acts/exp2_*`, gitignored/regenerable); `probe_exp2.json` pulled to repo.
+
+---
+
 ## 2026-06-12 — Thread-1 GPU extraction + probe (1b instructed suppression + D1/D4 attention arms): OUTCOME H — a probe trained on clean recognition reads recognition on silently-suppressed docs, well-powered (n=58); attention arms agree; the D4 position dissociation vindicates the generous capture
 
 **The headline result of the project so far: "noticed-but-didn't-act" is internally noticed, and a probe reads it.** Plan: A2 (1b) + A4 Resolution (D1/D4 arm). Analysis: [probe_thread1.py](probe_thread1.py) (imports probe_keyphrase's exact machinery — pair-disjoint GroupKFold, document-disjoint pair-OOF diff-of-means, recognition trained on the model's own ASK answer — so it is method-consistent with the keyphrase line). Results: `probe_1b.json`, `probe_D1.json`, `probe_D4.json`.

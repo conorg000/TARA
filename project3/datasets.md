@@ -35,7 +35,12 @@ decodability.*
   judged consistently. Recognition decode is the FLOOR (the category track already showed
   semantic recognition decodes at 0.95–0.99); the load-bearing tests are K2 (vs near),
   K3 (rule-swap), K4 (vs arbitrary-property junk — analysis-time).
-- **Status:** behaviourally validated at scale (coarse); **extraction is GPU-ready** —
+- **Status (2026-06-12): EXTRACTED + PROBED on a fresh A100.** Outcome: recognition real
+  and reads advice-seeking (K1/recog/K2/K4 pass at `message_last`), but **K3 rule-swap fails
+  robustly** → content detector, not prompt-conditioned. Full record: runlog 2026-06-12 Exp 2
+  entry; plain-language [exp2_fuzzy_outcome.md](exp2_fuzzy_outcome.md); per-layer data
+  `probe_exp2.json`. Activations `acts/exp2_*` live on the box (gitignored/regenerable).
+- **Pre-extraction status:** behaviourally validated at scale (coarse); **extraction GPU-ready** —
   [extract_exp2.py](extract_exp2.py) (message-relative positions: `message_mean` primary,
   `message_first/last`, `final`, `question_mean`, `pre_message_final`, `post_message_mean`,
   + gen-prefix on action; no `name_*` — a fuzzy trigger has no crisp span) + launcher
