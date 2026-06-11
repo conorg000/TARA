@@ -8,6 +8,13 @@ it acted?** The scientific framing and pre-registered decision thresholds live
 in [README.md](README.md). This file is (1) how to keep records straight and
 (2) the standing instruction on *how to think* while working here.
 
+**Current phase (since 11 June 2026):** the keyphrase line is closed out and being
+written up (outcome: [keyphrase_v6_probe_outcome.md](keyphrase_v6_probe_outcome.md)).
+Active work follows [research_plan_2026-06-11.md](research_plan_2026-06-11.md) — the
+motivated gap (Exp 1) and the fuzzy climb (Exp 2), with pre-registered gates and a
+parking lot. Earlier lines (scenarios, conditions_v1–v3) are historical record, not
+live design; their lessons are inherited below.
+
 ---
 
 ## How to think here (read this part twice)
@@ -100,6 +107,15 @@ In the note, do the interpretation, not just the number. Flag: sanity checks
 and any confound you ruled in or out.
 
 ### Conventions
+- **No status doc — derive state, don't store it.** Several agents work this repo
+  concurrently, so any "current state" file is stale the moment another session acts
+  (one was tried and deleted, 11 June). The durable records are append-only *events*:
+  runlog entries, datasets.md sections, plan appendices — and each appendix header
+  carries its own status line, updated only by the agent doing that piece of work.
+  To see where things stand, reconstruct on demand:
+  `grep -n "^### A" research_plan_2026-06-11.md` (fork registry + statuses) +
+  `head -40 runlog.md` (last facts) + `git log --oneline -10` (cross-agent activity).
+  Corollary for commits: stage your own files explicitly, never `git add -A`.
 - **Record the code version with each run.** `extract_activations.py` stamps the git SHA (+ `-dirty` if the tree differs from HEAD) into the run's meta and prints it (`code: git <sha>`); copy that into the run's *How run* line. A command reproduces a result only against the commit it ran on, so the SHA — not the command string — is the real pin. **Commit before a keeper run** so the SHA isn't `-dirty`. (Runs r1–r6 predate this convention; left unrecorded rather than back-guessed.)
 - **Don't fabricate timestamps.** Use a real one (file mtime is fine) or just the date + run order. Honesty extends to metadata.
 - **Don't report dry-run / tiny-model numbers as findings.** Label them as design diagnostics.
