@@ -33,7 +33,8 @@ ex() {  # ex <dataset> <out-prefix> [extra extractor args...]
   local ds="$1" out="$2"; shift 2
   echo; echo ">>> extract  $ds  ->  $out"
   $PY extract_keyphrase.py --model "$MODEL" --device "$DEVICE" --dtype "$DTYPE" \
-      --dataset "inputs/$ds" --out-prefix "$out" "$@"
+      --dataset "inputs/$ds" --out-prefix "$out" \
+      --positions "${POSITIONS:-final,name_last,doc_last,doc_mean}" "$@"
 }
 
 echo "=================================================================="
