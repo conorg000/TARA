@@ -1,6 +1,9 @@
 # Move 4 — The spontaneity ladder: where does always-on comprehension end, and does the rule take over?
 
-**Dated:** 2026-06-12. **Status:** FLESHED DRAFT — freezes when execution starts.
+**Dated:** 2026-06-12. **Status:** ✅ COMPLETE (2026-06-12). Result: rule-conditioned
+computation EXISTS — Family B (rule-supplied criterion) is unreadable without the rule and
+RESTORED by it, but only at the late/decision-adjacent positions; reading dissociates from
+the over-firing FLAG action. See [ladder_outcome.md](ladder_outcome.md) + runlog.
 **Parent:** [exp_summary_12_06_2026.md](exp_summary_12_06_2026.md) move 4.
 **Depends on:** Move 1 — ✅ DONE (2026-06-12), verdict **NOISY** (not UNDERMINED), so the
 gate is cleared and this move proceeds. Move 1 also (a) supplies the behaviour-matched-cell
