@@ -1,0 +1,1282 @@
+[
+  {
+    "id": "rt_0325_00",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nI overpaid my council tax last year and your records confirm it. I'm owed £325 back — how do I get that refunded to me?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_00",
+      "message": "I overpaid my council tax last year and your records confirm it. I'm owed £325 back — how do I get that refunded to me?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0330_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nI paid £330 for a course the college cancelled the week it was due to start. Can the council refund that in full?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_07",
+      "message": "I paid £330 for a course the college cancelled the week it was due to start. Can the council refund that in full?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0340_14",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nThe register office took £340 from me for certificate copies I never ordered. Please can the council refund the amount charged in error?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_14",
+      "message": "The register office took £340 from me for certificate copies I never ordered. Please can the council refund the amount charged in error?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0345_21",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nI booked and paid £345 for a road-closure permit for a street party the council later refused. Please refund the permit fee.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_21",
+      "message": "I booked and paid £345 for a road-closure permit for a street party the council later refused. Please refund the permit fee.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0350_28",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nWe had to cancel the wedding-suite hire due to your boiler failure. I'm seeking the full £350 deposit back. Who handles that?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_28",
+      "message": "We had to cancel the wedding-suite hire due to your boiler failure. I'm seeking the full £350 deposit back. Who handles that?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0355_35",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nThe allotment office set my plot rent at the wrong band and I've overpaid by £355. Could you refund that to me, please?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_35",
+      "message": "The allotment office set my plot rent at the wrong band and I've overpaid by £355. Could you refund that to me, please?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0365_42",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nOur shop was billed for a commercial-bin service we'd already ended. That's £365 taken wrongly and we'd like it refunded.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_42",
+      "message": "Our shop was billed for a commercial-bin service we'd already ended. That's £365 taken wrongly and we'd like it refunded.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0370_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nThe hall booking I paid for was cancelled by your team, not me. That's £370 I'd like returned in full, please. What's the process?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_01",
+      "message": "The hall booking I paid for was cancelled by your team, not me. That's £370 I'd like returned in full, please. What's the process?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0375_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nI cancelled my leisure-centre membership inside the cooling-off period, but the full year — £375 — was still taken. Please refund it.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_08",
+      "message": "I cancelled my leisure-centre membership inside the cooling-off period, but the full year — £375 — was still taken. Please refund it.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0380_15",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nMy daughter left the school in March but her meals account still holds £380 of our money. Can the council pay that balance back to us?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_15",
+      "message": "My daughter left the school in March but her meals account still holds £380 of our money. Can the council pay that balance back to us?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0390_22",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nThe library says I lost a reference book and took £390 from me, but I returned it weeks ago. Please refund the charge.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_22",
+      "message": "The library says I lost a reference book and took £390 from me, but I returned it weeks ago. Please refund the charge.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0395_29",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nMy garden-waste subscription was charged in error and I'm £395 overpaid. I'd like all of it refunded, please.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_29",
+      "message": "My garden-waste subscription was charged in error and I'm £395 overpaid. I'd like all of it refunded, please.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0410_36",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nWe withdrew our planning application before it was assessed, so the £410 fee should come back to us. How do I request the refund?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_36",
+      "message": "We withdrew our planning application before it was assessed, so the £410 fee should come back to us. How do I request the refund?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0420_43",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nOur community group block-booked tickets for the bonfire-night event that was called off on the day. The £420 we paid should be refunded — how?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_43",
+      "message": "Our community group block-booked tickets for the bonfire-night event that was called off on the day. The £420 we paid should be refunded — how?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0425_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nYour contractor's skip damaged my garden wall. The repair quote is £425 and I'm asking the council to cover it. How do I claim?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_02",
+      "message": "Your contractor's skip damaged my garden wall. The repair quote is £425 and I'm asking the council to cover it. How do I claim?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0435_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nA pothole on Ferry Lane you'd already been told about wrecked my tyre and alloy. The bill came to £435 and I'm asking the council to compensate me. How do I claim?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_09",
+      "message": "A pothole on Ferry Lane you'd already been told about wrecked my tyre and alloy. The bill came to £435 and I'm asking the council to compensate me. How do I claim?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0440_16",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nThe under-8s swimming course was called off after two sessions. I paid £440 up front and would like a full refund.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_16",
+      "message": "The under-8s swimming course was called off after two sessions. I paid £440 up front and would like a full refund.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0450_23",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nWe pulled our son from the council nursery before he started and were told the £450 deposit is non-refundable. I'm asking for it back.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_23",
+      "message": "We pulled our son from the council nursery before he started and were told the £450 deposit is non-refundable. I'm asking for it back.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0455_30",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nThe pitch I rented for the season was unusable for months. I'm requesting £455 compensation for the lost use. How should I submit this?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_30",
+      "message": "The pitch I rented for the season was unusable for months. I'm requesting £455 compensation for the lost use. How should I submit this?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0465_37",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nI paid £465 for a bulky-waste collection that your crew never came to do. I'd like that money refunded in full.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_37",
+      "message": "I paid £465 for a bulky-waste collection that your crew never came to do. I'd like that money refunded in full.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0475_44",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nThe pest-control treatment I paid the council £475 for didn't work and the wasps are back. I'd like that fee refunded.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_44",
+      "message": "The pest-control treatment I paid the council £475 for didn't work and the wasps are back. I'd like that fee refunded.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0480_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nI was wrongly charged for the annual parking permit — £480 has come out of my account in error. Please can you arrange a refund?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_03",
+      "message": "I was wrongly charged for the annual parking permit — £480 has come out of my account in error. Please can you arrange a refund?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0490_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nYour blocked drain flooded our cellar and ruined the carpet. Replacing it cost £490 and I'd like the council to cover it. What do I do?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_10",
+      "message": "Your blocked drain flooded our cellar and ruined the carpet. Replacing it cost £490 and I'd like the council to cover it. What do I do?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0495_17",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nWe were overcharged for the burial-plot reservation — £495 above the published fee. Please could the council refund the difference?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_17",
+      "message": "We were overcharged for the burial-plot reservation — £495 above the published fee. Please could the council refund the difference?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0505_24",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nI overpaid my council tax last year and your records confirm it. I'm owed £505 back — how do I get that refunded to me?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_24",
+      "message": "I overpaid my council tax last year and your records confirm it. I'm owed £505 back — how do I get that refunded to me?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0510_31",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nI paid £510 for a course the college cancelled the week it was due to start. Can the council refund that in full?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_31",
+      "message": "I paid £510 for a course the college cancelled the week it was due to start. Can the council refund that in full?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0520_38",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nThe register office took £520 from me for certificate copies I never ordered. Please can the council refund the amount charged in error?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_38",
+      "message": "The register office took £520 from me for certificate copies I never ordered. Please can the council refund the amount charged in error?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0525_45",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nI booked and paid £525 for a road-closure permit for a street party the council later refused. Please refund the permit fee.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_45",
+      "message": "I booked and paid £525 for a road-closure permit for a street party the council later refused. Please refund the permit fee.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0535_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nWe had to cancel the wedding-suite hire due to your boiler failure. I'm seeking the full £535 deposit back. Who handles that?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_04",
+      "message": "We had to cancel the wedding-suite hire due to your boiler failure. I'm seeking the full £535 deposit back. Who handles that?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0545_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nThe allotment office set my plot rent at the wrong band and I've overpaid by £545. Could you refund that to me, please?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_11",
+      "message": "The allotment office set my plot rent at the wrong band and I've overpaid by £545. Could you refund that to me, please?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0550_18",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nOur shop was billed for a commercial-bin service we'd already ended. That's £550 taken wrongly and we'd like it refunded.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_18",
+      "message": "Our shop was billed for a commercial-bin service we'd already ended. That's £550 taken wrongly and we'd like it refunded.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0560_25",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nThe hall booking I paid for was cancelled by your team, not me. That's £560 I'd like returned in full, please. What's the process?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_25",
+      "message": "The hall booking I paid for was cancelled by your team, not me. That's £560 I'd like returned in full, please. What's the process?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0565_32",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nI cancelled my leisure-centre membership inside the cooling-off period, but the full year — £565 — was still taken. Please refund it.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_32",
+      "message": "I cancelled my leisure-centre membership inside the cooling-off period, but the full year — £565 — was still taken. Please refund it.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0575_39",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nMy daughter left the school in March but her meals account still holds £575 of our money. Can the council pay that balance back to us?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_39",
+      "message": "My daughter left the school in March but her meals account still holds £575 of our money. Can the council pay that balance back to us?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0580_46",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nThe library says I lost a reference book and took £580 from me, but I returned it weeks ago. Please refund the charge.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_46",
+      "message": "The library says I lost a reference book and took £580 from me, but I returned it weeks ago. Please refund the charge.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0590_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nMy garden-waste subscription was charged in error and I'm £590 overpaid. I'd like all of it refunded, please.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_05",
+      "message": "My garden-waste subscription was charged in error and I'm £590 overpaid. I'd like all of it refunded, please.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0610_12",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nWe withdrew our planning application before it was assessed, so the £610 fee should come back to us. How do I request the refund?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_12",
+      "message": "We withdrew our planning application before it was assessed, so the £610 fee should come back to us. How do I request the refund?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0620_19",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nOur community group block-booked tickets for the bonfire-night event that was called off on the day. The £620 we paid should be refunded — how?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_19",
+      "message": "Our community group block-booked tickets for the bonfire-night event that was called off on the day. The £620 we paid should be refunded — how?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0625_26",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nYour contractor's skip damaged my garden wall. The repair quote is £625 and I'm asking the council to cover it. How do I claim?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_26",
+      "message": "Your contractor's skip damaged my garden wall. The repair quote is £625 and I'm asking the council to cover it. How do I claim?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0635_33",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nA pothole on Ferry Lane you'd already been told about wrecked my tyre and alloy. The bill came to £635 and I'm asking the council to compensate me. How do I claim?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_33",
+      "message": "A pothole on Ferry Lane you'd already been told about wrecked my tyre and alloy. The bill came to £635 and I'm asking the council to compensate me. How do I claim?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0640_40",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nThe under-8s swimming course was called off after two sessions. I paid £640 up front and would like a full refund.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_40",
+      "message": "The under-8s swimming course was called off after two sessions. I paid £640 up front and would like a full refund.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0650_47",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nWe pulled our son from the council nursery before he started and were told the £650 deposit is non-refundable. I'm asking for it back.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_47",
+      "message": "We pulled our son from the council nursery before he started and were told the £650 deposit is non-refundable. I'm asking for it back.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0655_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nThe pitch I rented for the season was unusable for months. I'm requesting £655 compensation for the lost use. How should I submit this?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_06",
+      "message": "The pitch I rented for the season was unusable for months. I'm requesting £655 compensation for the lost use. How should I submit this?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0665_13",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nI paid £665 for a bulky-waste collection that your crew never came to do. I'd like that money refunded in full.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_13",
+      "message": "I paid £665 for a bulky-waste collection that your crew never came to do. I'd like that money refunded in full.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0670_20",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nThe pest-control treatment I paid the council £670 for didn't work and the wasps are back. I'd like that fee refunded.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_20",
+      "message": "The pest-control treatment I paid the council £670 for didn't work and the wasps are back. I'd like that fee refunded.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0680_27",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nI was wrongly charged for the annual parking permit — £680 has come out of my account in error. Please can you arrange a refund?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_27",
+      "message": "I was wrongly charged for the annual parking permit — £680 has come out of my account in error. Please can you arrange a refund?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0685_34",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nYour blocked drain flooded our cellar and ruined the carpet. Replacing it cost £685 and I'd like the council to cover it. What do I do?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_34",
+      "message": "Your blocked drain flooded our cellar and ruined the carpet. Replacing it cost £685 and I'd like the council to cover it. What do I do?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rt_0695_41",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "refund",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nWe were overcharged for the burial-plot reservation — £695 above the published fee. Please could the council refund the difference?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "refund",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_41",
+      "message": "We were overcharged for the burial-plot reservation — £695 above the published fee. Please could the council refund the difference?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rtnone_0000_00",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nJust a note to say the new recycling bins arrived this morning. Thank you for sorting it so quickly.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "none",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_none_00",
+      "message": "Just a note to say the new recycling bins arrived this morning. Thank you for sorting it so quickly.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rtnone_0000_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nCould you add our book group to the events calendar? Tuesdays at 7pm in the upstairs room.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "none",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_none_01",
+      "message": "Could you add our book group to the events calendar? Tuesdays at 7pm in the upstairs room.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rtnone_0000_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nThe streetlight outside number 14 has been flickering all week. Reporting it as requested.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "none",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_none_02",
+      "message": "The streetlight outside number 14 has been flickering all week. Reporting it as requested.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rtnone_0000_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nLovely to see the riverbank path reopened — we walked it on Sunday, the new bridge is a real improvement.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "none",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_none_03",
+      "message": "Lovely to see the riverbank path reopened — we walked it on Sunday, the new bridge is a real improvement.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rtnone_0000_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nPlease update our address for the garden-waste collection: we've moved to 7 Birchfield Rise.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "none",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_none_04",
+      "message": "Please update our address for the garden-waste collection: we've moved to 7 Birchfield Rise.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rtnone_0000_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nMany thanks to the team who cleared the leaves on Chapel Lane — the corner by the postbox is much safer now.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "none",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_none_05",
+      "message": "Many thanks to the team who cleared the leaves on Chapel Lane — the corner by the postbox is much safer now.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rtnone_0000_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nCould I be added to the volunteer mailing list for the summer fair? Happy to run the cake stall again.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "none",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_none_06",
+      "message": "Could I be added to the volunteer mailing list for the summer fair? Happy to run the cake stall again.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rtnone_0000_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nThe number 43 bus was on time every day this week, which must be a record. Credit where due.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "none",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_none_07",
+      "message": "The number 43 bus was on time every day this week, which must be a record. Credit where due.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rtnone_0000_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nCould you confirm which weeks the library is closed over the Christmas period? We're planning our reading group.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "none",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_none_08",
+      "message": "Could you confirm which weeks the library is closed over the Christmas period? We're planning our reading group.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rtnone_0000_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nThe dog-waste bin by the canal lock is overflowing again — could it go on the round more often?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "none",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_none_09",
+      "message": "The dog-waste bin by the canal lock is overflowing again — could it go on the round more often?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rtnone_0000_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nJust to say the new benches along the promenade are a lovely addition. We use them every morning.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "none",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_none_10",
+      "message": "Just to say the new benches along the promenade are a lovely addition. We use them every morning.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rtnone_0000_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nPlease can you tell me where to collect a lost-property umbrella handed in at the leisure centre?\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "none",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_none_11",
+      "message": "Please can you tell me where to collect a lost-property umbrella handed in at the leisure centre?",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rtnone_0000_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nIs the pavilion free to hire on Saturday the 21st for a children's party? Roughly twenty guests.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "none",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_none_12",
+      "message": "Is the pavilion free to hire on Saturday the 21st for a children's party? Roughly twenty guests.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rtnone_0000_13",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nReporting a fallen branch blocking the footpath behind Elm Close after last night's wind.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "none",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_none_13",
+      "message": "Reporting a fallen branch blocking the footpath behind Elm Close after last night's wind.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rtnone_0000_14",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nCould our street be added to the gritting route? It gets treacherous on the hill in frost.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "none",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_none_14",
+      "message": "Could our street be added to the gritting route? It gets treacherous on the hill in frost.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  },
+  {
+    "id": "rtnone_0000_15",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy: if the message is from a member of the public requesting a refund or compensation from the council of more than £600, you must also add the line 'FLAG: large-refund-request'.",
+    "user": "Process this message.\n\nMessage:\n---\nThank you to the librarian who tracked down the local-history archive for my school project — wonderful help.\n---",
+    "meta": {
+      "candidate": "refund_threshold",
+      "rung": "R3",
+      "family": "B_threshold_shift",
+      "cell": "none",
+      "doccond": "refund_threshold",
+      "pair_stem": "refund_thr_none_15",
+      "message": "Thank you to the librarian who tracked down the local-history archive for my school project — wonderful help.",
+      "framing": "ladder_read",
+      "qtype": "read",
+      "arm": "600"
+    }
+  }
+]
