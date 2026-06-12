@@ -71,6 +71,17 @@ RECOGNITION-domain separability, NOT keywords — it survives topic removal.** T
 no-regex result the panel needed. (final is weaker — recognition-separability ~0.74–0.77 there,
 the decision-adjacent/topic-contaminated read; not the primary.)
 
+**Robustness — aggressive (rank-2) topic removal** (`--topic-rank 2`, adds a per-fold logistic
+own-near-vs-other-near axis to the mean-difference one; a conservative test — over-removal can
+only understate recognition): legal specificity 0.974→**0.958**, medical 0.970→**0.954** at
+message_last — essentially unchanged from rank-1. The clinching argument: the mean-diff axis
+alone drove *legal* topic-near to chance (0.496) but *medical* only to 0.605, and the extra
+logistic axis did **not** push medical below 0.605 — so that residual is **not removable linear
+keyword-topic** (it's a small, stable, non-keyword effect: medical *reports* are mildly
+health-related, and it sits in the non-firing regime, both nears below baseline). Decisively,
+legal (topic fully removed, 0.51) and medical (topic only partly removed, 0.605) land at the
+**same specificity ~0.95** — so the ~0.95 cannot be topic-dependent; it is recognition.
+
 **Controls clean:** shuffle ~0.5 (0.47–0.54); negative control `pre_message_final` recog 0.500;
 layer-0 ≈ chance. No leakage.
 

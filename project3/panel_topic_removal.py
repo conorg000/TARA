@@ -108,10 +108,16 @@ def analyze(cond: str, acts_dir: str, position: str, seed: int, topic_rank: int)
             tdirs = []
             on, ot = trm & own_near, trm & other_near
             if on.any() and ot.any():
-                tdirs.append(X[on].mean(0) - X[ot].mean(0))
-            # optional extra topic axes: form-vs-none gives a 2nd "content/seeking-on-neutral"
-            # axis is NOT topic, so we DON'T use it; multi-rank topic would need more near
-            # structure. topic_rank>1 re-uses the single near axis only (kept for API symmetry).
+                tdirs.append(X[on].mean(0) - X[ot].mean(0))           # mean-difference topic axis
+                if topic_rank >= 2:
+                    # 2nd, higher-capacity topic axis: a logistic boundary own-near vs other-near
+                    # (captures topic variance the centroid diff misses). Removing it is a
+                    # CONSERVATIVE test — over-removal can only understate recognition.
+                    from sklearn.linear_model import LogisticRegression
+                    Xn = np.vstack([X[on], X[ot]]); yn = np.r_[np.ones(on.sum()), np.zeros(ot.sum())]
+                    mu, sd = Xn.mean(0), Xn.std(0) + 1e-6
+                    lr = LogisticRegression(C=1.0, max_iter=2000).fit((Xn - mu) / sd, yn)
+                    tdirs.append((lr.coef_[0] / sd))                  # back to raw-activation space
             Xp = orth(X, tdirs) if tdirs else X
             # recognition direction (diff-of-means) trained on TRAIN rows, raw and perp
             pos, neg = trm & (ytr == 1), trm & (ytr == 0)
