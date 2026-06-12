@@ -9,6 +9,41 @@ reproducible from seed).
 
 ---
 
+## `playbook_*.json` — *current (Move 3 / playbook yield: N-rule panel, cold recipe run)*
+
+The Move-3 yield study (run the recognition-probe recipe cold on fresh conditions). Three
+families, all on the shared Riverbeck Borough Council correspondence-desk frame:
+
+- **`playbook_screen_<cond>_p{1,2,3}.json`** — Step-3 probeability pre-test, **THROWAWAY**.
+  6 conditions × 48-item lattice (12 hit / 12 near / 12 form / 12 none) × 3 paraphrases,
+  ask-only plain SYSTEM. Content `playbook_screen_content.json` (subagent-drafted,
+  `inputs/screen_src/`). Gate B picks survivors. Cold yield 3/6.
+- **`playbook_content.json`** — the **keeper** content for the 3 survivors: 32 register-
+  matched {hit, near} pairs per condition (subagent-drafted + hand-audited; fraud_report
+  nears length-rebalanced) + shared `form`/`none` reused from `exp2_content.json`. Sources
+  in `inputs/keeper_src/`. **Design caveat (the Move-3 finding):** the conditions have
+  different characteristic message lengths (data_deletion ~216 / fraud ~349 / threat ~312
+  chars), which injected a **length confound** into the pooled panel reads — see
+  `playbook_yield.md` / the length-control. Matched pairs are length-balanced (hit-near is
+  length-immune); cross-condition reads are not. Future panels should length-match conditions.
+- **`playbook_ask_<cond>_p{1,2,3}.json` + `playbook_action.json`** — the extraction passes:
+  248 docs (96 hit + 96 near + 28 form + 28 none) carried by ONE shared multi-rule SYSTEM
+  with all 3 standing policies (A data-erasure / B fraud-report / C legal-threat). Asks are
+  loaded (question inside the deployment prompt); the action is one multi-rule triage job.
+  Labels: ask YES iff own hit; per-rule FLAG vocab in `playbook_flag_vocab.json`. The killed
+  `implicit_legal_threat` is retained in-panel (deployment-realistic; interference matrix).
+
+Regenerate:
+```
+python make_playbook_screen.py        # pre-test lattices (throwaway) from playbook_screen_content.json
+python make_playbook_keeper.py        # the N-rule panel ask/action passes from playbook_content.json
+python extract_playbook_selftest.py   # span/group/label checks (no GPU)
+# GPU: extract_playbook.sh (10 passes); probe_playbook.py + probe_playbook_lengthcontrol.py
+```
+Spec + predictions: `playbook_conditions.json`. Recipe: `PLAYBOOK.md`. Results: `playbook_yield.md`.
+
+---
+
 ## `panel_*.json` — *current (Move 2 / separability: two rules, one prompt, one extraction)*
 
 **The panel dataset** ([make_panel.py](make_panel.py) ← reuses `exp2_content.json` for the
