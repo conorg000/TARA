@@ -11,6 +11,27 @@ record the full per-layer table here for any result worth keeping.
 
 ---
 
+## 2026-06-12 — Move 4b / Flow A: the threshold-shift strengthener (criterion-parameter swap). **The readable boundary MOVES with the rule's number — prompt-parameterized computation, not a fixed "big refund" prior.**
+
+**Why:** the residual alternative reading of Move 4's Family-B result was that "£500" coincides with some prior notion of "a large refund" the rule merely *activates*, rather than a parameter the rule *supplies*. The decisive test (the criterion-level analog of the keyphrase watchlist-swap): same refund letters, amounts spread £325–£695, read under rules stating **£400 / £500 / £600**. Every letter in the 400–600 band flips its label purely with the rule's parameter. **Build:** `make_ladder_threshold.py` (48 refund instances at banded amounts + 16 none; A held constant), `probe_ladder_threshold.py` (one "criterion-satisfied" direction trained on the ASK passes pooled across the three thresholds — model-own labels, correctness-filtered, document-disjoint by scenario — scored cross-pass on the read passes). Extraction: 6 passes × 64 docs, Qwen3-32B, greedy/T=0. Per-doc in `probe_ladder_threshold.json`.
+
+**Result (AUROC; layer chosen by the shared direction's ask-pass OOF, independent of the flip):**
+
+| position | within-rule @400/@500/@600 | FLIP (swing 400–600) | anchor control (no-flip) |
+|---|---|---:|---:|
+| message_mean (body avg) | 0.59 / 0.20 / 0.60 | 0.66 | 0.45 |
+| message_last | 0.84 / 0.62 / 0.82 | 0.80 | 0.46 |
+| **final (decision-adjacent)** | **0.99 / 0.97 / 1.00** | **0.997** | **0.48** |
+
+- **within-rule:** at each of the three thresholds the read pass separates over-T from under-T — the rule's boundary is readable at its *own* threshold (replicates Move 4 at three parameter values).
+- **FLIP (the headline):** the SAME swing letters read "over" under the £400 rule and "under" under the £600 rule (0.997 at final). The model re-sorts the identical letters when only the rule's number changes → the comparison is genuinely **parameterized by the prompt**.
+- **anchor control:** letters over/under *both* thresholds do NOT flip (0.45–0.48 ≈ chance) at every position — so the flip is not the probe reading the rule's number off the prompt (which would move every letter); it's the letter's relation to the *active* threshold.
+- **Positional, like Move 4:** the parameterized comparison is weak in the body average (flip 0.66) and sharp only at the decision-adjacent final token (0.997). Late binding, again.
+
+**Behavioural complement (FLAG by amount-band).** The action is parameter-*insensitive*: true-over counts are 36/24/12 across @400/@500/@600, but the FLAG counts barely move (44/43/33), and the rule even flags 33–67% of clearly-under refunds. So the *reading* tracks the rule's parameter almost perfectly (0.997) while the *action* tracks it sluggishly and over-fires — the precision-filter dissociation, sharpened: the probe is far more faithful to the rule's number than the model's own flagging.
+
+**Upshot.** Move 4's Family-B "rule-restored" result is now bulletproof against the fixed-prior alternative: the rule doesn't just switch on *a* boundary, it parameterizes *which* boundary, and the model computes each document's relation to that supplied number — late, near the decision, and more reliably than it acts on it.
+
 ## 2026-06-12 — Move 3 / Flow B (playbook yield) Steps 5–7: GPU extraction (N=3 panel) + probe battery + length-control. Raw battery 0/3 (all fail near-none + selectivity, uniform-extreme). **Length-removal control refuted the strong "all length" read**: hit-near + specificity SURVIVE length removal (genuine), only fraud's near-none was length. **Final probe yield ~1/6 clean (fraud_report) + 1 genuine-but-graded (data_deletion).** Headline finding: heterogeneous-length conditions inject a length confound → PLAYBOOK amendment.
 
 **Plan:** [plan_move3_playbook_yield.md](plan_move3_playbook_yield.md). **Deliverable:**

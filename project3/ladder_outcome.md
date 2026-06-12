@@ -98,6 +98,35 @@ the probe can tell you the model itself internally represented that one as *unde
 the monitor can flag the model's own false positives, using a signal the model computed but didn't
 honour. A monitor that's more reliable than the actor it watches is a genuinely useful thing to have.
 
+## Did the model really compute *the rule's number* — or just "a big refund"? (the decisive follow-up)
+
+There was one alternative reading left to kill. Maybe the model doesn't compute "over £500"
+at all — maybe "£500" just happens to line up with a vague prior sense of "a big refund" that
+the rule *activates*, and we'd see the same thing for any threshold near there. If so, the rule
+isn't really supplying a parameter; it's flicking a switch on something fixed.
+
+So we ran the clean test (the same move that made our earlier keyphrase-matching result
+airtight): **same refund letters, amounts spread from £325 to £695, read under three different
+rules — "over £400," "over £500," "over £600."** A £520 letter is *over* the line under the £400
+and £500 rules but *under* it when the rule says £600. The decisive question: does the same
+letter's readable "over/under" state **flip** when the only thing that changed is the number in
+the rule?
+
+It flips, almost perfectly. At the decision-adjacent position, the letters in the swing band
+(£400–£600) read as "over" under the £400 rule and "under" under the £600 rule (0.997). And the
+crucial control: letters that are over *both* thresholds (or under *both*) do **not** flip
+(≈ chance) — so this isn't the probe cheating by reading the rule's number off the prompt; if it
+were, every letter would move, including the anchors. The model is genuinely computing each
+letter's amount **against the specific number the rule supplied**, and re-sorting the same letters
+when you change that number. And, exactly like the main result, it only does this **late** — the
+flip is weak when you average over the message body and sharp only right before it acts.
+
+One more time the reading beats the action: the model's *flagging* is almost numb to the
+threshold (it flags roughly the same pile of refunds whether the rule says £400 or £600, and
+flags plenty that are clearly under), while its internal *reading* tracks the number almost
+perfectly. So the "precision filter" point gets sharper — the probe is far more faithful to what
+the rule actually says than the model's own behaviour is.
+
 ## What it means for the monitoring story
 
 - **The content-probe panel has a boundary, and it's *positional*, not a flat wall.** A monitor

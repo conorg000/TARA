@@ -605,3 +605,26 @@ hit-vs-near, plan Appendix B1).
   python make_ladder_keeper.py          # the keeper passes inputs/ladder_<cand>_*.json
   python extract_ladder_selftest.py --model Qwen/Qwen3-0.6B   # span/group/token checks
   ```
+
+---
+
+## `ladder_threshold_*` — Move 4b threshold-shift (criterion-parameter swap) (2026-06-12)
+
+Strengthener for Move 4's Family-B result (runlog 2026-06-12 Move 4b). Tests whether the
+rule *supplies a parameter* (vs activates a fixed "big refund" prior) by reading the **same**
+refund letters under rules stating three different thresholds.
+
+- **Pool:** the 24 audited refund scenarios reused as 48 instances with amounts reassigned to
+  span £325–£695 — 12 anchors_low (<£400), 24 swing (£400–£600), 12 anchors_high (>£600) — plus
+  16 `none`. Component A (refund request) held constant; only B (amount vs threshold) varies.
+- **Passes:** per threshold T∈{400,500,600}: `ladder_threshold_ask_t<T>` (framing `ladder_ask`,
+  "refund over £T?") and `ladder_threshold_read_t<T>` (framing `ladder_read`, triage task + the
+  standing rule "flag refunds over £T"). The per-doc amount is encoded in the id
+  (`rt_<amount>_<scenario>`); `meta.arm` carries the threshold.
+- **Design logic:** swing letters flip their ground-truth label between the £400 and £600 rules;
+  anchors keep the same label under all rules. If the readable boundary moves with the rule's
+  number (swing flips, anchors don't), the computation is prompt-parameterized.
+- **Probeability:** OpenRouter greedy "over £T" judged at 0.92–0.98 across the spread.
+- **Result:** swing flip 0.997, anchor 0.48 at the decision-adjacent position (parameterized,
+  late). Per-doc in `probe_ladder_threshold.json`.
+- **Regenerate:** `python make_ladder_threshold.py` (reuses `inputs/ladder_keeper_content_refund_over_500.json`).
