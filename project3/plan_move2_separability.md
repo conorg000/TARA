@@ -1,7 +1,27 @@
 # Move 2 — Separability: do per-condition probes coexist in one prompt?
 
-**Dated:** 2026-06-12. **Status:** VALIDATED — construction validation PASSED, keeper
-locked at 216 docs; **the only remaining step is the GPU extraction** (then `probe_panel.py`).
+**Dated:** 2026-06-12. **Status:** ✅ DONE — extraction + probe + skeptical controls complete.
+**Verdict: panel BUILDABLE; cross-condition separation is genuine recognition (not keywords).**
+Plain-language: [panel_outcome.md](panel_outcome.md); full record: runlog 2026-06-12 Move 2 entry.
+
+## Result (2026-06-12)
+
+- **SEPARABLE.** Specificity AUROC(own-hit vs other-hit) = **0.989 legal / 0.972 medical**
+  (message_last). Two per-condition directions coexist, each fires on its own condition,
+  nears stay at baseline (no topic-without-seeking false alarm), composition holds (both-docs
+  outrank the other condition's hits). Controls clean (shuffle ~0.5, neg control 0.500).
+- **Genuine recognition, not topic/keywords.** Projecting out the topic axis barely moves
+  specificity (→ 0.962 / 0.954; rank-2 aggressive removal 0.958 / 0.954) while the topic
+  control collapses to chance — so the separation survives topic-removal. Legal (topic fully
+  removed) and medical (partly) land at the same ~0.95 ⇒ recognition, not topic.
+- **Honest bounds:** directions share a large advice-seeking component (cos 0.87, not
+  orthogonal → calibrate per-condition); cleanest at message_last (topic leaks at mean/final);
+  legal/medical are a deliberately *close* pair (a hard test). The pre-registered crossfire
+  metric mis-fired "collapsed" (mis-specified); superseded by specificity + topic-removal, all
+  recorded.
+- **Reproducible:** committed code re-run on the box reproduces the numbers to 4 decimals.
+- **Feeds Move 3:** the playbook is a *panel* recipe. Future strengthener: a topic-matched
+  condition pair (separability with no topic to remove).
 
 ## Validation outcome (2026-06-12 — runlog "Move 2 panel construction-validation")
 
@@ -162,3 +182,30 @@ panel dies; either answer is essential.
 
 Screening ≈ $2–5 (OpenRouter). Extraction: ~210 docs × 7 passes ≈ one Exp-2-scale
 A100 session, ≈ $20–40. CPU probe free.
+
+---
+
+## Appendix A1 — 2026-06-12: piggyback analysis from Move 1 (EXPLORATORY, not a gate)
+
+*Added by the Move 1 agent. Does NOT alter the frozen registration above — an optional,
+free re-analysis of activations this panel run already produces. Owner's call whether to
+run it; skipping it changes nothing about Move 2's verdict or kill-switches.*
+
+**Origin.** Move 1's cross-tab (runlog 2026-06-12) found the Exp 2 action pass fires the FLAG
+on *domain-general* advice-seeking and stamps it with the active rule's label (17 pure-clinical
+medical letters flagged `legal-advice-request` under the legal rule; the reverse only 9%). The
+behaviour shows the action is liberal; the cleanest possible link in the story would be to show
+that liberality is **driven by the always-on content representation**.
+
+**The analysis (free here, impossible on Exp 2).** Exp 2's activations are gone and the box is
+fresh, so this can't be done there — but the panel run extracts these *same* legal/medical docs
+under an action pass, so per-doc probe scores already exist. Once `probe_panel.py` has run: for
+medical docs, compare **probe_legal score** against whether the doc was flagged under the legal
+rule (and symmetrically). **Exploratory prediction:** over-flagged wrong-domain docs score
+higher on the active rule's content direction than non-flagged ones (the action threshold
+reading the content axis). A null is equally informative — it would place the action liberality
+downstream of the readable content representation.
+
+**Discipline.** Single-look, reported with its n, logged as its own dated runlog note; NOT a
+Move 2 kill-switch and must not influence the separability verdict. Do **not** re-extract Exp 2
+activations for this.
