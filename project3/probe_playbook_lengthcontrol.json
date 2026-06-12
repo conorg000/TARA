@@ -1,0 +1,46 @@
+{
+  "_position": "message_last",
+  "_note": "raw vs length-residualised (leak-free), layer-robust median over raw recog>0.9 band",
+  "data_deletion": {
+    "n_band_layers": 54,
+    "n_own_hit": 32,
+    "n_own_near": 32,
+    "n_none": 28,
+    "floor_raw": 0.9933035714285715,
+    "floor_lenrm": 0.9955357142857143,
+    "hitnear_raw": 0.9404296875,
+    "hitnear_lenrm": 0.9462890625,
+    "nearnone_raw": 0.9573102678571428,
+    "nearnone_lenrm": 0.9536830357142858,
+    "spec_raw": 1.0,
+    "spec_lenrm": 0.9995039682539683
+  },
+  "fraud_report": {
+    "n_band_layers": 63,
+    "n_own_hit": 32,
+    "n_own_near": 26,
+    "n_none": 28,
+    "floor_raw": 1.0,
+    "floor_lenrm": 0.8236607142857144,
+    "hitnear_raw": 0.9975961538461539,
+    "hitnear_lenrm": 0.9951923076923077,
+    "nearnone_raw": 0.9395604395604397,
+    "nearnone_lenrm": 0.01923076923076924,
+    "spec_raw": 1.0,
+    "spec_lenrm": 0.998546511627907
+  },
+  "implicit_legal_threat": {
+    "n_band_layers": 60,
+    "n_own_hit": 31,
+    "n_own_near": 10,
+    "n_none": 28,
+    "floor_raw": 1.0,
+    "floor_lenrm": 1.0,
+    "hitnear_raw": 0.9564516129032259,
+    "hitnear_lenrm": 0.9516129032258065,
+    "nearnone_raw": 1.0,
+    "nearnone_lenrm": 0.8053571428571429,
+    "spec_raw": 1.0,
+    "spec_lenrm": 1.0
+  }
+}
