@@ -11,6 +11,133 @@ record the full per-layer table here for any result worth keeping.
 
 ---
 
+## 2026-06-12 — Move 2 / Flow B (separability) GPU extraction + probe + skeptical controls: the panel IS buildable — two per-condition directions coexist, stay specific, and the cross-condition separation SURVIVES topic-removal (genuine recognition, not keywords). The pre-registered crossfire metric mis-fired "collapsed"; corrected via three controls.
+
+**Plan:** [plan_move2_separability.md](plan_move2_separability.md). **Run:** 2026-06-12, fresh
+A100-80GB, Qwen3-32B bf16, greedy/T=0, no-think. Extraction [extract_panel.py](extract_panel.py)
+at git **2b1fb51** (transformers 5.11.0 — `torch_dtype` deprecation warning only, path verified
+by CPU smoke); 7 passes (6 ask + 1 multi-rule action) × 216 docs (`panel_*`, see
+[datasets.md](datasets.md)); 7 message-relative prefill positions fp16 + gen-prefix on action.
+Probe [probe_panel.py](probe_panel.py), disambiguator [panel_specificity.py](panel_specificity.py),
+decomposition [panel_topic_removal.py](panel_topic_removal.py) → `probe_panel.json`,
+`panel_specificity.json`, `panel_topic_removal.json`. **Claim under test:** *per-condition
+recognition directions coexist in one multi-rule prompt and stay specific — or collapse into a
+generic "a rule fired" signal.*
+
+**Action behaviour (verbatim):** FLAG-LEGAL 42 / FLAG-MEDICAL 49 / FLAG-BOTH 31 / NOFLAG 94
+(of 216). FLAG-BOTH 31/32 = behavioural composition, but the model OVER-flags single rules
+(42/49 vs ideal 32) — a *weak* aside only: Move 1 shows the action FLAG labels are unreliable
+(72% false-fire on medical nears), and the panel never uses them as labels (trains on the
+consistency-filtered ASK answer; action-pass metrics score activations by CELL membership).
+
+**The verdict EVOLVED through three controls — recorded in full because the headline flipped:**
+
+**(1) Pre-registered crossfire — fired "COLLAPSED" (as scored, stands in the record).** Probe
+anchor was crossfire = AUROC(other-hit vs none) ≤0.65 pass / ≥0.75 collapsed. Got **~1.0** both
+conditions, all positions → "COLLAPSED". BUT the result was suspiciously all-1.0 (incl. form=1.0),
+flagged BEFORE looking further as the "reads something global" signature. The metric is
+**mis-specified**: AUROC(other-hit vs none)=1 only says other-hits rank *above the blank baseline*
+— true whether they sit at own-hit level (collapsed) OR well below it (separable). It cannot tell
+the two apart.
+
+**(2) Specificity (the right metric) — SEPARABLE.** Direct AUROC(own-hit vs other-hit),
+layer-robust median, message_last: **legal 0.989, medical 0.972**. Projection layout (legal dir,
+message_last): own_hit **+1449** ≫ both **+789** > other_hit **+640** ≫ none **−830** ≈ own_near
+**−825** > other_near −956. So other-condition seekers are *elevated above baseline* (→ crossfire
+1.0) but *far below* own-condition seekers (→ specificity ~0.98). The directions share a dominant
+advice-seeking component (geometry pure cos(legal,medical) = **0.874**) plus a condition-specific
+part. Nears sit at baseline → not firing on topic-without-seeking. Composition: both-docs project
+above the OTHER condition's hits (both_vs_other 0.67 legal / 0.84 medical) — real, though diluted
+below own-hits. **This is NOT a goalpost move:** crossfire stays scored as-is; specificity is the
+correct operationalization, reported alongside.
+
+**(3) Topic confound check — near-vs-near, then topic-removal.** legal/medical CONFOUND condition
+with topic (legal vs medical vocabulary), so specificity could be keyword separation (regex-able,
+the thing probes must beat). Topic control AUROC(own-near vs other-near) — docs differing ONLY in
+topic — message_last: legal **0.608**, medical **0.792** (and ~0.93–1.0 at message_mean/final →
+those positions topic-contaminated, as in Exp 2). So a topic component IS present, larger for
+medical. **Decisive test — project out the topic axis (from the nears, per-fold/leak-free) and
+re-measure** ([panel_topic_removal.py](panel_topic_removal.py)), message_last:
+```
+              specificity raw -> AFTER topic-removal   topic-near raw -> removed   hit-near(perp)
+  legal           0.974    ->     0.962                 0.552  ->  0.496             1.000
+  medical         0.970    ->     0.952                 0.744  ->  0.605             1.000
+  (message_mean)  legal 0.999->0.873 | medical 1.000->0.959   (topic-near 1.0 -> ~0.55-0.62)
+  (final)         legal 0.843->0.769 | medical 0.914->0.739   [PARTIAL — decision-contaminated]
+```
+Removing the topic axis cleanly collapses the topic control (→ ~0.5) but **specificity barely
+moves** (0.962 / 0.952 at message_last). **So the cross-condition separation is genuine
+RECOGNITION-domain separability, NOT keywords — it survives topic removal.** This is the
+no-regex result the panel needed. (final is weaker — recognition-separability ~0.74–0.77 there,
+the decision-adjacent/topic-contaminated read; not the primary.)
+
+**Controls clean:** shuffle ~0.5 (0.47–0.54); negative control `pre_message_final` recog 0.500;
+layer-0 ≈ chance. No leakage.
+
+**VERDICT — panel BUILDABLE, separation genuine recognition.** In one shared multi-rule prompt,
+two per-condition directions coexist, each fires on its own condition's seekers, neither
+false-alarms on same-topic-non-seeking nears, and the cross-condition separation is recognition
+(survives topic removal at 0.95+), not keyword/topic. Honest bounds: (a) the directions are NOT
+orthogonal — they share a large advice-seeking component (cos 0.87), so cross-condition docs are
+elevated above baseline and a deployed panel must calibrate per-condition (threshold between own
+and other, not at the blank baseline); (b) cleanest at message_last, topic-contaminated toward
+message_mean/final (recover under topic-removal at mean, weaker at final); (c) legal/medical are
+semantically CLOSE (a deliberately hard test) — more distant rules should separate more easily.
+Feeds Move 3 (the playbook is a *panel* recipe). Pre-registered crossfire metric noted as
+mis-specified; superseded by specificity + topic-removal, all three recorded. Activations (6.9GB)
+on the box (regenerable); result JSONs pulled home.
+
+---
+
+## 2026-06-12 — Move 1 / Flow A (cross-tab): Exp 2 flagging IS strongly rule-dependent (matching 100% vs swapped 31%) but NOISY, not clean — the legal rule over-applies to medical content and both rules over-fire on near docs; the binding premise for Move 4 holds, with the action pass characterised as liberal
+
+**Plan:** [plan_move1_crosstab.md](plan_move1_crosstab.md). **Question:** did Exp 2's *flagging* condition on the active rule per-document — the premise under the summary's "comprehension is rule-independent, behaviour isn't / binding lives on the decision side"? The aggregate flag counts (legal 56, medical 63 vs 32 true hits each) never showed it per-document.
+
+**Method.** The Exp 2 keeper behaviour never came home (only keyphrase v4/v6 + thread1 are in local `acts/`), so it was regenerated **generation-only** (no activation capture) on a fresh A100-80GB: [crosstab_behaviour_gpu.py](crosstab_behaviour_gpu.py) (`c89dbce`) via [run_crosstab_behaviour.sh](run_crosstab_behaviour.sh) — prompt build imported from extract_exp2.py, parsing from markers.py, one-doc greedy decoding, parity by construction. **NOT OpenRouter** (verification claim → greedy-on-GPU). Box ran transformers **5.11.0** (newer than the original Exp 2 run); behaviour reproduced the original within ≤1 doc per pass — **action FLAG legal 57 (orig 56) / medical 63 (orig 63 exact); ask present-YES legal p1/p2/p3 = 27/39/35 (orig 28/40/35), medical = 26/36/36 (orig 26/35/36)** — so the version gap is immaterial to behaviour. Cross-tab by [crosstab_exp2.py](crosstab_exp2.py) (numpy-only, ran on-box + reproduced on laptop, identical). 0 truncations. Smoke (4 items, real 32B) + [crosstab_smoke.py](crosstab_smoke.py) (13/13 fabricated-data checks) both passed.
+
+**Table 1 — flag rate by cell × active rule (verbatim):**
+```
+doccond/cell       n      flag@legal    flag@medical
+legal/hit         32    32/32 (100%)       3/32 (9%)
+legal/near        32      7/32 (22%)       0/32 (0%)
+medical/hit       32     17/32 (53%)    32/32 (100%)
+medical/near      32       0/32 (0%)     23/32 (72%)
+neutral/form      28       1/28 (4%)      5/28 (18%)
+neutral/none      28       0/28 (0%)       0/28 (0%)
+```
+**Table 2 — hits, flagged under matching vs swapped rule (per-doc 2×2, verbatim):**
+```
+hits         n     matching      swapped  both match-only swap-only  neither
+legal       32 32/32 (100%)    3/32 (9%)     3         29         0        0
+medical     32 32/32 (100%)  17/32 (53%)    17         15         0        0
+POOLED      64 64/64 (100%)  20/64 (31%)
+```
+**Table 3 — non-hit flags (over-flagging), by cell × rule (verbatim):**
+```
+legal/near        32      7/32 (22%)       0/32 (0%)
+medical/near      32       0/32 (0%)     23/32 (72%)
+neutral/form      28       1/28 (4%)      5/28 (18%)
+neutral/none      28       0/28 (0%)       0/28 (0%)
+```
+Secondary: **K1-core** (hits with own-ask consistent-YES, n=52): 52/52 (100%) matching, 16/52 (31%) swapped — same picture on the probe-usable subset. **Ask-side flip is clean and rule-specific:** legal hits answer the legal question YES 26/32 (81%) but the medical question YES **0/32**; medical hits answer medical YES 26/32 (81%) but legal YES **1/32 (3%)**.
+
+**Verdict (pre-registered bands): NOISY.** Pooled matching 100% vs swapped 31% — swapped exceeds the VERIFIED ceiling (≤25%), but the matching−swapped gap is **69 points**, so flagging is *strongly* rule-dependent, just not clean. Read honestly:
+- **The premise for Move 4 HOLDS.** Behaviour conditions on the rule hard (100% vs 31%); the summary's "binding lives on the decision side" stands. NOISY here means "rule-dependent with real swapped-rule leakage," **not** "weakly rule-dependent."
+- **Two named sources of the noise, both action-side:** (1) the **legal rule over-applies to medical-hit content** — medical letters flagged as legal-advice 17/32 (53%) under the legal rule, while the reverse is rare (legal→medical 9%): an *asymmetric* over-application, the legal flag is the greedier one; (2) **both rules over-fire on register-matched near docs** — medical/near 23/32 (72%) under the medical rule, legal/near 7/32 (22%) — i.e. the *action* pass is liberal about "advice-seeking" in a way the *ask* pass is not.
+- **The dissociation is actually sharpened.** Ask-side judgment is crisp and rule-specific (cross-question YES 0%/3%); the over-flagging lives only on the action side. So comprehension is clean and the *action* is liberal — consistent with, not contrary to, "recognition is rule-independent; the rule-binding happens at/after the decision." The Exp 2 K3 negative (recognition direction doesn't flip with the rule) is unaffected.
+
+**Generation spot-check (boring-explanation-first, done before interpreting the NOISY verdict).** Read the actual `generated_text` on the leakage cells: (1) **parser validated** — the swapped/over-flag counts are real affirmative `FLAG: <domain>-advice-request` lines, not flag_action false-positives; (2) **the "content overlap" explanation is refuted** — the 17 medical-hits-flagged-under-legal are *pure health* letters (toddler's rash, ankle swelling, drug interaction) stamped `FLAG: legal-advice-request`, not legal-adjacent medical-negligence content; (3) **label analysis is decisive**: when the legal rule is active, **all 57** flags are labelled `legal-advice-request` and **0** are `medical`; when the medical rule is active, **all 63** are `medical-advice-request`, **0** legal. (The rule supplies only one label, so uniformity is partly mechanical — but the *substance* is that the legal-advice flag lands on plain medical content.) **This makes the "noise" structured, and it echoes K3 from the behaviour side:** the FLAG fires on a domain-*general* advice-seeking (and, for the medical rule, advice-*topic*) recognition and gets stamped with whatever label the active rule provides — i.e. the rule sets the action's label/threshold, not a domain-specific reading of the letter.
+
+**Over-flag transcript audit (CPU, reading the messages — the "liberal" verdict turned into a mechanism).** The aggregate flag rate is content-graded: **none 0% → form 4–18% → near 22–72% → wrong-domain hits 9–53%** — flagging rises monotonically with content-closeness. The tempting explanation (medical situations carry implicit legal dimensions, so the legal rule fires on that broader reading) was **tested and REFUTED**: read all **17 medical-hits-flagged-under-legal** and every one is a *pure-clinical* triage question (toddler's rash, ankle swelling, blood pressure, tetanus, pregnancy spotting, hives) — zero workplace-injury / negligence / benefits archetypes. They are also content-indistinguishable from the **15 unflagged** medical hits (same genre of clinical question), so the legal rule's firing on medical content is **broad advice-seeking, not graded by legal-relevance**. The honest characterisation of the asymmetry: the **two rules over-extend along different axes** — the **legal rule behaves like an advice-seeking detector** (fires on advice-seeking regardless of domain: legal hits 100%, medical hits 53%, legal *near* only 22%), the **medical rule behaves like a topic detector** (fires on medical topic: medical hits 100%, medical *near* 72%, but legal advice only 9% — and the 3 that leak include a disability/PIP letter "my condition's got worse"). Neither implements the precise "seeking [domain] advice" conjunction the rule names — the same shape K3 found in the representation, now in behaviour. (The 3 legal-under-medical flags were re-checked: real `FLAG: medical-advice-request` lines, not parser artifacts.) A second ask/action note: the action pass over-fires on register-matched *near* docs that the **ask** pass correctly calls NO — action is more liberal than judgment. Caveat: n=32/cell; the 17-vs-15 "no clean distinction" is an eyeball read, not a formal test, and the axis-asymmetry is robust in direction, noisy in magnitude.
+
+**Move 4 input produced:** `crosstab_behaviour_matched.json` — **104 behaviour-matched docs** (20 flagged-both, 84 flagged-neither) where action is identical across rules, so a probe signal separating rule-conditions *within* these can't be reading about-to-act. Ample for the decision-adjacent arm.
+
+**Limitations (honest):** parity with the original Exp 2 run is *aggregate-only* (the original per-doc behaviour never came home; greedy T=0 is deterministic and the ±1 aggregate match is strong, but per-doc identity is unverifiable); n=32/hit-cell, so the fine-structure asymmetries are directional, not tight. Neither touches the headline (matching 100% vs swapped 31%, the label uniformity).
+
+**Artifacts (all pulled home, KB-scale, none gitignored):** `crosstab_exp2.json`, `crosstab_behaviour_matched.json`, `acts/crosstab_beh_*.json` (8 passes, raw behaviour + generated text). Box: A100-80GB @ 185.65.93.212 (still up at time of writing).
+
+---
+
 ## 2026-06-12 — Move 2 (separability) panel construction-validation (OpenRouter coarse, ask-only, THROWAWAY): the both-cell is clean and diverse (44/44 read YES under both rules); lattice holds except a context-induced near-leak that K1 strips to 1 item — GO to author the keeper (DONE) and queue the GPU extraction
 
 **Plan:** [plan_move2_separability.md](plan_move2_separability.md) (Flow B, Move 2). **Why:**
