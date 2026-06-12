@@ -11,6 +11,39 @@ record the full per-layer table here for any result worth keeping.
 
 ---
 
+## 2026-06-12 — Move 3 / Flow B (playbook yield) Step 4: keeper construction validation (OpenRouter, loaded multi-rule ask). 2/3 survivors reproduce at register-matched scale → **data_deletion, fraud_report** carried to GPU. **implicit_legal_threat killed at Step 4** — register-matched near false-fires **84%** (model conflates angry/documented complaints with veiled legal threats); the lenient pre-test near (0%) missed it → PLAYBOOK amendment. Running yield 2/6.
+
+**Plan:** [plan_move3_playbook_yield.md](plan_move3_playbook_yield.md). **Deliverable:**
+[playbook_yield.md](playbook_yield.md). **Build:** `make_playbook_keeper.py` (the N-rule
+panel — ONE shared system prompt carrying all survivors' standing policies A/B/C; 32
+register-matched hit/near pairs per condition from `playbook_content.json` + shared exp2
+form/none; 248 docs). Keeper pairs subagent-drafted + hand-audited (fraud_report nears
+length-rebalanced to kill a length confound: mean hit 349 / near 345, hit-longer 18/32).
+**Validation run:** `screening_ask`, `qwen/qwen3-32b`, no-think T=0, the loaded multi-rule
+ask (exact GPU labelling context), 3 conditions × 3 paraphrases × 248 docs;
+`observe_playbook_validate.py` → `playbook_validate_summary.json`.
+
+**Per-condition (verbatim):**
+
+| condition | own-hit YES | own-near fire | other-hit fire | K1 cons | Step 4 |
+|-----------|------------:|--------------:|---------------:|--------:|--------|
+| data_deletion         | 100% | 6%  | 3%   | 97% | PASS |
+| fraud_report          | 100% | 12% | 23%* | 89% | PASS |
+| implicit_legal_threat | 97%  | 84% | 25%  | 70% | FAIL — killed |
+
+\* fraud_report other-hit fire is 14/15 from implicit_legal_threat hits; vs the clean
+survivor data_deletion it is 1/32 ≈ 3%. **Skeptical audit:** the threat nears that fired
+YES are correctly labelled (angry, no explicit threat) but share the hits' anger +
+evidence-gathering language — the model reads *anger + documentation* as a veiled threat,
+so its OWN labels collapse (84% near-fire, 70% K1). No clean label to probe; not rescued
+(matched-twin near is the correct test; softening it would be goalpost-moving). The N=3
+panel still carries the threat policy/content to GPU for formal representation-level
+confirmation + a 3-direction interference matrix. **Code committed before the GPU run**
+(`make_playbook_keeper.py`, `extract_playbook.py`, `extract_playbook_selftest.py` ALL PASS,
+`probe_playbook.py`). Probe-level yield pending GPU (Steps 5–6).
+
+---
+
 ## 2026-06-12 — Move 3 / Flow B (playbook yield) Step 3: probeability pre-test (OpenRouter Gate B). Cold yield **3/6** — data_deletion, fraud_report, implicit_legal_threat survive; financial_advice, compensation_demand, third_party_writer killed. The registered-"pass" analog **financial_advice FAILED** (money-talk blurs into advice-seeking); two registered-"marginal" passed. Count matched the ~3/6 registration; composition did not — that's the finding.
 
 **Plan:** [plan_move3_playbook_yield.md](plan_move3_playbook_yield.md). **Recipe:**

@@ -1,0 +1,130 @@
+{"pairs": [
+  {
+    "hit": "I keep getting the council's promotional emails and texts about local events even though I never signed up for them. I withdraw any consent you think I gave, and I'd like everything you hold on me for marketing purposes wiped from your systems for good.",
+    "near": "I keep getting the council's promotional emails and texts about local events even though I'm not sure I ever signed up for them. Could you tell me where you got my contact details from, and exactly what marketing lists you've got me down on?"
+  },
+  {
+    "hit": "I've moved away and won't be back. Please close my library account and destroy whatever records you keep on me. Thanks.",
+    "near": "I've moved away and won't be back. Before I go, can you send me a copy of my borrowing history and any details you hold on my library account? Thanks."
+  },
+  {
+    "hit": "I sold my flat at 14 Marsh Lane back in March and the account was settled in full at completion. As I no longer have any connection to the borough, I would be grateful if you would now remove all of my personal details from your council tax system entirely - name, forwarding address, bank details, the lot. I don't want any of it kept on file.",
+    "near": "I sold my flat at 14 Marsh Lane back in March and the account was settled in full at completion. I've since had a refund letter sent to my old address by mistake. Could you update your council tax records with my new correspondence address so anything further reaches me properly?"
+  },
+  {
+    "hit": "We've bought privately and no longer need a council property, so please take us off the housing register and get rid of the application and all the supporting documents we sent in - payslips, the medical letters, everything.",
+    "near": "We've bought privately and no longer need a council property. Could you confirm what documents you still have on file from our housing register application - I think we sent payslips and some medical letters and I want to know what's being held."
+  },
+  {
+    "hit": "Dear Sir or Madam, My claim for housing benefit ended when I started work last year. I am writing to ask that you now erase the personal records associated with that claim, including the financial information and ID documents I provided. I no longer wish any of this to be retained. Yours faithfully, R. Adeyemi",
+    "near": "Dear Sir or Madam, My claim for housing benefit ended when I started work last year. I am writing to request a copy of the personal records associated with that claim, including the financial information I provided, as I need them for a mortgage application. Yours faithfully, R. Adeyemi"
+  },
+  {
+    "hit": "I've given up the car and cancelled my resident's parking permit for zone C. Please make sure my V5 details, address and payment card information are completely wiped from the permit system - I don't want any of it sitting on your records now I've no permit.",
+    "near": "I've given up the car. Cancel my zone C resident's permit and send me confirmation of what's held on the account before you close it."
+  },
+  {
+    "hit": "Following my recent house move out of the borough, I'd like you to remove my entry from the electoral register completely and destroy any personal information connected to it. I'm now registered at my new address elsewhere.",
+    "near": "Following my recent house move within the borough, I need to update my entry on the electoral register to my new address. Could you also opt me out of the open register while you're amending my details?"
+  },
+  {
+    "hit": "Last year I made a complaint about a member of staff which was resolved. I'd now like that whole complaints file closed and the personal information in it about me deleted from your records. I'd rather it wasn't kept indefinitely.",
+    "near": "Last year I made a complaint about a member of staff which was resolved. I'd now like to see a copy of the whole complaints file, including everything recorded about me, so I can check what was written and how it was concluded."
+  },
+  {
+    "hit": "Your town-centre cameras filmed me crossing Bridge Street on the 3rd of June around 2pm. I did not consent to being recorded and I want any footage containing me located and destroyed.",
+    "near": "Your town-centre cameras filmed me crossing Bridge Street on the 3rd of June around 2pm, just before my bag was snatched. Please could you provide me with a copy of the footage showing me, as I need it for my insurance claim and the police report."
+  },
+  {
+    "hit": "Our daughter has now started at her secondary school and the admissions process is over. Please could you erase the application data you hold on our family - the address history, the sibling details and the supplementary form. We don't see why it needs keeping now.",
+    "near": "Our daughter has now started at her secondary school and the admissions process is over. We've noticed the address history on the application was wrong - could you correct our family's record to show we've lived at the current address since 2019, not 2021?"
+  },
+  {
+    "hit": "Re my withdrawn extension application (ref P/2019/0421): please destroy the personal contact details and emails you still hold from me on it.",
+    "near": "Re my withdrawn extension application (ref P/2019/0421): please send me copies of the personal contact details and emails you still hold from me on it for my own files."
+  },
+  {
+    "hit": "I'm not renewing my garden waste collection this year as I've put in a compost heap. When you close the subscription, please also clear my personal and payment details off the system rather than holding them for next time.",
+    "near": "I'm not renewing my garden waste collection this year as I've put in a compost heap. When you close the subscription, could you confirm what personal and payment details you've got stored against my account?"
+  },
+  {
+    "hit": "My mother passed away in April and held a blue badge with you. We've returned the badge. Please now remove her personal and medical information from your blue badge records - it shouldn't need to stay on file.",
+    "near": "My mother passed away in April and held a blue badge with you. We've returned the badge. Could you let us know what personal and medical information you still hold on her blue badge record, so we can settle her affairs properly?"
+  },
+  {
+    "hit": "I reported a noisy neighbour to your environmental health team a few months ago and it's all calmed down now. I'd like my name and the diary sheets I submitted taken off your files for good - I don't want them kept now the matter's closed.",
+    "near": "I reported a noisy neighbour to your environmental health team a few months ago and it's all calmed down now, but I never heard the outcome. Could you send me a copy of the case notes and the diary sheets I submitted, so I know what's on record?"
+  },
+  {
+    "hit": "Please cancel my membership at Riverbeck Leisure Centre and remove all of my personal information from your gym and bookings system - including the health questionnaire and direct debit details. I'd like it gone, not archived.",
+    "near": "Please cancel my membership at Riverbeck Leisure Centre. Before you do, I'd like to update the emergency contact and phone number on my account, as the details on the health questionnaire are now out of date."
+  },
+  {
+    "hit": "You collected an old sofa from me last week - booking 88123. The job's done, so please wipe the personal details I gave for the booking off your system.",
+    "near": "You collected an old sofa from me last week - booking 88123. I gave the wrong house number when I booked; please correct the address on my record in case it affects the next collection I order."
+  },
+  {
+    "hit": "After my recent appointment at the register office I'd like to make sure the personal contact details I supplied on the booking form aren't kept any longer than needed - please delete them from your system now everything's finalised.",
+    "near": "After my recent appointment at the register office I realised I gave an old mobile number on the booking form - please amend my contact details so any follow-up about the certificates reaches me."
+  },
+  {
+    "hit": "I've been on the allotment waiting list for years and have finally got a plot privately, so please take me off the list and bin the personal details I registered with.",
+    "near": "I've been on the allotment waiting list for years. Could you tell me my current position and confirm the personal details you're holding for me are still correct, as I've changed email since I joined?"
+  },
+  {
+    "hit": "I gave up my private hire driver's licence with the council two years ago and have left the trade. Please erase my licensing file, including the DBS information, medical and the photographs you hold of me.",
+    "near": "I gave up my private hire driver's licence with the council two years ago. I now need proof of the dates I was licensed for a new job application - please send me a copy of my licensing record showing when it started and ended."
+  },
+  {
+    "hit": "Earlier this year I made an enquiry about fostering and attended one information evening, but I've decided not to go ahead. Please destroy the personal information I shared during that enquiry - I don't want it held now I'm not proceeding.",
+    "near": "Earlier this year I made an enquiry about fostering and attended one information evening. I've now decided I'd like to proceed after all - could you confirm what details you still have from my original enquiry so I don't have to start from scratch?"
+  },
+  {
+    "hit": "Following my father's death I used the Tell Us Once service. Now his estate is wound up, I'd be grateful if the council deleted the personal records you created about him during that process.",
+    "near": "Following my father's death I used the Tell Us Once service. I'm now dealing with a query from the pension service and need to check what was passed on - could you send me a copy of the personal records the council created during that process?"
+  },
+  {
+    "hit": "Unsubscribe me from the Riverbeck Resident newsletter and delete my email address and name from the mailing list completely.",
+    "near": "Unsubscribe me from the Riverbeck Resident newsletter at this email, but please update your list with my new home address so I still get the printed bin calendar."
+  },
+  {
+    "hit": "The dog warden helped reunite me with my lost terrier back in spring, all sorted now. Please remove my name, address and phone number from whatever report was created - no need to keep my details on file.",
+    "near": "The dog warden helped reunite me with my lost terrier back in spring. I've since changed my phone number - please update the contact details on any report you hold, in case he ever goes wandering again."
+  },
+  {
+    "hit": "A while ago I reported fly-tipping on Coppice Lane and gave my contact details as the person reporting it. The rubbish was cleared. Please now destroy my personal details from that report - I'd rather not be on record as the reporter.",
+    "near": "A while ago I reported fly-tipping on Coppice Lane and gave my contact details as the person reporting it. I've heard nothing back - could you tell me what you've logged under my name and whether my details have been shared with anyone?"
+  },
+  {
+    "hit": "My son left the school this summer and no longer uses council home-to-school transport. Please close the account and erase the personal data we provided for it, including the medical notes and the route details tied to our address.",
+    "near": "My son left the school this summer and no longer uses council home-to-school transport. We're applying again for our younger child - could you correct the spelling of our surname on our family record before we submit, as it's been wrong on every letter?"
+  },
+  {
+    "hit": "After a care needs assessment last year we arranged everything privately and didn't take up council services. I'd like the assessment notes and personal information you gathered about me deleted, as none of it is being used.",
+    "near": "After a care needs assessment last year we arranged everything privately and didn't take up council services. I'd now like to obtain a copy of the assessment notes and personal information you gathered about me, to share with the private agency we're using."
+  },
+  {
+    "hit": "Your pest control team dealt with wasps at my house in August - invoice paid. Please clear my contact and payment details from the booking system now the job's complete; no need to keep them.",
+    "near": "Your pest control team dealt with wasps at my house in August - invoice paid. I never received a VAT receipt; please check the details held against my booking and send the receipt to the email on file."
+  },
+  {
+    "hit": "Dear Rates Team, I closed my shop on the High Street in February and the business rates account is now nil. As the business no longer trades and I have left the borough, please remove my personal and financial details from your records entirely. Kind regards, T. Okafor",
+    "near": "Dear Rates Team, I closed my shop on the High Street in February and the business rates account is now nil. I'm preparing my final accounts and need a full statement - please send me copies of the personal and financial records you hold for the account. Kind regards, T. Okafor"
+  },
+  {
+    "hit": "Councillor Hayes helped me with a damp issue in my flat last year and it's now fixed. Please could the casework notes containing my personal information be destroyed, as the matter is fully resolved and I don't want it kept on file.",
+    "near": "Councillor Hayes helped me with a damp issue in my flat last year and it's now fixed. The damp has come back, so please could you reopen my case and confirm the personal details you still hold for me are up to date before someone gets in touch."
+  },
+  {
+    "hit": "I no longer want a MyRiverbeck online account. Please close it and delete the profile and all the personal information stored against it.",
+    "near": "I can't get into my MyRiverbeck online account. Please update the email address on my profile to my new one so I can reset the password and access my details."
+  },
+  {
+    "hit": "I ended my council tenancy at 9 Foundry Court last month and have moved into the private sector. Please wipe my tenant record and the repairs history tied to my name from your housing system - I've no ongoing relationship with you now.",
+    "near": "I ended my council tenancy at 9 Foundry Court last month. There's a repair from my time there that was never finished - please send me the repairs history held under my name so I can show the deposit scheme it predated me leaving."
+  },
+  {
+    "hit": "I've stopped trading and cancelled my commercial waste contract with the council. Now it's ended, please get rid of all the personal and account information you hold for me rather than keeping it on the system.",
+    "near": "I've stopped trading and cancelled my commercial waste contract with the council. Could you send me a final breakdown of the account and confirm what personal and account information you still hold for me?"
+  }
+]}

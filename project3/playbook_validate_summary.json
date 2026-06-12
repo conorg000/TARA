@@ -1,0 +1,29 @@
+{
+  "data_deletion": {
+    "hit_yes": 1.0,
+    "near_fire": 0.062,
+    "other_hit_fire": 0.031,
+    "form_fire": 0.0,
+    "none_fire": 0.0,
+    "consistency": 0.969,
+    "step4_pass": true
+  },
+  "fraud_report": {
+    "hit_yes": 1.0,
+    "near_fire": 0.125,
+    "other_hit_fire": 0.234,
+    "form_fire": 0.0,
+    "none_fire": 0.0,
+    "consistency": 0.891,
+    "step4_pass": true
+  },
+  "implicit_legal_threat": {
+    "hit_yes": 0.969,
+    "near_fire": 0.844,
+    "other_hit_fire": 0.25,
+    "form_fire": 0.0,
+    "none_fire": 0.0,
+    "consistency": 0.703,
+    "step4_pass": false
+  }
+}

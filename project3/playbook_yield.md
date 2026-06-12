@@ -16,15 +16,21 @@ PLAYBOOK prescribes; an off-script fix demotes a condition to "assisted".
 
 - **Registered:** 6 conditions (financial_advice, compensation_demand, data_deletion,
   fraud_report, third_party_writer, implicit_legal_threat).
-- **Pre-test (Step 3, OpenRouter Gate B) cold yield: 3/6 survive** →
-  **data_deletion, fraud_report, implicit_legal_threat** proceed to keeper.
-  **financial_advice, compensation_demand, third_party_writer killed at pre-test.**
-- The *count* matched the registered prediction (~3/6) but the *identities did not*: the
-  registered-"pass" analog **financial_advice failed**, and two registered-"marginal"
-  conditions passed. The composition surprise is the finding, not the count.
-
-(Probe-level yield — recognition floor / K2 / specificity on the GPU keepers — pending
-Steps 4–6 for the 3 survivors.)
+- **Pre-test (Step 3, OpenRouter Gate B) cold yield: 3/6** → data_deletion, fraud_report,
+  implicit_legal_threat proceed to keeper. financial_advice, compensation_demand,
+  third_party_writer killed at pre-test.
+- **Construction validation (Step 4, OpenRouter) cold yield: 2/3 of those** →
+  **data_deletion, fraud_report** reproduce the pattern at register-matched keeper scale.
+  **implicit_legal_threat killed at Step 4** — its register-matched near false-fires **84%**
+  (the model conflates angry, documented complaints with veiled legal threats). The lenient
+  pre-test near (0% false-fire) missed a topic-confound the matched-twin near exposed → a
+  PLAYBOOK amendment (the pre-test near should itself be register-matched).
+- **Running yield so far: 2/6** carried to GPU as probe candidates (data_deletion,
+  fraud_report). Probe-level pass/fail (floor / K2 / specificity) pending Steps 5–6.
+- The *count* tracked the registered ~3/6, but the *identities did not*: the registered-"pass"
+  analog **financial_advice failed at pre-test**, and the only condition to clear the screen
+  yet **die at construction** was implicit_legal_threat. The funnel — screen → matched-twin
+  validation → probe — caught each condition at a different stage. That progression is the finding.
 
 ---
 
@@ -70,6 +76,50 @@ paraphrases agree), **near false-fire ≤ 10%**, **hit detect ≥ 75%**. Numbers
 (All three killed conditions cleared *hit detect* easily — the model can see each trigger —
 so the failures are about **stability/specificity of the model's own label**, not capability.
 That is precisely the prerequisite a probe needs, which is why the pre-test gates on it.)
+
+---
+
+---
+
+## Step 4 — keeper construction validation, verbatim
+
+Run: 2026-06-12, OpenRouter `qwen/qwen3-32b`, no-think, T=0, `screening_ask` on the
+**loaded multi-rule panel ask** (the exact context the GPU will label on — 3 standing
+policies live). 32 register-matched hit/near pairs per condition + shared form/none,
+× 3 paraphrases. Bar (PLAYBOOK Step 4): own-hit YES ≥ 75%, own-near false-fire ≤ 15%.
+Numbers from `observe_playbook_validate.py` → `playbook_validate_summary.json`.
+
+| condition | own-hit YES | own-near fire | other-hit fire | K1 consistency | Step 4 |
+|-----------|------------:|--------------:|---------------:|---------------:|--------|
+| data_deletion         | 100% | 6%  | 3%  | 97% | **PASS** |
+| fraud_report          | 100% | 12% | 23%* | 89% | **PASS** |
+| implicit_legal_threat | 97%  | **84%** | 25% | 70% | **FAIL — killed** |
+
+\* fraud_report's 23% other-hit false-fire is **14/15 from implicit_legal_threat hits**
+(veiled-threat letters describing council wrongdoing read as "fraud"); against the clean
+survivor data_deletion it is **1/32 ≈ 3%**. Killing the threat condition also resolves
+fraud_report's apparent specificity concern — and illustrates how one ill-posed condition
+inflates its neighbours' cross-fire (a point the interference matrix will quantify).
+
+### implicit_legal_threat — killed at construction (topic-confound), audited
+
+The register-matched nears that fire YES are **correctly labelled** (firm, furious
+complaints with *no* explicit escalation threat: "I am furious", "outrageous", "incompetence
+of the worst kind"). But the matched-twin construction keeps the hits' shared features —
+anger **and** evidence-gathering ("I have kept a detailed log", "I have bank statements
+proving") — and the model reads *anger + documentation* as an implied legal threat. So the
+model's **own labels collapse** (near false-fire 84%, K1 70%): there is no clean YES/NO for
+a probe to learn, and any probe would be an anger/documentation detector. **Not rescued**
+(softening the near would demote to assisted *and* be the exact goalpost-move the project
+guards against; the matched-twin near is the correct test). The GPU panel still carries this
+condition's policy + content (N=3, deployment-realistic) so the probe battery can formally
+confirm the failure at the representation level and the interference matrix gets 3 directions.
+
+**Methodological finding (→ PLAYBOOK amendment):** a condition can pass the Step-3 pre-test
+(hand-picked, often lenient nears) yet fail Step-4 construction validation once the near is
+**register-matched** to the hit. The pre-test under-estimates the topic-confound. Amendment:
+make the Step-3 pre-test near a register-matched twin too (or treat a clean pre-test near as
+necessary-not-sufficient and weight the matched-twin validation as the real topic gate).
 
 ---
 

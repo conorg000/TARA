@@ -1,0 +1,5 @@
+{
+  "data_deletion": "data-erasure-request",
+  "fraud_report": "fraud-report",
+  "implicit_legal_threat": "legal-action-threat"
+}

@@ -1,0 +1,452 @@
+{
+  "data_deletion": [
+    {
+      "hit": "I keep getting the council's promotional emails and texts about local events even though I never signed up for them. I withdraw any consent you think I gave, and I'd like everything you hold on me for marketing purposes wiped from your systems for good.",
+      "near": "I keep getting the council's promotional emails and texts about local events even though I'm not sure I ever signed up for them. Could you tell me where you got my contact details from, and exactly what marketing lists you've got me down on?"
+    },
+    {
+      "hit": "I've moved away and won't be back. Please close my library account and destroy whatever records you keep on me. Thanks.",
+      "near": "I've moved away and won't be back. Before I go, can you send me a copy of my borrowing history and any details you hold on my library account? Thanks."
+    },
+    {
+      "hit": "I sold my flat at 14 Marsh Lane back in March and the account was settled in full at completion. As I no longer have any connection to the borough, I would be grateful if you would now remove all of my personal details from your council tax system entirely - name, forwarding address, bank details, the lot. I don't want any of it kept on file.",
+      "near": "I sold my flat at 14 Marsh Lane back in March and the account was settled in full at completion. I've since had a refund letter sent to my old address by mistake. Could you update your council tax records with my new correspondence address so anything further reaches me properly?"
+    },
+    {
+      "hit": "We've bought privately and no longer need a council property, so please take us off the housing register and get rid of the application and all the supporting documents we sent in - payslips, the medical letters, everything.",
+      "near": "We've bought privately and no longer need a council property. Could you confirm what documents you still have on file from our housing register application - I think we sent payslips and some medical letters and I want to know what's being held."
+    },
+    {
+      "hit": "Dear Sir or Madam, My claim for housing benefit ended when I started work last year. I am writing to ask that you now erase the personal records associated with that claim, including the financial information and ID documents I provided. I no longer wish any of this to be retained. Yours faithfully, R. Adeyemi",
+      "near": "Dear Sir or Madam, My claim for housing benefit ended when I started work last year. I am writing to request a copy of the personal records associated with that claim, including the financial information I provided, as I need them for a mortgage application. Yours faithfully, R. Adeyemi"
+    },
+    {
+      "hit": "I've given up the car and cancelled my resident's parking permit for zone C. Please make sure my V5 details, address and payment card information are completely wiped from the permit system - I don't want any of it sitting on your records now I've no permit.",
+      "near": "I've given up the car. Cancel my zone C resident's permit and send me confirmation of what's held on the account before you close it."
+    },
+    {
+      "hit": "Following my recent house move out of the borough, I'd like you to remove my entry from the electoral register completely and destroy any personal information connected to it. I'm now registered at my new address elsewhere.",
+      "near": "Following my recent house move within the borough, I need to update my entry on the electoral register to my new address. Could you also opt me out of the open register while you're amending my details?"
+    },
+    {
+      "hit": "Last year I made a complaint about a member of staff which was resolved. I'd now like that whole complaints file closed and the personal information in it about me deleted from your records. I'd rather it wasn't kept indefinitely.",
+      "near": "Last year I made a complaint about a member of staff which was resolved. I'd now like to see a copy of the whole complaints file, including everything recorded about me, so I can check what was written and how it was concluded."
+    },
+    {
+      "hit": "Your town-centre cameras filmed me crossing Bridge Street on the 3rd of June around 2pm. I did not consent to being recorded and I want any footage containing me located and destroyed.",
+      "near": "Your town-centre cameras filmed me crossing Bridge Street on the 3rd of June around 2pm, just before my bag was snatched. Please could you provide me with a copy of the footage showing me, as I need it for my insurance claim and the police report."
+    },
+    {
+      "hit": "Our daughter has now started at her secondary school and the admissions process is over. Please could you erase the application data you hold on our family - the address history, the sibling details and the supplementary form. We don't see why it needs keeping now.",
+      "near": "Our daughter has now started at her secondary school and the admissions process is over. We've noticed the address history on the application was wrong - could you correct our family's record to show we've lived at the current address since 2019, not 2021?"
+    },
+    {
+      "hit": "Re my withdrawn extension application (ref P/2019/0421): please destroy the personal contact details and emails you still hold from me on it.",
+      "near": "Re my withdrawn extension application (ref P/2019/0421): please send me copies of the personal contact details and emails you still hold from me on it for my own files."
+    },
+    {
+      "hit": "I'm not renewing my garden waste collection this year as I've put in a compost heap. When you close the subscription, please also clear my personal and payment details off the system rather than holding them for next time.",
+      "near": "I'm not renewing my garden waste collection this year as I've put in a compost heap. When you close the subscription, could you confirm what personal and payment details you've got stored against my account?"
+    },
+    {
+      "hit": "My mother passed away in April and held a blue badge with you. We've returned the badge. Please now remove her personal and medical information from your blue badge records - it shouldn't need to stay on file.",
+      "near": "My mother passed away in April and held a blue badge with you. We've returned the badge. Could you let us know what personal and medical information you still hold on her blue badge record, so we can settle her affairs properly?"
+    },
+    {
+      "hit": "I reported a noisy neighbour to your environmental health team a few months ago and it's all calmed down now. I'd like my name and the diary sheets I submitted taken off your files for good - I don't want them kept now the matter's closed.",
+      "near": "I reported a noisy neighbour to your environmental health team a few months ago and it's all calmed down now, but I never heard the outcome. Could you send me a copy of the case notes and the diary sheets I submitted, so I know what's on record?"
+    },
+    {
+      "hit": "Please cancel my membership at Riverbeck Leisure Centre and remove all of my personal information from your gym and bookings system - including the health questionnaire and direct debit details. I'd like it gone, not archived.",
+      "near": "Please cancel my membership at Riverbeck Leisure Centre. Before you do, I'd like to update the emergency contact and phone number on my account, as the details on the health questionnaire are now out of date."
+    },
+    {
+      "hit": "You collected an old sofa from me last week - booking 88123. The job's done, so please wipe the personal details I gave for the booking off your system.",
+      "near": "You collected an old sofa from me last week - booking 88123. I gave the wrong house number when I booked; please correct the address on my record in case it affects the next collection I order."
+    },
+    {
+      "hit": "After my recent appointment at the register office I'd like to make sure the personal contact details I supplied on the booking form aren't kept any longer than needed - please delete them from your system now everything's finalised.",
+      "near": "After my recent appointment at the register office I realised I gave an old mobile number on the booking form - please amend my contact details so any follow-up about the certificates reaches me."
+    },
+    {
+      "hit": "I've been on the allotment waiting list for years and have finally got a plot privately, so please take me off the list and bin the personal details I registered with.",
+      "near": "I've been on the allotment waiting list for years. Could you tell me my current position and confirm the personal details you're holding for me are still correct, as I've changed email since I joined?"
+    },
+    {
+      "hit": "I gave up my private hire driver's licence with the council two years ago and have left the trade. Please erase my licensing file, including the DBS information, medical and the photographs you hold of me.",
+      "near": "I gave up my private hire driver's licence with the council two years ago. I now need proof of the dates I was licensed for a new job application - please send me a copy of my licensing record showing when it started and ended."
+    },
+    {
+      "hit": "Earlier this year I made an enquiry about fostering and attended one information evening, but I've decided not to go ahead. Please destroy the personal information I shared during that enquiry - I don't want it held now I'm not proceeding.",
+      "near": "Earlier this year I made an enquiry about fostering and attended one information evening. I've now decided I'd like to proceed after all - could you confirm what details you still have from my original enquiry so I don't have to start from scratch?"
+    },
+    {
+      "hit": "Following my father's death I used the Tell Us Once service. Now his estate is wound up, I'd be grateful if the council deleted the personal records you created about him during that process.",
+      "near": "Following my father's death I used the Tell Us Once service. I'm now dealing with a query from the pension service and need to check what was passed on - could you send me a copy of the personal records the council created during that process?"
+    },
+    {
+      "hit": "Unsubscribe me from the Riverbeck Resident newsletter and delete my email address and name from the mailing list completely.",
+      "near": "Unsubscribe me from the Riverbeck Resident newsletter at this email, but please update your list with my new home address so I still get the printed bin calendar."
+    },
+    {
+      "hit": "The dog warden helped reunite me with my lost terrier back in spring, all sorted now. Please remove my name, address and phone number from whatever report was created - no need to keep my details on file.",
+      "near": "The dog warden helped reunite me with my lost terrier back in spring. I've since changed my phone number - please update the contact details on any report you hold, in case he ever goes wandering again."
+    },
+    {
+      "hit": "A while ago I reported fly-tipping on Coppice Lane and gave my contact details as the person reporting it. The rubbish was cleared. Please now destroy my personal details from that report - I'd rather not be on record as the reporter.",
+      "near": "A while ago I reported fly-tipping on Coppice Lane and gave my contact details as the person reporting it. I've heard nothing back - could you tell me what you've logged under my name and whether my details have been shared with anyone?"
+    },
+    {
+      "hit": "My son left the school this summer and no longer uses council home-to-school transport. Please close the account and erase the personal data we provided for it, including the medical notes and the route details tied to our address.",
+      "near": "My son left the school this summer and no longer uses council home-to-school transport. We're applying again for our younger child - could you correct the spelling of our surname on our family record before we submit, as it's been wrong on every letter?"
+    },
+    {
+      "hit": "After a care needs assessment last year we arranged everything privately and didn't take up council services. I'd like the assessment notes and personal information you gathered about me deleted, as none of it is being used.",
+      "near": "After a care needs assessment last year we arranged everything privately and didn't take up council services. I'd now like to obtain a copy of the assessment notes and personal information you gathered about me, to share with the private agency we're using."
+    },
+    {
+      "hit": "Your pest control team dealt with wasps at my house in August - invoice paid. Please clear my contact and payment details from the booking system now the job's complete; no need to keep them.",
+      "near": "Your pest control team dealt with wasps at my house in August - invoice paid. I never received a VAT receipt; please check the details held against my booking and send the receipt to the email on file."
+    },
+    {
+      "hit": "Dear Rates Team, I closed my shop on the High Street in February and the business rates account is now nil. As the business no longer trades and I have left the borough, please remove my personal and financial details from your records entirely. Kind regards, T. Okafor",
+      "near": "Dear Rates Team, I closed my shop on the High Street in February and the business rates account is now nil. I'm preparing my final accounts and need a full statement - please send me copies of the personal and financial records you hold for the account. Kind regards, T. Okafor"
+    },
+    {
+      "hit": "Councillor Hayes helped me with a damp issue in my flat last year and it's now fixed. Please could the casework notes containing my personal information be destroyed, as the matter is fully resolved and I don't want it kept on file.",
+      "near": "Councillor Hayes helped me with a damp issue in my flat last year and it's now fixed. The damp has come back, so please could you reopen my case and confirm the personal details you still hold for me are up to date before someone gets in touch."
+    },
+    {
+      "hit": "I no longer want a MyRiverbeck online account. Please close it and delete the profile and all the personal information stored against it.",
+      "near": "I can't get into my MyRiverbeck online account. Please update the email address on my profile to my new one so I can reset the password and access my details."
+    },
+    {
+      "hit": "I ended my council tenancy at 9 Foundry Court last month and have moved into the private sector. Please wipe my tenant record and the repairs history tied to my name from your housing system - I've no ongoing relationship with you now.",
+      "near": "I ended my council tenancy at 9 Foundry Court last month. There's a repair from my time there that was never finished - please send me the repairs history held under my name so I can show the deposit scheme it predated me leaving."
+    },
+    {
+      "hit": "I've stopped trading and cancelled my commercial waste contract with the council. Now it's ended, please get rid of all the personal and account information you hold for me rather than keeping it on the system.",
+      "near": "I've stopped trading and cancelled my commercial waste contract with the council. Could you send me a final breakdown of the account and confirm what personal and account information you still hold for me?"
+    }
+  ],
+  "fraud_report": [
+    {
+      "hit": "I want to report my neighbour at 14 Almond Close. She's been getting the single-person council tax discount for ages, but her fella moved in properly back in the spring \u2014 his name's on the buzzer, his car's there every night, and she told me herself she's not declaring it because the money's handy. She's clearly fiddling it and I think you should look into it.",
+      "near": "I want to flag something about my neighbour at 14 Almond Close, who gets the single-person council tax discount. Her son's been staying with her quite a bit since he started a job nearby, and I don't know whether that changes anything for her. I'm not accusing her of anything, I just wondered if the rules mean she ought to tell you."
+    },
+    {
+      "hit": "There's a chap two doors down on Pellow Road claiming the higher rate of disability benefit, says he can barely walk. I've watched him carry a washing machine up his path on his own and he plays five-a-side on Thursdays. He's putting it on for the assessments and laughing about it. Someone needs to look at this properly.",
+      "near": "There's a chap two doors down on Pellow Road who gets disability benefit and uses a stick most days. Lately he's been a bit steadier and managed to get his bins out himself, which is lovely to see. I only mention it because a friend said benefits sometimes get reviewed and I didn't know if there was anything he was meant to do."
+    },
+    {
+      "hit": "Riverbeck Taxis on the High Street is taking fares cash-in-hand and not putting them through the books to keep under the threshold for their operator's licence. The owner bragged about it in the queue at the chippy. They're dodging the proper checks and undercutting the licensed firms, and I'd be grateful if you investigated.",
+      "near": "Riverbeck Taxis on the High Street let their operator's licence lapse over the winter \u2014 the owner told me he forgot the renewal date and only realised when a customer asked. He's filling in the paperwork to put it right now. I just wanted to check whether they're allowed to keep running while it's being sorted, as I use them regularly."
+    },
+    {
+      "hit": "Dear Sir or Madam, I wish to report that the tenant at 7 Marsh Lane, a council property, has been subletting both upstairs rooms to lodgers for over a year. He lives elsewhere with his girlfriend and only comes back to collect the rent. He is pocketing the difference while keeping a tenancy he no longer needs. This is a clear abuse of the housing list.",
+      "near": "Dear Sir or Madam, I wish to raise a concern about the council property at 7 Marsh Lane. The tenant has a couple of friends staying who come and go, and there is often noise late at night and rubbish in the front garden. I am not suggesting anything underhand about the tenancy, only that the household has become disruptive and I'd be grateful if someone could look into it."
+    },
+    {
+      "hit": "My ex-husband is claiming he lives alone at his flat to get the council tax reduction and housing benefit, but he's actually been living with me and the kids the whole time. He uses the flat as an address on paper only. He's been doing it deliberately for two years now and it makes me sick. I'll happily give a statement if needed.",
+      "near": "My ex-husband moved out properly six months ago and is now at his own flat, and he's applied for council tax reduction there. We're on reasonable terms and the kids stay with him at weekends. He asked me whether the children staying over affects his claim and I didn't know, so I'm asking on his behalf rather than reporting anyone."
+    },
+    {
+      "hit": "Someone is using a blue badge in the disabled bays outside the library that doesn't belong to them. It's a young lad, fit as anything, and the badge has an elderly woman's photo on it \u2014 I've seen it through the windscreen. He's borrowing his nan's badge to park for free near his work. That badge is being misused most mornings, please act.",
+      "near": "An elderly woman parks in the disabled bays outside the library most mornings with a blue badge, and her grandson usually walks her in and then heads off. I only mention it because someone in the queue muttered that he shouldn't be parking there, but as far as I can see the badge is hers and she's the one using it."
+    },
+    {
+      "hit": "I'd like to report a childminder operating from Coppice Way who's taking on far more children than she's registered for and being paid through the funded hours scheme for places she isn't actually providing. Parents drop off and she sends half of them to her sister's. She's claiming the funding twice over. It's not right and it's not safe for the kids.",
+      "near": "I'd like to raise a concern about a childminder on Coppice Way who seems to have a lot of children at the house some days \u2014 more than I'd have expected. I don't know what her registration allows and I'm not saying she's dishonest, but it's quite chaotic at drop-off and pick-up and I wondered whether the numbers are something the council keeps an eye on."
+    },
+    {
+      "hit": "The man renovating the old bakery on Quay Street got a council regeneration grant for a community caf\u00e9, but there's no caf\u00e9 \u2014 he's turned it into a private flat for himself and rented the ground floor out to a vape shop. He took the public money and used it for his own pocket. The whole grant application was a front from the start.",
+      "near": "The man renovating the old bakery on Quay Street told me he had a regeneration grant for a community caf\u00e9, but the work seems to have stalled and it's been boarded up for months. He says he's run out of money and is waiting on a builder. I just wondered whether there's a time limit on these grants and whether the council follows them up."
+    },
+    {
+      "hit": "Re: 22 Foundry Street. The lady who held the tenancy passed away in February, but her grown son has simply moved in and is telling everyone he's 'succeeding the tenancy' even though he never lived there \u2014 he had his own place across town. He's now claiming he lived with her for years to keep the house. That's a lie and the neighbours all know it.",
+      "near": "Re: 22 Foundry Street. The lady who held the tenancy passed away in February, and her son, who did live with her and cared for her in her final years, is hoping to take over the tenancy. He's asked me whether he qualifies for succession as he's worried about losing the home. I said I'd ask the council on his behalf, as he's not great with forms."
+    },
+    {
+      "hit": "I'm reporting the family at 5 Birchwood Avenue who got their child into Oakfield Primary using their grandmother's address in the catchment. The child has never lived there \u2014 they're out in Netherby. They basically rented a postbox. They jumped the queue ahead of families who actually live near the school by lying about where they live. Please look into it.",
+      "near": "I wanted to ask about the admissions catchment for Oakfield Primary. The family at 5 Birchwood Avenue recently moved in with the grandmother while their own house is renovated, and their little one started at Oakfield. A few parents were grumbling about catchments, but as far as I know they genuinely are living there for now."
+    },
+    {
+      "hit": "Bright Sparks Nursery on Elder Road is charging parents the full rate but telling the council the children are on funded places, then claiming the government funding on top. A friend who worked there saw the books with her own eyes. They're billing twice for the very same kids, and the parents have no idea. Please audit them as soon as you can.",
+      "near": "Bright Sparks Nursery on Elder Road increased their fees this term and a few of us were confused about how the funded hours work alongside what we pay. The manager wasn't very clear when we asked. I don't think anything dodgy is going on, I'd just like the council to confirm what the funding is supposed to cover so we know we're being charged correctly."
+    },
+    {
+      "hit": "There's a market trader on Saturdays by the war memorial selling knock-off goods and trading without a licence, but worse, he gives a false name and a fake address whenever the enforcement officers come round so he can't be traced. He's deliberately dodging the licence and covering his tracks. Catch him before nine and you'll see for yourselves.",
+      "near": "There's a market trader on Saturdays by the war memorial who I don't think has a licence \u2014 his stall isn't in the usual row and he packs up quickly. When I asked he said he was new and still sorting the paperwork. I just wondered whether traders are meant to be licensed before they start and who I'd ask to check."
+    },
+    {
+      "hit": "I want to report misuse of a disabled facilities grant at 9 Sycamore Terrace. They got money for a downstairs bathroom adaptation for the husband, but he passed away before the work started and they've kept the grant and put in a fancy new ensuite for themselves instead. The person it was for is gone and they spent the money on something else entirely.",
+      "near": "I want to ask about a disabled facilities grant at 9 Sycamore Terrace. The husband sadly passed away just as the adaptation was being arranged, and the family are in limbo about what happens now. They asked me whether they need to tell the council and whether the grant has to be paid back. I said I'd enquire, as they're grieving and didn't want to get anything wrong."
+    },
+    {
+      "hit": "The takeaway on Tanner's Row, Golden Wok, is paying staff cash and declaring almost no income so the owner can keep claiming working tax credits and a council tax reduction as if he's skint. He drives a brand new Mercedes. He's hiding the takings to milk the system from both ends, and it's an open secret on the whole street. Please take a look.",
+      "near": "The takeaway on Tanner's Row, Golden Wok, has been struggling since the road works started and the owner mentioned he's had to apply for some council tax help because business is slow. I've no reason to doubt him, he looks worn out. I only wondered whether there's any other support the council offers small businesses in his position."
+    },
+    {
+      "hit": "Reporting suspected right-to-buy abuse at 31 Kestrel Drive. The tenant is buying the council house at the big discount, but he's got a buyer lined up already and a private cash deal to flip it the day completion goes through \u2014 he's even told people his sister is fronting the purchase so it doesn't look obvious. The whole thing is a sham to cash in on the discount.",
+      "near": "I wanted to ask about right-to-buy at 31 Kestrel Drive. The tenant has lived there for decades and is finally buying his council house, which he's thrilled about. His daughter asked me whether he's allowed to do it given his age and savings, as the family want everything done properly. Could you point me to where the rules are set out?"
+    },
+    {
+      "hit": "Dear Council, the allotment plot 12B at the Willowmead site is being run as a commercial veg business \u2014 the holder sells boxes online and at a stall, which breaks the rules, and he's signed the tenancy in his late father's name to keep the cheap rent and dodge the waiting list checks. He's using a dead man's name to hold a plot he profits from.",
+      "near": "Dear Council, the holder of allotment plot 12B at Willowmead grows a huge amount and often leaves bags of surplus veg by the gate for anyone to take. Someone mentioned the rules say plots are for personal use only and he might be over the line. He's not selling anything as far as I can see. I just wondered whether giving food away is allowed under the tenancy."
+    },
+    {
+      "hit": "I'm reporting a carer who's claiming Carer's Allowance for looking after an elderly man on Brook Street, except she barely turns up \u2014 an hour a fortnight at most \u2014 and ticks the forms to say it's full-time care. His actual care is all done by a niece. She's pocketing the allowance for caring she doesn't do, and the poor man doesn't even realise. Please investigate.",
+      "near": "I'm a bit worried about an elderly man on Brook Street whose carer claims Carer's Allowance for him. She's been off sick recently and his niece has been stepping in, and the family aren't sure whether they're supposed to tell anyone about the change in who's caring. Nobody's done anything wrong, they just don't want the man's support affected, so I said I'd ask."
+    },
+    {
+      "hit": "The scaffolding firm working on Cathedral View has put up a structure over the pavement with a permit that's been photocopied and altered \u2014 the dates and the address have clearly been changed by hand from an old one. They never paid for a current licence and faked the document to avoid the fee. I took a clear photo of it on the board and can send it over.",
+      "near": "The scaffolding firm working on Cathedral View has a permit on the board, but it looks like it might have expired a couple of weeks ago \u2014 the date's hard to read. I'm sure it's just an oversight on a long job, but the scaffolding's narrowing the pavement and it's awkward with a pushchair, so I wanted to check the permit's still valid."
+    },
+    {
+      "hit": "Report for the parking team: the resident permit on the silver Audi parked daily on Vine Street is forged \u2014 it's a colour printout, the hologram's missing, and the bloke admitted to my husband he made his own because he didn't want to pay for a second one. He's using a fake permit to park in the residents' bays every single day. Please act on this.",
+      "near": "Report for the parking team: there's a silver Audi parked daily on Vine Street with a resident permit, but the household already has two cars with permits and someone said you're only allowed a certain number per address. I've no idea if that's true and I'm not suggesting the permit's anything but genuine \u2014 I'd just like to understand the limit."
+    },
+    {
+      "hit": "I'd like to report that the woman at 18 Hawthorn Rise is claiming housing benefit as a private tenant, but the 'landlord' she pays rent to is actually her own brother and they've made up a fake tenancy agreement. She owns a share of the place herself. It's a contrived arrangement purely to extract benefit out of the council, and I think it warrants a look.",
+      "near": "I'd like to ask about the situation at 18 Hawthorn Rise, where the woman rents from her brother who owns the house. She's recently lost her job and wondered whether she could claim any housing help, but she's worried renting from family might not be allowed. It's a normal arrangement that's been going for years. Can tenants who rent from a relative apply?"
+    },
+    {
+      "hit": "The unit at the back of Mercer's Yard is running as an unlicensed scrap metal dealer, buying stolen cabling for cash with no records, which is exactly what the licensing rules are meant to stop. When the council last visited he pretended the unit was just storage and hid the weighing gear. He's lying to your officers to keep trading off the books.",
+      "near": "The unit at the back of Mercer's Yard seems to have started doing some kind of metal recycling \u2014 there's a fair bit of coming and going and the odd bit of noise during the day. I don't know whether that sort of thing needs a licence or planning permission, and I'm not suggesting wrongdoing, but I wondered whether the council is aware a business has opened there."
+    },
+    {
+      "hit": "Reporting the owner of the B&B on Esplanade Road, who's claiming small business rate relief by pretending it's his only property, when he actually owns three other holiday lets under his wife's maiden name. He's split them on paper to dodge the rates he should be paying. The relief is being claimed on a deliberate lie about who owns what.",
+      "near": "Reporting \u2014 well, asking really \u2014 about the B&B on Esplanade Road. The owner mentioned he's been getting small business rate relief and was worried he might no longer qualify now trade has picked up since the new ferry route opened. He seems anxious about getting it wrong and asked if I knew. I don't, so I'm passing the question on."
+    },
+    {
+      "hit": "I want to report a man on our street collecting his late mother's pension and her attendance allowance months after she died. He hasn't told anyone she's gone \u2014 he's kept her name on everything and is still drawing the money down. He's deliberately concealing the death to keep the payments coming, and it's been going on since at least Christmas.",
+      "near": "I want to mention something about a house on our street where an elderly lady passed away over the winter. Her family have been clearing the place slowly and I think they're still sorting out the official side \u2014 pensions, bills and so on. They asked whether there's a single place to notify the council of a death to stop everything in one go."
+    },
+    {
+      "hit": "The driving instructor operating as 'Pass First Time' off Linden Grove is using a disabled person's bus pass and concessionary fuel arrangements that aren't his \u2014 they belong to a former client who's housebound \u2014 and he renewed them in that man's name to keep the perks. He's impersonating someone to claim concessions he is not entitled to.",
+      "near": "The driving instructor 'Pass First Time' off Linden Grove parks his learner car across the dropped kerb by the disabled bays during lessons. I don't think there's anything dishonest about it, he's just short of space, but it does block access for the gentleman over the road who uses a wheelchair. Could someone have a word or look at the bay markings?"
+    },
+    {
+      "hit": "Please look into the food bank voucher scheme being abused by a volunteer at the St Aidan's distribution point. She's been signing off vouchers for friends who aren't in any hardship and taking a cut of the parcels to sell on. She's gaming a scheme meant for desperate people for her own gain, and another volunteer told me but is too scared to come forward.",
+      "near": "Please could you tell me how the food bank voucher scheme works at the St Aidan's distribution point. A neighbour of mine is really struggling but too proud to ask, and I want to help her get a voucher the proper way without embarrassing her. I don't want to do anything that isn't allowed, so I'd rather check first about who's eligible."
+    },
+    {
+      "hit": "Reporting a builder who got a council home-improvement loan for insulation and damp work at 44 Orchard Way, took the money, did none of the work, and submitted faked invoices and photos from a different house to show it was done. The homeowner is in on it and they're splitting the cash between them. The whole claim, start to finish, is fabricated.",
+      "near": "Reporting a concern about insulation work at 44 Orchard Way that I believe was done under a council home-improvement scheme. It's only been a year and there's already damp coming through again, so I think the builder may have done a poor job. I'm not suggesting anyone set out to deceive, but the homeowner is elderly and I wondered whether the council inspects this work."
+    },
+    {
+      "hit": "I'd like to report the people at 3 Maple Court who are claiming their adult son lives with them as a dependent to boost their benefits and get a bigger property on the housing transfer list, when he actually lives and works up in Manchester and only visits. They've deliberately put his name on the bins and the post to back up the story. Please check this.",
+      "near": "I'd like to ask about the housing transfer list and overcrowding. The family at 3 Maple Court have their adult son back home for a while between jobs and the house is clearly too small for them all now. They asked whether having him back counts towards being assessed for a bigger place, or whether it only matters if he's there permanently."
+    },
+    {
+      "hit": "There's a recovery and breakdown firm working out of the industrial estate on Forge Lane claiming a council green-fleet grant for electric vans they don't even own \u2014 they borrowed an EV for the photos and inspection day, then sent it straight back. Their actual vans are old diesels. The grant was awarded on a staged inspection. It's a con, plain and simple.",
+      "near": "There's a recovery firm on Forge Lane that I think received a council green-fleet grant \u2014 they've got a couple of smart electric vans now. One of the drivers said they're hoping to swap the rest of the fleet over too. I only wanted to ask whether that grant scheme is open to other small businesses on the estate, as my husband runs a delivery service."
+    },
+    {
+      "hit": "Report: the woman running a 'registered childcare' setup on Heather Bank is claiming the council's funded two-year-old places for children who don't attend \u2014 she's using names of relatives' kids who live in another county. The register is padded with phantom children to pull in the funding. A parent showed me the list and the names don't match who's there.",
+      "near": "Report \u2014 more of a query \u2014 about the childcare setting on Heather Bank that takes funded two-year-old places. My grandson's name is on their list but we've since found a place closer to home and he won't be starting. I wasn't sure whether we need to tell the council so they update their records and the funding goes to a child who needs it."
+    },
+    {
+      "hit": "I'm reporting flytipping that's actually a paid-for scam: a man with a van advertises 'licensed waste removal' locally, takes money off residents to clear their rubbish, then dumps the whole lot in the lane behind the cemetery at night. He's not licensed and lies about it to get the cash. I've seen his van down there twice now with a torch on.",
+      "near": "I'm reporting flytipping in the lane behind the cemetery \u2014 there's a growing pile of household rubbish and a broken sofa that's been there over a week. I've no idea who's responsible and I'm not pointing the finger at anyone. It's attracting rats and the smell's getting bad in this weather. Please could it be cleared and the lane kept an eye on?"
+    },
+    {
+      "hit": "The owner of the late-night shop on Cromwell Parade is selling alcohol well past the hours his licence allows and, when challenged by an officer last month, showed a doctored licence with the times changed to make it look like he's permitted till 2am. He's altered the document to cover an ongoing breach, and plenty of us have seen his lights on at one.",
+      "near": "The owner of the late-night shop on Cromwell Parade seems to be open later than I remember, and there can be a rowdy crowd outside around midnight on weekends. I don't know what his licence actually permits and I'm sure it's all in order, but the noise and the litter afterwards are becoming a nuisance for those of us in the flats above."
+    },
+    {
+      "hit": "Reporting a man who's claiming a council tax exemption on the grounds that 22 Saltby Road is empty and unfurnished, while actually renting it out fully furnished to four students for cash. He keeps it looking shut from the front and lies to the council that nobody lives there. He's collecting rent on a property he's expressly told you is vacant.",
+      "near": "Reporting a query about 22 Saltby Road, which has been genuinely empty for a good while since the elderly owner went into a care home. The family are now clearing it to sell and asked whether they still pay full council tax on an empty property or whether there's any reduction while it's unoccupied. I said I'd check, as none of them live locally."
+    }
+  ],
+  "implicit_legal_threat": [
+    {
+      "hit": "My brown bin has now been missed on four consecutive collections despite three reports to your contact centre. I have photographs of the bin presented correctly each time, with timestamps, all of which I have kept on file. I trust I shan't be forced to take this matter any further, but I would ask you to consider this carefully before responding.",
+      "near": "My brown bin has now been missed on four consecutive collections despite three reports to your contact centre. I have photographs of the bin presented correctly each time, with timestamps. This is simply not acceptable for a service I pay for, and I expect it collected this week and an explanation for the repeated failures."
+    },
+    {
+      "hit": "There is a pothole on Marlowe Avenue that has already buckled one of my wheels, costing me \u00a3180 at the garage. I have reported it twice. I should mention that I have retained the repair invoice and dated photographs of the defect, and I'm sure you'll appreciate why I think it sensible to keep such things to hand.",
+      "near": "There is a pothole on Marlowe Avenue that has already buckled one of my wheels, costing me \u00a3180 at the garage. I have reported it twice and nothing has been done. It is frankly disgraceful that a hazard this obvious has been left for weeks. Fill it in before someone is seriously hurt."
+    },
+    {
+      "hit": "I am writing about the extension your planning department waved through next door, which overshadows my entire garden in clear breach of what was originally consulted upon. I would much rather resolve this with you directly than be left with no choice but to explore the other avenues available to me.",
+      "near": "I am writing about the extension your planning department waved through next door, which overshadows my entire garden in clear breach of what was originally consulted upon. I am absolutely livid that my objection was ignored and the consultation appears to have counted for nothing. I want to know exactly how this was permitted."
+    },
+    {
+      "hit": "The noise from the licensed premises on Hartley Street continues well past 1am most weekends, in plain disregard of the conditions attached to its licence. I have kept a detailed log of every incident over the past two months. I would hate for this to have to end up somewhere rather more formal, so I do hope you will act promptly.",
+      "near": "The noise from the licensed premises on Hartley Street continues well past 1am most weekends, in plain disregard of the conditions attached to its licence. I have kept a detailed log of every incident over the past two months. My family cannot sleep and we are at the end of our tether. This must be enforced."
+    },
+    {
+      "hit": "The damp in my council flat has spread across two bedroom walls and my youngest now has a persistent cough the GP links to mould. I have reported this since November. I'm keeping a careful record of every call and every promise made, and I think you can probably guess why I feel that's necessary at this stage.",
+      "near": "The damp in my council flat has spread across two bedroom walls and my youngest now has a persistent cough the GP links to mould. I have reported this since November and been fobbed off every single time. I am furious that my children are living like this. Send someone out to fix it properly, not another inspection that goes nowhere."
+    },
+    {
+      "hit": "Following the recent works upstream, my garden has flooded twice in six weeks where it never flooded before, and the drainage your contractor installed is plainly inadequate. I would prefer to settle this amicably with the council, but I am keeping all the relevant evidence in case that should prove impossible.",
+      "near": "Following the recent works upstream, my garden has flooded twice in six weeks where it never flooded before, and the drainage your contractor installed is plainly inadequate. I have lost a shed full of belongings and an entire vegetable patch. Someone needs to come and look at this properly and put it right."
+    },
+    {
+      "hit": "I have received a parking penalty for a bay that was not signed at the time, as my photographs taken that morning clearly demonstrate. I shall be contesting this through every proper channel, and I would gently suggest the council reconsider before this goes beyond a simple appeal.",
+      "near": "I have received a parking penalty for a bay that was not signed at the time, as my photographs taken that morning clearly demonstrate. This is an outrageous way to treat residents and amounts to little more than a money-grab. I want the charge cancelled and an apology for the inconvenience."
+    },
+    {
+      "hit": "My council tax account has been charged twice for the same period and a reminder letter threatening recovery has now been issued for money I do not owe. I have bank statements proving both payments. I would ask you to correct this swiftly, as I should be most reluctant to have to take the matter elsewhere.",
+      "near": "My council tax account has been charged twice for the same period and a reminder letter threatening recovery has now been issued for money I do not owe. I have bank statements proving both payments. This is incompetence of the worst kind and the stress it has caused is considerable. Sort it out immediately."
+    },
+    {
+      "hit": "Your contractors felled a mature oak on the verge outside my home that had a clear Tree Preservation Order on it, as I had pointed out to them in writing the day before. I have kept that correspondence. I do hope we can resolve this between us, because the alternative is one I would rather not have to pursue.",
+      "near": "Your contractors felled a mature oak on the verge outside my home that had a clear Tree Preservation Order on it, as I had pointed out to them in writing the day before. I am heartbroken and incensed in equal measure. That tree stood for a century and your people destroyed it in an afternoon. I demand a full explanation."
+    },
+    {
+      "hit": "My housing benefit has been suspended for eleven weeks with no clear reason given, and I am now in arrears through no fault of my own. I have submitted every document three times over. Kindly resolve this without further delay; I would be very sorry to have to take this further than your office.",
+      "near": "My housing benefit has been suspended for eleven weeks with no clear reason given, and I am now in arrears through no fault of my own. I have submitted every document three times over. I am at breaking point and cannot understand how anyone could leave a family in this position. Reinstate my claim now."
+    },
+    {
+      "hit": "The children's playground in Calder Park has had a broken swing and exposed metal edges for over a month despite my reports. I have photographs of my own grandchild's grazed arm from it. I am keeping these safe, and I'm sure you understand why I mention that, in the hope it persuades you to act quickly.",
+      "near": "The children's playground in Calder Park has had a broken swing and exposed metal edges for over a month despite my reports. My grandchild grazed her arm on it last week. It is a disgrace that a play area for small children has been left in such a dangerous state. Fence it off or fix it, today."
+    },
+    {
+      "hit": "I applied for a street trading licence eight weeks ago and have heard nothing, despite the statutory timescales your own website quotes. I have copies of every submission and the dates they were sent. I would much prefer not to have to escalate this beyond a polite enquiry, but I am running out of patience.",
+      "near": "I applied for a street trading licence eight weeks ago and have heard nothing, despite the statutory timescales your own website quotes. I have copies of every submission and the dates they were sent. Every day of delay is costing me income I cannot recover. This is no way to treat a small business."
+    },
+    {
+      "hit": "The communal stairwell in my block has had no lighting for three weeks and an elderly neighbour has already fallen on the stairs in the dark. I have reported it five times. I would ask you to treat this with the seriousness it deserves, before circumstances force me to look at my options.",
+      "near": "The communal stairwell in my block has had no lighting for three weeks and an elderly neighbour has already fallen on the stairs in the dark. I have reported it five times and been ignored each time. Somebody is going to be badly hurt and it will be on your conscience. Get the lights fixed now."
+    },
+    {
+      "hit": "A pavement slab outside number 14 has been raised by an inch for months and is a clear trip hazard right by a bus stop. I tripped on it myself last Tuesday and I have kept a note of the date and the bruising. I trust the council will see sense and attend to it before I am obliged to consider matters more formally.",
+      "near": "A pavement slab outside number 14 has been raised by an inch for months and is a clear trip hazard right by a bus stop. I tripped on it myself last Tuesday and could easily have broken a wrist. How many people have to go over before you act? This needs grinding down or replacing this week."
+    },
+    {
+      "hit": "I have been overcharged on my garden waste subscription for the second year running and your refund, promised in March, has still not appeared. I have every receipt and email confirmation on file. I should be grateful for a prompt resolution, as I would be loath to take this beyond a friendly reminder.",
+      "near": "I have been overcharged on my garden waste subscription for the second year running and your refund, promised in March, has still not appeared. I have every receipt and email confirmation on file. Frankly the service is a shambles and the broken promises are insulting. I want my money back this month."
+    },
+    {
+      "hit": "The fly-tipping at the end of Sefton Lane has now sat there for six weeks, attracting rats right next to a primary school. I have photographed it weekly and noted each of my reports and your reference numbers. I do hope this prompts swift action, because I should very much regret having to take it higher.",
+      "near": "The fly-tipping at the end of Sefton Lane has now sat there for six weeks, attracting rats right next to a primary school. I have photographed it weekly and noted each of my reports and your reference numbers. It is utterly shameful that a council can leave a health hazard outside a school. Clear it now."
+    },
+    {
+      "hit": "My elderly mother's care package was cut without any reassessment or notice, leaving her without the morning visits she relies on to take her medication. I have kept the original care plan and every letter since. I would urge you to reinstate it at once; I would much rather not be compelled to pursue this further.",
+      "near": "My elderly mother's care package was cut without any reassessment or notice, leaving her without the morning visits she relies on to take her medication. I have kept the original care plan and every letter since. This is cruel and dangerous and I am beside myself. Restore her care immediately."
+    },
+    {
+      "hit": "The new yellow lines painted outside my driveway now make it impossible for me to access my own property legally, and no consultation reached me. I have photographs of the lines and a copy of the notice that was never delivered to my address. I am sure we can resolve this without my needing to take the formal route.",
+      "near": "The new yellow lines painted outside my driveway now make it impossible for me to access my own property legally, and no consultation reached me. I have photographs of the lines and a copy of the notice that was never delivered to my address. This is a ridiculous mistake that has left me unable to park at my own home. Repaint them correctly."
+    },
+    {
+      "hit": "I have been waiting nine months on the housing register having been assessed as priority need, and in that time families who applied after me have been rehoused. I have kept my assessment letter and the band I was awarded. I would ask you to look again, as I would be very reluctant to have to take this matter elsewhere.",
+      "near": "I have been waiting nine months on the housing register having been assessed as priority need, and in that time families who applied after me have been rehoused. I have kept my assessment letter and the band I was awarded. The whole system feels rigged and the unfairness is staggering. I want a proper explanation of how I have been leapfrogged."
+    },
+    {
+      "hit": "The blocked gully on Pennington Road floods the carriageway every time it rains and water now pours into my front garden. I have reported it on four separate occasions with photographs each time. I do trust this can be sorted between us, though I am keeping everything carefully in case it cannot.",
+      "near": "The blocked gully on Pennington Road floods the carriageway every time it rains and water now pours into my front garden. I have reported it on four separate occasions with photographs each time. The repeated inaction is maddening and the damage is mounting. Send a jetting crew out before the next downpour."
+    },
+    {
+      "hit": "Your bailiffs attended my home over a council tax debt that had already been paid in full, frightening my children half to death. I have the cleared payment and a timestamped confirmation from your own portal. I would advise the council to address this with some urgency, as I am not inclined to let it rest where it stands.",
+      "near": "Your bailiffs attended my home over a council tax debt that had already been paid in full, frightening my children half to death. I have the cleared payment and a timestamped confirmation from your own portal. This is an appalling failure that has caused real distress to my family. I want a written apology and confirmation it will never happen again."
+    },
+    {
+      "hit": "The grass verges across the whole of the Westmead estate have not been cut all season and are now waist high, hiding dog mess and litter. I have photographed the state of them week by week. I should be glad of a date for the work, and I'd rather not have cause to take this any further than this email.",
+      "near": "The grass verges across the whole of the Westmead estate have not been cut all season and are now waist high, hiding dog mess and litter. I have photographed the state of them week by week. The estate looks utterly neglected and residents are ashamed of where they live. When is your grounds team actually going to turn up?"
+    },
+    {
+      "hit": "My planning application has been sat with your office for fourteen weeks beyond the statutory determination period, with no decision and no extension agreed. I have kept the validation email and every chaser I have sent. I would prefer a swift determination to having to consider the options open to an applicant in my position.",
+      "near": "My planning application has been sat with your office for fourteen weeks beyond the statutory determination period, with no decision and no extension agreed. I have kept the validation email and every chaser I have sent. The delay is costing me a fortune in held-over builder's quotes. Determine it, one way or the other, this week."
+    },
+    {
+      "hit": "A water leak from the flat above, which the council owns and manages, has been damaging my ceiling for two months while repairs are 'scheduled'. I have kept photographs of the spreading stain and every job reference given to me. I do hope you will act, because I would be very sorry to take this beyond your repairs team.",
+      "near": "A water leak from the flat above, which the council owns and manages, has been damaging my ceiling for two months while repairs are 'scheduled'. I have kept photographs of the spreading stain and every job reference given to me. The ceiling is now sagging and I am genuinely worried it will come down. Fix the leak above before it does."
+    },
+    {
+      "hit": "I was refused a disabled parking bay despite a consultant's letter confirming my mobility needs, and the decision letter doesn't even address the medical evidence I supplied. I have retained all of it. I would respectfully ask you to review this, as I would much rather not have to take it further than a request for reconsideration.",
+      "near": "I was refused a disabled parking bay despite a consultant's letter confirming my mobility needs, and the decision letter doesn't even address the medical evidence I supplied. I have retained all of it. It is degrading to be treated as though my disability doesn't exist. Reconsider this decision and actually read what my consultant wrote."
+    },
+    {
+      "hit": "The streetlight outside my bedroom window has been stuck on at full brightness day and night for a month, and I have barely slept since. I have logged every report and the dates. I would be grateful for a repair without further delay; I would much prefer that to having to escalate the matter beyond your office.",
+      "near": "The streetlight outside my bedroom window has been stuck on at full brightness day and night for a month, and I have barely slept since. I have logged every report and the dates. I am exhausted, irritable and at my wits' end, and your contractors keep cancelling. Get it fixed before I lose my mind entirely."
+    },
+    {
+      "hit": "The school crossing patrol on Alderley Road has gone unmanned for the whole term and I have watched children dash across four lanes unaided. I have kept a diary of the mornings it was missing. I urge you to restore it at once, before I feel I have no choice but to take this somewhere it will be noticed.",
+      "near": "The school crossing patrol on Alderley Road has gone unmanned for the whole term and I have watched children dash across four lanes unaided. I have kept a diary of the mornings it was missing. It is only a matter of time before a child is killed, and the council is gambling with their lives. Restore the patrol immediately."
+    },
+    {
+      "hit": "I have been billed business rates on a property I gave up tenancy of in January, with the lease surrender confirmed in writing by your own valuation team. I have that confirmation on file. I would ask the council to cancel the charge promptly, as I should be most unwilling to let this progress any further.",
+      "near": "I have been billed business rates on a property I gave up tenancy of in January, with the lease surrender confirmed in writing by your own valuation team. I have that confirmation on file. It is absurd that your right hand doesn't know what your left hand has agreed, and the demands keep coming. Cancel this bill at once."
+    },
+    {
+      "hit": "The communal bin store at my block has been overflowing for six weeks because the agreed collection schedule simply isn't being kept, and the smell is unbearable in this heat. I have dated photographs of every overflow. I do hope this can be resolved quietly between us rather than my having to take it further.",
+      "near": "The communal bin store at my block has been overflowing for six weeks because the agreed collection schedule simply isn't being kept, and the smell is unbearable in this heat. I have dated photographs of every overflow. It is a public health disgrace and residents are at the end of their patience. Send a crew and fix the rota."
+    },
+    {
+      "hit": "Your contractor reversed into my garden wall during the verge works and drove off, and I have CCTV from my doorbell camera clearly showing the vehicle and its markings. I have saved the footage. I would invite the council to make this right with me directly; I think you'll understand why I'd prefer that to the alternative.",
+      "near": "Your contractor reversed into my garden wall during the verge works and drove off, and I have CCTV from my doorbell camera clearly showing the vehicle and its markings. I have saved the footage. The cheek of damaging my property and then driving away is breathtaking. I expect the wall rebuilt and an admission of what happened."
+    },
+    {
+      "hit": "I objected formally to the change of use on the unit beside my shop on grounds of fumes and ventilation, and my objection appears nowhere in the committee papers. I have my submission receipt and the validation reference. I would ask you to look into how this was lost, before I am driven to take the matter higher.",
+      "near": "I objected formally to the change of use on the unit beside my shop on grounds of fumes and ventilation, and my objection appears nowhere in the committee papers. I have my submission receipt and the validation reference. It is outrageous that a properly lodged objection can simply vanish. I want to know who is responsible and how the decision can stand."
+    },
+    {
+      "hit": "My pothole compensation claim, which your insurers acknowledged in February, has gone completely silent and four months have passed without a word. I have kept the acknowledgement and the claim reference. I would be grateful for movement on this; I would much rather not have to look at taking it further than a chaser.",
+      "near": "My pothole compensation claim, which your insurers acknowledged in February, has gone completely silent and four months have passed without a word. I have kept the acknowledgement and the claim reference. Being ignored for months after you accepted the claim is contemptible. Give me a decision and the repair money I am owed."
+    }
+  ],
+  "form": [
+    "My broadband keeps dropping out every evening around the same time. Any idea what's worth trying before I ring the provider?",
+    "I'm after a new pair of headphones for commuting on a tight budget. What would people recommend that won't fall apart in six months?",
+    "The roses along my front path are covered in greenfly again. What's the best way to deal with them without harming the bees?",
+    "My sourdough never seems to rise properly and comes out dense. What am I likely doing wrong with the starter?",
+    "There's a persistent squeak in the floorboards on my landing. How would you go about tracking down and fixing the culprit?",
+    "We're planning a fortnight in northern Italy by train next spring. Any tips on the best rail passes and routes to look at?",
+    "Our rescue dog barks at every passing van and won't settle. What's a good approach to calming this kind of reactivity?",
+    "I'd love to start learning the piano as an adult with no background. Where's the sensible place to begin, and what should I practise first?",
+    "I'm thinking of buying a second-hand bike off a local listing. What should I be checking before I hand over any money?",
+    "My houseplants keep dying despite my best efforts. Which ones are genuinely hard to kill for a serial over-waterer?",
+    "The grout in my bathroom has gone grubby and patchy. What's the best way to bring it back without re-tiling the whole thing?",
+    "I want to take better photos of my kids indoors but they always come out blurry. Any settings or tricks you'd suggest on a basic camera?",
+    "My lawn is more moss than grass after the wet winter. What's the right order to tackle that in spring?",
+    "I want to bake a proper birthday cake from scratch for the first time. Any foolproof recipes that won't collapse in the middle?",
+    "The hinges on my kitchen cupboards have started dropping so the doors don't line up. Is this something I can adjust myself?",
+    "We're road-tripping around Scotland with a toddler this summer. Any advice on breaking up the long drives?",
+    "Our cat has suddenly started going outside the litter tray after years of being spotless. Any tips on what might have put her off it?",
+    "I'd like to learn basic woodworking and make a simple bookshelf. What starter tools are actually worth buying first?",
+    "I'm after a second-hand sofa but I'm wary of hidden damage and odd smells. What should I look out for when viewing used furniture?",
+    "My smart thermostat won't hold a schedule and keeps reverting. Where would you start with troubleshooting it?",
+    "The climbing clematis I planted last year has barely grown. Am I pruning it at the wrong time?",
+    "I keep burning the base of my curries even on a low heat. Any tips for stopping things catching in a thin pan?",
+    "There's a small damp patch appearing under my kitchen sink. How do I work out whether it's a leak or just condensation?",
+    "I want to plan a quiet walking holiday in the Lake District in autumn. Which bases would you recommend for someone who hates crowds?",
+    "My budgie has started plucking at its feathers and seems bored. What's worth adding to its cage setup to keep it occupied?",
+    "I'm teaching myself watercolour painting from scratch. What basic supplies are worth the money for a complete beginner?",
+    "I'm eyeing up a used lawnmower from a car-boot seller. What should I test before buying a petrol one second-hand?",
+    "My new laptop is already running slow and the fan's always on. What's worth checking before I take it back to the shop?"
+  ],
+  "none": [
+    "Just wanted to say the new recycling collection has been running like clockwork on our street since the change \u2014 thank you to the crews.",
+    "Letting you know we've moved house within the borough; our new address is on the attached form for your records.",
+    "The flower beds by the war memorial are looking absolutely lovely this year. Whoever's tending them deserves a mention.",
+    "Popping a note in to sign up for the community litter-pick on the green next Saturday \u2014 count me and my two teenagers in.",
+    "The streetlight outside number 14 that I flagged last month is now fixed and working perfectly. Appreciate the quick turnaround.",
+    "Wanted to pass on that the bus drivers on the 47 route have been unfailingly patient with my elderly mum. Credit where it's due.",
+    "I'd like to register my interest in volunteering at the library's reading group on Thursday mornings.",
+    "Just flagging that the noticeboard by the post office is so faded now you can't read what's pinned to it. No rush, just an observation.",
+    "Thank you to the team who repainted the railings along the canal path \u2014 it's made a real difference to how the area feels.",
+    "Confirming we'll be attending the residents' meeting on the 18th and bringing a neighbour along too.",
+    "The play park on Mill Lane has had its broken swing replaced \u2014 the kids are over the moon. Thanks for sorting it.",
+    "Sending a quick thank you to the gritting team; our hill was passable all through last week's cold snap.",
+    "I'd like to add my name to the mailing list for updates on the high-street regeneration plans.",
+    "Just noting that the bins on the seafront were overflowing by Sunday afternoon \u2014 might be worth an extra round in summer.",
+    "The new pedestrian crossing by the school has made the morning run so much safer. Genuinely grateful for it.",
+    "Writing to compliment the staff at the leisure centre reception, who couldn't have been more helpful when I lost my keys there.",
+    "Letting you know my surname has changed since marrying; please update your records from the details enclosed.",
+    "The autumn lantern parade last weekend was a real joy \u2014 please pass my thanks to everyone who organised it.",
+    "Just observing that the footpath behind the allotments has got quite overgrown, in case it's on anyone's list.",
+    "I'd like to sign my daughter up for the summer holiday craft sessions at the community centre.",
+    "Thank you for the prompt repair of the pothole on Beech Avenue \u2014 the road's like new again.",
+    "Noting that the duck pond in the park looks much cleaner since the clear-out; lovely to see the fish back.",
+    "Confirming receipt of the council tax letter \u2014 all clear and no action needed at my end, just acknowledging it.",
+    "The recycling guide that came through the door was genuinely useful and clearly laid out. Nice bit of work.",
+    "Just letting you know the village hall clock has stopped at quarter past three, in case the caretaker hasn't spotted it.",
+    "I'd like to put my name forward to help steward at the remembrance event in November.",
+    "Wanted to share that the new benches along the river walk are a lovely touch \u2014 busy with people every sunny afternoon.",
+    "Flagging for info that the recycling bank on the supermarket car park has been full for a few days now."
+  ]
+}

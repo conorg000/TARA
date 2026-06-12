@@ -178,4 +178,11 @@ over independent fixed thresholds. State explicitly the N at which a fixed-thres
 ## Amendments
 
 *(Log every deviation here with date + reason. Empty at freeze.)*
-- *(none yet)*
+- **2026-06-12 — Step 3 pre-test near should be register-matched (discovered cold).**
+  `implicit_legal_threat` passed the Step-3 pre-test (near false-fire 0% on hand-picked
+  nears) but failed Step-4 construction validation (register-matched near false-fire 84% —
+  the model conflates angry, documented complaints with veiled legal threats). The lenient
+  pre-test near under-estimated the topic-confound. **Amendment:** treat a clean Step-3 near
+  as *necessary, not sufficient*; the load-bearing topic gate is the Step-4 register-matched
+  near. Where feasible, build the Step-3 near as a matched twin too, so the confound is
+  caught before keeper spend. (This did not change any run; it is a recipe improvement.)
