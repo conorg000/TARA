@@ -1,5 +1,7 @@
 # GPU Logistics
 
+Main thing is, take your time on the box. If you end up making GBs of data/activations, makes more sense to do the analysis on the box rather than us waiting hours for the activations to transfer back to this device. That's why we spend time trying to get all the code ready before hand, so it's committed and on the box. But also not the end of the world if fresh code needs to be written on the box, we'll have a record of it in our chat that we can add to our repo here.
+
 ## vast.ai setup (the basics, for next time)
 
 Not the full first-time guide (SSH keygen etc. is already done — `arena_key` is
