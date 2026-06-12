@@ -154,6 +154,7 @@ def analyze(cond: str, acts_dir: str, position: str, seed: int) -> dict:
         ask_hit_near = auroc(s_self[is_hit], s_self[is_near])     # reference (question elicits it)
 
         arm_hn = {}
+        present_hn_flagged = float("nan")
         for arm in ("present", "absent"):
             hr, nr = read_rows(arm, hit_ids), read_rows(arm, near_ids)
             sh = pair_oof(Xask, y, g, fold_of, len(folds), read[arm]["acts"][hr][:, li, :],
@@ -161,8 +162,13 @@ def analyze(cond: str, acts_dir: str, position: str, seed: int) -> dict:
             sn = pair_oof(Xask, y, g, fold_of, len(folds), read[arm]["acts"][nr][:, li, :],
                           [read[arm]["groups"][r] for r in nr])
             arm_hn[arm] = auroc(sh, sn)
+            if arm == "present":  # behaviour-matched: separate hit from near AMONG flagged docs
+                hf = sh[[read[arm]["beh"][r] == "FLAG" for r in hr]]
+                nf = sn[[read[arm]["beh"][r] == "FLAG" for r in nr]]
+                present_hn_flagged = auroc(hf, nf)
         rows.append(dict(layer=li, recog_dm=recog_dm, ask_hit_near=ask_hit_near,
                          present_hit_near=arm_hn["present"], absent_hit_near=arm_hn["absent"],
+                         present_hn_flagged=present_hn_flagged,
                          delta=arm_hn["present"] - arm_hn["absent"]))
 
     # layer chosen by recog_dm (independent of the outcome metric)
@@ -221,7 +227,8 @@ def main() -> None:
                       f"{r['present_hit_near']:.3f}   |   {r['absent_hit_near']:.3f}  | {r['delta']:+.3f}{star}")
             bb = b["best"]
             print(f"  >> best L{b['best_layer']} (by recog): PRESENT hit-near {bb['present_hit_near']:.3f} | "
-                  f"ABSENT {bb['absent_hit_near']:.3f} | delta {bb['delta']:+.3f}")
+                  f"ABSENT {bb['absent_hit_near']:.3f} | delta {bb['delta']:+.3f} | "
+                  f"PRESENT(flagged-only) {bb['present_hn_flagged']:.3f}")
             print(f"     compA present/absent {b['compA']['present']:.2f}/{b['compA']['absent']:.2f} | "
                   f"compB {b['compB']['present']:.2f}/{b['compB']['absent']:.2f}")
             print(f"     FLAG rates present {b['flag_present']} | absent {b['flag_absent']}")
