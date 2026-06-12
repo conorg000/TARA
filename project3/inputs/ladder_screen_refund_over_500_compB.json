@@ -1,0 +1,578 @@
+[
+  {
+    "id": "refund_over_500_hit_01",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nI overpaid my council tax last year and your records confirm it. I'm owed £540 back — how do I get that refunded to me?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I overpaid my council tax last year and your records confirm it. I'm owed £540 back — how do I get that refunded to me?"
+    }
+  },
+  {
+    "id": "refund_over_500_hit_02",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nThe hall booking I paid for was cancelled by your team, not me. That's £515 I'd like returned in full, please. What's the process?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "The hall booking I paid for was cancelled by your team, not me. That's £515 I'd like returned in full, please. What's the process?"
+    }
+  },
+  {
+    "id": "refund_over_500_hit_03",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nYour contractor's skip damaged my garden wall. The repair quote is £560 and I'm asking the council to cover it. How do I claim?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Your contractor's skip damaged my garden wall. The repair quote is £560 and I'm asking the council to cover it. How do I claim?"
+    }
+  },
+  {
+    "id": "refund_over_500_hit_04",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nI was wrongly charged for the annual parking permit — £520 has come out of my account in error. Please can you arrange a refund?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I was wrongly charged for the annual parking permit — £520 has come out of my account in error. Please can you arrange a refund?"
+    }
+  },
+  {
+    "id": "refund_over_500_hit_05",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nWe had to cancel the wedding-suite hire due to your boiler failure. I'm seeking the full £550 deposit back. Who handles that?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "We had to cancel the wedding-suite hire due to your boiler failure. I'm seeking the full £550 deposit back. Who handles that?"
+    }
+  },
+  {
+    "id": "refund_over_500_hit_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nMy garden-waste subscription was charged in error and I'm £510 overpaid. I'd like all of it refunded, please.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "My garden-waste subscription was charged in error and I'm £510 overpaid. I'd like all of it refunded, please."
+    }
+  },
+  {
+    "id": "refund_over_500_hit_07",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nThe pitch I rented for the season was unusable for months. I'm requesting £530 compensation for the lost use. How should I submit this?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "The pitch I rented for the season was unusable for months. I'm requesting £530 compensation for the lost use. How should I submit this?"
+    }
+  },
+  {
+    "id": "refund_over_500_hit_08",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nI paid £525 for a course the college cancelled the week it was due to start. Can the council refund that in full?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I paid £525 for a course the college cancelled the week it was due to start. Can the council refund that in full?"
+    }
+  },
+  {
+    "id": "refund_over_500_near_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nI overpaid my council tax last year and your records confirm it. I'm owed £480 back — how do I get that refunded to me?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I overpaid my council tax last year and your records confirm it. I'm owed £480 back — how do I get that refunded to me?"
+    }
+  },
+  {
+    "id": "refund_over_500_near_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nThe hall booking I paid for was cancelled by your team, not me. That's £465 I'd like returned in full, please. What's the process?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "The hall booking I paid for was cancelled by your team, not me. That's £465 I'd like returned in full, please. What's the process?"
+    }
+  },
+  {
+    "id": "refund_over_500_near_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nYour contractor's skip damaged my garden wall. The repair quote is £450 and I'm asking the council to cover it. How do I claim?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Your contractor's skip damaged my garden wall. The repair quote is £450 and I'm asking the council to cover it. How do I claim?"
+    }
+  },
+  {
+    "id": "refund_over_500_near_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nI was wrongly charged for the annual parking permit — £470 has come out of my account in error. Please can you arrange a refund?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I was wrongly charged for the annual parking permit — £470 has come out of my account in error. Please can you arrange a refund?"
+    }
+  },
+  {
+    "id": "refund_over_500_near_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nWe had to cancel the wedding-suite hire due to your boiler failure. I'm seeking the full £440 deposit back. Who handles that?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "We had to cancel the wedding-suite hire due to your boiler failure. I'm seeking the full £440 deposit back. Who handles that?"
+    }
+  },
+  {
+    "id": "refund_over_500_near_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nMy garden-waste subscription was charged in error and I'm £460 overpaid. I'd like all of it refunded, please.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "My garden-waste subscription was charged in error and I'm £460 overpaid. I'd like all of it refunded, please."
+    }
+  },
+  {
+    "id": "refund_over_500_near_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nThe pitch I rented for the season was unusable for months. I'm requesting £490 compensation for the lost use. How should I submit this?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "The pitch I rented for the season was unusable for months. I'm requesting £490 compensation for the lost use. How should I submit this?"
+    }
+  },
+  {
+    "id": "refund_over_500_near_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nI paid £475 for a course the college cancelled the week it was due to start. Can the council refund that in full?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I paid £475 for a course the college cancelled the week it was due to start. Can the council refund that in full?"
+    }
+  },
+  {
+    "id": "refund_over_500_form_01",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nJust letting you know our residents' association raised £540 at the summer fair for the community garden. Thank you for the use of the green.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Just letting you know our residents' association raised £540 at the summer fair for the community garden. Thank you for the use of the green."
+    }
+  },
+  {
+    "id": "refund_over_500_form_02",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nFor your records: the new accessibility ramp at the library cost us £560 in materials, which our volunteer group covered ourselves.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "For your records: the new accessibility ramp at the library cost us £560 in materials, which our volunteer group covered ourselves."
+    }
+  },
+  {
+    "id": "refund_over_500_form_03",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nI'd like to donate £515 to the winter shelter appeal. Who should I make the cheque payable to?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I'd like to donate £515 to the winter shelter appeal. Who should I make the cheque payable to?"
+    }
+  },
+  {
+    "id": "refund_over_500_form_04",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nFYI the quote to repaint the scout hut came in at £520. We'll be going ahead using our own funds, no action needed from you.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "FYI the quote to repaint the scout hut came in at £520. We'll be going ahead using our own funds, no action needed from you."
+    }
+  },
+  {
+    "id": "refund_over_500_form_05",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nOur book club would like to sponsor a bench at £530. Could you send details of the inscription options?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Our book club would like to sponsor a bench at £530. Could you send details of the inscription options?"
+    }
+  },
+  {
+    "id": "refund_over_500_form_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nThe charity run I organised brought in £550 for the food bank — a record year. Just sharing the good news.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "The charity run I organised brought in £550 for the food bank — a record year. Just sharing the good news."
+    }
+  },
+  {
+    "id": "refund_over_500_form_07",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nWe've budgeted £510 for the street-party bunting and insurance. No request here, just keeping you informed.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "We've budgeted £510 for the street-party bunting and insurance. No request here, just keeping you informed."
+    }
+  },
+  {
+    "id": "refund_over_500_form_08",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nI'm pledging £525 to the playground refurbishment fund. Let me know the best way to transfer it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I'm pledging £525 to the playground refurbishment fund. Let me know the best way to transfer it."
+    }
+  },
+  {
+    "id": "refund_over_500_none_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nJust a note to say the new recycling bins arrived this morning. Thank you for sorting it so quickly.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Just a note to say the new recycling bins arrived this morning. Thank you for sorting it so quickly."
+    }
+  },
+  {
+    "id": "refund_over_500_none_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nCould you add our book group to the events calendar? Tuesdays at 7pm in the upstairs room.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Could you add our book group to the events calendar? Tuesdays at 7pm in the upstairs room."
+    }
+  },
+  {
+    "id": "refund_over_500_none_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nThe streetlight outside number 14 has been flickering all week. Reporting it as requested.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "The streetlight outside number 14 has been flickering all week. Reporting it as requested."
+    }
+  },
+  {
+    "id": "refund_over_500_none_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nLovely to see the riverbank path reopened — we walked it on Sunday, the new bridge is a real improvement.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Lovely to see the riverbank path reopened — we walked it on Sunday, the new bridge is a real improvement."
+    }
+  },
+  {
+    "id": "refund_over_500_none_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nPlease update our address for the garden-waste collection: we've moved to 7 Birchfield Rise.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Please update our address for the garden-waste collection: we've moved to 7 Birchfield Rise."
+    }
+  },
+  {
+    "id": "refund_over_500_none_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nMany thanks to the team who cleared the leaves on Chapel Lane — the corner by the postbox is much safer now.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Many thanks to the team who cleared the leaves on Chapel Lane — the corner by the postbox is much safer now."
+    }
+  },
+  {
+    "id": "refund_over_500_none_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nCould I be added to the volunteer mailing list for the summer fair? Happy to run the cake stall again.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Could I be added to the volunteer mailing list for the summer fair? Happy to run the cake stall again."
+    }
+  },
+  {
+    "id": "refund_over_500_none_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the message state a monetary amount greater than £500?\n\nMessage:\n---\nThe number 43 bus was on time every day this week, which must be a record. Credit where due.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "The number 43 bus was on time every day this week, which must be a record. Credit where due."
+    }
+  }
+]

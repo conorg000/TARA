@@ -528,3 +528,45 @@ Reused from the behavioural eval work (`project/data/scenarios_v2.json`), bundle
   separates them via surface semantics, not recognition. Confirmed empirically: even Qwen3-0.6B
   hit AUROC 0.978 on it (see [runlog.md](runlog.md) run `2026-05-29_r1`), which a model that weak
   could only achieve by reading topic. Kept for the record; not used going forward.
+
+---
+
+## `ladder_*` — Move 4 spontaneity-ladder keepers (2026-06-12)
+
+The Move 4 lattices (plan_move4_spontaneity_ladder.md). Tests where always-on comprehension
+ends and whether the rule takes over, by probing compounds ordered by how spontaneously the
+model computes the decisive element. Four conditions, each an **A∧B / A-only / B-only / neither**
+lattice (cells `hit / near / form / none`), where A is the spontaneous component and B the
+decisive one; **hit and near are matched pairs differing ONLY in B** (the decisive read is
+hit-vs-near, plan Appendix B1).
+
+- **Conditions:** `advice_deadline` (R2, arbitrary conjunction of two spontaneous components —
+  composition control); `refund_over_500` (R3, Family B — rule-supplied **numeric threshold**,
+  B = amount > £500, near-criterion amounts £510–570 vs £440–490); `complaint_6months` (R3,
+  Family B — rule-supplied **temporal cutoff**, B = event > 6 months ago, relative timeframes
+  7–8mo vs 4–5mo); `medical_rx_drug` (R3, Family A — **world-knowledge** contrast, B = a named
+  prescription-only drug; expected to read without the rule = latent lexical knowledge).
+- **Size:** 24 hit + 24 near + 16 form + 16 none = 80 docs/condition (24 matched pairs + 32
+  neutral singletons = 56 CV groups), in the Riverbeck Borough Council register (shared with Exp 2).
+- **Passes/condition (framing):** `ask_compound_p{1,2,3}` + `ask_compA` + `ask_compB`
+  (framing `ladder_ask`; the question supplies the condition, NO rule — greedy YES/NO are the
+  probe's training labels) and `read_present` / `read_absent` (framing `ladder_read`; a neutral
+  triage task + a standing FLAG rule — the **pure-reading** arms, present = compound rule,
+  absent = length-matched placebo; differ only in the rule's content).
+- **Why it isolates the decisive element:** hit/near are word-for-word identical except B
+  (£ amount / timeframe / OTC↔Rx drug / deadline clause), validated mechanically in
+  make_ladder_keeper.py. So hit-vs-near separability can only be carried by B, not surface form.
+  Near-criterion design (just-over vs just-under) keeps raw magnitude from leaking the over/under
+  distinction into the without-rule arm (plan Appendix B4).
+- **Probeability:** all four PASS the OpenRouter greedy gate (hit-detect 100%, components ≥98%,
+  consistency ≥88%; numeric/temporal thresholds fumbled on ~12% of near items at the boundary —
+  handled by a probe-time correctness filter, not by curating items to the model's quirks).
+- **Known limitation:** Family A (medical) carries a latent-lexical-knowledge confound by design
+  (it is the contrast, not a clean rule-conditioning test — plan Appendix B3).
+- **Regenerate:**
+  ```bash
+  python make_ladder_screen.py          # screening lattices (8/cell, throwaway)
+  # content expanded to 24/16/cell by 4 authoring agents -> inputs/ladder_keeper_content_*.json
+  python make_ladder_keeper.py          # the keeper passes inputs/ladder_<cand>_*.json
+  python extract_ladder_selftest.py --model Qwen/Qwen3-0.6B   # span/group/token checks
+  ```

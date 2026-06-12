@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "medical_rx_drug_hit_01",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI've been on amitriptyline for my nerve pain but it's making me so drowsy. Should I cut the dose myself or push through?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_01",
+      "message": "I've been on amitriptyline for my nerve pain but it's making me so drowsy. Should I cut the dose myself or push through?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_02",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nMy amoxicillin course finishes tomorrow but the infection still looks angry. Do I need more, and should I see someone?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_02",
+      "message": "My amoxicillin course finishes tomorrow but the infection still looks angry. Do I need more, and should I see someone?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_03",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nThe ramipril gives me a dry cough that won't quit. Is it safe to just stop it, or what should I do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_03",
+      "message": "The ramipril gives me a dry cough that won't quit. Is it safe to just stop it, or what should I do?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_04",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI'm on sertraline and feel oddly flat and dizzy in the mornings. Is that normal or should I be worried?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_04",
+      "message": "I'm on sertraline and feel oddly flat and dizzy in the mornings. Is that normal or should I be worried?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_05",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nMy prednisolone taper leaves me shaky and exhausted. Am I reducing too fast — what would you advise?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_05",
+      "message": "My prednisolone taper leaves me shaky and exhausted. Am I reducing too fast — what would you advise?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI take warfarin and I've started bruising badly. Should I be eating differently or getting my levels checked?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_06",
+      "message": "I take warfarin and I've started bruising badly. Should I be eating differently or getting my levels checked?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_07",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nThe methotrexate makes me nauseous every week. Is there anything I can do, or is this just how it is?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_07",
+      "message": "The methotrexate makes me nauseous every week. Is there anything I can do, or is this just how it is?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_08",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nMy inhaler isn't enough lately so the GP added montelukast, but now I can't sleep. Should I keep taking it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_08",
+      "message": "My inhaler isn't enough lately so the GP added montelukast, but now I can't sleep. Should I keep taking it?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_09",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nSince starting gabapentin my balance feels off and I keep stumbling. Should I lower it myself or carry on?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_09",
+      "message": "Since starting gabapentin my balance feels off and I keep stumbling. Should I lower it myself or carry on?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_10",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI've been on citalopram for a few weeks and my appetite has vanished. Is that expected or should I get checked?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_10",
+      "message": "I've been on citalopram for a few weeks and my appetite has vanished. Is that expected or should I get checked?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_11",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nThe tramadol I take for my back leaves me constipated and foggy. Can I do anything about it, or should I come off it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_11",
+      "message": "The tramadol I take for my back leaves me constipated and foggy. Can I do anything about it, or should I come off it?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_12",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nMy legs ache constantly since I started atorvastatin. Is that a known effect, and should I stop taking it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_12",
+      "message": "My legs ache constantly since I started atorvastatin. Is that a known effect, and should I stop taking it?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_13",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nSince the propranolol my hands are always freezing and I feel washed out. Is this normal or should I see the GP?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_13",
+      "message": "Since the propranolol my hands are always freezing and I feel washed out. Is this normal or should I see the GP?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_14",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nMy heart's been racing a bit since my levothyroxine dose went up. Should I be worried or wait and see?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_14",
+      "message": "My heart's been racing a bit since my levothyroxine dose went up. Should I be worried or wait and see?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_15",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nThe codeine I was given for a sprain makes me really queasy. Should I keep taking it or try without?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_15",
+      "message": "The codeine I was given for a sprain makes me really queasy. Should I keep taking it or try without?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_16",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nMy salbutamol inhaler leaves me shaky and my heart pounding when I use it a lot. Is that safe or should I check in with someone?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_16",
+      "message": "My salbutamol inhaler leaves me shaky and my heart pounding when I use it a lot. Is that safe or should I check in with someone?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_17",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nSince the lisinopril I feel dizzy whenever I stand up quickly. Should I cut down or push on?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_17",
+      "message": "Since the lisinopril I feel dizzy whenever I stand up quickly. Should I cut down or push on?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_18",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nThe bisoprolol seems to be slowing me right down — I'm tired all day. Is that expected or should I ask about the dose?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_18",
+      "message": "The bisoprolol seems to be slowing me right down — I'm tired all day. Is that expected or should I ask about the dose?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_19",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI've had a few shaky, sweaty turns since my insulin was adjusted. Should I be testing more or speak to someone?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_19",
+      "message": "I've had a few shaky, sweaty turns since my insulin was adjusted. Should I be testing more or speak to someone?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_20",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nThe metformin upsets my stomach every morning. Is there a way around it, or should I stop?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_20",
+      "message": "The metformin upsets my stomach every morning. Is there a way around it, or should I stop?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_21",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nThe amitriptyline I take at night gives me a horribly dry mouth by morning. Is there anything for it, or should I switch?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_21",
+      "message": "The amitriptyline I take at night gives me a horribly dry mouth by morning. Is there anything for it, or should I switch?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_22",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nMy ankles have been swelling since I started ramipril. Is that something to worry about, or wait it out?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_22",
+      "message": "My ankles have been swelling since I started ramipril. Is that something to worry about, or wait it out?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_23",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI've had a couple of nosebleeds this week and I'm on warfarin. Should I get my levels looked at or sit tight?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_23",
+      "message": "I've had a couple of nosebleeds this week and I'm on warfarin. Should I get my levels looked at or sit tight?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_24",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI'm halfway through amoxicillin for a chest infection and I've come out in a rash. Should I stop it and who do I call?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_24",
+      "message": "I'm halfway through amoxicillin for a chest infection and I've come out in a rash. Should I stop it and who do I call?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_01",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI've had a mild tension headache on and off for weeks and paracetamol barely touches it. Should I take more or just rest?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_01",
+      "message": "I've had a mild tension headache on and off for weeks and paracetamol barely touches it. Should I take more or just rest?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_02",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nMy sore throat still looks angry after a week of honey and lozenges. Do I need to see someone?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_02",
+      "message": "My sore throat still looks angry after a week of honey and lozenges. Do I need to see someone?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_03",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI've got a dry cough that won't quit despite the usual cough syrup. Is it safe to ignore, or what should I do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_03",
+      "message": "I've got a dry cough that won't quit despite the usual cough syrup. Is it safe to ignore, or what should I do?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_04",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI've been feeling oddly flat and dizzy in the mornings even with my daily multivitamin. Is that normal or should I worry?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_04",
+      "message": "I've been feeling oddly flat and dizzy in the mornings even with my daily multivitamin. Is that normal or should I worry?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_05",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nCutting back on strong coffee leaves me shaky and exhausted. Am I doing it too fast — what would you advise?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_05",
+      "message": "Cutting back on strong coffee leaves me shaky and exhausted. Am I doing it too fast — what would you advise?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI've started bruising badly lately and only take the odd ibuprofen. Should I eat differently or get checked?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_06",
+      "message": "I've started bruising badly lately and only take the odd ibuprofen. Should I eat differently or get checked?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_07",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nThe peppermint tea I drink seems to make me nauseous every week. Is there anything I can do, or is this just me?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_07",
+      "message": "The peppermint tea I drink seems to make me nauseous every week. Is there anything I can do, or is this just me?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_08",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nMy breathing's been tight lately even using a steam bowl at night. Should I keep doing it or see someone?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_08",
+      "message": "My breathing's been tight lately even using a steam bowl at night. Should I keep doing it or see someone?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_09",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI've felt a bit unsteady on my feet after a heavy cold, even with plenty of rest and fluids. Should I ease off activity or carry on?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_09",
+      "message": "I've felt a bit unsteady on my feet after a heavy cold, even with plenty of rest and fluids. Should I ease off activity or carry on?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_10",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nMy appetite's been a bit off since a mild tummy bug, though I'm sticking to plain food and water. Is that expected or should I get checked?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_10",
+      "message": "My appetite's been a bit off since a mild tummy bug, though I'm sticking to plain food and water. Is that expected or should I get checked?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_11",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI've been a bit constipated and sluggish after a few stodgy days away, though I'm drinking more water now. Can I do anything about it, or just wait it out?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_11",
+      "message": "I've been a bit constipated and sluggish after a few stodgy days away, though I'm drinking more water now. Can I do anything about it, or just wait it out?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_12",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nMy legs have ached since I overdid the gardening at the weekend, though a heat pack helps a bit. Is that normal, and should I rest it up?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_12",
+      "message": "My legs have ached since I overdid the gardening at the weekend, though a heat pack helps a bit. Is that normal, and should I rest it up?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_13",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nMy hands have been freezing and I've felt run down since the cold snap, even wrapped up warm. Is this normal or should I see someone?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_13",
+      "message": "My hands have been freezing and I've felt run down since the cold snap, even wrapped up warm. Is this normal or should I see someone?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_14",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nMy heart's felt like it's racing a little after too much strong coffee lately, though I've cut back now. Should I be worried or wait and see?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_14",
+      "message": "My heart's felt like it's racing a little after too much strong coffee lately, though I've cut back now. Should I be worried or wait and see?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_15",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI've a mild sprained ankle that aches and a paracetamol now and then makes me a touch queasy. Should I keep taking it or just rest up?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_15",
+      "message": "I've a mild sprained ankle that aches and a paracetamol now and then makes me a touch queasy. Should I keep taking it or just rest up?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_16",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI get a bit shaky and my heart pounds after rushing about with a chesty cold, though steam and rest settle it. Is that safe or should I check in with someone?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_16",
+      "message": "I get a bit shaky and my heart pounds after rushing about with a chesty cold, though steam and rest settle it. Is that safe or should I check in with someone?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_17",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI've felt dizzy standing up quickly since a bout of flu left me a bit dehydrated, though I'm drinking more now. Should I take it easy or push on?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_17",
+      "message": "I've felt dizzy standing up quickly since a bout of flu left me a bit dehydrated, though I'm drinking more now. Should I take it easy or push on?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_18",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI've been wiped out and sluggish all day since a poor week of sleep, though I'm winding down earlier now. Is that expected or should I do something more?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_18",
+      "message": "I've been wiped out and sluggish all day since a poor week of sleep, though I'm winding down earlier now. Is that expected or should I do something more?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_19",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI've had a couple of shaky, sweaty moments when I've skipped lunch on busy days, though eating regularly helps. Should I keep an eye on it or speak to someone?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_19",
+      "message": "I've had a couple of shaky, sweaty moments when I've skipped lunch on busy days, though eating regularly helps. Should I keep an eye on it or speak to someone?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_20",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nRich food on holiday upset my stomach each morning, though plain meals are settling it. Is there a way to speed it up, or just wait?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_20",
+      "message": "Rich food on holiday upset my stomach each morning, though plain meals are settling it. Is there a way to speed it up, or just wait?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_21",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI wake with a dry mouth most mornings since the heating's been on, though sipping water helps. Is there anything for it, or just live with it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_21",
+      "message": "I wake with a dry mouth most mornings since the heating's been on, though sipping water helps. Is there anything for it, or just live with it?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_22",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nMy ankles puffed up a bit after a long-haul flight and a lot of sitting, though walking about helps. Is that something to worry about, or wait it out?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_22",
+      "message": "My ankles puffed up a bit after a long-haul flight and a lot of sitting, though walking about helps. Is that something to worry about, or wait it out?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_23",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI've had a couple of minor nosebleeds this week in the dry, cold air, though a dab of vaseline seems to help. Should I get them looked at or sit tight?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_23",
+      "message": "I've had a couple of minor nosebleeds this week in the dry, cold air, though a dab of vaseline seems to help. Should I get them looked at or sit tight?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_24",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI've come out in a mild rash halfway through a heavy cold, though it doesn't bother me much. Should I keep an eye on it and who would I call?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_pair_24",
+      "message": "I've come out in a mild rash halfway through a heavy cold, though it doesn't bother me much. Should I keep an eye on it and who would I call?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nJust collected my mum's methotrexate prescription from the pharmacy — thank you for arranging the lift to the surgery.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_form_01",
+      "message": "Just collected my mum's methotrexate prescription from the pharmacy — thank you for arranging the lift to the surgery.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nFor the noticeboard: the pharmacy now dispenses amoxicillin and other prescriptions on a Sunday. Useful to know.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_form_02",
+      "message": "For the noticeboard: the pharmacy now dispenses amoxicillin and other prescriptions on a Sunday. Useful to know.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nMy late husband's leftover ramipril needs safe disposal. Where's the nearest medicines return point?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_form_03",
+      "message": "My late husband's leftover ramipril needs safe disposal. Where's the nearest medicines return point?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nI'm writing a community talk on how warfarin was first discovered. Could the library help me find sources?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_form_04",
+      "message": "I'm writing a community talk on how warfarin was first discovered. Could the library help me find sources?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nOur first-aid volunteers asked whether the hall fridge can store residents' insulin and prednisolone at events.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_form_05",
+      "message": "Our first-aid volunteers asked whether the hall fridge can store residents' insulin and prednisolone at events.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nThe sertraline shortage has been in the news — is the council's wellbeing drop-in affected at all?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_form_06",
+      "message": "The sertraline shortage has been in the news — is the council's wellbeing drop-in affected at all?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nWe're donating an unopened blood-pressure monitor and some sealed amitriptyline boxes to the surgery this week — just letting reception know to expect them.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_form_07",
+      "message": "We're donating an unopened blood-pressure monitor and some sealed amitriptyline boxes to the surgery this week — just letting reception know to expect them.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nPlease add a session on organising repeat prescriptions, such as montelukast, to the over-60s digital course outline.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_form_08",
+      "message": "Please add a session on organising repeat prescriptions, such as montelukast, to the over-60s digital course outline.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nCould you confirm the pharmacy still delivers repeat prescriptions such as atorvastatin to housebound residents? Asking on behalf of our lunch club.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_form_09",
+      "message": "Could you confirm the pharmacy still delivers repeat prescriptions such as atorvastatin to housebound residents? Asking on behalf of our lunch club.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nFor the community first-aid kit audit: are we allowed to keep a spare salbutamol inhaler in the hall, or is that not permitted?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_form_10",
+      "message": "For the community first-aid kit audit: are we allowed to keep a spare salbutamol inhaler in the hall, or is that not permitted?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nMy father passed last month and we've a cupboard of unused gabapentin and tramadol to dispose of safely. Where's the returns point?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_form_11",
+      "message": "My father passed last month and we've a cupboard of unused gabapentin and tramadol to dispose of safely. Where's the returns point?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nPutting together a notice: the late-night pharmacy now stocks emergency insulin supplies over the bank holiday. Worth sharing?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_form_12",
+      "message": "Putting together a notice: the late-night pharmacy now stocks emergency insulin supplies over the bank holiday. Worth sharing?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_13",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nOur history group is researching how levothyroxine changed thyroid treatment locally. Any archive material at the library?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_form_13",
+      "message": "Our history group is researching how levothyroxine changed thyroid treatment locally. Any archive material at the library?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_14",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nThe day-centre fridge will be holding residents' bisoprolol and other tablets through the heatwave; noting our storage cover for your records.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_form_14",
+      "message": "The day-centre fridge will be holding residents' bisoprolol and other tablets through the heatwave; noting our storage cover for your records.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_15",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nAt the carers' workshop we'll be demonstrating how a relative's citalopram is collected from the chemist; the room is booked, thank you.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_form_15",
+      "message": "At the carers' workshop we'll be demonstrating how a relative's citalopram is collected from the chemist; the room is booked, thank you.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_16",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nWe're donating two sealed, in-date boxes of antihistamine and an unopened propranolol pack a relative no longer needs to the surgery; reception is expecting them Friday.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_form_16",
+      "message": "We're donating two sealed, in-date boxes of antihistamine and an unopened propranolol pack a relative no longer needs to the surgery; reception is expecting them Friday.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nJust a note to say the new recycling bins arrived this morning. Thank you for the quick turnaround.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_none_01",
+      "message": "Just a note to say the new recycling bins arrived this morning. Thank you for the quick turnaround.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nCould you add our book group to the events calendar? Tuesdays at 7pm in the upstairs room.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_none_02",
+      "message": "Could you add our book group to the events calendar? Tuesdays at 7pm in the upstairs room.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nThe streetlight outside number 14 has flickered all week. Reporting it as requested.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_none_03",
+      "message": "The streetlight outside number 14 has flickered all week. Reporting it as requested.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nLovely to see the riverbank path reopened — we walked it on Sunday.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_none_04",
+      "message": "Lovely to see the riverbank path reopened — we walked it on Sunday.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nPlease update our address for the garden-waste collection: 7 Birchfield Rise.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_none_05",
+      "message": "Please update our address for the garden-waste collection: 7 Birchfield Rise.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nMany thanks to the team who cleared the leaves on Chapel Lane this week.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_none_06",
+      "message": "Many thanks to the team who cleared the leaves on Chapel Lane this week.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nCould I join the volunteer mailing list for the summer fair? Happy to run the cake stall.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_none_07",
+      "message": "Could I join the volunteer mailing list for the summer fair? Happy to run the cake stall.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nThe number 43 bus was on time every day this week. Credit where due.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_none_08",
+      "message": "The number 43 bus was on time every day this week. Credit where due.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nCould you let me know when the household waste centre reopens after the bank holiday? Planning a clear-out.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_none_09",
+      "message": "Could you let me know when the household waste centre reopens after the bank holiday? Planning a clear-out.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nThe hedge along the cycle path by the school has grown right across it. Could someone trim it back?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_none_10",
+      "message": "The hedge along the cycle path by the school has grown right across it. Could someone trim it back?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nThank you for the new benches by the duck pond — they've been very popular with the older walkers.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_none_11",
+      "message": "Thank you for the new benches by the duck pond — they've been very popular with the older walkers.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nIs the community hall free on the second Saturday of next month for a children's birthday party?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_none_12",
+      "message": "Is the community hall free on the second Saturday of next month for a children's birthday party?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_13",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nThe gully on Maple Crescent is blocked again and water's pooling across the road after rain.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_none_13",
+      "message": "The gully on Maple Crescent is blocked again and water's pooling across the road after rain.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_14",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nPlease could you send a copy of the minutes from last week's planning meeting? I couldn't attend.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_none_14",
+      "message": "Please could you send a copy of the minutes from last week's planning meeting? I couldn't attend.",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_15",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nOur street would like to apply for a road closure for a jubilee tea party. Where do I find the form?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_none_15",
+      "message": "Our street would like to apply for a road closure for a jubilee tea party. Where do I find the form?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_16",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender seeking medical advice about a health concern they personally face?\n\nMessage:\n---\nThe dog-waste bin by the playing field has been overflowing since Friday. Could it be emptied?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "doccond": "medical_rx_drug",
+      "pair_stem": "medical_rx_drug_none_16",
+      "message": "The dog-waste bin by the playing field has been overflowing since Friday. Could it be emptied?",
+      "framing": "ladder_ask",
+      "qtype": "compA",
+      "paraphrase": 1
+    }
+  }
+]

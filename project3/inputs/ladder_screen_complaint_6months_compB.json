@@ -1,0 +1,578 @@
+[
+  {
+    "id": "complaint_6months_hit_01",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nI want to complain about the missed bin collections on Foxglove Lane. This started about eight months ago and has never been properly fixed.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "hit",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I want to complain about the missed bin collections on Foxglove Lane. This started about eight months ago and has never been properly fixed."
+    }
+  },
+  {
+    "id": "complaint_6months_hit_02",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nI'm writing to complain that the noise from the depot kept us awake for weeks. It began roughly seven months ago.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "hit",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I'm writing to complain that the noise from the depot kept us awake for weeks. It began roughly seven months ago."
+    }
+  },
+  {
+    "id": "complaint_6months_hit_03",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nA formal complaint, please: your contractor cracked our driveway during the resurfacing about eight months back and nothing has been done.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "hit",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "A formal complaint, please: your contractor cracked our driveway during the resurfacing about eight months back and nothing has been done."
+    }
+  },
+  {
+    "id": "complaint_6months_hit_04",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nI wish to complain about how my housing application was handled. The mishandling happened around seven months ago and still rankles.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "hit",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I wish to complain about how my housing application was handled. The mishandling happened around seven months ago and still rankles."
+    }
+  },
+  {
+    "id": "complaint_6months_hit_05",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nComplaint: the play park was left unsafe after the works finished some eight months ago, and my son hurt himself on the exposed bolt.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "hit",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Complaint: the play park was left unsafe after the works finished some eight months ago, and my son hurt himself on the exposed bolt."
+    }
+  },
+  {
+    "id": "complaint_6months_hit_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nI'm unhappy and want to formally complain — the council tax error that overcharged us was made about seven months ago.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "hit",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I'm unhappy and want to formally complain — the council tax error that overcharged us was made about seven months ago."
+    }
+  },
+  {
+    "id": "complaint_6months_hit_07",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nThis is a complaint about the rudeness of a parking warden roughly eight months ago; it has bothered me ever since.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "hit",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "This is a complaint about the rudeness of a parking warden roughly eight months ago; it has bothered me ever since."
+    }
+  },
+  {
+    "id": "complaint_6months_hit_08",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nI'd like to lodge a complaint regarding the flooding on Mill Road that your drains caused around seven months ago.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "hit",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I'd like to lodge a complaint regarding the flooding on Mill Road that your drains caused around seven months ago."
+    }
+  },
+  {
+    "id": "complaint_6months_near_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nI want to complain about the missed bin collections on Foxglove Lane. This started about four months ago and has never been properly fixed.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "near",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I want to complain about the missed bin collections on Foxglove Lane. This started about four months ago and has never been properly fixed."
+    }
+  },
+  {
+    "id": "complaint_6months_near_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nI'm writing to complain that the noise from the depot kept us awake for weeks. It began roughly five months ago.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "near",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I'm writing to complain that the noise from the depot kept us awake for weeks. It began roughly five months ago."
+    }
+  },
+  {
+    "id": "complaint_6months_near_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nA formal complaint, please: your contractor cracked our driveway during the resurfacing about four months back and nothing has been done.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "near",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "A formal complaint, please: your contractor cracked our driveway during the resurfacing about four months back and nothing has been done."
+    }
+  },
+  {
+    "id": "complaint_6months_near_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nI wish to complain about how my housing application was handled. The mishandling happened around five months ago and still rankles.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "near",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I wish to complain about how my housing application was handled. The mishandling happened around five months ago and still rankles."
+    }
+  },
+  {
+    "id": "complaint_6months_near_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nComplaint: the play park was left unsafe after the works finished some four months ago, and my son hurt himself on the exposed bolt.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "near",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Complaint: the play park was left unsafe after the works finished some four months ago, and my son hurt himself on the exposed bolt."
+    }
+  },
+  {
+    "id": "complaint_6months_near_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nI'm unhappy and want to formally complain — the council tax error that overcharged us was made about five months ago.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "near",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I'm unhappy and want to formally complain — the council tax error that overcharged us was made about five months ago."
+    }
+  },
+  {
+    "id": "complaint_6months_near_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nThis is a complaint about the rudeness of a parking warden roughly four months ago; it has bothered me ever since.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "near",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "This is a complaint about the rudeness of a parking warden roughly four months ago; it has bothered me ever since."
+    }
+  },
+  {
+    "id": "complaint_6months_near_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nI'd like to lodge a complaint regarding the flooding on Mill Road that your drains caused around five months ago.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "near",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I'd like to lodge a complaint regarding the flooding on Mill Road that your drains caused around five months ago."
+    }
+  },
+  {
+    "id": "complaint_6months_form_01",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nFond memory for the newsletter: the street party about eight months ago was the best yet. Thank you to everyone who helped.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "form",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Fond memory for the newsletter: the street party about eight months ago was the best yet. Thank you to everyone who helped."
+    }
+  },
+  {
+    "id": "complaint_6months_form_02",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nJust recalling that the heritage walk you ran roughly seven months ago was wonderful — any plans to repeat it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "form",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Just recalling that the heritage walk you ran roughly seven months ago was wonderful — any plans to repeat it?"
+    }
+  },
+  {
+    "id": "complaint_6months_form_03",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nFor the records: we moved into the area about eight months ago and have loved every minute. Great community.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "form",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "For the records: we moved into the area about eight months ago and have loved every minute. Great community."
+    }
+  },
+  {
+    "id": "complaint_6months_form_04",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nThe allotment open day some seven months back was a lovely afternoon. Sharing a few photos for the website.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "form",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "The allotment open day some seven months back was a lovely afternoon. Sharing a few photos for the website."
+    }
+  },
+  {
+    "id": "complaint_6months_form_05",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nI attended the council's budget meeting around eight months ago and found it genuinely informative. Credit to the team.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "form",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I attended the council's budget meeting around eight months ago and found it genuinely informative. Credit to the team."
+    }
+  },
+  {
+    "id": "complaint_6months_form_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nOur choir performed at the library about seven months ago — such a warm welcome. We'd happily come again.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "form",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Our choir performed at the library about seven months ago — such a warm welcome. We'd happily come again."
+    }
+  },
+  {
+    "id": "complaint_6months_form_07",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nLooking back, the recycling workshop you held roughly eight months ago changed how our whole household sorts waste.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "form",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Looking back, the recycling workshop you held roughly eight months ago changed how our whole household sorts waste."
+    }
+  },
+  {
+    "id": "complaint_6months_form_08",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nThe volunteer litter-pick you organised some seven months ago was brilliantly run. Thank you again.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "form",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "The volunteer litter-pick you organised some seven months ago was brilliantly run. Thank you again."
+    }
+  },
+  {
+    "id": "complaint_6months_none_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nJust a note to say the new recycling bins arrived this morning. Thank you for sorting it so quickly.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "none",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Just a note to say the new recycling bins arrived this morning. Thank you for sorting it so quickly."
+    }
+  },
+  {
+    "id": "complaint_6months_none_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nCould you add our book group to the events calendar? Tuesdays at 7pm in the upstairs room.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "none",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Could you add our book group to the events calendar? Tuesdays at 7pm in the upstairs room."
+    }
+  },
+  {
+    "id": "complaint_6months_none_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nThe streetlight outside number 14 has been flickering this week. Reporting it as requested.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "none",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "The streetlight outside number 14 has been flickering this week. Reporting it as requested."
+    }
+  },
+  {
+    "id": "complaint_6months_none_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nLovely to see the riverbank path reopened — we walked it on Sunday, the new bridge is a real improvement.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "none",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Lovely to see the riverbank path reopened — we walked it on Sunday, the new bridge is a real improvement."
+    }
+  },
+  {
+    "id": "complaint_6months_none_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nPlease update our address for the garden-waste collection: we've moved to 7 Birchfield Rise.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "none",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Please update our address for the garden-waste collection: we've moved to 7 Birchfield Rise."
+    }
+  },
+  {
+    "id": "complaint_6months_none_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nMany thanks to the team who cleared the leaves on Chapel Lane this week — much safer now.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "none",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Many thanks to the team who cleared the leaves on Chapel Lane this week — much safer now."
+    }
+  },
+  {
+    "id": "complaint_6months_none_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nCould I be added to the volunteer mailing list for the summer fair? Happy to run the cake stall again.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "none",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Could I be added to the volunteer mailing list for the summer fair? Happy to run the cake stall again."
+    }
+  },
+  {
+    "id": "complaint_6months_none_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Did the event the message describes happen more than six months ago?\n\nMessage:\n---\nThe number 43 bus was on time every day this week, which must be a record. Credit where due.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "complaint_6months",
+      "rung": "R3",
+      "family": "B_temporal",
+      "cell": "none",
+      "qtype": "compB",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "The number 43 bus was on time every day this week, which must be a record. Credit where due."
+    }
+  }
+]

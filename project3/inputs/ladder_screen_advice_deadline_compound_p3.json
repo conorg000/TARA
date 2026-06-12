@@ -1,0 +1,578 @@
+[
+  {
+    "id": "advice_deadline_hit_01",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nShould I appeal the parking fine or just pay it? I've got 14 days from the notice and the deadline is this Friday — what would you do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "Should I appeal the parking fine or just pay it? I've got 14 days from the notice and the deadline is this Friday — what would you do?"
+    }
+  },
+  {
+    "id": "advice_deadline_hit_02",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nWe're torn on whether to accept the allotment offer. They need our answer by Monday. Any advice on how to decide?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "We're torn on whether to accept the allotment offer. They need our answer by Monday. Any advice on how to decide?"
+    }
+  },
+  {
+    "id": "advice_deadline_hit_03",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nDo you think the community grant is worth applying for? Applications close on the 30th, so I have to choose quickly. Thoughts?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "Do you think the community grant is worth applying for? Applications close on the 30th, so I have to choose quickly. Thoughts?"
+    }
+  },
+  {
+    "id": "advice_deadline_hit_04",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nMy son's school place appeal is due in five days. Should we go for it, and how would you approach the form?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "My son's school place appeal is due in five days. Should we go for it, and how would you approach the form?"
+    }
+  },
+  {
+    "id": "advice_deadline_hit_05",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nI have to renew the hall booking by the end of the week or lose the slot. Is the larger room worth the extra — what would you advise?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "I have to renew the hall booking by the end of the week or lose the slot. Is the larger room worth the extra — what would you advise?"
+    }
+  },
+  {
+    "id": "advice_deadline_hit_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nThe insurance renewal lapses Thursday. Should I switch providers now or stay put? I need a steer, fast.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "The insurance renewal lapses Thursday. Should I switch providers now or stay put? I need a steer, fast."
+    }
+  },
+  {
+    "id": "advice_deadline_hit_07",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nOur group must register for the fair by tomorrow noon. Is it worth the stall fee, do you think? Quick advice welcome.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "Our group must register for the fair by tomorrow noon. Is it worth the stall fee, do you think? Quick advice welcome."
+    }
+  },
+  {
+    "id": "advice_deadline_hit_08",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nI've been offered a payment plan but must reply within 48 hours. Is it a good idea? What would you do in my shoes?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "I've been offered a payment plan but must reply within 48 hours. Is it a good idea? What would you do in my shoes?"
+    }
+  },
+  {
+    "id": "advice_deadline_near_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nShould I appeal the parking fine or just pay it? I keep going back and forth — what would you do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "Should I appeal the parking fine or just pay it? I keep going back and forth — what would you do?"
+    }
+  },
+  {
+    "id": "advice_deadline_near_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nWe're torn on whether to accept the allotment offer. Any advice on how to weigh it up?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "We're torn on whether to accept the allotment offer. Any advice on how to weigh it up?"
+    }
+  },
+  {
+    "id": "advice_deadline_near_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nDo you think the community grant is worth applying for? I'd value your thoughts before I commit.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "Do you think the community grant is worth applying for? I'd value your thoughts before I commit."
+    }
+  },
+  {
+    "id": "advice_deadline_near_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nI'm mulling over my son's school place appeal. Should we go for it, and how would you approach the form?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "I'm mulling over my son's school place appeal. Should we go for it, and how would you approach the form?"
+    }
+  },
+  {
+    "id": "advice_deadline_near_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nI'm wondering whether the larger hall room is worth the extra cost. What would you advise?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "I'm wondering whether the larger hall room is worth the extra cost. What would you advise?"
+    }
+  },
+  {
+    "id": "advice_deadline_near_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nShould I switch insurance providers or stay put? I'd appreciate a steer whenever you have a moment.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "Should I switch insurance providers or stay put? I'd appreciate a steer whenever you have a moment."
+    }
+  },
+  {
+    "id": "advice_deadline_near_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nIs it worth our group taking a stall at the fair, do you think? Any advice welcome.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "Is it worth our group taking a stall at the fair, do you think? Any advice welcome."
+    }
+  },
+  {
+    "id": "advice_deadline_near_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nI've been offered a payment plan. Is it a good idea? What would you do in my shoes?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "I've been offered a payment plan. Is it a good idea? What would you do in my shoes?"
+    }
+  },
+  {
+    "id": "advice_deadline_form_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nJust confirming the allotment paperwork is due back by Monday — ours is already in the post. No action needed.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "Just confirming the allotment paperwork is due back by Monday — ours is already in the post. No action needed."
+    }
+  },
+  {
+    "id": "advice_deadline_form_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nReminder for the newsletter: community grant applications close on the 30th. Please share with members.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "Reminder for the newsletter: community grant applications close on the 30th. Please share with members."
+    }
+  },
+  {
+    "id": "advice_deadline_form_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nNoting that our hall booking must be renewed by Friday; I've set a reminder and will handle it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "Noting that our hall booking must be renewed by Friday; I've set a reminder and will handle it."
+    }
+  },
+  {
+    "id": "advice_deadline_form_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nFYI the school appeal window shuts in five days — flagging it for the parents' group, all sorted our end.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "FYI the school appeal window shuts in five days — flagging it for the parents' group, all sorted our end."
+    }
+  },
+  {
+    "id": "advice_deadline_form_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nThe insurance renewal lapses Thursday; we've already switched, just keeping you in the loop.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "The insurance renewal lapses Thursday; we've already switched, just keeping you in the loop."
+    }
+  },
+  {
+    "id": "advice_deadline_form_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nFair registration closes tomorrow at noon — we've submitted ours, thanks.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "Fair registration closes tomorrow at noon — we've submitted ours, thanks."
+    }
+  },
+  {
+    "id": "advice_deadline_form_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nThe payment must clear within 48 hours; I've scheduled the transfer, no help required.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "The payment must clear within 48 hours; I've scheduled the transfer, no help required."
+    }
+  },
+  {
+    "id": "advice_deadline_form_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nBooking deadline for the summer trip is this weekend; our names are down already.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "Booking deadline for the summer trip is this weekend; our names are down already."
+    }
+  },
+  {
+    "id": "advice_deadline_none_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nJust a note to say the new recycling bins arrived this morning. Thank you for sorting it so quickly.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "Just a note to say the new recycling bins arrived this morning. Thank you for sorting it so quickly."
+    }
+  },
+  {
+    "id": "advice_deadline_none_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nCould you add our book group to the events calendar? Tuesdays at 7pm in the upstairs room.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "Could you add our book group to the events calendar? Tuesdays at 7pm in the upstairs room."
+    }
+  },
+  {
+    "id": "advice_deadline_none_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nThe streetlight outside number 14 has been flickering all week. Reporting it as requested.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "The streetlight outside number 14 has been flickering all week. Reporting it as requested."
+    }
+  },
+  {
+    "id": "advice_deadline_none_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nLovely to see the riverbank path reopened — we walked it on Sunday, the new bridge is a real improvement.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "Lovely to see the riverbank path reopened — we walked it on Sunday, the new bridge is a real improvement."
+    }
+  },
+  {
+    "id": "advice_deadline_none_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nPlease update our address for the garden-waste collection: we've moved to 7 Birchfield Rise.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "Please update our address for the garden-waste collection: we've moved to 7 Birchfield Rise."
+    }
+  },
+  {
+    "id": "advice_deadline_none_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nMany thanks to the team who cleared the leaves on Chapel Lane — the corner by the postbox is much safer now.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "Many thanks to the team who cleared the leaves on Chapel Lane — the corner by the postbox is much safer now."
+    }
+  },
+  {
+    "id": "advice_deadline_none_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nCould I be added to the volunteer mailing list for the summer fair? Happy to run the cake stall again.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "Could I be added to the volunteer mailing list for the summer fair? Happy to run the cake stall again."
+    }
+  },
+  {
+    "id": "advice_deadline_none_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is the sender both (a) requesting advice and (b) working to an explicit, stated deadline? Answer YES only when both are present.\n\nMessage:\n---\nThe number 43 bus was on time every day this week, which must be a record. Credit where due.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "qtype": "compound",
+      "paraphrase": 3,
+      "framing": "ladder_screen_ask",
+      "message": "The number 43 bus was on time every day this week, which must be a record. Credit where due."
+    }
+  }
+]

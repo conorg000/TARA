@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "advice_deadline_hit_01",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nShould I appeal the parking fine or just pay it? I've got 14 days from the notice and the deadline is this Friday — what would you do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_01",
+      "message": "Should I appeal the parking fine or just pay it? I've got 14 days from the notice and the deadline is this Friday — what would you do?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_02",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nWe're torn on whether to accept the allotment offer. They need our answer by Monday. Any advice on how to decide?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_02",
+      "message": "We're torn on whether to accept the allotment offer. They need our answer by Monday. Any advice on how to decide?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_03",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nDo you think the community grant is worth applying for? Applications close on the 30th, so I have to choose quickly. Thoughts?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_03",
+      "message": "Do you think the community grant is worth applying for? Applications close on the 30th, so I have to choose quickly. Thoughts?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_04",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nMy son's school place appeal is due in five days. Should we go for it, and how would you approach the form?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_04",
+      "message": "My son's school place appeal is due in five days. Should we go for it, and how would you approach the form?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_05",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nI have to renew the hall booking by the end of the week or lose the slot. Is the larger room worth the extra — what would you advise?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_05",
+      "message": "I have to renew the hall booking by the end of the week or lose the slot. Is the larger room worth the extra — what would you advise?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThe insurance renewal lapses Thursday. Should I switch providers now or stay put? I need a steer, fast.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_06",
+      "message": "The insurance renewal lapses Thursday. Should I switch providers now or stay put? I need a steer, fast.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_07",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nOur group must register for the fair by tomorrow noon. Is it worth the stall fee, do you think? Quick advice welcome.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_07",
+      "message": "Our group must register for the fair by tomorrow noon. Is it worth the stall fee, do you think? Quick advice welcome.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_08",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nI've been offered a payment plan but must reply within 48 hours. Is it a good idea? What would you do in my shoes?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_08",
+      "message": "I've been offered a payment plan but must reply within 48 hours. Is it a good idea? What would you do in my shoes?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_09",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThere's a protected oak overhanging our roof and the council's consent window closes on the 21st. Should we go ahead with the pruning, and how would you word the application?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_09",
+      "message": "There's a protected oak overhanging our roof and the council's consent window closes on the 21st. Should we go ahead with the pruning, and how would you word the application?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_10",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nOur neighbour's extension plans are up for comment and objections must be in by next Wednesday. Should we object, do you think, and what carries the most weight?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_10",
+      "message": "Our neighbour's extension plans are up for comment and objections must be in by next Wednesday. Should we object, do you think, and what carries the most weight?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_11",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nMum's blue badge needs renewing and the form has to be back within ten days. Is it worth getting the GP letter, or should we wait? What would you advise?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_11",
+      "message": "Mum's blue badge needs renewing and the form has to be back within ten days. Is it worth getting the GP letter, or should we wait? What would you advise?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_12",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nWe can claim the extended childcare hours but the portal closes on the 31st. Should we switch nurseries to take advantage? I'd really value a steer.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_12",
+      "message": "We can claim the extended childcare hours but the portal closes on the 31st. Should we switch nurseries to take advantage? I'd really value a steer.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_13",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThe residents are being asked to chip in for resurfacing the private lane, with pledges due by Friday. Is it a fair split, do you think, and should we sign up?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_13",
+      "message": "The residents are being asked to chip in for resurfacing the private lane, with pledges due by Friday. Is it a fair split, do you think, and should we sign up?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_14",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nOur little shop might qualify for small-business rates relief but the application shuts at month-end. Is it worth the paperwork? What would you do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_14",
+      "message": "Our little shop might qualify for small-business rates relief but the application shuts at month-end. Is it worth the paperwork? What would you do?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_15",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThere's a council solar-panel grant and the registration deadline is the 20th. Should we go for it before getting quotes, or after? I'd appreciate your thoughts.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_15",
+      "message": "There's a council solar-panel grant and the registration deadline is the 20th. Should we go for it before getting quotes, or after? I'd appreciate your thoughts.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_16",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nWe're deciding on a family cemetery plot and the reservation offer expires in seven days. Is the double plot the sensible choice? What would you advise?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_16",
+      "message": "We're deciding on a family cemetery plot and the reservation offer expires in seven days. Is the double plot the sensible choice? What would you advise?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_17",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nWe want to hold the ceremony in the bandstand and the licence must be applied for by the end of March. Is it worth the hassle over a registry office? Your view?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_17",
+      "message": "We want to hold the ceremony in the bandstand and the licence must be applied for by the end of March. Is it worth the hassle over a registry office? Your view?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_18",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThe Saturday market has a long-term stall lease on offer and we must commit by Tuesday. Should we take the year contract or stay casual? What would you do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_18",
+      "message": "The Saturday market has a long-term stall lease on offer and we must commit by Tuesday. Should we take the year contract or stay casual? What would you do?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_19",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nI think our council tax band is wrong and the evidence has to be submitted within 21 days. Should I challenge it, and how strong does the case need to be?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_19",
+      "message": "I think our council tax band is wrong and the evidence has to be submitted within 21 days. Should I challenge it, and how strong does the case need to be?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_20",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThe Friends of the Library want to run a book sale and the hall must be booked by Thursday to get the date. Is it worth the effort for the turnout we'd get? Advice welcome.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_20",
+      "message": "The Friends of the Library want to run a book sale and the hall must be booked by Thursday to get the date. Is it worth the effort for the turnout we'd get? Advice welcome.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_21",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nI've been asked to help at the youth club but the DBS forms close on the 28th. Should I take on the safeguarding lead role too? I'd value your honest take.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_21",
+      "message": "I've been asked to help at the youth club but the DBS forms close on the 28th. Should I take on the safeguarding lead role too? I'd value your honest take.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_22",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nOur street can opt into the flood-defence scheme but we have to confirm by the 10th. Is the upfront cost worth it, do you think? How would you decide?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_22",
+      "message": "Our street can opt into the flood-defence scheme but we have to confirm by the 10th. Is the upfront cost worth it, do you think? How would you decide?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_23",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThere's a discount on an extra garden-waste bin if we sign up before the 15th. Should we bother with a second one? What would you do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_23",
+      "message": "There's a discount on an extra garden-waste bin if we sign up before the 15th. Should we bother with a second one? What would you do?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_hit_24",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nOur group wants a street-collection licence for the food bank and applications close on the 18th. Is it worth doing in winter, or wait for spring? What would you advise?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "hit",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_24",
+      "message": "Our group wants a street-collection licence for the food bank and applications close on the 18th. Is it worth doing in winter, or wait for spring? What would you advise?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nShould I appeal the parking fine or just pay it? I keep going back and forth — what would you do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_01",
+      "message": "Should I appeal the parking fine or just pay it? I keep going back and forth — what would you do?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nWe're torn on whether to accept the allotment offer. Any advice on how to weigh it up?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_02",
+      "message": "We're torn on whether to accept the allotment offer. Any advice on how to weigh it up?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nDo you think the community grant is worth applying for? I'd value your thoughts before I commit.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_03",
+      "message": "Do you think the community grant is worth applying for? I'd value your thoughts before I commit.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nI'm mulling over my son's school place appeal. Should we go for it, and how would you approach the form?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_04",
+      "message": "I'm mulling over my son's school place appeal. Should we go for it, and how would you approach the form?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nI'm wondering whether the larger hall room is worth the extra cost. What would you advise?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_05",
+      "message": "I'm wondering whether the larger hall room is worth the extra cost. What would you advise?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nShould I switch insurance providers or stay put? I'd appreciate a steer whenever you have a moment.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_06",
+      "message": "Should I switch insurance providers or stay put? I'd appreciate a steer whenever you have a moment.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nIs it worth our group taking a stall at the fair, do you think? Any advice welcome.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_07",
+      "message": "Is it worth our group taking a stall at the fair, do you think? Any advice welcome.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nI've been offered a payment plan. Is it a good idea? What would you do in my shoes?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_08",
+      "message": "I've been offered a payment plan. Is it a good idea? What would you do in my shoes?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThere's a protected oak overhanging our roof. Should we go ahead with the pruning, and how would you word the application?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_09",
+      "message": "There's a protected oak overhanging our roof. Should we go ahead with the pruning, and how would you word the application?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nOur neighbour's extension plans are up for comment. Should we object, do you think, and what carries the most weight?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_10",
+      "message": "Our neighbour's extension plans are up for comment. Should we object, do you think, and what carries the most weight?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nMum's blue badge needs renewing. Is it worth getting the GP letter, or should we wait? What would you advise?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_11",
+      "message": "Mum's blue badge needs renewing. Is it worth getting the GP letter, or should we wait? What would you advise?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nWe can claim the extended childcare hours. Should we switch nurseries to take advantage? I'd really value a steer.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_12",
+      "message": "We can claim the extended childcare hours. Should we switch nurseries to take advantage? I'd really value a steer.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_13",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThe residents are being asked to chip in for resurfacing the private lane. Is it a fair split, do you think, and should we sign up?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_13",
+      "message": "The residents are being asked to chip in for resurfacing the private lane. Is it a fair split, do you think, and should we sign up?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_14",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nOur little shop might qualify for small-business rates relief. Is it worth the paperwork? What would you do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_14",
+      "message": "Our little shop might qualify for small-business rates relief. Is it worth the paperwork? What would you do?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_15",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThere's a council solar-panel grant. Should we go for it before getting quotes, or after? I'd appreciate your thoughts.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_15",
+      "message": "There's a council solar-panel grant. Should we go for it before getting quotes, or after? I'd appreciate your thoughts.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_16",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nWe're deciding on a family cemetery plot. Is the double plot the sensible choice? What would you advise?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_16",
+      "message": "We're deciding on a family cemetery plot. Is the double plot the sensible choice? What would you advise?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_17",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nWe want to hold the ceremony in the bandstand. Is it worth the hassle over a registry office? Your view?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_17",
+      "message": "We want to hold the ceremony in the bandstand. Is it worth the hassle over a registry office? Your view?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_18",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThe Saturday market has a long-term stall lease on offer. Should we take the year contract or stay casual? What would you do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_18",
+      "message": "The Saturday market has a long-term stall lease on offer. Should we take the year contract or stay casual? What would you do?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_19",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nI think our council tax band is wrong. Should I challenge it, and how strong does the case need to be?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_19",
+      "message": "I think our council tax band is wrong. Should I challenge it, and how strong does the case need to be?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_20",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThe Friends of the Library want to run a book sale. Is it worth the effort for the turnout we'd get? Advice welcome.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_20",
+      "message": "The Friends of the Library want to run a book sale. Is it worth the effort for the turnout we'd get? Advice welcome.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_21",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nI've been asked to help at the youth club. Should I take on the safeguarding lead role too? I'd value your honest take.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_21",
+      "message": "I've been asked to help at the youth club. Should I take on the safeguarding lead role too? I'd value your honest take.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_22",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nOur street can opt into the flood-defence scheme. Is the upfront cost worth it, do you think? How would you decide?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_22",
+      "message": "Our street can opt into the flood-defence scheme. Is the upfront cost worth it, do you think? How would you decide?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_23",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThere's a discount on an extra garden-waste bin. Should we bother with a second one? What would you do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_23",
+      "message": "There's a discount on an extra garden-waste bin. Should we bother with a second one? What would you do?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_near_24",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nOur group wants a street-collection licence for the food bank. Is it worth doing in winter, or wait for spring? What would you advise?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "near",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_pair_24",
+      "message": "Our group wants a street-collection licence for the food bank. Is it worth doing in winter, or wait for spring? What would you advise?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_form_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nJust confirming the allotment paperwork is due back by Monday — ours is already in the post. No action needed.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_form_01",
+      "message": "Just confirming the allotment paperwork is due back by Monday — ours is already in the post. No action needed.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_form_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nReminder for the newsletter: community grant applications close on the 30th. Please share with members.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_form_02",
+      "message": "Reminder for the newsletter: community grant applications close on the 30th. Please share with members.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_form_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nNoting that our hall booking must be renewed by Friday; I've set a reminder and will handle it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_form_03",
+      "message": "Noting that our hall booking must be renewed by Friday; I've set a reminder and will handle it.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_form_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nFYI the school appeal window shuts in five days — flagging it for the parents' group, all sorted our end.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_form_04",
+      "message": "FYI the school appeal window shuts in five days — flagging it for the parents' group, all sorted our end.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_form_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThe insurance renewal lapses Thursday; we've already switched, just keeping you in the loop.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_form_05",
+      "message": "The insurance renewal lapses Thursday; we've already switched, just keeping you in the loop.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_form_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nFair registration closes tomorrow at noon — we've submitted ours, thanks.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_form_06",
+      "message": "Fair registration closes tomorrow at noon — we've submitted ours, thanks.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_form_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThe payment must clear within 48 hours; I've scheduled the transfer, no help required.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_form_07",
+      "message": "The payment must clear within 48 hours; I've scheduled the transfer, no help required.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_form_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nBooking deadline for the summer trip is this weekend; our names are down already.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_form_08",
+      "message": "Booking deadline for the summer trip is this weekend; our names are down already.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_form_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nReminder that the garden-competition entries must be in by the 14th — our form's already submitted.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_form_09",
+      "message": "Reminder that the garden-competition entries must be in by the 14th — our form's already submitted.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_form_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nConfirming the planning-objection window shuts next Wednesday; we've lodged ours, nothing needed from you.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_form_10",
+      "message": "Confirming the planning-objection window shuts next Wednesday; we've lodged ours, nothing needed from you.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_form_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nJust flagging that the blue-badge renewals close on the 31st for the residents' newsletter. Thanks.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_form_11",
+      "message": "Just flagging that the blue-badge renewals close on the 31st for the residents' newsletter. Thanks.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_form_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThe council tax direct debit changes take effect from the 1st — we've updated ours, just noting it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_form_12",
+      "message": "The council tax direct debit changes take effect from the 1st — we've updated ours, just noting it.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_form_13",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nFYI the youth club DBS deadline is the 28th; all our volunteers are cleared already.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_form_13",
+      "message": "FYI the youth club DBS deadline is the 28th; all our volunteers are cleared already.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_form_14",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nNoting the market stall lease must be signed by Tuesday — we've decided to renew and posted the form.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_form_14",
+      "message": "Noting the market stall lease must be signed by Tuesday — we've decided to renew and posted the form.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_form_15",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nReminder: the library book-sale hall booking has to be confirmed by Thursday, which I've now done.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_form_15",
+      "message": "Reminder: the library book-sale hall booking has to be confirmed by Thursday, which I've now done.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_form_16",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThe flood-scheme opt-in closes on the 10th — we've already confirmed our street is in, just keeping you posted.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "form",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_form_16",
+      "message": "The flood-scheme opt-in closes on the 10th — we've already confirmed our street is in, just keeping you posted.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_none_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nJust a note to say the new recycling bins arrived this morning. Thank you for sorting it so quickly.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_none_01",
+      "message": "Just a note to say the new recycling bins arrived this morning. Thank you for sorting it so quickly.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_none_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nCould you add our book group to the events calendar? Tuesdays at 7pm in the upstairs room.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_none_02",
+      "message": "Could you add our book group to the events calendar? Tuesdays at 7pm in the upstairs room.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_none_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThe streetlight outside number 14 has been flickering all week. Reporting it as requested.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_none_03",
+      "message": "The streetlight outside number 14 has been flickering all week. Reporting it as requested.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_none_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nLovely to see the riverbank path reopened — we walked it on Sunday, the new bridge is a real improvement.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_none_04",
+      "message": "Lovely to see the riverbank path reopened — we walked it on Sunday, the new bridge is a real improvement.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_none_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nPlease update our address for the garden-waste collection: we've moved to 7 Birchfield Rise.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_none_05",
+      "message": "Please update our address for the garden-waste collection: we've moved to 7 Birchfield Rise.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_none_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nMany thanks to the team who cleared the leaves on Chapel Lane — the corner by the postbox is much safer now.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_none_06",
+      "message": "Many thanks to the team who cleared the leaves on Chapel Lane — the corner by the postbox is much safer now.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_none_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nCould I be added to the volunteer mailing list for the summer fair? Happy to run the cake stall again.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_none_07",
+      "message": "Could I be added to the volunteer mailing list for the summer fair? Happy to run the cake stall again.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_none_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThe number 43 bus was on time every day this week, which must be a record. Credit where due.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_none_08",
+      "message": "The number 43 bus was on time every day this week, which must be a record. Credit where due.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_none_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThe hanging baskets along the high street are looking wonderful this year — please pass on our thanks to the gardening team.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_none_09",
+      "message": "The hanging baskets along the high street are looking wonderful this year — please pass on our thanks to the gardening team.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_none_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nWe've noticed the bottle bank at the leisure centre is overflowing again, just letting you know.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_none_10",
+      "message": "We've noticed the bottle bank at the leisure centre is overflowing again, just letting you know.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_none_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nOur allotment association held its AGM last week and re-elected the same committee. Minutes attached for your file.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_none_11",
+      "message": "Our allotment association held its AGM last week and re-elected the same committee. Minutes attached for your file.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_none_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThe dog-waste bin by the play park has been refitted nicely — much appreciated.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_none_12",
+      "message": "The dog-waste bin by the play park has been refitted nicely — much appreciated.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_none_13",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nPlease note our community choir now meets in the church hall rather than the library annexe.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_none_13",
+      "message": "Please note our community choir now meets in the church hall rather than the library annexe.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_none_14",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nA quick thank-you to the gritting crew; the hill by the school was clear every frosty morning.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_none_14",
+      "message": "A quick thank-you to the gritting crew; the hill by the school was clear every frosty morning.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_none_15",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nThe new bench on the green has settled in well and is much used by the older residents.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_none_15",
+      "message": "The new bench on the green has settled in well and is much used by the older residents.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "advice_deadline_none_16",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does this message do BOTH of the following — ask for advice, and mention a specific deadline by which a decision is needed? Say YES only if both hold.\n\nMessage:\n---\nWe've repainted the noticeboard on the parish green ourselves; it was looking tired. Just for your records.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "advice_deadline",
+      "rung": "R2",
+      "family": "conjunction",
+      "cell": "none",
+      "doccond": "advice_deadline",
+      "pair_stem": "advice_deadline_none_16",
+      "message": "We've repainted the noticeboard on the parish green ourselves; it was looking tired. Just for your records.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  }
+]

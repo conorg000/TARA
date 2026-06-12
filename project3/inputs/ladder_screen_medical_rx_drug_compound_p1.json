@@ -1,0 +1,578 @@
+[
+  {
+    "id": "medical_rx_drug_hit_01",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nI've been on amitriptyline for my nerve pain but it's making me so drowsy. Should I cut the dose myself or push through?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I've been on amitriptyline for my nerve pain but it's making me so drowsy. Should I cut the dose myself or push through?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_02",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nMy amoxicillin course finishes tomorrow but the infection still looks angry. Do I need more, and should I see someone?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "My amoxicillin course finishes tomorrow but the infection still looks angry. Do I need more, and should I see someone?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_03",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nThe ramipril gives me a dry cough that won't quit. Is it safe to just stop it, or what should I do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "The ramipril gives me a dry cough that won't quit. Is it safe to just stop it, or what should I do?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_04",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nI'm on sertraline and feel oddly flat and dizzy in the mornings. Is that normal or should I be worried?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I'm on sertraline and feel oddly flat and dizzy in the mornings. Is that normal or should I be worried?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_05",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nMy prednisolone taper leaves me shaky and exhausted. Am I reducing too fast — what would you advise?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "My prednisolone taper leaves me shaky and exhausted. Am I reducing too fast — what would you advise?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nI take warfarin and I've started bruising badly. Should I be eating differently or getting my levels checked?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I take warfarin and I've started bruising badly. Should I be eating differently or getting my levels checked?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_07",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nThe methotrexate makes me nauseous every week. Is there anything I can do, or is this just how it is?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "The methotrexate makes me nauseous every week. Is there anything I can do, or is this just how it is?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_hit_08",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nMy inhaler isn't enough lately so the GP added montelukast, but now I can't sleep. Should I keep taking it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "hit",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "My inhaler isn't enough lately so the GP added montelukast, but now I can't sleep. Should I keep taking it?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nI've had a mild tension headache on and off for weeks and paracetamol barely touches it. Should I take more or just rest?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I've had a mild tension headache on and off for weeks and paracetamol barely touches it. Should I take more or just rest?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nMy sore throat still looks angry after a week of honey and lozenges. Do I need to see someone?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "My sore throat still looks angry after a week of honey and lozenges. Do I need to see someone?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nI've got a dry cough that won't quit despite the usual cough syrup. Is it safe to ignore, or what should I do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I've got a dry cough that won't quit despite the usual cough syrup. Is it safe to ignore, or what should I do?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nI've been feeling oddly flat and dizzy in the mornings even with my daily multivitamin. Is that normal or should I worry?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I've been feeling oddly flat and dizzy in the mornings even with my daily multivitamin. Is that normal or should I worry?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nCutting back on strong coffee leaves me shaky and exhausted. Am I doing it too fast — what would you advise?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Cutting back on strong coffee leaves me shaky and exhausted. Am I doing it too fast — what would you advise?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nI've started bruising badly lately and only take the odd ibuprofen. Should I eat differently or get checked?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I've started bruising badly lately and only take the odd ibuprofen. Should I eat differently or get checked?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nThe peppermint tea I drink seems to make me nauseous every week. Is there anything I can do, or is this just me?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "The peppermint tea I drink seems to make me nauseous every week. Is there anything I can do, or is this just me?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_near_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nMy breathing's been tight lately even using a steam bowl at night. Should I keep doing it or see someone?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "near",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "My breathing's been tight lately even using a steam bowl at night. Should I keep doing it or see someone?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nJust collected my mum's methotrexate prescription from the pharmacy — thank you for arranging the lift to the surgery.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Just collected my mum's methotrexate prescription from the pharmacy — thank you for arranging the lift to the surgery."
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nFor the noticeboard: the pharmacy now dispenses amoxicillin and other prescriptions on a Sunday. Useful to know.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "For the noticeboard: the pharmacy now dispenses amoxicillin and other prescriptions on a Sunday. Useful to know."
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nMy late husband's leftover ramipril needs safe disposal. Where's the nearest medicines return point?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "My late husband's leftover ramipril needs safe disposal. Where's the nearest medicines return point?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nI'm writing a community talk on how warfarin was first discovered. Could the library help me find sources?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "I'm writing a community talk on how warfarin was first discovered. Could the library help me find sources?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nOur first-aid volunteers asked whether the hall fridge can store residents' insulin and prednisolone at events.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Our first-aid volunteers asked whether the hall fridge can store residents' insulin and prednisolone at events."
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nThe sertraline shortage has been in the news — is the council's wellbeing drop-in affected at all?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "The sertraline shortage has been in the news — is the council's wellbeing drop-in affected at all?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nDonating an unopened blood-pressure monitor and some sealed amitriptyline boxes — can the surgery take them?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Donating an unopened blood-pressure monitor and some sealed amitriptyline boxes — can the surgery take them?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_form_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nCould you add 'managing repeat prescriptions like montelukast' as a topic for the over-60s digital course?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "form",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Could you add 'managing repeat prescriptions like montelukast' as a topic for the over-60s digital course?"
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nJust a note to say the new recycling bins arrived this morning. Thank you for the quick turnaround.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Just a note to say the new recycling bins arrived this morning. Thank you for the quick turnaround."
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nCould you add our book group to the events calendar? Tuesdays at 7pm in the upstairs room.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Could you add our book group to the events calendar? Tuesdays at 7pm in the upstairs room."
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nThe streetlight outside number 14 has flickered all week. Reporting it as requested.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "The streetlight outside number 14 has flickered all week. Reporting it as requested."
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nLovely to see the riverbank path reopened — we walked it on Sunday.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Lovely to see the riverbank path reopened — we walked it on Sunday."
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nPlease update our address for the garden-waste collection: 7 Birchfield Rise.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Please update our address for the garden-waste collection: 7 Birchfield Rise."
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nMany thanks to the team who cleared the leaves on Chapel Lane this week.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Many thanks to the team who cleared the leaves on Chapel Lane this week."
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nCould I join the volunteer mailing list for the summer fair? Happy to run the cake stall.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "Could I join the volunteer mailing list for the summer fair? Happy to run the cake stall."
+    }
+  },
+  {
+    "id": "medical_rx_drug_none_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if BOTH are true: the sender is personally seeking medical advice, AND the message names a specific medication that is available only on prescription. Otherwise answer NO.\n\nMessage:\n---\nThe number 43 bus was on time every day this week. Credit where due.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "medical_rx_drug",
+      "rung": "R3",
+      "family": "A_worldknowledge",
+      "cell": "none",
+      "qtype": "compound",
+      "paraphrase": 1,
+      "framing": "ladder_screen_ask",
+      "message": "The number 43 bus was on time every day this week. Credit where due."
+    }
+  }
+]

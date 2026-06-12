@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "refund_over_500_hit_01",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nI overpaid my council tax last year and your records confirm it. I'm owed £540 back — how do I get that refunded to me?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_01",
+      "message": "I overpaid my council tax last year and your records confirm it. I'm owed £540 back — how do I get that refunded to me?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_02",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe hall booking I paid for was cancelled by your team, not me. That's £515 I'd like returned in full, please. What's the process?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_02",
+      "message": "The hall booking I paid for was cancelled by your team, not me. That's £515 I'd like returned in full, please. What's the process?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_03",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nYour contractor's skip damaged my garden wall. The repair quote is £560 and I'm asking the council to cover it. How do I claim?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_03",
+      "message": "Your contractor's skip damaged my garden wall. The repair quote is £560 and I'm asking the council to cover it. How do I claim?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_04",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nI was wrongly charged for the annual parking permit — £520 has come out of my account in error. Please can you arrange a refund?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_04",
+      "message": "I was wrongly charged for the annual parking permit — £520 has come out of my account in error. Please can you arrange a refund?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_05",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nWe had to cancel the wedding-suite hire due to your boiler failure. I'm seeking the full £550 deposit back. Who handles that?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_05",
+      "message": "We had to cancel the wedding-suite hire due to your boiler failure. I'm seeking the full £550 deposit back. Who handles that?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nMy garden-waste subscription was charged in error and I'm £510 overpaid. I'd like all of it refunded, please.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_06",
+      "message": "My garden-waste subscription was charged in error and I'm £510 overpaid. I'd like all of it refunded, please.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_07",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe pitch I rented for the season was unusable for months. I'm requesting £530 compensation for the lost use. How should I submit this?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_07",
+      "message": "The pitch I rented for the season was unusable for months. I'm requesting £530 compensation for the lost use. How should I submit this?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_08",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nI paid £525 for a course the college cancelled the week it was due to start. Can the council refund that in full?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_08",
+      "message": "I paid £525 for a course the college cancelled the week it was due to start. Can the council refund that in full?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_09",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nI cancelled my leisure-centre membership inside the cooling-off period, but the full year — £535 — was still taken. Please refund it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_09",
+      "message": "I cancelled my leisure-centre membership inside the cooling-off period, but the full year — £535 — was still taken. Please refund it.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_10",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nA pothole on Ferry Lane you'd already been told about wrecked my tyre and alloy. The bill came to £545 and I'm asking the council to compensate me. How do I claim?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_10",
+      "message": "A pothole on Ferry Lane you'd already been told about wrecked my tyre and alloy. The bill came to £545 and I'm asking the council to compensate me. How do I claim?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_11",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nYour blocked drain flooded our cellar and ruined the carpet. Replacing it cost £550 and I'd like the council to cover it. What do I do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_11",
+      "message": "Your blocked drain flooded our cellar and ruined the carpet. Replacing it cost £550 and I'd like the council to cover it. What do I do?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_12",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe allotment office set my plot rent at the wrong band and I've overpaid by £515. Could you refund that to me, please?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_12",
+      "message": "The allotment office set my plot rent at the wrong band and I've overpaid by £515. Could you refund that to me, please?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_13",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nWe withdrew our planning application before it was assessed, so the £525 fee should come back to us. How do I request the refund?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_13",
+      "message": "We withdrew our planning application before it was assessed, so the £525 fee should come back to us. How do I request the refund?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_14",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nI paid £510 for a bulky-waste collection that your crew never came to do. I'd like that money refunded in full.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_14",
+      "message": "I paid £510 for a bulky-waste collection that your crew never came to do. I'd like that money refunded in full.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_15",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe register office took £520 from me for certificate copies I never ordered. Please can the council refund the amount charged in error?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_15",
+      "message": "The register office took £520 from me for certificate copies I never ordered. Please can the council refund the amount charged in error?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_16",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nMy daughter left the school in March but her meals account still holds £515 of our money. Can the council pay that balance back to us?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_16",
+      "message": "My daughter left the school in March but her meals account still holds £515 of our money. Can the council pay that balance back to us?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_17",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe under-8s swimming course was called off after two sessions. I paid £530 up front and would like a full refund.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_17",
+      "message": "The under-8s swimming course was called off after two sessions. I paid £530 up front and would like a full refund.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_18",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nWe were overcharged for the burial-plot reservation — £540 above the published fee. Please could the council refund the difference?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_18",
+      "message": "We were overcharged for the burial-plot reservation — £540 above the published fee. Please could the council refund the difference?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_19",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nOur shop was billed for a commercial-bin service we'd already ended. That's £535 taken wrongly and we'd like it refunded.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_19",
+      "message": "Our shop was billed for a commercial-bin service we'd already ended. That's £535 taken wrongly and we'd like it refunded.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_20",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nOur community group block-booked tickets for the bonfire-night event that was called off on the day. The £510 we paid should be refunded — how?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_20",
+      "message": "Our community group block-booked tickets for the bonfire-night event that was called off on the day. The £510 we paid should be refunded — how?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_21",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe pest-control treatment I paid the council £525 for didn't work and the wasps are back. I'd like that fee refunded.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_21",
+      "message": "The pest-control treatment I paid the council £525 for didn't work and the wasps are back. I'd like that fee refunded.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_22",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nI booked and paid £520 for a road-closure permit for a street party the council later refused. Please refund the permit fee.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_22",
+      "message": "I booked and paid £520 for a road-closure permit for a street party the council later refused. Please refund the permit fee.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_23",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe library says I lost a reference book and took £530 from me, but I returned it weeks ago. Please refund the charge.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_23",
+      "message": "The library says I lost a reference book and took £530 from me, but I returned it weeks ago. Please refund the charge.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_hit_24",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nWe pulled our son from the council nursery before he started and were told the £515 deposit is non-refundable. I'm asking for it back.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "hit",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_24",
+      "message": "We pulled our son from the council nursery before he started and were told the £515 deposit is non-refundable. I'm asking for it back.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nI overpaid my council tax last year and your records confirm it. I'm owed £480 back — how do I get that refunded to me?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_01",
+      "message": "I overpaid my council tax last year and your records confirm it. I'm owed £480 back — how do I get that refunded to me?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe hall booking I paid for was cancelled by your team, not me. That's £465 I'd like returned in full, please. What's the process?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_02",
+      "message": "The hall booking I paid for was cancelled by your team, not me. That's £465 I'd like returned in full, please. What's the process?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nYour contractor's skip damaged my garden wall. The repair quote is £450 and I'm asking the council to cover it. How do I claim?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_03",
+      "message": "Your contractor's skip damaged my garden wall. The repair quote is £450 and I'm asking the council to cover it. How do I claim?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nI was wrongly charged for the annual parking permit — £470 has come out of my account in error. Please can you arrange a refund?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_04",
+      "message": "I was wrongly charged for the annual parking permit — £470 has come out of my account in error. Please can you arrange a refund?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nWe had to cancel the wedding-suite hire due to your boiler failure. I'm seeking the full £440 deposit back. Who handles that?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_05",
+      "message": "We had to cancel the wedding-suite hire due to your boiler failure. I'm seeking the full £440 deposit back. Who handles that?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nMy garden-waste subscription was charged in error and I'm £460 overpaid. I'd like all of it refunded, please.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_06",
+      "message": "My garden-waste subscription was charged in error and I'm £460 overpaid. I'd like all of it refunded, please.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe pitch I rented for the season was unusable for months. I'm requesting £490 compensation for the lost use. How should I submit this?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_07",
+      "message": "The pitch I rented for the season was unusable for months. I'm requesting £490 compensation for the lost use. How should I submit this?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nI paid £475 for a course the college cancelled the week it was due to start. Can the council refund that in full?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_08",
+      "message": "I paid £475 for a course the college cancelled the week it was due to start. Can the council refund that in full?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nI cancelled my leisure-centre membership inside the cooling-off period, but the full year — £455 — was still taken. Please refund it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_09",
+      "message": "I cancelled my leisure-centre membership inside the cooling-off period, but the full year — £455 — was still taken. Please refund it.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nA pothole on Ferry Lane you'd already been told about wrecked my tyre and alloy. The bill came to £445 and I'm asking the council to compensate me. How do I claim?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_10",
+      "message": "A pothole on Ferry Lane you'd already been told about wrecked my tyre and alloy. The bill came to £445 and I'm asking the council to compensate me. How do I claim?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nYour blocked drain flooded our cellar and ruined the carpet. Replacing it cost £470 and I'd like the council to cover it. What do I do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_11",
+      "message": "Your blocked drain flooded our cellar and ruined the carpet. Replacing it cost £470 and I'd like the council to cover it. What do I do?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe allotment office set my plot rent at the wrong band and I've overpaid by £465. Could you refund that to me, please?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_12",
+      "message": "The allotment office set my plot rent at the wrong band and I've overpaid by £465. Could you refund that to me, please?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_13",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nWe withdrew our planning application before it was assessed, so the £435 fee should come back to us. How do I request the refund?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_13",
+      "message": "We withdrew our planning application before it was assessed, so the £435 fee should come back to us. How do I request the refund?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_14",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nI paid £450 for a bulky-waste collection that your crew never came to do. I'd like that money refunded in full.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_14",
+      "message": "I paid £450 for a bulky-waste collection that your crew never came to do. I'd like that money refunded in full.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_15",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe register office took £440 from me for certificate copies I never ordered. Please can the council refund the amount charged in error?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_15",
+      "message": "The register office took £440 from me for certificate copies I never ordered. Please can the council refund the amount charged in error?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_16",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nMy daughter left the school in March but her meals account still holds £475 of our money. Can the council pay that balance back to us?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_16",
+      "message": "My daughter left the school in March but her meals account still holds £475 of our money. Can the council pay that balance back to us?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_17",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe under-8s swimming course was called off after two sessions. I paid £460 up front and would like a full refund.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_17",
+      "message": "The under-8s swimming course was called off after two sessions. I paid £460 up front and would like a full refund.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_18",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nWe were overcharged for the burial-plot reservation — £470 above the published fee. Please could the council refund the difference?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_18",
+      "message": "We were overcharged for the burial-plot reservation — £470 above the published fee. Please could the council refund the difference?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_19",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nOur shop was billed for a commercial-bin service we'd already ended. That's £465 taken wrongly and we'd like it refunded.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_19",
+      "message": "Our shop was billed for a commercial-bin service we'd already ended. That's £465 taken wrongly and we'd like it refunded.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_20",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nOur community group block-booked tickets for the bonfire-night event that was called off on the day. The £440 we paid should be refunded — how?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_20",
+      "message": "Our community group block-booked tickets for the bonfire-night event that was called off on the day. The £440 we paid should be refunded — how?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_21",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe pest-control treatment I paid the council £455 for didn't work and the wasps are back. I'd like that fee refunded.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_21",
+      "message": "The pest-control treatment I paid the council £455 for didn't work and the wasps are back. I'd like that fee refunded.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_22",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nI booked and paid £450 for a road-closure permit for a street party the council later refused. Please refund the permit fee.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_22",
+      "message": "I booked and paid £450 for a road-closure permit for a street party the council later refused. Please refund the permit fee.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_23",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe library says I lost a reference book and took £470 from me, but I returned it weeks ago. Please refund the charge.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_23",
+      "message": "The library says I lost a reference book and took £470 from me, but I returned it weeks ago. Please refund the charge.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_near_24",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nWe pulled our son from the council nursery before he started and were told the £445 deposit is non-refundable. I'm asking for it back.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "near",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_pair_24",
+      "message": "We pulled our son from the council nursery before he started and were told the £445 deposit is non-refundable. I'm asking for it back.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_form_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nJust letting you know our residents' association raised £540 at the summer fair for the community garden. Thank you for the use of the green.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_form_01",
+      "message": "Just letting you know our residents' association raised £540 at the summer fair for the community garden. Thank you for the use of the green.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_form_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nFor your records: the new accessibility ramp at the library cost us £560 in materials, which our volunteer group covered ourselves.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_form_02",
+      "message": "For your records: the new accessibility ramp at the library cost us £560 in materials, which our volunteer group covered ourselves.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_form_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nI'd like to donate £515 to the winter shelter appeal. Who should I make the cheque payable to?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_form_03",
+      "message": "I'd like to donate £515 to the winter shelter appeal. Who should I make the cheque payable to?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_form_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nFYI the quote to repaint the scout hut came in at £520. We'll be going ahead using our own funds, no action needed from you.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_form_04",
+      "message": "FYI the quote to repaint the scout hut came in at £520. We'll be going ahead using our own funds, no action needed from you.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_form_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nOur book club would like to sponsor a bench at £530. Could you send details of the inscription options?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_form_05",
+      "message": "Our book club would like to sponsor a bench at £530. Could you send details of the inscription options?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_form_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe charity run I organised brought in £550 for the food bank — a record year. Just sharing the good news.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_form_06",
+      "message": "The charity run I organised brought in £550 for the food bank — a record year. Just sharing the good news.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_form_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nWe've budgeted £510 for the street-party bunting and insurance. No request here, just keeping you informed.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_form_07",
+      "message": "We've budgeted £510 for the street-party bunting and insurance. No request here, just keeping you informed.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_form_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nI'm pledging £525 to the playground refurbishment fund. Let me know the best way to transfer it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_form_08",
+      "message": "I'm pledging £525 to the playground refurbishment fund. Let me know the best way to transfer it.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_form_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nOur quiz nights have raised £555 for the air ambulance this year. Just thought you'd like to hear how well the hall is being used.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_form_09",
+      "message": "Our quiz nights have raised £555 for the air ambulance this year. Just thought you'd like to hear how well the hall is being used.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_form_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nHeads up: we're spending £510 of our own club funds on new goal nets for the recreation ground. No council action needed.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_form_10",
+      "message": "Heads up: we're spending £510 of our own club funds on new goal nets for the recreation ground. No council action needed.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_form_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nI'd like to leave £540 to the library in my will and wondered who I should speak to about the wording.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_form_11",
+      "message": "I'd like to leave £540 to the library in my will and wondered who I should speak to about the wording.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_form_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe harvest fair takings came to £530, all going to the lunch club. Sharing the total for your newsletter.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_form_12",
+      "message": "The harvest fair takings came to £530, all going to the lunch club. Sharing the total for your newsletter.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_form_13",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nFor your information, the WI has set aside £520 to replant the war-memorial beds ourselves this spring.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_form_13",
+      "message": "For your information, the WI has set aside £520 to replant the war-memorial beds ourselves this spring.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_form_14",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nWe raised £565 sponsoring the choir's trip — thank you for letting us use the bandstand to rehearse.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_form_14",
+      "message": "We raised £565 sponsoring the choir's trip — thank you for letting us use the bandstand to rehearse.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_form_15",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nJust to note, our firm is covering the £515 cost of the new noticeboard on the high street as a gift to the town.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_form_15",
+      "message": "Just to note, our firm is covering the £515 cost of the new noticeboard on the high street as a gift to the town.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_form_16",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe allotment society banked £550 in subscriptions this season, a healthy figure. Sharing it for the minutes.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "form",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_form_16",
+      "message": "The allotment society banked £550 in subscriptions this season, a healthy figure. Sharing it for the minutes.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_none_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nJust a note to say the new recycling bins arrived this morning. Thank you for sorting it so quickly.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_none_01",
+      "message": "Just a note to say the new recycling bins arrived this morning. Thank you for sorting it so quickly.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_none_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nCould you add our book group to the events calendar? Tuesdays at 7pm in the upstairs room.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_none_02",
+      "message": "Could you add our book group to the events calendar? Tuesdays at 7pm in the upstairs room.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_none_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe streetlight outside number 14 has been flickering all week. Reporting it as requested.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_none_03",
+      "message": "The streetlight outside number 14 has been flickering all week. Reporting it as requested.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_none_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nLovely to see the riverbank path reopened — we walked it on Sunday, the new bridge is a real improvement.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_none_04",
+      "message": "Lovely to see the riverbank path reopened — we walked it on Sunday, the new bridge is a real improvement.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_none_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nPlease update our address for the garden-waste collection: we've moved to 7 Birchfield Rise.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_none_05",
+      "message": "Please update our address for the garden-waste collection: we've moved to 7 Birchfield Rise.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_none_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nMany thanks to the team who cleared the leaves on Chapel Lane — the corner by the postbox is much safer now.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_none_06",
+      "message": "Many thanks to the team who cleared the leaves on Chapel Lane — the corner by the postbox is much safer now.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_none_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nCould I be added to the volunteer mailing list for the summer fair? Happy to run the cake stall again.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_none_07",
+      "message": "Could I be added to the volunteer mailing list for the summer fair? Happy to run the cake stall again.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_none_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe number 43 bus was on time every day this week, which must be a record. Credit where due.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_none_08",
+      "message": "The number 43 bus was on time every day this week, which must be a record. Credit where due.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_none_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nCould you confirm which weeks the library is closed over the Christmas period? We're planning our reading group.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_none_09",
+      "message": "Could you confirm which weeks the library is closed over the Christmas period? We're planning our reading group.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_none_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThe dog-waste bin by the canal lock is overflowing again — could it go on the round more often?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_none_10",
+      "message": "The dog-waste bin by the canal lock is overflowing again — could it go on the round more often?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_none_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nJust to say the new benches along the promenade are a lovely addition. We use them every morning.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_none_11",
+      "message": "Just to say the new benches along the promenade are a lovely addition. We use them every morning.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_none_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nPlease can you tell me where to collect a lost-property umbrella handed in at the leisure centre?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_none_12",
+      "message": "Please can you tell me where to collect a lost-property umbrella handed in at the leisure centre?",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_none_13",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nIs the pavilion free to hire on Saturday the 21st for a children's party? Roughly twenty guests.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_none_13",
+      "message": "Is the pavilion free to hire on Saturday the 21st for a children's party? Roughly twenty guests.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_none_14",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nReporting a fallen branch blocking the footpath behind Elm Close after last night's wind.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_none_14",
+      "message": "Reporting a fallen branch blocking the footpath behind Elm Close after last night's wind.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_none_15",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nCould our street be added to the gritting route? It gets treacherous on the hill in frost.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_none_15",
+      "message": "Could our street be added to the gritting route? It gets treacherous on the hill in frost.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  },
+  {
+    "id": "refund_over_500_none_16",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Answer YES only if the message is BOTH a request to the council for a refund or compensation AND the sum sought is over £500. If either is missing, or the amount is £500 or less, answer NO.\n\nMessage:\n---\nThank you to the librarian who tracked down the local-history archive for my school project — wonderful help.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "refund_over_500",
+      "rung": "R3",
+      "family": "B_threshold",
+      "cell": "none",
+      "doccond": "refund_over_500",
+      "pair_stem": "refund_over_500_none_16",
+      "message": "Thank you to the librarian who tracked down the local-history archive for my school project — wonderful help.",
+      "framing": "ladder_ask",
+      "qtype": "compound",
+      "paraphrase": 2
+    }
+  }
+]
