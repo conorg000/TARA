@@ -2,7 +2,9 @@
 
 **Dated:** 2026-06-12. **Status:** FLESHED DRAFT — freezes when execution starts.
 **Parent:** [exp_summary_12_06_2026.md](exp_summary_12_06_2026.md) move 3.
-**Depends on:** Move 2's verdict (panel recipe vs single-probe recipe — start after it).
+**Depends on:** Move 2 — ✅ DONE (2026-06-12). Verdict: **panel BUILDABLE, separation is
+genuine recognition** ([panel_outcome.md](panel_outcome.md)). So this IS a **panel recipe**,
+not a single-probe recipe — the dependency is cleared and the design below assumes a panel.
 **Compute:** mostly OpenRouter + CPU; one batched GPU session for all surviving keepers.
 
 ## The move
@@ -14,6 +16,37 @@ advice-seeking). The experiment that earns it: codify the recipe, run it **cold*
 5–8 fresh conditions in the fuzzy band, and report yield, cost, and failure modes.
 The deliverable is the playbook itself plus its measured statistics — a 6-of-8 with
 characterised failures is worth more to practitioners than another tuned 2-for-2.
+
+## Panel recipe — what Move 2 settled, and the N-condition scaling (design decision)
+
+Move 2 proved two per-condition probes coexist in one prompt and separate on genuine
+recognition. But it also measured that the two directions are **not orthogonal — they
+share a large common "advice-seeking" component (cosine 0.87)**, with only a
+condition-specific *residual* doing the separating. At N=2 a shared component plus a
+per-condition residual is fine. **The scaling concern: as N grows, the shared component
+dominates more of every read, so each probe's absolute score becomes less informative on
+its own — the "dashboard of independent lights" degrades into a set of correlated readouts
+where what matters is the *relative* activation across probes (which condition's residual
+is highest), not whether any one probe crossed a fixed threshold.** This has two concrete
+consequences the playbook study should bake in, turning the concern into free data:
+
+1. **Run the surviving keeper conditions in ONE shared multi-rule prompt** (a panel),
+   not N separate single-rule extractions. This (a) is the deployment-realistic setup,
+   (b) costs the same GPU, and (c) **harvests the N>2 interference curve for free** — the
+   single most valuable thing Move 2 couldn't give (it was N=2). Measure, as N climbs
+   1→…→N: per-condition specificity (own-hit vs each other-hit), cross-fire, and the
+   mean pairwise cosine of the direction set. The **interference curve** (does specificity
+   decay as conditions are added? does mean cosine rise?) is a headline Move-3 deliverable,
+   not a side note.
+2. **The PLAYBOOK.md "calibration" step must specify per-condition, relative-readout
+   calibration** — threshold each probe against its *own* positives and the *other
+   conditions'* docs (Move 2's lesson: cross-condition docs sit above the blank baseline),
+   and prefer an argmax/relative-rank read over independent fixed thresholds once N is
+   moderate. Note explicitly where a fixed-threshold "independent light" stops working.
+
+(If the interference curve shows specificity holding flat to N=5–8, the panel scales and
+the deployment story is strong; if it decays, that decay rate — and the N at which
+argmax-over-probes beats per-probe thresholds — is itself the finding.)
 
 ## Context for the executing agent
 
@@ -66,8 +99,12 @@ characterised failures is worth more to practitioners than another tuned 2-for-2
    drafted, hand-audited, then the behavioural validation pass. Per cold-run
    discipline, fixes here are limited to what PLAYBOOK.md prescribes (e.g. dropping a
    failed item); anything beyond that demotes the condition to "assisted."
-5. **(GPU) One batched extraction session for ALL surviving keepers** — amortise the
-   box setup; same position set and fp16 convention as Exp 2. Commit before the run.
+5. **(GPU) One batched extraction session for ALL surviving keepers, in a SHARED
+   multi-rule prompt** (per the panel-recipe decision above — reuse the Move 2 pattern:
+   [make_panel.py](make_panel.py)/[extract_panel.py](extract_panel.py)). Amortise the box
+   setup; same position set and fp16 convention as Exp 2. Build the lattice so the
+   interference curve is recoverable (each condition's hit/near cells decorrelated across
+   the shared prompt). Commit before the run.
 6. **(CPU) Battery per condition** (`probe_playbook.py`): recognition floor, K1 drop
    rate, K2 hit-vs-near + near-vs-none, K4 selectivity, shuffle, layer-0, negative
    control; `message_last` primary, layer-robust medians reported. (K3 rule-swap is
@@ -94,9 +131,11 @@ characterised failures is worth more to practitioners than another tuned 2-for-2
 - **Success criterion:** characterised yield, not a perfect score. 8/8 achieved by
   quiet tinkering is a failed study; 5/8 with a crisp failure-mode map is a successful
   one.
-- **Composes with:** Move 2 (if separability passed, PLAYBOOK.md is written as a panel
-  recipe and the yield study's conditions can share prompts); Move 4 (its boundary
-  result becomes the playbook's "what you can't probe for" section).
+- **Composes with:** Move 2 (DONE — separability passed, so PLAYBOOK.md is a **panel**
+  recipe; the yield conditions share one prompt and the run yields the **N>2 interference
+  curve** — per-condition specificity + mean pairwise cosine as N climbs — for free, the
+  natural extension of Move 2's N=2 result); Move 4 (its boundary result becomes the
+  playbook's "what you can't probe for" section).
 
 ## Budget
 

@@ -1,0 +1,16 @@
+{
+  "position": "message_last",
+  "best_recog_layer": 47,
+  "best_recog": 1.0,
+  "n_medical_flagged": 16,
+  "n_medical_unflagged": 15,
+  "a1_auroc_flagged_vs_unflagged": 0.575,
+  "mannwhitney_p": 0.4891,
+  "mean_score": {
+    "medical_flagged": 588.7,
+    "medical_unflagged": 521.6,
+    "legal_hit": 2306.2,
+    "none": -1252.4
+  },
+  "verdict": "over-flag is DOWNSTREAM of the content axis (not content-graded)"
+}
