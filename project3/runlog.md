@@ -11,6 +11,42 @@ record the full per-layer table here for any result worth keeping.
 
 ---
 
+## 2026-06-12 — Move 4 / Flow A (spontaneity ladder): GPU extraction + probe. **Rule-conditioned computation EXISTS — found where the rule is the only possible source, and localized LATE (decision-adjacent), not in general reading.** The honest rescope of K3 resolved.
+
+**Plan:** [plan_move4_spontaneity_ladder.md](plan_move4_spontaneity_ladder.md) (+ Appendix B = sharpened metric). **Outcome doc:** [ladder_outcome.md](ladder_outcome.md). **Build:** `make_ladder_screen.py` → `make_ladder_keeper.py` (4 conditions × 80 docs: 24 hit + 24 near matched pairs + 16 form + 16 none), `extract_ladder.py` (Qwen3-32B, no-think, greedy/T=0, 28 passes × 80 docs, A100-80GB), `probe_ladder.py`. Activations gitignored; per-doc results in `probe_ladder.json`.
+
+**Design.** Each condition is a compound **A∧B**; `hit=A∧B`, `near=A∧¬B` (matched, differs ONLY in the decisive element B). Train a compound direction on the ASK pass (the question supplies the compound, NO rule; consistency+correctness-filtered model-own labels, paraphrase-rotated), score it CROSS-PASS, document-disjoint, on two **pure-reading** passes (no question): `present` (the compound rule in the system prompt) vs `absent` (a length-matched placebo rule). **Decisive read = hit-vs-near WITHIN each arm** (isolates B; plan B1/B2). The `absent` arm uses the *identical messages*, so it is a true control: any present>absent gap is the rule's doing, not raw magnitude. Read at 3 positions: `message_mean` (body average), `message_last` (reading crystallizes), `final` (decision-adjacent).
+
+**Headline (AUROC, best layer by recog_dm; layer-robust medians in `probe_ladder.json`):**
+
+| condition (rung / family) | position | PRESENT h-n | ABSENT h-n | flagged-only | compB p/a | near FLAG (present) |
+|---|---|---:|---:|---:|---:|---:|
+| advice_deadline (R2 / two-spontaneous) | message_mean | 0.957 | **0.934** | 0.924 | 1.00/1.00 | 0.25 |
+| | message_last | 0.979 | 0.672 | 0.944 | 0.99/0.85 | |
+| | final | 0.988 | 0.549 | 0.965 | 0.97/0.48 | |
+| refund_over_500 (R3 / B numeric threshold) | message_mean | 0.633 | 0.507 | 0.610 | 0.95/0.81 | 0.88 |
+| | message_last | **0.875** | **0.456** | 0.868 | 0.78/0.59 | |
+| | final | 0.825 | 0.477 | 0.809 | 0.59/0.40 | |
+| complaint_6months (R3 / B temporal cutoff) | message_mean | 0.775 | 0.574 | 0.773 | 0.95/0.80 | 0.67 |
+| | message_last | **0.924** | **0.519** | 0.890 | 0.94/0.71 | |
+| | final | 0.715 | 0.520 | 0.667 | 0.63/0.44 | |
+| medical_rx_drug (R3 / A world-knowledge) | message_mean | 1.000 | **0.998** | 1.000 | 1.00/1.00 | 1.00 |
+| | message_last | 1.000 | 0.861 | 1.000 | 0.99/0.87 | |
+| | final | 0.886 | 0.830 | 0.886 | 0.88/0.69 | |
+
+Component-A (is-A) reads ≈1.0 in both arms everywhere (construction sound). hit-detect 100% and consistency ≥88% at the OpenRouter probeability screen (all 4 PASS). n kept after consistency+correctness filter: 73–78/80 per condition (the ~12% near-threshold fumbles dropped, as pre-registered).
+
+**Three regimes — the ladder, read off the `absent` (without-rule) arm:**
+1. **R2 advice∧deadline (both components spontaneous):** decisive element readable WITHOUT the rule during reading (message_mean absent **0.93**). The conjunction is computed unprompted. (The without-rule read fades toward the decision — final absent 0.55 — while the rule maintains it, 0.99.)
+2. **R3-A medical∧Rx (world-knowledge):** readable WITHOUT the rule at every position incl. body average (absent **0.83–1.00**). The drug-name representation carries "prescription-only" intrinsically — latent lexical knowledge, always-on. The pre-registered **contrast** (Appendix B3): NOT rule-conditioned computation; proof the fact is spontaneously present. Behaviourally the rule over-flags totally (OTC-advice `near` flagged **1.00**) — "medical rule = topic detector" (Move 1) confirmed on the reading side.
+3. **R3-B refund∧>£500 and complaint∧>6mo (rule-supplied criterion) — THE FINDING:** decisive element NOT read without the rule at any position (absent ≈ chance **0.44–0.57**; the near-criterion matched messages mean raw magnitude does not leak the hit-vs-near distinction). WITH the rule it becomes readable, but **only LATE** — chance-to-weak in the body average (message_mean present 0.63 / 0.78), clearly readable at crystallization/decision-adjacent (message_last present **0.88 / 0.92**). The rule **RESTORES** readability exactly where comprehension alone cannot supply the answer → **top-down rule-conditioned computation exists**, found where the rule is the only possible source, localized near the decision.
+
+**The dissociation (behaviour-matched control).** For Family B the FLAG action over-fires (near flagged 0.67–0.88) — behaviourally it barely gates on the threshold. Yet the reading-side probe separates hit from near **among identically-flagged docs** (flagged-only AUROC **0.87 refund / 0.89 complaint** at message_last ≈ the unmatched value). So the model internally computes the rule-supplied criterion (late, top-down) even while its action does not gate on it. Reading and action dissociate — the project's recurring result, now at the rule-binding frontier. Key control: the `absent` arm has the identical messages and sits at chance, ruling out raw magnitude/recency.
+
+**Answers to the registered questions.** (1) *Does rule-conditioned computation exist?* **Yes** — Family B is "rule-restored." K3's negative was honestly scoped: it found no rule-modulation for a *spontaneously-computed* condition because the rule had no work to do at reading time; here, where the rule is the ONLY possible source, it does the work and we can read it. (2) *The panel's hard boundary?* **Positional, not absolute.** A content probe on the message-body average MISSES a rule-supplied-criterion compound (Family B message_mean ≈ chance); it is detectable only at the decision-adjacent position and only with the rule present.
+
+**Limitations.** Family A's without-rule readability is a probing artifact by design (linear decodability ≠ use; Hewitt–Liang) — the contrast, not a clean rule-conditioning test. Family B's message_mean present is weak (0.63/0.78) — the late-position reads carry the effect; complaint peaks at message_last and weakens at final (refund peaks at final), so the exact binding position varies by criterion type. Single model (Qwen3-32B), single register (Riverbeck council). Decision-adjacent reads are within-behaviour-matched (flagged-only), not a separate behaviour-matched extraction.
+
 ## 2026-06-12 — Move 3 / Flow B (playbook yield) Step 4: keeper construction validation (OpenRouter, loaded multi-rule ask). 2/3 survivors reproduce at register-matched scale → **data_deletion, fraud_report** carried to GPU. **implicit_legal_threat killed at Step 4** — register-matched near false-fires **84%** (model conflates angry/documented complaints with veiled legal threats); the lenient pre-test near (0%) missed it → PLAYBOOK amendment. Running yield 2/6.
 
 **Plan:** [plan_move3_playbook_yield.md](plan_move3_playbook_yield.md). **Deliverable:**
