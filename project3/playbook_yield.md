@@ -15,21 +15,29 @@ PLAYBOOK prescribes; an off-script fix demotes a condition to "assisted".
 ## Headline
 
 - **The funnel killed a condition at every stage** — that progression is the deliverable:
-  pre-test (3 killed) → construction validation (1 killed) → probe battery + length-control
-  (the surviving 2 split into one clean probe and one genuine-but-graded detector).
-- **Final probe-level yield (deployment-grade *clean independent* probe): ~1/6**
-  (`fraud_report`). **`data_deletion`** carries **genuine, length-immune recognition** but a
-  **genuinely topic-elevated near** — a *graded* detector, not a clean independent light.
-- **The headline methodological finding:** pooling conditions with **different characteristic
-  message lengths** into one panel injects a **length confound** that dominates the raw
-  specificity / near-none / selectivity reads. The pre-registered battery (raw) failed all
-  3 GPU conditions — but a **leak-free length-removal control** (the Move-2 topic-removal
-  analog) shows the matched-pair *recognition* contrast is genuine and length-immune, and
-  recovers `fraud_report` as clean. → new PLAYBOOK amendment: **length-match panel conditions**.
-- *Process note:* an earlier draft hypothesised the reads were *entirely* length; the length-
-  removal control **refuted the strong version** (specificity + hit-near survive length
-  removal). The skeptical loop worked — hypothesise the boring cause, test it, report what the
-  test says, not what was hoped.
+  pre-test (3 killed) → construction validation (1 killed) → probe battery → length-control →
+  **surface controls** (the surviving 2 split into one *surface-controlled* recognition probe
+  and one marginal-and-regex-redundant detector).
+- **Final yield (surface-controlled): 1/6 — `fraud_report`** is a **genuine recognition probe
+  that beats surface features**, validated by three independent controls. **`data_deletion`**
+  is *downgraded* on scrutiny: its recognition is real but barely beats surface (+0.05) **and**
+  it is **largely regex-solvable** (fuzzy-band edge), so a probe adds little there.
+- **Two methodological findings, both from running the controls the critique demanded:**
+  1. **Length confound** — pooling different-length conditions injects a length artifact that
+     dominates the raw specificity/near-none/selectivity reads. A leak-free length-removal
+     control (Move-2 topic-removal analog) shows the matched-pair *recognition* contrast is
+     length-immune. → amendment: length-match panel conditions.
+  2. **Surface (lexical) confound** — the keeper hit/near pairs are **lexically trivial**
+     (TF-IDF separates them at 0.99 ≥ the probe), so hit-near *alone* does **not** earn
+     "recognition." Earned it properly via (a) a **regex/fuzzy-band** baseline, (b) a **TF-IDF**
+     surface ceiling, and (c) **lexical ablation** — masking the trigger lexicon and checking
+     the model's behaviour *and* the probe both survive. → amendment: the battery MUST include
+     these surface controls.
+- *Process note:* this section was rewritten **twice** as controls came in — first "recognition"
+  (probe passes), then "maybe all length" (raw battery + length baseline), then length-control
+  *refuted* the strong length read, then the surface controls *downgraded* data_deletion and
+  *upheld* fraud_report. Each turn is recorded, not smoothed over. That loop — hypothesise the
+  boring cause, test it, report what the test says — is the point.
 
 - **Registered:** 6 conditions (financial_advice, compensation_demand, data_deletion,
   fraud_report, third_party_writer, implicit_legal_threat).
@@ -230,22 +238,77 @@ not cross-condition interference but **per-condition probeability** (label stabi
 near separation) and **construction hygiene** (length-matching). Caveat: one of the three
 directions (threat) is built on contaminated labels, so the N=3 cosine includes a weak axis.
 
+## Step 8 — surface controls (recognition vs string-matching), the hardening pass
+
+The probe's hit-near (the length-immune recognition contrast) is only evidence of
+*recognition* if it isn't explained by *surface lexical features*. Three controls
+(`playbook_surface_baselines.py`, `playbook_mask.py`, `make_playbook_masked.py`):
+
+**(a) Regex / fuzzy-band baseline.** A practitioner regex per condition, on the keeper lattice:
+
+| condition | regex hit-fire | regex near-fire | regex specificity | TF-IDF hit-near |
+|-----------|---------------:|----------------:|------------------:|----------------:|
+| data_deletion         | **0.81** | 0.00 | 0.90 | 0.991 |
+| fraud_report          | 0.31 | 0.09 | 0.66 | 0.995 |
+| implicit_legal_threat | 0.25 | 0.00 | 0.61 | 0.988 |
+
+→ **`data_deletion` is largely regex-solvable** (0.81/0.00) — it sits at the *fuzzy-band edge*,
+so a probe adds little. `fraud_report` and `threat` defeat regex (hit-fire 0.31/0.25) — genuinely
+in-band, where a probe could earn its keep. **But** TF-IDF separates hit-from-near at **0.99 for
+all three** — *as well as / better than the probe* (0.94/0.998/0.956). So the datasets are
+**lexically trivial**, and hit-near alone does **not** prove recognition.
+
+**(b) Lexical ablation — model behaviour.** Mask the trigger lexicon (curated regex tokens ∪ top
+TF-IDF n-grams) in **both** hit and near, re-ask on OpenRouter. TF-IDF on the masked text drops
+to 0.82–0.92 (residual distributed cues remain; you can't fully ablate without mangling — itself
+a finding). Mask-count is a weak residual cue (hit-vs-near AUROC 0.58–0.63 for data/fraud).
+Model behaviour on masked text (`UNCLEAR 0%` → text stays coherent):
+
+| condition | masked hit-YES | masked near-YES | gap | read |
+|-----------|---------------:|----------------:|----:|------|
+| data_deletion         | 94%  | 25% | **+69%** | recognition survives ablation |
+| fraud_report          | 100% | 38% | **+62%** | recognition survives ablation |
+| implicit_legal_threat | 78%  | 56% | +22% | **collapsed** — was lexical (already killed) |
+
+→ For data_deletion & fraud_report the **model still distinguishes hit from near without the
+keywords** — it infers intent from context. For threat the distinction collapses (its recognition
+*was* the keywords), independently re-confirming the Step-4 kill.
+
+**(c) Lexical ablation — the probe (GPU re-extraction).** Re-extract the masked panel
+(`extract_playbook` on `pbmask_*`), re-probe (`probe_playbook --prefix pbmask`). The test:
+does the probe's hit-near on **masked** activations exceed the **masked-TF-IDF surface floor**?
+
+| condition | probe hit-near (masked) | TF-IDF floor (masked) | margin | model gap | verdict |
+|-----------|------------------------:|----------------------:|-------:|----------:|---------|
+| **fraud_report**      | **0.954** | 0.841 | **+0.113** | +62% | **genuine recognition beyond surface** |
+| data_deletion         | 0.871 | 0.822 | +0.049 | +69% | genuine but marginal margin; + regex-redundant |
+| implicit_legal_threat | 0.935 | 0.915 | +0.020 | +22% | ≈ surface floor; model collapsed → **killed** |
+
+→ **`fraud_report`** is the one condition where all three converge: defeats regex (in-band),
+model recognition survives ablation (+62%), and the probe reads hit-near at 0.954 on masked
+activations — **+0.11 above the residual-surface ceiling**. That is recognition the surface
+text cannot supply. **`data_deletion`** clears the bar only by +0.05 and is regex-redundant
+anyway. **`threat`** sits on its surface floor.
+
 ## Final yield table
 
-| condition | predicted | died/clean at | failure code | note |
-|-----------|-----------|---------------|--------------|------|
-| financial_advice      | pass     | pre-test (Step 3)        | topic-confound + label-instability | money-talk blurs into advice-seeking (33% near fire) |
-| compensation_demand   | marginal | pre-test (Step 3)        | label-instability | 88% consistency (near-miss of 90%) |
-| third_party_writer    | fail     | pre-test (Step 3)        | label-instability | structural trigger, 88% consistency |
-| implicit_legal_threat | marginal | construction (Step 4)    | topic-confound | matched near false-fires 84%; labels collapse |
-| data_deletion         | marginal | probe (Step 6)           | topic-near-elevation | genuine recognition, but graded (near elevated, length-immune) |
-| fraud_report          | pass     | **CLEAN** (Step 6, len-ctrl) | — | clean recognition probe once length is controlled |
+| condition | predicted | outcome | died/clean at | failure code | note |
+|-----------|-----------|---------|---------------|--------------|------|
+| financial_advice      | pass     | killed | pre-test (Step 3)     | topic-confound + label-instability | money-talk blurs into advice-seeking (33% near fire) |
+| compensation_demand   | marginal | killed | pre-test (Step 3)     | label-instability | 88% consistency (near-miss of 90%) |
+| third_party_writer    | fail     | killed | pre-test (Step 3)     | label-instability | structural trigger, 88% consistency |
+| implicit_legal_threat | marginal | killed | construction (Step 4) | topic-confound + surface | matched near false-fires 84%; recognition collapses under ablation (model gap +22%) |
+| data_deletion         | marginal | **downgraded** | surface controls (Step 8) | regex-redundant + thin margin | genuine recognition (model gap +69%, probe +0.05 > surface) BUT largely regex-solvable (hit 0.81/near 0.00) so low value |
+| fraud_report          | pass     | **PASS** | surface controls (Step 8) | — | genuine recognition that beats surface: defeats regex, model survives ablation (+62%), probe +0.11 > surface ceiling |
 
-**Yield (pre-registered, no goalpost moves):** clean deployment-grade independent probe
-**1/6** (`fraud_report`); genuine-recognition-but-graded **+1** (`data_deletion`); 4 killed
-earlier with distinct, characterised failure modes. **Success criterion met:** a characterised
-yield with a crisp failure-mode map (PLAYBOOK §success: "3/6 with a crisp failure map is a
-successful study; 6/6 by quiet tinkering is a failed one").
+**Yield (pre-registered, no goalpost moves): 1/6** conditions yielded a **genuine,
+surface-controlled recognition probe** (`fraud_report`). `data_deletion` was downgraded under
+scrutiny (real recognition but regex-redundant + thin surface margin); the other 4 died earlier
+with distinct, characterised failure modes. **Success criterion met:** a characterised yield
+with a crisp failure-mode map (PLAYBOOK §success: "3/6 with a crisp failure map is a successful
+study; 6/6 by quiet tinkering is a failed one"). The honest single sentence: *the recipe, run
+cold on 6 fuzzy conditions, produced exactly one probe that demonstrably reads recognition
+rather than surface — and the study maps precisely why the other five did not.*
 
 ---
 

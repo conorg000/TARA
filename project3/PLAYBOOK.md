@@ -198,3 +198,17 @@ over independent fixed thresholds. State explicitly the N at which a fixed-thres
   Step 6 with seq_len residualised out (`probe_playbook_lengthcontrol.py`) and treat *that*
   as the verdict, not the raw battery. The matched-pair hit-near is the load-bearing
   recognition metric in all cases (the only read immune to this confound).
+- **2026-06-12 — surface controls are MANDATORY, not optional (Step 6, discovered cold).**
+  The probe's matched-pair hit-near is length-immune but **not surface-immune**: the keeper
+  hit/near pairs were **lexically trivial** (TF-IDF separated them at 0.99 ≥ the probe), so a
+  high hit-near did **not** by itself earn "recognition" — surface words alone explained it.
+  The recipe must therefore add, as a required part of Step 6: (a) a **regex / fuzzy-band
+  baseline** (`playbook_surface_baselines.py`) — if a regex already solves the condition it
+  was below the band and the probe is moot; (b) a **TF-IDF surface ceiling** — the probe's
+  hit-near must be read *relative to* it; (c) a **lexical-ablation control**
+  (`playbook_mask.py` + re-extract): mask the trigger lexicon and require BOTH the model's
+  behaviour AND the probe's hit-near to survive above the residual-surface floor. Only a
+  condition that passes all three is a genuine recognition probe (here: `fraud_report` did;
+  `data_deletion` did not — regex-redundant + thin margin). **Build implication:** prefer
+  **lexically-matched** nears (near reuses the hit's trigger vocabulary in a non-triggering
+  construction) so hit-near is not lexically trivial in the first place.

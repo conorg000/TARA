@@ -11,6 +11,30 @@ record the full per-layer table here for any result worth keeping.
 
 ---
 
+## 2026-06-12 — Move 3 / Flow B (playbook yield) Step 8: surface controls (critique-driven hardening). hit-near is length-immune but NOT surface-immune — TF-IDF separates hit/near at 0.99 ≥ the probe, so hit-near alone doesn't earn "recognition". Earned it via regex/fuzzy-band + TF-IDF ceiling + lexical ablation (model behaviour + GPU re-probe). **Result: `fraud_report` is a genuine surface-controlled recognition probe (+0.11 over surface, model survives ablation +62%); `data_deletion` DOWNGRADED (regex-solvable + thin margin). Final yield 1/6.**
+
+**Why:** post-hoc review flagged that the Move-3 recognition claim was never surface-controlled
+(the central project question is recognition-vs-surface). **Controls:** `playbook_surface_baselines.py`
+(regex + TF-IDF, local), `playbook_mask.py`/`make_playbook_masked.py` (lexical ablation),
+`observe_playbook_masked.py` (model behaviour on OpenRouter), GPU re-extraction `pbmask_*` →
+`probe_playbook.py --prefix pbmask` (git **6f1cb3a**, acts_masked/) → `probe_pbmask.json`.
+
+**(a) Regex/fuzzy-band:** data_deletion hit-fire **0.81**/near 0.00 → regex-solvable, fuzzy-band
+EDGE; fraud 0.31 / threat 0.25 → defeat regex (in-band). **(b) TF-IDF hit-near 0.991/0.995/0.988**
+≥ the probe (0.94/0.998/0.956) → datasets lexically trivial; hit-near alone insufficient.
+**(c) Lexical ablation — model behaviour (UNCLEAR 0%, no mangling):** masked hit-near gap
+data **+69%** / fraud **+62%** / threat +22% → model recognition SURVIVES ablation for
+data/fraud, COLLAPSES for threat (re-confirms the Step-4 kill). Mask-count residual cue weak
+(0.58–0.63 for data/fraud). **(d) Lexical ablation — probe (masked, message_last hit-near vs
+masked-TF-IDF floor):** fraud **0.954 vs 0.841 = +0.113**; data 0.871 vs 0.822 = +0.049; threat
+0.935 vs 0.915 = +0.020. **Verdict:** fraud_report genuine recognition beyond surface (3 controls
+converge); data_deletion real but marginal + regex-redundant (downgraded); threat ≈ surface
+(killed). Length-confound caveats (near-none, selectivity) unchanged on masked — hit-near is the
+length-immune read. → PLAYBOOK amendment: surface controls (regex + TF-IDF + lexical ablation)
+are MANDATORY in Step 6; prefer lexically-matched nears.
+
+---
+
 ## 2026-06-12 — Move 4b / Flow A: the threshold-shift strengthener (criterion-parameter swap). **The readable boundary MOVES with the rule's number — prompt-parameterized computation, not a fixed "big refund" prior.**
 
 **Why:** the residual alternative reading of Move 4's Family-B result was that "£500" coincides with some prior notion of "a large refund" the rule merely *activates*, rather than a parameter the rule *supplies*. The decisive test (the criterion-level analog of the keyphrase watchlist-swap): same refund letters, amounts spread £325–£695, read under rules stating **£400 / £500 / £600**. Every letter in the 400–600 band flips its label purely with the rule's parameter. **Build:** `make_ladder_threshold.py` (48 refund instances at banded amounts + 16 none; A held constant), `probe_ladder_threshold.py` (one "criterion-satisfied" direction trained on the ASK passes pooled across the three thresholds — model-own labels, correctness-filtered, document-disjoint by scenario — scored cross-pass on the read passes). Extraction: 6 passes × 64 docs, Qwen3-32B, greedy/T=0. Per-doc in `probe_ladder_threshold.json`.

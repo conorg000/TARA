@@ -40,6 +40,13 @@ python make_playbook_keeper.py        # the N-rule panel ask/action passes from 
 python extract_playbook_selftest.py   # span/group/label checks (no GPU)
 # GPU: extract_playbook.sh (10 passes); probe_playbook.py + probe_playbook_lengthcontrol.py
 ```
+- **`pbmask_*` / `playbook_content_masked.json`** — the **lexical-ablation** control (Step 8):
+  the panel with the trigger lexicon masked (curated regex tokens ∪ top TF-IDF n-grams → `[...]`
+  in both hit and near) to test whether recognition survives without the keywords. Built by
+  `playbook_mask.py` → `make_playbook_masked.py`; behaviour via `observe_playbook_masked.py`;
+  GPU re-extract to `acts_masked/`, re-probe `probe_playbook.py --prefix pbmask`. Surface
+  baselines: `playbook_surface_baselines.py` (regex + TF-IDF).
+
 Spec + predictions: `playbook_conditions.json`. Recipe: `PLAYBOOK.md`. Results: `playbook_yield.md`.
 
 ---
