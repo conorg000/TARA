@@ -1,79 +1,4 @@
-# Experiment logistics
-
-The operational runbook: **how we actually run experiments** — the GPU/laptop
-split, vast.ai basics, and the extract → pull → probe cycle. This is the "where
-do I click / what do I type / what did past-us learn" doc.
-
-It is deliberately separate from the science:
-- [README.md](README.md) — the question and the story (what we're testing, why).
-- [runlog.md](runlog.md) — the record of each run (config, results, predictions).
-- [datasets.md](datasets.md) — what each dataset is and how to regenerate it.
-- [CLAUDE.md](CLAUDE.md) — how to think while working here (the skeptical stance).
-
----
-
-## The core idea: GPU extracts, laptop probes
-
-Only **one** thing needs a GPU: running the model to produce **activations**.
-Everything after that — training probes, controls, layer selection, transfer
-tests — is plain CPU/numpy/sklearn work on a small saved file. Running it on a
-rented GPU means paying 3090 rates to run sklearn while the GPU sits idle.
-
-```
-┌─ GPU box (vast.ai) ────┐   scp    ┌─ laptop ───────────────────────────┐
-│ extract.sh             │ ───────▶ │ train_probe / controls /           │
-│  → activations_*.npz   │  ~116 MB │ select_layer / transfer_test       │
-│  (model forward pass)  │          │  → results.json + logs → git       │
-└────────────────────────┘          └────────────────────────────────────┘
-   only this needs a GPU              free · fast · robust · unlimited
-```
-
-So the lifecycle is: **extract on the box → pull the `.npz` home → probe locally
-as much as you like → destroy the box.** No live GPU is needed for the
-open-ended probing.
-
-### Guiding principle: capture more than you need on the GPU run
-
-The GPU is the expensive, ephemeral half. Once the box is destroyed, getting
-anything else means **re-renting and re-extracting**. So when a box is up, lean
-toward capturing *more* than the immediate test requires:
-
-- Always `--generate` the model's behaviour, even when a given test only needs
-  activations (e.g. the transfer test). Behaviour is cheap to capture now and
-  expensive to get back later.
-- Capture **all** layers (we already do) — never a hand-picked subset.
-
----
-
-## What an extraction produces
-
-One `.npz` per `(model, dataset, thinking-mode)`. The activation is the
-residual-stream vector at the **final prompt token** — the position the model is
-about to answer from, by which point it must already have done the
-item → category → restricted-list check — recorded at **every** layer.
-
-```
-activations_<dataset>_<tag>.npz          e.g. activations_conditions_v2_8b_think.npz
-  activations    : [N, n_layers+1, hidden]   final-token vector, every layer (8B: [N,37,4096])
-  labels         : [N]    1=escalate (item's category is restricted), 0=proceed
-  ids, groups    : [N]    example id; group = category (for leave-category-out CV)
-  behaviour      : [N]    escalate/proceed/unclear     (only when --generate)
-  generated_text : [N]    the model's raw output       (only when --generate)
-  meta           : model, dtype, enable_thinking, dataset_path, git_commit,
-                   torch/transformers versions, created_utc (UTC), sample_prompt
-```
-
-**The data** is one of the `conditions_*` datasets ([datasets.md](datasets.md)):
-each example is a system prompt (a policy with a *randomised* restricted list of
-categories) + a user request (*an item* to a destination); the label is whether
-the item's category is on that example's list. Surface-decorrelated by
-construction, so a probe can only score by reading recognition.
-
-Every `.npz` is **self-describing** — read its `meta` and you know the model,
-the data, thinking on/off, the library versions, and the exact code commit that
-produced it.
-
----
+# GPU Logistics
 
 ## vast.ai setup (the basics, for next time)
 
@@ -117,16 +42,6 @@ registered with the vast account). Just the per-instance basics:
 
 Always run it **detached** so a dropped SSH can't kill it, and let it log to disk:
 
-```bash
-ssh arena
-cd /root/TARA/project3 && git pull && source /venv/main/bin/activate
-tmux new -s extract          # or use nohup; either survives a disconnect
-# r8 — 8B, thinking on:
-THINK=1 ./extract.sh Qwen/Qwen3-8B cuda bfloat16 inputs/conditions_v2.json 8b_think
-# r9 — 8B transfer target (still generating, per "capture more"):
-./extract.sh Qwen/Qwen3-8B cuda bfloat16 inputs/conditions_v2b.json 8b_nothink
-```
-
 Detach from tmux with **Ctrl-b** then **d**; reattach with `tmux attach -t extract`.
 Output also lands in `logs/extract_<...>_<UTC>.log`, so results survive even if
 the terminal dies.
@@ -135,26 +50,15 @@ the terminal dies.
 
 ## Pulling results home + probing (on the laptop)
 
-```bash
-# from the laptop, in project3/:
-scp arena:/root/TARA/project3/activations_conditions_v2_8b_think.npz .
-source .venv/bin/activate
-python train_probe.py --activations activations_conditions_v2_8b_think.npz
-#   → prints per-layer table + decomposition, writes activations_..._think.results.json
-```
-
-The other probe scripts (`controls.py`, `select_layer.py`, `transfer_test.py`)
-run the same way against the pulled `.npz`. `results.json` (committed) + the
-runlog are the durable record; the `.npz` stays local + gitignored (it's
-regenerable from model + dataset + git commit + seed).
-
-When all extractions are pulled: **destroy the box** to stop the meter.
+- We can use `scp`
+- IMPORTANT: if there are many GBs of data to transfer, it's not worth it
+  - In that case just run analysis on the GPU and **pull the results back home**
 
 ---
 
 ## Hard-won gotchas (so we don't relearn them)
 
-- **`python` isn't on the box PATH** — the interpreter lives in a venv. Always
+- **`python` isn't on the box PATH sometimes** — the interpreter lives in a venv. Always
   `source /venv/main/bin/activate` first (or call `/venv/main/bin/python`).
 - **Run long jobs detached** (tmux/nohup). A raw foreground SSH job dies when the
   connection drops; a frozen terminal then *looks* like a hang. Detached + logged
