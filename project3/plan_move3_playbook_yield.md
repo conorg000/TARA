@@ -2,11 +2,13 @@
 
 **Dated:** 2026-06-12. **Status:** ✅ DONE (2026-06-12). All 7 steps run cold. Funnel killed
 a condition at every stage: pre-test 3/6 → construction 2/3 → probe battery + length-control.
-**Final yield: 1/6 clean deployment probe (`fraud_report`) + 1 genuine-but-graded
-(`data_deletion`); 4 killed with distinct failure codes.** Headline finding: heterogeneous-
-length conditions inject a length confound (raw battery 0/3; length-removal control recovers
-fraud as clean and confirms recognition is genuine) → PLAYBOOK amendment. Full results +
-failure-mode map in [playbook_yield.md](playbook_yield.md); records in runlog.
+**Final yield (surface-controlled): 1/6** — `fraud_report` is a genuine recognition probe that
+beats surface (defeats regex; model survives lexical ablation +62%; probe +0.11 over the masked-
+surface ceiling). `data_deletion` downgraded (real recognition but regex-redundant + thin margin);
+4 killed earlier with distinct failure codes. **Two methodological findings** (both from the
+critique-driven hardening): a **length confound** (heterogeneous-length panel) and a **surface
+confound** (lexically-trivial nears) — both now PLAYBOOK amendments (length-match + mandatory
+surface controls). Full chain in [playbook_yield.md](playbook_yield.md); records in runlog.
 **Parent:** [exp_summary_12_06_2026.md](exp_summary_12_06_2026.md) move 3.
 **Depends on:** Move 2 — ✅ DONE (2026-06-12). Verdict: **panel BUILDABLE, separation is
 genuine recognition** ([panel_outcome.md](panel_outcome.md)). So this IS a **panel recipe**,
