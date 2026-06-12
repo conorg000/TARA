@@ -46,7 +46,12 @@ Read the **"without the rule"** column first — it's the spontaneity test:
 
 1. **advice + deadline (both parts spontaneous):** readable *without* the rule, right there in the
    message body (0.93). A deadline is something the model notices on its own; gluing it to
-   "asking for advice" doesn't change that. Bottom rung confirmed.
+   "asking for advice" doesn't change that. Bottom rung confirmed. **One wrinkle worth a line:**
+   that without-rule signal *fades* as the model approaches the decision (0.93 in the body → 0.55
+   by the final token), while *with* the rule it stays sharp to the end (0.99). So the rule may have
+   a second job beyond switching a computation on — *maintaining* an already-spontaneous one all the
+   way to the decision point, instead of letting it decay as the model moves on. (A clean future-work
+   hook, not something this experiment was built to pin down.)
 
 2. **medical + Rx-drug (a world-knowledge fact):** also readable *without* the rule, everywhere,
    essentially perfectly (0.83–1.00). The model's representation of the word "amoxicillin" already
@@ -82,6 +87,16 @@ outward action **come apart**. That's the same dissociation the whole project ke
 (recognition readable under instructed silence in Exp 1; comprehension decoupled from the rule in
 Exp 2), now showing up at the rule-binding frontier: the binding *is* computed, just not faithfully
 acted on.
+
+But notice this dissociation runs the **opposite way** to every earlier one, and that flips what
+the monitor is *for*. Before, the gap was "noticed but didn't act" — the model knew something its
+output hid, so the probe's job was to **catch omissions**. Here the gap is "computed precisely but
+**over**-acted" — the model's internal read of "over/under £500" is *more faithful to the rule than
+its own flagging is*. That makes the panel more than an omission catcher: it can act as a **precision
+filter on the model's blunt actions**. When the model flags a £460 refund under an "over £500" rule,
+the probe can tell you the model itself internally represented that one as *under* the line — i.e.
+the monitor can flag the model's own false positives, using a signal the model computed but didn't
+honour. A monitor that's more reliable than the actor it watches is a genuinely useful thing to have.
 
 ## What it means for the monitoring story
 
