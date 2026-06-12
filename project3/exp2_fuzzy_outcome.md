@@ -55,6 +55,21 @@ under the rule it over-applies the flag — legal flags 56/184, medical 63/184 a
 hits — i.e. it's liberal with the flag in the action framing. (A behavioural note; the probe
 trains on the ask pass, not these flags.)
 
+**Greedy footing for the behavioural rule-flip (added 2026-06-12, Move 1 cross-tab — runlog).**
+The rule-swap's *behavioural* premise — the model's ask answers flip with the active rule — now
+has a full-set, at-home, deterministic-greedy record (it previously rested on coarse OpenRouter
+majority, 0/8). On the keeper hits: legal hits answer the **legal** question YES but the
+**medical** question YES only **0/32**; medical hits answer **medical** YES but **legal** YES
+**1/32**. So when *asked*, recognition is cleanly rule-specific — which is exactly what makes
+the activation-level K3 null (the recognition direction does *not* flip) the interesting result
+rather than a triviality. *Denominator note to avoid confusion:* the "capability 100%" figure
+elsewhere is coarse cross-paraphrase **majority** YES on own-question hits (pre-K1); the
+"own-question YES 26/32 = 81%" here is greedy, **per-paraphrase p1**, pre-K1 — different
+aggregation, not a discrepancy. The cross-tab also confirms (greedy, per-document) that *flagging*
+is strongly rule-dependent — matching-rule 100% vs swapped-rule 31% — with the 31% leakage being
+domain-general advice-seeking firing under whichever rule's label is active, not a rule-aware
+flag (see the Move 1 runlog entry).
+
 ---
 
 ## The four cells

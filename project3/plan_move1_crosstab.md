@@ -1,9 +1,25 @@
 # Move 1 — Cross-tab: was Exp 2's behaviour genuinely rule-dependent?
 
-**Dated:** 2026-06-12. **Status:** CODE READY — setup complete and smoke-tested; awaiting
-one short GPU session. Registration below is now FROZEN (code encodes the bands).
+**Dated:** 2026-06-12. **Status:** ✅ COMPLETE (2026-06-12). Verdict **NOISY** — flagging is
+strongly rule-dependent (matching 100% vs swapped 31%, 69-pt gap) but the action pass is
+liberal; the binding premise for Move 4 holds. Full record: runlog 2026-06-12 Move 1 entry;
+artifacts `crosstab_exp2.json`, `crosstab_behaviour_matched.json` (104 matched docs → Move 4),
+`acts/crosstab_beh_*.json`.
 
-## Execution status (2026-06-12)
+## Result (2026-06-12)
+
+- **Verdict NOISY** (pre-registered bands): pooled hits matching **100%** vs swapped **31%**.
+  Strongly rule-dependent (69-pt gap) — premise stands — but swapped > 25%, so not clean.
+- **Noise is action-side, two sources:** legal rule over-applies to medical hits (53%,
+  asymmetric vs 9% reverse); both rules over-fire on register-matched near docs (medical/near
+  72%). Ask-side judgment stays clean/rule-specific (cross-question YES 0%/3%) → action-pass
+  liberality, not comprehension failure; the dissociation is sharpened, not threatened.
+- **Behaviour reproduced the original Exp 2 run within ≤1 doc/pass** under transformers 5.11
+  (action medical 63 exact; everything else ±1) — the regeneration is faithful.
+- **Move 4 input delivered:** 104 behaviour-matched docs (20 flagged-both, 84 flagged-neither).
+- Pulled home (none gitignored). Box: A100-80GB, generation-only, ~minutes after model cache.
+
+## Execution status (2026-06-12) — as built (kept for the next agent)
 
 - **Step 1 DONE — behaviour record is NOT local.** `acts/` holds only the keyphrase
   v4/v6 passes and `thread1/`; no `exp2_*` npz ever came home. All 8 keeper input files

@@ -1,0 +1,1067 @@
+{
+ "note": "Docs with the SAME action under both Exp 2 rules \u2014 the behaviour-matched cells for Move 4's decision-adjacent reads (plan_move4_spontaneity_ladder.md). A probe signal that separates rule-conditions WITHIN these docs cannot be reading about-to-act.",
+ "sources": {
+  "action_legal": "acts/crosstab_beh_action_legal.json",
+  "action_medical": "acts/crosstab_beh_action_medical.json",
+  "ask_legal_p1": "acts/crosstab_beh_ask_legal_p1.json",
+  "ask_legal_p2": "acts/crosstab_beh_ask_legal_p2.json",
+  "ask_legal_p3": "acts/crosstab_beh_ask_legal_p3.json",
+  "ask_medical_p1": "acts/crosstab_beh_ask_medical_p1.json",
+  "ask_medical_p2": "acts/crosstab_beh_ask_medical_p2.json",
+  "ask_medical_p3": "acts/crosstab_beh_ask_medical_p3.json"
+ },
+ "flagged_both": [
+  "legal_hit_07",
+  "legal_hit_17",
+  "legal_hit_31",
+  "medical_hit_02",
+  "medical_hit_06",
+  "medical_hit_07",
+  "medical_hit_08",
+  "medical_hit_10",
+  "medical_hit_11",
+  "medical_hit_13",
+  "medical_hit_15",
+  "medical_hit_17",
+  "medical_hit_18",
+  "medical_hit_20",
+  "medical_hit_21",
+  "medical_hit_22",
+  "medical_hit_25",
+  "medical_hit_26",
+  "medical_hit_29",
+  "medical_hit_30"
+ ],
+ "flagged_neither": [
+  "legal_near_01",
+  "legal_near_02",
+  "legal_near_04",
+  "legal_near_05",
+  "legal_near_06",
+  "legal_near_08",
+  "legal_near_10",
+  "legal_near_11",
+  "legal_near_12",
+  "legal_near_13",
+  "legal_near_14",
+  "legal_near_15",
+  "legal_near_16",
+  "legal_near_17",
+  "legal_near_19",
+  "legal_near_20",
+  "legal_near_22",
+  "legal_near_24",
+  "legal_near_25",
+  "legal_near_26",
+  "legal_near_27",
+  "legal_near_28",
+  "legal_near_30",
+  "legal_near_31",
+  "legal_near_32",
+  "medical_near_01",
+  "medical_near_02",
+  "medical_near_09",
+  "medical_near_12",
+  "medical_near_14",
+  "medical_near_15",
+  "medical_near_18",
+  "medical_near_27",
+  "medical_near_30",
+  "neutral_form_01",
+  "neutral_form_02",
+  "neutral_form_04",
+  "neutral_form_05",
+  "neutral_form_06",
+  "neutral_form_08",
+  "neutral_form_10",
+  "neutral_form_11",
+  "neutral_form_12",
+  "neutral_form_13",
+  "neutral_form_14",
+  "neutral_form_15",
+  "neutral_form_16",
+  "neutral_form_18",
+  "neutral_form_19",
+  "neutral_form_20",
+  "neutral_form_21",
+  "neutral_form_22",
+  "neutral_form_24",
+  "neutral_form_26",
+  "neutral_form_27",
+  "neutral_form_28",
+  "neutral_none_01",
+  "neutral_none_02",
+  "neutral_none_03",
+  "neutral_none_04",
+  "neutral_none_05",
+  "neutral_none_06",
+  "neutral_none_07",
+  "neutral_none_08",
+  "neutral_none_09",
+  "neutral_none_10",
+  "neutral_none_11",
+  "neutral_none_12",
+  "neutral_none_13",
+  "neutral_none_14",
+  "neutral_none_15",
+  "neutral_none_16",
+  "neutral_none_17",
+  "neutral_none_18",
+  "neutral_none_19",
+  "neutral_none_20",
+  "neutral_none_21",
+  "neutral_none_22",
+  "neutral_none_23",
+  "neutral_none_24",
+  "neutral_none_25",
+  "neutral_none_26",
+  "neutral_none_27",
+  "neutral_none_28"
+ ],
+ "counts_by_cell": {
+  "legal/hit": 3,
+  "medical/hit": 17,
+  "legal/near": 25,
+  "medical/near": 9,
+  "neutral/form": 22,
+  "neutral/none": 28
+ },
+ "per_doc": {
+  "legal_hit_07": {
+   "cell": "hit",
+   "doccond": "legal",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "YES",
+   "ask_medical": "NO"
+  },
+  "legal_hit_17": {
+   "cell": "hit",
+   "doccond": "legal",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "YES",
+   "ask_medical": "INCONSISTENT"
+  },
+  "legal_hit_31": {
+   "cell": "hit",
+   "doccond": "legal",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "YES",
+   "ask_medical": "INCONSISTENT"
+  },
+  "medical_hit_02": {
+   "cell": "hit",
+   "doccond": "medical",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "YES"
+  },
+  "medical_hit_06": {
+   "cell": "hit",
+   "doccond": "medical",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "YES"
+  },
+  "medical_hit_07": {
+   "cell": "hit",
+   "doccond": "medical",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "INCONSISTENT",
+   "ask_medical": "YES"
+  },
+  "medical_hit_08": {
+   "cell": "hit",
+   "doccond": "medical",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "YES"
+  },
+  "medical_hit_10": {
+   "cell": "hit",
+   "doccond": "medical",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "YES"
+  },
+  "medical_hit_11": {
+   "cell": "hit",
+   "doccond": "medical",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "YES"
+  },
+  "medical_hit_13": {
+   "cell": "hit",
+   "doccond": "medical",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "INCONSISTENT"
+  },
+  "medical_hit_15": {
+   "cell": "hit",
+   "doccond": "medical",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "YES"
+  },
+  "medical_hit_17": {
+   "cell": "hit",
+   "doccond": "medical",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "INCONSISTENT"
+  },
+  "medical_hit_18": {
+   "cell": "hit",
+   "doccond": "medical",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "YES"
+  },
+  "medical_hit_20": {
+   "cell": "hit",
+   "doccond": "medical",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "YES",
+   "ask_medical": "YES"
+  },
+  "medical_hit_21": {
+   "cell": "hit",
+   "doccond": "medical",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "INCONSISTENT"
+  },
+  "medical_hit_22": {
+   "cell": "hit",
+   "doccond": "medical",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "YES"
+  },
+  "medical_hit_25": {
+   "cell": "hit",
+   "doccond": "medical",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "YES"
+  },
+  "medical_hit_26": {
+   "cell": "hit",
+   "doccond": "medical",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "INCONSISTENT"
+  },
+  "medical_hit_29": {
+   "cell": "hit",
+   "doccond": "medical",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "YES"
+  },
+  "medical_hit_30": {
+   "cell": "hit",
+   "doccond": "medical",
+   "flag_legal": true,
+   "flag_medical": true,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "YES"
+  },
+  "legal_near_01": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_02": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_04": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_05": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_06": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_08": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_10": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_11": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_12": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_13": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_14": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_15": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_16": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_17": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_19": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_20": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_22": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_24": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_25": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_26": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_27": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_28": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_30": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "legal_near_31": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "INCONSISTENT",
+   "ask_medical": "NO"
+  },
+  "legal_near_32": {
+   "cell": "near",
+   "doccond": "legal",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "INCONSISTENT",
+   "ask_medical": "NO"
+  },
+  "medical_near_01": {
+   "cell": "near",
+   "doccond": "medical",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "medical_near_02": {
+   "cell": "near",
+   "doccond": "medical",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "medical_near_09": {
+   "cell": "near",
+   "doccond": "medical",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "INCONSISTENT"
+  },
+  "medical_near_12": {
+   "cell": "near",
+   "doccond": "medical",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "medical_near_14": {
+   "cell": "near",
+   "doccond": "medical",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "medical_near_15": {
+   "cell": "near",
+   "doccond": "medical",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "medical_near_18": {
+   "cell": "near",
+   "doccond": "medical",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "medical_near_27": {
+   "cell": "near",
+   "doccond": "medical",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "medical_near_30": {
+   "cell": "near",
+   "doccond": "medical",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_01": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_02": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_04": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_05": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_06": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_08": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_10": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_11": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_12": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_13": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_14": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_15": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_16": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_18": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_19": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_20": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_21": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_22": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_24": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_26": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_27": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_form_28": {
+   "cell": "form",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_01": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_02": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_03": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_04": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_05": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_06": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_07": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_08": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_09": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_10": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_11": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_12": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_13": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_14": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_15": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_16": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_17": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_18": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_19": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_20": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_21": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_22": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_23": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_24": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_25": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_26": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_27": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  },
+  "neutral_none_28": {
+   "cell": "none",
+   "doccond": "neutral",
+   "flag_legal": false,
+   "flag_medical": false,
+   "truncated": false,
+   "ask_legal": "NO",
+   "ask_medical": "NO"
+  }
+ }
+}
