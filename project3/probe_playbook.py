@@ -102,10 +102,11 @@ def band_median(rows: list[dict], key: str) -> float:
     return float(np.median(band)) if band else float("nan")
 
 
-def analyze(cond: str, conds: list[str], acts_dir: str, position: str, seed: int) -> dict:
+def analyze(cond: str, conds: list[str], acts_dir: str, position: str, seed: int,
+            prefix: str = "playbook") -> dict:
     others = [c for c in conds if c != cond]
-    ask_ps = [load_npz(f"{acts_dir}/playbook_ask_{cond}_p{k}", position) for k in (1, 2, 3)]
-    act = load_npz(f"{acts_dir}/playbook_action", position)
+    ask_ps = [load_npz(f"{acts_dir}/{prefix}_ask_{cond}_p{k}", position) for k in (1, 2, 3)]
+    act = load_npz(f"{acts_dir}/{prefix}_action", position)
 
     kept, y_all, n_drop = consistency_filter(ask_ps)
     base = ask_ps[0]
@@ -230,6 +231,7 @@ def main() -> None:
     ap.add_argument("--acts-dir", default="acts")
     ap.add_argument("--positions", default=",".join(DEFAULT_POSITIONS))
     ap.add_argument("--flag-vocab", default="playbook_flag_vocab.json")
+    ap.add_argument("--prefix", default="playbook", help="file stem: playbook | pbmask")
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--out", default="probe_playbook.json")
     args = ap.parse_args()
@@ -242,7 +244,7 @@ def main() -> None:
     for cond in conds:
         report[cond] = {}
         for pos in positions:
-            b = analyze(cond, conds, args.acts_dir, pos, args.seed)
+            b = analyze(cond, conds, args.acts_dir, pos, args.seed, args.prefix)
             pure_store[(cond, pos)] = b.pop("_pure")
             report[cond][pos] = b
             others = [c for c in conds if c != cond]

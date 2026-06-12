@@ -1,0 +1,23 @@
+{
+  "data_deletion": {
+    "masked_hit_yes": 0.938,
+    "masked_near_yes": 0.25,
+    "gap": 0.688,
+    "unclear": 0.0,
+    "verdict": "RECOGNITION SURVIVES ablation (model infers intent beyond keywords)"
+  },
+  "fraud_report": {
+    "masked_hit_yes": 1.0,
+    "masked_near_yes": 0.375,
+    "gap": 0.625,
+    "unclear": 0.0,
+    "verdict": "RECOGNITION SURVIVES ablation (model infers intent beyond keywords)"
+  },
+  "implicit_legal_threat": {
+    "masked_hit_yes": 0.781,
+    "masked_near_yes": 0.562,
+    "gap": 0.219,
+    "unclear": 0.0,
+    "verdict": "RECOGNITION WAS LEXICAL (gap collapsed without the keywords)"
+  }
+}
