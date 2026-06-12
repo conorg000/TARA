@@ -337,7 +337,16 @@ acting on it mid-stage is not.)*
 - Graded-belief test: on borderline fuzzy items, does probe score track the model's
   paraphrase flip-rate? (Natural Exp 2 follow-on.)
 - Cross-model replication (Llama / Gemma / larger Qwen).
-- Multi-condition separability / composition (the 2×2 panel question).
+- ~~Multi-condition separability / composition (the 2×2 panel question).~~ **DONE → Move 2
+  (2026-06-12): panel buildable, separation is genuine recognition (survives topic-removal).**
+- **Topic-matched separability (Move 2 strengthener; for AFTER Move 3).** Move 2 established
+  recognition-separability by *removing* topic from legal/medical (a control-dependent claim).
+  The unconditional version: a condition pair on the SAME topic differing only in the
+  recognition criterion (e.g. "seeking advice" vs "making a complaint", any topic), so there
+  is no topic to remove at all. Makes "not keywords" hold by construction, not by control.
+- **N>2 panel interference curve.** Folded into Move 3 (run yield conditions in one shared
+  prompt → per-condition specificity + mean pairwise cosine as N climbs, for free). Tracked
+  there; listed here for visibility.
 - Pool v4/v6 natural gaps for a corroborating natural-gap analysis.
 - Monitor bake-off: probe vs LLM judge, accuracy-per-dollar (end-game deliverable).
 
