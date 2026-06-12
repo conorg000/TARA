@@ -8,9 +8,14 @@ Not the full first-time guide (SSH keygen etc. is already done — `arena_key` i
 registered with the vast account). Just the per-instance basics:
 
 1. **Conor rents a new instance** on [vast.ai](https://cloud.vast.ai): PyTorch
-   template, a **24 GB** GPU (RTX 3090/4090), **~50 GB** disk, prefer a
-   **verified, >99% reliability** host. (A port-binding error on first boot =
-   bad host; destroy and rent a different machine.)
+   template, prefer a **verified, >99% reliability** host. (A port-binding error on
+   first boot = bad host; destroy and rent a different machine.) **Size to the model:**
+   - **8B work** (keyphrase 8B): a **24 GB** GPU (RTX 3090/4090), **~50 GB** disk.
+   - **32B work** (Qwen3-32B — Exp 2, thread-1/1b, and the Move 1–4 follow-ups): an
+     **A100-80GB**. 32B in bf16 is ~64 GB of weights, so a 24 GB card can't load it.
+     Disk: **~100 GB** to hold the ~65 GB model cache (more if a run *dumps activations*
+     — thread-1 needed 120 GB; a **generation-only** job like Move 1 writes only KB of
+     JSON, so the cache is the only real disk cost).
 2. **Grab the "Direct ssh connect" line** (`ssh -p <port> root@<ip> ...`) and
    paste it to Claude / update the `arena` block in `~/.ssh/config`:
    ```
