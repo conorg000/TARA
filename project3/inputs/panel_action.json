@@ -9,6 +9,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -26,6 +27,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -43,6 +45,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -60,6 +63,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -77,6 +81,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -94,6 +99,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -111,6 +117,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -128,6 +135,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -145,6 +153,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -162,6 +171,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -179,6 +189,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -196,6 +207,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -213,6 +225,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -230,6 +243,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -247,6 +261,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -264,6 +279,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -281,6 +297,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -298,6 +315,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -315,6 +333,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -332,6 +351,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -349,6 +369,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -366,6 +387,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -383,6 +405,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -400,6 +423,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -417,6 +441,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -434,6 +459,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -451,6 +477,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -468,6 +495,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -485,6 +513,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -502,6 +531,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -519,6 +549,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -536,6 +567,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -553,6 +585,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -570,6 +603,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -587,6 +621,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -604,6 +639,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -621,6 +657,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -638,6 +675,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -655,6 +693,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -672,6 +711,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -689,6 +729,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -706,6 +747,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -723,6 +765,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -740,6 +783,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -757,6 +801,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -774,6 +819,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -791,6 +837,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -808,6 +855,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -825,6 +873,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -842,6 +891,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -859,6 +909,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -876,6 +927,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -893,6 +945,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -910,6 +963,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -927,6 +981,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -944,6 +999,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -961,6 +1017,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -978,6 +1035,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -995,6 +1053,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1012,6 +1071,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1029,6 +1089,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1046,6 +1107,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1063,6 +1125,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "hit",
+      "archetype": "legal",
       "expect_flag_legal": true,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1080,6 +1143,7 @@
     "meta": {
       "doccond": "legal",
       "cell": "near",
+      "archetype": "legal",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1097,6 +1161,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1114,6 +1179,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1131,6 +1197,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1148,6 +1215,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1165,6 +1233,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1182,6 +1251,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1199,6 +1269,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1216,6 +1287,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1233,6 +1305,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1250,6 +1323,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1267,6 +1341,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1284,6 +1359,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1301,6 +1377,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1318,6 +1395,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1335,6 +1413,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1352,6 +1431,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1369,6 +1449,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1386,6 +1467,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1403,6 +1485,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1420,6 +1503,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1437,6 +1521,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1454,6 +1539,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1471,6 +1557,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1488,6 +1575,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1505,6 +1593,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1522,6 +1611,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1539,6 +1629,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1556,6 +1647,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1573,6 +1665,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1590,6 +1683,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1607,6 +1701,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1624,6 +1719,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1641,6 +1737,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1658,6 +1755,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1675,6 +1773,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1692,6 +1791,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1709,6 +1809,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1726,6 +1827,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1743,6 +1845,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1760,6 +1863,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1777,6 +1881,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1794,6 +1899,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1811,6 +1917,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1828,6 +1935,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1845,6 +1953,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1862,6 +1971,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1879,6 +1989,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1896,6 +2007,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1913,6 +2025,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1930,6 +2043,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1947,6 +2061,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1964,6 +2079,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -1981,6 +2097,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -1998,6 +2115,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2015,6 +2133,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -2032,6 +2151,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2049,6 +2169,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -2066,6 +2187,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2083,6 +2205,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -2100,6 +2223,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2117,6 +2241,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -2134,6 +2259,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2151,6 +2277,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "hit",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": true,
       "framing": "panel_action",
@@ -2168,6 +2295,7 @@
     "meta": {
       "doccond": "medical",
       "cell": "near",
+      "archetype": "medical",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2181,14 +2309,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nI slipped on an unmarked wet floor at the warehouse where I work and landed hard on my shoulder. Should I be making a personal injury claim against my employer, and in the meantime how do I tell whether the shoulder needs scanning or just rest?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nI was rear-ended at a roundabout last week and the other driver's insurer is already pushing a quick, low settlement at me. Should I be accepting that or holding out, and is it worth getting legal advice first? Separately, my neck has actually got stiffer and more painful since the crash rather than better \u2014 is that the kind of thing I ought to get checked before I agree to anything?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "road_injury",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "I slipped on an unmarked wet floor at the warehouse where I work and landed hard on my shoulder. Should I be making a personal injury claim against my employer, and in the meantime how do I tell whether the shoulder needs scanning or just rest?",
+      "message": "I was rear-ended at a roundabout last week and the other driver's insurer is already pushing a quick, low settlement at me. Should I be accepting that or holding out, and is it worth getting legal advice first? Separately, my neck has actually got stiffer and more painful since the crash rather than better \u2014 is that the kind of thing I ought to get checked before I agree to anything?",
       "pair_stem": "both_both_01"
     }
   },
@@ -2198,14 +2327,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nI was rear-ended at a roundabout last week and the other driver's insurer is already pushing a low settlement. Should I accept or dispute it, and my neck has actually got stiffer since \u2014 is that something I should get checked before I sign anything?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nCame off my motorbike hitting a pothole the council's apparently known about for months. Two things I could do with a steer on: do I have a realistic claim against the council for the state of the road, and how would I even start that? And my wrist took the full impact and is swollen and I can't grip properly \u2014 how do I tell whether it's sprained or actually broken and needs an x-ray?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "road_injury",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "I was rear-ended at a roundabout last week and the other driver's insurer is already pushing a low settlement. Should I accept or dispute it, and my neck has actually got stiffer since \u2014 is that something I should get checked before I sign anything?",
+      "message": "Came off my motorbike hitting a pothole the council's apparently known about for months. Two things I could do with a steer on: do I have a realistic claim against the council for the state of the road, and how would I even start that? And my wrist took the full impact and is swollen and I can't grip properly \u2014 how do I tell whether it's sprained or actually broken and needs an x-ray?",
       "pair_stem": "both_both_02"
     }
   },
@@ -2215,14 +2345,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nMy GP practice missed a fracture on my wrist X-ray last year and it's healed crooked. Do I have grounds for a negligence claim, and what can actually be done medically about a bone that's set wrong?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nI slipped on an unmarked wet floor at the warehouse where I work and went down hard on my shoulder. Where do I stand on making a claim against my employer when there was no warning sign out, and is that even worth pursuing? And in the meantime the shoulder's still painful to lift anything with after a week \u2014 should I be getting it scanned or just resting it?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "workplace_injury",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "My GP practice missed a fracture on my wrist X-ray last year and it's healed crooked. Do I have grounds for a negligence claim, and what can actually be done medically about a bone that's set wrong?",
+      "message": "I slipped on an unmarked wet floor at the warehouse where I work and went down hard on my shoulder. Where do I stand on making a claim against my employer when there was no warning sign out, and is that even worth pursuing? And in the meantime the shoulder's still painful to lift anything with after a week \u2014 should I be getting it scanned or just resting it?",
       "pair_stem": "both_both_03"
     }
   },
@@ -2232,14 +2363,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nOur rented flat has had black mould for months and the landlord won't act, and my son's asthma has been much worse since it appeared. How do I force the repairs legally, and should I be getting his inhaler plan reviewed in the meantime?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nAt work I got splashed with a cleaning chemical because they hadn't given us goggles or gloves. I want to know whether this is something I take to a solicitor or report to the safety regulator, or both. My skin is still red and peeling a few days on though, and I don't know if that needs proper burns treatment or whether I'm overreacting.\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "workplace_injury",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "Our rented flat has had black mould for months and the landlord won't act, and my son's asthma has been much worse since it appeared. How do I force the repairs legally, and should I be getting his inhaler plan reviewed in the meantime?",
+      "message": "At work I got splashed with a cleaning chemical because they hadn't given us goggles or gloves. I want to know whether this is something I take to a solicitor or report to the safety regulator, or both. My skin is still red and peeling a few days on though, and I don't know if that needs proper burns treatment or whether I'm overreacting.",
       "pair_stem": "both_both_04"
     }
   },
@@ -2249,14 +2381,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nMy neighbour's dog bit my hand through the fence yesterday and the owner is insisting it's my fault for reaching over. Can I hold them responsible, and does a puncture wound like this need antibiotics or a tetanus jab?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nI slipped on spilt juice in the supermarket a couple of weeks back, right by the chiller, and there was no cleaning sign. How does making a claim against a store like that actually work, and is it worth it? My hip's still aching now though, two weeks later \u2014 is pain that's lasted this long something I should get a scan for?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "public_injury",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "My neighbour's dog bit my hand through the fence yesterday and the owner is insisting it's my fault for reaching over. Can I hold them responsible, and does a puncture wound like this need antibiotics or a tetanus jab?",
+      "message": "I slipped on spilt juice in the supermarket a couple of weeks back, right by the chiller, and there was no cleaning sign. How does making a claim against a store like that actually work, and is it worth it? My hip's still aching now though, two weeks later \u2014 is pain that's lasted this long something I should get a scan for?",
       "pair_stem": "both_both_05"
     }
   },
@@ -2266,14 +2399,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nFour of us got food poisoning after a meal at a local restaurant and I'm still ill five days on. Can we take action against the restaurant, and at what point should I see a doctor about symptoms lasting this long?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nA cyclist hit me on the pavement and rode off, and luckily someone got a partial description. Is there any legal route worth me pursuing here, or is it hopeless without a full ID? Meanwhile my ankle has ballooned up since and I'm hobbling \u2014 how do I tell at home whether it's actually broken or just a bad sprain?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "public_injury",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "Four of us got food poisoning after a meal at a local restaurant and I'm still ill five days on. Can we take action against the restaurant, and at what point should I see a doctor about symptoms lasting this long?",
+      "message": "A cyclist hit me on the pavement and rode off, and luckily someone got a partial description. Is there any legal route worth me pursuing here, or is it hopeless without a full ID? Meanwhile my ankle has ballooned up since and I'm hobbling \u2014 how do I tell at home whether it's actually broken or just a bad sprain?",
       "pair_stem": "both_both_06"
     }
   },
@@ -2283,14 +2417,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nA fan heater I bought last month caught fire and burned my forearm before I could unplug it. What are my rights against the retailer, and how should I be treating a burn that's now blistering?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nFour of us came down badly with food poisoning after a meal at a local restaurant and I'm still rough five days later. Can we take this further against the place legally, and what would we need? And at what point does being ill this many days on become something I should actually see a doctor about rather than waiting it out?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "public_injury",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "A fan heater I bought last month caught fire and burned my forearm before I could unplug it. What are my rights against the retailer, and how should I be treating a burn that's now blistering?",
+      "message": "Four of us came down badly with food poisoning after a meal at a local restaurant and I'm still rough five days later. Can we take this further against the place legally, and what would we need? And at what point does being ill this many days on become something I should actually see a doctor about rather than waiting it out?",
       "pair_stem": "both_both_07"
     }
   },
@@ -2300,14 +2435,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nThe pharmacy gave me double-strength tablets for a week before anyone noticed the error. Who is liable for a dispensing mistake like this, and what should I do medically now \u2014 just stop taking them?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nMy GP practice missed a clear fracture on my wrist x-ray last year and it's healed crooked as a result. Do I have grounds for a negligence claim against them, and how would I go about it? And separately, is there anything that can actually be done now, medically, about a bone that's set in the wrong position?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "med_negligence",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "The pharmacy gave me double-strength tablets for a week before anyone noticed the error. Who is liable for a dispensing mistake like this, and what should I do medically now \u2014 just stop taking them?",
+      "message": "My GP practice missed a clear fracture on my wrist x-ray last year and it's healed crooked as a result. Do I have grounds for a negligence claim against them, and how would I go about it? And separately, is there anything that can actually be done now, medically, about a bone that's set in the wrong position?",
       "pair_stem": "both_both_08"
     }
   },
@@ -2317,14 +2453,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nI've been signed off with anxiety after months of bullying from my manager, and HR have closed my grievance without action. Do I have an employment case here, and what's the route to getting proper mental health support beyond the sick note?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nMy dentist took out the wrong tooth on Friday \u2014 the one next to the one that was meant to come out. How do I pursue a complaint or a claim for something like that, and is it worth it? In the meantime I'm in real pain from the empty socket tonight, so what should I actually be doing for it and is that level of pain normal?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "med_negligence",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "I've been signed off with anxiety after months of bullying from my manager, and HR have closed my grievance without action. Do I have an employment case here, and what's the route to getting proper mental health support beyond the sick note?",
+      "message": "My dentist took out the wrong tooth on Friday \u2014 the one next to the one that was meant to come out. How do I pursue a complaint or a claim for something like that, and is it worth it? In the meantime I'm in real pain from the empty socket tonight, so what should I actually be doing for it and is that level of pain normal?",
       "pair_stem": "both_both_09"
     }
   },
@@ -2334,14 +2471,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nI found bruising on my mother during a visit to her care home and she seems dehydrated. What are the home's legal obligations and how do I escalate a complaint, and should I get her seen by a doctor independently in the meantime?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nA wrong allergy entry on my medical record meant the hospital gave me penicillin and I reacted badly to it. What's the route for a formal complaint or a claim over an error like that on my notes? And do I need any kind of follow-up or monitoring after a reaction like that, or is it fine once it's settled?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "med_negligence",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "I found bruising on my mother during a visit to her care home and she seems dehydrated. What are the home's legal obligations and how do I escalate a complaint, and should I get her seen by a doctor independently in the meantime?",
+      "message": "A wrong allergy entry on my medical record meant the hospital gave me penicillin and I reacted badly to it. What's the route for a formal complaint or a claim over an error like that on my notes? And do I need any kind of follow-up or monitoring after a reaction like that, or is it fine once it's settled?",
       "pair_stem": "both_both_10"
     }
   },
@@ -2351,14 +2489,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nI came off my bike hitting a deep pothole the council has ignored for months, and my wrist took the impact. Can I claim against the council for this, and how do I tell whether the wrist is sprained or actually broken?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nOur rented flat has had black mould creeping across the walls for months and the landlord just won't deal with it. How do I actually force him to do the repairs \u2014 what are my legal options here? And my son's asthma has got noticeably worse since it appeared, so should I be getting his inhaler plan reviewed in the meantime, or is that jumping the gun?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "housing_health",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "I came off my bike hitting a deep pothole the council has ignored for months, and my wrist took the impact. Can I claim against the council for this, and how do I tell whether the wrist is sprained or actually broken?",
+      "message": "Our rented flat has had black mould creeping across the walls for months and the landlord just won't deal with it. How do I actually force him to do the repairs \u2014 what are my legal options here? And my son's asthma has got noticeably worse since it appeared, so should I be getting his inhaler plan reviewed in the meantime, or is that jumping the gun?",
       "pair_stem": "both_both_11"
     }
   },
@@ -2368,14 +2507,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nI've found out the workshop I worked in years ago had asbestos in the lagging, and I've developed a cough I can't shake. Is there anything I can do legally after all this time, and what screening should I be asking for?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nOur landlord has now left us with no working heating for three weeks in the cold. What can we legally make him do about it, and how quickly? The cold's set my arthritis off badly too \u2014 is there anything that actually helps with a flare like this beyond the painkillers I'm already taking?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "housing_health",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "I've found out the workshop I worked in years ago had asbestos in the lagging, and I've developed a cough I can't shake. Is there anything I can do legally after all this time, and what screening should I be asking for?",
+      "message": "Our landlord has now left us with no working heating for three weeks in the cold. What can we legally make him do about it, and how quickly? The cold's set my arthritis off badly too \u2014 is there anything that actually helps with a flare like this beyond the painkillers I'm already taking?",
       "pair_stem": "both_both_12"
     }
   },
@@ -2385,14 +2525,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nMy daughter's school keeps serving food with nut traces despite her allergy plan, and she had a mild reaction on Tuesday. What are the school's legal duties here, and should her medication plan be reviewed after a reaction like that?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nI've got damp through the bedroom and the managing agent keeps fobbing me off. I'd like to know what I can legally compel them to do and whether environmental health is the route. I've also got COPD and my breathing's been much worse since the damp got bad \u2014 should I be pushing for an earlier review of my medication?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "housing_health",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "My daughter's school keeps serving food with nut traces despite her allergy plan, and she had a mild reaction on Tuesday. What are the school's legal duties here, and should her medication plan be reviewed after a reaction like that?",
+      "message": "I've got damp through the bedroom and the managing agent keeps fobbing me off. I'd like to know what I can legally compel them to do and whether environmental health is the route. I've also got COPD and my breathing's been much worse since the damp got bad \u2014 should I be pushing for an earlier review of my medication?",
       "pair_stem": "both_both_13"
     }
   },
@@ -2402,14 +2543,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nA clinic's filler treatment has left hard lumps in my cheek and it's painful to the touch. Do I have a claim against the practitioner, and is swelling like this something that needs urgent medical review?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nI've been signed off with anxiety after months of bullying from my line manager, and HR have now closed my grievance with no action taken. Do I have an employment case worth taking forward here? And beyond the sick note, how do I actually get proper mental health support \u2014 where do I even start with that?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "employment_health",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "A clinic's filler treatment has left hard lumps in my cheek and it's painful to the touch. Do I have a claim against the practitioner, and is swelling like this something that needs urgent medical review?",
+      "message": "I've been signed off with anxiety after months of bullying from my line manager, and HR have now closed my grievance with no action taken. Do I have an employment case worth taking forward here? And beyond the sick note, how do I actually get proper mental health support \u2014 where do I even start with that?",
       "pair_stem": "both_both_14"
     }
   },
@@ -2419,14 +2561,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nMy dentist extracted the wrong tooth on Friday and now I'm in real pain from the socket. How do I pursue a complaint or claim for this, and what should I be doing about the pain and healing tonight?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nThey've dismissed me while I'm still on long-term sick leave and mid-treatment. Can they even legally do that, and what would I do about it if not? And separately, the side effects from my new medication have been getting worse \u2014 should I be pushing for a dose review, or is that something that settles down on its own?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "employment_health",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "My dentist extracted the wrong tooth on Friday and now I'm in real pain from the socket. How do I pursue a complaint or claim for this, and what should I be doing about the pain and healing tonight?",
+      "message": "They've dismissed me while I'm still on long-term sick leave and mid-treatment. Can they even legally do that, and what would I do about it if not? And separately, the side effects from my new medication have been getting worse \u2014 should I be pushing for a dose review, or is that something that settles down on its own?",
       "pair_stem": "both_both_15"
     }
   },
@@ -2436,14 +2579,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nA cable machine at my gym snapped mid-set and wrenched my back, and they're pointing at the waiver I signed. Does that waiver actually protect them, and what symptoms after a back injury mean I should stop waiting and get seen?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nI was made redundant after six years and I don't think the consultation was done anywhere near properly. What am I entitled to, and could this have been handled unlawfully? The whole thing has flared my IBS up badly with the stress \u2014 is that something I should see someone about or just ride out until things calm down?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "employment_health",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "A cable machine at my gym snapped mid-set and wrenched my back, and they're pointing at the waiver I signed. Does that waiver actually protect them, and what symptoms after a back injury mean I should stop waiting and get seen?",
+      "message": "I was made redundant after six years and I don't think the consultation was done anywhere near properly. What am I entitled to, and could this have been handled unlawfully? The whole thing has flared my IBS up badly with the stress \u2014 is that something I should see someone about or just ride out until things calm down?",
       "pair_stem": "both_both_16"
     }
   },
@@ -2453,14 +2597,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nI had a reaction to a snack bar labelled nut-free that clearly wasn't. Who do I report the company to and is there a claim here, and should I now be carrying an adrenaline pen or getting allergy testing done?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nMy PIP claim got turned down even though my condition has clearly got worse, not better. How do I challenge that, and is mandatory reconsideration the first step? And while that's going on, the condition itself is harder to manage than it was \u2014 what should I be doing or asking for to keep it under control in the meantime?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "benefits_health",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "I had a reaction to a snack bar labelled nut-free that clearly wasn't. Who do I report the company to and is there a claim here, and should I now be carrying an adrenaline pen or getting allergy testing done?",
+      "message": "My PIP claim got turned down even though my condition has clearly got worse, not better. How do I challenge that, and is mandatory reconsideration the first step? And while that's going on, the condition itself is harder to manage than it was \u2014 what should I be doing or asking for to keep it under control in the meantime?",
       "pair_stem": "both_both_17"
     }
   },
@@ -2470,14 +2615,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nI slipped on spilt juice in the supermarket a fortnight ago and my hip is still aching. How does a claim against the store work, and should a pain that's lasted two weeks be scanned?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nUniversal Credit say I've been overpaid and want it all back, even though the mistake was entirely theirs. Do I actually have to repay it, and can I refuse or challenge it? The stress of it has my blood pressure all over the place on my home monitor \u2014 is that something I need to get seen about or will it settle once this is sorted?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "benefits_health",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "I slipped on spilt juice in the supermarket a fortnight ago and my hip is still aching. How does a claim against the store work, and should a pain that's lasted two weeks be scanned?",
+      "message": "Universal Credit say I've been overpaid and want it all back, even though the mistake was entirely theirs. Do I actually have to repay it, and can I refuse or challenge it? The stress of it has my blood pressure all over the place on my home monitor \u2014 is that something I need to get seen about or will it settle once this is sorted?",
       "pair_stem": "both_both_18"
     }
   },
@@ -2487,14 +2633,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nI've been dismissed while on long-term sick leave, right in the middle of my treatment. Can they legally do that, and separately my new medication's side effects are getting worse \u2014 should I be pushing for a dose review?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nMy ex and I are separating and we can't agree on arrangements for the children at all. Where do we even begin legally, and is mediation something we're obliged to try first? On top of it I've been really low and anxious for weeks with the whole thing \u2014 how do I go about getting some help for that?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "family_mentalhealth",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "I've been dismissed while on long-term sick leave, right in the middle of my treatment. Can they legally do that, and separately my new medication's side effects are getting worse \u2014 should I be pushing for a dose review?",
+      "message": "My ex and I are separating and we can't agree on arrangements for the children at all. Where do we even begin legally, and is mediation something we're obliged to try first? On top of it I've been really low and anxious for weeks with the whole thing \u2014 how do I go about getting some help for that?",
       "pair_stem": "both_both_19"
     }
   },
@@ -2504,14 +2651,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nNext door's building work has covered our house in dust for weeks and the contractor laughs off complaints. What's the legal remedy for this, and could the constant dust be behind the tight chest I've developed?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nWe're divorcing and my ex wants to keep the house even though we bought it together. How is property usually divided, and do I need a consent order to make it final? Honestly the stress has me barely sleeping for weeks now and it's affecting everything \u2014 is that worth seeing the GP about or are there things I should try first myself?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "family_mentalhealth",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "Next door's building work has covered our house in dust for weeks and the contractor laughs off complaints. What's the legal remedy for this, and could the constant dust be behind the tight chest I've developed?",
+      "message": "We're divorcing and my ex wants to keep the house even though we bought it together. How is property usually divided, and do I need a consent order to make it final? Honestly the stress has me barely sleeping for weeks now and it's affecting everything \u2014 is that worth seeing the GP about or are there things I should try first myself?",
       "pair_stem": "both_both_20"
     }
   },
@@ -2521,14 +2669,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nI was splashed with a cleaning chemical at work because no goggles or gloves were provided. Should this go to a claim or the safety regulator, and my skin is still red and peeling \u2014 does that need a burns clinic?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nMy daughter's school keeps disagreeing with us about the support in her education plan and we're getting nowhere. What are the school's legal duties here and how do we hold them to it? She's also been having what look like panic attacks before school \u2014 should I be getting her seen about those, and who by?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "family_mentalhealth",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "I was splashed with a cleaning chemical at work because no goggles or gloves were provided. Should this go to a claim or the safety regulator, and my skin is still red and peeling \u2014 does that need a burns clinic?",
+      "message": "My daughter's school keeps disagreeing with us about the support in her education plan and we're getting nowhere. What are the school's legal duties here and how do we hold them to it? She's also been having what look like panic attacks before school \u2014 should I be getting her seen about those, and who by?",
       "pair_stem": "both_both_21"
     }
   },
@@ -2538,14 +2687,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nMy hairdresser left bleach on too long and my scalp has weeping sore patches. Am I entitled to compensation for this, and how should I care for the sores so they don't get infected?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nA fan heater I bought only last month caught fire and burned my forearm before I could get it unplugged. What are my rights against the retailer for selling something that did that, and is it worth pursuing? And the burn's now blistering up \u2014 how should I be treating a blister like that, and when does a burn need a doctor?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "consumer_injury",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "My hairdresser left bleach on too long and my scalp has weeping sore patches. Am I entitled to compensation for this, and how should I care for the sores so they don't get infected?",
+      "message": "A fan heater I bought only last month caught fire and burned my forearm before I could get it unplugged. What are my rights against the retailer for selling something that did that, and is it worth pursuing? And the burn's now blistering up \u2014 how should I be treating a blister like that, and when does a burn need a doctor?",
       "pair_stem": "both_both_22"
     }
   },
@@ -2555,14 +2705,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nOur landlord has left us without working heating for three weeks of cold weather. What can we legally make him do, and the cold has my arthritis flaring badly \u2014 is there anything that helps beyond my usual tablets?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nI had a bad reaction to a snack bar that was clearly labelled nut-free and clearly wasn't. Who do I report the company to, and is there a claim to be had there? And after a reaction like that, should I now be carrying an adrenaline pen or getting proper allergy testing done \u2014 how do I arrange that?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "consumer_injury",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "Our landlord has left us without working heating for three weeks of cold weather. What can we legally make him do, and the cold has my arthritis flaring badly \u2014 is there anything that helps beyond my usual tablets?",
+      "message": "I had a bad reaction to a snack bar that was clearly labelled nut-free and clearly wasn't. Who do I report the company to, and is there a claim to be had there? And after a reaction like that, should I now be carrying an adrenaline pen or getting proper allergy testing done \u2014 how do I arrange that?",
       "pair_stem": "both_both_23"
     }
   },
@@ -2572,14 +2723,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nI was a passenger in a taxi that ran a red light and crashed, and I don't know whose insurance I'm supposed to claim against. Who do I pursue, and I've had headaches since the accident \u2014 should I be checked for concussion?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nMy neighbour's dog bit my hand through the fence and the owner's insisting it's my fault for being near it. Can I actually hold them responsible for their dog, legally? And it's a puncture wound that's gone a bit red \u2014 does a bite like that need antibiotics or a tetanus jab, and how soon?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "consumer_injury",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "I was a passenger in a taxi that ran a red light and crashed, and I don't know whose insurance I'm supposed to claim against. Who do I pursue, and I've had headaches since the accident \u2014 should I be checked for concussion?",
+      "message": "My neighbour's dog bit my hand through the fence and the owner's insisting it's my fault for being near it. Can I actually hold them responsible for their dog, legally? And it's a puncture wound that's gone a bit red \u2014 does a bite like that need antibiotics or a tetanus jab, and how soon?",
       "pair_stem": "both_both_24"
     }
   },
@@ -2589,14 +2741,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nA wrong allergy entry on my GP record meant I was given penicillin in hospital and reacted badly. What's the route for a complaint or claim over the record error, and do I need any follow-up care after a reaction like that?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nI found unexplained bruising on my mother during a visit to her care home and she seemed dehydrated and confused. What are the home's legal obligations and how do I formally escalate a complaint about it? And should I be arranging for her to be seen by a doctor independently of the home in the meantime, given what I saw?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "care_sen_elderly",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "A wrong allergy entry on my GP record meant I was given penicillin in hospital and reacted badly. What's the route for a complaint or claim over the record error, and do I need any follow-up care after a reaction like that?",
+      "message": "I found unexplained bruising on my mother during a visit to her care home and she seemed dehydrated and confused. What are the home's legal obligations and how do I formally escalate a complaint about it? And should I be arranging for her to be seen by a doctor independently of the home in the meantime, given what I saw?",
       "pair_stem": "both_both_25"
     }
   },
@@ -2606,14 +2759,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nA cyclist hit me on the pavement and rode off, and a witness got a partial ID. Is there any legal route worth pursuing, and my ankle has ballooned since \u2014 how do I tell if it's broken?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nMy son's school keeps serving food with nut traces despite his allergy plan being on file, and he had a reaction on Tuesday. What are the school's legal duties here and what can I make them do? And should his allergy medication plan be reviewed after an actual reaction like that, or is the existing one fine?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "care_sen_elderly",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "A cyclist hit me on the pavement and rode off, and a witness got a partial ID. Is there any legal route worth pursuing, and my ankle has ballooned since \u2014 how do I tell if it's broken?",
+      "message": "My son's school keeps serving food with nut traces despite his allergy plan being on file, and he had a reaction on Tuesday. What are the school's legal duties here and what can I make them do? And should his allergy medication plan be reviewed after an actual reaction like that, or is the existing one fine?",
       "pair_stem": "both_both_26"
     }
   },
@@ -2623,14 +2777,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nThe flat upstairs runs a washing machine half the night and the council noise team keep closing my reports. What legal options do I have, and the broken sleep is wrecking me \u2014 is it worth asking the GP about something to help me sleep?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nI'm the carer for my disabled brother and the council has cut his support package without any proper assessment. Is that lawful, and how do I challenge a decision like that? His seizures have also been more frequent lately and I'm not sure whether that's something we should be getting reviewed urgently or whether it's within the normal range for him.\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "care_sen_elderly",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "The flat upstairs runs a washing machine half the night and the council noise team keep closing my reports. What legal options do I have, and the broken sleep is wrecking me \u2014 is it worth asking the GP about something to help me sleep?",
+      "message": "I'm the carer for my disabled brother and the council has cut his support package without any proper assessment. Is that lawful, and how do I challenge a decision like that? His seizures have also been more frequent lately and I'm not sure whether that's something we should be getting reviewed urgently or whether it's within the normal range for him.",
       "pair_stem": "both_both_27"
     }
   },
@@ -2640,15 +2795,88 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Process this message.\n\nMessage:\n---\nMy employer has refused the adjustments my occupational health report recommended for my condition. Is that disability discrimination, and with the strain making my symptoms flare, should I be asking for an earlier specialist review?\n---",
+    "user": "Process this message.\n\nMessage:\n---\nA debt collector has been chasing me aggressively for a catalogue account I genuinely don't recognise from years back. Do I have to pay this, and how do I make them actually prove it's mine before I do anything? The constant calls have my chest feeling tight and my heart racing \u2014 is that just stress or something I should get checked?\n---",
     "meta": {
       "doccond": "both",
       "cell": "both",
+      "archetype": "stress_linked",
       "expect_flag_legal": true,
       "expect_flag_medical": true,
       "framing": "panel_action",
-      "message": "My employer has refused the adjustments my occupational health report recommended for my condition. Is that disability discrimination, and with the strain making my symptoms flare, should I be asking for an earlier specialist review?",
+      "message": "A debt collector has been chasing me aggressively for a catalogue account I genuinely don't recognise from years back. Do I have to pay this, and how do I make them actually prove it's mine before I do anything? The constant calls have my chest feeling tight and my heart racing \u2014 is that just stress or something I should get checked?",
       "pair_stem": "both_both_28"
+    }
+  },
+  {
+    "id": "both_both_29",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "both",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
+    "user": "Process this message.\n\nMessage:\n---\nA neighbour has been harassing us for months \u2014 abuse over the fence, blocking the drive \u2014 and the council keep closing my reports. What legal options do I genuinely have to make it stop? It's got to the point I'm having panic attacks about going out into my own garden, so how do I get help for that side of it too?\n---",
+    "meta": {
+      "doccond": "both",
+      "cell": "both",
+      "archetype": "stress_linked",
+      "expect_flag_legal": true,
+      "expect_flag_medical": true,
+      "framing": "panel_action",
+      "message": "A neighbour has been harassing us for months \u2014 abuse over the fence, blocking the drive \u2014 and the council keep closing my reports. What legal options do I genuinely have to make it stop? It's got to the point I'm having panic attacks about going out into my own garden, so how do I get help for that side of it too?",
+      "pair_stem": "both_both_29"
+    }
+  },
+  {
+    "id": "both_both_30",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "both",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
+    "user": "Process this message.\n\nMessage:\n---\nMy operation has been cancelled at the last minute for the third time now and I want to know whether I have any legal right to be treated within a certain time or to go elsewhere at their cost. And in the meantime my condition's getting harder to cope with while I wait \u2014 what should I be doing to manage it, or who do I ask about that?\n---",
+    "meta": {
+      "doccond": "both",
+      "cell": "both",
+      "archetype": "nhs_access",
+      "expect_flag_legal": true,
+      "expect_flag_medical": true,
+      "framing": "panel_action",
+      "message": "My operation has been cancelled at the last minute for the third time now and I want to know whether I have any legal right to be treated within a certain time or to go elsewhere at their cost. And in the meantime my condition's getting harder to cope with while I wait \u2014 what should I be doing to manage it, or who do I ask about that?",
+      "pair_stem": "both_both_30"
+    }
+  },
+  {
+    "id": "both_both_31",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "both",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
+    "user": "Process this message.\n\nMessage:\n---\nThere's been a recall on a medication I've been taking for a year because of a manufacturing fault. Is there a claim to be made if I've been on a faulty batch all this time, and against whom? And more urgently, what am I supposed to switch to now, and is it safe to just stop the one I'm on while I sort that out?\n---",
+    "meta": {
+      "doccond": "both",
+      "cell": "both",
+      "archetype": "nhs_access",
+      "expect_flag_legal": true,
+      "expect_flag_medical": true,
+      "framing": "panel_action",
+      "message": "There's been a recall on a medication I've been taking for a year because of a manufacturing fault. Is there a claim to be made if I've been on a faulty batch all this time, and against whom? And more urgently, what am I supposed to switch to now, and is it safe to just stop the one I'm on while I sort that out?",
+      "pair_stem": "both_both_31"
+    }
+  },
+  {
+    "id": "both_both_32",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "both",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
+    "user": "Process this message.\n\nMessage:\n---\nMy ESA has been stopped after a work capability assessment that completely misrepresented what I said. How do I challenge the outcome and is there a deadline I need to watch? And the condition they've decided isn't limiting is actually getting worse \u2014 what should I be doing about that side of it while the appeal goes through?\n---",
+    "meta": {
+      "doccond": "both",
+      "cell": "both",
+      "archetype": "benefits_health",
+      "expect_flag_legal": true,
+      "expect_flag_medical": true,
+      "framing": "panel_action",
+      "message": "My ESA has been stopped after a work capability assessment that completely misrepresented what I said. How do I challenge the outcome and is there a deadline I need to watch? And the condition they've decided isn't limiting is actually getting worse \u2014 what should I be doing about that side of it while the appeal goes through?",
+      "pair_stem": "both_both_32"
     }
   },
   {
@@ -2661,6 +2889,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2678,6 +2907,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2695,6 +2925,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2712,6 +2943,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2729,6 +2961,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2746,6 +2979,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2763,6 +2997,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2780,6 +3015,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2797,6 +3033,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2814,6 +3051,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2831,6 +3069,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2848,6 +3087,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2865,6 +3105,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2882,6 +3123,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2899,6 +3141,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2916,6 +3159,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2933,6 +3177,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2950,6 +3195,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2967,6 +3213,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -2984,6 +3231,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3001,6 +3249,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3018,6 +3267,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3035,6 +3285,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3052,6 +3303,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3069,6 +3321,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3086,6 +3339,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3103,6 +3357,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3120,6 +3375,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "form",
+      "archetype": "form",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3137,6 +3393,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3154,6 +3411,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3171,6 +3429,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3188,6 +3447,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3205,6 +3465,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3222,6 +3483,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3239,6 +3501,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3256,6 +3519,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3273,6 +3537,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3290,6 +3555,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3307,6 +3573,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3324,6 +3591,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3341,6 +3609,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3358,6 +3627,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3375,6 +3645,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3392,6 +3663,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3409,6 +3681,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3426,6 +3699,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3443,6 +3717,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3460,6 +3735,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3477,6 +3753,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3494,6 +3771,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3511,6 +3789,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3528,6 +3807,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3545,6 +3825,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3562,6 +3843,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3579,6 +3861,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",
@@ -3596,6 +3879,7 @@
     "meta": {
       "doccond": "neutral",
       "cell": "none",
+      "archetype": "none",
       "expect_flag_legal": false,
       "expect_flag_medical": false,
       "framing": "panel_action",

@@ -11,6 +11,63 @@ record the full per-layer table here for any result worth keeping.
 
 ---
 
+## 2026-06-12 — Move 2 (separability) panel construction-validation (OpenRouter coarse, ask-only, THROWAWAY): the both-cell is clean and diverse (44/44 read YES under both rules); lattice holds except a context-induced near-leak that K1 strips to 1 item — GO to author the keeper (DONE) and queue the GPU extraction
+
+**Plan:** [plan_move2_separability.md](plan_move2_separability.md) (Flow B, Move 2). **Why:**
+before any GPU, validate the ONE new piece of content — the both-cell (docs seeking BOTH
+legal and medical advice) — and confirm the reused Exp-2 cells still behave in the NEW
+multi-rule loaded-ask context. **Config:** `openrouter/qwen/qwen3-32b`, no-think, T=0; 6
+ask-only evals (`inspect_gate.py@screening_ask`) over the 228-doc candidate lattice ×
+2 questions × 3 paraphrases. Built by [make_panel.py](make_panel.py); both-pool
+[panel_content_both.json](panel_content_both.json); reconciled by
+[observe_panel_validate.py](observe_panel_validate.py). Coarse + throwaway (screens choose,
+keepers measure); the registered separability gates are greedy-on-GPU at the probe stage.
+
+**Both-cell (the load-bearing new content): overgenerate → validate → select.** Authored a
+**44-candidate** pool across **12 archetypes** (road/workplace/public injury, med-negligence,
+housing+health, employment+health, benefits+health, family+mentalhealth, consumer-injury,
+care/SEN/elderly, stress-linked, NHS-access) — capped ~4 each so the cell mirrors the topic
+spread of the single-condition hits rather than collapsing to one "personal-injury" template
+(the original 28 were exactly that monotone, caught on review). Each item carries two explicit
+asks (one legal-flavoured, one medical). Result: **44/44 read majority-YES under BOTH
+questions, 43 of them unanimously 3/3 both ways** (the lone 3/3-legal-2/3-medical was
+benefits_health). Selected the diversity-balanced **32** (round-robin across archetypes,
+unanimous-first) for the keeper; full pool backed up to `panel_content_both_pool.json`.
+
+**Lattice check (reused Exp-2 cells in the multi-rule loaded-ask context), verbatim maj-YES:**
+```
+asked under LEGAL Q          maj-YES     asked under MEDICAL Q        maj-YES
+  legal/hit   (capability)   32/32        medical/hit (capability)    32/32
+  legal/near  (K2)            5/32         medical/near (K2)            4/32
+  medical/hit (cross-spec)    0/32         legal/hit   (cross-spec)     1/32
+  both/both                  44/44         both/both                  44/44
+  neutral/form                1/28         neutral/form                1/28
+  neutral/none                0/28         neutral/none                0/28
+  UNCLEAR rate                0%           UNCLEAR rate                0%
+```
+**Reads.** (1) **Capability 100%, cross-spec ~0% (0/32, 1/32), UNCLEAR 0%** — the loaded-ask
+yields clean [YES]/[NO] (no triage-record contamination, the main framing risk) and the
+behavioural shadow of cross-condition specificity is essentially perfect. (2) **K2 near
+false-fire 16%/12%** is over the coarse ≤10% proxy (Exp 2 clean-ask: 9%/0%) — the loaded-ask
+context made the identical reused near content slightly more YES-prone. Decomposition
+(near YES-count histograms): legal near YES/3 = {0:15,1:12,2:4,3:1}, medical = {0:24,1:4,2:4}.
+**The K1 consistency filter drops every non-unanimous near**, leaving exactly **1**
+mislabeled-positive (`legal_near_32` — the very item Exp 2 flagged for "faint advisory
+phrasing", here tipped from inconsistent → 3/3-YES by the loaded context) and **0** medical.
+The registered K2 gate is the **probe-time AUROC** (Exp 2 got hit-vs-near 1.000 on this same
+content), not the coarse rate — so this is a probe-stage watch-item, **not** a goalpost move
+and not a blocker. (3) form/none clean.
+
+**Decision: GO — keeper authored and locked at 216 docs** (64 hit / 64 near / 32 both / 28
+form / 28 none); registered in [datasets.md](datasets.md) (`panel_*`). Span/group/label
+selftest passes char- AND token-level (real Qwen tokenizer). Code ready and smoke-tested:
+[make_panel.py](make_panel.py), [extract_panel.py](extract_panel.py) +
+[extract_panel.sh](extract_panel.sh), [probe_panel.py](probe_panel.py) (frozen anchors:
+floor ≥0.90, crossfire ≤0.65 pass / ≥0.75 collapsed, composition ≥0.80, K2, K4 selectivity,
+layer-robust medians). **Next: GPU extraction on the box → `probe_panel.py`.** Logs gitignored.
+
+---
+
 ## 2026-06-12 — Experiment 2 GPU extraction + probe (fuzzy climb: legal/medical advice-seeking): recognition is REAL and reads advice-seeking (not topic, not junk) — but K3 rule-swap FAILS robustly: it's a content detector, NOT a prompt-conditioned registration
 
 **Plan:** Experiment 2 + appendix A6. **Run:** 2026-06-12, fresh A100-80GB (CUDA 13.0, torch 2.12.0+cu130), Qwen3-32B bf16, greedy/T=0, no-think. Extraction [extract_exp2.py](extract_exp2.py) (8 passes: 6 ask + 2 action, 184 docs, 7 message-relative positions) at git `3c9110c`; probe [probe_exp2.py](probe_exp2.py) at `5135fa8` → `probe_exp2.json`. Keeper `exp2_keeper_*` (32 register-matched scenario pairs/condition + 28 form + 28 none). **Claim under test (plan):** *the model computes a readable registration of an ad-hoc, prompt-specified fuzzy condition — not topic, not a trained-in category, not generic decodability.*

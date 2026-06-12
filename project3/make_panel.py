@@ -108,16 +108,21 @@ def load_docs() -> list[dict]:
         for i, pair in enumerate(content[cond], start=1):
             for cell, msg in (("hit", pair["hit"]), ("near", pair["near"])):
                 docs.append({"id": f"{cond}_{cell}_{i:02d}", "doccond": cond, "cell": cell,
-                             "message": msg, "pair_stem": pair_stem(cond, cell, i)})
-    for i, m in enumerate(both, start=1):
+                             "message": msg, "archetype": cond,
+                             "pair_stem": pair_stem(cond, cell, i)})
+    for i, item in enumerate(both, start=1):
+        # accept both the rich {archetype, message} form and a bare string
+        msg = item["message"] if isinstance(item, dict) else item
+        arch = item.get("archetype", "both") if isinstance(item, dict) else "both"
         docs.append({"id": f"both_both_{i:02d}", "doccond": "both", "cell": "both",
-                     "message": m, "pair_stem": pair_stem("both", "both", i)})
+                     "message": msg, "archetype": arch,
+                     "pair_stem": pair_stem("both", "both", i)})
     for i, m in enumerate(content["form"], start=1):
         docs.append({"id": f"neutral_form_{i:02d}", "doccond": "neutral", "cell": "form",
-                     "message": m, "pair_stem": pair_stem("neutral", "form", i)})
+                     "message": m, "archetype": "form", "pair_stem": pair_stem("neutral", "form", i)})
     for i, m in enumerate(content["none"], start=1):
         docs.append({"id": f"neutral_none_{i:02d}", "doccond": "neutral", "cell": "none",
-                     "message": m, "pair_stem": pair_stem("neutral", "none", i)})
+                     "message": m, "archetype": "none", "pair_stem": pair_stem("neutral", "none", i)})
     return docs
 
 
@@ -141,7 +146,7 @@ def main() -> None:
                     "system": SYSTEM_PANEL,
                     "user": ASK_USER_TMPL.format(question=question, message=d["message"]),
                     "meta": {"doccond": d["doccond"], "cell": d["cell"], "askcond": askcond,
-                             "paraphrase": k, "framing": "panel_ask",
+                             "paraphrase": k, "framing": "panel_ask", "archetype": d["archetype"],
                              "message": d["message"], "pair_stem": d["pair_stem"]},
                 })
             out = here / f"inputs/panel_ask_{askcond}_p{k}.json"
@@ -159,7 +164,7 @@ def main() -> None:
             "group": d["cell"],
             "system": SYSTEM_PANEL,
             "user": ACTION_USER_TMPL.format(message=d["message"]),
-            "meta": {"doccond": d["doccond"], "cell": d["cell"],
+            "meta": {"doccond": d["doccond"], "cell": d["cell"], "archetype": d["archetype"],
                      "expect_flag_legal": exp_legal, "expect_flag_medical": exp_medical,
                      "framing": "panel_action",
                      "message": d["message"], "pair_stem": d["pair_stem"]},

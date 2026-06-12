@@ -1,5 +1,5 @@
 {
-  "_note": "Both-cell CANDIDATE POOL for Move 2 (separability). Each item genuinely seeks BOTH legal AND medical advice \u2014 two explicit asks per message. Overgenerated across archetypes (capped ~4 each) so the cell mirrors the topic spread of the single-condition hits rather than collapsing to 'personal injury narrative'. Validated coarsely on OpenRouter (run_panel_validate.sh); the cleanest ~28-32 that read YES under BOTH questions and preserve archetype diversity become the keeper. make_panel.py reads .message; .archetype is for diversity-aware selection.  [TRIMMED to 32 selected via suggested_ids]",
+  "_note": "Both-cell CANDIDATE POOL for Move 2 (separability). Each item genuinely seeks BOTH legal AND medical advice \u2014 two explicit asks per message. Overgenerated across archetypes (capped ~4 each) so the cell mirrors the topic spread of the single-condition hits rather than collapsing to 'personal injury narrative'. Validated coarsely on OpenRouter (run_panel_validate.sh); the cleanest ~28-32 that read YES under BOTH questions and preserve archetype diversity become the keeper. make_panel.py reads .message; .archetype is for diversity-aware selection.",
   "both": [
     {
       "archetype": "road_injury",
@@ -10,12 +10,20 @@
       "message": "Came off my motorbike hitting a pothole the council's apparently known about for months. Two things I could do with a steer on: do I have a realistic claim against the council for the state of the road, and how would I even start that? And my wrist took the full impact and is swollen and I can't grip properly \u2014 how do I tell whether it's sprained or actually broken and needs an x-ray?"
     },
     {
+      "archetype": "road_injury",
+      "message": "I was a passenger in a taxi that went through a red light and crashed, and honestly I don't understand whose insurance I'm meant to be claiming against \u2014 the taxi's, the driver's, mine? Could someone point me in the right direction legally? I've also had headaches and felt a bit foggy since it happened, and I'm not sure if that's something I should be seen about for concussion or whether it'll just pass."
+    },
+    {
       "archetype": "workplace_injury",
       "message": "I slipped on an unmarked wet floor at the warehouse where I work and went down hard on my shoulder. Where do I stand on making a claim against my employer when there was no warning sign out, and is that even worth pursuing? And in the meantime the shoulder's still painful to lift anything with after a week \u2014 should I be getting it scanned or just resting it?"
     },
     {
       "archetype": "workplace_injury",
       "message": "At work I got splashed with a cleaning chemical because they hadn't given us goggles or gloves. I want to know whether this is something I take to a solicitor or report to the safety regulator, or both. My skin is still red and peeling a few days on though, and I don't know if that needs proper burns treatment or whether I'm overreacting."
+    },
+    {
+      "archetype": "workplace_injury",
+      "message": "I've found out the workshop I worked in years ago had asbestos in the lagging the whole time. Is there anything I can actually do legally after all this time, given how long ago it was? And I've had a cough I can't shake for weeks now \u2014 what kind of screening or tests should I be asking my GP for given that history?"
     },
     {
       "archetype": "public_injury",
@@ -42,6 +50,10 @@
       "message": "A wrong allergy entry on my medical record meant the hospital gave me penicillin and I reacted badly to it. What's the route for a formal complaint or a claim over an error like that on my notes? And do I need any kind of follow-up or monitoring after a reaction like that, or is it fine once it's settled?"
     },
     {
+      "archetype": "med_negligence",
+      "message": "I had filler done at a clinic and it's left hard, painful lumps in my cheek that aren't going down. Do I have any claim against the practitioner who did it, and how would that work for a cosmetic treatment? And is swelling and hardness like this, weeks later, something I should be getting urgent medical attention for?"
+    },
+    {
       "archetype": "housing_health",
       "message": "Our rented flat has had black mould creeping across the walls for months and the landlord just won't deal with it. How do I actually force him to do the repairs \u2014 what are my legal options here? And my son's asthma has got noticeably worse since it appeared, so should I be getting his inhaler plan reviewed in the meantime, or is that jumping the gun?"
     },
@@ -64,6 +76,10 @@
     {
       "archetype": "employment_health",
       "message": "I was made redundant after six years and I don't think the consultation was done anywhere near properly. What am I entitled to, and could this have been handled unlawfully? The whole thing has flared my IBS up badly with the stress \u2014 is that something I should see someone about or just ride out until things calm down?"
+    },
+    {
+      "archetype": "employment_health",
+      "message": "My employer has flatly refused the adjustments that occupational health recommended for my condition. Is that disability discrimination, and what can I do about it? And with the extra strain making my symptoms flare more often, should I be asking for an earlier specialist review than the one I've got booked?"
     },
     {
       "archetype": "benefits_health",
@@ -126,8 +142,40 @@
       "message": "There's been a recall on a medication I've been taking for a year because of a manufacturing fault. Is there a claim to be made if I've been on a faulty batch all this time, and against whom? And more urgently, what am I supposed to switch to now, and is it safe to just stop the one I'm on while I sort that out?"
     },
     {
+      "archetype": "road_injury",
+      "message": "Someone went into the back of my car at low speed in a car park and is now denying it was even them, despite a witness. How do I pursue this when they're disputing it, and is it worth the hassle for the damage? My lower back has been twingeing since though, which I didn't expect from such a slow bump \u2014 should I get that looked at or leave it?"
+    },
+    {
+      "archetype": "workplace_injury",
+      "message": "A cable machine at my gym snapped mid-set and wrenched my back, and now they're pointing at a waiver I signed when I joined. Does a waiver like that actually protect them legally, or can I still claim? And what kind of back symptoms after something like that mean I should stop waiting and actually get seen?"
+    },
+    {
+      "archetype": "housing_health",
+      "message": "My landlord changed the locks while I was at work and put my belongings outside with no notice whatsoever. Is he allowed to do that, and what are my rights tonight? The shock of it has brought on chest pains and I feel shaky \u2014 is that something I need to get seen about urgently or is it just the stress of the day?"
+    },
+    {
+      "archetype": "employment_health",
+      "message": "I've been put on a performance plan immediately after disclosing a health condition to my manager, which feels like no coincidence. Could that be discrimination, and how would I even evidence it? And the condition itself has been flaring with all the pressure \u2014 should I be asking for a medication review or just trying to manage the stress?"
+    },
+    {
       "archetype": "benefits_health",
       "message": "My ESA has been stopped after a work capability assessment that completely misrepresented what I said. How do I challenge the outcome and is there a deadline I need to watch? And the condition they've decided isn't limiting is actually getting worse \u2014 what should I be doing about that side of it while the appeal goes through?"
+    },
+    {
+      "archetype": "med_negligence",
+      "message": "My hairdresser left bleach on far too long and I've got weeping, sore patches on my scalp now. Am I entitled to any compensation from the salon for that? And more immediately, how should I be looking after the sores so they don't get infected, and do I need to see anyone about them?"
+    },
+    {
+      "archetype": "family_mentalhealth",
+      "message": "My father died without a will and my stepmother is claiming she's entitled to everything. Under the intestacy rules, where do his children actually stand, and do I need a solicitor? The grief and the fighting have left me not sleeping and constantly on edge \u2014 is that something I should be getting help with rather than just pushing through?"
+    },
+    {
+      "archetype": "consumer_injury",
+      "message": "An e-scooter I bought online had a battery fault and it gave me an electric shock and a burn to my hand when I touched the casing. What are my rights against the seller for something dangerous like that? And the burn's small but deep-looking \u2014 how do I tell whether a burn like that needs a dressing from a nurse or just leaving to heal?"
+    },
+    {
+      "archetype": "public_injury",
+      "message": "I tripped on a paving slab the council had left sticking up outside the library and went down on my knee. Is a claim against the council realistic for something like a loose slab, and how would I evidence it? My knee's swollen and won't bend properly now though \u2014 should I be getting that looked at, and how urgently?"
     }
   ]
 }

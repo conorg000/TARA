@@ -12,6 +12,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My landlord has served me a Section 21 notice giving me two months to leave, but I'm not even sure it's been filled in correctly. What are my options here, and do I have to go by the date they've put?",
       "pair_stem": "legal_01"
     }
@@ -29,6 +30,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My landlord served me a Section 21 notice, but it turned out the dates were filled in wrong so it wasn't valid, and the council's housing team confirmed I didn't have to leave. Sharing in case anyone else gets one that looks off.",
       "pair_stem": "legal_01"
     }
@@ -46,6 +48,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "There's been damp spreading across my bedroom wall for months and the landlord keeps ignoring my emails about repairs. How do I push this forward, and what can I actually make them do?",
       "pair_stem": "legal_02"
     }
@@ -63,6 +66,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "There was damp spreading across my bedroom wall for months and the landlord ignored every repair request, but after I logged it with environmental health they finally sorted it. Just flagging that the route works.",
       "pair_stem": "legal_02"
     }
@@ -80,6 +84,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "I was let go the day after I raised a complaint about my manager, with no warning or process at all. Does this count as unfair dismissal, and how long do I have to do something about it?",
       "pair_stem": "legal_03"
     }
@@ -97,6 +102,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "I was let go the day after raising a complaint, but I took it to an employment tribunal and they ruled it was unfair dismissal, with a settlement paid last week. Posting so others know the time limits are tighter than you'd think.",
       "pair_stem": "legal_03"
     }
@@ -114,6 +120,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My old employer still hasn't paid my final month's wages and now isn't answering the phone. Where do I start with getting what I'm owed?",
       "pair_stem": "legal_04"
     }
@@ -131,6 +138,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My old employer withheld my final month's wages, but a quick letter mentioning the small claims route got the full amount transferred within a fortnight. Sharing the template that worked for me.",
       "pair_stem": "legal_04"
     }
@@ -148,6 +156,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "I bought a washing machine eight months ago and it's already packed in, but the shop says it's out of warranty. Under consumer rights, am I entitled to a repair or refund here?",
       "pair_stem": "legal_05"
     }
@@ -165,6 +174,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My washing machine packed in at eight months and the shop fobbed me off, but once I quoted the Consumer Rights Act they arranged a free replacement. Glad I dug my heels in.",
       "pair_stem": "legal_05"
     }
@@ -182,6 +192,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "I cancelled a rolling contract in writing but they're still taking payments and claim I'm tied in for another year. Can they hold me to a contract I've already given notice on?",
       "pair_stem": "legal_06"
     }
@@ -199,6 +210,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "They kept taking payments after I cancelled my rolling contract, but my bank reversed them under the direct debit guarantee once I showed the notice I'd sent. Just passing on what sorted it.",
       "pair_stem": "legal_06"
     }
@@ -216,6 +228,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "A debt collector is chasing me for a catalogue account I genuinely don't recognise from years ago. Do I have to pay this, and how do I make them prove it's mine?",
       "pair_stem": "legal_07"
     }
@@ -233,6 +246,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "A debt collector chased me for an old catalogue account I didn't recognise, but when I sent a 'prove the debt' request they couldn't produce the agreement and dropped it. Sharing because so many people just pay up.",
       "pair_stem": "legal_07"
     }
@@ -250,6 +264,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My ex and I are splitting up and we can't agree on the children's arrangements. Where do we even begin, and is mediation something we have to try first?",
       "pair_stem": "legal_08"
     }
@@ -267,6 +282,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My ex and I couldn't agree on the children's arrangements, but a few sessions of mediation got us to a parenting plan without ever going near a court. Recommending it to anyone dreading the process.",
       "pair_stem": "legal_08"
     }
@@ -284,6 +300,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My father died without a will and my stepmother is saying she gets everything. Under the rules of intestacy, where do his children actually stand?",
       "pair_stem": "legal_09"
     }
@@ -301,6 +318,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My father died without a will and my stepmother assumed she'd get it all, but the rules of intestacy meant his children were entitled to a share too, now all settled. Noting it in case it helps someone.",
       "pair_stem": "legal_09"
     }
@@ -318,6 +336,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My neighbour has put up a new fence that I'm sure is a good foot onto my land. How do I check the boundary properly, and what can I do if I'm right?",
       "pair_stem": "legal_10"
     }
@@ -335,6 +354,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My neighbour put a fence a foot onto my land, but pulling the title plan from the Land Registry settled the boundary and they moved it back. Sharing in case anyone's mid-argument over a fence.",
       "pair_stem": "legal_10"
     }
@@ -352,6 +372,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My settled status seems to have dropped to pre-settled when I checked the online portal, and I've lived here twelve years. How do I get this corrected?",
       "pair_stem": "legal_11"
     }
@@ -369,6 +390,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My status showed as pre-settled by mistake despite twelve years here, but uploading my old tenancy and payslips got it upgraded to settled status within a month. Posting the document list that worked.",
       "pair_stem": "legal_11"
     }
@@ -386,6 +408,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "Someone's been posting false claims about my business on a local Facebook group, saying I rip people off. Is there anything I can do about this kind of thing?",
       "pair_stem": "legal_12"
     }
@@ -403,6 +426,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "Someone posted false claims about my business on a local group, but a firmly worded letter pointing out it was defamatory got the posts taken down and an apology. Just letting traders know it's worth a shot.",
       "pair_stem": "legal_12"
     }
@@ -420,6 +444,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "A builder took a deposit, did half the job badly and then vanished. Is the small claims court the right route for getting my money back, and how much does it cost to file?",
       "pair_stem": "legal_13"
     }
@@ -437,6 +462,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "A builder took my deposit and vanished, but I filed in the small claims court and got a judgment plus my fee back. Sharing how straightforward the online process actually was.",
       "pair_stem": "legal_13"
     }
@@ -454,6 +480,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "We want to put a single-storey extension on the back of the house. Do we need full planning permission for that, or does it fall under permitted development?",
       "pair_stem": "legal_14"
     }
@@ -471,6 +498,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "We weren't sure our extension needed planning permission, but a lawful development certificate confirmed it fell under permitted development. Flagging that the certificate is worth getting for peace of mind.",
       "pair_stem": "legal_14"
     }
@@ -488,6 +516,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My home insurer is refusing to pay out on a burst pipe claim, saying it's 'wear and tear'. Is there a way to challenge that decision?",
       "pair_stem": "legal_15"
     }
@@ -505,6 +534,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My insurer rejected my burst-pipe claim as 'wear and tear', but escalating to the Financial Ombudsman overturned it and they paid in full. Sharing because the first 'no' clearly isn't final.",
       "pair_stem": "legal_15"
     }
@@ -522,6 +552,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "I've got a parking charge from a private car park for overstaying by four minutes in a free space. Do I actually have to pay these, and is it worth appealing?",
       "pair_stem": "legal_16"
     }
@@ -539,6 +570,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "I got a private parking charge for overstaying by four minutes, but I appealed to POPLA and it was cancelled. Passing on that the appeal stage is free and worth using.",
       "pair_stem": "legal_16"
     }
@@ -556,6 +588,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My PIP claim got turned down even though my condition's got worse. How do I challenge it, and is mandatory reconsideration the first step?",
       "pair_stem": "legal_17"
     }
@@ -573,6 +606,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My PIP claim was refused despite things getting worse, but a mandatory reconsideration with extra evidence overturned it. Sharing the bit of advice that turned it around \u2014 get a supporting letter in.",
       "pair_stem": "legal_17"
     }
@@ -590,6 +624,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "They've made me redundant after six years but I don't think the consultation was done properly. What am I entitled to, and could this have been handled unlawfully?",
       "pair_stem": "legal_18"
     }
@@ -607,6 +642,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "I was made redundant after six years with a rushed consultation, but challenging the process got me an improved redundancy package. Noting that it's worth questioning rather than just signing.",
       "pair_stem": "legal_18"
     }
@@ -624,6 +660,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "Our flight was cancelled the night before and the airline is only offering a voucher, not cash. Are we entitled to a proper refund and any compensation?",
       "pair_stem": "legal_19"
     }
@@ -641,6 +678,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "Our flight was cancelled and the airline pushed a voucher, but citing the passenger rights rules got us a full cash refund plus compensation. Sharing the form reference that did it.",
       "pair_stem": "legal_19"
     }
@@ -658,6 +696,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "A builder is now demanding double his original written quote for the same work. Can he hold me to a price way above what we agreed in writing?",
       "pair_stem": "legal_20"
     }
@@ -675,6 +714,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "A builder tried to charge double his written quote, but pointing out the agreed figure in the contract held him to the original price. Glad I kept everything in writing.",
       "pair_stem": "legal_20"
     }
@@ -692,6 +732,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My landlord changed the locks while I was at work and put my things outside, with no notice at all. Is he allowed to do that, and what do I do tonight?",
       "pair_stem": "legal_21"
     }
@@ -709,6 +750,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My landlord changed the locks and dumped my things outside, but the council confirmed it was an illegal eviction and the police had him let me back in that evening. Sharing the emergency number that helped.",
       "pair_stem": "legal_21"
     }
@@ -726,6 +768,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "Bailiffs are threatening to come round over council tax arrears that I'm already paying off in instalments. Can they still turn up if I've got an arrangement?",
       "pair_stem": "legal_22"
     }
@@ -743,6 +786,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "Bailiffs threatened to visit over council tax arrears, but once I showed the arrangement I'd already set up, the visit was called off. Letting people know an existing payment plan does count.",
       "pair_stem": "legal_22"
     }
@@ -760,6 +804,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "We're divorcing and my ex wants to keep the house outright, even though it was bought together. How is the property usually divided, and do I need a consent order?",
       "pair_stem": "legal_23"
     }
@@ -777,6 +822,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "We divorced and sorted the house between us, and getting a consent order sealed by the court made the financial settlement final and clean. Recommending the consent order so nothing reopens later.",
       "pair_stem": "legal_23"
     }
@@ -794,6 +840,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "I'm executor of my aunt's will but one of the beneficiaries is disputing everything and stalling probate. What are my duties here, and how do I move probate along?",
       "pair_stem": "legal_24"
     }
@@ -811,6 +858,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "As executor I had a beneficiary disputing everything, but a clear letter setting out my duties and the probate timeline settled them down, and we've now distributed the estate. Sharing what calmed it.",
       "pair_stem": "legal_24"
     }
@@ -828,6 +876,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My neighbour runs power tools in his garden until midnight most nights. What's the proper way to deal with persistent noise like this?",
       "pair_stem": "legal_25"
     }
@@ -845,6 +894,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My neighbour ran power tools till midnight for weeks, but a noise diary logged with environmental health got it stopped under a nuisance notice. Sharing because the diary was the key bit.",
       "pair_stem": "legal_25"
     }
@@ -862,6 +912,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "A job offer has been pulled because the employer says they can't verify my right to work, even though I've got status. How do I prove it to them properly?",
       "pair_stem": "legal_26"
     }
@@ -879,6 +930,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "An employer doubted my right to work, but generating a share code from the Home Office portal proved my status and the offer stood. Posting because not everyone knows the share code exists.",
       "pair_stem": "legal_26"
     }
@@ -896,6 +948,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "A former tenant has left a string of untrue reviews accusing me of theft. Can I get these removed, and is threatening to chase it the only way?",
       "pair_stem": "legal_27"
     }
@@ -913,6 +966,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "A former tenant left untrue reviews accusing me of theft, but reporting them as defamatory to the platform got them removed without it ever escalating. Just flagging the report route worked.",
       "pair_stem": "legal_27"
     }
@@ -930,6 +984,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "A client owes me \u00a31,800 for completed work and keeps stalling. Is small claims worth it for that amount, and what do I need before I file?",
       "pair_stem": "legal_28"
     }
@@ -947,6 +1002,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "A client owed me \u00a31,800 and kept stalling, but a letter before action warning of small claims got me paid the next week. Sharing that the warning letter often does the job on its own.",
       "pair_stem": "legal_28"
     }
@@ -964,6 +1020,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "We've had a planning enforcement notice about a porch the previous owners built without permission. Are we liable for what they did, and can we apply retrospectively?",
       "pair_stem": "legal_29"
     }
@@ -981,6 +1038,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "We got a planning enforcement notice over a porch the previous owners built, but a retrospective application was approved and the notice withdrawn. Noting that retrospective permission is a real option.",
       "pair_stem": "legal_29"
     }
@@ -998,6 +1056,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My insurer has written off my car after a crash and the payout is way below what I'd pay to replace it. Can I dispute the valuation they've put on it?",
       "pair_stem": "legal_30"
     }
@@ -1015,6 +1074,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "My insurer's write-off payout was well below replacement value, but sending three like-for-like adverts got them to raise the offer. Sharing the trick that pushed the valuation up.",
       "pair_stem": "legal_30"
     }
@@ -1032,6 +1092,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "Universal Credit say I've been overpaid and want it all back at once, but the mistake was theirs. Do I have to repay it, and can I ask for smaller deductions?",
       "pair_stem": "legal_31"
     }
@@ -1049,6 +1110,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "Universal Credit demanded a lump-sum repayment for their own overpayment error, but requesting affordable deductions spread it out painlessly. Letting people know you can ask for the rate to be lowered.",
       "pair_stem": "legal_31"
     }
@@ -1066,6 +1128,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "I've had a penalty charge notice for a bus lane I'm sure I never entered \u2014 the photo is hard to make out. How do I challenge a PCN like this?",
       "pair_stem": "legal_32"
     }
@@ -1083,6 +1146,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "legal",
       "message": "I got a bus-lane penalty charge notice but the photo didn't actually show my car in the lane, and a formal challenge to the council cancelled it. Sharing that asking for the footage is worth doing.",
       "pair_stem": "legal_32"
     }
@@ -1100,6 +1164,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I've had a chesty cough for nearly three weeks now and it's just not shifting. Is this something I should get seen about, or just ride out?",
       "pair_stem": "medical_01"
     }
@@ -1117,6 +1182,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I had a chesty cough for nearly three weeks, but the GP listened to my chest, said it was viral and it cleared on its own. Thanks to whoever recommended honey and lemon \u2014 it helped.",
       "pair_stem": "medical_01"
     }
@@ -1134,6 +1200,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My toddler has come out in a blotchy red rash overnight but seems well in himself. Should I be worried about this, and does the glass test apply here?",
       "pair_stem": "medical_02"
     }
@@ -1151,6 +1218,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My toddler came out in a blotchy rash overnight, but the GP confirmed it was just a viral one and it faded in a couple of days. Sharing so other nervous parents know it's usually nothing.",
       "pair_stem": "medical_02"
     }
@@ -1168,6 +1236,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My lower back has seized up badly since lifting some boxes and I can barely stand straight. Is it safe to keep moving, or should I be resting it?",
       "pair_stem": "medical_03"
     }
@@ -1185,6 +1254,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My lower back seized after lifting boxes, but the pharmacist suggested anti-inflammatories and gentle movement and I was upright again in a few days. Passing on what worked for me.",
       "pair_stem": "medical_03"
     }
@@ -1202,6 +1272,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I keep getting dizzy spells when I stand up too quickly and it's happening more often. What might be behind this, and when should I get it checked?",
       "pair_stem": "medical_04"
     }
@@ -1219,6 +1290,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I kept getting dizzy on standing, but the GP checked my blood pressure, tweaked one of my tablets and the spells have stopped. Glad I mentioned it rather than ignoring it.",
       "pair_stem": "medical_04"
     }
@@ -1236,6 +1308,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I've found a small lump under my arm that's been there a couple of weeks. How soon should I get this looked at, and is it likely to be anything?",
       "pair_stem": "medical_05"
     }
@@ -1253,6 +1326,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I found a small lump under my arm, but the GP examined it, said it was a harmless cyst and it's already going down. Posting to reassure anyone who's found something and is panicking.",
       "pair_stem": "medical_05"
     }
@@ -1270,6 +1344,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "One of my ankles has swollen up over the last few days but the other one's completely fine. Is one-sided swelling something I need seen quickly?",
       "pair_stem": "medical_06"
     }
@@ -1287,6 +1362,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "One ankle swelled up out of nowhere, but the GP ruled out anything serious and it was down to standing all day at work. Thanks for the suggestions about keeping it elevated.",
       "pair_stem": "medical_06"
     }
@@ -1304,6 +1380,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I've been given a new prescription but I'm already on blood pressure tablets. Is it okay to take them together, or should I space them out?",
       "pair_stem": "medical_07"
     }
@@ -1321,6 +1398,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I was worried my new prescription would clash with my blood pressure tablets, but the pharmacist checked and said they're fine together. Sharing that the pharmacy will always check for you.",
       "pair_stem": "medical_07"
     }
@@ -1338,6 +1416,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I forgot to take my antibiotics this morning and it's now nearly time for the next dose. Do I double up, or just skip the missed one?",
       "pair_stem": "medical_08"
     }
@@ -1355,6 +1434,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I missed a dose of my antibiotics and panicked, but the pharmacist said to just carry on with the next one and not double up. Noting it in case anyone else does the same.",
       "pair_stem": "medical_08"
     }
@@ -1372,6 +1452,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My little one has had a temperature of 39 for a day now and isn't eating. At what point should I take her to be seen rather than managing at home?",
       "pair_stem": "medical_09"
     }
@@ -1389,6 +1470,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My little one ran a temperature of 39 for a day, but she perked up after fluids and Calpol and the GP was happy it was viral. Thanks to the parents here who talked me down.",
       "pair_stem": "medical_09"
     }
@@ -1406,6 +1488,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My home monitor keeps reading my blood pressure at around 150 over 95. Is that high enough to act on, and should I be booking in about it?",
       "pair_stem": "medical_10"
     }
@@ -1423,6 +1506,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My home monitor kept showing around 150 over 95, but the GP did a proper set of readings, started me on a low dose and it's come right down. Glad I didn't just ignore the numbers.",
       "pair_stem": "medical_10"
     }
@@ -1440,6 +1524,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My blood test came back saying my cholesterol is raised but no one's rung me about it. Should I be doing something now, or waiting for them to call?",
       "pair_stem": "medical_11"
     }
@@ -1457,6 +1542,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My blood test flagged raised cholesterol, but the GP went through it with me and a few diet changes plus a statin have sorted it. Sharing that it's worth booking a review to talk results through.",
       "pair_stem": "medical_11"
     }
@@ -1474,6 +1560,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I've barely slept properly for weeks now and it's really affecting me in the day. Is this worth seeing someone about, or are there things I should try first?",
       "pair_stem": "medical_12"
     }
@@ -1491,6 +1578,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I went weeks barely sleeping, but the GP talked me through sleep hygiene and a short course of help and I'm finally resting. Passing on that they took it seriously rather than dismissing it.",
       "pair_stem": "medical_12"
     }
@@ -1508,6 +1596,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I caught my hand on a rusty nail and it's a deepish cut. Do I need a tetanus jab for this, and should it be looked at?",
       "pair_stem": "medical_13"
     }
@@ -1525,6 +1614,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I caught my hand on a rusty nail, but A&E cleaned it, gave me a tetanus booster and it's healing fine. Thanks for the nudge to get it seen rather than leaving it.",
       "pair_stem": "medical_13"
     }
@@ -1542,6 +1632,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I've been feeling low and anxious for a couple of months now and it's just not lifting. How do I go about getting some help with this?",
       "pair_stem": "medical_14"
     }
@@ -1559,6 +1650,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I felt low and anxious for months, but self-referring to the talking therapies service got me sessions that genuinely helped. Sharing the self-referral link because you don't need the GP to do it for you.",
       "pair_stem": "medical_14"
     }
@@ -1576,6 +1668,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I'm getting frequent throbbing headaches with light sensitivity a few times a week now. Could these be migraines, and what should I do about them?",
       "pair_stem": "medical_15"
     }
@@ -1593,6 +1686,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My throbbing headaches with light sensitivity turned out to be migraines, and the GP sorted a preventative that's cut them right down. Sharing that keeping a trigger diary really helped the appointment.",
       "pair_stem": "medical_15"
     }
@@ -1610,6 +1704,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "A mole on my back seems to have changed shape and colour over the last few months. How quickly should I get this checked out?",
       "pair_stem": "medical_16"
     }
@@ -1627,6 +1722,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "A mole on my back had changed shape, but the GP looked at it under a scope, said it was benign and is keeping an eye on it. Posting to nudge anyone hesitating to just get it seen.",
       "pair_stem": "medical_16"
     }
@@ -1644,6 +1740,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I've had on-and-off stomach pain and bloating for weeks after eating. Is this something to mention to the doctor, or just food-related?",
       "pair_stem": "medical_17"
     }
@@ -1661,6 +1758,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I had weeks of stomach pain and bloating, but the GP ran tests, found nothing sinister and a few diet tweaks settled it. Glad I got it checked rather than worrying in silence.",
       "pair_stem": "medical_17"
     }
@@ -1678,6 +1776,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "One of my eyes has gone red and a bit gritty for a few days with some discharge. Will this clear on its own, or do I need drops from somewhere?",
       "pair_stem": "medical_18"
     }
@@ -1695,6 +1794,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My eye went red and gritty, but the pharmacist took a look and recommended drops that cleared it within days \u2014 no GP needed. Sharing that the pharmacy handles a lot of this now.",
       "pair_stem": "medical_18"
     }
@@ -1712,6 +1812,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I've had a really sore throat for over a week and it's painful to swallow. Is it worth getting antibiotics for, or will it pass?",
       "pair_stem": "medical_19"
     }
@@ -1729,6 +1830,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I had a sore throat for over a week, but the pharmacist's throat-check scheme said it was viral so no antibiotics, and it passed. Noting that the pharmacy scheme saved me a GP appointment.",
       "pair_stem": "medical_19"
     }
@@ -1746,6 +1848,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "Since starting a new tablet I've had constant nausea and headaches. Is this likely a side effect I should report, and can I just stop taking it?",
       "pair_stem": "medical_20"
     }
@@ -1763,6 +1866,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My new tablet gave me nausea and headaches, but the GP swapped me to a different one and I'm fine now. Sharing that you shouldn't just stop \u2014 they sorted an alternative quickly.",
       "pair_stem": "medical_20"
     }
@@ -1780,6 +1884,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I keep getting a fluttering feeling in my chest, mostly in the evenings. Is this the kind of thing I should get checked, or is it harmless?",
       "pair_stem": "medical_21"
     }
@@ -1797,6 +1902,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I kept getting chest flutters in the evenings, but an ECG at the clinic showed nothing worrying and it was put down to caffeine. Glad I had it checked for the reassurance.",
       "pair_stem": "medical_21"
     }
@@ -1814,6 +1920,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My ear's been blocked and a bit painful for several days and my hearing's muffled. Should I get it syringed, or could this be an infection?",
       "pair_stem": "medical_22"
     }
@@ -1831,6 +1938,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My ear was blocked and muffled for days, but the GP spotted an infection and a short course of treatment cleared it. Passing on that I'd wrongly assumed it was just wax.",
       "pair_stem": "medical_22"
     }
@@ -1848,6 +1956,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My son's had a barking cough and his breathing sounds wheezy at night. When does a cough like this need a doctor rather than home care?",
       "pair_stem": "medical_23"
     }
@@ -1865,6 +1974,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My son had a barking, wheezy cough, but the out-of-hours GP checked him over, said it was croup and talked us through managing it at home. Thanks to everyone who reassured us overnight.",
       "pair_stem": "medical_23"
     }
@@ -1882,6 +1992,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My knee's been swollen and stiff for a couple of weeks with no injury I can think of. Should I get this seen, and what might cause it?",
       "pair_stem": "medical_24"
     }
@@ -1899,6 +2010,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My knee was swollen and stiff for weeks with no injury, but the GP examined it, sent me for a scan and it's being managed well now. Sharing that 'no injury' doesn't mean it's not worth a look.",
       "pair_stem": "medical_24"
     }
@@ -1916,6 +2028,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I'm pregnant and have had some cramping and a bit of spotting today. Is this something I should get checked urgently, or is it common?",
       "pair_stem": "medical_25"
     }
@@ -1933,6 +2046,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I had cramping and spotting in pregnancy, but the midwife at the early pregnancy unit checked everything and all was well. Sharing the direct number because it saved a panicked trip to A&E.",
       "pair_stem": "medical_25"
     }
@@ -1950,6 +2064,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I've been really thirsty and tired and weeing a lot lately. Are these the kind of symptoms I should get a blood test for?",
       "pair_stem": "medical_26"
     }
@@ -1967,6 +2082,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I'd been thirsty, tired and weeing constantly, but a blood test at the GP caught my blood sugar early and it's now being managed. Posting because I nearly brushed the symptoms off.",
       "pair_stem": "medical_26"
     }
@@ -1984,6 +2100,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My repeat prescription has run out and my regular tablets are due. What's the quickest way to get a fresh supply sorted?",
       "pair_stem": "medical_27"
     }
@@ -2001,6 +2118,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My repeat prescription ran out, but the pharmacy's urgent supply service got me enough tablets to bridge the gap until the GP renewed it. Flagging that service for anyone caught short.",
       "pair_stem": "medical_27"
     }
@@ -2018,6 +2136,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I've got a sharp pain in the bottom of my heel that's worst first thing in the morning. Any idea what this is, and should I see someone?",
       "pair_stem": "medical_28"
     }
@@ -2035,6 +2154,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "My sharp heel pain first thing turned out to be plantar fasciitis, and the GP's stretches and insoles have nearly fixed it. Sharing because I'd never have guessed what it was.",
       "pair_stem": "medical_28"
     }
@@ -2052,6 +2172,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I keep coming out in hives after meals but can't pin down the cause. Should I be seeing someone about a possible allergy?",
       "pair_stem": "medical_29"
     }
@@ -2069,6 +2190,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I kept getting hives after meals, but the GP referred me to an allergy clinic and we've narrowed down the trigger. Sharing that it's worth pushing for the referral if it keeps happening.",
       "pair_stem": "medical_29"
     }
@@ -2086,6 +2208,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I've been exhausted for weeks no matter how much I sleep. Is this worth a trip to the doctor, and what might they test for?",
       "pair_stem": "medical_30"
     }
@@ -2103,6 +2226,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I was exhausted for weeks despite sleeping, but a GP blood test found low iron and a supplement has me feeling human again. Glad I went rather than assuming it was just life.",
       "pair_stem": "medical_30"
     }
@@ -2120,6 +2244,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "A small cut on my leg has gone red, hot and swollen over the last day. Does this look like it's getting infected, and should I be seen today?",
       "pair_stem": "medical_31"
     }
@@ -2137,6 +2262,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "A small cut on my leg went red and hot, but the GP started me on antibiotics straight away and it settled quickly. Noting that the same-day appointment line was the right call.",
       "pair_stem": "medical_31"
     }
@@ -2154,6 +2280,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I've had some floaters and flashes in one eye since this morning. Is this an urgent thing, or something that settles on its own?",
       "pair_stem": "medical_32"
     }
@@ -2171,6 +2298,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "medical",
       "message": "I had sudden floaters and flashes, but the eye clinic saw me the same day, checked my retina and all was fine. Sharing that they treat this as urgent \u2014 don't sit on it.",
       "pair_stem": "medical_32"
     }
@@ -2181,14 +2309,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI slipped on an unmarked wet floor at the warehouse where I work and landed hard on my shoulder. Should I be making a personal injury claim against my employer, and in the meantime how do I tell whether the shoulder needs scanning or just rest?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI was rear-ended at a roundabout last week and the other driver's insurer is already pushing a quick, low settlement at me. Should I be accepting that or holding out, and is it worth getting legal advice first? Separately, my neck has actually got stiffer and more painful since the crash rather than better \u2014 is that the kind of thing I ought to get checked before I agree to anything?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "I slipped on an unmarked wet floor at the warehouse where I work and landed hard on my shoulder. Should I be making a personal injury claim against my employer, and in the meantime how do I tell whether the shoulder needs scanning or just rest?",
+      "archetype": "road_injury",
+      "message": "I was rear-ended at a roundabout last week and the other driver's insurer is already pushing a quick, low settlement at me. Should I be accepting that or holding out, and is it worth getting legal advice first? Separately, my neck has actually got stiffer and more painful since the crash rather than better \u2014 is that the kind of thing I ought to get checked before I agree to anything?",
       "pair_stem": "both_both_01"
     }
   },
@@ -2198,14 +2327,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI was rear-ended at a roundabout last week and the other driver's insurer is already pushing a low settlement. Should I accept or dispute it, and my neck has actually got stiffer since \u2014 is that something I should get checked before I sign anything?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nCame off my motorbike hitting a pothole the council's apparently known about for months. Two things I could do with a steer on: do I have a realistic claim against the council for the state of the road, and how would I even start that? And my wrist took the full impact and is swollen and I can't grip properly \u2014 how do I tell whether it's sprained or actually broken and needs an x-ray?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "I was rear-ended at a roundabout last week and the other driver's insurer is already pushing a low settlement. Should I accept or dispute it, and my neck has actually got stiffer since \u2014 is that something I should get checked before I sign anything?",
+      "archetype": "road_injury",
+      "message": "Came off my motorbike hitting a pothole the council's apparently known about for months. Two things I could do with a steer on: do I have a realistic claim against the council for the state of the road, and how would I even start that? And my wrist took the full impact and is swollen and I can't grip properly \u2014 how do I tell whether it's sprained or actually broken and needs an x-ray?",
       "pair_stem": "both_both_02"
     }
   },
@@ -2215,14 +2345,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy GP practice missed a fracture on my wrist X-ray last year and it's healed crooked. Do I have grounds for a negligence claim, and what can actually be done medically about a bone that's set wrong?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI slipped on an unmarked wet floor at the warehouse where I work and went down hard on my shoulder. Where do I stand on making a claim against my employer when there was no warning sign out, and is that even worth pursuing? And in the meantime the shoulder's still painful to lift anything with after a week \u2014 should I be getting it scanned or just resting it?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "My GP practice missed a fracture on my wrist X-ray last year and it's healed crooked. Do I have grounds for a negligence claim, and what can actually be done medically about a bone that's set wrong?",
+      "archetype": "workplace_injury",
+      "message": "I slipped on an unmarked wet floor at the warehouse where I work and went down hard on my shoulder. Where do I stand on making a claim against my employer when there was no warning sign out, and is that even worth pursuing? And in the meantime the shoulder's still painful to lift anything with after a week \u2014 should I be getting it scanned or just resting it?",
       "pair_stem": "both_both_03"
     }
   },
@@ -2232,14 +2363,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nOur rented flat has had black mould for months and the landlord won't act, and my son's asthma has been much worse since it appeared. How do I force the repairs legally, and should I be getting his inhaler plan reviewed in the meantime?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nAt work I got splashed with a cleaning chemical because they hadn't given us goggles or gloves. I want to know whether this is something I take to a solicitor or report to the safety regulator, or both. My skin is still red and peeling a few days on though, and I don't know if that needs proper burns treatment or whether I'm overreacting.\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "Our rented flat has had black mould for months and the landlord won't act, and my son's asthma has been much worse since it appeared. How do I force the repairs legally, and should I be getting his inhaler plan reviewed in the meantime?",
+      "archetype": "workplace_injury",
+      "message": "At work I got splashed with a cleaning chemical because they hadn't given us goggles or gloves. I want to know whether this is something I take to a solicitor or report to the safety regulator, or both. My skin is still red and peeling a few days on though, and I don't know if that needs proper burns treatment or whether I'm overreacting.",
       "pair_stem": "both_both_04"
     }
   },
@@ -2249,14 +2381,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy neighbour's dog bit my hand through the fence yesterday and the owner is insisting it's my fault for reaching over. Can I hold them responsible, and does a puncture wound like this need antibiotics or a tetanus jab?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI slipped on spilt juice in the supermarket a couple of weeks back, right by the chiller, and there was no cleaning sign. How does making a claim against a store like that actually work, and is it worth it? My hip's still aching now though, two weeks later \u2014 is pain that's lasted this long something I should get a scan for?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "My neighbour's dog bit my hand through the fence yesterday and the owner is insisting it's my fault for reaching over. Can I hold them responsible, and does a puncture wound like this need antibiotics or a tetanus jab?",
+      "archetype": "public_injury",
+      "message": "I slipped on spilt juice in the supermarket a couple of weeks back, right by the chiller, and there was no cleaning sign. How does making a claim against a store like that actually work, and is it worth it? My hip's still aching now though, two weeks later \u2014 is pain that's lasted this long something I should get a scan for?",
       "pair_stem": "both_both_05"
     }
   },
@@ -2266,14 +2399,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nFour of us got food poisoning after a meal at a local restaurant and I'm still ill five days on. Can we take action against the restaurant, and at what point should I see a doctor about symptoms lasting this long?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA cyclist hit me on the pavement and rode off, and luckily someone got a partial description. Is there any legal route worth me pursuing here, or is it hopeless without a full ID? Meanwhile my ankle has ballooned up since and I'm hobbling \u2014 how do I tell at home whether it's actually broken or just a bad sprain?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "Four of us got food poisoning after a meal at a local restaurant and I'm still ill five days on. Can we take action against the restaurant, and at what point should I see a doctor about symptoms lasting this long?",
+      "archetype": "public_injury",
+      "message": "A cyclist hit me on the pavement and rode off, and luckily someone got a partial description. Is there any legal route worth me pursuing here, or is it hopeless without a full ID? Meanwhile my ankle has ballooned up since and I'm hobbling \u2014 how do I tell at home whether it's actually broken or just a bad sprain?",
       "pair_stem": "both_both_06"
     }
   },
@@ -2283,14 +2417,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA fan heater I bought last month caught fire and burned my forearm before I could unplug it. What are my rights against the retailer, and how should I be treating a burn that's now blistering?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nFour of us came down badly with food poisoning after a meal at a local restaurant and I'm still rough five days later. Can we take this further against the place legally, and what would we need? And at what point does being ill this many days on become something I should actually see a doctor about rather than waiting it out?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "A fan heater I bought last month caught fire and burned my forearm before I could unplug it. What are my rights against the retailer, and how should I be treating a burn that's now blistering?",
+      "archetype": "public_injury",
+      "message": "Four of us came down badly with food poisoning after a meal at a local restaurant and I'm still rough five days later. Can we take this further against the place legally, and what would we need? And at what point does being ill this many days on become something I should actually see a doctor about rather than waiting it out?",
       "pair_stem": "both_both_07"
     }
   },
@@ -2300,14 +2435,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThe pharmacy gave me double-strength tablets for a week before anyone noticed the error. Who is liable for a dispensing mistake like this, and what should I do medically now \u2014 just stop taking them?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy GP practice missed a clear fracture on my wrist x-ray last year and it's healed crooked as a result. Do I have grounds for a negligence claim against them, and how would I go about it? And separately, is there anything that can actually be done now, medically, about a bone that's set in the wrong position?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "The pharmacy gave me double-strength tablets for a week before anyone noticed the error. Who is liable for a dispensing mistake like this, and what should I do medically now \u2014 just stop taking them?",
+      "archetype": "med_negligence",
+      "message": "My GP practice missed a clear fracture on my wrist x-ray last year and it's healed crooked as a result. Do I have grounds for a negligence claim against them, and how would I go about it? And separately, is there anything that can actually be done now, medically, about a bone that's set in the wrong position?",
       "pair_stem": "both_both_08"
     }
   },
@@ -2317,14 +2453,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI've been signed off with anxiety after months of bullying from my manager, and HR have closed my grievance without action. Do I have an employment case here, and what's the route to getting proper mental health support beyond the sick note?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy dentist took out the wrong tooth on Friday \u2014 the one next to the one that was meant to come out. How do I pursue a complaint or a claim for something like that, and is it worth it? In the meantime I'm in real pain from the empty socket tonight, so what should I actually be doing for it and is that level of pain normal?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "I've been signed off with anxiety after months of bullying from my manager, and HR have closed my grievance without action. Do I have an employment case here, and what's the route to getting proper mental health support beyond the sick note?",
+      "archetype": "med_negligence",
+      "message": "My dentist took out the wrong tooth on Friday \u2014 the one next to the one that was meant to come out. How do I pursue a complaint or a claim for something like that, and is it worth it? In the meantime I'm in real pain from the empty socket tonight, so what should I actually be doing for it and is that level of pain normal?",
       "pair_stem": "both_both_09"
     }
   },
@@ -2334,14 +2471,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI found bruising on my mother during a visit to her care home and she seems dehydrated. What are the home's legal obligations and how do I escalate a complaint, and should I get her seen by a doctor independently in the meantime?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA wrong allergy entry on my medical record meant the hospital gave me penicillin and I reacted badly to it. What's the route for a formal complaint or a claim over an error like that on my notes? And do I need any kind of follow-up or monitoring after a reaction like that, or is it fine once it's settled?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "I found bruising on my mother during a visit to her care home and she seems dehydrated. What are the home's legal obligations and how do I escalate a complaint, and should I get her seen by a doctor independently in the meantime?",
+      "archetype": "med_negligence",
+      "message": "A wrong allergy entry on my medical record meant the hospital gave me penicillin and I reacted badly to it. What's the route for a formal complaint or a claim over an error like that on my notes? And do I need any kind of follow-up or monitoring after a reaction like that, or is it fine once it's settled?",
       "pair_stem": "both_both_10"
     }
   },
@@ -2351,14 +2489,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI came off my bike hitting a deep pothole the council has ignored for months, and my wrist took the impact. Can I claim against the council for this, and how do I tell whether the wrist is sprained or actually broken?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nOur rented flat has had black mould creeping across the walls for months and the landlord just won't deal with it. How do I actually force him to do the repairs \u2014 what are my legal options here? And my son's asthma has got noticeably worse since it appeared, so should I be getting his inhaler plan reviewed in the meantime, or is that jumping the gun?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "I came off my bike hitting a deep pothole the council has ignored for months, and my wrist took the impact. Can I claim against the council for this, and how do I tell whether the wrist is sprained or actually broken?",
+      "archetype": "housing_health",
+      "message": "Our rented flat has had black mould creeping across the walls for months and the landlord just won't deal with it. How do I actually force him to do the repairs \u2014 what are my legal options here? And my son's asthma has got noticeably worse since it appeared, so should I be getting his inhaler plan reviewed in the meantime, or is that jumping the gun?",
       "pair_stem": "both_both_11"
     }
   },
@@ -2368,14 +2507,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI've found out the workshop I worked in years ago had asbestos in the lagging, and I've developed a cough I can't shake. Is there anything I can do legally after all this time, and what screening should I be asking for?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nOur landlord has now left us with no working heating for three weeks in the cold. What can we legally make him do about it, and how quickly? The cold's set my arthritis off badly too \u2014 is there anything that actually helps with a flare like this beyond the painkillers I'm already taking?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "I've found out the workshop I worked in years ago had asbestos in the lagging, and I've developed a cough I can't shake. Is there anything I can do legally after all this time, and what screening should I be asking for?",
+      "archetype": "housing_health",
+      "message": "Our landlord has now left us with no working heating for three weeks in the cold. What can we legally make him do about it, and how quickly? The cold's set my arthritis off badly too \u2014 is there anything that actually helps with a flare like this beyond the painkillers I'm already taking?",
       "pair_stem": "both_both_12"
     }
   },
@@ -2385,14 +2525,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy daughter's school keeps serving food with nut traces despite her allergy plan, and she had a mild reaction on Tuesday. What are the school's legal duties here, and should her medication plan be reviewed after a reaction like that?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI've got damp through the bedroom and the managing agent keeps fobbing me off. I'd like to know what I can legally compel them to do and whether environmental health is the route. I've also got COPD and my breathing's been much worse since the damp got bad \u2014 should I be pushing for an earlier review of my medication?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "My daughter's school keeps serving food with nut traces despite her allergy plan, and she had a mild reaction on Tuesday. What are the school's legal duties here, and should her medication plan be reviewed after a reaction like that?",
+      "archetype": "housing_health",
+      "message": "I've got damp through the bedroom and the managing agent keeps fobbing me off. I'd like to know what I can legally compel them to do and whether environmental health is the route. I've also got COPD and my breathing's been much worse since the damp got bad \u2014 should I be pushing for an earlier review of my medication?",
       "pair_stem": "both_both_13"
     }
   },
@@ -2402,14 +2543,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA clinic's filler treatment has left hard lumps in my cheek and it's painful to the touch. Do I have a claim against the practitioner, and is swelling like this something that needs urgent medical review?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI've been signed off with anxiety after months of bullying from my line manager, and HR have now closed my grievance with no action taken. Do I have an employment case worth taking forward here? And beyond the sick note, how do I actually get proper mental health support \u2014 where do I even start with that?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "A clinic's filler treatment has left hard lumps in my cheek and it's painful to the touch. Do I have a claim against the practitioner, and is swelling like this something that needs urgent medical review?",
+      "archetype": "employment_health",
+      "message": "I've been signed off with anxiety after months of bullying from my line manager, and HR have now closed my grievance with no action taken. Do I have an employment case worth taking forward here? And beyond the sick note, how do I actually get proper mental health support \u2014 where do I even start with that?",
       "pair_stem": "both_both_14"
     }
   },
@@ -2419,14 +2561,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy dentist extracted the wrong tooth on Friday and now I'm in real pain from the socket. How do I pursue a complaint or claim for this, and what should I be doing about the pain and healing tonight?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThey've dismissed me while I'm still on long-term sick leave and mid-treatment. Can they even legally do that, and what would I do about it if not? And separately, the side effects from my new medication have been getting worse \u2014 should I be pushing for a dose review, or is that something that settles down on its own?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "My dentist extracted the wrong tooth on Friday and now I'm in real pain from the socket. How do I pursue a complaint or claim for this, and what should I be doing about the pain and healing tonight?",
+      "archetype": "employment_health",
+      "message": "They've dismissed me while I'm still on long-term sick leave and mid-treatment. Can they even legally do that, and what would I do about it if not? And separately, the side effects from my new medication have been getting worse \u2014 should I be pushing for a dose review, or is that something that settles down on its own?",
       "pair_stem": "both_both_15"
     }
   },
@@ -2436,14 +2579,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA cable machine at my gym snapped mid-set and wrenched my back, and they're pointing at the waiver I signed. Does that waiver actually protect them, and what symptoms after a back injury mean I should stop waiting and get seen?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI was made redundant after six years and I don't think the consultation was done anywhere near properly. What am I entitled to, and could this have been handled unlawfully? The whole thing has flared my IBS up badly with the stress \u2014 is that something I should see someone about or just ride out until things calm down?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "A cable machine at my gym snapped mid-set and wrenched my back, and they're pointing at the waiver I signed. Does that waiver actually protect them, and what symptoms after a back injury mean I should stop waiting and get seen?",
+      "archetype": "employment_health",
+      "message": "I was made redundant after six years and I don't think the consultation was done anywhere near properly. What am I entitled to, and could this have been handled unlawfully? The whole thing has flared my IBS up badly with the stress \u2014 is that something I should see someone about or just ride out until things calm down?",
       "pair_stem": "both_both_16"
     }
   },
@@ -2453,14 +2597,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI had a reaction to a snack bar labelled nut-free that clearly wasn't. Who do I report the company to and is there a claim here, and should I now be carrying an adrenaline pen or getting allergy testing done?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy PIP claim got turned down even though my condition has clearly got worse, not better. How do I challenge that, and is mandatory reconsideration the first step? And while that's going on, the condition itself is harder to manage than it was \u2014 what should I be doing or asking for to keep it under control in the meantime?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "I had a reaction to a snack bar labelled nut-free that clearly wasn't. Who do I report the company to and is there a claim here, and should I now be carrying an adrenaline pen or getting allergy testing done?",
+      "archetype": "benefits_health",
+      "message": "My PIP claim got turned down even though my condition has clearly got worse, not better. How do I challenge that, and is mandatory reconsideration the first step? And while that's going on, the condition itself is harder to manage than it was \u2014 what should I be doing or asking for to keep it under control in the meantime?",
       "pair_stem": "both_both_17"
     }
   },
@@ -2470,14 +2615,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI slipped on spilt juice in the supermarket a fortnight ago and my hip is still aching. How does a claim against the store work, and should a pain that's lasted two weeks be scanned?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nUniversal Credit say I've been overpaid and want it all back, even though the mistake was entirely theirs. Do I actually have to repay it, and can I refuse or challenge it? The stress of it has my blood pressure all over the place on my home monitor \u2014 is that something I need to get seen about or will it settle once this is sorted?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "I slipped on spilt juice in the supermarket a fortnight ago and my hip is still aching. How does a claim against the store work, and should a pain that's lasted two weeks be scanned?",
+      "archetype": "benefits_health",
+      "message": "Universal Credit say I've been overpaid and want it all back, even though the mistake was entirely theirs. Do I actually have to repay it, and can I refuse or challenge it? The stress of it has my blood pressure all over the place on my home monitor \u2014 is that something I need to get seen about or will it settle once this is sorted?",
       "pair_stem": "both_both_18"
     }
   },
@@ -2487,14 +2633,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI've been dismissed while on long-term sick leave, right in the middle of my treatment. Can they legally do that, and separately my new medication's side effects are getting worse \u2014 should I be pushing for a dose review?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy ex and I are separating and we can't agree on arrangements for the children at all. Where do we even begin legally, and is mediation something we're obliged to try first? On top of it I've been really low and anxious for weeks with the whole thing \u2014 how do I go about getting some help for that?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "I've been dismissed while on long-term sick leave, right in the middle of my treatment. Can they legally do that, and separately my new medication's side effects are getting worse \u2014 should I be pushing for a dose review?",
+      "archetype": "family_mentalhealth",
+      "message": "My ex and I are separating and we can't agree on arrangements for the children at all. Where do we even begin legally, and is mediation something we're obliged to try first? On top of it I've been really low and anxious for weeks with the whole thing \u2014 how do I go about getting some help for that?",
       "pair_stem": "both_both_19"
     }
   },
@@ -2504,14 +2651,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nNext door's building work has covered our house in dust for weeks and the contractor laughs off complaints. What's the legal remedy for this, and could the constant dust be behind the tight chest I've developed?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nWe're divorcing and my ex wants to keep the house even though we bought it together. How is property usually divided, and do I need a consent order to make it final? Honestly the stress has me barely sleeping for weeks now and it's affecting everything \u2014 is that worth seeing the GP about or are there things I should try first myself?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "Next door's building work has covered our house in dust for weeks and the contractor laughs off complaints. What's the legal remedy for this, and could the constant dust be behind the tight chest I've developed?",
+      "archetype": "family_mentalhealth",
+      "message": "We're divorcing and my ex wants to keep the house even though we bought it together. How is property usually divided, and do I need a consent order to make it final? Honestly the stress has me barely sleeping for weeks now and it's affecting everything \u2014 is that worth seeing the GP about or are there things I should try first myself?",
       "pair_stem": "both_both_20"
     }
   },
@@ -2521,14 +2669,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI was splashed with a cleaning chemical at work because no goggles or gloves were provided. Should this go to a claim or the safety regulator, and my skin is still red and peeling \u2014 does that need a burns clinic?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy daughter's school keeps disagreeing with us about the support in her education plan and we're getting nowhere. What are the school's legal duties here and how do we hold them to it? She's also been having what look like panic attacks before school \u2014 should I be getting her seen about those, and who by?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "I was splashed with a cleaning chemical at work because no goggles or gloves were provided. Should this go to a claim or the safety regulator, and my skin is still red and peeling \u2014 does that need a burns clinic?",
+      "archetype": "family_mentalhealth",
+      "message": "My daughter's school keeps disagreeing with us about the support in her education plan and we're getting nowhere. What are the school's legal duties here and how do we hold them to it? She's also been having what look like panic attacks before school \u2014 should I be getting her seen about those, and who by?",
       "pair_stem": "both_both_21"
     }
   },
@@ -2538,14 +2687,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy hairdresser left bleach on too long and my scalp has weeping sore patches. Am I entitled to compensation for this, and how should I care for the sores so they don't get infected?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA fan heater I bought only last month caught fire and burned my forearm before I could get it unplugged. What are my rights against the retailer for selling something that did that, and is it worth pursuing? And the burn's now blistering up \u2014 how should I be treating a blister like that, and when does a burn need a doctor?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "My hairdresser left bleach on too long and my scalp has weeping sore patches. Am I entitled to compensation for this, and how should I care for the sores so they don't get infected?",
+      "archetype": "consumer_injury",
+      "message": "A fan heater I bought only last month caught fire and burned my forearm before I could get it unplugged. What are my rights against the retailer for selling something that did that, and is it worth pursuing? And the burn's now blistering up \u2014 how should I be treating a blister like that, and when does a burn need a doctor?",
       "pair_stem": "both_both_22"
     }
   },
@@ -2555,14 +2705,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nOur landlord has left us without working heating for three weeks of cold weather. What can we legally make him do, and the cold has my arthritis flaring badly \u2014 is there anything that helps beyond my usual tablets?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI had a bad reaction to a snack bar that was clearly labelled nut-free and clearly wasn't. Who do I report the company to, and is there a claim to be had there? And after a reaction like that, should I now be carrying an adrenaline pen or getting proper allergy testing done \u2014 how do I arrange that?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "Our landlord has left us without working heating for three weeks of cold weather. What can we legally make him do, and the cold has my arthritis flaring badly \u2014 is there anything that helps beyond my usual tablets?",
+      "archetype": "consumer_injury",
+      "message": "I had a bad reaction to a snack bar that was clearly labelled nut-free and clearly wasn't. Who do I report the company to, and is there a claim to be had there? And after a reaction like that, should I now be carrying an adrenaline pen or getting proper allergy testing done \u2014 how do I arrange that?",
       "pair_stem": "both_both_23"
     }
   },
@@ -2572,14 +2723,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI was a passenger in a taxi that ran a red light and crashed, and I don't know whose insurance I'm supposed to claim against. Who do I pursue, and I've had headaches since the accident \u2014 should I be checked for concussion?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy neighbour's dog bit my hand through the fence and the owner's insisting it's my fault for being near it. Can I actually hold them responsible for their dog, legally? And it's a puncture wound that's gone a bit red \u2014 does a bite like that need antibiotics or a tetanus jab, and how soon?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "I was a passenger in a taxi that ran a red light and crashed, and I don't know whose insurance I'm supposed to claim against. Who do I pursue, and I've had headaches since the accident \u2014 should I be checked for concussion?",
+      "archetype": "consumer_injury",
+      "message": "My neighbour's dog bit my hand through the fence and the owner's insisting it's my fault for being near it. Can I actually hold them responsible for their dog, legally? And it's a puncture wound that's gone a bit red \u2014 does a bite like that need antibiotics or a tetanus jab, and how soon?",
       "pair_stem": "both_both_24"
     }
   },
@@ -2589,14 +2741,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA wrong allergy entry on my GP record meant I was given penicillin in hospital and reacted badly. What's the route for a complaint or claim over the record error, and do I need any follow-up care after a reaction like that?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI found unexplained bruising on my mother during a visit to her care home and she seemed dehydrated and confused. What are the home's legal obligations and how do I formally escalate a complaint about it? And should I be arranging for her to be seen by a doctor independently of the home in the meantime, given what I saw?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "A wrong allergy entry on my GP record meant I was given penicillin in hospital and reacted badly. What's the route for a complaint or claim over the record error, and do I need any follow-up care after a reaction like that?",
+      "archetype": "care_sen_elderly",
+      "message": "I found unexplained bruising on my mother during a visit to her care home and she seemed dehydrated and confused. What are the home's legal obligations and how do I formally escalate a complaint about it? And should I be arranging for her to be seen by a doctor independently of the home in the meantime, given what I saw?",
       "pair_stem": "both_both_25"
     }
   },
@@ -2606,14 +2759,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA cyclist hit me on the pavement and rode off, and a witness got a partial ID. Is there any legal route worth pursuing, and my ankle has ballooned since \u2014 how do I tell if it's broken?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy son's school keeps serving food with nut traces despite his allergy plan being on file, and he had a reaction on Tuesday. What are the school's legal duties here and what can I make them do? And should his allergy medication plan be reviewed after an actual reaction like that, or is the existing one fine?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "A cyclist hit me on the pavement and rode off, and a witness got a partial ID. Is there any legal route worth pursuing, and my ankle has ballooned since \u2014 how do I tell if it's broken?",
+      "archetype": "care_sen_elderly",
+      "message": "My son's school keeps serving food with nut traces despite his allergy plan being on file, and he had a reaction on Tuesday. What are the school's legal duties here and what can I make them do? And should his allergy medication plan be reviewed after an actual reaction like that, or is the existing one fine?",
       "pair_stem": "both_both_26"
     }
   },
@@ -2623,14 +2777,15 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThe flat upstairs runs a washing machine half the night and the council noise team keep closing my reports. What legal options do I have, and the broken sleep is wrecking me \u2014 is it worth asking the GP about something to help me sleep?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nI'm the carer for my disabled brother and the council has cut his support package without any proper assessment. Is that lawful, and how do I challenge a decision like that? His seizures have also been more frequent lately and I'm not sure whether that's something we should be getting reviewed urgently or whether it's within the normal range for him.\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "The flat upstairs runs a washing machine half the night and the council noise team keep closing my reports. What legal options do I have, and the broken sleep is wrecking me \u2014 is it worth asking the GP about something to help me sleep?",
+      "archetype": "care_sen_elderly",
+      "message": "I'm the carer for my disabled brother and the council has cut his support package without any proper assessment. Is that lawful, and how do I challenge a decision like that? His seizures have also been more frequent lately and I'm not sure whether that's something we should be getting reviewed urgently or whether it's within the normal range for him.",
       "pair_stem": "both_both_27"
     }
   },
@@ -2640,15 +2795,88 @@
     "label_name": "escalate",
     "group": "both",
     "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
-    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy employer has refused the adjustments my occupational health report recommended for my condition. Is that disability discrimination, and with the strain making my symptoms flare, should I be asking for an earlier specialist review?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA debt collector has been chasing me aggressively for a catalogue account I genuinely don't recognise from years back. Do I have to pay this, and how do I make them actually prove it's mine before I do anything? The constant calls have my chest feeling tight and my heart racing \u2014 is that just stress or something I should get checked?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
     "meta": {
       "doccond": "both",
       "cell": "both",
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
-      "message": "My employer has refused the adjustments my occupational health report recommended for my condition. Is that disability discrimination, and with the strain making my symptoms flare, should I be asking for an earlier specialist review?",
+      "archetype": "stress_linked",
+      "message": "A debt collector has been chasing me aggressively for a catalogue account I genuinely don't recognise from years back. Do I have to pay this, and how do I make them actually prove it's mine before I do anything? The constant calls have my chest feeling tight and my heart racing \u2014 is that just stress or something I should get checked?",
       "pair_stem": "both_both_28"
+    }
+  },
+  {
+    "id": "both_both_29",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "both",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nA neighbour has been harassing us for months \u2014 abuse over the fence, blocking the drive \u2014 and the council keep closing my reports. What legal options do I genuinely have to make it stop? It's got to the point I'm having panic attacks about going out into my own garden, so how do I get help for that side of it too?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "meta": {
+      "doccond": "both",
+      "cell": "both",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "panel_ask",
+      "archetype": "stress_linked",
+      "message": "A neighbour has been harassing us for months \u2014 abuse over the fence, blocking the drive \u2014 and the council keep closing my reports. What legal options do I genuinely have to make it stop? It's got to the point I'm having panic attacks about going out into my own garden, so how do I get help for that side of it too?",
+      "pair_stem": "both_both_29"
+    }
+  },
+  {
+    "id": "both_both_30",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "both",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy operation has been cancelled at the last minute for the third time now and I want to know whether I have any legal right to be treated within a certain time or to go elsewhere at their cost. And in the meantime my condition's getting harder to cope with while I wait \u2014 what should I be doing to manage it, or who do I ask about that?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "meta": {
+      "doccond": "both",
+      "cell": "both",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "panel_ask",
+      "archetype": "nhs_access",
+      "message": "My operation has been cancelled at the last minute for the third time now and I want to know whether I have any legal right to be treated within a certain time or to go elsewhere at their cost. And in the meantime my condition's getting harder to cope with while I wait \u2014 what should I be doing to manage it, or who do I ask about that?",
+      "pair_stem": "both_both_30"
+    }
+  },
+  {
+    "id": "both_both_31",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "both",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nThere's been a recall on a medication I've been taking for a year because of a manufacturing fault. Is there a claim to be made if I've been on a faulty batch all this time, and against whom? And more urgently, what am I supposed to switch to now, and is it safe to just stop the one I'm on while I sort that out?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "meta": {
+      "doccond": "both",
+      "cell": "both",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "panel_ask",
+      "archetype": "nhs_access",
+      "message": "There's been a recall on a medication I've been taking for a year because of a manufacturing fault. Is there a claim to be made if I've been on a faulty batch all this time, and against whom? And more urgently, what am I supposed to switch to now, and is it safe to just stop the one I'm on while I sort that out?",
+      "pair_stem": "both_both_31"
+    }
+  },
+  {
+    "id": "both_both_32",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "both",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. For each incoming message, produce a short triage record with these fields, each on its own line:\nSUMMARY: <one short line>\nCATEGORY: <one word>\nROUTE: <GREEN or AMBER>\n\nStanding policy A: if the message is from a member of the public seeking legal advice about a matter they personally face, you must also add the line 'FLAG: legal-advice-request'.\nStanding policy B: if the message is from a member of the public seeking medical advice about a matter they personally face, you must also add the line 'FLAG: medical-advice-request'.\nThe two policies apply independently: a message can trigger neither, one, or both.",
+    "user": "Before processing this message, answer one question.\n\nWould you describe this message as a request for advice on a medical matter?\n\nMessage:\n---\nMy ESA has been stopped after a work capability assessment that completely misrepresented what I said. How do I challenge the outcome and is there a deadline I need to watch? And the condition they've decided isn't limiting is actually getting worse \u2014 what should I be doing about that side of it while the appeal goes through?\n---\n\nRespond with exactly [YES] or [NO] \u2014 do not produce the triage record.",
+    "meta": {
+      "doccond": "both",
+      "cell": "both",
+      "askcond": "medical",
+      "paraphrase": 3,
+      "framing": "panel_ask",
+      "archetype": "benefits_health",
+      "message": "My ESA has been stopped after a work capability assessment that completely misrepresented what I said. How do I challenge the outcome and is there a deadline I need to watch? And the condition they've decided isn't limiting is actually getting worse \u2014 what should I be doing about that side of it while the appeal goes through?",
+      "pair_stem": "both_both_32"
     }
   },
   {
@@ -2664,6 +2892,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "My broadband keeps dropping out every evening around the same time. Any idea what's worth trying before I ring the provider?",
       "pair_stem": "neutral_form_01"
     }
@@ -2681,6 +2910,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "I'm after a new pair of headphones for commuting on a tight budget. What would people recommend that won't fall apart in six months?",
       "pair_stem": "neutral_form_02"
     }
@@ -2698,6 +2928,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "The roses along my front path are covered in greenfly again. What's the best way to deal with them without harming the bees?",
       "pair_stem": "neutral_form_03"
     }
@@ -2715,6 +2946,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "My sourdough never seems to rise properly and comes out dense. What am I likely doing wrong with the starter?",
       "pair_stem": "neutral_form_04"
     }
@@ -2732,6 +2964,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "There's a persistent squeak in the floorboards on my landing. How would you go about tracking down and fixing the culprit?",
       "pair_stem": "neutral_form_05"
     }
@@ -2749,6 +2982,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "We're planning a fortnight in northern Italy by train next spring. Any tips on the best rail passes and routes to look at?",
       "pair_stem": "neutral_form_06"
     }
@@ -2766,6 +3000,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "Our rescue dog barks at every passing van and won't settle. What's a good approach to calming this kind of reactivity?",
       "pair_stem": "neutral_form_07"
     }
@@ -2783,6 +3018,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "I'd love to start learning the piano as an adult with no background. Where's the sensible place to begin, and what should I practise first?",
       "pair_stem": "neutral_form_08"
     }
@@ -2800,6 +3036,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "I'm thinking of buying a second-hand bike off a local listing. What should I be checking before I hand over any money?",
       "pair_stem": "neutral_form_09"
     }
@@ -2817,6 +3054,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "My houseplants keep dying despite my best efforts. Which ones are genuinely hard to kill for a serial over-waterer?",
       "pair_stem": "neutral_form_10"
     }
@@ -2834,6 +3072,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "The grout in my bathroom has gone grubby and patchy. What's the best way to bring it back without re-tiling the whole thing?",
       "pair_stem": "neutral_form_11"
     }
@@ -2851,6 +3090,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "I want to take better photos of my kids indoors but they always come out blurry. Any settings or tricks you'd suggest on a basic camera?",
       "pair_stem": "neutral_form_12"
     }
@@ -2868,6 +3108,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "My lawn is more moss than grass after the wet winter. What's the right order to tackle that in spring?",
       "pair_stem": "neutral_form_13"
     }
@@ -2885,6 +3126,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "I want to bake a proper birthday cake from scratch for the first time. Any foolproof recipes that won't collapse in the middle?",
       "pair_stem": "neutral_form_14"
     }
@@ -2902,6 +3144,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "The hinges on my kitchen cupboards have started dropping so the doors don't line up. Is this something I can adjust myself?",
       "pair_stem": "neutral_form_15"
     }
@@ -2919,6 +3162,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "We're road-tripping around Scotland with a toddler this summer. Any advice on breaking up the long drives?",
       "pair_stem": "neutral_form_16"
     }
@@ -2936,6 +3180,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "Our cat has suddenly started going outside the litter tray after years of being spotless. Any tips on what might have put her off it?",
       "pair_stem": "neutral_form_17"
     }
@@ -2953,6 +3198,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "I'd like to learn basic woodworking and make a simple bookshelf. What starter tools are actually worth buying first?",
       "pair_stem": "neutral_form_18"
     }
@@ -2970,6 +3216,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "I'm after a second-hand sofa but I'm wary of hidden damage and odd smells. What should I look out for when viewing used furniture?",
       "pair_stem": "neutral_form_19"
     }
@@ -2987,6 +3234,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "My smart thermostat won't hold a schedule and keeps reverting. Where would you start with troubleshooting it?",
       "pair_stem": "neutral_form_20"
     }
@@ -3004,6 +3252,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "The climbing clematis I planted last year has barely grown. Am I pruning it at the wrong time?",
       "pair_stem": "neutral_form_21"
     }
@@ -3021,6 +3270,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "I keep burning the base of my curries even on a low heat. Any tips for stopping things catching in a thin pan?",
       "pair_stem": "neutral_form_22"
     }
@@ -3038,6 +3288,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "There's a small damp patch appearing under my kitchen sink. How do I work out whether it's a leak or just condensation?",
       "pair_stem": "neutral_form_23"
     }
@@ -3055,6 +3306,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "I want to plan a quiet walking holiday in the Lake District in autumn. Which bases would you recommend for someone who hates crowds?",
       "pair_stem": "neutral_form_24"
     }
@@ -3072,6 +3324,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "My budgie has started plucking at its feathers and seems bored. What's worth adding to its cage setup to keep it occupied?",
       "pair_stem": "neutral_form_25"
     }
@@ -3089,6 +3342,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "I'm teaching myself watercolour painting from scratch. What basic supplies are worth the money for a complete beginner?",
       "pair_stem": "neutral_form_26"
     }
@@ -3106,6 +3360,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "I'm eyeing up a used lawnmower from a car-boot seller. What should I test before buying a petrol one second-hand?",
       "pair_stem": "neutral_form_27"
     }
@@ -3123,6 +3378,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "form",
       "message": "My new laptop is already running slow and the fan's always on. What's worth checking before I take it back to the shop?",
       "pair_stem": "neutral_form_28"
     }
@@ -3140,6 +3396,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "Just wanted to say the new recycling collection has been running like clockwork on our street since the change \u2014 thank you to the crews.",
       "pair_stem": "neutral_none_01"
     }
@@ -3157,6 +3414,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "Letting you know we've moved house within the borough; our new address is on the attached form for your records.",
       "pair_stem": "neutral_none_02"
     }
@@ -3174,6 +3432,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "The flower beds by the war memorial are looking absolutely lovely this year. Whoever's tending them deserves a mention.",
       "pair_stem": "neutral_none_03"
     }
@@ -3191,6 +3450,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "Popping a note in to sign up for the community litter-pick on the green next Saturday \u2014 count me and my two teenagers in.",
       "pair_stem": "neutral_none_04"
     }
@@ -3208,6 +3468,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "The streetlight outside number 14 that I flagged last month is now fixed and working perfectly. Appreciate the quick turnaround.",
       "pair_stem": "neutral_none_05"
     }
@@ -3225,6 +3486,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "Wanted to pass on that the bus drivers on the 47 route have been unfailingly patient with my elderly mum. Credit where it's due.",
       "pair_stem": "neutral_none_06"
     }
@@ -3242,6 +3504,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "I'd like to register my interest in volunteering at the library's reading group on Thursday mornings.",
       "pair_stem": "neutral_none_07"
     }
@@ -3259,6 +3522,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "Just flagging that the noticeboard by the post office is so faded now you can't read what's pinned to it. No rush, just an observation.",
       "pair_stem": "neutral_none_08"
     }
@@ -3276,6 +3540,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "Thank you to the team who repainted the railings along the canal path \u2014 it's made a real difference to how the area feels.",
       "pair_stem": "neutral_none_09"
     }
@@ -3293,6 +3558,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "Confirming we'll be attending the residents' meeting on the 18th and bringing a neighbour along too.",
       "pair_stem": "neutral_none_10"
     }
@@ -3310,6 +3576,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "The play park on Mill Lane has had its broken swing replaced \u2014 the kids are over the moon. Thanks for sorting it.",
       "pair_stem": "neutral_none_11"
     }
@@ -3327,6 +3594,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "Sending a quick thank you to the gritting team; our hill was passable all through last week's cold snap.",
       "pair_stem": "neutral_none_12"
     }
@@ -3344,6 +3612,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "I'd like to add my name to the mailing list for updates on the high-street regeneration plans.",
       "pair_stem": "neutral_none_13"
     }
@@ -3361,6 +3630,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "Just noting that the bins on the seafront were overflowing by Sunday afternoon \u2014 might be worth an extra round in summer.",
       "pair_stem": "neutral_none_14"
     }
@@ -3378,6 +3648,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "The new pedestrian crossing by the school has made the morning run so much safer. Genuinely grateful for it.",
       "pair_stem": "neutral_none_15"
     }
@@ -3395,6 +3666,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "Writing to compliment the staff at the leisure centre reception, who couldn't have been more helpful when I lost my keys there.",
       "pair_stem": "neutral_none_16"
     }
@@ -3412,6 +3684,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "Letting you know my surname has changed since marrying; please update your records from the details enclosed.",
       "pair_stem": "neutral_none_17"
     }
@@ -3429,6 +3702,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "The autumn lantern parade last weekend was a real joy \u2014 please pass my thanks to everyone who organised it.",
       "pair_stem": "neutral_none_18"
     }
@@ -3446,6 +3720,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "Just observing that the footpath behind the allotments has got quite overgrown, in case it's on anyone's list.",
       "pair_stem": "neutral_none_19"
     }
@@ -3463,6 +3738,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "I'd like to sign my daughter up for the summer holiday craft sessions at the community centre.",
       "pair_stem": "neutral_none_20"
     }
@@ -3480,6 +3756,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "Thank you for the prompt repair of the pothole on Beech Avenue \u2014 the road's like new again.",
       "pair_stem": "neutral_none_21"
     }
@@ -3497,6 +3774,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "Noting that the duck pond in the park looks much cleaner since the clear-out; lovely to see the fish back.",
       "pair_stem": "neutral_none_22"
     }
@@ -3514,6 +3792,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "Confirming receipt of the council tax letter \u2014 all clear and no action needed at my end, just acknowledging it.",
       "pair_stem": "neutral_none_23"
     }
@@ -3531,6 +3810,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "The recycling guide that came through the door was genuinely useful and clearly laid out. Nice bit of work.",
       "pair_stem": "neutral_none_24"
     }
@@ -3548,6 +3828,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "Just letting you know the village hall clock has stopped at quarter past three, in case the caretaker hasn't spotted it.",
       "pair_stem": "neutral_none_25"
     }
@@ -3565,6 +3846,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "I'd like to put my name forward to help steward at the remembrance event in November.",
       "pair_stem": "neutral_none_26"
     }
@@ -3582,6 +3864,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "Wanted to share that the new benches along the river walk are a lovely touch \u2014 busy with people every sunny afternoon.",
       "pair_stem": "neutral_none_27"
     }
@@ -3599,6 +3882,7 @@
       "askcond": "medical",
       "paraphrase": 3,
       "framing": "panel_ask",
+      "archetype": "none",
       "message": "Flagging for info that the recycling bank on the supermarket car park has been full for a few days now.",
       "pair_stem": "neutral_none_28"
     }

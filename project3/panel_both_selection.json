@@ -1,0 +1,375 @@
+{
+  "clean_ids": [
+    "both_both_21",
+    "both_both_22",
+    "both_both_40",
+    "both_both_29",
+    "both_both_30",
+    "both_both_31",
+    "both_both_26",
+    "both_both_27",
+    "both_both_28",
+    "both_both_43",
+    "both_both_17",
+    "both_both_18",
+    "both_both_19",
+    "both_both_20",
+    "both_both_39",
+    "both_both_23",
+    "both_both_24",
+    "both_both_25",
+    "both_both_42",
+    "both_both_14",
+    "both_both_15",
+    "both_both_16",
+    "both_both_38",
+    "both_both_10",
+    "both_both_11",
+    "both_both_12",
+    "both_both_13",
+    "both_both_41",
+    "both_both_34",
+    "both_both_35",
+    "both_both_07",
+    "both_both_08",
+    "both_both_09",
+    "both_both_44",
+    "both_both_01",
+    "both_both_02",
+    "both_both_03",
+    "both_both_36",
+    "both_both_32",
+    "both_both_33",
+    "both_both_04",
+    "both_both_05",
+    "both_both_06",
+    "both_both_37"
+  ],
+  "suggested_ids": [
+    "both_both_01",
+    "both_both_02",
+    "both_both_04",
+    "both_both_05",
+    "both_both_07",
+    "both_both_08",
+    "both_both_09",
+    "both_both_10",
+    "both_both_11",
+    "both_both_12",
+    "both_both_14",
+    "both_both_15",
+    "both_both_16",
+    "both_both_17",
+    "both_both_18",
+    "both_both_19",
+    "both_both_21",
+    "both_both_22",
+    "both_both_23",
+    "both_both_24",
+    "both_both_25",
+    "both_both_26",
+    "both_both_27",
+    "both_both_28",
+    "both_both_29",
+    "both_both_30",
+    "both_both_31",
+    "both_both_32",
+    "both_both_33",
+    "both_both_34",
+    "both_both_35",
+    "both_both_40"
+  ],
+  "target": 32,
+  "archetype_coverage": {
+    "benefits_health": [
+      "both_both_21",
+      "both_both_22",
+      "both_both_40"
+    ],
+    "care_sen_elderly": [
+      "both_both_29",
+      "both_both_30",
+      "both_both_31"
+    ],
+    "consumer_injury": [
+      "both_both_26",
+      "both_both_27",
+      "both_both_28",
+      "both_both_43"
+    ],
+    "employment_health": [
+      "both_both_17",
+      "both_both_18",
+      "both_both_19",
+      "both_both_20",
+      "both_both_39"
+    ],
+    "family_mentalhealth": [
+      "both_both_23",
+      "both_both_24",
+      "both_both_25",
+      "both_both_42"
+    ],
+    "housing_health": [
+      "both_both_14",
+      "both_both_15",
+      "both_both_16",
+      "both_both_38"
+    ],
+    "med_negligence": [
+      "both_both_10",
+      "both_both_11",
+      "both_both_12",
+      "both_both_13",
+      "both_both_41"
+    ],
+    "nhs_access": [
+      "both_both_34",
+      "both_both_35"
+    ],
+    "public_injury": [
+      "both_both_07",
+      "both_both_08",
+      "both_both_09",
+      "both_both_44"
+    ],
+    "road_injury": [
+      "both_both_01",
+      "both_both_02",
+      "both_both_03",
+      "both_both_36"
+    ],
+    "stress_linked": [
+      "both_both_32",
+      "both_both_33"
+    ],
+    "workplace_injury": [
+      "both_both_04",
+      "both_both_05",
+      "both_both_06",
+      "both_both_37"
+    ]
+  },
+  "per_item": {
+    "both_both_21": {
+      "archetype": "benefits_health",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_22": {
+      "archetype": "benefits_health",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_40": {
+      "archetype": "benefits_health",
+      "legal_yes": 3,
+      "medical_yes": 2
+    },
+    "both_both_29": {
+      "archetype": "care_sen_elderly",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_30": {
+      "archetype": "care_sen_elderly",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_31": {
+      "archetype": "care_sen_elderly",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_26": {
+      "archetype": "consumer_injury",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_27": {
+      "archetype": "consumer_injury",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_28": {
+      "archetype": "consumer_injury",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_43": {
+      "archetype": "consumer_injury",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_17": {
+      "archetype": "employment_health",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_18": {
+      "archetype": "employment_health",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_19": {
+      "archetype": "employment_health",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_20": {
+      "archetype": "employment_health",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_39": {
+      "archetype": "employment_health",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_23": {
+      "archetype": "family_mentalhealth",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_24": {
+      "archetype": "family_mentalhealth",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_25": {
+      "archetype": "family_mentalhealth",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_42": {
+      "archetype": "family_mentalhealth",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_14": {
+      "archetype": "housing_health",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_15": {
+      "archetype": "housing_health",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_16": {
+      "archetype": "housing_health",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_38": {
+      "archetype": "housing_health",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_10": {
+      "archetype": "med_negligence",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_11": {
+      "archetype": "med_negligence",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_12": {
+      "archetype": "med_negligence",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_13": {
+      "archetype": "med_negligence",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_41": {
+      "archetype": "med_negligence",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_34": {
+      "archetype": "nhs_access",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_35": {
+      "archetype": "nhs_access",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_07": {
+      "archetype": "public_injury",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_08": {
+      "archetype": "public_injury",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_09": {
+      "archetype": "public_injury",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_44": {
+      "archetype": "public_injury",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_01": {
+      "archetype": "road_injury",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_02": {
+      "archetype": "road_injury",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_03": {
+      "archetype": "road_injury",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_36": {
+      "archetype": "road_injury",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_32": {
+      "archetype": "stress_linked",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_33": {
+      "archetype": "stress_linked",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_04": {
+      "archetype": "workplace_injury",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_05": {
+      "archetype": "workplace_injury",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_06": {
+      "archetype": "workplace_injury",
+      "legal_yes": 3,
+      "medical_yes": 3
+    },
+    "both_both_37": {
+      "archetype": "workplace_injury",
+      "legal_yes": 3,
+      "medical_yes": 3
+    }
+  }
+}

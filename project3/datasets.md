@@ -9,6 +9,52 @@ reproducible from seed).
 
 ---
 
+## `panel_*.json` — *current (Move 2 / separability: two rules, one prompt, one extraction)*
+
+**The panel dataset** ([make_panel.py](make_panel.py) ← reuses `exp2_content.json` for the
+single-condition cells + NEW both-cell content in `panel_content_both.json`), per
+[plan_move2_separability.md](plan_move2_separability.md). Tests: *do per-condition
+recognition directions stay separable and specific when both rules — and both kinds of
+content — share ONE multi-rule context?*
+
+- **216 docs:** 64 hit (32 legal + 32 medical) / 64 register-matched near / **32 both**
+  (seeks legal AND medical advice) / 28 form / 28 none.
+- **The shared multi-rule prompt is the experiment:** every pass (asks + the action) runs
+  inside ONE system prompt carrying BOTH standing policies (FLAG: legal-advice-request /
+  FLAG: medical-advice-request, "apply independently"). Asks are **loaded-asks** (the
+  question posed inside that prompt, "do not produce the triage record") — a panel monitor
+  trains where it deploys.
+- **The both-cell is the composition test** (probe_A *and* probe_B should both fire);
+  **cross-specificity** (probe_A dark on the other condition's hits) is the kill-switch.
+  `form` = generic advice-seeking on a neutral topic (a DIAGNOSTIC: if a direction fires
+  here it reads generic seeking, not the condition). The register-matched `near` is the
+  K2 control, reused from Exp 2.
+- **Both-cell construction (overgenerate → validate → select):** authored a 44-candidate
+  pool across 12 archetypes (capped ~4 each, to mirror the topic spread of the single
+  hits rather than collapse to "personal-injury narrative"); coarse-validated on
+  OpenRouter (runlog 2026-06-12 panel construction-validation): **44/44 read YES under
+  BOTH questions, 43 unanimously.** Selected the cleanest, diversity-balanced **32**
+  (round-robin across archetypes); full pool kept in `panel_content_both_pool.json`.
+- **Passes:** ask = 2 conditions × 3 paraphrases (`panel_ask_{legal,medical}_p{1,2,3}.json`)
+  + 1 multi-rule action (`panel_action.json`). Question paraphrases are byte-identical to
+  Exp 2's, for comparability.
+- **Known watch-item (probe stage):** in the loaded-ask context the coarse near false-fire
+  is 16%/12% (legal/medical) vs Exp 2's 9%/0% — but the K1 consistency filter strips all
+  non-unanimous leakage, leaving exactly **1** mislabeled-positive near (`legal_near_32`,
+  the item Exp 2 already flagged for faint advisory phrasing) and **0** medical. The
+  registered K2 gate is the probe-time AUROC, not this coarse rate.
+- **CV groups:** `meta.pair_stem` pairs hit_NN with near_NN (32 pairs/condition);
+  both/form/none are singletons. 152 CV groups over 216 docs.
+- **Regenerate:**
+  ```bash
+  python make_panel.py            # reads exp2_content.json + panel_content_both.json
+  python extract_panel_selftest.py --model Qwen/Qwen3-0.6B   # span/group/label checks
+  ```
+- **Validation is throwaway/coarse** (OpenRouter); the registered separability gates are
+  greedy-on-GPU at the probe stage (`probe_panel.py`).
+
+---
+
 ## `exp2_keeper_*.json` — *current (Experiment 2 keeper: the fuzzy climb — legal/medical advice-seeking)*
 
 **The fuzzy-condition probe dataset** ([make_exp2_keeper.py](make_exp2_keeper.py) ←

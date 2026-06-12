@@ -1,7 +1,22 @@
 # Move 2 — Separability: do per-condition probes coexist in one prompt?
 
-**Dated:** 2026-06-12. **Status:** CODE READY — full pipeline set up and smoke-tested;
-awaiting (a) the OpenRouter construction validation, then (b) one GPU session.
+**Dated:** 2026-06-12. **Status:** VALIDATED — construction validation PASSED, keeper
+locked at 216 docs; **the only remaining step is the GPU extraction** (then `probe_panel.py`).
+
+## Validation outcome (2026-06-12 — runlog "Move 2 panel construction-validation")
+
+- **GO.** Both-cell overgenerated to 44 across 12 archetypes → **44/44 read YES under both
+  rules, 43 unanimous** → selected the diversity-balanced **32** for the keeper (pool kept
+  in `panel_content_both_pool.json`). Capability 100%, cross-spec ~0%, UNCLEAR 0% (the
+  loaded-ask yields clean YES/NO).
+- **One watch-item, not a blocker:** loaded-ask K2 near false-fire 16%/12% (vs Exp 2's
+  9%/0%); K1 strips all non-unanimous leakage to **1** mislabeled near (`legal_near_32`,
+  a known-marginal Exp 2 item) and **0** medical. Registered K2 gate is probe-time AUROC,
+  so it is checked at the probe stage, not here.
+- **Keeper locked:** 216 docs, registered in [datasets.md](datasets.md) (`panel_*`);
+  selftest passes char + token level.
+- **TO RUN NEXT (GPU):** commit for a clean SHA, then `bash extract_panel.sh` on the box →
+  pull `acts/panel_*__*.npz` → `./.venv/bin/python probe_panel.py --acts-dir acts --out probe_panel.json`.
 
 ## Execution status (2026-06-12 — code setup pass)
 
