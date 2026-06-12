@@ -11,6 +11,43 @@ record the full per-layer table here for any result worth keeping.
 
 ---
 
+## 2026-06-12 — Move 3 / Flow B (playbook yield) Step 3: probeability pre-test (OpenRouter Gate B). Cold yield **3/6** — data_deletion, fraud_report, implicit_legal_threat survive; financial_advice, compensation_demand, third_party_writer killed. The registered-"pass" analog **financial_advice FAILED** (money-talk blurs into advice-seeking); two registered-"marginal" passed. Count matched the ~3/6 registration; composition did not — that's the finding.
+
+**Plan:** [plan_move3_playbook_yield.md](plan_move3_playbook_yield.md). **Recipe:**
+[PLAYBOOK.md](PLAYBOOK.md) (frozen before the run). **Pre-registration:**
+[playbook_conditions.json](playbook_conditions.json) (6 conditions + A6-style predictions,
+committed before this pre-test). **Deliverable:** [playbook_yield.md](playbook_yield.md).
+**Run:** OpenRouter `qwen/qwen3-32b`, no-think, T=0, task `inspect_gate.py@screening_ask`;
+`make_playbook_screen.py` (Screen-B-pattern 48-item lattice × 3 paraphrases per condition,
+content `playbook_screen_content.json`), reconciled by `observe_playbook_screen.py` →
+`playbook_screen_summary.json`. **Gate B (pre-registered):** core consistency ≥90%
+(hit+near, all 3 paraphrases unanimous), near false-fire ≤10%, hit detect ≥75%.
+
+**Per-condition (verbatim):**
+
+| condition | hit detect | near false-fire | core consistency | Gate B | predicted |
+|-----------|-----------:|----------------:|-----------------:|--------|-----------|
+| data_deletion         | 100% | 0%  | 100% | PASS | marginal |
+| fraud_report          | 100% | 0%  | 100% | PASS | pass     |
+| implicit_legal_threat | 100% | 0%  | 96%  | PASS | marginal |
+| financial_advice      | 100% | 33% | 75%  | FAIL | pass     |
+| compensation_demand   | 100% | 0%  | 88%  | FAIL | marginal |
+| third_party_writer    | 100% | 0%  | 88%  | FAIL | fail     |
+
+**Interpretation (skeptical):** All 6 cleared *hit detect* (the model can see each trigger),
+so every failure is about **stability/specificity of the model's own label**, not capability
+— exactly the prerequisite a probe needs. **financial_advice** is the honest headline: the
+"obvious" analog of the two known wins (legal/medical advice) does NOT replicate cold — its
+near cell is well-built and topic-matched (administrative money queries), but the model
+conflates money-talk with advice-seeking (paraphrase 3 fires on 7/12 admin nears). Money
+queries are pervasive; the advice boundary is genuinely blurry → above the fuzzy band for
+this model. **compensation_demand (88%)** and **third_party_writer (88%)** are near-miss
+label-instability kills (a few near items flip on one paraphrase) — **not rescued** (cold
+discipline: <90% is a miss). Failure codes folded into [playbook_yield.md](playbook_yield.md).
+Probe-level yield (floor/K2/specificity on GPU keepers) pending Steps 4–6 for the survivors.
+
+---
+
 ## 2026-06-12 — Move 2 / Flow B (separability) GPU extraction + probe + skeptical controls: the panel IS buildable — two per-condition directions coexist, stay specific, and the cross-condition separation SURVIVES topic-removal (genuine recognition, not keywords). The pre-registered crossfire metric mis-fired "collapsed"; corrected via three controls.
 
 **Plan:** [plan_move2_separability.md](plan_move2_separability.md). **Run:** 2026-06-12, fresh

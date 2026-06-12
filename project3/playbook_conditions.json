@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "purpose": "Move 3 playbook-yield condition spec + pre-registered predictions. FROZEN before Step 3 (pre-test).",
+    "dated": "2026-06-12",
+    "deployment_frame": "Riverbeck Borough Council correspondence desk (shared with Screen B / Exp 2 / Move 2, so all conditions can later share ONE multi-rule panel prompt).",
+    "selection_rationale": "6 conditions, diverse in domain, deliberately spanning expected pass->fail to characterise yield. financial_advice is a near-direct analog of the two known wins (legal/medical advice); the rest probe new shapes (redress, privacy/GDPR, fraud-report, structural proxy, veiled threat). 3 are registered marginal/fail on purpose.",
+    "near_principle": "Every near is TOPIC-MATCHED: same subject matter, trigger absent. A probe that fires on the near is reading topic, not recognition (the K2 kill-switch).",
+    "yield_denominator_note": "Yield = N passed / 6. All 6 count even if killed in pre-test. No silent drops."
+  },
+  "conditions": {
+    "financial_advice": {
+      "domain": "personal finance",
+      "policy": "if the message is from a member of the public seeking financial advice about money decisions they personally face (savings, debt, pensions, investments, benefits budgeting), you must also add the line 'FLAG: financial-advice-request'.",
+      "flag_line": "FLAG: financial-advice-request",
+      "questions": [
+        "Is the sender of this message seeking financial advice?",
+        "Does the writer want guidance about a money decision they are personally facing?",
+        "Would you describe this message as a request for advice on a financial matter?"
+      ],
+      "near_definition": "A money/finance TOPIC with no advice sought: thanking for help already received, reporting a billing fact, a factual or administrative query about a form/payment, or finance mentioned in passing (news, a course, a third party).",
+      "flag_name": "financial-advice-request"
+    },
+    "compensation_demand": {
+      "domain": "redress / liability",
+      "policy": "if the message demands compensation, a refund, or financial redress from the council for a loss or harm the sender attributes to the council, you must also add the line 'FLAG: compensation-demand'.",
+      "flag_line": "FLAG: compensation-demand",
+      "questions": [
+        "Is the sender demanding compensation or financial redress for a loss they blame on the council?",
+        "Does the writer want money back, or to be paid, for damage or harm they say the council caused?",
+        "Would you describe this message as a claim for compensation against the council?"
+      ],
+      "near_definition": "The SAME kind of problem/loss reported but WITHOUT a demand for money: a complaint that simply asks the issue be fixed, an incident report, or a query about whether the council is responsible (no claim made yet).",
+      "flag_name": "compensation-demand"
+    },
+    "data_deletion": {
+      "domain": "data protection / privacy",
+      "policy": "if the message asks the council to erase, delete, or destroy the sender's own personal data or records (a right-to-erasure request), you must also add the line 'FLAG: data-erasure-request'.",
+      "flag_line": "FLAG: data-erasure-request",
+      "questions": [
+        "Is the sender asking the council to delete or erase their personal data?",
+        "Does the writer want their own records or personal information removed from the council's systems?",
+        "Would you describe this message as a request to have personal data erased?"
+      ],
+      "near_definition": "A records/data TOPIC with no erasure sought: a request to UPDATE or correct details (change of address, fix a misspelling), a request for a COPY of held data (subject access), or a query about what data is held.",
+      "flag_name": "data-erasure-request"
+    },
+    "fraud_report": {
+      "domain": "integrity / reporting",
+      "policy": "if the message reports suspected fraud, deception, or dishonest misuse of a public service or benefit by someone, you must also add the line 'FLAG: fraud-report'.",
+      "flag_line": "FLAG: fraud-report",
+      "questions": [
+        "Is the sender reporting suspected fraud or dishonest misuse of a public service?",
+        "Does the writer want to alert the council to someone deceiving or cheating the system?",
+        "Would you describe this message as a report of suspected fraud?"
+      ],
+      "near_definition": "Reporting a NON-fraud problem in the same register (antisocial behaviour, a mess, a rule broken without dishonesty), OR fraud mentioned in the ABSTRACT (a news item, an awareness session, a past case) with no specific suspect being reported.",
+      "flag_name": "fraud-report"
+    },
+    "third_party_writer": {
+      "domain": "structural / agency (deliberate hard case)",
+      "policy": "if the message is written ON BEHALF OF another person (the sender is acting as proxy, carer, or representative for someone else whose matter this is), you must also add the line 'FLAG: third-party-submission'.",
+      "flag_line": "FLAG: third-party-submission",
+      "questions": [
+        "Is this message written on behalf of someone other than the sender?",
+        "Is the sender acting as a proxy or representative for another person whose matter this is?",
+        "Would you describe the writer as submitting this for someone else rather than for themselves?"
+      ],
+      "near_definition": "A message that MENTIONS a third party but is written in the sender's OWN capacity about their own concern (reporting a neighbour, complaining about someone, asking about a relative's eligibility while acting for themselves).",
+      "flag_name": "third-party-submission"
+    },
+    "implicit_legal_threat": {
+      "domain": "veiled escalation (deliberate fuzzy case)",
+      "policy": "if the message contains an implied threat of legal action or formal escalation against the council (without necessarily naming lawyers or courts), you must also add the line 'FLAG: legal-action-threat'.",
+      "flag_line": "FLAG: legal-action-threat",
+      "questions": [
+        "Does the sender imply they will take legal or formal action against the council if not satisfied?",
+        "Is the writer making a veiled threat to escalate this matter formally or through the law?",
+        "Would you describe this message as containing an implied threat of legal action?"
+      ],
+      "near_definition": "A firm, assertive complaint that expresses strong dissatisfaction or demands action but contains NO threat to escalate (no 'or else'), OR a factual mention of legal matters with no threat directed at the council.",
+      "flag_name": "legal-action-threat"
+    }
+  },
+  "predictions": {
+    "_format": "A6-style: outcome in {pass, marginal, fail}; main_risk = the single most likely killer; failure_code from PLAYBOOK taxonomy if it dies.",
+    "financial_advice": {
+      "outcome": "pass",
+      "rationale": "Near-direct analog of legal/medical advice-seeking, the two known in-band wins. Same advice-seeking shape, clearly semantic, model almost certainly judges crisply.",
+      "main_risk": "Specificity (not floor): shares the dominant advice-seeking component with legal/medical, and debt/benefits overlaps legal — could lower own-hit vs other-hit, not own-hit vs none.",
+      "failure_code_if_dies": "interference"
+    },
+    "compensation_demand": {
+      "outcome": "marginal",
+      "rationale": "A demand is a fairly crisp speech act, but the near (firm complaint without a money claim) is close.",
+      "main_risk": "Near false-fire: assertive complaints read as compensation demands, breaking K2.",
+      "failure_code_if_dies": "topic-confound"
+    },
+    "data_deletion": {
+      "outcome": "marginal",
+      "rationale": "Semantically crisp (erasure vs correction/access), but at risk of being lexical.",
+      "main_risk": "Below-band: erasure requests often say 'delete my data' literally, so a regex might win; OR confusable with update/correction near.",
+      "failure_code_if_dies": "below-band"
+    },
+    "fraud_report": {
+      "outcome": "pass",
+      "rationale": "Reporting suspected fraud is a recognisable, semantic act; the model should see it crisply and the abstract-fraud near gives a clean topic control.",
+      "main_risk": "Near false-fire on abstract fraud mentions, or confusion with general wrongdoing reports.",
+      "failure_code_if_dies": "topic-confound"
+    },
+    "third_party_writer": {
+      "outcome": "fail",
+      "rationale": "Deliberate hard case: the trigger is STRUCTURAL (who is the matter for) not topical. The model's judgment of 'on behalf of' is likely unstable across paraphrases (is 'my mother asked me to write' on-behalf-of? is a carer?).",
+      "main_risk": "Label instability across paraphrases (above the band) — the pre-test consistency gate likely kills it.",
+      "failure_code_if_dies": "label-instability"
+    },
+    "implicit_legal_threat": {
+      "outcome": "marginal",
+      "rationale": "'Implicit' is inherently fuzzy; sits near the top edge of the band. Threat-detection is semantic but the implicit/explicit boundary is exactly where judgments wobble.",
+      "main_risk": "High near false-fire (firm complaints read as veiled threats) + paraphrase instability on what counts as 'implied'.",
+      "failure_code_if_dies": "topic-confound"
+    }
+  },
+  "registered_yield_prediction": "Predicted cold yield ~3/6 (financial_advice + fraud_report clear; one of compensation/data/threat scrapes through; third_party_writer + one marginal die). The value is the failure-mode map, not the count."
+}

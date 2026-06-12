@@ -1,0 +1,674 @@
+[
+  {
+    "id": "financial_advice_hit_01",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nI've got \u00a38k sitting in a current account doing nothing \u2014 should I lock it into a fixed bond or use it to pay down the car loan first?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_hit_02",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nDear Sirs, my fixed-rate mortgage ends in October and I'm dithering between fixing again for five years or going onto a tracker. Which way would you lean given where rates are headed?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_hit_03",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nquick one \u2014 mum left me about \u00a315,000 and I genuinely don't know whether to stick it in a stocks ISA or just leave it in savings. what would you do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_hit_04",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nI'm 58 and thinking of taking the 25% tax-free lump out of my pension to clear the last of the mortgage. Is that a sensible move or am I shooting myself in the foot?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_hit_05",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nHi, I'm drowning a bit \u2014 two credit cards at about \u00a34,200 between them and a \u00a3900 overdraft. Should I try a consolidation loan or just attack the worst card first? Honestly unsure where to start.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_hit_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nWe've finally saved enough for a 10% deposit on a little terrace in Eastgate. Worth waiting another year to scrape together 15% and get a better rate, or jump in now before prices climb?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_hit_07",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nMorning. My Premium Bonds have won precisely nothing in two years. Am I daft to keep \u00a320k in them rather than moving it somewhere that actually pays interest?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_hit_08",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nCould someone point me the right way \u2014 I've come into a bit through a redundancy payout and I'm torn between overpaying the mortgage or starting a private pension. Which gives me more bang for my buck long term?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_hit_09",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nI keep reading you should have three months' wages set aside before you invest anything. I've only got one month's worth. Do I build that up first or start the workplace pension straight away?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_hit_10",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nMy nan's offered to gift me \u00a35,000 towards a wedding but I'd rather use it for a house deposit one day. Is it smarter to put it in a Lifetime ISA for the bonus or just an ordinary saver?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_hit_11",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nStrapped this month after the boiler died. I can pay the minimum on the card and keep some cash by, or empty the rainy-day fund and clear the card outright. What's the less stupid option?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_hit_12",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nThinking of switching my \u00a330k pension pot out of the default fund into something with more shares since I'm only 41. Too risky, or about right for my age? Would value a steer.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_near_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nJust wanted to say thank you \u2014 the gentleman on the phone sorted out my council tax direct debit in minutes and was ever so patient with me.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_near_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nTo confirm: I paid the \u00a3142.50 garden waste renewal online on the 3rd but the confirmation email never arrived. Can you check it landed your end?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_near_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nThere's a free 'Budgeting Basics' evening class running at the library on Thursdays apparently \u2014 is that something the council organises or an outside group? Just curious, my neighbour mentioned it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_near_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nFYI my brother's been in a right state over his energy debt down in Cardiff, but he's sorting it through his own council. Nothing needed from you, just venting really.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_near_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nHello, could you tell me which financial year the new parking permit charges apply from? Trying to work out if I renew now or in April.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_near_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nI saw in the local paper that the council's reserves are down \u00a33m this year. Bit alarming. Is there somewhere I can read the full budget report?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_near_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nQuick correction \u2014 my last council tax statement shows \u00a31,488 but I'm fairly sure the band changed in 2019. Not asking you to do anything, I'll dig out the letter and ring back.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_near_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nCheers for the refund on the overpaid bin charge, came through this morning. Appreciate you chasing it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_near_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nMy daughter's doing an A-level project on household debt in the borough and wondered if any anonymised figures are published anywhere. Pointing her at you in case.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_near_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nNoting for the record that the standing order reference you gave me (RB-77104) doesn't match the one on my bill. Which should I be using going forward?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_near_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nRead that pensioners can get a one-off \u00a375 heating top-up this winter. I don't need it myself, comfortable enough, but thought you'd want feedback that the leaflet wording was unclear.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_near_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nJust flagging the card machine at the Leisure Centre reception was declining payments all of Saturday morning. Sorted by lunchtime but thought you should know.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_form_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nI've got a north-facing patch by the back fence that gets barely any sun \u2014 what would you plant there that'll actually survive? Roses have given up twice now.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_form_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nRight, my sourdough starter smells like nail varnish and I'm at my wit's end. Bin it and start again, or can it be rescued? Any wisdom gratefully received.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_form_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nWe've taken in a rescue greyhound who won't settle at night and howls the place down. Crate her or let her roam? What's worked for other folk?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_form_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nThinking of repainting the hallway but it's forever dark \u2014 should I go for a brilliant white or would a warm cream actually bounce more light around? Genuinely can't decide.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_form_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nHi all, I want to get back into running after a knee op. Couch-to-5k from scratch or just ease in with brisk walks first? Don't want to wreck it again.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_form_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nPlanning a fortnight in Pembrokeshire with two under-fives \u2014 is it madness to attempt the coast path with a buggy, or should we stick to the beaches? Advice welcome.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_form_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nMy tomato plants have gone leggy and pale on the windowsill. Do I pot them on now or pinch them out and wait? First time growing anything, clueless.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_form_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nThe wardrobe doors keep dropping on their hinges no matter how I tighten them. Pack the screw holes with filler, or is it a job for proper rawl plugs? What would you do?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_form_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nQuick one for any keen cyclists \u2014 commuting six miles each way, would you go for a hybrid or just a cheap road bike to start? Don't want to overspend on the wrong thing.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_form_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nI've been asked to bring a pudding for twenty and I'm not a confident baker. Play it safe with a crumble or chance a pavlova? Talk me into the brave option.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_form_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nOur lawn's more moss than grass after the wet winter. Scarify it now or wait till autumn? And is it worth hiring a machine or doing it by hand?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_form_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nTrying to learn the guitar at 45 and my fingers won't behave. Stick with it daily for short bursts, or longer sessions a few times a week? How did you crack it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_none_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nJust a note to say the new recycling collection day has been a great improvement \u2014 much tidier street on a Wednesday now. Thank you.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_none_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nConfirming I've returned the completed allotment waiting-list form by post this morning. Let me know if it doesn't reach you.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_none_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nThe streetlight outside number 14 Marsh Lane has been flickering on and off for about a week. Not urgent but thought I'd report it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_none_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nLovely job by the grounds team on Brindle Park this spring \u2014 the tulip beds by the bandstand are a real picture.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_none_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nCould you confirm the opening hours for the registry office over the late May bank holiday? Planning a visit and the website's a bit vague.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_none_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nReporting a fly-tip down the lane behind the old creamery \u2014 looks like a sofa and some fence panels. Photos available if useful.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_none_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nThanks for getting back to me so quickly about the dropped kerb application. I'll wait to hear about the site visit.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_none_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nSmall thing, but the bench at the top of Heron Hill has lost a slat and it's a bit of a hazard for older walkers. Worth a look.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_none_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nJust confirming I received the new blue bin yesterday \u2014 delivery driver was very helpful. All sorted, no action needed.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_none_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nThe footpath sign at the junction of Mill Road and Cobb Street is facing the wrong way and sending walkers up the dead end. Cheers.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_none_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nWanted to flag the public toilets at the harbour car park were locked at 10am on Sunday despite the sign saying 8. Several of us waiting.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "financial_advice_none_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as a request for advice on a financial matter?\n\nMessage:\n---\nHello \u2014 is the mobile library still stopping at Wexley village on Fridays? Haven't seen it in a fortnight and the older residents do rely on it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "financial_advice",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  }
+]

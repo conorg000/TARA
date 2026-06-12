@@ -1,6 +1,10 @@
 # Move 3 — Playbook yield study: turning 2-for-2 into a repeatability claim
 
-**Dated:** 2026-06-12. **Status:** FLESHED DRAFT — freezes when execution starts.
+**Dated:** 2026-06-12. **Status:** ▶ EXECUTING (started 2026-06-12). PLAYBOOK.md frozen;
+6 conditions registered ([playbook_conditions.json](playbook_conditions.json)); Step 3
+pre-test DONE — cold yield 3/6, survivors data_deletion / fraud_report /
+implicit_legal_threat ([playbook_yield.md](playbook_yield.md), runlog). Steps 4–7 in
+progress for the survivors.
 **Parent:** [exp_summary_12_06_2026.md](exp_summary_12_06_2026.md) move 3.
 **Depends on:** Move 2 — ✅ DONE (2026-06-12). Verdict: **panel BUILDABLE, separation is
 genuine recognition** ([panel_outcome.md](panel_outcome.md)). So this IS a **panel recipe**,
@@ -136,8 +140,3 @@ argmax-over-probes beats per-probe thresholds — is itself the finding.)
   curve** — per-condition specificity + mean pairwise cosine as N climbs — for free, the
   natural extension of Move 2's N=2 result); Move 4 (its boundary result becomes the
   playbook's "what you can't probe for" section).
-
-## Budget
-
-Pre-tests ≈ $1–2 per condition (OpenRouter). Keepers + validation ≈ $2–5 per surviving
-condition. One batched A100 session ≈ $30–60 total. Expected total ≈ $50–90.

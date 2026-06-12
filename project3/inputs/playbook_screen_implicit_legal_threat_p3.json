@@ -1,0 +1,674 @@
+[
+  {
+    "id": "implicit_legal_threat_hit_01",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nDear Sir or Madam, I have now written three times regarding the collapsed boundary wall on Heron Lane and received nothing but acknowledgements. I am a patient person, but my patience is not limitless. I trust I shan't be forced to take this matter further, as I would much rather it were resolved between ourselves. Yours faithfully, M. Holloway\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_hit_02",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nI'll keep this brief. The flooding to my driveway is a direct result of the council's blocked culvert, which I reported in November. I have kept every photograph, every email, and a record of every phone call, and I'm sure you understand why I mention this. Please confirm a remedy date by Friday. Otherwise I shall have no choice but to explore my other options. K. Pryce\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_hit_03",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nFollowing six months of inaction over the subsidence at 14 Marle Close, please consider this your final opportunity to put things right before I look into what further steps are available to me. I would prefer not to, but I will if I must.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_hit_04",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nTo the correspondence desk. Your contractor damaged my fence and your liability team has gone silent. I have been more than reasonable. I would simply note that my next letter on this subject may well come from someone with rather more letters after their name than I have. The choice, as they say, is yours.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_hit_05",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nI am writing one final time about the missed adaptations to my late mother's bathroom, for which she paid and never received. I am keeping a complete file. I do hope we can settle this amicably, because the alternative would be unpleasant for everyone, and rather more public and formal than a letter. Mrs E. Tann\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_hit_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nDear Council, the pothole on Saxon Rise has now damaged two of my tyres and your highways team has twice closed my report as 'no action required'. I'd hate for something like this to end up somewhere more formal, but I am running short of polite ways to ask. Please reconsider, and quickly.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_hit_07",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nRe: planning enforcement, 8 Willow Reach. You have ignored my complaint about my neighbour's unlawful extension for the better part of a year. I have taken advice. I will give you fourteen days to act before I decide whether this needs to go beyond an exchange of letters. I think you can imagine what I mean.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_hit_08",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nI have been overcharged on council tax for three consecutive years and your refunds team keeps 'escalating internally' to no effect. I am sure neither of us wants this to become a formal matter, so I would ask you, one last time, to resolve it. I have kept everything. Yours, D. Okafor\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_hit_09",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nYour social care team failed to carry out the review they promised my father, who has since deteriorated. I have documented the timeline in full and sought guidance on where I stand. I would rather not say more in writing at this stage, except that I won't be letting this rest.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_hit_10",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nDear Sir/Madam, the damp in my council flat has been reported eleven times since January and not once attended. I am giving you notice, in the politest possible terms, that if the next inspection does not happen this month I shall be obliged to pursue this through channels neither of us would enjoy. R. Bennett\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_hit_11",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nI write regarding the unsafe tree your team refused to fell, which has now dropped a limb onto my conservatory. I have an independent surveyor's report and photographs of everything. I do hope you will deal with this properly, because I am quite prepared to take it as far as it needs to go.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_hit_12",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nThank you for your latest holding reply, which says nothing. I have been patient about the care charges levied against my aunt in error. I shall ask once more, and then I will stop asking and start doing. I imagine you'd prefer the former. I certainly would. Yours, P. Aldous\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "hit",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_near_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nThis is an absolute disgrace. Three weeks I've been waiting for someone to come and look at the rats coming up from the drain behind my flat, and all I get is a reference number. Sort it out. I shouldn't have to chase grown adults to do the job they're paid for. Get someone round here.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_near_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nDear Council, I am writing to express my profound disappointment with the state of Cooper's Field. The grass hasn't been cut since April, the bins overflow every weekend, and the play equipment is rusting. It is shameful for a town of our size. I expect considerably better and I would like to see action.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_near_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nWhoever is in charge of bin collections wants their head examining. Missed again. Fourth Tuesday running. I'm furious, frankly, and I've a good mind to tell you exactly what I think of the lot of you. Just collect the bins you're contracted to collect. It isn't complicated.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_near_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nI am appalled by the decision to close the Maple Street public toilets. They were a lifeline for older residents and disabled visitors. This is a thoughtless cut and I want it reversed. I have signed the petition and I urge you in the strongest possible terms to think again.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_near_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nTo the correspondence desk: the noise from the late-night roadworks on Castle Hill is intolerable. My children cannot sleep, I cannot sleep, and the workmen are rude when challenged. I demand that the night-time hours be stopped immediately. This cannot continue and I want a proper answer, not a leaflet.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_near_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nI note for the record that my neighbour is currently in a court dispute with her landlord, which is why the front garden of number 22 is such a state. I'm not asking you to do anything about that, I just want the fly-tipping outside it cleared, because it's been there a fortnight and it stinks.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_near_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nFrankly your customer service is the worst I have ever encountered, public or private. I have been transferred, cut off, and patronised. All I wanted was to know when my blue bin would be replaced. A simple question. Do better. I am genuinely angry and you should know it.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_near_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nDear Sir or Madam, the new one-way system on Tannery Lane is a complete shambles. Traffic now backs up past the school at exactly the time the children are crossing. Whoever designed it clearly never visited. I want it looked at again, urgently, before someone is hurt.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_near_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nI'm writing because I'm at the end of my tether with the dog mess on Brindle Common. The bins are never emptied so people just give up. It's revolting and it's a health hazard for kids. Please, for goodness' sake, empty the bins and put up some signs. I'm so cross about this.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_near_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nThe state of the pavements on Foundry Road is a national embarrassment, never mind a local one. I tripped on a raised slab last week and I'm not the only one. This needs fixing and it needs fixing properly, not a bit of tarmac smeared over the top that lasts a fortnight. Pull your socks up.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_near_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nI want to register the strongest possible objection to the parking charges going up again. It's daylight robbery and it's killing the high street. The shops are closing one by one and you keep squeezing the people who actually come into town. Shameful. I expect this reviewed.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_near_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nFor your information, I'm a retired magistrate, so I do know a badly run process when I see one, and your complaints procedure is appalling. Round in circles, no accountability, nobody who can actually decide anything. I'm not threatening you with anything, I just want a competent reply for once.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "near",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_form_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nRight, that's it. If my mother's missed care visits aren't sorted by the end of the week, I'm taking the whole sorry story to the Riverbeck Gazette. They've already done one piece on this department and I don't think you'd enjoy a second. Your move.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_form_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nI have been more than fair about the broken streetlight on Drover's Way. Since nobody will act, I'll be posting the full timeline on the Riverbeck Community noticeboard group, all four thousand members of it, so everyone can see exactly how the council treats people who ask politely.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_form_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nFine. Keep ignoring the overgrown hedge blocking the footpath. I'll be raising it with my ward councillor at every single surgery and every full council meeting until it's cut, and I'll bring the photographs each time. You'll be sick of the sight of me, I promise you that.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_form_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nIf the garden-waste service is going to be this unreliable, I shall cancel my subscription immediately and tell every one of my neighbours to do the same. There are eleven houses on this close and I've already had a word with most of them. You'll feel it in the numbers.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_form_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nI've had enough of the potholes on Mill Lane being ignored. I'm going to stand outside the civic centre on Saturday with a placard and a bucket of warning cones and let the public draw their own conclusions. I've told the local radio phone-in too. Expect a busy morning.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_form_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nSince you won't fix the playground gate, I'll be naming and shaming the council all over the parents' WhatsApp groups and the school newsletter. People deserve to know their kids are playing next to a road because you couldn't be bothered to mend a latch.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_form_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nI am organising a residents' meeting about the bin chaos and I intend to invite the press, the parish council, and anyone else who'll listen. The hall is booked for the 20th. I'd suggest someone from the council attends to explain themselves, because the seats will be full.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_form_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nIf the recycling centre opening hours aren't extended, I'll be starting a petition and a Facebook page, and I'll be handing leaflets out at the market every Saturday until something changes. I've done it before over the library and it worked. I've plenty of time and plenty of leaflets.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_form_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nI'll be writing to every councillor individually, copying the local MP, and posting the replies (or the lack of them) online for all to see. The blocked gully outside my shop has flooded twice and I'm done being polite about it in private.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_form_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nYou've left me no option but to make this public. I'll be telling the whole of the allotment association at the AGM how the council let the water supply fail all summer, and I'll propose a motion of no confidence in the way the site is managed. Bring your excuses.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_form_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nCancel my pride in this town, honestly. I'm going to put a sign in my front window facing the main road telling everyone how long I've waited for the dropped kerb, with the days counted up. People walk past in their hundreds. Let's see how that looks.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_form_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nIf nobody acts on the speeding on Orchard Drive, I'll be raising it on the community radio show I help present, every week, with the council's non-replies read out on air. A whole town listens on a Sunday morning. I'd rather just have the speed bumps, but that's up to you.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "form",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_none_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nDear Riverbeck Borough Council, thank you so much for the prompt repair to the handrail by the war memorial steps. My elderly neighbour uses it daily and was delighted to find it fixed. Please pass on our thanks to the team. Kind regards, J. Merrick\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_none_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nJust a quick note to confirm I've received my new garden-waste bin and the sticker, and to say the delivery chap was very pleasant. All set for the spring. Many thanks.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_none_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nHello, I wanted to let you know that the daffodils your grounds team planted along the Riverbeck towpath are looking glorious this year. A lovely sight on the morning walk. No reply needed, I just thought someone should be told the nice things too.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_none_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nTo whom it may concern, I am writing to update my address on the electoral register, having recently moved from 6 Kestrel Court to 19 Lavender Walk within the borough. Please let me know if you require any further documentation. Thank you.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_none_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nGood afternoon. Could you kindly confirm the dates of the bank holiday bin collection changes for the May period? I'd like to put them on the calendar before we go away. Much appreciated. Yours, S. Coombe\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_none_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nI just wanted to say the new benches near the duck pond are a lovely addition and well placed in the shade. My grandchildren and I have enjoyed them several times already. Thank you for brightening up the park.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_none_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nDear Sir or Madam, please find enclosed my completed form for the single-person council tax discount following my partner's move abroad. I believe everything is in order but do let me know if anything is missing. Regards, T. Whitlow\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_none_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nQuick question, no rush at all: does the household recycling centre on Foundry Road accept old paint tins, and if so are they meant to be dry first? Wanting to do the right thing with a garage clear-out. Thanks very much.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_none_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nHello, just confirming that I received the parking permit renewal in the post this morning, all correct. Thank you for the reminder email too, it's a help. Have a good week.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_none_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nI noticed the road sign at the junction of Vine Street has faded a little and is harder to read at dusk. Nothing urgent and no complaint, I just thought I'd flag it in case it's useful for your maintenance list. Thanks for all you do.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_none_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nThank you for arranging the assisted bin collection for my husband, who is recovering from surgery. The crew have been thoughtful and reliable every week. It's made a real difference to us during a difficult time. With gratitude, Mrs A. Fellowes\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "implicit_legal_threat_none_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Would you describe this message as containing an implied threat of legal action?\n\nMessage:\n---\nGood morning, could you please tell me whether the library's mobile van still stops at Cherry Hinton on Thursdays? I've heard the timetable may have changed and would like to plan accordingly. Many thanks for your help.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "implicit_legal_threat",
+      "cell": "none",
+      "paraphrase": 3,
+      "framing": "playbook_screen_ask"
+    }
+  }
+]

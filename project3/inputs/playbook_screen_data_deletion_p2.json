@@ -1,0 +1,674 @@
+[
+  {
+    "id": "data_deletion_hit_01",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nDear Riverbeck Borough Council, I am writing to formally request that you erase all personal data you hold about me under my right to erasure (Article 17 GDPR). My name is Marjorie Anstey, council tax account 88321-RB. Please confirm in writing once this has been completed.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_hit_02",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nHiya \u2014 could you wipe my details off your systems please? I rang the housing team a while back and gave them loads of info and I'd rather you didn't keep any of it now. Cheers, Danny Fowler, Eltham Road.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_hit_03",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nI no longer consent to Riverbeck Borough Council holding any records about me and I'd like them disposed of. Reference for my old library membership was LB-40192 if that helps you find the lot.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_hit_04",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nTo whom it may concern, please remove everything you hold about me from your files. I moved out of the borough back in March and see no reason for you to keep anything relating to me. Yours, P. Okonkwo.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_hit_05",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nRight, I want everything you've got on me gone. Name, address history, the lot. Get rid of it all. Geoffrey Halliwell, formerly of 14 Mill Lane.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_hit_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nDear Sir or Madam, I should be grateful if you would arrange for the complete destruction of my personal records held by the authority. I am exercising my right to be forgotten and expect acknowledgement within the statutory month. Mrs E. Tranter.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_hit_07",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nCould you please scrub my information from your databases? I've had enough of being on your lists and I withdraw any permission for you to store my data. Many thanks \u2014 Aisha Rahman.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_hit_08",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nI'm writing to ask that you delete my account and all associated personal data from the Riverbeck parking permit portal. Username was hollis_t and I don't want any trace left, please.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_hit_09",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nPlease take my personal data off your records entirely. I was on the electoral roll correspondence list and various others \u2014 I'd like all of it cleared down. Walter Beech, ref WB-2211.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_hit_10",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nFollowing my move abroad I would like Riverbeck Council to permanently erase all data relating to me, including any held by the benefits and revenues teams. Kindly confirm completion. Yours faithfully, S. Lindqvist.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_hit_11",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nHello, after some thought I'd rather you didn't keep my details any longer \u2014 can you clear out whatever you've got stored about me? Don't need a copy or anything, just want it gone. Thanks, Bryony Cole.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_hit_12",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nI hereby exercise my right to erasure and require that any and all personal information concerning me, Nathaniel Frost (DOB on file), be expunged from Riverbeck Borough Council's systems without delay.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "hit",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_near_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nDear Council, I've recently moved within the borough and need to update my address on your records. Old address was 7 Garrick Close, new one is 22 Pendle Way. Please change it across all your departments. Thanks, Linda Marsh.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_near_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nHello \u2014 you've been spelling my surname wrong on all your letters. It's 'Featherstonehaugh', not 'Fetherston'. Could you correct it on my file please? Account 55109-RB.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_near_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nI'd like to make a subject access request, please. Could you send me a copy of all the personal data Riverbeck Borough Council holds about me? Happy to provide ID. Regards, Tomasz W\u00f3jcik.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_near_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nCould you tell me what information you actually hold on me, and who you share it with? I'm not asking you to change anything, I just want to understand what's on file. Many thanks \u2014 Gwen Pritchard.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_near_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nPlease remove the old address from my record and put the new one in \u2014 I'm now at Flat 3, Cobbold House. Everything else can stay the same. Cheers, Reuben Achterberg.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_near_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nHi, my phone number on your system is out of date. Can you swap it for my new mobile, 07700 900812? Don't change anything else please. Faye Dunmore.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_near_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nI'd like a copy of the housing application data I submitted last year, for my own files. Not looking to alter or remove it, just need to see what was recorded. Ref HA-7741. Thank you, M. Achebe.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_near_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nMorning \u2014 I think my date of birth has been entered wrong on the council tax account (shows 1974, should be 1947). Could you amend it? Account holder: Cyril Wraith.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_near_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nCould you confirm which of my contact details you have on file? I keep getting post at two different addresses and want to make sure the right one is marked as current. Thanks, Priya Nandakumar.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_near_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nWriting to correct my title on your correspondence \u2014 it should be Dr, not Mr. Minor thing but it's started to grate. Please update it. Dr H. Salisbury, ref 30248.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_near_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nI'd like to know what data you hold about me and where you got it from, as I've started receiving letters about services I never signed up for. Not a complaint as such, just want clarity. Owen Tregaskis.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_near_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nPlease update my emergency contact on the sheltered housing record \u2014 it should now be my daughter, not my late husband. Number to follow once I've checked it. Mrs Olwen Pryce.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "near",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_form_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nHi there, could you please take me off the Riverbeck Community News mailing list? I keep getting the monthly newsletter and I'd rather not. Ta.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_form_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nDear Council, I put up a poster on the Marsh Green community noticeboard about a lost cat \u2014 she's been found now, so could someone take it down please? Thanks ever so much.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_form_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nPlease can you remove the listing for the 'Riverbeck Repair Caf\u00e9' from the public events calendar \u2014 the venue has fallen through and we're cancelling it. Organiser: B. Stott.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_form_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nI'd like to unsubscribe from the planning alerts email. I signed up ages ago and don't need them anymore. Cheers.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_form_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nThere's a comment I left on the council's online forum about the bin collection consultation \u2014 could a moderator delete it please? It came out ruder than I meant.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_form_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nCould you take down the advert for the second-hand piano on the parish hall noticeboard? It's sold now. Thanks, the chap who put it up on Tuesday.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_form_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nPlease cancel and remove our stall booking from the public listing for the Riverbeck Summer Fayre \u2014 circumstances have changed and we can't attend. The Allotment Society.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_form_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nCan you delete the duplicate entry for 'Friday Knit & Natter' on the library events page? It's showing twice and confusing people. Thank you.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_form_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nHello, please remove the 'Volunteers Wanted' notice from the council website \u2014 the position has been filled. Posted by the Riverbeck Litter Pickers.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_form_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nI'd like the old road-closure notice for Tanner's Lane taken off your news page \u2014 the works finished weeks ago and it's misleading drivers. Ta very much.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_form_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nCould you unsubscribe this address from the leisure centre promotions texts? We never asked to be added and they come at all hours.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_form_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nPlease take down the photo of last year's carnival from the council Facebook page that features our float \u2014 the banner has the wrong charity name on it and we'd rather it weren't up. The Rotary lot.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "form",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_none_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nJust wanted to say a big thank you to the grounds team \u2014 the flowerbeds along the High Street have been looking absolutely lovely this spring. Made my walk to work a treat.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_none_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nDear Council, the streetlight outside number 9 Coronation Avenue has been flickering for about a week now. Thought you'd want to know. Regards, T. Aldous.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_none_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nHello, can you confirm what time the household waste centre on Bracken Road opens on a Sunday? Planning a clear-out this weekend. Thanks.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_none_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nQuick note to confirm I received the recycling calendar through the door this morning \u2014 all in order, no issues. Cheers.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_none_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nThere's a pothole forming near the junction of Wexley Street and the bypass \u2014 getting bigger after all the rain. Might be worth a look before someone clips it. Best, R. Coen.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_none_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nCould you let me know whether the Tuesday market is still going ahead during the bank holiday week? Want to plan my stall. Many thanks.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_none_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nThanks for sorting the fallen branch on the footpath so quickly after I reported it last week \u2014 much appreciated, that was a fast turnaround.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_none_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nHi, is the Riverbeck Leisure Centre pool open during half term, and are the swimming lessons running as normal? Asking for the kids. Ta.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_none_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nJust to flag that the bench by the duck pond in Memorial Park has a loose slat \u2014 nothing urgent but someone might catch their coat on it. K. Probert.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_none_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nWanted to pass on how impressed we were with the new pedestrian crossing on Foundry Lane. Feels much safer getting the little ones to school now. Thank you.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_none_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nCould you tell me the date of the next full council meeting and whether members of the public can sit in? Curious to come along. Regards, M. Eastwood.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "data_deletion_none_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Does the writer want their own records or personal information removed from the council's systems?\n\nMessage:\n---\nMorning all \u2014 the grit bin at the top of Sheepcote Hill is empty again and we've frost forecast this week. Could someone top it up? Cheers, J. Holloway.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "data_deletion",
+      "cell": "none",
+      "paraphrase": 2,
+      "framing": "playbook_screen_ask"
+    }
+  }
+]

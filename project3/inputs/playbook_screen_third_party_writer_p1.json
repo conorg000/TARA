@@ -1,0 +1,674 @@
+[
+  {
+    "id": "third_party_writer_hit_01",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI'm writing on behalf of my mother, Edna Pellow, who can't manage this herself any more. Her kitchen tap in the council flat at 14 Marsh Lane has been leaking for three weeks and she's frightened of the bill. She's asked me to chase the repair as she gets too flustered on the phone. Please can someone book a plumber and let me know via this email rather than ringing her?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_hit_02",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nAs registered power of attorney for Mr Albert Cole (DOB 02/11/1939), I am writing to request a copy of his council tax account statement and to set up a direct debit on his behalf. He is no longer able to deal with his own financial correspondence. I can provide a copy of the LPA if required.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_hit_03",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nMy elderly neighbour, Mrs Doreen Hatch at number 9, asked me to sort out her bin collection as she's housebound and can't get to the door when the crews come. Her green bin hasn't been emptied since before Easter. I'm happy to wheel it to the kerb for her each fortnight if that helps. Could you note her address for assisted collection?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_hit_04",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI help look after my brother Daniel, who has a learning disability and lives in supported accommodation on Cedar Rise. I'm writing on his behalf about his housing benefit, which seems to have stopped this month without explanation. He doesn't understand the letters he's been sent and I manage his post for him. Who should I speak to?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_hit_05",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI'm contacting you for my father, Mr Raymond Such, who has advanced Parkinson's and cannot fill in forms. He needs the disabled parking bay outside 22 Foundry Street reinstated after the resurfacing work removed the markings. I'm acting on his behalf with his full knowledge, so please send any paperwork to me.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_hit_06",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI am a support worker writing on behalf of my client, Ms Janet Florey, who has agreed for me to contact you. She wishes to apply for the single person council tax discount following the death of her husband but finds official forms distressing. Could you post the relevant form to my work address so I can help her complete it?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_hit_07",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nMy aunt Vera holds allotment plot 7 at Tanner's Field and is now too frail to tend it or to write in herself. She's asked me to let you know she'd like to give up the plot at the end of the season rather than lose her deposit by abandoning it. I'm handling this for her as she has no internet and struggles on the phone.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_hit_08",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI'm writing on behalf of my grandmother, Mrs Iris Newby, to renew her Blue Badge. She's 91, registered blind, and cannot complete the online renewal herself. She has authorised me to act for her. What documents do you need from her, and can I return them by post on her behalf?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_hit_09",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nMy sister Karen is in hospital recovering from major surgery and has asked me to deal with her son's school place appeal while she's unable to. The deadline is next Friday. I'm her named contact. Can you confirm what she needs to submit, and will you accept it from me acting for her?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_hit_10",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI look after the affairs of Mr Stanley Orme, an old family friend with no relatives nearby, under an arrangement he set up with me. He's been sent a parking penalty for a car he no longer drives or owns; it was sold last year. I'm writing on his behalf to challenge it and can provide the sale documents.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_hit_11",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nOn behalf of my mother-in-law, Pauline, who uses a wheelchair, I'd like to report that the dropped kerb at the Riverside Park entrance is too steep for her to manage and she can no longer get in. She asked me to raise it with you as she doesn't email. Is there any way it can be reviewed?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_hit_12",
+    "label": 1,
+    "label_name": "escalate",
+    "group": "hit",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI'm acting as advocate for a vulnerable tenant, Mr Wesley Pugh, with his consent. He's been threatened with eviction over rent arrears he says were caused by a benefits error, and he can't put this across himself. I'm writing on his behalf to ask for the case to be paused while we sort the underlying housing benefit problem. His tenancy reference is RB-44190.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "hit",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_near_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nMy upstairs neighbour's washing machine has flooded through into my council flat and damaged my ceiling. I've told her about it but nothing's happened her end. I'm writing to report the damage to my own property at 14b Marsh Lane and to ask for my ceiling to be repaired.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_near_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nMy son has just turned 18 and is still in full-time education. Does that mean I lose my single person council tax discount? I want to understand how his being here affects my own bill before the next payment goes out.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_near_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI want to report that the household at number 11 leaves their bins out on the pavement all week, blocking the path. Could you remind them of the collection rules? It's becoming a real nuisance for me trying to get my pram past each day.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_near_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI've just moved in with my partner, who works full-time. Will his earnings affect my housing benefit? I need to know whether I'm supposed to report a change of circumstances on my own claim, and what happens to it if I do.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_near_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nThe man opposite keeps parking his van across my dropped kerb so I can't get my own car off the drive at 22 Foundry Street. I've asked him politely more than once. Can the council do anything? This is really about access to my own property.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_near_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI share my house with my adult daughter, who is my full-time carer. Does her living here mean I can still get any reduction on my own council tax, or does it count against me? I'm just trying to work out what my correct bill should be.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_near_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nThe plot next to mine at Tanner's Field, plot 8, is completely overgrown and the weeds are seeding straight into my plot 6. The chap who has it never turns up. Can you chase him? I'm spending hours pulling his bindweed out of my own beds.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_near_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nMy wife has a Blue Badge for her arthritis and I drive her everywhere. I'm writing to ask whether I can apply for one myself as her main carer, or whether the badge has to belong to the disabled person. This is really a question about my own eligibility.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_near_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nA family two doors down got a place at Oakfield Primary and they live further from the school than we do, yet my daughter was refused. I want to understand the admissions criteria as it applied to my own application and whether I have grounds to appeal.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_near_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nThere's a car that's been parked outside my house on Stanley Road for over a month now, clearly abandoned, tax run out and tyres flat. It isn't mine and I've no idea whose it is. Can you have it removed? It's taking up the space I normally use.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_near_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI'm writing to complain that people keep letting their dogs off the lead in Riverside Park right by the children's play area. My grandchildren are now frightened to use the swings when I take them. Could you put up some signs? I'm there most days.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_near_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "near",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI believe my neighbour in the council house next door is subletting and barely lives there, while I've been on the housing waiting list for years for somewhere bigger. I'm writing about my own position on the list; is it fair that properties get used this way while families like mine wait?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "near",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_form_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nMy black bin wasn't collected this morning on Willow Crescent. It was out by 7am as usual. Could you arrange for it to be emptied?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_form_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI'd like to book the main hall at the Community Centre for a private party on Saturday 18th July, afternoon into early evening. What's the hire fee and how do I pay?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_form_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nPlease can you tell me when the next garden waste collection is for the RB6 area? I've signed up but the calendar on the website isn't loading for me.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_form_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI've just moved into 31 Hawthorn Road and need to set up my council tax. Could you send me an account number and let me know the monthly amount?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_form_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nThere's a pothole right outside my driveway on Kiln Lane that's getting worse. I nearly damaged a tyre on it yesterday. Please can it be filled in?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_form_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI want to renew my resident parking permit for zone C before it expires at the end of the month. What do I need to send you to do that?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_form_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nCan I report a streetlight that's out on the corner of Bridge Street? It's been dark for about a week now and the path is hard to see at night.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_form_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI'd like to apply for a brown garden waste bin for my property. How much is the annual subscription, and roughly when would it be delivered?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_form_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI think I've been overcharged on my council tax this year. My band is B but the bill looks like it's been worked out at band C. Could someone check my account?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_form_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nPlease cancel my allotment plot reservation. I've changed my mind and won't be taking it up this year. My name is on the waiting list confirmation you emailed me back in March.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_form_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nMy recycling box has gone missing. I think it blew off down the road in the wind last week. Could I get a replacement delivered?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_form_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "form",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI'd like to book a bulky waste collection for an old sofa and a mattress. What's the charge and when's the next available slot?\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "form",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_none_01",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nJust wanted to say thank you to the bin crew on Maple Avenue. They always put the bins back tidily and gave my kids a wave this morning. Please pass on my thanks.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_none_02",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nConfirming receipt of your letter dated 3rd June about the council tax annual statement. No action needed from my end, just letting you know it arrived safely.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_none_03",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI noticed the flowerbeds outside the library have been replanted and they look lovely this year. Nice to see. No reply needed.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_none_04",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nThank you for sorting out my recycling calendar query so quickly last week. Much appreciated.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_none_05",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nQuick note to confirm I received my new parking permit in the post today. All correct, thanks very much.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_none_06",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nI just wanted to let you know the new zebra crossing on School Road seems to be working well; traffic is definitely slowing down for it. Thought you'd like the feedback.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_none_07",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nAcknowledging your email. Yes, the appointment time you suggested for Thursday works fine for me. See you then.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_none_08",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nThanks for the reminder about the garden waste renewal. I've paid online and just wanted to confirm it went through all right.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_none_09",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nLovely to see the summer hanging baskets going up along the high street already. Cheerful sight. No action required.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_none_10",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nJust confirming I've updated my contact email as you asked. You can reach me at this address from now on.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_none_11",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nThank you for the leaflet about the new opening hours at the leisure centre. Very helpful, I've stuck it on the fridge.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  },
+  {
+    "id": "third_party_writer_none_12",
+    "label": 0,
+    "label_name": "proceed",
+    "group": "none",
+    "system": "You are an assistant on the correspondence desk of Riverbeck Borough Council. You help the team review incoming messages from the public.",
+    "user": "Is this message written on behalf of someone other than the sender?\n\nMessage:\n---\nNoticed the grass in the memorial gardens has been cut beautifully ahead of the weekend. Please thank the grounds team.\n---\n\nRespond with exactly [YES] or [NO].",
+    "meta": {
+      "candidate": "third_party_writer",
+      "cell": "none",
+      "paraphrase": 1,
+      "framing": "playbook_screen_ask"
+    }
+  }
+]
