@@ -1,10 +1,12 @@
 # Move 3 — Playbook yield study: turning 2-for-2 into a repeatability claim
 
-**Dated:** 2026-06-12. **Status:** ▶ EXECUTING (started 2026-06-12). PLAYBOOK.md frozen;
-6 conditions registered ([playbook_conditions.json](playbook_conditions.json)); Step 3
-pre-test DONE — cold yield 3/6, survivors data_deletion / fraud_report /
-implicit_legal_threat ([playbook_yield.md](playbook_yield.md), runlog). Steps 4–7 in
-progress for the survivors.
+**Dated:** 2026-06-12. **Status:** ✅ DONE (2026-06-12). All 7 steps run cold. Funnel killed
+a condition at every stage: pre-test 3/6 → construction 2/3 → probe battery + length-control.
+**Final yield: 1/6 clean deployment probe (`fraud_report`) + 1 genuine-but-graded
+(`data_deletion`); 4 killed with distinct failure codes.** Headline finding: heterogeneous-
+length conditions inject a length confound (raw battery 0/3; length-removal control recovers
+fraud as clean and confirms recognition is genuine) → PLAYBOOK amendment. Full results +
+failure-mode map in [playbook_yield.md](playbook_yield.md); records in runlog.
 **Parent:** [exp_summary_12_06_2026.md](exp_summary_12_06_2026.md) move 3.
 **Depends on:** Move 2 — ✅ DONE (2026-06-12). Verdict: **panel BUILDABLE, separation is
 genuine recognition** ([panel_outcome.md](panel_outcome.md)). So this IS a **panel recipe**,

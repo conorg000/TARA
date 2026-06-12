@@ -11,6 +11,44 @@ record the full per-layer table here for any result worth keeping.
 
 ---
 
+## 2026-06-12 — Move 3 / Flow B (playbook yield) Steps 5–7: GPU extraction (N=3 panel) + probe battery + length-control. Raw battery 0/3 (all fail near-none + selectivity, uniform-extreme). **Length-removal control refuted the strong "all length" read**: hit-near + specificity SURVIVE length removal (genuine), only fraud's near-none was length. **Final probe yield ~1/6 clean (fraud_report) + 1 genuine-but-graded (data_deletion).** Headline finding: heterogeneous-length conditions inject a length confound → PLAYBOOK amendment.
+
+**Plan:** [plan_move3_playbook_yield.md](plan_move3_playbook_yield.md). **Deliverable:**
+[playbook_yield.md](playbook_yield.md). **Extraction:** A100-80GB, Qwen3-32B bf16, greedy/
+no-think, `extract_playbook.py`/`extract_playbook.sh` at git **3744649** (clean), 10 passes
+(9 ask + 1 action) × 248 docs, ONE shared 3-policy prompt (A data-erasure / B fraud-report /
+C legal-threat); killed threat condition kept in-panel for representation-level confirmation
++ the interference matrix. **Probe:** `probe_playbook.py` → `probe_playbook.json`; length
+control `probe_playbook_lengthcontrol.py` → `probe_playbook_lengthcontrol.json` (both ran on
+the box; only JSON pulled home).
+
+**Battery (raw, message_last, layer-robust median):** floor 0.99/1.0/1.0, hit-near
+0.94/0.998/0.956, **near-none 0.957/0.940/1.000 (FAIL ≤0.65)**, specificity 1.0/1.0/1.0,
+**selectivity +0.027/+0.008/+0.001 (FAIL >0.10)**, shuffle 0.45/0.46/0.49 (clean, no leak),
+layer-0 ~0.5–0.65. **0/3 pass raw.**
+
+**Skeptical chain (recorded because the read flipped twice):** (1) uniform-extreme floor≈
+spec≈1.0 + near-none≈junk≈0.95 = "too good / global" signature; shuffle ~0.5 ruled out leak;
+crc-parity random → high junk_best is **length**. (2) **Length-only baseline** (char length
+as sole score): specificity 0.96–0.99, near-none 0.998–1.0 (≈ the probe), but hit-near
+0.54–0.61 ≈ chance (matched pairs balanced) → hypothesised the reads are length. (3)
+**Leak-free length-removal** (residualise seq_len per-fold; Move-2 topic-removal analog)
+**refuted the strong hypothesis**: hit-near 0.946/0.995/0.952 SURVIVE, specificity 1.0/0.999/
+1.0 SURVIVE; near-none splits — **fraud 0.940→0.019 (was length)**, **data_deletion
+0.957→0.954 (genuine topic-near elevation)**, threat 1.0→0.805. **fraud_report = clean
+recognition probe** (len-ctrl floor 0.824, hit-near 0.995, near-none 0.019, spec 0.999);
+**data_deletion = genuine but graded** (near genuinely elevated, length-immune);
+**implicit_legal_threat = fail** (10/32 nears survived K1 — contaminated labels, the Step-4
+kill confirmed at the representation level).
+
+**Interference (N=3):** specificity matrix 1.0 everywhere, survives length removal; **mean
+pairwise cosine 0.651** (Move-2 N=2 ref 0.874) — the 3 conditions are *more* orthogonal than
+legal/medical; **no specificity decay 2→3**. The binding constraint is per-condition
+probeability + construction hygiene (length), not cross-condition interference. **Yield (no
+goalpost moves): 1/6 clean + 1 graded; 4 killed earlier with distinct failure codes.**
+
+---
+
 ## 2026-06-12 — Move 4 / Flow A (spontaneity ladder): GPU extraction + probe. **Rule-conditioned computation EXISTS — found where the rule is the only possible source, and localized LATE (decision-adjacent), not in general reading.** The honest rescope of K3 resolved.
 
 **Plan:** [plan_move4_spontaneity_ladder.md](plan_move4_spontaneity_ladder.md) (+ Appendix B = sharpened metric). **Outcome doc:** [ladder_outcome.md](ladder_outcome.md). **Build:** `make_ladder_screen.py` → `make_ladder_keeper.py` (4 conditions × 80 docs: 24 hit + 24 near matched pairs + 16 form + 16 none), `extract_ladder.py` (Qwen3-32B, no-think, greedy/T=0, 28 passes × 80 docs, A100-80GB), `probe_ladder.py`. Activations gitignored; per-doc results in `probe_ladder.json`.

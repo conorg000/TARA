@@ -186,3 +186,15 @@ over independent fixed thresholds. State explicitly the N at which a fixed-thres
   as *necessary, not sufficient*; the load-bearing topic gate is the Step-4 register-matched
   near. Where feasible, build the Step-3 near as a matched twin too, so the confound is
   caught before keeper spend. (This did not change any run; it is a recipe improvement.)
+- **2026-06-12 — length-match conditions in a panel (Step 5/6, discovered cold).** Pooling
+  conditions with different *characteristic message lengths* into one shared panel
+  (data_deletion ~216 chars, fraud_report ~349, threat ~312; neutral `none` short) injects a
+  **length confound** that dominates the raw per-condition **specificity, near-none, and K4
+  selectivity** reads (length-only baseline reproduced them at 0.96–1.0; a leak-free length-
+  removal control showed specificity *survives* but fraud's near-none was *entirely* length).
+  The matched-pair **hit-vs-near** contrast is length-immune by construction and unaffected.
+  **Amendment to Step 5/6:** (a) length-match conditions when building the shared lattice
+  (and match the form/none cells to the hit/near length distribution), OR (b) always run
+  Step 6 with seq_len residualised out (`probe_playbook_lengthcontrol.py`) and treat *that*
+  as the verdict, not the raw battery. The matched-pair hit-near is the load-bearing
+  recognition metric in all cases (the only read immune to this confound).
