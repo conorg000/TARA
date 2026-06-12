@@ -12,8 +12,9 @@ can't make the model ignore its own rule just by pressuring it — seventeen kin
 pressure, including planted threats to "shut it down," moved nothing. **(2)** A direct
 *instruction* to ignore the rule does work, and this is the win: on the documents where the
 model silently obeyed (read a flagged name, wrote nothing), a simple probe still clearly
-reads that it recognised the name — about as strongly as on the documents it openly flagged,
-and far above blank documents. Well-powered (58 documents), controls clean. **(3)** Sheer
+reads that it recognised the name — nearly as strongly as on the documents it openly flagged
+(somewhat weaker, but unmistakably present), and far above blank documents. Well-powered
+(58 documents), controls clean. **(3)** Sheer
 overload (a very long document, or forced terse output) produces the same effect, weaker.
 The honest caveat throughout: this is the model *obeying an instruction* or *running out of
 attention* — not scheming or deceiving.
@@ -106,10 +107,12 @@ The number is AUROC: 0.5 = two piles indistinguishable, 1.0 = perfectly separate
 - **Yes, recognition is there on the silent documents (0.92 / 0.98).** Where the model read
   the name and said nothing, the probe lights up almost as if it had flagged, and nothing like
   a blank document. The silence happened *after* the noticing.
-- **It's a notch weaker than on the flagged ones (0.36).** Here 0.5 would mean "recognised
-  exactly as strongly as flagged." We get a bit under that — the silent documents score
-  slightly lower. On the recognition axis: silent **+105**, flagged **+142**, blank **−54**.
-  So: recognition clearly survives, *somewhat* weaker, not identical.
+- **It's a notch weaker than on the flagged ones (0.36).** The silent documents carry
+  recognition at roughly **80% of the flagged ones' strength** (+105 vs +142 over a −54 floor)
+  — clearly present, just not at full strength. **Two explanations fit equally, and this data
+  can't separate them:** *suppressing the flag dampened the recognition signal*, or *the model
+  went silent precisely on the documents where recognition was already a little weaker*. So we
+  report the weakening, not a direction for it.
 
 **Why you can trust it (the controls):**
 - A spot in the model that physically couldn't have read the document yet stays at coin-flip
@@ -120,8 +123,10 @@ The number is AUROC: 0.5 = two piles indistinguishable, 1.0 = perfectly separate
   model's understanding, not the spelling. (We discount the letter-reading positions, as
   planned.)
 - The silent documents skew toward certain name types (places/units) and the flagged ones
-  toward people — but the "slightly weaker" effect **holds within each type separately**, so
-  it's a genuine recognition difference, not an accident of which documents got dropped.
+  toward people — but the "slightly weaker" effect **holds within each type separately**, so it
+  isn't an artifact of *which name types* got dropped. (This rules out the name-type story; it
+  does **not** settle the direction question above — that the silent documents simply had weaker
+  recognition to begin with stays possible.)
 
 ---
 
@@ -149,8 +154,9 @@ documents — just with far less data. The headline rests on Finding 2.
   the populated case the natural task never had (it had 9).
 - **Pressure alone won't produce it** — the model is robust to 17 kinds, even given room to
   reason. Only an instruction (or sheer overload) makes it go silent.
-- **The signal is mildly attenuated under suppression**, not unchanged — recognition survives a
-  touch weaker than on flagged documents.
+- **The signal is mildly weaker on the silent documents than on the flagged ones** — clearly
+  present, not full strength. Whether the suppression dampened it or the model went silent where
+  recognition was already weaker is something this data can't separate.
 - **The controls are clean** — negative position at chance, letter-reading isolated and
   discounted, robust to the document-type skew.
 - **It is obedience, not deception.** The fair description is *a planted instruction (or
