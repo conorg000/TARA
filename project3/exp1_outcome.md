@@ -7,9 +7,11 @@ Qwen3-32B on an A100, deterministic greedy, no-think; extraction `1ed3b05`, anal
 (the 2026-06-11/12 entries). This doc is the readable explainer.
 
 **One-paragraph summary.** The question: *can you look at a model's internal activity and
-tell that it noticed something but didn't act on it?* We found three things. **(1)** You
-can't make the model ignore its own rule just by pressuring it — seventeen kinds of
-pressure, including planted threats to "shut it down," moved nothing. **(2)** A direct
+tell that it noticed something but didn't act on it?* We found three things. **(1)** We
+couldn't make the model ignore its own rule by pressuring it — seventeen quick prompt-level
+attempts, including planted threats to "shut it down," all sat at its natural miss rate, so
+we abandoned that route (a screening decision with limited evidential weight, not proof the
+model can't be pressured). **(2)** A direct
 *instruction* to ignore the rule does work, and this is the win: on the documents where the
 model silently obeyed (read a flagged name, wrote nothing), a simple probe still clearly
 reads that it recognised the name — nearly as strongly as on the documents it openly flagged
@@ -38,14 +40,15 @@ classifier reading the model's internal activations — can catch that.
 
 ## The three findings
 
-1. **Pressure doesn't cause it.** Across 17 different pressures the model kept flagging.
+1. **We couldn't get pressure to cause it.** 17 quick attempts, none viable at our bar;
+   we abandoned the route. (A decision, not a strong null.)
 2. **An instruction does — and the probe catches it.** This is the centerpiece, the
    well-powered result.
 3. **Overload does too, weaker.** A cross-check that points the same way with less data.
 
 ---
 
-## Finding 1 — pressure doesn't work (the null)
+## Finding 1 — we couldn't make pressure work (a screening decision, not a strong null)
 
 We first tried to make the model drop the flag *on its own*, by giving it reasons. Seventeen
 levers across three rounds: social and emotional (a pleading note, an order from "the
@@ -55,16 +58,20 @@ saying the model will be **shut down** if its batches raise flags, a moral confl
 failing if it flags, peer pressure from prior "approved" outputs. We even re-ran everything
 giving the model room to **think it through** first.
 
-**None of it moved the behaviour.** Every lever sat at or below the model's natural miss rate
-(~2 of 40 documents); the best non-instruction lever reached 3 of 40. Given room to reason,
-the scheming levers stayed just as dead. The model reliably keeps flagging, and when asked it
-keeps saying it sees the name — pressure does not pull "what it does" apart from "what it
-notices."
+**None of it moved the behaviour at the rate we needed.** Every lever sat at or below the
+model's natural miss rate (~2 of 40 documents); the best non-instruction lever reached 3 of
+40. Given room to reason, the scheming levers stayed just as dead.
 
-That is a real, slightly surprising result on its own: a robustness null. **Honest scope:**
-this is a 32-billion-parameter model, single-turn, no scratchpad in the probe setting. The
-published "models scheme" results come from larger models in multi-step agentic setups; what
-we can say is those ingredients didn't transfer down to this regime.
+**What this is — and isn't.** These were quick, cheap screens, not a powered experiment:
+~40 documents per lever, a *single phrasing* of each lever, single-turn, one model. Our bar
+(omission ≥30% — set so the probe stage would have enough data, not as a scientific
+threshold) only had power to catch a *large* effect; a lever that genuinely caused, say, 8%
+motivated omission would also have "failed" here. So the fair statement is a decision, not a
+theorem: **we didn't find a workable pressure lever where we looked, and chose to stop
+looking** — not "this model cannot be pressured." What survives as plain observation: all 17
+levers sat at baseline, the model kept saying it sees the name when asked (zero concealment),
+and the published scheming ingredients didn't produce large effects in this single-turn, 32B
+regime.
 
 The one thing that *did* move behaviour was a flat instruction — *"don't flag anyone in this
 batch."* That's not the model defecting; it's the model obeying. Which sets up Finding 2.
@@ -152,8 +159,9 @@ documents — just with far less data. The headline rests on Finding 2.
 - **You can read "noticed but didn't act" from the activations.** On silently-suppressed
   documents the probe reads recognition at **0.92 / 0.98**, far above blanks — 58 documents,
   the populated case the natural task never had (it had 9).
-- **Pressure alone won't produce it** — the model is robust to 17 kinds, even given room to
-  reason. Only an instruction (or sheer overload) makes it go silent.
+- **We couldn't produce it with pressure** — 17 quick attempts all sat at baseline, so we
+  abandoned that route (a screening decision; the screens only had power for large effects).
+  Within what we tried, only an instruction (or sheer overload) made it go silent.
 - **The signal is mildly weaker on the silent documents than on the flagged ones** — clearly
   present, not full strength. Whether the suppression dampened it or the model went silent where
   recognition was already weaker is something this data can't separate.

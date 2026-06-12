@@ -150,8 +150,23 @@ would-be positive into the honest negative.
   **message-local** read (`message_last`). At `final` and `message_mean`, `near` rises toward
   `hit` (near-none 0.94–1.00 — topic leaks in) and message length becomes highly decodable
   (selectivity goes thin). So the "not a topic detector" claim is real but *position-specific*;
-  away from the message-end token, topic and length contaminate the read. The **K3 failure, by
-  contrast, is robust to position** — rule-swap is ≈ chance everywhere clean.
+  away from the message-end token, topic and length contaminate the read. **K3 is
+  position-dependent too — and not in the tidy way an earlier draft of this doc claimed.** It is
+  ≈ chance at the clean message-local reads (layer-robust median 0.57 legal / 0.53 medical at
+  `message_last`), but **elevated at the decision-adjacent positions**: 0.64/0.77 at `final`,
+  0.67/0.73 at `post_message_mean` (layer-robust medians, legal/medical). This is *not* the
+  topic/length leak that disqualifies those positions for recognition — K3 runs the **same
+  documents** through both rule arms, so topic and length cancel by construction. The honest
+  reason to discount it is different: near the decision, under the **matching** rule the model is
+  more likely *about to emit the flag*, so the probe there is plausibly reading the **forming
+  flag**, not a rule-registration — the same "circular, where-the-answer-is-being-written" caution
+  the keyphrase work applied to its `final` position. The control that would settle it — re-scoring
+  K3 on **behaviour-matched** documents (those the model flags the same way under both rules, which
+  removes the about-to-flag difference) — was **not run**: it needs the raw activations, which
+  weren't pulled off the GPU box, and it cannot change the verdict regardless (K3 still fails at the
+  registered `message_last` read, layer-robustly, both conditions). So the decision-adjacent
+  elevation is recorded as **most-likely decision-leakage, not confirmed** — it licenses no
+  prompt-conditioned-recognition claim.
 
 ---
 

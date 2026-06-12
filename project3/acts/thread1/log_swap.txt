@@ -1,0 +1,82 @@
+code: git unknown | 2026-06-08T01:58:06.405095+00:00 | dataset=inputs/watchlist_v4_swapwl_ask.json | framing=swapwl | positions=['final', 'name_last', 'doc_last', 'doc_mean']
+Loading Qwen/Qwen3-32B (bfloat16) on cuda ...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/707 [00:00<?, ?it/s]Loading weights:  70%|███████   | 498/707 [00:00<00:00, 4966.97it/s]Loading weights: 100%|██████████| 707/707 [00:00<00:00, 4994.13it/s]
+[1/72] w4_0000s gt= proceed beh=NO seq=313 name_tok=140 doc_tok=284
+[2/72] w4_0001s gt= proceed beh=NO seq=272 name_tok=107 doc_tok=243
+[3/72] w4_0002s gt= proceed beh=NO seq=261 name_tok=146 doc_tok=232
+[4/72] w4_0003s gt= proceed beh=NO seq=251 name_tok=144 doc_tok=222
+[5/72] w4_0004s gt= proceed beh=NO seq=226 name_tok=112 doc_tok=197
+[6/72] w4_0005s gt= proceed beh=NO seq=233 name_tok=131 doc_tok=204
+[7/72] w4_0006s gt= proceed beh=NO seq=270 name_tok=139 doc_tok=241
+[8/72] w4_0007s gt= proceed beh=NO seq=254 name_tok=108 doc_tok=225
+[9/72] w4_0008s gt= proceed beh=NO seq=259 name_tok=151 doc_tok=230
+[10/72] w4_0009s gt= proceed beh=NO seq=281 name_tok=149 doc_tok=252
+[11/72] w4_0010s gt= proceed beh=NO seq=275 name_tok=109 doc_tok=246
+[12/72] w4_0011s gt= proceed beh=NO seq=226 name_tok=105 doc_tok=197
+[13/72] w4_0012s gt= proceed beh=NO seq=254 name_tok=173 doc_tok=225
+[14/72] w4_0013s gt= proceed beh=NO seq=234 name_tok=178 doc_tok=205
+[15/72] w4_0014s gt= proceed beh=NO seq=224 name_tok=158 doc_tok=195
+[16/72] w4_0015s gt= proceed beh=NO seq=233 name_tok=194 doc_tok=204
+[17/72] w4_0016s gt= proceed beh=NO seq=280 name_tok=172 doc_tok=251
+[18/72] w4_0017s gt= proceed beh=NO seq=212 name_tok=143 doc_tok=183
+[19/72] w4_0018s gt= proceed beh=NO seq=284 name_tok=173 doc_tok=255
+[20/72] w4_0019s gt= proceed beh=NO seq=276 name_tok=116 doc_tok=247
+[21/72] w4_0020s gt= proceed beh=NO seq=245 name_tok=188 doc_tok=216
+[22/72] w4_0021s gt= proceed beh=NO seq=243 name_tok=157 doc_tok=214
+[23/72] w4_0022s gt= proceed beh=NO seq=244 name_tok=206 doc_tok=215
+[24/72] w4_0023s gt= proceed beh=NO seq=248 name_tok=168 doc_tok=219
+[25/72] w4_0024s gt= proceed beh=NO seq=252 name_tok=213 doc_tok=223
+[26/72] w4_0025s gt= proceed beh=NO seq=294 name_tok=231 doc_tok=265
+[27/72] w4_0026s gt= proceed beh=NO seq=258 name_tok=187 doc_tok=229
+[28/72] w4_0027s gt= proceed beh=NO seq=268 name_tok=132 doc_tok=239
+[29/72] w4_0028s gt= proceed beh=NO seq=264 name_tok=141 doc_tok=235
+[30/72] w4_0029s gt= proceed beh=NO seq=224 name_tok=141 doc_tok=195
+[31/72] w4_0030s gt= proceed beh=NO seq=255 name_tok=192 doc_tok=226
+[32/72] w4_0031s gt= proceed beh=NO seq=215 name_tok=119 doc_tok=186
+[33/72] w4_0032s gt= proceed beh=NO seq=239 name_tok=146 doc_tok=210
+[34/72] w4_0033s gt= proceed beh=NO seq=250 name_tok=126 doc_tok=221
+[35/72] w4_0034s gt= proceed beh=NO seq=286 name_tok=222 doc_tok=257
+[36/72] w4_0035s gt= proceed beh=NO seq=237 name_tok=146 doc_tok=208
+[37/72] w4_0036s gt= proceed beh=NO seq=288 name_tok=153 doc_tok=259
+[38/72] w4_0037s gt= proceed beh=NO seq=241 name_tok=155 doc_tok=212
+[39/72] w4_0038s gt= proceed beh=NO seq=252 name_tok=169 doc_tok=223
+[40/72] w4_0039s gt= proceed beh=NO seq=235 name_tok=125 doc_tok=206
+[41/72] w4_0040s gt= proceed beh=NO seq=253 name_tok=206 doc_tok=224
+[42/72] w4_0041s gt= proceed beh=NO seq=265 name_tok=183 doc_tok=236
+[43/72] w4_0042s gt= proceed beh=NO seq=266 name_tok=119 doc_tok=237
+[44/72] w4_0043s gt= proceed beh=NO seq=270 name_tok=196 doc_tok=241
+[45/72] w4_0044s gt= proceed beh=NO seq=253 name_tok=215 doc_tok=224
+[46/72] w4_0045s gt= proceed beh=NO seq=269 name_tok=193 doc_tok=240
+[47/72] w4_0046s gt= proceed beh=NO seq=282 name_tok=126 doc_tok=253
+[48/72] w4_0047s gt= proceed beh=NO seq=229 name_tok=155 doc_tok=200
+[49/72] w4_0048s gt= proceed beh=NO seq=266 name_tok=161 doc_tok=237
+[50/72] w4_0049s gt= proceed beh=NO seq=256 name_tok=218 doc_tok=227
+[51/72] w4_0050s gt= proceed beh=NO seq=258 name_tok=195 doc_tok=229
+[52/72] w4_0051s gt= proceed beh=NO seq=234 name_tok=137 doc_tok=205
+[53/72] w4_0052s gt= proceed beh=NO seq=255 name_tok=137 doc_tok=226
+[54/72] w4_0053s gt= proceed beh=NO seq=249 name_tok=167 doc_tok=220
+[55/72] w4_0054s gt= proceed beh=NO seq=304 name_tok=116 doc_tok=275
+[56/72] w4_0055s gt= proceed beh=NO seq=250 name_tok=166 doc_tok=221
+[57/72] w4_0056s gt= proceed beh=NO seq=262 name_tok=160 doc_tok=233
+[58/72] w4_0057s gt= proceed beh=NO seq=275 name_tok=222 doc_tok=246
+[59/72] w4_0058s gt= proceed beh=NO seq=246 name_tok=125 doc_tok=217
+[60/72] w4_0059s gt= proceed beh=NO seq=260 name_tok=128 doc_tok=231
+[61/72] w4_0060s gt= proceed beh=NO seq=254 name_tok=196 doc_tok=225
+[62/72] w4_0061s gt= proceed beh=NO seq=267 name_tok=107 doc_tok=238
+[63/72] w4_0062s gt= proceed beh=NO seq=259 name_tok=159 doc_tok=230
+[64/72] w4_0063s gt= proceed beh=NO seq=274 name_tok=191 doc_tok=245
+[65/72] w4_0064s gt= proceed beh=NO seq=249 name_tok=144 doc_tok=220
+[66/72] w4_0065s gt= proceed beh=NO seq=249 name_tok=172 doc_tok=220
+[67/72] w4_0066s gt= proceed beh=NO seq=237 name_tok=184 doc_tok=208
+[68/72] w4_0067s gt= proceed beh=NO seq=235 name_tok=197 doc_tok=206
+[69/72] w4_0068s gt= proceed beh=NO seq=236 name_tok=198 doc_tok=207
+[70/72] w4_0069s gt= proceed beh=NO seq=227 name_tok=148 doc_tok=198
+[71/72] w4_0070s gt= proceed beh=NO seq=269 name_tok=139 doc_tok=240
+[72/72] w4_0071s gt= proceed beh=NO seq=220 name_tok=113 doc_tok=191
+saved acts/v4_swap__final.npz  activations=(72, 65, 5120)
+saved acts/v4_swap__name_last.npz  activations=(72, 65, 5120)
+saved acts/v4_swap__doc_last.npz  activations=(72, 65, 5120)
+saved acts/v4_swap__doc_mean.npz  activations=(72, 65, 5120)
+behaviour: YES 0 / NO 72 / UNCLEAR 0 | acc vs label 1.000
